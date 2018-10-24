@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<!-- tyd.zhanglingzeng 20140819. tp  mini screen mode begin -->
+    <string name="tp_mini_screen_title">小屏模式</string>
+    <string name="tp_mini_screen_summary">開啟後，可以單手操作迷你屏幕</string>
+	<string name="tp_mini_screen_trigger_title">觸屏操作打開小屏模式</string>
+	<string name="tp_mini_screen_trigger_summary">開啟後，從屏幕右側向內再向外滑動可以打開小屏模式；打開小屏模式後，在小屏窗口內從右側向內再向外滑動可以關閉小屏模式</string>
+	<string name="tp_close_mini_screen">請首先關閉小屏模式</string>
+	<string name="tp_mini_screen_close_magic_flinger">請首先關閉魔法手指</string>
+	<!-- tyd.zhanglingzeng 20140819. tp  mini screen mode end -->
+	 <!--Added by tyd mingjun 20150618 for, freeme wifi -->
+    <string name="freeme_wifi_title">免費WiFi</string>
+    <string name="freeme_wifi_online_time">免費上網 </string>
+    <string name="freeme_wifi_low_speed_reasons">以下原因導致網速比較慢</string>
+    <string name="freeme_wifi_low_speed_reason_1">多人同時連接導致網速變慢</string>
+    <string name="freeme_wifi_low_speed_reason_2">距離熱點較遠信號弱</string>
+    <string name="freeme_wifi_low_speed_reason_3">正在移動中</string>
+    <string name="freeme_wifi_introductions">免費WiFi freeme os為妳提供</string>
+    <string name="freeme_wifi_freemeintroductions">免費WiFi freeme os為妳提供</string>
+    <string name="freeme_wifi_introduction_1">無需密碼</string>
+    <string name="freeme_wifi_introduction_2">壹鍵連接</string>
+    <string name="freeme_wifi_introduction_3">覆蓋咖啡廳、餐飲、機場、火車站等2萬多處場所</string>
+     <string name="freeme_wifi_connect">免費連接WiFi</string>
+    <string name="freeme_wifi_disconnect">斷開連接</string>
+    <string name="freeme_wifi_settings">freemewifi設置</string>
+    <string name="freeme_wifi_settings_auto_share">自動分享已連接的WiFi熱點</string>
+    <string name="freeme_wifi_settings_auto_notify">附近有可用免費WiFi時提醒</string>
+    <string name="freeme_wifi_show_connect">正在為您連接...</string>
+    <string name="freeme_wifi_show_disconnect">正在為您斷開...</string>
+    <string name="freeme_wifi_show_wifi_disable">WiFi已關閉</string>
+    <string name="freeme_wifi_show_no_freewifi">沒有可用的免費WiFi</string>
+    <string name="freeme_wifi_menu_connect">手動輸入連接</string>
+	  <string name="freeme_wifi_summary">歡迎使用免費WiFi, 由酷比為您提供免費、安全的網絡環境</string>    
+    <!-- end -->
+    
+    <string name="accessibility_settings_ext_title">智能輔助</string>
+    
+    <!--Added by Linguanrong for FloatTask 20130828-->
+    <string name="floattask_settings">懸浮多任務</string>
+    <string name="floattask_summary">開啟或關閉懸浮多任務</string>
+    <string name="quick_floattask_settings">快速開關</string>
+    <string name="quick_floattask_summary">可長按返回鍵快速開啟和關閉</string>
+    <!--Linguanrong-->
+    
+    <!--add by tyd cch 20131029 for pocket mode  -->
+    <string name="pocket_ring_mode_text">口袋模式</string>
+    <string name="pocket_ring_mode_info">当设备位于口袋中时铃声音量增加</string>
+    
+    <!-- tyd.biantao 20131105. tp glove mode. -->
+    <string name="tp_glove_mode_title">手套模式</string>
+    <string name="tp_glove_mode_summary">開啟后，可以戴手套操作觸摸屏</string>
+    
+    <!-- Added by huangyiquan 20140317 for touch-protect mode -->
+    <string name="screen_on_proximity_title">防誤觸模式</string>
+    <string name="screen_on_proximity_summary">利用距離傳感器，防止手機在口袋中由于擠壓或織物滑動引起的誤操作</string>
+    <!-- end by huangyiquan -->
+    
+    <!-- Added by tyd liuchao for smart wakeup -->
+    <string name="smart_wakeup_settings">智能亮/熄屏</string>
+    <!-- tyd -->
+    
+    <!-- Add  by tyd liuchao on 2015-04-13, for new stytle -->
+    <string name="system_settings_title">系統</string>
+    <string name="date_time_settings_title">日期與時間</string>
+    <string name="gestures_operate">手勢操作</string>
+    <string name="intelligent_operate">智能操作</string>
+    
+    <!-- tyd.biantao, 20131025. for non-touch operation -->
+    <string name="non_touch_opr_category">浮空手勢</string>
+    
+    <!-- Add by tyd yuanchengye 20140815, for three pointer swipe action -->
+    <string name="three_pointer_take_screen_shot_title">三指截屏</string>
+    <string name="three_pointer_take_screen_shot_summary">在任意界面三指下滑截屏</string>
+    <string name="three_pointer_start_hotnot_title">三指打開酷傳</string>
+    <string name="three_pointer_start_hotnot_summary">在任意界面三指上滑打開酷傳</string>
+    <!-- end -->
+    
+    <!-- Added by tyd Linguanrong 20130816 for adjust settings menu-->
+    <string name="smart_somatosensory">智能體感</string>
+    <string name="reverse_silent">翻轉靜音</string>
+    <string name="reverse_silent_info">翻轉電話使來電和鬧鐘靜音</string>
+    
+    <!-- Added by john for sim kit --> 
+    <string name="other_application_title">應用</string>
+    <string name="stk_selection_title">SIM 應用</string>
+    <string name="holiday_mode_title">勿擾模式</string>
+    <string name="smart_dial_title">智能撥打</string>
+    <string name="smart_dial_title_summary">選中號碼，快速將手機靠近耳朵時撥出電話</string>
+    <string name="smart_answer_title">智能接聽</string>
+    <string name="smart_answer_title_summary">在來電狀態下，快速將手機靠近耳朵進行接聽電話</string>
+    <string name="have_no_stk">您的手機未安裝應用程序。</string>
+    <!--end  -->
+    
+    <!-- Added by sxp 20140716 for shake open app -->
+    <string name="shake_open_app"> 搖一搖打開程式</string>
+    <string name="shake_open_app_settings">設定程式</string>
+    <string name="select_shake_open">選擇</string>
+    <string name="shake_default_value">1</string>    
+    <!-- end -->
+    
+    <!-- tyd.zhanglingzeng. for smart wakeup . -->
+    <string name="smart_keep_screen_enable_setting">智能閱讀</string>
+    <string name="smart_keep_screen_enable_setting_tips">檢測到您正在看著屏幕，屏幕將繼續為您亮起</string>
+    <string name="smart_wakeup_setting">雙擊屏幕亮屏</string>
+    <string name="smart_wakeup_setting_tips">雙擊屏幕點亮屏幕</string>
+    <string name="double_tap_home_wake_title">雙擊HOME鍵亮屏</string>
+    <string name="double_tap_home_wake_summary">雙擊HOME鍵點亮屏幕</string>
+    <string name="double_tap_home_off_title">雙擊HOME鍵鎖屏</string>
+    <string name="double_tap_home_off_summary">在任意界面雙擊HOME鍵快速鎖屏</string>
+    <!-- tyd -->
+    
+    <!-- Added by tyd Greg 2013-10-24,for control smart wake -->
+     <string name="smart_wake_category">智能喚醒</string>
+     
+     <!-- Added by tyd Greg 2014-03-12 -->
+    <!-- for magic track -->
+    <string name="pref_finger_particle_effects_title">魔法手指</string>
+    <string name="settings_now_particle_effects">當前特效：</string>
+    <string name="settings_particle_effects_hint">溫馨提示：開啟後會費點電哦</string>
+    <string name="particle_effect_name_none">無</string>
+    <string name="particle_effect_name_random">隨機</string>
+    <string name="particle_effect_name_heart">愛心</string>
+    <string name="particle_effect_name_stars">星星</string>
+    <string name="particle_effect_name_heartbeat">心動</string>
+    <string name="particle_effect_name_halo">光圈</string>
+     
+     <!-- Added by liuchao  for koobee account, 20150630 -->
+    <string name="login_account_koobee">酷比賬戶</string>
+    <!-- end -->
+    
+    <!-- added by tyd Fuchenming 20130618 -->
+    <string name="festival_wallpaper">節日壁紙</string>
+
+ <!-- Add for Custom Ringtone by xiaocui on 2012-08-30 Start. -->
+    <string name="zzzz_ringtone_default_title">默認鈴聲</string>
+    <string name="zzzz_ringtone_default_summary">選擇默認鈴聲</string>
+    <string name="zzzz_ringtone_custom_title">自定義鈴聲</string>
+    <string name="zzzz_ringtone_custom_summary">選擇自定義鈴聲</string>
+    <string name="zzzz_sdcard_missing_title">沒有 SD 卡</string>
+    <string name="zzzz_no_audio_file">無音頻文件</string>
+    <string name="notification_sound_summary" msgid="2953599929394109819">"設定預設的通知鈴聲"</string>
+    
+    <!--  Add for Custom Ringtone by xiaocui on 2012-08-30 Start. -->
+    <!--Add by tyd xiaocui 0723 for the system volume and media volume-->
+    <string name="volume_system_description_text">系统</string>
+    
+    <!-- Add for Message Ringtone by tyd xiaocui 2012-07-10 --> 
+    <string name="zzzz_sound_category_message_title">訊息設定</string>
+    <string name="zzzz_message_sound_title">信息鈴聲</string>
+    <string name="zzzz_message_sound_summary">設定預設的信息鈴聲</string>
+    <!-- Add for Message Ringtone by tyd xiaocui 2012-07-10  End -->  
+    
+    <!-- Added by Jack 20130521 for, flash memory info -->
+    <string name="flash_system">Android</string>
+    <string name="flash_userdata">手機記憶體（應用程式和資料）</string>
+    <string name="flash_internal_sd">手機存儲（內置存儲卡）</string>
+    <string name="flash_shard_sdcard">手機存儲</string>
+    <string name="flash_memory_detail">詳細資訊</string>
+    <string name="flash_memory_detail_summary">選擇默認記憶體和查看記憶體使用情況</string>
+    <string name="cpu_info">處理器</string>
+    <string name="flash_info">機身存儲</string>
+    <string name="cpu_cores_freq" formatted="false">%s%.1fGHz</string>
+    <string name="cpu_cores_1"></string>
+    <string name="cpu_cores_2">雙核</string>
+    <string name="cpu_cores_4">四核</string>
+    <string name="cpu_cores_6">六核</string>
+    <string name="cpu_cores_8">八核</string>
+     <string name="ram_info">運行記憶體</string>
+    <!-- tyd -->
+    
+    <!-- freeme.biantao, 20160612. Adb chooser. -->
+    <string name="adb_not_askagain">"不再彈出"</string>
+    
+    <!-- Add by tyd Jack 20150114, for default_app_preferences -->
+    <string name="default_app_preferences">默認應用設置</string>
+    <!-- end -->
+    
+    <!-- Added by liuchao, 20150707 -->
+    <string name="storage_battery_settings">存儲和電量</string>
+    <string name="lock_pwd_title">锁屏和密码</string>
+    <!-- end -->
+    
+    <!-- Added by Jack 20121224 for, switch app aee/anr dialog -->
+    <string name="show_aee_dialog">顯示「應用程式出錯」</string>
+    <string name="show_aee_dialog_summary">顯示「應用程式出錯」對話方塊資訊</string>
+    <string name="show_anr_dialog">顯示「應用程式無回應」(全局)</string>
+    <string name="show_anr_dialog_summary">顯示「應用程式無回應」對話方塊資訊</string>
+    <!-- tyd -->
+
+    <!-- Added by Jack 20150518 for, extreme low memory killer support -->
+    <string name="enable_extreme_lk">激進的記憶體回收</string>
+    <string name="enable_extreme_lk_summary">開啟此選項系統將採用激進的記憶體回收機制以優化記憶體佔用，極少數程式可能運行不穩定</string>
+    <!-- tyd -->
+    
+    <!-- Added by Linguanrong for supershot, 2015-06-15-->
+    <string name="supershot_title">截屏設置</string>
+    <string name="supershot_summary">截屏時，默認進入超級截屏</string>
+    <!--Tyd-->
+    
+    <!-- Added by tyd YuanChengye 20140317, for add oprerating instruction -->
+    <string name="usermanual_settings">說明書</string>
+    <!--Tyd-->
+    
+    <!-- Add by tyd lipengfei 20150730 for sim setting -->
+    <string name="radio_control_sim_title">網絡</string>
+    <string name="editor_sim_card_name">編輯 SIM 卡名稱</string>
+    <string name="sim_card_info">SIM 卡信息</string>
+    <string name="sim_default_set">默認設置</string>
+    <!-- tyd -->
+    
+    <!-- Added by tyd YuanChengye 20140317, for add sensor_calibration -->
+    <string name="sensor_calibration_title">傳感器校準</string>
+    <!-- added by tyd liuyong 20130826 for psensor-->
+    <string name="psensor_title">接近傳感器校準</string> 
+    <string name="psensor_dlg_title">注意</string>
+    <string name="psensor_dlg_note">校準接近傳感器?</string>
+    <string name="psensor_calibration_success">校準完成</string>
+    <string name="psensor_calibration_fail">校準失敗！</string>
+    <!-- Added by TYD Biantao, 2011/11/16. For adding Gsensor calibration. -->
+    <string name="g_sensor_title">水平校正</string>
+    <string name="g_sensor_summary">使用加速儀校正水平</string>
+    <string name="gsensor_ready">把手機放在平整的表面上校正加速儀</string>
+    <string name="gsensor_calibrating">手機水平校正時不要移動手機</string>
+    <string name="gsensor_end">手機水平校正完成</string>
+    <string name="gsensor_end_width_failed">手機水平校正失敗</string>
+    <string name="gsensor_button1">完成</string>
+    <string name="gsensor_button2">校準</string>
+    
+    <!-- freeme.zhiwei.zhang, 20160818. NavigationBar Show/Hide.-->
+    <string name="navigationbar_settings">導航欄</string>
+    <string name="navigationbar_settings_tip">導航欄可隱藏</string>
+    <string name="navigationbar_settings_category">請選擇虛擬導航欄組合</string>
+    <!--Tyd-->
+
+    <!--Add for SIM2 Ringtone by tyd xiaocui 2015-08-05-->
+    <string name="zzzz_ringtone_sim1_sound_summary">设置卡1來電铃声</string>
+    <string name="zzzz_ringtone_sim2_sound_summary">设置卡2來電铃声</string>
+    <string name="zzzz_message_sim1_sound_summary">设置卡1信息铃声</string>
+    <string name="zzzz_message_sim2_sound_summary">设置卡2信息铃声</string>
+    <!--Add for SIM2 Ringtone by tyd xiaocui 2015-08-05  end-->
+    
+    <!--Add for system update by tyd liuchao 2015-08-15-->
+    <string name="mtk_system_update">系統升級</string>
+    <!--Add for system update by tyd liuchao 2015-08-15 end-->
+
+    <string name="statusbar_settings">通知欄設置</string>
+    <!--Add for single screen by tyd jiangshouting 2015-08-25 start-->
+    <string name="common_dashboard_title">常用</string>
+    <!--Add for single screen by tyd jiangshouting 2015-08-25 end-->
+
+    <string name="share_freeme_item_title">"分享Freeme OS"</string>
+
+
+       <!--Modified by tyd xiaocui 2015-09-15 for 6.0 style audioprofile-->
+       <string name="sound_mode">声音模式</string>
+       <!-- Modified by tyd xiaocui 2015-09-15 for 6.0 style audioprofile end -->
+
+    <!-- Add by tyd chenruoquan 2015-11-09 -->
+    <plurals name="show_more_dev_countdown">
+        <item quantity="one" >"只需 <xliff:g id="STEP_COUNT">%1$d</xliff:g> 步操作即可進入高級開發者模式。"</item>
+        <item quantity="other">"只需 <xliff:g id="STEP_COUNT">%1$d</xliff:g> 步操作即可進入高級開發者模式。"</item>
+    </plurals>
+    <string name="show_more_dev_on">"您现在處於高级開發者模式！"</string>
+    <string name="show_more_dev_already">"您已處於高级開發者模式，無需進行此操作。"</string>
+    <!-- End. -->
+    
+  <!-- Added by TYD Sean 2015-08-06 for droi account begin -->
+  <string name="login_account_droi">卓易帳號</string>
+  <!-- Added by TYD Sean 2015-08-06 for droi account end -->
+
+  <!-- Added by TYD Sean 2015-08-06 for fp begin -->
+  <string name="fp_setting_title">指紋</string>
+  <string name="fp_security_description_choose">請選擇下面任一形勢</string>
+  <string name="fp_security_description_text">為了防止指紋識別出現誤差，必須增加備用\n解屏密碼，才可打開指紋解屏</string>
+  <!-- Added by TYD Sean 2015-08-06 for fp end -->
+  <string name="change_layout_mode">"布局模式切换"</string>
+  
+  <!-- Add by tyd lipengfei 20151015 for freeme OOBE -->
+  <string name="oobe_previous_label" >上一步</string>
+  <string name="oobe_next_label">下一步</string>
+  <string name="oobe_wifi_title">連接WLAN</string>
+  <!-- tyd -->
+
+  <!--Modified by tyd liuchao for single screen-->
+  <string name="other_dashboard_tile">其它</string>
+
+  <string name="select_sim_for_open_data">"選擇要開啟數據連接的SIM卡"</string>
+
+  <!-- add by tyd wangalei 2015.9.29 for second menu sort -->
+    <string name="statebar_setting_titile">"狀態列設定"</string>
+    <string name="statebar_setting_notify">"通知管理"</string>
+    <string name="statebar_setting_switch_sort">"開關排序"</string>
+    <!-- add by tyd wangalei 2015.10.12 for second menu sort -->
+    <string name="schedule_power_setting_vibrate">"定時振動"</string>
+    <string name="schedule_power_setting_offline">"定時離線"</string>
+    <string name="schedule_power_setting_schpwronoff">"定時開關機"</string>
+     <string name="no_sim_card">"無SIM卡"</string>
+    <string name="no_click_in_airmode">"飛行模式下不可用"</string>
+   <string name="no_click_in_location_mode_off">"位置模式關閉下不可用"</string>
+       <string name="credentials_install_nosdcard" >"從存儲設備安裝"</string>
+    <!-- end -->
+    
+    <string name="unlock_set_unlock_mode_biometric_weak" msgid="3008473624490350142">"人臉解鎖"</string>
+    <string name="biometric_weak_improve_matching_title" msgid="8754080894393195194">"加強臉部辨識精準度"</string>
+    <string name="biometric_weak_liveliness_title" msgid="2661613702124561096">"生動度檢查"</string>
+    <string name="biometric_weak_liveliness_summary" msgid="4199587000948042325">"解鎖時需眨眼"</string>
+
+    <!-- { freeme.xupeng, 20160531. Add sunshine screen display -->
+    <string name="pref_aal_title">"熒幕增強"</string>
+    <string name="pref_aal_summary">"根據熒幕特性顯示增強優化效果"</string>
+    <!-- } -->
+    <!-- { freeme.xupeng, 20160606. make oom adj change-able when reboot -->
+    <string name="dynamic_oom_adj_settings">動態設置oom等級</string>
+    <!-- } -->
+
+    <!--freeme.gejun, multi sim data connection close option-->
+    <string name="close_data_connection">關閉數據連接</string>
+    
+    <!-- freeme.chenruoquan, 20160620.Add legal statement -->
+    <string name="legal_statement">"法律聲明"</string>
+
+    <!--freeme.gejun, 20160706 smart answer will not work when non-touch open-->
+    <string name="smart_anser_tip">"請注意:來電隔空操作開啓時,智能接聽會失效!"</string>
+    
+    <!-- freeme.biantao, 20160727. Fingerprint func.-->
+    <string name="smart_wakeup_enable">開啟智能輔助</string>
+    <string name="fingerprint_func">功能</string>    
+    <string name="camera_capture_enable">拍照控制</string>
+    <string name="nv_camera_cpture_des">拍照時，觸摸指紋，可以拍照</string>
+    <string name="alarm_control_enable">"鬧鐘"</string>
+    <string name="nv_alarm_control_des">鬧鐘響鈴時，觸摸指紋可關閉響鈴</string>
+    <string name="dial_enable">指紋撥號</string>
+    <string name="nv_dial_control_des">撥號盤頁面，長按指紋，號碼會自動撥出</string>
+    <string name="home_scroll_enable">桌面滑動</string>
+    <string name="nv_home_control_des">觸摸指紋，主屏會依次滑動</string>
+    <string name="video_operate_enable">視頻控制</string>
+    <string name="nv_video_control_des">播放本地視頻時，指紋可以控制播放、暫停</string>
+    <string name="music_operate_enable">音樂控制</string>
+    <string name="nv_music_control_des">音樂播放頁面，觸摸指紋，可切換“下一首”</string>
+    <string name="nv_get_it">獲得</string>
+    
+    <!-- @{ freeme.menglingqiang，20160928. add boot and shutdown ringtone. -->
+    <string name="freeme_boot_shut_audio_title">開關機鈴聲</string>
+    <string name="freeme_boot_audio_title">開機鈴聲</string>
+    <!-- @} -->
+    <!-- @{ freeme.menglingqiang，20160929. show ram information in settings. -->
+    <string name="freeme_storage_rom_used">"（ROM 共 <xliff:g id="TOTAL">%1$s</xliff:g>）"</string>
+    <string name="freeme_storage_ram_used">"（RAM 共 <xliff:g id="TOTAL">%1$s</xliff:g>）"</string>
+    <!-- @} -->
+    <!-- @{ freeme.menglingqiang, 20161011. support finger print front. -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">"指紋感應器位於手機下方"</string>
+    <!-- @} -->
+
+    <!--freeme.chenming, 20161014. Default vibrator magnitude.-->
+    <string name="vibTuner_name">震動調節</string>
+    <string name="vib_Reset">重置</string>
+
+</resources>

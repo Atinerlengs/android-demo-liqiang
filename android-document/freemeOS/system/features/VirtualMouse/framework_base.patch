@@ -1,0 +1,137 @@
+diff --git a/core/java/android/hardware/input/InputManagerInternal.java b/core/java/android/hardware/input/InputManagerInternal.java
+index 6a392dd..7f7e2e9 100644
+--- a/core/java/android/hardware/input/InputManagerInternal.java
++++ b/core/java/android/hardware/input/InputManagerInternal.java
+@@ -39,4 +39,8 @@ public abstract class InputManagerInternal {
+      * watching for wake events.
+      */
+     public abstract void setInteractive(boolean interactive);
++
++    public abstract void setVirtualMouseMode(boolean on);
++
++    public abstract void moveVirtualMouse(int x, int y);
+ }
+diff --git a/services/core/java/com/android/server/GestureLauncherService.java b/services/core/java/com/android/server/GestureLauncherService.java
+index 2aa0390..256d80f 100644
+--- a/services/core/java/com/android/server/GestureLauncherService.java
++++ b/services/core/java/com/android/server/GestureLauncherService.java
+@@ -28,6 +28,7 @@ import android.hardware.Sensor;
+ import android.hardware.SensorEvent;
+ import android.hardware.SensorEventListener;
+ import android.hardware.SensorManager;
++import android.hardware.input.InputManagerInternal;
+ import android.os.Handler;
+ import android.os.PowerManager;
+ import android.os.PowerManager.WakeLock;
+@@ -36,6 +37,8 @@ import android.os.SystemProperties;
+ import android.provider.Settings;
+ import android.util.Slog;
+ import android.view.KeyEvent;
++import android.view.inputmethod.InputMethodManagerInternal;
++import android.widget.Toast;
+ 
+ import com.android.internal.logging.MetricsLogger;
+ import com.android.server.statusbar.StatusBarManagerInternal;
+@@ -105,6 +108,8 @@ public class GestureLauncherService extends SystemService {
+     private boolean mCameraDoubleTapPowerEnabled;
+     private long mLastPowerDown;
+ 
++    private boolean mIsVirtualMouseMode = false;
++
+     public GestureLauncherService(Context context) {
+         super(context);
+         mContext = context;
+@@ -298,9 +303,19 @@ public class GestureLauncherService extends SystemService {
+             // Make sure we don't sleep too early
+             mWakeLock.acquire(500L);
+         }
++        /*
+         StatusBarManagerInternal service = LocalServices.getService(
+                 StatusBarManagerInternal.class);
+         service.onCameraLaunchGestureDetected(source);
++        */
++
++        InputManagerInternal service = LocalServices.getService(
++                InputManagerInternal.class);
++        mIsVirtualMouseMode = !mIsVirtualMouseMode;
++        service.setVirtualMouseMode(mIsVirtualMouseMode);
++        Toast toast = Toast.makeText(mContext, mIsVirtualMouseMode ? "enter mouse mode"
++                : "leave mouse mode", Toast.LENGTH_SHORT);
++        toast.show();
+         return true;
+     }
+ 
+diff --git a/services/core/java/com/android/server/input/InputManagerService.java b/services/core/java/com/android/server/input/InputManagerService.java
+index 0205a20..4eb9017 100644
+--- a/services/core/java/com/android/server/input/InputManagerService.java
++++ b/services/core/java/com/android/server/input/InputManagerService.java
+@@ -207,6 +207,12 @@ public class InputManagerService extends IInputManager.Stub
+     private static native String nativeDump(long ptr);
+     private static native void nativeMonitor(long ptr);
+ 
++	/**
++     * FreemeOS team.
++	 */
++    private static native void nativeSetVirtualMouseMode(long ptr, int onoff);
++    private static native void nativeMoveVirtualMouse(long ptr, int x, int y);
++
+     // Input event injection constants defined in InputDispatcher.h.
+     private static final int INPUT_EVENT_INJECTION_SUCCEEDED = 0;
+     private static final int INPUT_EVENT_INJECTION_PERMISSION_DENIED = 1;
+@@ -1913,5 +1919,15 @@ public class InputManagerService extends IInputManager.Stub
+         public void setInteractive(boolean interactive) {
+             nativeSetInteractive(mPtr, interactive);
+         }
++
++        @Override
++        public void setVirtualMouseMode(boolean on) {
++            nativeSetVirtualMouseMode(mPtr, on ? 1 : 0);
++        }
++
++        @Override
++        public void moveVirtualMouse(int x, int y) {
++            nativeMoveVirtualMouse(mPtr, x, y);
++        }
+     }
+ }
+diff --git a/services/core/jni/com_android_server_input_InputManagerService.cpp b/services/core/jni/com_android_server_input_InputManagerService.cpp
+index e29d0a9..86bbdf3 100644
+--- a/services/core/jni/com_android_server_input_InputManagerService.cpp
++++ b/services/core/jni/com_android_server_input_InputManagerService.cpp
+@@ -1367,6 +1367,24 @@ static void nativeMonitor(JNIEnv* /* env */, jclass /* clazz */, jlong ptr) {
+     im->getInputManager()->getDispatcher()->monitor();
+ }
+ 
++/**
++ * FreemeOS team: for virtual mouse
++ */
++static void nativeSetVirtualMouseMode(JNIEnv* /* env */, jclass /* clazz */, jlong ptr, jint onoff) {
++    NativeInputManager* im = reinterpret_cast<NativeInputManager*>(ptr);
++    if (onoff) {
++        im->getInputManager()->getVirtualMouse()->createDevice();
++    } else {
++        im->getInputManager()->getVirtualMouse()->removeDevice();
++    }
++}
++
++static void nativeMoveVirtualMouse(JNIEnv* /* env */, jclass /* clazz */, jlong ptr,
++        jint x, jint y) {
++    NativeInputManager* im = reinterpret_cast<NativeInputManager*>(ptr);
++    im->getInputManager()->getVirtualMouse()->move(x, y);
++}
++
+ // ----------------------------------------------------------------------------
+ 
+ static JNINativeMethod gInputManagerMethods[] = {
+@@ -1425,6 +1443,11 @@ static JNINativeMethod gInputManagerMethods[] = {
+             (void*) nativeDump },
+     { "nativeMonitor", "(J)V",
+             (void*) nativeMonitor },
++
++    { "nativeSetVirtualMouseMode", "(JI)V",
++            (void*) nativeSetVirtualMouseMode},
++    { "nativeMoveVirtualMouse", "(JII)V",
++            (void*) nativeMoveVirtualMouse},
+ };
+ 
+ #define FIND_CLASS(var, className) \

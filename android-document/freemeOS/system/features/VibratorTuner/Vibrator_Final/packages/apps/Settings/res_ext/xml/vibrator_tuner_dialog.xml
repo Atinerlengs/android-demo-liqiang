@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
+ 
+    <com.freeme.settings.FreemeSeekBarDialogPreference
+            android:key="@string/vibTuner_pref"
+            android:title="@string/vibTuner_name"
+            settings:minValue="0"
+            settings:maxValue="6" />
+
+</PreferenceScreen>

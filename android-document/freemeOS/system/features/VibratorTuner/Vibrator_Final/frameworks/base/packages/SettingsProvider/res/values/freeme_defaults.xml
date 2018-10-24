@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- freeme.Sean, 20150717. for fingerprint begin -->
+    <bool name="def_fp_unlock_enable" translatable="false">false</bool>
+    <bool name="def_fp_capture_enable" translatable="false">false</bool>
+    <bool name="def_fp_home_control" translatable="false">false</bool>
+    <bool name="def_fp_video_control" translatable="false">false</bool>
+    <bool name="def_fp_music_control" translatable="false">false</bool>
+    <bool name="def_fp_dial_control" translatable="false">false</bool>
+    <bool name="def_fp_alarm_control" translatable="false">false</bool>
+    <bool name="def_fp_slock_control" translatable="false">false</bool>
+    
+    <!-- freeme.zhiwei.zhang, 20160818. NavigationBar Show/Hide. -->
+    <bool name="def_is_min_navigationbar" translatable="false">false</bool>
+    <bool name="def_can_hide_navigationbar" translatable="false">true</bool>
+    
+    <!-- freeme.renjing, 20151219. for fingerprint to close clock -->
+    <bool name="def_finger_print_clock" translatable="false">false</bool>
+    
+
+    <!-- freeme.Greg, 20131025. for magic track,default mode is PARTICLE_EFFECT_ID_RANDOM -->
+    <integer name="def_magic_track_mode" translatable="false">0</integer>
+    
+    <!-- freeme.Sean, 20150715. Default 24Hour -->
+    <string name="def_timeformat_setting" translatable="false">24</string>
+
+    <!-- freeme.zhiwei.zhang, 20160909. smart wake up, [start] -->
+    <integer name="def_home_doubletap_poweroff_enabled" translatable="false">0</integer>
+    <integer name="def_home_doubletap_wakeup_enabled" translatable="false">1</integer>
+    <integer name="def_screen_doubletap_wakeup_enabled" translatable="false">1</integer>
+    <integer name="def_screen_gesture_wakeup_enabled" translatable="false">0</integer>
+
+    <integer name="def_screen_wakeup_w_enabled" translatable="false">1</integer>
+    <integer name="def_screen_wakeup_o_enabled" translatable="false">1</integer>
+    <integer name="def_screen_wakeup_e_enabled" translatable="false">1</integer>
+    <integer name="def_screen_wakeup_c_enabled" translatable="false">1</integer>
+    <integer name="def_screen_wakeup_m_enabled" translatable="false">1</integer>
+    <integer name="def_screen_wakeup_v_enabled" translatable="false">1</integer>
+    <integer name="def_screen_wakeup_s_enabled" translatable="false">1</integer>
+    <integer name="def_screen_wakeup_z_enabled" translatable="false">1</integer>
+    <integer name="def_screen_wakeup_up_enabled" translatable="false">1</integer>
+    <integer name="def_screen_wakeup_down_enabled" translatable="false">1</integer>
+    <integer name="def_screen_wakeup_left_enabled" translatable="false">1</integer>
+    <integer name="def_screen_wakeup_right_enabled" translatable="false">1</integer>
+    <integer name="def_screen_wakeup_rarrow_enabled" translatable="false">1</integer>
+    <integer name="def_screen_wakeup_tarrow_enabled" translatable="false">1</integer>
+
+    <string name="def_screen_action_w_setting" translatable="false">startupapp;appweixin;com.tencent.mm;com.tencent.mm.ui.LauncherUI</string>
+    <string name="def_screen_action_o_setting" translatable="false">startupapp;appqq;com.tencent.mobileqq;com.tencent.mobileqq.activity.SplashActivity</string>
+    <string name="def_screen_action_m_setting" translatable="false">startupapp;appmusic;com.freeme.music;com.freeme.music.MusicBrowserActivity</string>
+    <string name="def_screen_action_c_setting" translatable="false">startupapp;appcall;com.android.dialer;com.android.dialer.DialtactsActivity</string>
+    <string name="def_screen_action_e_setting" translatable="false">startupapp;appbrowser;com.android.browser;com.tencent.mtt.SplashActivity</string>
+    <string name="def_screen_action_v_setting" translatable="false">""</string>
+    <string name="def_screen_action_s_setting" translatable="false">""</string>
+    <string name="def_screen_action_z_setting" translatable="false">""</string>
+    <string name="def_screen_action_up_setting" translatable="false">unlock;</string>
+    <string name="def_screen_action_down_setting" translatable="false">mediacontrol;musicstartpause;musicstartpause</string>
+    <string name="def_screen_action_left_setting" translatable="false">mediacontrol;musicprev;musicprev</string>
+    <string name="def_screen_action_right_setting" translatable="false">mediacontrol;musicnext;musicnext</string>
+    <string name="def_screen_action_rarrow_setting" translatable="false">""</string>
+    <string name="def_screen_action_tarrow_setting" translatable="false">""</string>
+    <!-- freeme.zhiwei.zhang, 20160909.smart wake up, [end] -->
+ 
+    <!-- freeme.Linguanrong, 20150615. for supershot -->
+    <bool name="def_supershot_mode" translatable="false">true</bool>
+
+    <!-- Added by lzm for phone_vibrate-->
+	<integer name="def_freeme_phone_vibrate" translatable="false">0</integer>
+    <!--freeme-->
+    <!-- freeme.biantao, 20130828. Default scanned-image size threshold. (Byte) -->
+    <integer name="def_scan_image_threshold" translatable="false">30720</integer>
+
+    <!-- freeme.yuanchengye, 20140814. default three pointer start hotnot -->
+    <bool name="def_three_pointer_start_hotknot" translatable="false">false</bool>
+
+    <!-- droi.zhangliang, 20160929, default three pointer take screen shot -->
+    <bool name="def_three_pointer_take_screen_shot" translatable="false">true</bool>
+
+    <!-- droi.lizhaomei, 20161012, Default for Global.LOW_POWER_MODE_TRIGGER_LEVEL-->
+    <integer name="def_low_power_mode_trigger_level">0</integer>
+
+    <!-- freeme.yuanchengye, 20140821. default double tap home power wake -->
+    <bool name="def_double_tap_home_wake" translatable="false">false</bool>
+
+    <!-- freeme.yuanchengye, 20141119. default freeme wifi -->
+    <bool name="def_wifi_auto_share" translatable="false">false</bool>
+    <bool name="def_wifi_auto_notify" translatable="false">true</bool>
+
+    <!-- freeme.Jack, 20130807. Default lockscreen package -->
+    <string name="def_lockscreen_package">com.freeme.lockscreen.quick</string>
+	
+	<!-- freeme.lideqian, 20161012, Default theme package -->
+	<string name="def_theme_package">com.freeme.home</string>
+    
+    <!-- freeme.biantao, 20130708. Default fest-wallpaper workon -->
+    <bool name="def_fest_wallpaper_setting" translatable="false">true</bool>
+    
+    <!-- freeme.Sean, 20160122. set default IME -->
+    <string name="def_input_ime" translatable="false">com.sohu.inputmethod.sogou/.SogouIME</string>
+
+    <!-- freeme.shanjibing, 20160531. path for usb connect sound -->
+    <string name="def_usb_connect_sound" translatable="false">/system/media/audio/ui/Charger_Connection.ogg</string>
+    <!-- freeme.shanjibing, 20160531. path for usb power full sound -->
+    <string name="def_power_full_sound" translatable="false">/system/media/audio/ui/TW_Battery_caution.ogg</string>
+
+    <!-- freeme.biantao, 20161012. Default statusbar setting icon *Black-List* [ networkspeed,carrier,batteryperc ]-->
+    <string name="def_statusbar_setting_icon_blacklist" translatable="false">networkspeed,carrier,batteryperc</string>
+
+    <!--freeme.chenming, 20161014. Default vibrator magnitude -->
+    <integer name="def_vibration_magnitude">5</integer>
+
+</resources>

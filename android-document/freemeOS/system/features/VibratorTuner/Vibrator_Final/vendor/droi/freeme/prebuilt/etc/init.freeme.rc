@@ -1,0 +1,31 @@
+# Freeme project .rc configure
+
+import /init.freeme.fp.rc
+
+
+on post-fs-data
+    # Smart weakup.
+    chown root system /sys/class/syna/gesenable
+
+    # Battery info extends.
+    chmod 0666 /dev/MT_pmic_adc_cali
+
+    # Optimize ROM and RAM
+    chown system system /sys/class/droi_sb/sba
+    chown system system /sys/class/droi_sb/sbf
+    chown system system /sys/class/droi_meminfo/droiram_total
+    chown system system /sys/class/droi_meminfo/droiram_used
+
+    chown system system /sys/class/vibrator/vib_set
+
+on boot
+
+
+# NativeMisc.
+on property:service.nvram_init=Ready
+    start NativeMisc
+service NativeMisc /system/bin/NativeMisc
+    class main
+    user root
+    group system
+    disabled

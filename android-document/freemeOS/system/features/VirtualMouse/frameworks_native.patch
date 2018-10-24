@@ -1,0 +1,447 @@
+diff --git a/services/inputflinger/Android.mk b/services/inputflinger/Android.mk
+index ed867d8..07b1311 100644
+--- a/services/inputflinger/Android.mk
++++ b/services/inputflinger/Android.mk
+@@ -22,7 +22,8 @@ LOCAL_SRC_FILES:= \
+     InputListener.cpp \
+     InputManager.cpp \
+     InputReader.cpp \
+-    InputWindow.cpp
++    InputWindow.cpp \
++    VirtualMouse.cpp
+ 
+ LOCAL_SHARED_LIBRARIES := \
+     libbinder \
+diff --git a/services/inputflinger/InputDispatcher.cpp b/services/inputflinger/InputDispatcher.cpp
+index 0fba1bf..ce9ccdd 100644
+--- a/services/inputflinger/InputDispatcher.cpp
++++ b/services/inputflinger/InputDispatcher.cpp
+@@ -213,6 +213,21 @@ InputDispatcher::InputDispatcher(const sp<InputDispatcherPolicyInterface>& polic
+     policy->getDispatcherConfiguration(&mConfig);
+ }
+ 
++InputDispatcher::InputDispatcher(const sp<InputDispatcherPolicyInterface>& policy, const sp<VirtualMouse>& vtmouse) :
++    mPolicy(policy),
++    mVirtualMouse(vtmouse),
++    mPendingEvent(NULL), mLastDropReason(DROP_REASON_NOT_DROPPED),
++    mAppSwitchSawKeyDown(false), mAppSwitchDueTime(LONG_LONG_MAX),
++    mNextUnblockedEvent(NULL),
++    mDispatchEnabled(false), mDispatchFrozen(false), mInputFilterEnabled(false),
++    mInputTargetWaitCause(INPUT_TARGET_WAIT_CAUSE_NONE) {
++    mLooper = new Looper(false);
++
++    mKeyRepeatState.lastKeyEntry = NULL;
++
++    policy->getDispatcherConfiguration(&mConfig);
++}
++
+ InputDispatcher::~InputDispatcher() {
+     { // acquire lock
+         AutoMutex _l(mLock);
+@@ -2357,7 +2372,7 @@ void InputDispatcher::notifyConfigurationChanged(const NotifyConfigurationChange
+ }
+ 
+ void InputDispatcher::notifyKey(const NotifyKeyArgs* args) {
+-#if DEBUG_INBOUND_EVENT_DETAILS
++#if 1 //DEBUG_INBOUND_EVENT_DETAILS
+     ALOGD("notifyKey - eventTime=%lld, deviceId=%d, source=0x%x, policyFlags=0x%x, action=0x%x, "
+             "flags=0x%x, keyCode=0x%x, scanCode=0x%x, metaState=0x%x, downTime=%lld",
+             args->eventTime, args->deviceId, args->source, args->policyFlags,
+@@ -2396,6 +2411,7 @@ void InputDispatcher::notifyKey(const NotifyKeyArgs* args) {
+             keyCode = newKeyCode;
+             metaState &= ~AMETA_META_ON;
+         }
++
+     } else if (args->action == AKEY_EVENT_ACTION_UP) {
+         // In order to maintain a consistent stream of up and down events, check to see if the key
+         // going up is one we've replaced in a down event and haven't yet replaced in an up event,
+@@ -2410,6 +2426,33 @@ void InputDispatcher::notifyKey(const NotifyKeyArgs* args) {
+         }
+     }
+ 
++    //freeme
++    if (args->action == AKEY_EVENT_ACTION_UP || args->action == AKEY_EVENT_ACTION_DOWN ) {
++        if (args->action == AKEY_EVENT_ACTION_DOWN) {
++            //AKEY_EVENT_ACTION_DOWN 
++            if (keyCode == AKEYCODE_VOLUME_UP) {
++                mVirtualMouse->move(VirtualMouse::PRESS_DOWN, 5, 5);
++            } else if (keyCode == AKEYCODE_VOLUME_DOWN) {
++                mVirtualMouse->move(VirtualMouse::PRESS_DOWN, -5, -5);
++            }
++        }
++
++        if (args->action == AKEY_EVENT_ACTION_UP) {
++            if (keyCode == AKEYCODE_VOLUME_UP) {
++                mVirtualMouse->move(VirtualMouse::PRESS_UP, 0, 0);
++            } else if (keyCode == AKEYCODE_VOLUME_DOWN) {
++                mVirtualMouse->move(VirtualMouse::PRESS_UP, 0, 0);
++            }
++        }
++
++        if (mVirtualMouse->isEnabled() &&
++            (keyCode == AKEYCODE_VOLUME_UP ||
++             keyCode == AKEYCODE_VOLUME_DOWN)) {
++            ALOGI("VirtualMouse: notifyKey skiped!");
++            return;
++        }
++    }
++
+     KeyEvent event;
+     event.initialize(args->deviceId, args->source, args->action,
+             flags, keyCode, args->scanCode, metaState, 0,
+diff --git a/services/inputflinger/InputDispatcher.h b/services/inputflinger/InputDispatcher.h
+index 98355c6..a80b359 100644
+--- a/services/inputflinger/InputDispatcher.h
++++ b/services/inputflinger/InputDispatcher.h
+@@ -36,6 +36,7 @@
+ #include "InputWindow.h"
+ #include "InputApplication.h"
+ #include "InputListener.h"
++#include "VirtualMouse.h"
+ 
+ 
+ namespace android {
+@@ -366,6 +367,7 @@ protected:
+ 
+ public:
+     explicit InputDispatcher(const sp<InputDispatcherPolicyInterface>& policy);
++    explicit InputDispatcher(const sp<InputDispatcherPolicyInterface>& policy, const sp <VirtualMouse>& vtmouse);
+ 
+     virtual void dump(String8& dump);
+     virtual void monitor();
+@@ -843,6 +845,7 @@ private:
+         DROP_REASON_STALE = 5,
+     };
+ 
++    sp<VirtualMouse> mVirtualMouse;
+     sp<InputDispatcherPolicyInterface> mPolicy;
+     InputDispatcherConfiguration mConfig;
+ 
+diff --git a/services/inputflinger/InputManager.cpp b/services/inputflinger/InputManager.cpp
+index 6a6547b..9e3794b 100644
+--- a/services/inputflinger/InputManager.cpp
++++ b/services/inputflinger/InputManager.cpp
+@@ -28,7 +28,8 @@ InputManager::InputManager(
+         const sp<EventHubInterface>& eventHub,
+         const sp<InputReaderPolicyInterface>& readerPolicy,
+         const sp<InputDispatcherPolicyInterface>& dispatcherPolicy) {
+-    mDispatcher = new InputDispatcher(dispatcherPolicy);
++    mVirtualMouse = new VirtualMouse();
++    mDispatcher = new InputDispatcher(dispatcherPolicy, mVirtualMouse);
+     mReader = new InputReader(eventHub, readerPolicy, mDispatcher);
+     initialize();
+ }
+@@ -86,6 +87,10 @@ sp<InputReaderInterface> InputManager::getReader() {
+     return mReader;
+ }
+ 
++sp<VirtualMouse> InputManager::getVirtualMouse() {
++    return mVirtualMouse;
++}
++
+ sp<InputDispatcherInterface> InputManager::getDispatcher() {
+     return mDispatcher;
+ }
+diff --git a/services/inputflinger/InputManager.h b/services/inputflinger/InputManager.h
+index a213b2d..6572e2a 100644
+--- a/services/inputflinger/InputManager.h
++++ b/services/inputflinger/InputManager.h
+@@ -24,6 +24,7 @@
+ #include "EventHub.h"
+ #include "InputReader.h"
+ #include "InputDispatcher.h"
++#include "VirtualMouse.h"
+ 
+ #include <input/Input.h>
+ #include <input/InputTransport.h>
+@@ -93,6 +94,7 @@ public:
+ 
+     virtual sp<InputReaderInterface> getReader();
+     virtual sp<InputDispatcherInterface> getDispatcher();
++    sp<VirtualMouse> getVirtualMouse();
+ 
+ private:
+     sp<InputReaderInterface> mReader;
+@@ -102,6 +104,8 @@ private:
+     sp<InputDispatcherThread> mDispatcherThread;
+ 
+     void initialize();
++
++    sp<VirtualMouse> mVirtualMouse;
+ };
+ 
+ } // namespace android
+diff --git a/services/inputflinger/VirtualMouse.cpp b/services/inputflinger/VirtualMouse.cpp
+new file mode 100644
+index 0000000..06a4e4f
+--- /dev/null
++++ b/services/inputflinger/VirtualMouse.cpp
+@@ -0,0 +1,209 @@
++#include "VirtualMouse.h"
++
++#include <sys/ioctl.h>
++#include <linux/uinput.h>
++#include <unistd.h>
++#include <sys/types.h>
++#include <fcntl.h>
++
++#include <errno.h>
++#include <stdio.h>
++#include <string.h>
++#include <assert.h>
++#include <cutils/log.h>
++
++#define LOG_TAG "VirtualMouse"
++#define log_msg(level, tag, errFmt, ...) \
++    do { \
++            __android_log_print(level, tag, "[%s:%d] " errFmt , __FUNCTION__, __LINE__, ##__VA_ARGS__); \
++    } while(0)
++
++#define LOGV(fmt, ...) log_msg(ANDROID_LOG_VERBOSE, LOG_TAG, fmt, ##__VA_ARGS__)
++#define LOGI(fmt, ...) log_msg(ANDROID_LOG_INFO, LOG_TAG, fmt, ##__VA_ARGS__)
++#define LOGD(fmt, ...) log_msg(ANDROID_LOG_DEBUG, LOG_TAG, fmt, ##__VA_ARGS__)
++#define LOGI(fmt, ...) log_msg(ANDROID_LOG_INFO, LOG_TAG, fmt, ##__VA_ARGS__)
++#define LOGW(fmt, ...) log_msg(ANDROID_LOG_WARN, LOG_TAG, fmt, ##__VA_ARGS__)
++#define LOGE(fmt, ...) log_msg(ANDROID_LOG_ERROR, LOG_TAG, fmt, ##__VA_ARGS__)
++
++namespace android {
++
++#define CHECK_DEVICE_RETURN() \
++    do {                                                        \
++        if (uinp_fd < 0) {                                      \
++            LOGE("virtual mouse device is noted opend!");      \
++            return;                                             \
++        }                                                       \
++    } while(0)
++
++#define CHECK_DEVICE_RETURN_VALUE(value) \
++    do {                                                        \
++        if (uinp_fd < 0) {                                      \
++            LOGE("virtual mouse device is noted opend!");      \
++            return value;                                       \
++        }                                                       \
++    } while(0)
++
++int VirtualMouse::createDevice() {
++    LOGV("enter");
++
++    if (uinp_fd >= 0) {
++        LOGE("already created virtual mouse device");
++        return 0;
++    }
++
++    // Open the input device
++    uinp_fd = open("/dev/uinput", O_WRONLY | O_NDELAY);
++    if (uinp_fd < 0) {
++        LOGE("Unable to open /dev/uinput");
++        return -1;
++    }
++
++    struct uinput_user_dev uinp; // uInput device structure
++    memset(&uinp,0,sizeof(uinp)); // Intialize the uInput device to NULL
++    strncpy(uinp.name, "PolyVision Touch Screen", UINPUT_MAX_NAME_SIZE);
++    uinp.id.version = 4;
++    uinp.id.bustype = BUS_USB;
++
++    // Setup the uinput device
++    ioctl(uinp_fd, UI_SET_EVBIT, EV_KEY);
++    ioctl(uinp_fd, UI_SET_EVBIT, EV_REL);
++    ioctl(uinp_fd, UI_SET_RELBIT, REL_X);
++    ioctl(uinp_fd, UI_SET_RELBIT, REL_Y);
++    for (int i=0; i < 256; i++) {
++        ioctl(uinp_fd, UI_SET_KEYBIT, i);
++    }
++
++    ioctl(uinp_fd, UI_SET_KEYBIT, BTN_MOUSE);
++    ioctl(uinp_fd, UI_SET_KEYBIT, BTN_TOUCH);
++    ioctl(uinp_fd, UI_SET_KEYBIT, BTN_MOUSE);
++    ioctl(uinp_fd, UI_SET_KEYBIT, BTN_LEFT);
++    ioctl(uinp_fd, UI_SET_KEYBIT, BTN_MIDDLE);
++    ioctl(uinp_fd, UI_SET_KEYBIT, BTN_RIGHT);
++    ioctl(uinp_fd, UI_SET_KEYBIT, BTN_FORWARD);
++    ioctl(uinp_fd, UI_SET_KEYBIT, BTN_BACK);
++
++    /* Create input device into input sub-system */
++    write(uinp_fd, &uinp, sizeof(uinp));
++    if (ioctl(uinp_fd, UI_DEV_CREATE))
++    {
++        LOGE("Unable to create UINPUT device.");
++        return -1;
++    }
++
++    LOGV("leave");
++
++    //TODO: clean code, create Thread here
++    if (mThread != NULL) {
++        LOGE("mThread should not be NULL!, the pressed up must be leaked!");
++        mThread->requestExit();
++    }
++    mThread = new VirtualMouseThread(this);
++    return 0;
++}
++
++int VirtualMouse::removeDevice() {
++    LOGV("enter");
++
++    CHECK_DEVICE_RETURN_VALUE(-1);
++
++    /* Destroy the input device */
++    ioctl(uinp_fd, UI_DEV_DESTROY);
++    /* Close the UINPUT device */
++    close(uinp_fd);
++
++    uinp_fd = -1;
++
++    //TODO: clean code, delete Thread here
++    if (mThread == NULL) {
++        LOGE("mThread should not be NULL!, the pressed up must be leaked!");
++        return -2;
++    }
++
++    mThread->requestExit();
++    mThread = NULL;
++    LOGV("leave");
++    return 0;
++}
++
++void VirtualMouse::move(int x, int y) {
++    LOGV("enter");
++    CHECK_DEVICE_RETURN();
++
++    struct input_event event;
++
++    //x coordinate
++    memset(&event, 0, sizeof(event));
++    gettimeofday(&event.time, 0);
++    event.type = EV_REL;
++    event.code = REL_X;
++    event.value = x;
++    write(uinp_fd, &event, sizeof(event));
++
++    //y coordinate
++    event.type  = EV_REL;
++    event.code  = REL_Y;
++    event.value = y;
++    write(uinp_fd, &event, sizeof(event));
++
++    //execute move event
++    event.type  = EV_SYN;
++    event.code  = SYN_REPORT;
++    event.value = 0;
++    write(uinp_fd, &event, sizeof(event));
++
++    LOGV("leave");
++}
++
++void VirtualMouse::move(int state, int x, int y) {
++    mState = state;
++    mX = x;
++    mY = y;
++    if (mState == PRESS_DOWN) {
++        if (!mThread->isRunning()) {
++            mThread->run("VirtualMouse run thread");
++        }
++    }
++}
++
++void VirtualMouse::move() {
++    move(mX, mY);
++}
++
++bool VirtualMouse::isEnabled() {
++    if (uinp_fd < 0) {
++        LOGV("isEnabled false!");
++        return false;
++    }
++
++    LOGV("isEnabled true!");
++    return true;
++}
++
++void VirtualMouse::click(int type) {
++    CHECK_DEVICE_RETURN();
++
++    //TODO
++}
++
++////////////////////////////////////////////////////////////////////////////////
++VirtualMouseThread::VirtualMouseThread(const sp<VirtualMouse>& vtmouse)
++    : mVirtualMouse(vtmouse) {
++}
++bool VirtualMouseThread::threadLoop() {
++    int state = mVirtualMouse->getState();
++
++    if (state == VirtualMouse::PRESS_DOWN) {
++        mVirtualMouse->move();
++    } else if (state == VirtualMouse::PRESS_UP) {
++        return false;
++    }
++
++    usleep(100000);
++    return true;
++}
++
++VirtualMouseThread::~VirtualMouseThread() {
++}
++
++} // namespace android
++
+diff --git a/services/inputflinger/VirtualMouse.h b/services/inputflinger/VirtualMouse.h
+new file mode 100644
+index 0000000..1f8ec93
+--- /dev/null
++++ b/services/inputflinger/VirtualMouse.h
+@@ -0,0 +1,53 @@
++#pragma once
++
++#include <utils/RefBase.h>
++#include <utils/threads.h>
++
++namespace android {
++
++class VirtualMouse;
++
++class VirtualMouseThread : public Thread {
++public:
++    VirtualMouseThread (const sp<VirtualMouse>& vtmouse);
++    virtual ~VirtualMouseThread();
++
++private:
++    sp<VirtualMouse> mVirtualMouse;
++    //overide
++    virtual bool threadLoop();
++};
++
++class VirtualMouse : public RefBase {
++
++public:
++    explicit VirtualMouse() : uinp_fd(-1) {
++    }
++
++    /* Setup the uinput device */
++    int createDevice();
++    int removeDevice();
++    void click(int type);
++    void move(int x, int y);
++    bool isEnabled();
++
++    enum State {
++        PRESS_DOWN,
++        PRESS_UP,
++    };
++
++    int getState() {
++        return mState;
++    }
++    void move(int state, int x, int y);
++
++    //for VirtualMouseThread
++    void move();
++private:
++    int uinp_fd;
++    int mState;
++    int mX, mY;
++    sp<VirtualMouseThread> mThread;
++};
++
++} // namespace android

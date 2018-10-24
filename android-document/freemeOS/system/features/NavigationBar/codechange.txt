@@ -1,0 +1,1136 @@
+Index: frameworks/base/core/java/android/view/WindowManagerPolicy.java
+===================================================================
+--- frameworks/base/core/java/android/view/WindowManagerPolicy.java	(revision 21299)
++++ frameworks/base/core/java/android/view/WindowManagerPolicy.java	(working copy)
+@@ -981,6 +981,10 @@
+     public void getInsetHintLw(WindowManager.LayoutParams attrs, int rotation,
+             Rect outContentInsets, Rect outStableInsets, Rect outOutsets);
+ 
++    //*/ freeme.zhiwei, 20160801.  for navigationbar reconstruct.
++	public void updateNavigationBar(boolean minNaviBar);
++	//*/
++
+     /**
+      * Called when layout of the windows is finished.  After this function has
+      * returned, all windows given to layoutWindow() <em>must</em> have had a
+Index: frameworks/base/core/res/res/values/config.xml
+===================================================================
+--- frameworks/base/core/res/res/values/config.xml	(revision 21299)
++++ frameworks/base/core/res/res/values/config.xml	(working copy)
+@@ -1523,7 +1523,8 @@
+ 
+     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
+          autodetected from the Configuration. -->
+-    <bool name="config_showNavigationBar">false</bool>
++    <!-- freeme.zhiwei, 20160801. for navigationbar reconstruct. change to real config. -->
++    <bool name="config_showNavigationBar">true</bool>
+ 
+     <!-- Whether action menu items should be displayed in ALLCAPS or not.
+          Defaults to true. If this is not appropriate for specific locales
+Index: frameworks/base/packages/SystemUI/res/layout/navigation_bar.xml
+===================================================================
+--- frameworks/base/packages/SystemUI/res/layout/navigation_bar.xml	(revision 21299)
++++ frameworks/base/packages/SystemUI/res/layout/navigation_bar.xml	(working copy)
+@@ -50,8 +50,8 @@
+                 android:layout_weight="0"
+                 android:visibility="gone"
+                 />
+-
+-            <ImageView
++            <!-- freeme.zhiwei, 20160801. for navigationbar reconstruct. -->
++            <com.android.systemui.statusbar.policy.KeyButtonView
+                 android:id="@+id/hide_bar"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+@@ -324,7 +324,8 @@
+                 android:visibility="gone"
+                 />
+ 
+-            <ImageView android:id="@+id/hide_bar"
++            <!-- freeme.zhiwei, 20160801. for navigationbar reconstruct. -->
++            <com.android.systemui.statusbar.policy.KeyButtonView android:id="@+id/hide_bar"
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:src="@drawable/ic_sysbar_hide_bar_land"
+Index: frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBar.java
+===================================================================
+--- frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBar.java	(revision 21299)
++++ frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBar.java	(working copy)
+@@ -107,6 +107,9 @@
+ import android.view.ViewTreeObserver.OnGlobalLayoutListener;
+ import com.android.systemui.statusbar.StatusBarIconView;
+ import android.widget.LinearLayout;
++//*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++import android.os.Parcel;
++//*/
+ 
+ import com.android.internal.logging.MetricsLogger;
+ import com.android.internal.statusbar.NotificationVisibility;
+@@ -799,6 +802,22 @@
+             mContext.getContentResolver().registerContentObserver(
+                     Settings.System.getUriFor(Settings.System.FREEME_NAVIGATIONBAR_TYPE),
+                     true, mNavigationBarTypeObserver);
++            //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++            boolean navShow = Settings.System.getInt(mContext.getContentResolver(),
++                    Settings.System.FREEME_NAVIGATIONBAR_SHOWED, 0) == 1 ? true : false;
++            updateNavigationBar(!navShow);
++
++            IntentFilter navChangeInent = new IntentFilter();
++            navChangeInent.addAction("com.droi.navigationbar.statuschange");
++            mContext.registerReceiver(new BroadcastReceiver() {
++                public void onReceive(Context context, Intent intent) {
++                    if (intent != null && intent.getAction() != null
++                            && ("com.droi.navigationbar.statuschange".equals(intent.getAction()))) {
++                        updateNavigationBar(intent.getBooleanExtra("minNavigationBar", false));
++                    }
++                }
++            }, navChangeInent);
++            //*/
+         }
+         //*/ Modified end
+     }
+@@ -1518,7 +1537,7 @@
+     private void addNavigationBar() {
+         if (DEBUG) Log.v(TAG, "addNavigationBar: about to add " + mNavigationBarView);
+         //*/ Modified begin by tyd xupeng, add for navigation bar show or hide, 2016-01-13
+-        if (mNavigationBarView == null || mNavigationBarView.isAttachedToWindow()) return;
++        if (mNavigationBarView == null /* freeme:zhiwei removed this condition. || mNavigationBarView.isAttachedToWindow() */) return;
+         //*/ Modified end
+ 
+         prepareNavigationBarView();
+@@ -2973,9 +2992,10 @@
+ 
+         //*/ Modified begin by tyd xupeng, add for navigation bar show or hide, 2016-01-13
+         //*/ Added by Linguanrong for navigationbar show/hide, 2015-7-6
+-        if(isHome(mContext)) {
+-            mode = MODE_TRANSLUCENT;
+-        }
++        // freeme: zhiwei removed this change. Launcher change style to nav_transparent.
++//        if(isHome(mContext)) {
++//            mode = MODE_TRANSLUCENT;
++//        }
+         //*/ Modified end
+         transitions.transitionTo(mode, anim);
+     }
+@@ -5106,17 +5126,65 @@
+         }
+     };
+ 
++    //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++    private void updateNavigationBar(boolean minNaviBar) {
++        if (!mNavigationBarCanHide && minNaviBar || mNavigationBarView == null) return;
++
++        // invoke window manager to relayout window.
++        boolean bSendSuccess = false;
++        Parcel data = Parcel.obtain();
++        Parcel reply = Parcel.obtain();
++        try {
++            if (mWindowManagerService != null) {
++                data.writeInterfaceToken("android.view.IWindowManager");
++                data.writeInt(minNaviBar ? 1 : 0);
++                bSendSuccess = mWindowManagerService.asBinder().transact(204, data, reply, 0);
++                reply.readException();
++            }
++        } catch (RemoteException ex) {
++        } finally {
++            if (data != null) {
++                data.recycle();
++            }
++            if (reply != null) {
++                reply.recycle();
++            }
++        }
++
++        if (bSendSuccess) {
++            mNavigationBarView.setVisibility(minNaviBar ? View.GONE : View.VISIBLE);
++        }
++    }
++    //*/
++
+     private void hideNavigationBar() {
++        //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++        // change to another way.
++        if ((mSystemUiVisibility & (View.SYSTEM_UI_FLAG_IMMERSIVE | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY)) == 0
++                || (mSystemUiVisibility & View.SYSTEM_UI_FLAG_HIDE_NAVIGATION) == 0) {
++            Intent navIntent = new Intent("com.droi.navigationbar.statuschange");
++            navIntent.putExtra("minNavigationBar", true);
++            mContext.sendBroadcast(navIntent);
++        } else {
++            cancelAutohide();
++            mHandler.post(mAutohide);
++        }
++        //*/
++        /*
+         if (mNavigationBarView != null) {
+             mWindowManager.removeViewImmediate(mNavigationBarView);
+             mNavigationBarView = null;
+         }
+ 
+         Settings.System.putInt(mContext.getContentResolver(), Settings.System.FREEME_NAVIGATIONBAR_SHOWED, 0);
++        */
+     }
+ 
+     @Override
+     public void showNavigationBar(int from) {
++        // freeme: zhiwei. remove this way.
++        if (true) return;
++
+         if (mNavigationBarView != null) {
+             return;
+         }
+@@ -5129,15 +5197,18 @@
+         }
+     }
+ 
+-	//*/ Added by droi Lidongdong for show/hide blur over navigationbar, 20151126
+-	@Override
++    //*/ Added by droi Lidongdong for show/hide blur over navigationbar, 20151126
++    @Override
+     public void setNavigationBarBitmap(Bitmap bitmap) {
++        // freeme: zhiwei. remove this way.
++        if (true) return;
++
+         if (mNavigationBarView == null) {
+             return;
+         }
+-		mNavigationBarView.setBackground(new BitmapDrawable(bitmap));
++        mNavigationBarView.setBackground(new BitmapDrawable(bitmap));
+     }
+-	//*/
++    //*/
+ 
+     private void showNavigationBar() {
+         if (mNavigationBarView != null) {
+Index: frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/StatusBarKeyguardViewManager.java
+===================================================================
+--- frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/StatusBarKeyguardViewManager.java	(revision 21299)
++++ frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/StatusBarKeyguardViewManager.java	(working copy)
+@@ -37,6 +37,10 @@
+ 
+ import com.android.keyguard.DroiOnDismissAction;
+ 
++//*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++import android.provider.Settings;
++//*/
++
+ /**
+  * Manages creating, showing, hiding and resetting the keyguard within the status bar. Calls back
+  * via {@link ViewMediatorCallback} to poke the wake lock and report that the keyguard is done,
+@@ -469,9 +473,10 @@
+         public void run() {
+             Log.d(TAG, "mMakeNavigationBarVisibleRunnable - set nav bar VISIBLE.") ;
+             //*/ Modified begin by tyd xupeng, add for navigation bar show or hide, 2016-01-13
+-            if (mPhoneStatusBar.getNavigationBarView() != null) {
+-                mPhoneStatusBar.getNavigationBarView().setVisibility(View.VISIBLE);
+-            }
++            // freeme:zhiwei removed "mPhoneStatusBar.getNavigationBarView() != null".
++//            if (mPhoneStatusBar.getNavigationBarView() != null) {
++            mPhoneStatusBar.getNavigationBarView().setVisibility(View.VISIBLE);
++//            }
+             //*/ Modified end
+         }
+     };
+@@ -492,10 +497,18 @@
+                 mContainer.setSystemUiVisibility(vis | View.STATUS_BAR_DISABLE_BACK);
+             }
+         }
++        //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++        boolean navBarShow = Settings.System.getInt(mContext.getContentResolver(),
++                Settings.System.FREEME_NAVIGATIONBAR_SHOWED, 0) == 1 ? true : false;
++        //*/
+ 
+         // Hide navigation bar on Keyguard but not on bouncer and also if we are deferring a scrim
+         // fade out, i.e. we are waiting for the screen to have turned on.
+-        boolean navBarVisible = !deferScrimFadeOut && (!(showing && !occluded) || bouncerShowing);
++        //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++        // TODO: whether keyguard should show navbar ?
++        //boolean navBarVisible = !deferScrimFadeOut && (!(showing && !occluded) || bouncerShowing);
++        boolean navBarVisible = navBarShow && !deferScrimFadeOut && (!(showing && !occluded) || bouncerShowing);
++        //*/
+         boolean lastNavBarVisible = !mLastDeferScrimFadeOut && (!(mLastShowing && !mLastOccluded)
+                 || mLastBouncerShowing);
+         if (navBarVisible != lastNavBarVisible || mFirstUpdate) {
+Index: frameworks/base/services/core/java/com/android/server/policy/BarController.java
+===================================================================
+--- frameworks/base/services/core/java/com/android/server/policy/BarController.java	(revision 21299)
++++ frameworks/base/services/core/java/com/android/server/policy/BarController.java	(working copy)
+@@ -95,6 +95,13 @@
+         return mTransientBarState == TRANSIENT_BAR_SHOWING;
+     }
+ 
++    //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++    // add for phonewindowmanager.
++    public boolean isTransientHiding() {
++        return mTransientBarState == TRANSIENT_BAR_HIDING;
++    }
++    //*/
++
+     public boolean isTransientShowRequested() {
+         return mTransientBarState == TRANSIENT_BAR_SHOW_REQUESTED;
+     }
+@@ -264,7 +271,11 @@
+         return vis;
+     }
+ 
+-    private void setTransientBarState(int state) {
++    //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++    // public for phonewindowmanager.
++    //private void setTransientBarState(int state) {
++    public void setTransientBarState(int state) {
++    //*/
+         if (mWin != null && state != mTransientBarState) {
+             if (mTransientBarState == TRANSIENT_BAR_SHOWING || state == TRANSIENT_BAR_SHOWING) {
+                 mLastTranslucent = SystemClock.uptimeMillis();
+Index: frameworks/base/services/core/java/com/android/server/policy/PhoneWindowManager.java
+===================================================================
+--- frameworks/base/services/core/java/com/android/server/policy/PhoneWindowManager.java	(revision 21299)
++++ frameworks/base/services/core/java/com/android/server/policy/PhoneWindowManager.java	(working copy)
+@@ -166,13 +166,13 @@
+ public class PhoneWindowManager implements WindowManagerPolicy {
+     static final String TAG = "WindowManager";
+     /// M: runtime switch debug flags @{
+-    static boolean DEBUG = false;
+-    static boolean localLOGV = false;
+-    static boolean DEBUG_INPUT = false;
+-    static boolean DEBUG_KEYGUARD = false;
+-    static boolean DEBUG_LAYOUT = false;
+-    static boolean DEBUG_STARTING_WINDOW = false;
+-    static boolean DEBUG_WAKEUP = false;
++    static boolean DEBUG = true;
++    static boolean localLOGV = true;
++    static boolean DEBUG_INPUT = true;
++    static boolean DEBUG_KEYGUARD = true;
++    static boolean DEBUG_LAYOUT = true;
++    static boolean DEBUG_STARTING_WINDOW = true;
++    static boolean DEBUG_WAKEUP = true;
+     /// @}
+     static final boolean SHOW_STARTING_ANIMATIONS = true;
+     static final boolean SHOW_PROCESSES_ON_ALT_MENU = false;
+@@ -221,6 +221,10 @@
+     static public final String SYSTEM_DIALOG_REASON_HOME_KEY = "homekey";
+     static public final String SYSTEM_DIALOG_REASON_ASSIST = "assist";
+ 
++    //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++    protected NavigationBarPolicy mNavigationBarPolicy;
++    //*/
++
+     /**
+      * These are the system UI flags that, when changing, can cause the layout
+      * of the screen to change.
+@@ -1583,26 +1587,17 @@
+                     }
+                     @Override
+                     public void onSwipeFromBottom() {
+-                        //*/ freeme.xupeng, 20150113. NavigationBar Show/Hide.
+-                        Slog.i(TAG, "mShowNavigationBarEnable:" + mShowNavigationBarEnable
+-                            + ", isGestureIsolated(): " + isGestureIsolated()
+-                            + ", canShowNavigationBar(): " + canShowNavigationBar()
+-                            + ", mNavigationBarShowed:" + mNavigationBarShowed
+-                            + ", isKeyguardTop()" + isKeyguardTop());
+-                        if (!mShowNavigationBarEnable) {
+-                            return;
+-                        }
+-                        //*/
+-
+                         /// M: Disable gesture in immersive mode.
+                         if (isGestureIsolated())
+                             return;
+ 
+                         //*/ freeme.Linguanrong, 20150706. NavigationBar Show/Hide.
+-                        if (canShowNavigationBar()) {
+-                            showNavigationBar(0);
+-                            return;
+-                        }
++                        //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++                        // change to gesture on navigationbar policy.
++//                        if (canShowNavigationBar()) {
++//                            showNavigationBar(0);
++//                            return;
++//                        }
+                         //*/
+ 
+                         if (mNavigationBar != null && mNavigationBarOnBottom) {
+@@ -1616,10 +1611,12 @@
+                             return;
+ 
+                         //*/ freeme.Linguanrong, 20150706. NavigationBar Show/Hide.
+-                        if (canShowNavigationBar()) {
+-                            showNavigationBar(1);
+-                            return;
+-                        }
++                        //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++                        // change to gesture on navigationbar policy.
++//                        if (canShowNavigationBar()) {
++//                            showNavigationBar(1);
++//                            return;
++//                        }
+                         //*/
+ 
+                         if (mNavigationBar != null && !mNavigationBarOnBottom) {
+@@ -1715,12 +1712,14 @@
+ 
+         //*/ freeme.Linguanrong, 2015-07-08. NavigationBar Show/Hide.
+         mShowNavigationBarEnable = ("1".equals(SystemProperties.get("ro.tyd_show_navigationbar")));
+-        mFullscreenShowDef = Settings.System.getInt(mContext.getContentResolver(),
+-                Settings.System.FREEME_FULLSCREEN_NVBAR_SHOW_DEF, 0) != 0;
+-
+-        mNavigationBarShowHideBar = Settings.System.getInt(mContext.getContentResolver(),
+-                Settings.System.FREEME_NAVIGATIONBAR_CAN_HIDE, 0) != 0;
+-
++        //*/ freeeme.zhiwei, useless.
++//        mFullscreenShowDef = Settings.System.getInt(mContext.getContentResolver(),
++//                Settings.System.FREEME_FULLSCREEN_NVBAR_SHOW_DEF, 0) != 0;
++        //*/ freeme.zhiwei, no one care this condition.
++//        mNavigationBarShowHideBar = Settings.System.getInt(mContext.getContentResolver(),
++//                Settings.System.FREEME_NAVIGATIONBAR_CAN_HIDE, 0) != 0;
++        //*/
++        //*/ freeeme.zhiwei, why?
+         mNavigationBarWasShowed = Settings.System.getInt(mContext.getContentResolver(),
+                 Settings.System.FREEME_NAVIGATIONBAR_SHOWED, 0) != 0;
+         //*/
+@@ -1822,7 +1821,8 @@
+         //*/ freeme.Linguanrong, 20151127. NavigationBar Show/Hide.
+         // Deprecated SystemProperties.get("qemu.hw.mainkeys") for mHasNavigationBar
+         // SystemProperties.get("ro.tyd_show_navigationbar"
+-        mHasNavigationBar = false;
++        // freeme: zhiwei, donot do this
++//        mHasNavigationBar = false;
+         //*/
+ 
+         // For demo purposes, allow the rotation of the HDMI display to be controlled.
+@@ -1860,8 +1860,8 @@
+      */
+     private boolean canHideNavigationBar() {
+         //*/ freeme.Linguanrong, 20150706. NavigationBar Show/Hide.
+-        return (mHasNavigationBar || translucentNavigationBar())
+-        /*/
++        // freeme.zhiwei, why?
++//        return (mHasNavigationBar || translucentNavigationBar())
+         return mHasNavigationBar
+         //*/
+                 && !mAccessibilityManager.isTouchExplorationEnabled();
+@@ -1957,15 +1957,17 @@
+             if (mShowNavigationBarEnable) {
+                 mNavigationBarShowed = Settings.System.getInt(mContext.getContentResolver(),
+                         Settings.System.FREEME_NAVIGATIONBAR_SHOWED, 0) != 0;
+-
+-                mFullscreenShowDef = Settings.System.getInt(mContext.getContentResolver(),
+-                        Settings.System.FREEME_FULLSCREEN_NVBAR_SHOW_DEF, 0) != 0;
++                //*/ freeeme.zhiwei, useless.
++//                mFullscreenShowDef = Settings.System.getInt(mContext.getContentResolver(),
++//                        Settings.System.FREEME_FULLSCREEN_NVBAR_SHOW_DEF, 0) != 0;
++                //*/
+ 
+                 mNavigationBarWasShowed = Settings.System.getInt(mContext.getContentResolver(),
+                         WAS_SHOW_NAVIGATIONBAR, 1) != 0;
+                 if (!mNavigationBarShowed) {
+                     //removeWindowLw(mNavigationBar);
+-                    mNavigationBar = null;
++                    // freeme: zhiwei. useless
++//                    mNavigationBar = null;
+                     //mNavigationBarController.setWindow(null);
+                 }
+ 
+@@ -2415,13 +2417,18 @@
+     public int getNonDecorDisplayWidth(int fullWidth, int fullHeight, int rotation) {
+         //*/ freeme.Linguanrong, 20160414. NavigationBar - inputmethod.
+         // freeme.xupeng 20160401, fix bug input method covered by navigationbar.
+-        if (mHasNavigationBar || (mInputMethodShow && mNavigationBarShowed && mImeLandscape)) {
+-        /*/
++        // freeme.zhiwei, why?
++//        if (mHasNavigationBar || (mInputMethodShow && mNavigationBarShowed && mImeLandscape)) {
+         if (mHasNavigationBar) {
+         //*/
+             // For a basic navigation bar, when we are in landscape mode we place
+             // the navigation bar to the side.
+             if (mNavigationBarCanMove && fullWidth > fullHeight) {
++                //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++                if (mShowNavigationBarEnable && isNaviBarMini()) {
++                    return fullWidth;
++                }
++                //*/
+                 return fullWidth - mNavigationBarWidthForRotation[rotation];
+             }
+         }
+@@ -2434,6 +2441,11 @@
+             // For a basic navigation bar, when we are in portrait mode we place
+             // the navigation bar to the bottom.
+             if (!mNavigationBarCanMove || fullWidth < fullHeight) {
++                //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++                if (mShowNavigationBarEnable && isNaviBarMini()) {
++                    return fullHeight;
++                }
++                //*/
+                 return fullHeight - mNavigationBarHeightForRotation[rotation];
+             }
+         }
+@@ -2737,6 +2749,12 @@
+             if (mNavigationBarOnBottom) {
+                 if (transit == TRANSIT_EXIT
+                         || transit == TRANSIT_HIDE) {
++                    //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++                    // Do not show hide animation while opening features.
++                    if (mShowNavigationBarEnable) {
++                        return 0;
++                    }
++                    //*/
+                     return R.anim.dock_bottom_exit;
+                 } else if (transit == TRANSIT_ENTER
+                         || transit == TRANSIT_SHOW) {
+@@ -2745,6 +2763,12 @@
+             } else {
+                 if (transit == TRANSIT_EXIT
+                         || transit == TRANSIT_HIDE) {
++                    //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++                    // Do not show hide animation while opening features.
++                    if (mShowNavigationBarEnable) {
++                        return 0;
++                    }
++                    //*/
+                     return R.anim.dock_right_exit;
+                 } else if (transit == TRANSIT_ENTER
+                         || transit == TRANSIT_SHOW) {
+@@ -3824,6 +3848,37 @@
+                 | WindowManager.LayoutParams.FLAG_LAYOUT_IN_OVERSCAN)) != 0;
+     }
+ 
++    private boolean computeNaviBarFlag() {
++        boolean navFlag = true;
++        WindowManager.LayoutParams attrs = mFocusedWindow != null ? mFocusedWindow.getAttrs() : null;
++        int type = attrs != null ? attrs.type : 0;
++        Log.d("zhiwei", "zhiwei navVisible4 is " + navFlag + "  " + type);
++        if (mStatusBar == mFocusedWindow) {
++            navFlag = false;
++            if (keyguardOn()) navFlag = true;
++            Log.d("zhiwei", "zhiwei navVisible5 is " + navFlag);
++        } else if (type != TYPE_KEYGUARD_DIALOG || !keyguardOn()) {
++            Log.d("zhiwei", "zhiwei navVisible6 is " + navFlag);
++            if (type == TYPE_DREAM) {
++                navFlag = false;
++                Log.d("zhiwei", "zhiwei navVisible7 is " + navFlag);
++            } else if (type != TYPE_KEYGUARD &&
++                    !(attrs != null &&
++                            (attrs.privateFlags & WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS) != 0)) {
++//		        if ((isNavibarHide) && !mInputMethodWindowVisible) {
++//		            return navFlag;
++//		        }
++
++                navFlag = false;
++                Log.d("zhiwei", "zhiwei navVisible8 is " + navFlag);
++
++            }
++        }
++        Log.d("zhiwei", "zhiwei navVisible9 is " + navFlag);
++
++        return navFlag;
++    }
++
+     /** {@inheritDoc} */
+     @Override
+     public void beginLayoutLw(boolean isDefaultDisplay, int displayWidth, int displayHeight,
+@@ -3937,11 +3992,24 @@
+             // decided that it can't be hidden (because of the screen aspect ratio),
+             // then take that into account.
+             navVisible |= !canHideNavigationBar();
++            Log.d("zhiwei", "zhiwei navVisible1 is " + navVisible);
+ 
+-            //*/ freeme.Linguanrong, 20150708. NavigationBar Show/Hide.
+-            if (hideNavigationBar()) {
+-                navVisible = !isKeyguardLocked() && mNavigationBarShowed && !mIsAlarmBoot;
++            if (navVisible && mShowNavigationBarEnable) {
++                boolean navBarFlag = computeNaviBarFlag();
++                Log.d("zhiwei", "zhiwei navVisible2 is " + navBarFlag);
++                if (navVisible && !navBarFlag) {
++                    navVisible = true;
++                } else {
++                    navVisible = false;
++                }
+             }
++            Log.d("zhiwei", "zhiwei navVisible3 is " + navVisible);
++
++            //*/ freeme.Linguanrong, 20150708. NavigationBar Show/Hide.
++            // freeme.zhiwei, 20160801. for navigationbar reconstruct.donot change the meanings of navisible.
++//            if (hideNavigationBar()) {
++//                navVisible = !isKeyguardLocked() && mNavigationBarShowed && !mIsAlarmBoot;
++//            }
+             //*/
+ 
+             boolean updateSysUiVisibility = false;
+@@ -3957,19 +4025,41 @@
+                     int top = displayHeight - overscanBottom
+                             - mNavigationBarHeightForRotation[displayRotation];
+                     //*/ freeme.Linguanrong, 20150708. NavigationBar Show/Hide.
+-                    if (hideNavigationBar()) {
+-                        top += mNavigationBarHeightForRotation[displayRotation];
+-                    }
++                    // freeme.zhiwei, donot change navFrame, just modify stable, dock, system.
++//                    if (hideNavigationBar()) {
++//                        top += mNavigationBarHeightForRotation[displayRotation];
++//                    }
+                     //*/
+                     mTmpNavigationFrame.set(0, top, displayWidth, displayHeight - overscanBottom);
+-                    mStableBottom = mStableFullscreenBottom = mTmpNavigationFrame.top;
++                    //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++                    if (mShowNavigationBarEnable && isNaviBarMini()) {
++                        // Originally, stable frame is not affected by NaviBar's visibility.
++                        // But now, stable frame is affected by whether NaviBar is Mini.
++                        mStableBottom = mStableFullscreenBottom = displayHeight - overscanBottom;// - mNavigationBarHeightForRotation[displayRotation];
++                    } else {
++                        mStableBottom = mStableFullscreenBottom = mTmpNavigationFrame.top;
++                    }
++                    //*/
+                     if (transientNavBarShowing) {
+                         mNavigationBarController.setBarShowingLw(true);
+                     } else if (navVisible) {
++                        //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++                        if (mNavigationBarController.isTransientHiding()) {
++                            mNavigationBarController.setTransientBarState(0);
++                        }
++                        //*/
+                         /// M: Add condition.
+                         if (!mIsAlarmBoot && !mIsShutDown) {
+                             mNavigationBarController.setBarShowingLw(true);
+-                            mDockBottom = mTmpNavigationFrame.top;
++                            //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++                            // If NaviBar is Mini, dock bottom is down actually, but we can not modify mTmpNavigationFrame.top.
++                            // It seems fake.
++                            if (mShowNavigationBarEnable && isNaviBarMini()) {
++                                mDockBottom = displayHeight - overscanBottom;
++                            } else {
++                                mDockBottom = mTmpNavigationFrame.top;
++                            }
++                            //*/
+                             mRestrictedScreenHeight = mDockBottom - mRestrictedScreenTop;
+                             mRestrictedOverscanScreenHeight
+                                     = mDockBottom - mRestrictedOverscanScreenTop;
+@@ -3980,33 +4070,62 @@
+                     }
+                     if (navVisible && !navTranslucent && !navAllowedHidden
+                             //*/ freeme.Linguanrong, 20150708. NavigationBar Show/Hide.
+-                            && mNavigationBar != null
++                            // freeme.zhiwei, useless.
++//                            && mNavigationBar != null
+                             //*/
+                             && !mNavigationBar.isAnimatingLw()
+                             && !mNavigationBarController.wasRecentlyTranslucent()) {
+                         // If the opaque nav bar is currently requested to be visible,
+                         // and not in the process of animating on or off, then
+                         // we can tell the app that it is covered by it.
+-                        mSystemBottom = mTmpNavigationFrame.top;
++                        //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++                        if (mShowNavigationBarEnable && isNaviBarMini()) {
++                            mSystemBottom = displayHeight - overscanBottom;
++                        } else {
++                            mSystemBottom = mTmpNavigationFrame.top;
++                        }
++                        //*/
+                     }
+                 } else {
+                     // Landscape screen; nav bar goes to the right.
+                     int left = displayWidth - overscanRight
+                             - mNavigationBarWidthForRotation[displayRotation];
+                     //*/ freeme.Linguanrong, 20150708. NavigationBar Show/Hide.
+-                    if (hideNavigationBar()) {
+-                        left += mNavigationBarWidthForRotation[displayRotation];
+-                    }
++                    // freeme.zhiwei, donot change navFrame, just modify stable, dock, system.
++//                    if (hideNavigationBar()) {
++//                        left += mNavigationBarWidthForRotation[displayRotation];
++//                    }
+                     //*/
+                     mTmpNavigationFrame.set(left, 0, displayWidth - overscanRight, displayHeight);
+-                    mStableRight = mStableFullscreenRight = mTmpNavigationFrame.left;
++                    //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++                    // Originally, stable frame is not affected by NaviBar's visibility.
++                    // But now, stable frame is affected by whether NaviBar is Mini.
++                    if (mShowNavigationBarEnable && isNaviBarMini()) {
++                        mStableRight = mStableFullscreenRight = displayWidth - overscanRight;//- getNaviBarWidthForRotation(displayRotation);
++                    } else {
++                        mStableRight = mStableFullscreenRight = mTmpNavigationFrame.left;
++                    }
++                    //*/
+                     if (transientNavBarShowing) {
+                         mNavigationBarController.setBarShowingLw(true);
+                     } else if (navVisible) {
++                        //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++                        if (mNavigationBarController.isTransientHiding()) {
++                            mNavigationBarController.setTransientBarState(0);
++                        }
++                        //*/
+                         /// M: Add condition.
+                         if (!mIsAlarmBoot && !mIsShutDown) {
+                             mNavigationBarController.setBarShowingLw(true);
+-                            mDockRight = mTmpNavigationFrame.left;
++                            //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++                            // If NaviBar is Mini, dock right is to edge actually, but we can not modify mTmpNavigationFrame.top.
++                            // It seems fake.
++                            if (mShowNavigationBarEnable && isNaviBarMini()) {
++                                mDockRight = displayWidth - overscanRight;
++                            } else {
++                                mDockRight = mTmpNavigationFrame.left;
++                            }
++                            //*/
+                             mRestrictedScreenWidth = mDockRight - mRestrictedScreenLeft;
+                             mRestrictedOverscanScreenWidth
+                                     = mDockRight - mRestrictedOverscanScreenLeft;
+@@ -4017,14 +4136,21 @@
+                     }
+                     if (navVisible && !navTranslucent && !navAllowedHidden
+                             //*/ freeme.Linguanrong, 20150708. NavigationBar Show/Hide.
+-                            && mNavigationBar != null
++                            // freeme.zhiwei, useless.
++//                            && mNavigationBar != null
+                             //*/
+                             && !mNavigationBar.isAnimatingLw()
+                             && !mNavigationBarController.wasRecentlyTranslucent()) {
+                         // If the nav bar is currently requested to be visible,
+                         // and not in the process of animating on or off, then
+                         // we can tell the app that it is covered by it.
+-                        mSystemRight = mTmpNavigationFrame.left;
++                        //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++                        if (mShowNavigationBarEnable && isNaviBarMini()) {
++                            mSystemRight = displayWidth - overscanRight;
++                        } else {
++                            mSystemRight = mTmpNavigationFrame.left;
++                        }
++                        //*/
+                     }
+                 }
+                 // Make sure the content and current rectangles are updated to
+@@ -4034,7 +4160,8 @@
+                 mContentLeft = mVoiceContentLeft = mCurLeft = mDockLeft;
+                 mContentRight = mVoiceContentRight = mCurRight = mDockRight;
+                 //*/ freeme.Linguanrong, 20150708. NavigationBar Show/Hide.
+-                if (mNavigationBar != null) {
++                // freeme.zhiwei, useless.
++//                if (mNavigationBar != null) {
+                 //*/
+                 mStatusBarLayer = mNavigationBar.getSurfaceLayer();
+                 // And compute the final frame.
+@@ -4042,7 +4169,8 @@
+                         mTmpNavigationFrame, mTmpNavigationFrame, mTmpNavigationFrame, dcf,
+                         mTmpNavigationFrame, mTmpNavigationFrame);
+                 //*/ freeme.Linguanrong, 20150708. NavigationBar Show/Hide.
+-                }
++                // freeme.zhiwei, useless.
++//                }
+                 //*/
+                 if (DEBUG_LAYOUT) Slog.i(TAG, "mNavigationBar frame: " + mTmpNavigationFrame);
+                 if (mNavigationBarController.checkHiddenLw()) {
+@@ -4235,9 +4363,10 @@
+         }
+         final WindowManager.LayoutParams attrs = win.getAttrs();
+         //*/ freeme.Linguanrong, 20150708. NavigationBar Show/Hide.
+-        if(attrs.type == TYPE_NAVIGATION_BAR && mShowNavigationBarEnable) {
+-            return;
+-        }
++		// freeme.zhiwei, useless.
++//        if(attrs.type == TYPE_NAVIGATION_BAR && mShowNavigationBarEnable) {
++//            return;
++//        }
+         //*/
+ 
+         final boolean isDefaultDisplay = win.isDefaultDisplay();
+@@ -4263,14 +4392,20 @@
+         dcf.setEmpty();
+ 
+         //*/ freeme.Linguanrong, 20150708. NavigationBar Show/Hide.
+-        final boolean hasNavBar = (isDefaultDisplay && /*mHasNavigationBar*/mNavigationBarShowed
+-        /*/
++        // freeme.zhiwei, do not change meaning of hasNavbar.
++//        final boolean hasNavBar = (isDefaultDisplay && /*mHasNavigationBar*/mNavigationBarShowed
++        //*/
+         final boolean hasNavBar = (isDefaultDisplay && mHasNavigationBar
+         //*/
+                 && mNavigationBar != null && mNavigationBar.isVisibleLw());
+ 
+         final int adjust = sim & SOFT_INPUT_MASK_ADJUST;
+ 
++        //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++        boolean needDrawColor = mShowNavigationBarEnable &&
++                (attrs.privateFlags & WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS) != 0;
++        //*/
++
+         if (isDefaultDisplay) {
+             sf.set(mStableLeft, mStableTop, mStableRight, mStableBottom);
+         } else {
+@@ -4294,21 +4429,26 @@
+         } else if (attrs.type == TYPE_INPUT_METHOD) {
+             pf.left = df.left = of.left = cf.left = vf.left = mDockLeft;
+             //*/ freeme.Linguanrong, 20150708. NavigationBar Show/Hide.
+-            int threshold = (mNavigationBarShowed && mNavigationBarOnBottom)
+-                    ? mNavigationBarHeightForRotation[mPortraitRotation] : 0;
+-            pf.top = df.top = of.top = cf.top = vf.top = mDockTop - threshold;
+-            /*/
++            // freeme.zhiwei, no need to modify top frame.
++//            int threshold = (mNavigationBarShowed && mNavigationBarOnBottom)
++//                    ? mNavigationBarHeightForRotation[mPortraitRotation] : 0;
++//            pf.top = df.top = of.top = cf.top = vf.top = mDockTop - threshold;
+             pf.top = df.top = of.top = cf.top = vf.top = mDockTop;
+-            //*/
+             pf.right = df.right = of.right = cf.right = vf.right = mDockRight;
+             // IM dock windows layout below the nav bar...
+-            //*/ freeme.Linguanrong, 20150708. NavigationBar Show/Hide.
+-            pf.bottom = df.bottom = of.bottom = mUnrestrictedScreenTop + mUnrestrictedScreenHeight - threshold;
+-            /*/
+-            pf.bottom = df.bottom = of.bottom = mUnrestrictedScreenTop + mUnrestrictedScreenHeight;
++            //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++            // Input window's frame is affected by whether NaviBar is Mini.
++            if (mShowNavigationBarEnable) {
++                pf.bottom = df.bottom = of.bottom = mDockBottom;
++                // ...with content insets above the nav bar
++                cf.bottom = vf.bottom = mDockBottom;
++            } else {
++                pf.bottom = df.bottom = of.bottom = mUnrestrictedScreenTop + mUnrestrictedScreenHeight;
++                // ...with content insets above the nav bar
++                cf.bottom = vf.bottom = mStableBottom;
++            }
+             //*/
+-            // ...with content insets above the nav bar
+-            cf.bottom = vf.bottom = mStableBottom;
++
+             // IM dock windows always go to the bottom of the screen.
+             attrs.gravity = Gravity.BOTTOM;
+             mDockLayer = win.getSurfaceLayer();
+@@ -4355,10 +4495,11 @@
+                     // Ensure policy decor includes status bar
+                     dcf.top = mStableTop;
+                 }
++                
+                 if ((fl & WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION) == 0
+                         && (sysUiFl & View.SYSTEM_UI_FLAG_HIDE_NAVIGATION) == 0
+                         && (fl & WindowManager.LayoutParams.
+-                                FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS) == 0) {
++                                FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS) == 0) {//TODO
+                     // Ensure policy decor includes navigation bar
+                     dcf.bottom = mStableBottom;
+                     dcf.right = mStableRight;
+@@ -4416,7 +4557,11 @@
+                             /// M:[ALPS01186390]Fix IPO flash issue
+                             && (attrs.type == TYPE_TOP_MOST || (
+                                attrs.type >= WindowManager.LayoutParams.FIRST_APPLICATION_WINDOW
+-                            && attrs.type <= WindowManager.LayoutParams.LAST_SUB_WINDOW))) {
++                            && attrs.type <= WindowManager.LayoutParams.LAST_SUB_WINDOW))
++                            || needDrawColor) {
++                        //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++                        // add needDrawColor
++
+                         // Asking for layout as if the nav bar is hidden, lets the
+                         // application extend into the unrestricted overscan screen area.  We
+                         // only do this for application windows to ensure no window that
+@@ -4467,6 +4612,12 @@
+                                 cf.bottom = mContentBottom;
+                             }
+                         }
++                        //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++                        if ((!win.hasDrawnLw() || mStatusBarController != null
++                                && mStatusBarController.checkShowTransientBarLw())) {
++                            cf.top = mUnrestrictedScreenTop + mStatusBarHeight;
++                        }
++                        //*/
+                     } else {
+                         // Full screen windows are always given a layout that is as if the
+                         // status bar and other transient decors are gone.  This is to avoid
+@@ -4477,6 +4628,11 @@
+                         cf.right = mRestrictedScreenLeft + mRestrictedScreenWidth;
+                         cf.bottom = mRestrictedScreenTop + mRestrictedScreenHeight;
+                     }
++                    //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++                    if (needDrawColor) {
++                        cf.bottom = mUnrestrictedScreenTop + mUnrestrictedScreenHeight;
++                    }
++                    //*/
+                     applyStableConstraints(sysUiFl, fl, cf);
+                     if (adjust != SOFT_INPUT_ADJUST_NOTHING) {
+                         vf.left = mCurLeft;
+@@ -4581,7 +4737,16 @@
+                             + mUnrestrictedScreenWidth;
+                     pf.bottom = df.bottom = of.bottom = cf.bottom = mUnrestrictedScreenTop
+                             + mUnrestrictedScreenHeight;
+-                } else {
++                }//*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++                else if (needDrawColor) {
++                    pf.left = df.left = of.left = cf.left = mUnrestrictedScreenLeft;
++                    pf.top = df.top = of.top = cf.top = mUnrestrictedScreenTop;
++                    pf.right = df.right = of.right = cf.right = mUnrestrictedScreenLeft
++                            + mUnrestrictedScreenWidth;
++                    pf.bottom = df.bottom = of.bottom = cf.bottom = mUnrestrictedScreenTop
++                            + mUnrestrictedScreenHeight;
++                }//*/
++                else {
+                     pf.left = df.left = of.left = cf.left = mRestrictedScreenLeft;
+                     pf.top = df.top = of.top = cf.top = mRestrictedScreenTop;
+                     pf.right = df.right = of.right = cf.right = mRestrictedScreenLeft
+@@ -4611,6 +4776,7 @@
+                         "): normal window");
+                 // Otherwise, a normal window must be placed inside the content
+                 // of all screen decorations.
++                //TODO
+                 if (attrs.type == TYPE_STATUS_BAR_PANEL || attrs.type == TYPE_VOLUME_OVERLAY) {
+                     // Status bar panels and the volume dialog are the only windows who can go on
+                     // top of the status bar.  They are protected by the STATUS_BAR_SERVICE
+@@ -4660,6 +4826,15 @@
+                 }
+             }
+         }
++        //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++        if (needDrawColor && attrs.type == TYPE_KEYGUARD) {
++            vf.top = cf.top = 0;
++            vf.bottom = cf.bottom = pf.bottom;
++        }
++        if (needDrawColor/* || (isNavibarHide)*/) {
++            vf.bottom = cf.bottom = dcf.bottom = pf.bottom;
++        }
++        //*/
+ 
+         // TYPE_SYSTEM_ERROR is above the NavigationBar so it can't be allowed to extend over it.
+         if ((fl & FLAG_LAYOUT_NO_LIMITS) != 0 && attrs.type != TYPE_SYSTEM_ERROR) {
+@@ -4787,9 +4962,10 @@
+                 + win.isVisibleOrBehindKeyguardLw());
+ 
+         //*/ freeme.Linguanrong, 20160414. NavigationBar - inputmethod.
+-        if (attrs.type == TYPE_INPUT_METHOD) {
+-            mInputMethodShow = win.isVisibleOrBehindKeyguardLw();
+-        }
++		// freeme.zhiwei, why?
++//        if (attrs.type == TYPE_INPUT_METHOD) {
++//            mInputMethodShow = win.isVisibleOrBehindKeyguardLw();
++//        }
+         //*/
+ 
+         final int fl = PolicyControl.getWindowFlags(win, attrs);
+@@ -5019,14 +5195,15 @@
+             }
+             mTopIsFullscreen = topIsFullscreen;
+             //*/ freeme.Linguanrong, 20160414. NavigationBar - inputmethod.
+-            if (mShowNavigationBarEnable) {
+-                if (!mFullscreenShowDef) {
+-                    boolean hide = mTopIsFullscreen && !isTargetApp();
+-                    Settings.System.putInt(mContext.getContentResolver(),
+-                            Settings.System.FREEME_NAVIGATIONBAR_SHOWED,
+-                            hide ? 0 : (mNavigationBarWasShowed ? 1 : 0));
+-                }
+-            }
++            // freeme.zhiwei, uesless
++//            if (mShowNavigationBarEnable) {
++//                if (!mFullscreenShowDef) {
++//                    boolean hide = mTopIsFullscreen && !isTargetApp();
++//                    Settings.System.putInt(mContext.getContentResolver(),
++//                            Settings.System.FREEME_NAVIGATIONBAR_SHOWED,
++//                            hide ? 0 : (mNavigationBarWasShowed ? 1 : 0));
++//                }
++//            }
+             //*/
+         }
+ 
+@@ -6317,7 +6494,10 @@
+         }
+     }
+ 
+-    private boolean isKeyguardShowingAndNotOccluded() {
++    //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++    //private boolean isKeyguardShowingAndNotOccluded() {
++    public boolean isKeyguardShowingAndNotOccluded() {
++    //*/
+         if (mKeyguardDelegate == null) return false;
+         return mKeyguardDelegate.isShowing() && !mKeyguardOccluded;
+     }
+@@ -6599,7 +6779,8 @@
+     @Override
+     public void setRotationLw(int rotation) {
+         //*/ freeme.Linguanrong, 20160414. NavigationBar - inputmethod.
+-        mImeLandscape = (rotation == Surface.ROTATION_90);// landscape of rotation = 1
++        // freeme,zhiwei, why?
++//        mImeLandscape = (rotation == Surface.ROTATION_90);// landscape of rotation = 1
+         //*/
+         mOrientationListener.setCurrentRotation(rotation);
+     }
+@@ -6710,6 +6891,20 @@
+             mKeyguardDelegate.bindService(mContext);
+             mKeyguardDelegate.onBootCompleted();
+         }
++
++        //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++        if (mShowNavigationBarEnable) {
++            mNavigationBarPolicy = new NavigationBarPolicy(mContext, ((PhoneWindowManager) this));
++            mWindowManagerFuncs.registerPointerEventListener(
++                    new WindowManagerPolicy.PointerEventListener() {
++                        public void onPointerEvent(MotionEvent motionEvent) {
++                            if (mNavigationBarPolicy != null) {
++                                mNavigationBarPolicy.addPointerEvent(motionEvent);
++                            }
++                        }
++                    });
++        }
++        //*/
+     }
+ 
+     /** {@inheritDoc} */
+@@ -8170,9 +8365,12 @@
+     private final static String WAS_SHOW_NAVIGATIONBAR = "was_show_navigationbar";
+ 
+     private boolean mNavigationBarShowed = false;
+-    private boolean mShowNavigationBarEnable = false;
+-    private boolean mFullscreenShowDef = false;
+-    private boolean mNavigationBarShowHideBar = false;
++    public boolean mShowNavigationBarEnable = false;
++    //*/ freeeme.zhiwei, useless.
++//    private boolean mFullscreenShowDef = false;
++    //*/ freeme.zhiwei, no one care this condition.
++//    private boolean mNavigationBarShowHideBar = false;
++    //*/
+     private boolean mNavigationBarWasShowed = false;
+     // freeme.Linguanrong, 20160414. NavigationBar - inputmethod.
+     private boolean mInputMethodShow;
+@@ -8185,9 +8383,11 @@
+                 int orientation = mContext.getResources().getConfiguration().orientation;
+                 if ((from == 0 && orientation == Configuration.ORIENTATION_PORTRAIT)
+                         || (from == 1 && orientation == Configuration.ORIENTATION_LANDSCAPE)) {
+-                    if (!mFullscreenShowDef) {
+-                        Settings.System.putInt(mContext.getContentResolver(), WAS_SHOW_NAVIGATIONBAR, 1);
+-                    }
++                    //*/ freeeme.zhiwei, useless.
++//                    if (!mFullscreenShowDef) {
++//                        Settings.System.putInt(mContext.getContentResolver(), WAS_SHOW_NAVIGATIONBAR, 1);
++//                    }
++                    //*/
+ 
+                     try {
+                         IStatusBarService statusbar = getStatusBarService();
+@@ -8207,7 +8407,10 @@
+     }
+ 
+     private boolean canShowNavigationBar() {
+-        return !mNavigationBarShowed && mShowNavigationBarEnable && !isKeyguardTop();
++        //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++        //return !mNavigationBarShowed && mShowNavigationBarEnable && !isKeyguardTop();
++        return isNaviBarMini() && mShowNavigationBarEnable && !isKeyguardTop();
++        //*/
+     }
+ 
+     private boolean hideNavigationBar() {
+@@ -8228,6 +8431,18 @@
+         return mNavigationBarShowed && translucent_navigation;
+     }
+ 
++    //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++    public void updateNavigationBar(boolean minNaviBar) {
++        if (mNavigationBarPolicy != null) {
++            mNavigationBarPolicy.updateNavigationBar(minNaviBar);
++        }
++    }
++
++    public boolean isNaviBarMini() {
++        return mNavigationBarPolicy != null && mNavigationBarPolicy.mMinNavigationBar;
++    }
++    //*/
++
+     private boolean isTargetApp() {
+         WindowState win = mFocusedWindow != null ? mFocusedWindow : mTopFullscreenOpaqueWindowState;
+         if (win != null && win.getAttrs() != null) {
+Index: frameworks/base/services/core/java/com/android/server/wm/WindowManagerService.java
+===================================================================
+--- frameworks/base/services/core/java/com/android/server/wm/WindowManagerService.java	(revision 21299)
++++ frameworks/base/services/core/java/com/android/server/wm/WindowManagerService.java	(working copy)
+@@ -218,38 +218,38 @@
+     //*/
+     static final String TAG = "WindowManager";
+     /// M: Enable/Disable WMS log
+-    static boolean DEBUG = false;
+-    static boolean DEBUG_ADD_REMOVE = false;
+-    static boolean DEBUG_FOCUS = false;
++    static boolean DEBUG = true;
++    static boolean DEBUG_ADD_REMOVE = true;
++    static boolean DEBUG_FOCUS = true;
+     static boolean DEBUG_FOCUS_LIGHT = DEBUG_FOCUS || true;
+-    static boolean DEBUG_ANIM = false;
++    static boolean DEBUG_ANIM = true;
+     static boolean DEBUG_KEYGUARD = true;
+-    static boolean DEBUG_LAYOUT = false;
+-    static boolean DEBUG_RESIZE = false;
+-    static boolean DEBUG_LAYERS = false;
+-    static boolean DEBUG_INPUT = false;
+-    static boolean DEBUG_INPUT_METHOD = false;
+-    static boolean DEBUG_VISIBILITY = false;
+-    static boolean DEBUG_WINDOW_MOVEMENT = false;
+-    static boolean DEBUG_TOKEN_MOVEMENT = false;
+-    static boolean DEBUG_ORIENTATION = false;
+-    static boolean DEBUG_APP_ORIENTATION = false;
+-    static boolean DEBUG_CONFIGURATION = false;
+-    static boolean DEBUG_APP_TRANSITIONS = false;
+-    static boolean DEBUG_STARTING_WINDOW = false;
+-    static boolean DEBUG_WALLPAPER = false;
+-    static boolean DEBUG_WALLPAPER_LIGHT = false || DEBUG_WALLPAPER;
+-    static boolean DEBUG_DRAG = false;
++    static boolean DEBUG_LAYOUT = true;
++    static boolean DEBUG_RESIZE = true;
++    static boolean DEBUG_LAYERS = true;
++    static boolean DEBUG_INPUT = true;
++    static boolean DEBUG_INPUT_METHOD = true;
++    static boolean DEBUG_VISIBILITY = true;
++    static boolean DEBUG_WINDOW_MOVEMENT = true;
++    static boolean DEBUG_TOKEN_MOVEMENT = true;
++    static boolean DEBUG_ORIENTATION = true;
++    static boolean DEBUG_APP_ORIENTATION = true;
++    static boolean DEBUG_CONFIGURATION = true;
++    static boolean DEBUG_APP_TRANSITIONS = true;
++    static boolean DEBUG_STARTING_WINDOW = true;
++    static boolean DEBUG_WALLPAPER = true;
++    static boolean DEBUG_WALLPAPER_LIGHT = true || DEBUG_WALLPAPER;
++    static boolean DEBUG_DRAG = true;
+     static boolean DEBUG_SCREEN_ON = true;
+-    static boolean DEBUG_SCREENSHOT = false;
++    static boolean DEBUG_SCREENSHOT = true;
+     static boolean DEBUG_BOOT = true;
+     static boolean DEBUG_LAYOUT_REPEATS = true;
+-    static boolean DEBUG_SURFACE_TRACE = false;
+-    static boolean DEBUG_WINDOW_TRACE = false;
+-    static boolean DEBUG_TASK_MOVEMENT = false;
+-    static boolean DEBUG_STACK = false;
+-    static boolean DEBUG_DISPLAY = false;
+-    static boolean DEBUG_POWER = false;
++    static boolean DEBUG_SURFACE_TRACE = true;
++    static boolean DEBUG_WINDOW_TRACE = true;
++    static boolean DEBUG_TASK_MOVEMENT = true;
++    static boolean DEBUG_STACK = true;
++    static boolean DEBUG_DISPLAY = true;
++    static boolean DEBUG_POWER = true;
+     static boolean SHOW_SURFACE_ALLOC = false;
+     static boolean SHOW_TRANSACTIONS = false;
+     static boolean SHOW_LIGHT_TRANSACTIONS = false || SHOW_TRANSACTIONS;
+@@ -1156,10 +1156,35 @@
+         return mInputMonitor;
+     }
+ 
++    //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++    public static final int UPDATE_NAVIGATIONBAR = 99;
++    final Handler mDroiHandler = new Handler() {
++        public void handleMessage(Message msg) {
++            switch (msg.what) {
++                case UPDATE_NAVIGATIONBAR: {
++                    mPolicy.updateNavigationBar(msg.arg1 == 1 ? true : false);
++                    break;
++                }
++            }
++        }
++    };
++    //*/
++
+     @Override
+     public boolean onTransact(int code, Parcel data, Parcel reply, int flags)
+             throws RemoteException {
+         try {
++            //*/ freeme.zhiwei, 20160801. for navigationbar reconstruct.
++            switch (code) {
++                case 204:
++                    data.enforceInterface("android.view.IWindowManager");
++                    mDroiHandler.sendMessage(mDroiHandler.obtainMessage(99, data.readInt(), 0));
++                    reply.writeNoException();
++                    return true;
++                default:
++                    break;
++            }
++            //*/
+             return super.onTransact(code, data, reply, flags);
+         } catch (RuntimeException e) {
+             // The window manager only throws security exceptions, so let's

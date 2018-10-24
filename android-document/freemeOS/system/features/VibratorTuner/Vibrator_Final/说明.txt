@@ -1,0 +1,33 @@
+开关:
+   通过FeatrueOption中 ro.droi_freeme_vib_tuner 宏控制开关
+   vendor/droi/freeme/frameworks/base/core-export/java/com/droi/feature/FeatureOption.java
+
+集成：
+1. init.rc
+    vendor/droi/freeme/prebuilt/etc/init.freeme.rc
+2. vibrator.h
+	hardware/libhardware_legacy/include/hardware_legacy
+3. vibrator.c
+	hardware/libhardware_legacy/vibrator
+4. com_android_server_VibratorServce.cpp
+	frameworks/base/services/jni
+
+5. VibratorService.java
+	frameworks/base/services/java/com/android/server
+
+6. Settings.java
+	frameworks/base/core/java/android/provider
+
+7. DatabaseHelper.java
+	frameworks/base/packages/SettingsProvider/src/com/android/providers/settings
+8. defaults.xml
+	frameworks/base/packages/SettingsProvider/res/values
+
+9. Settings Apk
+	packages/apps/Settings/
+	注：
+		轻ROM修改AudioProfileSettings.java即可
+		重ROM修改Editprofile即可
+	
+10. Kernel Driver
+	kernel-3.18/drivers/misc/mediatek/vibrator/vibrator_drv.c

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+   
+   <!--Added by Linguanrong for FloatTask 20130828-->
+    <string name="floattask_settings">Float multitask window</string>
+    <string name="floattask_summary">Turn on or off float multitask</string>
+    <string name="quick_floattask_settings">Quick switch</string>
+    <string name="quick_floattask_summary">Long press the BACK key to turn on and off quickly</string>
+    <!--Linguanrong-->
+    
+    <!--add by tyd cch 20131029 for pocket mode  -->
+    <string name="pocket_ring_mode_text">Pocket mode</string>
+    <string name="pocket_ring_mode_info">The bell volume increase When a device is located in the pocket</string>
+    
+    <!-- tyd.biantao 20131105. tp glove mode. -->
+    <string name="tp_glove_mode_title">Glove mode</string>
+    <string name="tp_glove_mode_summary">After opening,you can wear gloves to touch screen</string>
+    <!-- tyd.biantao, 20131025. for non-touch operation -->
+    <string name="non_touch_opr_category">Non-touch operation</string>
+    
+    <!-- Added by huangyiquan 20140317 for touch-protect mode -->
+    <string name="screen_on_proximity_title">Touch-protect Mode</string>
+    <string name="screen_on_proximity_summary">The use of distance sensors, to prevent touch phone non-Autonomously in your pocket due to the squeeze or slide caused by fabric</string>
+    <!-- end by huangyiquan -->
+    
+    <!-- Added by tyd Greg 2013-10-24,for control smart wake -->
+    <string name="smart_wake_category">Smart wake</string>
+    <!-- for smart wakeup -->
+    <string name="smart_wakeup_settings">Smart light / off</string>
+    <!-- tyd -->
+    <!-- tyd.zhanglingzeng. for smart wakeup . -->
+    <string name="smart_keep_screen_enable_setting">Smart stay</string>
+    <string name="smart_keep_screen_enable_setting_tips">The screen will continue to light up when you are looking at it</string>
+    <string name="smart_wakeup_setting">Dblclick to light</string>
+    <string name="smart_wakeup_setting_tips">Double click to light up screen</string>
+    <string name="double_tap_home_wake_title">Double tap HOME wake up</string>
+    <string name="double_tap_home_wake_summary">Double tap HOME key to wake up</string>
+    <string name="double_tap_home_off_title">Double tap HOME lock screen</string>
+    <string name="double_tap_home_off_summary">Double tap HOME to quickly lock screen</string>
+    <!-- tyd -->
+    
+    <!-- Add  by tyd liuchao on 2015-04-13, for new stytle -->
+    <string name="system_settings_title">System</string>
+    <string name="date_time_settings_title">Date and Time</string>
+    <string name="gestures_operate">Gesture Operation</string>
+    <string name="intelligent_operate">Intelligent Operation</string>
+    <string name="accessibility_settings_ext_title">Accessibility settings</string>
+    <string name="bits">64 bits</string>
+   
+    <!-- tyd.zhanglingzeng 20140819. tp  mini screen mode begin -->
+    <string name="tp_mini_screen_title">Mini screen mode</string>
+    <string name="tp_mini_screen_summary">After opening, you can operate the mini screen with single hand</string>
+	<string name="tp_mini_screen_trigger_title">Touch-screen operation to open mini screen mode</string>
+	<string name="tp_mini_screen_trigger_summary">After opening, you could open mini screen mode by sliding inward from the right side of the screen and then sliding outwards, also you could close the mini screen mode by doing the same action in the mini screen window.</string>
+	<string name="tp_close_mini_screen">Please first close the mini screen mode.</string>
+	<string name="tp_mini_screen_close_magic_flinger">Please first close the magic flinger.</string>
+	<!-- tyd.zhanglingzeng 20140819. tp  mini screen mode end -->
+    <!-- Added by tyd mingjun 20150608, for freeme wifi -->
+    <string name="freeme_wifi_title">Free WiFi</string>
+    <string name="freeme_wifi_online_time">Free internet access </string>
+    <string name="freeme_wifi_low_speed_reasons">The following reasons lead to slow speed</string>
+    <string name="freeme_wifi_low_speed_reason_1">Many people at the same time connecting</string>
+    <string name="freeme_wifi_low_speed_reason_2">Far distance signal is weak focus</string>
+    <string name="freeme_wifi_low_speed_reason_3">Being in motion</string>
+    <string name="freeme_wifi_introductions">Free WiFi,provided by freeme os</string>
+    <string name="freeme_wifi_freemeintroductions">Free WiFi,provided by freeme os</string>
+    <string name="freeme_wifi_introduction_1">No password</string>
+    <string name="freeme_wifi_introduction_2">A key connection</string>
+    <string name="freeme_wifi_introduction_3">Cover more than 20000 places</string>
+     <string name="freeme_wifi_connect">Free WiFi connection</string>
+    <string name="freeme_wifi_disconnect">Disconnect</string>
+    <string name="freeme_wifi_settings">freemewifi settings</string>
+    <string name="freeme_wifi_settings_auto_share">To automatically share WiFi hotspots connected</string>
+    <string name="freeme_wifi_settings_auto_notify">There are available free of charge near WiFi remind</string>
+    <string name="freeme_wifi_show_connect">Is connecting for you...</string>
+    <string name="freeme_wifi_show_disconnect">Are you off...</string>
+    <string name="freeme_wifi_show_wifi_disable">Wifi has been shut down</string>
+    <string name="freeme_wifi_show_no_freewifi">There is no available free WiFi</string>
+    <string name="freeme_wifi_menu_connect">Manually enter the connection</string>
+    <string name="freeme_wifi_summary">Welcome to use free WiFi, freeme os provide you with Free and safe network environment</string>
+    <!-- end -->
+    
+    <!-- Add by tyd yuanchengye 20140815, for three pointer swipe action -->
+    <string name="three_pointer_take_screen_shot_title">Three pointer take screen shot</string>
+    <string name="three_pointer_take_screen_shot_summary">Any where, three pointer swipe down to take screen shot</string>
+    <string name="three_pointer_start_hotnot_title">Three pointer start hotnot</string>
+    <string name="three_pointer_start_hotnot_summary">Any where, three pointer swipe up to start hotnot</string>
+    <!-- end -->
+    
+    <!-- Added by tyd Linguanrong 20130816 for adjust settings menu-->
+    <string name="smart_somatosensory">Smart somatosensory</string>
+    <string name="reverse_silent">Reverse to mute</string>
+    <string name="reverse_silent_info">Reverse phone to mute the ringing call and the clock</string>
+    
+    <!-- Added by john for sim kit --> 
+    <string name="other_application_title">Application</string>
+    <string name="stk_selection_title">SIM Toolkit</string>
+    <string name="holiday_mode_title">Not Disturb Mode</string>
+    <string name="smart_dial_title">Smart Dial</string>
+    <string name="smart_dial_title_summary">Make a phone call when mobile phone rapid near the ear</string>
+    <string name="smart_answer_title">Smart Answer Call</string>
+    <string name="smart_answer_title_summary">Answering the phone when mobile phone rapid near the ear</string>
+    <string name="have_no_stk">No Application response</string>
+    <!--end  -->
+    
+    <!-- Added by sxp 20140716 for shake open app -->
+    <string name="shake_open_app">Shake to open app</string>
+    <string name="shake_open_app_settings">Setting app</string>
+    <string name="select_shake_open">Select</string>
+    <string name="shake_default_value">1</string>
+    <!-- end -->
+    
+    <!-- for magic track -->
+    <string name="pref_finger_particle_effects_title">Magic Thumb</string>
+    <string name="settings_now_particle_effects">Current effect:</string>
+    <string name="settings_particle_effects_hint">TiPS:Once opened, it may consume battery</string>
+    <string name="particle_effect_name_none">None</string>
+    <string name="particle_effect_name_random">Random</string>
+    <string name="particle_effect_name_heart">Heart</string>
+    <string name="particle_effect_name_stars">Stars</string>
+    <string name="particle_effect_name_heartbeat">Heartbeat</string>
+    <string name="particle_effect_name_halo">Halo</string>
+    
+    <!-- added by tyd Fuchenming 20130618 -->
+    <string name="festival_wallpaper">Festival Wallpaper</string>
+
+<!-- Add for Custom Ringtone by xiaocui on 2013-08-30 Start. -->
+    <string name="zzzz_ringtone_default_title">Default ringtone</string>
+    <string name="zzzz_ringtone_default_summary">Select default ringtone</string>
+    <string name="zzzz_ringtone_custom_title">Custom ringtone</string>
+    <string name="zzzz_ringtone_custom_summary">Select custom ringtone</string>
+    <string name="zzzz_sdcard_missing_title">No SD card</string>
+    <string name="zzzz_no_audio_file">No audio file</string>
+    <string name="apply">Apply</string>
+    <string name="state">Current</string>
+    <string name="notification_sound_summary">"Set your default notification ringtone"</string>
+    <!-- Add for Custom Ringtone by xiaocui on 2013-08-30 End. -->
+
+    <!--Add by tyd xiaocui 0723 for the system volume and media volume-->
+    <string name="volume_system_description_text">system</string>
+    
+    <!-- Add Ringtone for Messages Start -->
+    <string name="zzzz_sound_category_message_title">Messages</string>
+    <string name="zzzz_message_sound_title">Message ringtone</string>
+    <string name="zzzz_message_sound_summary">Set your default messages ringtone</string>
+    <!-- Add Ringtone for Messages End --> 
+    
+    <!-- Added by liuchao  for koobee account, 20150630 -->
+    <string name="login_account_koobee">koobee Account</string>
+    <!-- end -->
+    
+    <!-- Added by Jack 20130521 for, flash memory info -->
+    <string name="flash_system">Android</string>
+    <string name="flash_userdata">Flash Memory (Application and Data)</string>
+    <string name="flash_internal_sd">Internal Storage</string>
+    <string name="flash_shard_sdcard">Internal Storage</string>
+    <string name="flash_memory_detail">Storage Detail</string>
+    <string name="flash_memory_detail_summary">Choose default Storage and view Storage usage detail</string>
+    <string name="cpu_info">CPU</string>
+    <string name="flash_info">Flash Memory</string>
+    <string name="cpu_cores_freq" formatted="false">%s%.1fGHz</string>
+    <string name="cpu_cores_1"></string>
+    <string name="cpu_cores_2">Dual-Core</string>
+    <string name="cpu_cores_4">Quad-Core</string>
+    <string name="cpu_cores_6">6-Core</string>
+    <string name="cpu_cores_8">Eight-Core</string>
+    <string name="ram_info">RAM</string>
+    <string name="system_version">%1$s %2$s / Android %3$s</string> 
+    <!--string name="system_version">%1$s %2$s</string--> 
+    <!-- tyd -->
+
+    <!-- freeme.biantao, 20160612. Adb chooser. -->
+    <string name="adb_not_askagain">"Don't show again"</string>
+
+    <!-- Add by tyd Jack 20150114, for default_app_preferences -->
+    <string name="default_app_preferences">Default app settings</string>
+    <!-- end -->
+    
+    <!-- Added by liuchao, 20150707 -->
+    <string name="storage_battery_settings">Storage  &amp; Battery</string>
+    <string name="lock_pwd_title">Lock  &amp; Password</string>
+    <!-- end --> 
+    
+    <!-- Added by Jack 20121224 for, switch app aee/anr dialog -->
+    <string name="show_aee_dialog">Show App Errors</string>
+    <string name="show_aee_dialog_summary">Show App Error dialog</string>
+    <string name="show_anr_dialog">Show App ANRs</string>
+    <string name="show_anr_dialog_summary">Show App Not Responding dialog</string>
+    <!-- tyd -->
+    
+    <!-- Added by Jack 20150518 for, extreme low memory killer support -->
+    <string name="enable_extreme_lk">Extreme Low memory killer support</string>
+    <string name="enable_extreme_lk_summary">Turn on this option will be used to optimize the memory recycled, very few applications may run unstable</string>
+    <!-- tyd --> 
+    
+    <!-- Added by Linguanrong for supershot, 2015-06-15-->
+    <string name="supershot_title">ScreenShot setting</string>
+    <string name="supershot_summary">call supershot default</string>
+    <!--Tyd-->
+    
+    <!-- Added by tyd YuanChengye 20140317, for add oprerating instruction -->
+    <string name="usermanual_settings">Operating Instruction</string>
+    <!--Tyd-->
+    <!-- Add by tyd lipengfei 20150730 for sim setting -->
+    <string name="radio_control_sim_title">Network</string>
+    <string name="editor_sim_card_name">Editor SIM card name</string>
+    <string name="sim_card_info">SIM info</string>
+    <string name="sim_default_set">Default set</string>
+    <!-- tyd -->
+    
+    <!-- Added by tyd YuanChengye 20140317, for add sensor_calibration -->
+    <string name="sensor_calibration_title">Sensor Calibration</string>
+    <!-- added by tyd liuyong 20130826 for psensor-->
+    <string name="psensor_title">Proximity sensor calibration</string>
+    <string name="psensor_dlg_title">Note</string>
+    <string name="psensor_dlg_note">Calibration Proximity sensor ?</string>
+    <string name="psensor_calibration_success">Calibration complete</string>
+    <string name="psensor_calibration_fail">Calibration fail !</string>
+    <!-- Added by TYD Biantao, 2011/11/16. For adding Gsensor calibration. -->
+    <string name="g_sensor_title">Horizontal calibration</string>
+    <string name="g_sensor_summary">Calibrate horizontally using accelerometer</string>
+    <string name="gsensor_ready">Place device on a level surface and tap Calibrate</string>
+    <string name="gsensor_calibrating">Calibrating. Do not move device. Please wait...</string>
+    <string name="gsensor_end">Calibrated</string>
+    <string name="gsensor_end_width_failed">Calibrate failed</string>
+    <string name="gsensor_button1">Complete</string>
+    <string name="gsensor_button2">Calibrate</string>
+    
+    <!-- freeme.zhiwei.zhang, 20160818. NavigationBar Show/Hide.-->
+    <string name="navigationbar_settings">NavigationBar</string>
+    <string name="navigationbar_settings_tip">NavigationBar can hide</string>
+    <string name="navigationbar_settings_category">Select group of navigationbar</string>
+    <!--Tyd-->
+
+    <!--Add for SIM2 Ringtone by tyd xiaocui 2015-08-05-->
+    <string name="zzzz_ringtone_sim1_sound_summary">Set your sim1 ringtone</string>
+    <string name="zzzz_ringtone_sim2_sound_summary">Set your sim2 ringtone</string>
+    <string name="zzzz_message_sim1_sound_summary">Set your sim1 message ringtone</string>
+    <string name="zzzz_message_sim2_sound_summary">Set your sim2 message ringtone</string>
+    <!--Add for SIM2 Ringtone by tyd xiaocui 2015-08-05  end-->
+    
+    <!--Add for system update by tyd liuchao 2015-08-15-->
+    <string name="mtk_system_update">System Upgrade</string>
+    <!--Add for system update by tyd liuchao 2015-08-15 end-->
+
+    <string name="statusbar_settings">Status Bar Settings</string>
+
+    <!--Add for single screen by tyd jiangshouting  2015-08-25 start-->
+    <string name="common_dashboard_title">Common</string>
+    <!--Add for single screen by tyd jiangshouting 2015-08-25 end-->
+
+    <string name="share_freeme_item_title">"Share Freeme OS"</string>
+    <string name="share_freeme_extra_title">"Freeme OS 更省电的轻系统"</string>
+    <string name="share_freeme_extra_summary">"敢不敢来挑战？！我的手机是省电小公举！"</string>
+    <string name="share_freeme_extra_url">"http://weixin.droi.com/share/safe.html"</string>
+    <string name="share_freeme_extra_image_url">"http://weixin.droi.com/share/images/icon/icon_safe.png"</string>
+
+    <!--Modified by tyd xiaocui 2015-09-15 for 6.0 style audioprofile-->
+    <string name="sound_mode">sound mode</string>
+    <!-- Modified by tyd xiaocui 2015-09-15 for 6.0 style audioprofile end -->
+
+    <!--Modify by Jiangshouting 2015.12.29 for setting code transplant-->
+    <!-- Add by tyd chenruoquan 2015-11-09 -->
+    <plurals name="show_more_dev_countdown">
+        <item quantity="one" >"Operation requires only <xliff:g id="STEP_COUNT">%1$d</xliff:g> step  to enter the advanced developer mode."</item>
+        <item quantity="other">"Operation requires only <xliff:g id="STEP_COUNT">%1$d</xliff:g> steps  to enter the advanced developer mode."</item>
+    </plurals>
+    <string name="show_more_dev_on">"You are in an advanced developer mode now!"</string>
+    <string name="show_more_dev_already">"You are already in advanced developer mode, without the need for this operation."</string>
+    <!-- End. -->
+
+    <!-- Added by TYD Sean 2015-08-06 for droi account begin -->
+    <string name="login_account_droi">Droi Account</string>
+    <!-- Added by TYD Sean 2015-08-06 for droi account end -->
+
+    <!-- Added by TYD Sean 2015-08-06 for fp begin -->
+    <string name="fp_setting_title">FingerPrint Settings</string>
+    <string name="fp_security_description_choose">Please choose one of the follows</string>
+    <string name="fp_security_description_text">For safety, we add backup password to unlock screen</string>
+    <!-- Added by TYD Sean 2015-08-06 for fp end -->
+
+    <string name="select_sim_for_open_data">Select SIM for data connection</string>
+    <string name="change_layout_mode">Change Interface Mode</string>
+    <!-- add by tyd wangalei 2015.9.29 for second menu sort -->
+    <string name="statebar_setting_titile">"Status Bar Settings"</string>
+    <string name="statebar_setting_notify">Manage Notifications</string>
+    <string name="statebar_setting_switch_sort">"Sort"</string>
+       <!-- add by tyd wangalei 2015.10.12 for second menu sort -->
+    <string name="schedule_power_setting_vibrate">"Scheduled vibration"</string>
+    <string name="schedule_power_setting_offline">"Scheduled offline"</string>
+    <string name="schedule_power_setting_schpwronoff">"Sched power on/off"</string>
+    <string name="no_sim_card">"No SIM Card"</string>
+    <string name="no_click_in_airmode">"Not Use While AirplaneMode"</string>
+    <string name="no_click_in_location_mode_off">"Not Use While Location Mode Off"</string>
+    <string name="credentials_install_nosdcard" >"Install from storage"</string>
+    <!-- end -->
+
+    
+	<!-- Add by tyd lipengfei 20151015 for freeme OOBE -->
+    <string name="oobe_previous_label">Back</string>
+    <string name="oobe_next_label">Next</string>
+    <string name="oobe_wifi_title">Connection WLAN</string>
+    <!-- tyd -->
+    <!-- end -->
+
+    <!-- Summary for "Configure lockscreen" when security biometric weak is enabled [CHAR LIMIT=45] -->
+    <string name="unlock_set_unlock_mode_biometric_weak">Face Unlock</string>
+
+    <!-- Security settings screen when using face unlock, setting option name to start an activity that allows the user to improve accuracy by adding additional enrollment faces -->
+    <string name="biometric_weak_improve_matching_title">Improve face matching</string>
+
+    <!-- On the security settings screen when using face unlock.  This checkbox is used to toggle whether liveliness detection is required.  If it is checked the user must blink during unlock to prove it's not a photo  -->
+    <string name="biometric_weak_liveliness_title">Liveness check</string>
+
+    <!-- On the security settings screen when using face unlock.  The summary of the liveliness checkbox -->
+    <string name="biometric_weak_liveliness_summary" msgid="7980026533493781616">Require eye blink while unlocking</string>
+
+    <!-- { freeme.xupeng, 20160531. Add sunshine screen display -->
+    <string name="pref_aal_title">"Increased Contrast"</string>
+    <string name="pref_aal_summary">"Increased display's contrast"</string>
+    <!-- } -->
+    <!-- { freeme.xupeng, 20160606. make oom adj change-able when reboot -->
+    <string name="dynamic_oom_adj_settings">Dynamic set oom adj</string>
+    <!-- } -->
+
+    <!--freeme.gejun, multi sim data connection close option-->
+    <string name="close_data_connection">Close connection</string>
+    
+    <!-- freeme.chenruoquan , 20160620.Add legal statement -->
+    <string name="legal_statement">"LegalNotices"</string>
+
+    <!--freeme.gejun, 20160706 smart answer will not work when non-touch open-->
+    <string name="smart_anser_tip">"Smart answer won't work when Call Non-touch open"</string>
+    
+    <!-- freeme.biantao, 20160727. Fingerprint func.-->
+    <string name="fingerprint_func">Functions</string>
+    <string name="camera_capture_enable">Capture</string>
+    <string name="nv_camera_cpture_des">Touch to take photos</string>
+    <string name="alarm_control_enable">Alarm</string>
+    <string name="nv_alarm_control_des">Touch to close alarm</string>
+    <string name="dial_enable">Fingerprint dial</string>
+    <string name="nv_dial_control_des">Long touch to dial in dial pad</string>
+    <string name="home_scroll_enable">Home Scroll</string>
+    <string name="nv_home_control_des">Touch to scroll home pages</string>
+    <string name="video_operate_enable">Video Control</string>
+    <string name="nv_video_control_des">Touch to control video play</string>
+    <string name="music_operate_enable">Music Control</string>
+    <string name="nv_music_control_des">Touch to control music play</string>
+    <string name="nv_get_it">Get it</string>
+
+    <!-- @{ freeme.menglingqiang，20160928. add boot and shutdown ringtone. -->
+    <string name="freeme_boot_shut_audio_title">Switch machine ringing</string>
+    <string name="freeme_boot_audio_title">Power on ringtone</string>
+    <!-- @} -->
+    <!-- @{ freeme.menglingqiang，20160929. show ram information in settings. -->
+    <string name="freeme_storage_rom_used">RAM:Used of <xliff:g id="total" example="32GB">%1$s</xliff:g></string>
+    <string name="freeme_storage_ram_used">ROM:Used of <xliff:g id="total" example="32GB">%1$s</xliff:g></string>
+    <!-- @} -->
+    <!-- @{ freeme.menglingqiang, 20161011. support finger print front. -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">"Locate the fingerprint sensor on the below of your phone."</string>
+    <!-- @} -->
+
+    <!--freeme.chenming, 20161014. Default vibrator magnitude.-->
+    <string name="vibTuner_pref">pref_vibratortuner</string>
+    <string name="vibTuner_name">Vibrator Tuner</string>
+    <string name="vib_Reset">Reset</string>
+
+</resources>
