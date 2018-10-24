@@ -1,0 +1,65 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.4'
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+ext {
+    compileSdkVersion = 27
+    buildToolsVersion = '27.0.3'
+    minSdkVersion = 21
+    targetSdkVersion = 25
+    sourceCompatibility = JavaVersion.VERSION_1_7
+    targetCompatibility = JavaVersion.VERSION_1_7
+
+    useCertificate = 'platform'
+    useFreemePlatformRes = true
+    if (rootProject.file('local.properties').exists()) {
+        Properties localProperties = new Properties()
+        localProperties.load(rootProject.file('local.properties').newDataInputStream())
+
+        sdkDir = localProperties.getProperty('sdk.dir')
+        sdkFreemeDir = file("${sdkDir}/extras/freeme").path
+        sdkFreemeSigningsDir = file("${sdkFreemeDir}/signings").path
+        sdkFreemePlatformDir = file("${sdkFreemeDir}/platforms/android-v${compileSdkVersion}").path
+
+        // signing
+        if (file("${sdkFreemeSigningsDir}/signings.properties").exists()) {
+            Properties signingsProperties = new Properties()
+            signingsProperties.load(file("${sdkFreemeSigningsDir}/signings.properties").newDataInputStream())
+
+            storeFile = file("${sdkFreemeSigningsDir}/${signingsProperties["key.${useCertificate}.store"]}").path
+            storePassword = signingsProperties["key.${useCertificate}.store.password"]
+            keyAlias = signingsProperties["key.${useCertificate}.alias"]
+            keyPassword = signingsProperties["key.${useCertificate}.password"]
+        }
+        // sdk
+        if (file("${sdkFreemePlatformDir}").exists()) {
+            if (useFreemePlatformRes && file("${sdkFreemePlatformDir}/freeme-framework-res.apk").exists()) {
+                sdkFreemePlatformRes = file("${sdkFreemePlatformDir}/freeme-framework-res.apk").path
+            }
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

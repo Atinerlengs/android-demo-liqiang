@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DemoApplication</string>
+    <string name="tab_font_family">sans-serif</string>
+</resources>

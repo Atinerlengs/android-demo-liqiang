@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="application.android.com.zhaozehong.demoapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.Manifest.permission.INTERACT_ACROSS_USERS" />
+
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/FreemeThemeBase">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="application.android.com.zhaozehong.contact.PickContactsActivity" />
+
+        <activity android:name="application.android.com.zhaozehong.contact.PickMutilContactsActivity" />
+
+        <activity android:name="application.android.com.zhaozehong.activities.GridLayoutActivity" />
+
+        <activity
+            android:name="application.android.com.zhaozehong.activities.TranslucentActivity"
+            android:theme="@style/FreemeBackgroundOnlyTheme" />
+
+        <activity android:name="application.android.com.zhaozehong.activities.TestPreferenceActivity" />
+
+        <activity android:name="application.android.com.zhaozehong.activities.ModifyGeoCodingActivity" />
+        <activity android:name="application.android.com.zhaozehong.activities.TabActivity" />
+        <activity android:name="application.android.com.zhaozehong.activities.ShortcutActivity" />
+
+        <activity
+            android:name="application.android.com.zhaozehong.fragments.TestFragmentActivity"
+            android:configChanges="keyboardHidden|keyboard|navigation"
+            android:directBootAware="true"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:label="phoneAppLabel"
+            android:launchMode="singleInstance"
+            android:resizeableActivity="false"
+            android:screenOrientation="nosensor"
+            android:taskAffinity="com.test.incallui"
+            android:theme="@style/FreemeFragmentTheme" />
+
+        <activity
+            android:name="application.android.com.zhaozehong.fragments.TestFragmentActivity2"
+            android:configChanges="keyboardHidden|keyboard|navigation"
+            android:directBootAware="true"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:label="phoneAppLabel"
+            android:resizeableActivity="false"
+            android:screenOrientation="nosensor"
+            android:taskAffinity="com.test.incallui"
+            android:theme="@style/FreemeFragmentTheme" />
+
+        <service
+            android:name="application.android.com.zhaozehong.floating.FreemeInCallFloatingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.zhaozehong.test.action.FLOATING_VIEW" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="application.android.com.zhaozehong.receiver.FreemeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+                <action android:name="com.freeme.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

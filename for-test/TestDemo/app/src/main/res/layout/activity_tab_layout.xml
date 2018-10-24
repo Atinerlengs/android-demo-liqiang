@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/toolbar_frame"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/actionbar_background_color">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            style="@style/ContactsToolbarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize" />
+
+    </FrameLayout>
+
+    <application.android.com.zhaozehong.widgets.ViewPagerTabs
+        android:id="@+id/lists_pager_header"
+        style="@style/ContactsActionBarTabTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_gravity="top"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:textAllCaps="true" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tab_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lists_pager_header" />
+
+</LinearLayout>
