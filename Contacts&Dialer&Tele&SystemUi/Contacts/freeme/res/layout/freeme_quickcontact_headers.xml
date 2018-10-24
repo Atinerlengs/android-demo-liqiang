@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/freeme_quick_contact_headers_height"
+    android:layout_marginStart="@dimen/expanding_entry_card_marginStartEnd"
+    android:layout_marginEnd="@dimen/expanding_entry_card_marginStartEnd"
+    android:layout_marginTop="@dimen/first_card_marginTop"
+    android:background="@drawable/freeme_content_bg_default">
+    <ImageView
+        android:id="@+id/quick_contact_header_icon"
+        android:layout_width="@dimen/freeme_quick_contact_headers_height_width"
+        android:layout_height="@dimen/freeme_quick_contact_headers_height_width"
+        android:src="@drawable/freeme_contact_detail_default_avatar_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/first_card_marginTop" />
+    <TextView
+        android:id="@+id/quick_contact_header_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:ellipsize="end"
+        android:textSize="@dimen/freeme_quick_contact_headers_name_size"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/title_text_color"
+        android:layout_below="@+id/quick_contact_header_icon"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/freeme_quick_contact_headers_name_magin_top" />
+
+</RelativeLayout>

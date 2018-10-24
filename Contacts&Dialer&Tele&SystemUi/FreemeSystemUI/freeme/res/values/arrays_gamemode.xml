@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gm_heads_up_notification_white_list">
+        <item>com.android.dialer</item>
+        <item>com.android.deskclock</item>
+    </string-array>
+</resources>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/videocall_video_controls_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!-- M: add scroll view to add mediatek new features. @{ -->
+    <ScrollView
+        android:id="@+id/videocall_video_controls_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/freeme_bottom_button_layout"
+        android:layout_below="@+id/incall_contact_grid"
+        android:fadeScrollbars="false"
+        android:gravity="center_horizontal"
+        android:scrollIndicators="bottom|top"
+        android:scrollbarStyle="outsideOverlay"
+        android:verticalScrollbarPosition="left"
+        android:visibility="visible">
+        <!-- @} -->
+
+        <LinearLayout
+            android:id="@+id/videocall_video_controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.android.incallui.incall.impl.CheckableLabeledButton
+                    android:id="@+id/hide_preview"
+                    style="@style/Incall.Button.VideoCall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:incall_icon="@drawable/freeme_call_card_button_hide_local_video"
+                    app:incall_labelText="@string/freeme_hideVideoPreview" />
+
+                <com.android.incallui.incall.impl.CheckableLabeledButton
+                    android:id="@+id/videocall_downgrade_audio"
+                    style="@style/Incall.Button.VideoCall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:incall_icon="@drawable/freeme_call_card_button_change_to_voice"
+                    app:incall_labelText="@string/voice_call" />
+
+                <ViewAnimator
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <com.android.incallui.incall.impl.CheckableLabeledButton
+                        android:id="@+id/videocall_mute_video"
+                        style="@style/Incall.Button.VideoCall"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:contentDescriptionChecked="@string/incall_content_description_video_off"
+                        app:contentDescriptionUnchecked="@string/incall_content_description_video_on"
+                        app:incall_icon="@drawable/freeme_call_card_button_hold"
+                        app:incall_labelText="@string/close" />
+
+                    <com.android.incallui.incall.impl.CheckableLabeledButton
+                        android:id="@+id/hold_call"
+                        style="@style/Incall.Button.VideoCall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:contentDescriptionChecked="@string/incall_content_description_hold"
+                        app:contentDescriptionUnchecked="@string/incall_content_description_unhold"
+                        app:incall_icon="@drawable/freeme_call_card_button_hold"
+                        app:incall_labelText="@string/incall_label_hold" />
+                </ViewAnimator>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.android.incallui.incall.impl.CheckableLabeledButton
+                    android:id="@+id/switch_camera_button"
+                    style="@style/Incall.Button.VideoCall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:incall_icon="@drawable/freeme_call_card_button_switch_camera"
+                    app:incall_labelText="@string/freeme_onscreenSwitchCameraText" />
+
+                <com.android.incallui.incall.impl.CheckableLabeledButton
+                    android:id="@+id/videocall_mute_button"
+                    style="@style/Incall.Button.VideoCall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:contentDescriptionChecked="@string/incall_content_description_muted"
+                    app:contentDescriptionUnchecked="@string/incall_content_description_unmuted"
+                    app:incall_icon="@drawable/freeme_call_card_button_mute"
+                    app:incall_labelText="@string/incall_label_mute" />
+
+                <com.android.incallui.incall.impl.CheckableLabeledButton
+                    android:id="@+id/freeme_record_number"
+                    style="@style/Incall.Button.VideoCall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:incall_icon="@drawable/freeme_call_card_button_record_number"
+                    app:incall_labelText="@string/onscreenRecordNumberText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <com.android.incallui.incall.impl.CheckableLabeledButton
+                    android:id="@+id/add_call"
+                    style="@style/Incall.Button.VideoCall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:incall_icon="@drawable/freeme_call_card_button_add"
+                    app:incall_labelText="@string/incall_label_add_call" />
+
+                <com.android.incallui.incall.impl.CheckableLabeledButton
+                    android:id="@+id/merge_call"
+                    style="@style/Incall.Button.VideoCall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:incall_icon="@drawable/freeme_call_card_button_merge"
+                    app:incall_labelText="@string/incall_label_merge" />
+
+                <com.android.incallui.incall.impl.CheckableLabeledButton
+                    android:id="@+id/videocall_mute_video"
+                    style="@style/Incall.Button.VideoCall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:contentDescriptionChecked="@string/incall_content_description_video_off"
+                    app:contentDescriptionUnchecked="@string/incall_content_description_video_on"
+                    app:incall_icon="@drawable/freeme_call_card_button_hold"
+                    app:incall_labelText="@string/close" />
+
+                <com.android.incallui.incall.impl.CheckableLabeledButton
+                    android:id="@+id/cancel_upgrade"
+                    style="@style/Incall.Button.VideoCall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:incall_icon="@drawable/mtk_ic_cancelupgrade"
+                    app:incall_labelText="@string/onscreenCancelUpgrade" />
+
+                <com.android.incallui.incall.impl.CheckableLabeledButton
+                    android:id="@+id/transfer_call"
+                    style="@style/Incall.Button.VideoCall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:incall_icon="@drawable/mtk_ic_toolbar_transfer" />
+
+                <com.android.incallui.incall.impl.CheckableLabeledButton
+                    android:id="@+id/blind_transfer_call"
+                    style="@style/Incall.Button.VideoCall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:incall_icon="@drawable/mtk_ic_toolbar_transfer" />
+
+                <com.android.incallui.incall.impl.CheckableLabeledButton
+                    android:id="@+id/videocall_switch_on_hold"
+                    style="@style/Incall.Button.VideoCall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:incall_icon="@drawable/freeme_call_card_button_swap"
+                    app:incall_labelText="@string/incall_content_description_swap_calls" />
+
+                <com.android.incallui.incall.impl.CheckableLabeledButton
+                    android:id="@+id/manage_video_conference"
+                    style="@style/Incall.Button.VideoCall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:incall_icon="@drawable/quantum_ic_group_white_36"
+                    app:incall_labelText="@string/incall_label_manage" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!-- @} -->
+
+    <!-- M: support dialerpad for video call. -->
+    <FrameLayout
+        android:id="@+id/incall_dialpad_container"
+        style="@style/DialpadContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/freeme_bottom_button_layout"
+        tools:background="@android:color/transparent"
+        tools:visibility="gone" />
+    <!-- @} -->
+
+    <LinearLayout
+        android:id="@+id/freeme_bottom_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:layout_marginTop="@dimen/freeme_incall_button_bottom_padding"
+        android:gravity="center_vertical">
+
+        <com.android.incallui.incall.impl.CheckableLabeledButton
+            android:id="@+id/video_dialpad"
+            style="@style/Incall.Button.VideoCall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:contentDescriptionChecked="@string/incall_label_dialpad"
+            app:contentDescriptionUnchecked="@string/incall_label_dialpad"
+            app:incall_icon="@drawable/freeme_call_card_button_dialpad"
+            tools:layout_height="@dimen/tools_button_height"
+            tools:layout_width="@dimen/incall_labeled_button_size" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/videocall_end_call"
+                android:layout_width="@dimen/freeme_incall_button_size"
+                android:layout_height="@dimen/freeme_incall_button_size"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:contentDescription="@string/incall_content_description_end_call"
+                android:src="@drawable/freeme_call_card_button_hangup" />
+        </FrameLayout>
+
+        <com.android.incallui.incall.impl.CheckableLabeledButton
+            android:id="@+id/videocall_speaker_button"
+            style="@style/Incall.Button.VideoCall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            app:contentDescriptionChecked="@string/incall_content_description_speaker"
+            app:contentDescriptionUnchecked="@string/incall_content_description_earpiece"
+            app:incall_icon="@drawable/freeme_call_card_button_audio_speaker" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+    <string name="call_duration_title">"कॉलसमाप्त"</string>
+    <string name="call_duration_format">"<xliff:g id="HOURS">%1$s</xliff:g> घंटा <xliff:g id="MINUTES">%2$s</xliff:g> मिनट <xliff:g id="SECONDS">%3$s</xliff:g> सेकंड"</string>
+    <string name="call_waiting_indication">दूसरा पक्ष कॉल में है, कृपया प्रतीक्षा करें...</string>
+    <string name="incall_error_supp_service_unknown">"असमर्थित सेवा."</string>
+    <string name="incall_error_supp_service_switch">"कॉल स्विच करने में असमर्थ."</string>
+    <string name="mo_code_unconditional_cf_active">कॉल अग्रेषण\nबगैर शर्त सक्रिय</string>
+    <string name="mo_code_some_cf_active">कॉल आगे भेजना\nस्थिति के अनुसार</string>
+    <string name="mo_code_call_forwarded">कॉल आगे भेजी गई</string>
+    <string name="mo_code_cug_call">प्रयोक्‍तासमूहकोबंदकिया</string>
+    <string name="mo_code_outgoing_calls_barred">आउटगोइंग कॉल रोकी गई</string>
+    <string name="mo_code_incoming_calls_barred">इनकमिंग कॉल दूसरी तरफ़ बाधित हुआ</string>
+    <string name="mo_code_clir_suppression_rejected">कॉलर आईडी भेजने की सेवा की जांच करें</string>
+    <string name="mo_code_call_deflected">कॉल आगे भेजी गई</string>
+    <string name="mo_code_call_forwarding">कॉलअग्रेषण...</string>
+    <string name="mt_code_forwarded_call">यह एक मोड़ी गई कॉल है</string>
+    <string name="mt_code_cug_call">प्रयोक्‍तासमूहकोबंदकिया</string>
+    <string name="mt_code_call_on_hold">कॉल को रोके रखा गया</string>
+    <string name="mt_code_call_retrieved">कॉल दोबारा हुई</string>
+    <string name="mt_code_multi_party_call">कॉफ्रेंसकॉल</string>
+    <string name="mt_code_on_hold_call_released">रोकी गई कॉल आरंभ की गई</string>
+    <string name="mt_code_forward_check_received">फॉरवर्ड चैक एसएस संदेश प्राप्‍त हुआ</string>
+    <string name="mt_code_call_connecting_ect">कॉल ट्रांसफर हो रही है</string>
+    <string name="mt_code_call_connected_ect">कॉल ट्रांसफर सक्रिय</string>
+    <string name="mt_code_deflected_call">यह एक मोड़ी गई कॉल है</string>
+    <string name="mt_code_additional_call_forwarded">अतिरिक्‍त इनकमिंग कॉल को आगे भेजा गया</string>
+    <string name="mt_code_forwarded_cf">कॉल आगे भेजी गई</string>
+    <string name="mt_code_forwarded_cf_uncond">कॉल को बिना शर्त आगे भेजा गया</string>
+    <string name="mt_code_forwarded_cf_cond">कॉल आगे भेजी गई स्थिति के अनुसार</string>
+    <string name="mt_code_forwarded_cf_busy">कॉल व्‍यस्‍त को आगे भेजा गया</string>
+    <string name="mt_code_forwarded_cf_no_reply">उत्तर न मिलने पर कॉल आगे भेजी गई</string>
+    <string name="mt_code_forwarded_cf_not_reachable">पहुंच योग्‍य न होने पर कॉल आगे भेजी गई</string>
+    <string name="outgoing_call_failed">"कॉल नहीं भेजी गई."</string>
+    <string name="volte_ss_not_available_tips">इस कार्यवाही को पूरा करने के लिए <xliff:g id="sub_name">%s</xliff:g> का डेटा कनेक्शन चालू करें।</string>
+    <string name="start_record_failed">रिकॉर्ड करने में विफल।</string>
+</resources>

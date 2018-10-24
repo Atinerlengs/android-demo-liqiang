@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Nieprawidłowo</string>
+    <string name="conf_call_member_list">Lista uczestników</string>
+    <string name="conf_call_participant_answered">Odebrano</string>
+    <string name="conf_call_participant_missed">"Nieodebrane"</string>
+    <string name="calls_over_wifi">PołączeniazostanąwykonaneprzezWi-Fi</string>
+    <string name="connect_to_wifi">Połącz z siecią Wi-Fi, aby wykonywać połączenia</string>
+    <string name="wfc_notification_summary">Stuknijtutaj,abyuzyskaćdostępdopreferencji</string>
+    <string name="wfc_notification_summary_fail">Stuknij tutaj, aby wyświetlić dostępne sieci</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"Połączenie SIP"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g>: nie udało się odblokować</string>
+    <string name="menu_select_all">"Wybierzwszystko"</string>
+    <string name="selected_item_count">Wybrano <xliff:g id="count">%d</xliff:g></string>
+    <string name="multichoice_no_select_alert">"Nie wybrano żadnego elementu."</string>
+    <string name="deleteCallLogConfirmation_title">Usunąć dzienniki połączeń?</string>
+    <string name="deleteCallLogConfirmation_message">Czy na pewno chcesz usunąć wybrane dzienniki połączeń?</string>
+    <string name="recentCalls_delete">"Usuń"</string>
+    <string name="deleting_call_log">Trwa usuwanie dziennika połączeń...</string>
+    <string name="toast_call_detail_error">"Szczegóły nie są dostępne"</string>
+    <string name="calllogList">"Historia połączeń"</string>
+    <string name="calllogHint">Wyszukaj dzienniki połączeń</string>
+    <string name="calllog_description">Połączenia przychodzące, wychodzące i nieodebrane</string>
+    <string name="noMatchingCalllogs">Nie znaleziono pasujących dzienników połączeń.</string>
+    <string name="titleJoinContactDataWith">"Połącz kontakty"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other">Liczba dzienników połączeń: <xliff:g id="count">%d</xliff:g></item>
+        <item quantity="one">"1 dziennik połączeń"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Nie znaleziono dziennika połączeń</string>
+    <string name="search_results_for">Wyniki wyszukiwania dla: <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none">"Usuń zaznaczenie wszystkiego"</string>
+</resources>

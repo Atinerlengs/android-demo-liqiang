@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rotate_help_message">"בתצוגה לרוחב, הפונקציה 'צמצם גודל מסך' אינה זמינה."</string>
+    <string name="cannot_start_by_other_app_new">"כדי להפעיל את 'הפעלה ביד אחת', השבת את %s."</string>
+    <string name="help_text_to_return_full">הקש מחוץ לתצוגה המוקטנת כדי לחזור למסך מלא.</string>
+    <string name="help_onehand_title">"מצב 'תפעול ביד אחת'"</string>
+    <string name="help_secure_app">עמוד מאובטח</string>
+    <string name="help_adjust_screen_title">התאמת גודל המסך</string>
+    <string name="help_adjust_screen_text">החלק מעלה או מטה כדי להתאים את גודל המסך המוקטן.</string>
+
+    <string name="onehand_settings_title">"מצב 'תפעול ביד אחת'"</string>
+    <string name="onehand_settings_summary">התאם את גודל התצוגה והפריסה כדי לשלוט בטלפון שלך בקלות ביד אחת.</string>
+    <string name="onehand_settings_text_1">כדי להקטין את גודל התצוגה, החלק מעלה באלכסון מאחת מהפינות התחתונות של המסך.</string>
+    <string name="onehand_settings_text_2">הקש 3 הקשות מהירות על מקש הבית כדי לצמצם במהירות את גודל התצוגה.</string>
+    <string name="onehand_settings_text_2_hardkey">לחץ 3 לחיצות מהירות על מקש הבית כדי לצמצם במהירות את גודל התצוגה.</string>
+    <string name="onehand_settings_using_category">צמצום גודל המסך באמצעות</string>
+    <string name="onehand_settings_using_gesture">מחווה</string>
+    <string name="onehand_settings_using_gesture_summary">החלק מעלה באלכסון מכל אחת מהפינות התחתונות.</string>
+    <string name="onehand_settings_using_button">לחצן</string>
+    <string name="onehand_settings_using_button_summary">הקש 3 הקשות על לחצן הבית.</string>
+    <string name="onehand_settings_using_button_summary_hardkey">לחץ 3 לחיצות על מקש הבית.</string>
+    <string name="onehand_settings_hardware_key_title">הצג מקשים במסך</string>
+    <string name="onehand_settings_hardware_key_summary">"הצג את המקשים 'בית', 'חזרה' ו'אחרונים'."</string>
+    <string name="onehand_settings_dialog_title">"להפעיל מצב 'תפעול ביד אחת'?"</string>
+    <string name="onehand_settings_dialog_text">"לא ניתן להשתמש בתכונות הבאות יחד עם מצב 'תפעול ביד אחת'. יישומים אלה יכובו."</string>
+    <string name="onehand_settings_cover_toast">"כדי להשתמש במצב 'הפעלה ביד אחת', הסר את כיסוי המקלדת."</string>
+
+    <string name="accessibility_screen_magnification_title">הגדלה</string>
+    <string name="accessibility_autoclick_preference_title">קליק אוטומטי עם עצירת המצביע</string>
+</resources>

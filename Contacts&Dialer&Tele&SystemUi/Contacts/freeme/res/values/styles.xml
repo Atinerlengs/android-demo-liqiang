@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FreemeSectionStyle">
+        <item name="android:paddingStart">@dimen/contact_editor_space_medium</item>
+        <item name="android:background">?android:attr/colorPrimary</item>
+        <item name="android:minHeight">@dimen/editor_min_line_item_height</item>
+    </style>
+
+    <style name="FreemeAddMoreFieldsButtonStyle">
+        <item name="android:layout_marginStart">@dimen/contact_editor_space_medium</item>
+        <item name="android:layout_marginEnd">@dimen/contact_editor_space_medium</item>
+        <item name="android:layout_marginTop">@dimen/contact_editor_space_small</item>
+        <item name="android:layout_marginBottom">@dimen/contact_editor_space_small</item>
+        <item name="android:background">?android:attr/colorPrimary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">@dimen/contact_common_text_size</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="FreemeGroupBatchOperationStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/freeme_group_state_color</item>
+        <item name="android:textSize">@dimen/freeme_group_item_text_size</item>
+    </style>
+</resources>

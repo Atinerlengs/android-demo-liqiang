@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text1"
+        style="@style/FreemeSpeedDialDialogTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/freeme_speed_dial_bottom_dialog_textview_height"
+        android:gravity="center"
+        android:textColor="@color/freeme_speed_dial_dialog_text_color"
+        android:textSize="@dimen/freeme_speed_dial_dialog_text_size" />
+
+</LinearLayout>

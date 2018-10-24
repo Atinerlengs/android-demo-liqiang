@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/freeme_search_edit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/freeme_search_view_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/freeme_search_view_margin_horizontal"
+            android:layout_marginVertical="@dimen/freeme_search_view_margin_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/freeme_contacts_search_view_bg"
+            android:drawablePadding="@dimen/freeme_search_view_icon_margin_horizontal"
+            android:drawableStart="@drawable/freeme_contacts_search_view_icon"
+            android:hint="@string/freeme_contacts_search_hint"
+            android:paddingHorizontal="@dimen/freeme_search_view_icon_margin_horizontal"
+            android:singleLine="true"
+            android:textColorHint="#c2c2c2"
+            android:textSize="@dimen/freeme_search_view_text_size" />
+
+        <ImageView
+            android:id="@+id/add_new_contacts"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:src="@drawable/freeme_contacts_add_new_icon" />
+    </LinearLayout>
+
+    <include layout="@layout/freeme_horizontal_line_view" />
+</LinearLayout>

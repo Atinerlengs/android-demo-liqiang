@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/edit"
+          android:title="@android:string/cut"
+          android:icon="@android:drawable/ic_menu_edit"
+          android:showAsAction="never"
+          />
+</menu>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:focusable="false"
+        android:focusableInTouchMode="true">
+
+        <include layout="@layout/layout_search_view_file_explorer" />
+
+        <LinearLayout
+            android:id="@+id/gallery_navigation_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/path_gallery_line_height"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <include
+                android:id="@+id/path_gallery"
+                layout="@layout/layout_path_gallery" />
+
+            <ProgressBar
+                android:id="@+id/refresh_progress"
+                style="?android:attr/progressBarStyleSmallTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/path_gallery"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+
+            <ListView
+                android:id="@+id/file_path_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/list_item_divider"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="true"
+                android:background="@color/app_theme_color_primary"/>
+
+            <LinearLayout
+                android:id="@+id/empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/app_theme_color_primary"
+                android:visibility="gone"  >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_no_file"/>
+
+                <TextView
+                    android:textAppearance="@style/AppTextAppearance.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/list_slash_padding_left"
+                    android:singleLine="true"
+                    android:text="@string/no_file"
+                    android:textColor="#cecece"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/memory_not_available_page"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/app_theme_color_primary"
+                android:visibility="gone"  >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sd_not_available"/>
+
+                <TextView
+                    android:id="@+id/memory_not_available_txt"
+                    android:textAppearance="@style/AppTextAppearance.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/list_slash_padding_left"
+                    android:singleLine="true"
+                    android:text="@string/storage_device_umouonted"
+                    android:textColor="#ffa6a6a6"/>
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/dropdown_navigation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/dropdown_navigation_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/moving_operation_bar"
+            style="@style/AppContent.Button.BottomBar"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/button_moving_confirm"
+                style="@style/AppContent.Button.Bottom"
+                android:text="@string/operation_paste" />
+
+            <Button
+                android:id="@+id/button_moving_cancel"
+                style="@style/AppContent.Button.Bottom"
+                android:text="@string/operation_cancel" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pick_operation_bar"
+            style="@style/AppContent.Button.BottomBar"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/button_pick_confirm"
+                style="@style/AppContent.Button.Bottom"
+                android:text="@string/confirm" />
+
+            <Button
+                android:id="@+id/button_pick_cancel"
+                style="@style/AppContent.Button.Bottom"
+                android:text="@string/operation_cancel" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

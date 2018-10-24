@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Transparent" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@android:style/Animation.InputMethod</item>
+    </style>
+    <style name="AppLockActivityThemeWhite" parent="@*freeme:style/Theme.Freeme.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="PatternUnlockTheme" parent="@style/AppLockActivityThemeWhite">
+        <item name="*android:lockPatternStyle">@style/LockPatternStyle</item>
+    </style>
+    <style name="LockPatternStyle">
+        <item name="*android:regularColor">#ff37474f</item>
+        <item name="*android:errorColor">?android:attr/colorError</item>
+        <item name="*android:successColor">#22c580</item>
+    </style>
+    <style name="single_button">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#ff444444</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+    </style>
+    <style name="AppLockTheme" parent="@*freeme:style/Theme.Freeme.Settings">
+        <item name="switchBarTheme">@style/ThemeOverlay.SwitchBar.Settings</item>
+    </style>
+    <style name="ThemeOverlay.SwitchBar.Settings" parent="@*freeme:style/ThemeOverlay.Freeme.ActionBar">
+        <item name="switchBarMarginStart">@dimen/switchbar_subsettings_margin_start</item>
+        <item name="switchBarMarginEnd">@dimen/switchbar_subsettings_margin_end</item>
+    </style>
+</resources>

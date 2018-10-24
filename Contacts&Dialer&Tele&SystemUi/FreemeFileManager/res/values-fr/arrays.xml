@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="group_item_names">
+        <item>Fichiers Temporaires Système</item>
+        <item>Fichiers Cache Miniatures</item>
+        <item>Cache d\'Application</item>
+        <item>Dossier vide</item>
+        <item>Fichiers restants après désinstallation</item>
+    </string-array>
+</resources>

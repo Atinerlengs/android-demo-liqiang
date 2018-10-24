@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Inválido</string>
+    <string name="conf_call_member_list">Lista de Miembros</string>
+    <string name="conf_call_participant_answered">Contestado</string>
+    <string name="conf_call_participant_missed">"Perdidas"</string>
+    <string name="calls_over_wifi">LasllamadasserealizaránatravésdeWi-Fi</string>
+    <string name="connect_to_wifi">Conéctese a Wi-Fi para realizar llamadas</string>
+    <string name="wfc_notification_summary">Pulseaquíparaaccederalaspreferencias</string>
+    <string name="wfc_notification_summary_fail">Toque aquí para ver las redes disponibles</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"Llamada SIP"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g>: desbloqueo fallido</string>
+    <string name="menu_select_all">"Seleccionartodo"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> seleccionado</string>
+    <string name="multichoice_no_select_alert">"No se seleccionaron elementos."</string>
+    <string name="deleteCallLogConfirmation_title">¿Eliminar registro(s) de llamada?</string>
+    <string name="deleteCallLogConfirmation_message">¿Está seguro de eliminar el(os) registro(s) de la llamada seleccionada?</string>
+    <string name="recentCalls_delete">"Eliminar"</string>
+    <string name="deleting_call_log">Eliminado Registro de Llamada…</string>
+    <string name="toast_call_detail_error">"Detalles no disponibles"</string>
+    <string name="calllogList">"Historial de llamadas"</string>
+    <string name="calllogHint">Buscar registros de llamada</string>
+    <string name="calllog_description">Llamadas entrantes, salientes y perdidas</string>
+    <string name="noMatchingCalllogs">No se encontró un registro de llamada que coincida.</string>
+    <string name="titleJoinContactDataWith">"Agrupar contactos"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other">registros de llamada <xliff:g id="count">%d</xliff:g></item>
+        <item quantity="one">1 registro de llamada</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">No se encontró el registro de la llamada</string>
+    <string name="search_results_for">Resultados de la búsqueda para: <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none">Deseleccionar todo</string>
+</resources>

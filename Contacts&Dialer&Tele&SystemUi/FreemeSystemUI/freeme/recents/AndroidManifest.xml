@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
+    package="com.android.systemui"
+    android:sharedUserId="android.uid.systemui"
+    coreApp="true">
+    <uses-sdk android:minSdkVersion="23"/>
+
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+    <uses-permission android:name="com.freeme.launcher.permission.READ_SETTINGS"/>
+
+    <application
+        android:name=".SystemUIApplication"
+        android:persistent="true"
+        android:allowClearUserData="false"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:label="@string/app_label"
+        android:icon="@drawable/icon"
+        android:process="com.android.systemui"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SystemUI"
+        android:defaultToDeviceProtectedStorage="true"
+        android:directBootAware="true">
+        <!-- Alternate Recents -->
+        <activity android:name="com.freeme.recents.presentation.view.activity.RecentsActivity"
+            android:label="@string/accessibility_desc_recent_apps"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:excludeFromRecents="true"
+            android:stateNotNeeded="true"
+            android:resumeWhilePausing="true"
+            android:resizeableActivity="true"
+            android:screenOrientation="locked"
+            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboard|keyboardHidden"
+            android:theme="@style/RecentsTheme.Wallpaper">
+            <intent-filter>
+                <action android:name="com.android.systemui.recents.TOGGLE_RECENTS" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

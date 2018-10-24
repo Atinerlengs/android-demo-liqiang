@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rotate_help_message">缩小屏幕尺寸在横向视图中不可用</string>
+    <string name="cannot_start_by_other_app_new">若要启用单手操作，请禁用%s</string>
+    <string name="help_text_to_return_full">请点击缩小的显示区域外部以返回全屏模式。</string>
+    <string name="help_onehand_title">单手模式</string>
+    <string name="help_secure_app">安全页面</string>
+    <string name="help_adjust_screen_title">调整屏幕尺寸</string>
+    <string name="help_adjust_screen_text">向上或向下滑动可调整已缩小的屏幕尺寸。</string>
+
+    <string name="onehand_settings_title">单手模式</string>
+    <string name="onehand_settings_summary">调整屏幕的大小和布局，以便您用单手更轻松地操作手机。</string>
+    <string name="onehand_settings_text_1">请从屏幕底部任一角沿对角线向中心滑动来缩小屏幕尺寸。</string>
+    <string name="onehand_settings_text_2">请迅速点击主屏幕按钮 3 次来缩小显示尺寸。</string>
+    <string name="onehand_settings_text_2_hardkey">迅速按下主屏幕键 3 次来缩小显示尺寸。</string>
+    <string name="onehand_settings_using_category">缩小屏幕尺寸的方法</string>
+    <string name="onehand_settings_using_gesture">手势</string>
+    <string name="onehand_settings_using_gesture_summary">从底部任一角沿对角线向上滑动。</string>
+    <string name="onehand_settings_using_button">按钮</string>
+    <string name="onehand_settings_using_button_summary">请点击主屏幕按钮 3 次。</string>
+    <string name="onehand_settings_using_button_summary_hardkey">按下主屏幕键 3 次。</string>
+    <string name="onehand_settings_hardware_key_title">在屏幕上显示按键</string>
+    <string name="onehand_settings_hardware_key_summary">显示主屏幕键、返回键和最近使用键。</string>
+    <string name="onehand_settings_dialog_title">是否开启单手模式？</string>
+    <string name="onehand_settings_dialog_text">以下功能不能与单手模式同时使用，将关闭这些功能。</string>
+    <string name="onehand_settings_cover_toast">若要使用单手模式，请拆下键盘保护盖。</string>
+
+    <string name="accessibility_screen_magnification_title">放大功能</string>
+    <string name="accessibility_autoclick_preference_title">指针停止移动后点击</string>
+    <string name="navigation_swipe_up_gesture_title">上滑手势导航</string>
+    <string name="navigation_key_virtual_hide_title">导航栏可隐藏</string>
+    <string name="onestep_title">一咻</string>
+    <string name="onehand_settings_prompt_text">与上滑手势导航冲突，无法开启此功能。</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_layout_tail"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/search_view_height"
+    android:layout_marginStart="@dimen/main_page_padding_start"
+    android:layout_marginEnd="@dimen/main_page_padding_top"
+    android:layout_marginTop="@dimen/search_view_padding_top"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_page_part_background"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_search"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/search_view_icon_left"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_hint"
+            android:layout_centerVertical="true"
+            android:textAppearance="@style/AppTextAppearance.MediumOther"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/new_folder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_page_padding_top"
+        android:src="@drawable/ic_menu_new_folder"/>
+</LinearLayout>

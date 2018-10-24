@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="dialtacts_primary_text_color">#333333</color>
+    <color name="dialtacts_secondary_text_color">#636363</color>
+
+    <!-- M:[Multi-Delete] @{ -->
+    <!-- 70% opacity, white. -->
+    <color name="selectable_default_color">#b3ffffff</color>
+    <!-- 20% opacity, white. -->
+    <color name="selectable_disabled_color">#33ffffff</color>
+    <color name="selectable_color">#ffffff</color>
+    <!-- @} -->
+    <!-- 54% black -->
+    <color name="call_detail_list_header">#8a000000</color>
+</resources>

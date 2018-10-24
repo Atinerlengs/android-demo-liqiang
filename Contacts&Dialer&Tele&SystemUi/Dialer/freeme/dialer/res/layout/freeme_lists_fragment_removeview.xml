@@ -1,0 +1,37 @@
+<com.android.dialer.app.list.RemoveView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/remove_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tab_height"
+    android:layout_marginTop="@dimen/action_bar_height_large"
+    android:contentDescription="@string/remove_contact"
+    android:importantForAccessibility="no">
+
+    <LinearLayout
+        android:id="@+id/remove_view_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/actionbar_background_color"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/remove_view_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_remove"
+            android:tint="@color/remove_text_color" />
+
+        <TextView
+            android:id="@+id/remove_view_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remove_contact"
+            android:textColor="@color/remove_text_color"
+            android:textSize="@dimen/remove_text_size" />
+
+    </LinearLayout>
+
+</com.android.dialer.app.list.RemoveView>

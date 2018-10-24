@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<com.android.contacts.widget.TouchlessScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_scroller"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <!-- All the cards should be inserted into this LinearLayout -->
+    <LinearLayout
+        android:id="@+id/card_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/first_card_marginTop">
+
+        <com.android.contacts.quickcontact.ExpandingEntryCardView
+            android:id="@+id/recent_card"
+            style="@style/ExpandingEntryCardStyle"
+            android:visibility="gone" />
+
+        <com.android.contacts.quickcontact.ExpandingEntryCardView
+            android:id="@+id/no_contact_data_card"
+            style="@style/ExpandingEntryCardStyle"
+            android:visibility="gone" />
+
+        <com.android.contacts.quickcontact.ExpandingEntryCardView
+            android:id="@+id/communication_card"
+            style="@style/ExpandingEntryCardStyle"
+            android:visibility="gone" />
+
+        <com.android.contacts.quickcontact.ExpandingEntryCardView
+            android:id="@+id/about_card"
+            style="@style/ExpandingEntryCardStyle"
+            android:visibility="gone" />
+
+        <com.freeme.contacts.quickcontact.FreemeSettingEntryCardView
+            android:id="@+id/freeme_settings_card"
+            style="@style/ExpandingEntryCardStyle"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/freeme_delete_contact"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/freeme_quick_content_button_height"
+            android:layout_marginBottom="@dimen/expanding_entry_card_marginBottom"
+            android:layout_marginEnd="@dimen/expanding_entry_card_marginStartEnd"
+            android:layout_marginStart="@dimen/expanding_entry_card_marginStartEnd"
+            android:background="@drawable/freeme_delete_button_bg_selector"
+            android:text="@string/freeme_delete_contact"
+            android:textColor="@color/freeme_quickcontact_delete"
+            android:textSize="@dimen/freeme_quick_content_delete_text_size"
+            android:visibility="gone" />
+
+        <include layout="@layout/quickcontact_collapsed_suggestion_card" />
+
+        <include layout="@layout/quickcontact_expand_suggestion_card" />
+
+    </LinearLayout>
+
+</com.android.contacts.widget.TouchlessScrollView><!-- @} -->

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">မမွန္ကန္ပါ</string>
+    <string name="conf_call_member_list">အဖြဲ႕ဝင္စာရင္း</string>
+    <string name="conf_call_participant_answered">ေျဖၿပီးၿပီ</string>
+    <string name="conf_call_participant_missed">လြတ္သြားေသာ</string>
+    <string name="calls_over_wifi">ေခၚဆိုမႈမ်ားကိုWi-Fiေပၚမွျပဳလုပ္လိမ့္မည္</string>
+    <string name="connect_to_wifi">ေခၚဆိုမႈမ်ား ျပဳလုပ္ရန္ Wi-Fi သို႔ ခ်ိတ္ဆက္ပါ</string>
+    <string name="wfc_notification_summary">ပိုႏွစ္သက္မႈမ်ားကိုအသံုးျပဳရန္ဤေနရာကိုႏွိပ္ပါ</string>
+    <string name="wfc_notification_summary_fail">ရႏိုင္ေသာ ကြန္ရက္မ်ားကို ၾကည့္ရန္ ဤေနရာကို ႏွိပ္ပါ</string>
+    <string name="dialer_call_type_label_sip">အင္တာနက္ ေခၚဆိုမႈ</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> တားျမစ္မႈဖြင့္ျခင္း မေအာင္ျမင္ပါ</string>
+    <string name="menu_select_all">"အားလုံးကိုေရြးခ်ယ္ပါ"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> ေရြးခ်ယ္ၿပီး </string>
+    <string name="multichoice_no_select_alert">မည္သည့္ အေၾကာင္းအရာမွ ေရြးခ်ယ္မထားပါ။</string>
+    <string name="deleteCallLogConfirmation_title">​ေခၚဆိုမႈ မွတ္တမ္း(မ်ား) ကို ဖ်က္ပစ္မည္လား။</string>
+    <string name="deleteCallLogConfirmation_message">ေရြးခ်ယ္ထားေသာ ေခၚဆိုမႈ မွတ္တမ္း(မ်ား) အားဖ်က္ပစ္ရန္ ေသခ်ာသည္လား။</string>
+    <string name="recentCalls_delete">ဖ်က္ပါ</string>
+    <string name="deleting_call_log">​ေခၚဆိုမႈ မွတ္တမ္းအား ဖ်က္ေနသည္…</string>
+    <string name="toast_call_detail_error">ေတာင္းဆိုထားေသာေခၚဆိုမႈအတြက္ အေသးစိတ္ကိုဖတ္၍မရပါ။</string>
+    <string name="calllogList">​ေခၚဆိုမႈ မွတ္တမ္း</string>
+    <string name="calllogHint">​ေခၚဆိုမႈ မွတ္တမ္းမ်ား ရွာေဖြသည္</string>
+    <string name="calllog_description">အဝင္၊ အထြက္ ႏွင့္ လြတ္သြားေသာ ေခၚဆိုမႈမ်ား</string>
+    <string name="noMatchingCalllogs">ကိုက္ညီေသာ ေခၚဆိုမႈ မွတ္တမ္း ရွာမေတြ႕ပါ။</string>
+    <string name="titleJoinContactDataWith">အဆက္အသြယ္မ်ားကို ေပါင္းစည္းရန္</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> ​ေခၚဆိုမႈ မွတ္တမ္းမ်ား</item>
+        <item quantity="one">"ေခၚဆိုမႈမွတ္တမ္း ၁ ခု"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">​ေခၚဆိုမႈ မွတ္တမ္း ရွာမေတြ႕ပါ</string>
+    <string name="search_results_for">အတြက္ ရွာေဖြမႈ ရလဒ္မ်ား - <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none">"ေခၚဆိုမႈမွတ္တမ္း ၁ ခု"</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="freeme_incallui_dialpad_edit_text_color">#66FFFFFF</color>
+    <color name="call_button_text_selected">#FF0C9E59</color>
+    <color name="freeme_call_card_label_text_color">#99FFFFFF</color>
+    <color name="freeme_secondary_call_info_divider_color">#ffffff</color>
+    <color name="freeme_color_text_primary">#666666</color>
+    <color name="freeme_incall_text_color_white_40_percent">#66FFFFFF</color>
+    <color name="freeme_incall_call_conference_background">#00FFFFFF</color>
+    <color name="custom_filter_divider">#dbdbdb</color>
+    <color name="freeme_incall_multi_call_banner_bg">#1FFFFFFF</color>
+    <color name="freeme_incall_bg_transparent_60_percent">#99000000</color>
+</resources>

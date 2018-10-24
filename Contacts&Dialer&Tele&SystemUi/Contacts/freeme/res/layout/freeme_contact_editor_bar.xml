@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/freeme_contact_editor_bar"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_cancle"
+        android:gravity="start"
+        android:textSize="@dimen/freeme_quick_content_delete_text_size"
+        android:text="@string/cancel_button_content_description"
+        android:textColor="@color/freeme_quick_contact_header_title_color"
+        />
+    <TextView
+        android:id="@+id/contact_menu_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/primary_text_color"
+        />
+    <TextView
+        android:id="@+id/menu_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textSize="@dimen/freeme_quick_content_delete_text_size"
+        android:textColor="@color/freeme_quick_contact_header_title_color"
+        />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sim_btn_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/freeme_dial_action_btn_bg_selector"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/sim_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/freeme_dialpad_action_btn_drawable_padding"
+        android:ellipsize="none"
+        android:maxLines="1"
+        android:maxWidth="80dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/freeme_dialpad_action_btn_text_size" />
+</LinearLayout>

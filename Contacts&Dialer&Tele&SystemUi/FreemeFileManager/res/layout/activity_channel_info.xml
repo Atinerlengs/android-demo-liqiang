@@ -1,0 +1,53 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/channel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/channel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/about_detail_row_margin_left"
+            android:text="@string/about_channel_number"
+            android:textAppearance="@style/AppTextAppearance.ItemName"/>
+
+        <TextView
+            android:id="@+id/channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/channel_name"
+            android:layout_marginLeft="@dimen/about_detail_row_margin_left"
+            android:textAppearance="@style/AppTextAppearance.ItemOther"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/channel_layout">
+
+        <TextView
+            android:id="@+id/custom_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/about_detail_row_margin_left"
+            android:text="@string/about_customer_number"
+            android:textAppearance="@style/AppTextAppearance.ItemName"/>
+
+        <TextView
+            android:id="@+id/custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/custom_name"
+            android:layout_marginLeft="@dimen/about_detail_row_margin_left"
+            android:textAppearance="@style/AppTextAppearance.ItemOther"/>
+    </LinearLayout>
+</RelativeLayout>

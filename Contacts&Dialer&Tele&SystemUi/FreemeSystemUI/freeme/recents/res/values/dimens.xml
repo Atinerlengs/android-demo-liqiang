@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- empty page layout-->
+    <dimen name="recents_empty_home_marginTop">50dp</dimen>
+
+    <!-- memory layout -->
+    <dimen name="recents_memory_layout_marginBottom">0dp</dimen>
+    <dimen name="recents_memory_divider_width">1dp</dimen>
+    <dimen name="recents_memory_label_margin">5dp</dimen>
+    <dimen name="recents_memory_label_text_size">13sp</dimen>
+    <dimen name="recents_memory_label_marginTop">19dp</dimen>
+    <dimen name="recents_memory_trash_can_width">60dp</dimen>
+    <dimen name="recents_memory_trash_can_height">60dp</dimen>
+    <item name="recents_memory_label_text_alpha" format="float" type="dimen">0.8</item>
+
+    <!-- pin layout -->
+    <dimen name="recents_lock_to_app_size">50dp</dimen>
+
+    <!--overlapping-->
+    <dimen name="recents_overlappingStackView_portrait_marginTop">98dp</dimen>
+    <dimen name="recents_overlappingStackView_land_marginTop">10dp</dimen>
+    <dimen name="recents_overlappingStackView_portrait_multwindow_marginTop">20dp</dimen>
+    <dimen name="recents_overlappingStackView_land_multwindow_marginTop">0dp</dimen>
+    <!-- Used to calculate the translation animation duration, the expected amount of movement
+         in dps over one second of time. -->
+    <dimen name="animation_movement_in_dps_per_second">800dp</dimen>
+
+    <!-- The side padding for the overlapping as a percentage of the width. -->
+    <item name="overlapping_width_padding_percentage" format="float" type="dimen">0.0</item>
+
+    <!-- The overscroll percentage allowed on the overlapping. -->
+    <item name="overlapping_overscroll_percentage" format="float" type="dimen">0.0875</item>
+
+    <!-- The amount to translate when animating the removal of a child. -->
+    <dimen name="child_view_remove_anim_translation_y">100dp</dimen>
+
+    <!-- The radius of the rounded corners on a child view. -->
+    <dimen name="child_view_rounded_corners_radius">4dp</dimen>
+
+    <!-- The min translation in the Z index for the last child. -->
+    <dimen name="child_view_z_min">20dp</dimen>
+
+    <!-- The max translation in the Z index for the last child. -->
+    <dimen name="child_view_z_max">80dp</dimen>
+
+    <!-- The alpha to apply to a child thumbnail. -->
+    <item name="child_view_thumbnail_alpha" format="float" type="dimen">0.9</item>
+
+    <!-- The size of the application icon in the recents child view. -->
+    <dimen name="child_view_application_icon_size">32dp</dimen>
+    <dimen name="child_view_application_icon_marginBottom">10dp</dimen>
+    <dimen name="child_view_icon_marginstart">7dp</dimen>
+    <dimen name="child_view_label_marginleft">10dp</dimen>
+    <dimen name="child_view_application_label_font_size">16dp</dimen>
+
+    <dimen name="child_view_lock_icon_size">28dp</dimen>
+
+    <dimen name="child_view_pin_icon_size">50dp</dimen>
+    <dimen name="child_view_pin_icon_marginStart">32dp</dimen>
+    <dimen name="child_view_pin_icon_marginBottom">16dp</dimen>
+    <dimen name="child_view_pin_icon_translation_z">4dp</dimen>
+
+    <dimen name="child_view_thumbnail_width">220dp</dimen>
+    <dimen name="child_view_thumbnail_height">420dp</dimen>
+    <dimen name="child_view_thumbnail_multiwindowmode_width">226dp</dimen>
+    <dimen name="child_view_thumbnail_multiwindowmode_height">200dp</dimen>
+
+    <!-- GridView -->
+    <dimen name="grid_view_item_width">45dp</dimen>
+    <dimen name="grid_view_item_height">45dp</dimen>
+    <dimen name="grid_view_item_margintop">5dp</dimen>
+    <dimen name="grid_view_margintop">5dp</dimen>
+    <dimen name="grid_view_marginbottom">5dp</dimen>
+    <dimen name="grid_view_columnWidth">90dp</dimen>
+    <dimen name="grid_view_horizontalSpacing">5dp</dimen>
+    <dimen name="grid_view_verticalSpacing">15dp</dimen>
+    <integer name="grid_view_numColumns">5</integer>
+
+    <dimen name="app_locked_text_size">15dp</dimen>
+    <dimen name="app_locked_text_top_padding">10.0dip</dimen>
+</resources>

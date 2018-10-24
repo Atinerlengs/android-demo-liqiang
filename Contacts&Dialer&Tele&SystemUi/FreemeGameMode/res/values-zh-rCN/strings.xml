@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gm_label">游戏模式</string>
+
+    <string name="gm_tools">游戏工具</string>
+    <string name="gm_tools_summary">游戏模式开启时，将会显示一个悬浮按钮</string>
+
+    <string name="gm_settings_title">免打扰设置</string>
+    <string name="gm_settings_answer_call">来电免提接听</string>
+    <string name="gm_settings_answer_call_summary">游戏模式开始时，来电接听后自动切换到后台并打开免提</string>
+    <string name="gm_settings_block_notification">屏蔽悬浮通知栏</string>
+    <string name="gm_settings_block_notification_summary">游戏模式开始时屏蔽（来电及闹钟除外）</string>
+    <string name="gm_settings_lock_keys">锁定按键</string>
+    <string name="gm_settings_lock_keys_summary">游戏模式开始时，锁定最近使用键和返回键</string>
+    <string name="gm_settings_power_saving">游戏省电</string>
+    <string name="gm_settings_power_saving_tips">此功能对于部分游戏可能没有效果</string>
+    <string name="gm_settings_power_saving_off">关</string>
+    <string name="gm_settings_power_saving_light">轻度省电</string>
+    <string name="gm_settings_power_saving_light_summary">使用轻度省电时，会降低游戏画面的清晰度</string>
+    <string name="gm_settings_power_saving_severe">重度省电</string>
+    <string name="gm_settings_power_saving_severe_summary">使用重度省电时，会同时降低游戏的清晰度和流程度</string>
+    <string name="gm_settings_block_auto_brightness">关闭自动亮度</string>
+    <string name="gm_settings_block_auto_brightness_summary">游戏模式开始时，暂时关闭自动亮度以保证遮挡时不受影响</string>
+
+    <string name="gm_app_list_label">指定应用自动开启</string>
+    <string name="gm_add_apps">添加游戏模式应用</string>
+    <string name="gm_add_apps_list_label">添加游戏模式应用</string>
+    <string name="gm_add_apps_list_loading_tips">正在加载应用列表</string>
+    <string name="gm_add_apps_list_empty_tips">没有可选择的应用</string>
+    <string name="gm_add_apps_list_recommended">推荐开启</string>
+    <string name="gm_add_apps_list_other">其他应用</string>
+    <string name="gm_remove_apps">移除</string>
+
+    <string name="gm_function_tips">打开应用列表中的应用时会自动开启游戏模式，退出时会自动关闭游戏模式</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--{@freeme.zhangjunjian,20170626,add for contact choice tab-->
+    <color name="contact_pinned_under_line_color">#e5e2e9</color>
+    <color name="sub_title_text_color">#999999</color>
+    <color name="tab_title_text_color">#666666</color>
+    <color name="title_text_color">#333333</color>
+    <!--@}-->
+    <color name="select_item_background">#dedede</color>
+    <color name="contact_text_common">#171717</color>
+    <color name="contact_text_common_gray">#959595</color>
+    <color name="contact_background">#FFf8f8f8</color>
+    <color name="no_contacts_text_color">#c6c6c6</color>
+    <color name="no_contact_bottom_text_color">#c7c7c7</color>
+
+    <color name="freeme_quickcontact_background">#ebebeb</color>
+    <color name="freeme_divider_line_color_light">#f7f7f7</color>
+    <color name="freeme_quick_contact_textcolor">#22c580</color>
+    <color name="freeme_quickcontact_delete">#e64a59</color>
+    <color name="freeme_quick_contact_header_title_color">#22c580</color>
+    <color name="freeme_quick_contact_sub_title_color">#808080</color>
+    <color name="freeme_quick_contact_dark_title">#333</color>
+    <color name="freeme_quick_contact_statusbar_color">#FAFAFA</color>
+    <color name="freeme_add_contact_info_add_text_size">#333333</color>
+    <color name="freeme_add_contact_info_add_text__hint_size">#cccccc</color>
+    <color name="freeme_add_contact_ring_text_color">#808080</color>
+    <color name="freeme_batch_operation_enable">#afdfc7</color>
+    <color name="freeme_group_name_text_color">#808080</color>
+</resources>

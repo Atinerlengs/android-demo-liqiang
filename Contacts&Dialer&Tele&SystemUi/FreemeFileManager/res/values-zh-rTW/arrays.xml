@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="group_item_names">
+        <item>緩存垃圾</item>
+        <item>記憶體垃圾</item>
+        <item>安裝包</item>
+        <item>系統暫存檔案</item>
+        <item>卸載殘留</item>
+    </string-array>
+</resources>

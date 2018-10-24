@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/file_item_height">
+
+    <RelativeLayout
+        android:id="@+id/picker"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/file_item_height"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="@dimen/detail_grid_vertical_space">
+
+        <CheckBox
+            android:id="@+id/group_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+
+        <ProgressBar
+            android:id="@+id/group_progress"
+            android:layout_width="@dimen/round_progressbar_diameter"
+            android:layout_height="@dimen/round_progressbar_diameter"
+            android:focusable="false"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/finish_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/group_size_image"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/file_item_height"
+        android:layout_toLeftOf="@id/picker"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/group_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/search_view_icon_left"
+            android:singleLine="true"
+            android:text="@string/garbage_suggest_title"
+            android:textAppearance="@style/AppTextAppearance.ItemOther" />
+
+        <ImageView
+            android:id="@+id/group_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/garbage_group_item_padding"
+            android:background="@drawable/btn_close_background" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/file_item_height"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/group_size_image" >
+
+        <RelativeLayout
+            android:id="@+id/group_item_info"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_marginStart="@dimen/detail_grid_vertical_space"
+                android:id="@+id/group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textAppearance="@style/AppTextAppearance.ItemName" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

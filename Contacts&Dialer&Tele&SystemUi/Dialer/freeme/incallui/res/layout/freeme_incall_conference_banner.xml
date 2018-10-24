@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="52dp"
+    android:orientation="horizontal"
+    android:background="@color/freeme_incall_call_conference_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="22dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/confernce_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/conference_call_name"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"/>
+        <Chronometer
+            android:id="@+id/conference_contactgrid_bottom_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confernce_name"
+            android:textAppearance="@style/Dialer.Incall.TextAppearance.CallStatus"
+            android:layout_marginTop="12dp"
+            android:singleLine="true"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/conference_detail"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:src="@drawable/freeme_incall_conferecnce_detail_selector"
+        android:background="?android:selectableItemBackgroundBorderless"/>
+</LinearLayout>

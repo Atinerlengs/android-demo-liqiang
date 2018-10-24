@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/account_header_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/account_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="@drawable/freeme_divider_vertical"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/account_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingEnd="@dimen/contact_editor_space_medium"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/contact_common_text_size" />
+
+        <TextView
+            android:id="@+id/account_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingStart="@dimen/contact_editor_space_medium"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="@dimen/contact_common_text_size" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/expand_account_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:layout_weight="0"
+        android:clickable="false"
+        android:paddingBottom="@dimen/editor_round_button_padding_bottom"
+        android:paddingEnd="@dimen/editor_round_button_padding_right"
+        android:paddingLeft="@dimen/editor_round_button_padding_left"
+        android:paddingRight="@dimen/editor_round_button_padding_right"
+        android:paddingStart="@dimen/editor_round_button_padding_left"
+        android:paddingTop="@dimen/editor_round_button_padding_top" />
+
+</LinearLayout>

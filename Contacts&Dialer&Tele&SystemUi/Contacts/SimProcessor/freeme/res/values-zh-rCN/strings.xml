@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="freeme_sim_processor_notification_msg">正在加载SIM卡联系人</string>
+</resources>

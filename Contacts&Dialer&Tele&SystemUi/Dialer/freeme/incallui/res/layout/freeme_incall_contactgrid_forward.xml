@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="@string/freeme_incall_forward_from_label"
+        android:textAppearance="@style/Dialer.Incall.TextAppearance.Forward" />
+
+    <TextView
+        android:id="@+id/contactgrid_forwardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/freeme_incall_number_gap"
+        android:singleLine="true"
+        android:textAppearance="@style/Dialer.Incall.TextAppearance.Forward" />
+</LinearLayout>

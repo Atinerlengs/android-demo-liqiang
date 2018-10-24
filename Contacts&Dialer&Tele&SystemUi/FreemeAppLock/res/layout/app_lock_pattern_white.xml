@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/whole_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom"
+    android:background="#fffafafa"
+    android:gravity="bottom">
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/portrait_content_layout_height"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#fffafafa">
+
+        <LinearLayout
+            android:id="@+id/app_infor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/portrait_app_infor_margin_top"
+            android:background="#00fafafa"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/app_icon"
+                android:layout_width="48.0dip"
+                android:layout_height="48.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="6.0dip"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/app_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:ellipsize="end"
+                android:fontFamily="sec-roboto-light"
+                android:maxWidth="@dimen/text_app_lable_max_width"
+                android:singleLine="true"
+                android:textColor="#ff000000"
+                android:textSize="19.0dip"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/pattern_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="419.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="#00fafafa"
+            android:elevation="12.0dip"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/patternimageButtonPW"
+                android:layout_width="42.0dip"
+                android:layout_height="41.0dip"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="27.0dip"
+                android:layout_marginTop="55.0dip"
+                android:background="@drawable/app_lock_unlock_ic_pwd" />
+
+            <TextView
+                android:id="@+id/patternTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="24.0dip"
+                android:layout_marginStart="24.0dip"
+                android:layout_marginTop="20.0dip"
+                android:ellipsize="end"
+                android:fontFamily="sec-roboto-light"
+                android:gravity="center"
+                android:maxLines="2"
+                android:paddingTop="16.0dip"
+                android:text="@string/applock_pattern_help_text"
+                android:textColor="#ff000000"
+                android:textSize="19.0dip" />
+
+            <com.android.internal.widget.LockPatternView
+                android:id="@+id/secretPattern"
+                android:layout_width="262.0dip"
+                android:layout_height="262.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="64.0dip"
+                android:focusable="true" />
+
+            <include
+                layout="@layout/app_lock_emergency_button"
+                android:layout_width="wrap_content"
+                android:layout_height="31.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="32.0dip"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

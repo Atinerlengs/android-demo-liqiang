@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="weather_style">
+        <item>Sunny</item>
+        <item>Cloudy</item>
+        <item>Overcast</item>
+        <item>Shower</item>
+        <item>Thunders</item>
+        <item>Thundershower with hail</item>
+        <item>Sleet</item>
+        <item>Light rain</item>
+        <item>Moderate rain</item>
+        <item>Heavy rain</item>
+        <item>Violent rain</item>
+        <item>Near rainstorm</item>
+        <item>Rainstorm</item>
+        <item>Snow shower</item>
+        <item>Light snow</item>
+        <item>Moderate snow</item>
+        <item>Heavy snow</item>
+        <item>Snowstorm</item>
+        <item>Foggy</item>
+        <item>Sleet</item>
+        <item>Sandstorm</item>
+        <item>Rain (light-moderate)</item>
+        <item>Rain (moderate-heavy)</item>
+        <item>Rain (heavy-violent)</item>
+        <item>Violent rain-near rainstorm</item>
+        <item>Near rainstorm-rainstorm</item>
+        <item>Snow (light-moderate)</item>
+        <item>Snow (moderate-heavy)</item>
+        <item>Snow (heavy-violent)</item>
+        <item>Dust</item>
+        <item>Blowing dust</item>
+        <item>Sandstorm</item>
+        <item>Squall</item>
+        <item>Tornado</item>
+        <item>Blowing snow</item>
+        <item>Mist</item>
+        <item>Haze</item>
+    </string-array>
+</resources>

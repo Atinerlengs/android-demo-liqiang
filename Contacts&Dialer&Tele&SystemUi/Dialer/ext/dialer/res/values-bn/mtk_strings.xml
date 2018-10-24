@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">অকার্যকর</string>
+    <string name="conf_call_member_list">সদস্য তালিকা</string>
+    <string name="conf_call_participant_answered">জবাব দেয়া হয়েছে</string>
+    <string name="conf_call_participant_missed">মিস হয়েছে</string>
+    <string name="calls_over_wifi">ওয়াইফাইদিয়েকলকরাহবে</string>
+    <string name="connect_to_wifi">কল করতে ওয়াইফাইয়ের সাথে সংযুক্ত হোন</string>
+    <string name="wfc_notification_summary">অগ্রাধিকারেপ্রবেশকরতেএখানেটোকাদিন</string>
+    <string name="wfc_notification_summary_fail">প্রাপ্ত নেটওয়ার্ক দেখতে এখানে টোকা দিন</string>
+    <string name="dialer_call_type_label_sip">ইন্টারনেট কল</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> আনব্লক ব্যর্থ</string>
+    <string name="menu_select_all">সবনির্বাচনকরুন</string>
+    <string name="selected_item_count">  <xliff:g id="count">%d</xliff:g> নির্বাচিত </string>
+    <string name="multichoice_no_select_alert">"কোন আইটেম নির্বাচন করা হয়নি।"</string>
+    <string name="deleteCallLogConfirmation_title">কল তালিকা মুছবেন?</string>
+    <string name="deleteCallLogConfirmation_message">আপনি কি নিশ্চিত আপনি নির্বাচিত কলতালিকা মুছতে চান?</string>
+    <string name="recentCalls_delete">মুছেফেলুন</string>
+    <string name="deleting_call_log">কল তালিকা মুছে ফেলা হচ্ছে...</string>
+    <string name="toast_call_detail_error">অনুরোধকৃত কলের বিস্তারিত তথ্য পড়তে পারেনি।</string>
+    <string name="calllogList">কল ইতিহাস</string>
+    <string name="calllogHint">কল তালিকা অনুসন্ধান করুন</string>
+    <string name="calllog_description">ইনকামিং,আউটগোয়িং এবং ব্যর্থ কল</string>
+    <string name="noMatchingCalllogs">মেলে এমন কোন কল তালিকা পাওয়া যায়নি।</string>
+    <string name="titleJoinContactDataWith">পরিচিতজনদের যুক্ত করুন</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> কল তালিকা</item>
+        <item quantity="one">“১ কল লগ”</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">কল তালিকা পাওয়া যায়নি</string>
+    <string name="search_results_for"><xliff:g id="query">%s</xliff:g>এর জন্য অনুসন্ধানের ফলাফল</string>
+    <string name="menu_select_none">“সব নির্বাচন বাদ করুন”</string>
+</resources>

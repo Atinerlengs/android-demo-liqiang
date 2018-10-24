@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="applicationLabel">"Kontaktid"</string>
+    <string name="contactsList">"Kontaktid"</string>
+    <string name="shortcut_add_contact">"Lisa kontakt"</string>
+    <string name="shortcutContact">"kontakt"</string>
+    <string name="shortcutDialContact">"Otsevalimine"</string>
+    <string name="shortcutMessageContact">"Otsesõnum"</string>
+    <string name="shortcutActivityTitle"/>
+    <string name="contactInsertOrEditActivityTitle">"Kontaktile lisamine"</string>
+    <string name="contactPickerActivityTitle">"Kontakti valimine"</string>
+    <string name="groupMemberPickerActivityTitle">"Vali"</string>
+    <string name="header_entry_contact_list_adapter_header_title">"Loouuskontakt"</string>
+    <string name="searchHint">"Otsige kontakte"</string>
+    <string name="menu_addStar">"Lisa lemmikutesse"</string>
+    <string name="menu_removeStar">Eemalda lemmikutest</string>
+    <string name="description_action_menu_remove_star">"Eemaldatud lemmikute hulgast"</string>
+    <string name="description_action_menu_add_star">"Lemmikutesse lisatud"</string>
+    <string name="menu_editContact">"Muuda"</string>
+    <string name="menu_deleteContact">"Kustuta"</string>
+    <string name="menu_change_photo">Vaheta foto</string>
+    <string name="menu_create_contact_shortcut"/>
+    <string name="menu_splitAggregate">"Tühista linkimine"</string>
+    <string name="menu_editGroup"/>
+    <string name="menu_renameGroup"/>
+    <string name="menu_deleteGroup"/>
+    <string name="menu_addToGroup">"Lisa kontakt"</string>
+    <string name="menu_selectForGroup"/>
+    <string name="menu_addContactsToGroup">Lisa kontaktid</string>
+    <string name="menu_removeFromGroup"/>
+    <string name="menu_new_group_action_bar"/>
+    <string name="splitConfirmation">"Kas tühistada selle kontakti linkimine ja jagada see mitmeks kontaktiks?"</string>
+    <string name="splitConfirmation_positive_button">"Tühista linkimine"</string>
+    <string name="splitConfirmationWithPendingChanges">"Kas soovite tehtud muudatused salvestada, tühistada selle kontakti linkimise ja jagada selle mitmeks kontaktiks?"</string>
+    <string name="splitConfirmationWithPendingChanges_positive_button">"Salvesta ja tühista linkimine"</string>
+    <string name="joinConfirmation">"Kas soovite tehtud muudatused salvestada ja linkida need valitud kontaktiga?"</string>
+    <string name="joinConfirmation_positive_button">"Salvesta ja lingi"</string>
+    <string name="contacts_linking_progress_bar"/>
+    <string name="contacts_unlinking_progress_bar"/>
+    <string name="menu_joinAggregate">"link"</string>
+    <string name="menu_linkedContacts"/>
+    <string name="menu_save">"Salvesta"</string>
+    <string name="titleJoinContactDataWith">"LINGI KONTAKTID"</string>
+    <string name="blurbJoinContactDataWith">"Valige kontakt, kelle soovite linkida kontaktiga <xliff:g id="NAME">%s</xliff:g>:"</string>
+    <string name="separatorJoinAggregateSuggestions">"Soovitatud kontaktid"</string>
+    <string name="separatorJoinAggregateAll">"KÕIK KONTAKTID"</string>
+    <string name="contactsJoinedNamedMessage"/>
+    <string name="contactsJoinedMessage">"Kontaktid lingiti"</string>
+    <string name="contacts_deleted_one_named_toast"/>
+    <string name="contacts_deleted_two_named_toast"/>
+    <string name="contacts_deleted_many_named_toast"/>
+    <plurals name="contacts_deleted_toast">
+        <item quantity="one">Kontaktid kustutati</item>
+        <item quantity="other">"Kontaktidkustutati"</item>
+    </plurals>
+    <plurals name="contacts_count">
+        <item quantity="one"/>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> kontakti</item>
+    </plurals>
+    <plurals name="contacts_count_with_account">
+        <item quantity="one"/>
+        <item quantity="other"/>
+    </plurals>
+    <string name="title_from_google"/>
+    <string name="title_from_other_accounts"/>
+    <string name="menu_set_ring_tone">"Määrake helin"</string>
+    <string name="menu_redirect_calls_to_vm"/>
+    <string name="menu_unredirect_calls_to_vm"/>
+    <string name="readOnlyContactWarning"/>
+    <string name="readOnlyContactWarning_positive_button"/>
+    <string name="readOnlyContactDeleteConfirmation"/>
+    <string name="single_delete_confirmation">"Kas kustutada see kontakt?"</string>
+    <string name="batch_delete_confirmation">"Kas kustutada valitud kontaktid?"</string>
+    <string name="batch_delete_read_only_contact_confirmation">"Kirjutuskaitsega kontodel olevaid kontakte ei saa kustutada, kuid need saab peita."</string>
+    <string name="batch_delete_multiple_accounts_confirmation">"Kustutatavatel kontaktidel on andmeid mitmelt kontolt. Kirjutuskaitsega kontode andmed peidetakse, mitte ei kustutata."</string>
+    <string name="multipleContactDeleteConfirmation">"Selle kontakti kustutamisel kustutatakse andmed mitmelt kontolt."</string>
+    <string name="deleteConfirmation">"Kas kustutada see kontakt?"</string>
+    <string name="deleteConfirmation_positive_button">"Kustuta"</string>
+    <string name="invalidContactMessage"/>
+    <string name="createContactShortcutSuccessful_NoName">"Kontakt lisati avaekraanile."</string>
+    <string name="createContactShortcutSuccessful">"Kontakt <xliff:g id="NAME">%s</xliff:g> lisati avaekraanile."</string>
+    <skip/>
+    <string name="photoPickerNotFoundText"/>
+    <string name="attach_photo_dialog_title">"kontaktifoto"</string>
+    <string name="customLabelPickerTitle">"Kohandatud sildi nimi"</string>
+    <string name="removePhoto">"Eemalda foto"</string>
+    <string name="noContacts"/>
+    <string name="emptyGroup"/>
+    <string name="emptyAccount"/>
+    <string name="emptyMainList"/>
+    <string name="contactSavedNamedToast"/>
+    <string name="contactSavedToast">"Kontakt on salvestatud."</string>
+    <string name="contactUnlinkedToast">"Kontaktide linkimine tühistati"</string>
+    <string name="contactSavedErrorToast"/>
+    <string name="contactUnlinkErrorToast"/>
+    <string name="contactJoinErrorToast"/>
+    <string name="contactGenericErrorToast"/>
+    <string name="contactPhotoSavedErrorToast"/>
+    <string name="groupLoadErrorToast"/>
+    <string name="groupDeletedToast"/>
+    <string name="groupCreatedToast"/>
+    <string name="groupCreateFailedToast"/>
+    <string name="groupUpdatedToast"/>
+    <string name="groupMembersRemovedToast"/>
+    <string name="groupMembersAddedToast"/>
+    <string name="groupSavedErrorToast"/>
+    <string name="groupExistsErrorMessage"/>
+    <string name="groupSomeContactsNoEmailsToast"/>
+    <string name="groupSomeContactsNoPhonesToast"/>
+    <string name="menu_sendEmailOption">"Saada meil"</string>
+    <string name="menu_sendMessageOption">Saada sõnum</string>
+    <string name="pickerSelectContactsActivityTitle"/>
+    <string name="send_to_selection">"Saada"</string>
+    <string name="listFoundAllContactsZero">"Kontaktid puuduvad"</string>
+    <string name="add_contact_dlg_message_fmt">"Kas lisada „<xliff:g id="EMAIL">%s</xliff:g>” kontaktidesse?"</string>
+    <string name="search_settings_description">"Teie kontaktide nimed"</string>
+    <string name="quickcontact_transparent_view_description">"Klõpsake eelmisele ekraanikuvale naasmiseks"</string>
+    <string name="quickcontact_add_phone_number">"Lisage telefoninumber"</string>
+    <string name="quickcontact_add_email">"Lisage e-posti aadress"</string>
+    <string name="missing_app">Toimingu jaoks poel sobivat rakendust.</string>
+    <string name="menu_share">"Jaga"</string>
+    <string name="menu_add_contact">"Lisa kontaktidesse"</string>
+    <string name="menu_add_contacts">"Lisa"</string>
+    <plurals name="title_share_via">
+        <item quantity="one">"Kontakti jagamisvalikud"</item>
+        <item quantity="other"/>
+    </plurals>
+    <string name="dialog_new_group_account">"Konto valimine"</string>
+    <string name="group_name_dialog_insert_title"/>
+    <string name="group_name_dialog_update_title"/>
+    <string name="group_name_dialog_hint"/>
+    <string name="label_name_dialog_hint"/>
+    <string name="audio_chat">"Häälvestlus"</string>
+    <string name="video_chat">"Videovestlus"</string>
+    <string name="account_type_format">"<xliff:g id="SOURCE">%1$s</xliff:g> kontakt"</string>
+    <string name="google_account_type_format">"Teenuse<xliff:g id="SOURCE">%1$s</xliff:g>konto"</string>
+    <string name="take_photo">"Jäädvusta foto"</string>
+    <string name="take_new_photo">"Tee uus foto"</string>
+    <string name="pick_photo">"Vali foto"</string>
+    <string name="pick_new_photo">Vali uus foto</string>
+    <string name="search_results_searching">"Otsimine ..."</string>
+    <string name="event_edit_field_hint_text">"Kuupäev"</string>
+    <string name="group_edit_field_hint_text">"Silt"</string>
+    <string name="cancel_button_content_description">LOOBU</string>
+    <string name="back_arrow_content_description">"Tagasi"</string>
+    <string name="action_menu_back_from_edit_select">"Sulge"</string>
+    <string name="aggregation_suggestion_edit_dialog_message">"Kas lülituda valitud kontakti muutmisse? Seni sisestatud andmed kopeeritakse."</string>
+    <string name="contact_directory_description">"Kataloog <xliff:g id="TYPE">%1$s</xliff:g>"</string>
+    <string name="activity_title_settings">"Seaded"</string>
+    <string name="menu_settings" msgid="377929915873428211">"Seaded"</string>
+    <string name="menu_help">"Abi ja tagasiside"</string>
+    <string name="organization_company_and_title">"<xliff:g id="COMPANY_0">%2$s</xliff:g>, <xliff:g id="COMPANY_1">%1$s</xliff:g>"</string>
+    <string name="non_phone_caption">Telefoninumber</string>
+    <string name="non_phone_add_to_contacts">"Lisa kontaktidesse"</string>
+    <string name="non_phone_close">"Sulge"</string>
+    <string name="date_year_toggle">"Lisa aasta"</string>
+    <string name="contacts_unavailable_add_account">"Lisa konto"</string>
+    <string name="contacts_unavailable_import_contacts">"Impordi"</string>
+    <string name="create_group_item_label"/>
+    <string name="delete_group_dialog_message"/>
+    <string name="toast_join_with_empty_contact">"Enne teise kontaktiga linkimist sisestage kontakti nimi."</string>
+    <string name="copy_text">"Kopeeri lõikelauale"</string>
+    <string name="set_default">"Määra vaikeseadeks"</string>
+    <string name="clear_default">"Kustuta vaikeseaded"</string>
+    <string name="toast_text_copied">"Tekst on kopeeritud"</string>
+    <string name="cancel_confirmation_dialog_message">"Kas soovite muudatustest loobuda?"</string>
+    <string name="cancel_confirmation_dialog_cancel_editing_button">Likvideeri</string>
+    <string name="cancel_confirmation_dialog_keep_editing_button">LOOBU</string>
+    <string name="leave_customize_confirmation_dialog_message"/>
+    <string name="enter_contact_name">"Otsige kontakte"</string>
+    <string name="title_edit_group"/>
+    <string name="local_profile_title">"Minu kohalik profiil"</string>
+    <string name="external_profile_title">"Minu profiil: <xliff:g id="EXTERNAL_SOURCE">%1$s</xliff:g>"</string>
+    <string name="contact_editor_prompt_zero_accounts"/>
+    <string name="contact_editor_prompt_one_account">"Uued kontaktid salvestatakse kontole <xliff:g id="ACCOUNT_NAME">%1$s</xliff:g>."</string>
+    <string name="contact_editor_prompt_multiple_accounts">"Valige uute kontaktide jaoks vaikekonto:"</string>
+    <string name="contact_editor_title_new_contact">"Loouuskontakt"</string>
+    <string name="contact_editor_title_existing_contact">"Kontakti muutmine"</string>
+    <string name="contact_editor_title_read_only_contact"/>
+    <string name="contact_editor_pick_raw_contact_to_edit_dialog_title"/>
+    <string name="contact_editor_pick_linked_contact_dialog_title">"Lingitud kontaktid"</string>
+    <string name="contact_editor_add_linked_contact">"Lisa"</string>
+    <string name="contact_editor_unlink_contacts">"Tühista linkimine"</string>
+    <string name="add_account">"Lisa konto"</string>
+    <string name="add_new_account">"Lisa uus konto"</string>
+    <string name="menu_export_database">"Andmebaasi failide eksportimine"</string>
+    <string name="action_menu_add_new_contact_button">"Loouuskontakt"</string>
+    <string name="expanding_entry_card_view_see_more">"Lisateave"</string>
+    <string name="expanding_entry_card_view_see_less">"Kuva vähem"</string>
+    <string name="recent_card_title">"Hiljutine"</string>
+    <string name="about_card_title">"Teave"</string>
+    <string name="toast_making_personal_copy"/>
+    <string name="tomorrow">"Homme"</string>
+    <string name="today">"Täna"</string>
+    <string name="today_at_time_fmt">"Täna kell <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
+    <string name="tomorrow_at_time_fmt">"Homme kell <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
+    <string name="date_time_fmt"/>
+    <string name="untitled_event">"(Pealkirjata sündmus)"</string>
+    <string name="date_time_set">"Määra"</string>
+    <string name="header_im_entry">"IM"</string>
+    <string name="header_organization_entry">"Organisatsioon"</string>
+    <string name="header_nickname_entry">"Hüüdnimi"</string>
+    <string name="header_note_entry">"Märkus"</string>
+    <string name="header_website_entry">"Veebisait"</string>
+    <string name="header_event_entry">"Sündmus"</string>
+    <string name="header_relation_entry">"Seos"</string>
+    <string name="header_name_entry">"Nimi"</string>
+    <string name="header_email_entry">E-post</string>
+    <string name="header_phone_entry">"Telefon"</string>
+    <string name="content_description_directions">"juhised asukohta"</string>
+    <string name="content_description_recent_sms"/>
+    <string name="content_description_recent_call_type_incoming">sisenevad</string>
+    <string name="content_description_recent_call_type_outgoing">väljuvad</string>
+    <string name="content_description_recent_call_type_missed">"Vastamata"</string>
+    <string name="content_description_recent_call"/>
+    <string name="message_from_you_prefix">"Teie: <xliff:g id="SMS_BODY">%s</xliff:g>"</string>
+    <string name="editor_more_fields">"Rohkemvälju"</string>
+    <string name="editor_change_photo_content_description"/>
+    <string name="editor_add_photo_content_description"/>
+    <string name="editor_contact_photo_content_description">"kontaktifoto"</string>
+    <string name="editor_failed_to_load">"Redigeerija avamine nurjus."</string>
+    <string name="editor_account_selector_title">"Salvestamine asukohta"</string>
+    <string name="editor_account_selector_read_only_title"/>
+    <string name="quickcontact_suggestion_link_button">"LINGI KONTAKTID"</string>
+    <string name="quickcontact_suggestion_cancel_button">LOOBU</string>
+    <string name="suggestion_card_this_contact_title">"See kontakt"</string>
+    <string name="suggestion_card_duplicates_title">"Võimalikud duplikaadid"</string>
+    <string name="suggestion_card_help_message">"Need kontaktid võivad olla sama isik. Saate need linkida üheks kontaktiks."</string>
+    <string name="editor_delete_view_description"/>
+    <string name="editor_delete_view_description_short">"Kustuta <xliff:g id="DATA_KIND">%s</xliff:g>"</string>
+    <string name="menu_assistant"/>
+    <string name="menu_assistant_new_badge">"Uus"</string>
+    <string name="navigation_drawer_open">"Ava navigeerimissahtel"</string>
+    <string name="navigation_drawer_close">"Sule navigeerimissahtel"</string>
+    <string name="navigation_drawer_label"/>
+    <string name="menu_title_groups"/>
+    <string name="menu_title_filters">Kontod</string>
+    <string name="permission_explanation_header"/>
+    <string name="permission_explanation_subheader_calendar_and_SMS"/>
+    <string name="permission_explanation_subheader_calendar">Sündmused</string>
+    <string name="permission_explanation_subheader_SMS">"Sõnumid"</string>
+    <string name="hamburger_feature_highlight_header"/>
+    <string name="hamburger_feature_highlight_body"/>
+    <string name="undo">"VÕTA TAGASI"</string>
+    <string name="call_custom"/>
+    <string name="call_home">"Helista kodutelefoninumbrile"</string>
+    <string name="call_mobile">"Helista mobiilinumbrile"</string>
+    <string name="call_work">"Helistatöönumbrile"</string>
+    <string name="call_fax_work">"Helista tööfaksinumbrile"</string>
+    <string name="call_fax_home">"Helista kodufaksinumbrile"</string>
+    <string name="call_pager">"Helista piiparinumbrile"</string>
+    <string name="call_other">"Helista"</string>
+    <string name="call_callback">"Helista tagasihelistusnumbrile"</string>
+    <string name="call_car">"Helista autotelefoninumbrile"</string>
+    <string name="call_company_main">"Helista ettevõtte põhinumbrile"</string>
+    <string name="call_isdn">"Helista ISDN-telefoninumbrile"</string>
+    <string name="call_main">"Helista põhinumbrile"</string>
+    <string name="call_other_fax">"Helista faksinumbrile"</string>
+    <string name="call_radio">"Helista raadiotelefoninumbrile"</string>
+    <string name="call_telex">"Helista teleksinumbrile"</string>
+    <string name="call_tty_tdd">"Helista TTY-/TDD-numbrile"</string>
+    <string name="call_work_mobile">"Helista töömobiilinumbrile"</string>
+    <string name="call_work_pager">"Helista tööpiiparinumbrile"</string>
+    <string name="call_assistant"/>
+    <string name="call_mms">"Helista MMS-i numbrile"</string>
+    <string name="call_by_shortcut">"<xliff:g id="CONTACT_NAME">%s</xliff:g> (helistamine)"</string>
+    <string name="sms_custom"/>
+    <string name="sms_home">"Saada sõnum kodutelefoninumbrile"</string>
+    <string name="sms_mobile">"Saada sõnum mobiilinumbrile"</string>
+    <string name="sms_work">"Saada sõnum töönumbrile"</string>
+    <string name="sms_fax_work">"Saada sõnum tööfaksinumbrile"</string>
+    <string name="sms_fax_home">"Saada sõnum kodufaksinumbrile"</string>
+    <string name="sms_pager">"Saada sõnum piiparinumbrile"</string>
+    <string name="sms_other">"Saadasõnum"</string>
+    <string name="sms_callback">"Saada sõnum tagasihelistusnumbrile"</string>
+    <string name="sms_car">"Saada sõnum autotelefoninumbrile"</string>
+    <string name="sms_company_main">"Saada sõnum ettevõtte põhitelefoninumbrile"</string>
+    <string name="sms_isdn">"Saada sõnum ISDN-telefoninumbrile"</string>
+    <string name="sms_main">"Saada sõnum põhinumbrile"</string>
+    <string name="sms_other_fax">"Saada sõnum faksinumbrile"</string>
+    <string name="sms_radio">"Saada sõnum raadiotelefoninumbrile"</string>
+    <string name="sms_telex">"Saada sõnum teleksinumbrile"</string>
+    <string name="sms_tty_tdd">"Saada sõnum TTY-/TDD-numbrile"</string>
+    <string name="sms_work_mobile">"Saada sõnum töömobiilinumbrile"</string>
+    <string name="sms_work_pager">"Saada sõnum tööpiiparinumbrile"</string>
+    <string name="sms_assistant">"Saada sõnum numbrile <xliff:g id="ASSISTANT">%s</xliff:g>"</string>
+    <string name="sms_mms">"Saada sõnum MMS-i numbrile"</string>
+    <string name="sms_by_shortcut">"<xliff:g id="CONTACT_NAME">%s</xliff:g> (sõnum)"</string>
+    <string name="description_video_call">"Videokõne tegemine"</string>
+    <string name="clearFrequentsConfirmation_title">"Kas kustutada sagedased kontaktid?"</string>
+    <string name="clearFrequentsConfirmation"/>
+    <string name="clearFrequentsProgress_title">"Saged. kontaktide kustutamine ..."</string>
+    <string name="status_available">"Saadaval"</string>
+    <string name="status_away">"Eemal"</string>
+    <string name="status_busy">"Hõivatud"</string>
+    <string name="local_invisible_directory">"Muud"</string>
+    <string name="directory_search_label">"Kataloog"</string>
+    <string name="directory_search_label_work">"Töökontaktide kataloog"</string>
+    <string name="local_search_label">"KÕIK KONTAKTID"</string>
+    <string name="description_quick_contact_for">"Kiirkontakt: <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="missing_name">"(Nimi puudub)"</string>
+    <string name="favoritesFrequentContacted">"Sageli valitud kontaktisikud"</string>
+    <string name="list_filter_phones">"Kõik telefoninumbritega kontaktid"</string>
+    <string name="list_filter_phones_work">"Tööprofiili kontaktid"</string>
+    <string name="view_updates_from_group">"Kuva värskendused"</string>
+    <string name="account_phone">"seade"</string>
+    <string name="account_sim">SIM</string>
+    <string name="nameLabelsGroup">"Nimi"</string>
+    <string name="nicknameLabelsGroup">"Hüüdnimi"</string>
+    <string name="name_given">"Eesnimi"</string>
+    <string name="name_family">"Perekonnanimi"</string>
+    <string name="name_prefix">"Nime eesliide"</string>
+    <string name="name_middle">"Teine nimi"</string>
+    <string name="name_suffix">"Nime järelliide"</string>
+    <string name="name_phonetic">"Foneetilinenimi"</string>
+    <string name="name_phonetic_given">"Foneetiline eesnimi"</string>
+    <string name="name_phonetic_middle">"Foneetiline keskmine nimi"</string>
+    <string name="name_phonetic_family">"Foneetiline perekonnanimi"</string>
+    <string name="phoneLabelsGroup">"Telefon"</string>
+    <string name="emailLabelsGroup">E-post</string>
+    <string name="postalLabelsGroup">"Aadress"</string>
+    <string name="imLabelsGroup">"IM"</string>
+    <string name="organizationLabelsGroup">"Organisatsioon"</string>
+    <string name="relationLabelsGroup">"Suhe"</string>
+    <string name="eventLabelsGroup">"Erikuupäev"</string>
+    <string name="sms">"tekstsõnum"</string>
+    <string name="postal_address">"Aadress"</string>
+    <string name="ghostData_company">"Ettevõte"</string>
+    <string name="ghostData_title">"Nimetus"</string>
+    <string name="label_notes">"Märkmed"</string>
+    <string name="label_custom_field">"Kohandatud"</string>
+    <string name="label_sip_address">"SIP"</string>
+    <string name="websiteLabelsGroup">"Veebisait"</string>
+    <string name="groupsLabel"/>
+    <string name="email_home">"Saada meilisõnum kodusele aadressile"</string>
+    <string name="email_mobile">"Saada meilisõnum mobiilile"</string>
+    <string name="email_work">"Saada meiliaadress tööaadressile"</string>
+    <string name="email_other">E-post</string>
+    <string name="email_custom"/>
+    <string name="email">E-post</string>
+    <string name="postal_street">"Tänav"</string>
+    <string name="postal_city">"Linn"</string>
+    <string name="postal_region">"Olek"</string>
+    <string name="postal_postcode">"Sihtnumber"</string>
+    <string name="postal_country">"Riik"</string>
+    <string name="map_home">"Kuvakoduneaadress"</string>
+    <string name="map_work">"Kuvatööaadress"</string>
+    <string name="map_other">"Kuvaaadress"</string>
+    <string name="map_custom"/>
+    <string name="chat_aim">"Vestlus AIM-i kasutades"</string>
+    <string name="chat_msn">"Vestlus Windows Live\'i kasutades"</string>
+    <string name="chat_yahoo">"Vestlus Yahood kasutades"</string>
+    <string name="chat_skype">"Vestlus Skype\'i kasutades"</string>
+    <string name="chat_qq">"VestlusQQkasutades"</string>
+    <string name="chat_gtalk">"Vestlus Google Talki kasutades"</string>
+    <string name="chat_icq">"Vestlus ICQ-d kasutades"</string>
+    <string name="chat_jabber">"Vestlus Jabberit kasutades"</string>
+    <string name="chat">"Vestlus"</string>
+    <string name="description_minus_button">"Kustuta"</string>
+    <string name="expand_name_fields_description"/>
+    <string name="collapse_name_fields_description"/>
+    <string name="expand_phonetic_name_fields_description"/>
+    <string name="collapse_phonetic_name_fields_description"/>
+    <string name="expand_fields_description">"Laiendamine"</string>
+    <string name="collapse_fields_description">"Ahendamine"</string>
+    <string name="announce_expanded_fields"/>
+    <string name="announce_collapsed_fields"/>
+    <string name="list_filter_all_accounts">"KÕIK KONTAKTID"</string>
+    <string name="list_filter_all_starred">"Tärniga"</string>
+    <string name="list_filter_customize">"Kohanda"</string>
+    <string name="list_filter_single">"kontakt"</string>
+    <string name="display_ungrouped">"Kõik teised kontaktid"</string>
+    <string name="display_all_contacts">"KÕIK KONTAKTID"</string>
+    <string name="menu_sync_remove">"Eemalda sünkroonimisrühm"</string>
+    <string name="dialog_sync_add">"Lisa sünkroonimisrühm"</string>
+    <string name="display_more_groups">"Rohkem rühmi ..."</string>
+    <string name="display_warn_remove_ungrouped">"Rühma „<xliff:g id="GROUP">%s</xliff:g>” eemaldamisel sünkroonimisest eemaldatakse sünkroonimisest ka kõik rühmitamata kontaktid."</string>
+    <string name="savingDisplayGroups">"Kuvavalikute salvestamine ..."</string>
+    <string name="listCustomView"/>
+    <string name="dialog_new_contact_account">"Salvestage imporditud kontaktid kontole:"</string>
+    <string name="import_from_sim">"SIM-kaart"</string>
+    <string name="import_from_sim_summary_fmt"/>
+    <plurals name="import_from_sim_secondary_contact_count_fmt">
+        <item quantity="one">1 kontakt</item>
+        <item quantity="other"/>
+    </plurals>
+    <plurals name="import_from_sim_secondary_template">
+        <item quantity="one"/>
+        <item quantity="other"/>
+    </plurals>
+    <string name="import_from_vcf_file"/>
+    <string name="nothing_to_import_message"/>
+    <string name="import_from_vcf_file_confirmation_message"/>
+    <string name="cancel_import_confirmation_message">"Kas tühistada faili <xliff:g id="FILENAME">%s</xliff:g> importimine?"</string>
+    <string name="cancel_export_confirmation_message">"Kas tühistada faili <xliff:g id="FILENAME">%s</xliff:g> eksportimine?"</string>
+    <string name="cancel_vcard_import_or_export_failed"/>
+    <string name="fail_reason_unknown">Tundmati viga.</string>
+    <string name="fail_reason_could_not_open_file"/>
+    <string name="fail_reason_could_not_initialize_exporter"/>
+    <string name="fail_reason_no_exportable_contact">"Eksporditavad kontaktid puuduvad."</string>
+    <string name="missing_required_permission">"Oletenõutudloakeelanud."</string>
+    <string name="fail_reason_error_occurred_during_export">"Viga eksportimisel: „<xliff:g id="EXACT_REASON">%s</xliff:g>”."</string>
+    <string name="fail_reason_io_error">"I/O viga"</string>
+    <string name="fail_reason_low_memory_during_import">"Pole piisavalt mälu. Fail võib olla liiga suur."</string>
+    <string name="fail_reason_not_supported"/>
+    <string name="exporting_vcard_finished_title">"Faili <xliff:g id="FILENAME">%s</xliff:g> eksportimine on lõpetatud."</string>
+    <string name="exporting_vcard_finished_title_fallback">"Kontaktideeksportimineonlõpetatud."</string>
+    <string name="exporting_vcard_finished_toast">"Kontaktide eksportimine lõpetati. Kontaktide jagamiseks klõpsake märguandel."</string>
+    <string name="touch_to_share_contacts">"Puudutage kontaktide jagamiseks."</string>
+    <string name="exporting_vcard_canceled_title">"Faili <xliff:g id="FILENAME">%s</xliff:g> eksportimine tühistati."</string>
+    <string name="exporting_contact_list_title">"Kontaktandmete eksportimine"</string>
+    <string name="exporting_contact_list_message">"Kontaktide andmed eksporditakse."</string>
+    <string name="composer_failed_to_get_database_infomation"/>
+    <string name="composer_has_no_exportable_contact"/>
+    <string name="composer_not_initialized"/>
+    <string name="exporting_contact_failed_title"/>
+    <string name="exporting_contact_failed_message"/>
+    <string name="importing_vcard_description">"Importimine: <xliff:g id="NAME">%s</xliff:g>"</string>
+    <string name="reading_vcard_failed_title"/>
+    <string name="importing_vcard_finished_title">"vCardi faili <xliff:g id="FILENAME">%s</xliff:g> importimine lõpetatud"</string>
+    <string name="importing_vcard_canceled_title">"Faili <xliff:g id="FILENAME">%s</xliff:g> importimine tühistati"</string>
+    <string name="vcard_import_will_start_message">"Fail <xliff:g id="FILENAME">%s</xliff:g> imporditakse peagi."</string>
+    <string name="vcard_import_will_start_message_with_default_name">"Fail imporditakse peagi."</string>
+    <string name="vcard_import_request_rejected_message">"vCardi importimistaotlus lükati tagasi. Proovige hiljem uuesti."</string>
+    <string name="contacts_export_will_start_message">"Kontaktid eksporditakse peagi."</string>
+    <string name="vcard_export_request_rejected_message">"vCardi eksportimistaotlus lükati tagasi. Proovige hiljem uuesti."</string>
+    <string name="vcard_unknown_filename">"kontakt"</string>
+    <string name="caching_vcard_message">"vCardi(de) vahemälustamine kohalikku ajutisse mäluruumi. Tegelik importimine algab peagi."</string>
+    <string name="vcard_import_failed"/>
+    <string name="nfc_vcard_file_name">"Kontakt saadud NFC kaudu"</string>
+    <string name="caching_vcard_title">"Vahemällu salvestamine"</string>
+    <string name="progress_notifier_message"/>
+    <string name="export_to_vcf_file">"EksportimineVCF-faili"</string>
+    <string name="display_options_sort_list_by">"Sortimisalus:"</string>
+    <string name="display_options_phonetic_name_fields">"Foneetilinenimi"</string>
+    <string name="editor_options_always_show_phonetic_names">"Kuva alati"</string>
+    <string name="editor_options_hide_phonetic_names_if_empty"/>
+    <string name="display_options_sort_by_given_name">"Eesnimi"</string>
+    <string name="display_options_sort_by_family_name">"Perekonnanimi"</string>
+    <string name="display_options_view_names_as">"Nimevorming"</string>
+    <string name="display_options_view_given_name_first">"Eesnimi enne"</string>
+    <string name="display_options_view_family_name_first">"Perekonnanimi enne"</string>
+    <string name="settings_accounts">Kontod</string>
+    <string name="default_editor_account">"Vaikekonto uute kontaktide jaoks"</string>
+    <string name="settings_my_info_title"/>
+    <string name="set_up_profile">"Seadistage oma profiil"</string>
+    <string name="setting_about">"Teave rakenduse Kontaktid kohta"</string>
+    <string name="share_favorite_contacts">"Jaga lemmikkontakte"</string>
+    <string name="share_contacts">"Jaga kõiki kontakte"</string>
+    <string name="share_contacts_failure">"Kontaktide jagamine ebaõnnestus."</string>
+    <string name="dialog_export"/>
+    <string name="dialog_import"/>
+    <string name="share_error"/>
+    <string name="no_contact_to_share">"Jagamiseks ei ole ühtki kontakti."</string>
+    <string name="menu_contacts_filter">"Kuvatavad kontaktisikud"</string>
+    <string name="activity_title_contacts_filter">"Kuvatavad kontaktisikud"</string>
+    <string name="custom_list_filter"/>
+    <string name="menu_custom_filter_save">"Salvesta"</string>
+    <string name="hint_findContacts">"Otsige kontakte"</string>
+    <string name="contactsFavoritesLabel">"Lemmikud"</string>
+    <string name="menu_import">"Impordi"</string>
+    <string name="menu_export">"Ekspordi"</string>
+    <string name="menu_blocked_numbers">"Blokeeritud numbrid"</string>
+    <string name="contact_status_update_attribution">"allika <xliff:g id="SOURCE">%1$s</xliff:g> kaudu"</string>
+    <string name="contact_status_update_attribution_with_date">"<xliff:g id="DATE">%1$s</xliff:g> allika <xliff:g id="SOURCE">%2$s</xliff:g> kaudu"</string>
+    <string name="letter_tile_letter_font_family"/>
+    <string name="action_menu_back_from_search">"otsimise peatamine"</string>
+    <string name="description_clear_search">"Otsingu kustutamine"</string>
+    <string name="search_font_family"/>
+    <string name="select_account_dialog_title">Konto</string>
+    <string name="set_default_account">"Kasuta helistamiseks alati seda"</string>
+    <string name="call_with_a_note">"Kõne koos märkusega"</string>
+    <string name="call_subject_hint"/>
+    <string name="send_and_call_button">"SAADA JA HELISTA"</string>
+    <string name="call_subject_limit">"<xliff:g id="COUNT">%1$s</xliff:g>/<xliff:g id="LIMIT">%2$s</xliff:g>"</string>
+    <string name="call_subject_type_and_number"/>
+    <string name="about_build_version">"Järguversioon"</string>
+    <string name="about_open_source_licenses">"Avatud lähtekoodi litsentsid"</string>
+    <string name="about_open_source_licenses_summary">"Avatud lähtekoodiga tarkvara litsentsi üksikasjad"</string>
+    <string name="about_privacy_policy">"Privaatsuseeskirjad"</string>
+    <string name="about_terms_of_service">"Teenusetingimused"</string>
+    <string name="activity_title_licenses">"Avatud lähtekoodi litsentsid"</string>
+    <string name="url_open_error_toast">"URL-i avamine ebaõnnestus."</string>
+    <string name="account_filter_view_checked">"Üksus <xliff:g id="ACCOUNT_INFO">%s</xliff:g> on märgitud"</string>
+    <string name="account_filter_view_not_checked">"Üksus <xliff:g id="ACCOUNT_INFO">%s</xliff:g> pole märgitud"</string>
+    <string name="description_search_video_call">"Videokõne tegemine"</string>
+    <string name="description_delete_contact">"Kustuta"</string>
+    <string name="description_no_name_header"/>
+    <string name="callDurationSecondFormat"/>
+    <string name="callDurationMinuteFormat"/>
+    <string name="callDurationHourFormat"/>
+    <string name="dynamic_shortcut_disabled_message"/>
+    <string name="dynamic_shortcut_contact_removed_message"/>
+    <string name="sim_import_button_text">"Impordi"</string>
+    <string name="sim_import_title_none_selected"/>
+    <string name="sim_import_empty_message"/>
+    <string name="sim_import_contact_exists_toast"/>
+    <plurals name="sim_import_success_toast_fmt">
+        <item quantity="one"/>
+        <item quantity="other"/>
+    </plurals>
+    <string name="sim_import_failed_toast"/>
+    <string name="sim_import_title"/>
+    <string name="sim_import_cancel_content_description">LOOBU</string>
+    <string name="auto_sync_off"/>
+    <string name="dismiss_sync_alert">Tühista</string>
+    <string name="account_sync_off"/>
+    <string name="turn_auto_sync_on_dialog_title"/>
+    <string name="turn_auto_sync_on_dialog_body"/>
+    <string name="turn_auto_sync_on_dialog_confirm_btn">"Lülitasisse"</string>
+    <string name="connection_error_message">"Ühendus puudub"</string>
+    <string name="single_sim_display_label">SIM</string>
+    <string name="show_more_content_description"/>
+    <string name="importing_sim_finished_title"/>
+    <string name="importing_sim_failed_title">Importimine ebaõnnestus</string>
+    <string name="importing_sim_failed_message"/>
+    <string name="importing_sim_in_progress_title"/>
+    <string name="contacts_default_notification_channel">"Teated"</string>
+</resources>

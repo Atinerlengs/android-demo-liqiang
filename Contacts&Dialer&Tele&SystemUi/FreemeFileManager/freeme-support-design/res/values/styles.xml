@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Freeme.Design.TabLayout" parent="android:Widget.Material">
+        <item name="tab_gravity">center</item>
+        <item name="tab_maxWidth">@dimen/freeme_design_tab_max_width</item>
+        <item name="tab_height">36dp</item>
+        <item name="tab_indicatorColor">?android:attr/colorAccent</item>
+        <item name="tab_indicatorHeight">2dp</item>
+        <item name="tab_paddingStart">8dp</item>
+        <item name="tab_paddingEnd">8dp</item>
+        <!--<item name="tab_background">?android:selectableItemBackground</item>-->
+        <item name="tab_background">@null</item>
+        <item name="tab_textAppearance">@style/TextAppearance.Freeme.Design.Tab</item>
+        <item name="tab_selectedTextColor">?android:colorControlActivated</item>
+    </style>
+    <style name="TextAppearance.Freeme.Design.Tab" parent="android:TextAppearance.Material.Widget.TabWidget">
+        <item name="android:textSize">@dimen/freeme_design_tab_text_size</item>
+        <item name="android:textColor">?android:colorControlNormal</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+</resources>

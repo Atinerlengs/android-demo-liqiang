@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="dialer_other_settings">其他设置</string>
+    <string name="phone_vibrate">接通振動</string>
+    <string name="phone_revice_vibrate">電話接通時手機振動</string>
+    <string name="phone_revice_no_vibrate">電話接通時手機振動</string>
+    <string name="reverse_silent">翻轉靜音</string>
+    <string name="reverse_silent_info">翻轉電話使來電靜音</string>
+    <string name="gradient_ringing_call">鈴聲漸變</string>
+    <string name="gradient_ringing_info">來電鈴聲逐步放大</string>
+    <string name="pocket_ring_mode_text">口袋模式</string>
+    <string name="pocket_ring_mode_info">當設備位于口袋中時鈴聲音量增加</string>
+    <string name="delete_from_call_log_list">從通話記錄中刪除</string>
+    <string name="freeme_delete_contacts_confirmation_title">"確定要刪除聯絡人？"</string>
+    <plurals name="freeme_contacts_deleted_toast">
+        <item quantity="other">已刪除聯絡人</item>
+        <item quantity="one">已刪除聯絡人</item>
+    </plurals>
+    <string name="freeme_contacts_deleted_one_named_toast">"已刪除<xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="freeme_contacts_deleted_two_named_toast">"已刪除<xliff:g id="NAME_0">%1$s</xliff:g>和<xliff:g id="NAME_1">%2$s</xliff:g>"</string>
+    <string name="freeme_contacts_deleted_many_named_toast">"已刪除<xliff:g id="NAME_0">%1$s</xliff:g>、<xliff:g id="NAME_1">%2$s</xliff:g>、<xliff:g id="NAME_2">%3$s</xliff:g>..."</string>
+    <string name="freeme_contact_edit_permission_denied">無法儲存聯絡人變更。</string>
+    <string name="freeme_multiple_contact_delete_confirmation">如果刪除這個聯絡人，系統將一併刪除多個帳戶中的相關詳細資料。</string>
+    <string name="freeme_contact_delete_confirmation">確定要刪除這個聯絡人嗎？</string>
+    <string name="freeme_contact_delete_positive_button">刪除</string>
+    <string name="freeme_readonly_contact_delete_warning">系統無法刪除擷取自唯讀帳戶的聯絡人資料，但可以將這些資料設為隱藏。</string>
+    <string name="freeme_readonly_contact_delete_positive_button">隱藏</string>
+    <string name="freeme_readonly_contact_delete_confirmation">您要刪除的聯絡人詳細資料源自多個帳戶。針對擷取自唯讀帳戶的詳細資料，系統會予以隱藏，而不會刪除這些資料。</string>
+    <string name="call_log_activity_title">"通話紀錄"</string>
+    <string name="multiple_delete">刪除通話記錄</string>
+    <string name="freeme_call_type_incoming">呼入</string>
+    <string name="freeme_call_type_outgoing">呼出</string>
+    <string name="freeme_call_logs_filter_all">全部通話</string>
+    <string name="freeme_call_logs_filter_missed">未接來電</string>
+    <string name="freeme_call_logs_filter_outgoing">已撥電話</string>
+    <string name="freeme_call_logs_filter_incoming">已接來電</string>
+    <string name="freeme_call_logs_mulit_delete">批量删除</string>
+    <string name="freeme_delete_contact">刪除聯絡人</string>
+    <string name="freeme_default_ringtone_summary">設置默認的手機鈴聲</string>
+    <string name="freeme_tab_call_label">電話</string>
+    <string name="freeme_toast_call_delete_success">通話履歴删除成功</string>
+    <string name="freeme_no_match_contact">没有匹配的聯絡人</string>
+    <string name="freeme_call_log_missed_empty">"您沒有任何未接來電"</string>
+    <string name="freeme_call_log_voicemail_empty">"您沒有任何語音留言"</string>
+    <string name="freeme_display_contacts_name">"聯絡人"</string>
+    <string name="freeme_list_filter_customize">"自訂"</string>
+    <string name="freeme_permission_no_favorites">"如要啟用收藏，請開啟「聯絡人」存取權限。"</string>
+    <string name="freeme_my_profile">"我的名片"</string>
+    <string name="freeme_strange_number">"陌生號碼"</string>
+    <string name="freeme_stranger_mark_number">標記號碼</string>
+
+    <string name="freeme_type_incoming">呼入</string>
+    <string name="freeme_type_outgoing">呼出</string>
+    <string name="freeme_type_missed">未接電話</string>
+    <string name="freeme_type_missed_video">未接視屏通話</string>
+    <string name="freeme_type_incoming_video">視頻呼入</string>
+    <string name="freeme_type_outgoing_video">視頻呼出</string>
+    <string name="freeme_type_voicemail">語音郵件</string>
+    <string name="freeme_type_rejected">拒接</string>
+    <string name="freeme_type_blocked">屏蔽</string>
+    <string name="freeme_type_answered_elsewhere">已在其他設備接聽來電</string>
+    <string name="freeme_outgoing_unconnected">未接通</string>
+    <string name="freeme_incoming_unconnected">未接</string>
+    <string name="freeme_type_outgoing_video_pulled">已转接至其他设备的视频呼出</string>
+    <string name="freeme_type_incoming_video_pulled">已转接至其他设备的视频呼入</string>
+    <string name="freeme_type_outgoing_pulled">已转接至其他设备的呼出</string>
+    <string name="freeme_type_incoming_pulled">已转接至其他设备的呼入</string>
+
+    <string name="freeme_dialer_settings_assist">輔助</string>
+    <string name="freeme_dialer_settings_incoming_vibrate">來電振動</string>
+    <string name="freeme_dialer_settings_noise_reduction_summary">通話中壓制背景雜訊</string>
+    <string name="freeme_dialer_settings_noise_reduction_title">減少雜訊</string>
+    <string name="freeme_dialer_settings_blacklist_list">黑名單設置</string>
+    <string name="freeme_dialer_settings_shortcut">快捷</string>
+    <string name="freeme_dialer_settings_smart_dialer_title">智能撥打</string>
+    <string name="freeme_dialer_settings_smart_dialer_summary">選中號碼,快速將手機靠近耳朵撥出電話</string>
+    <string name="freeme_dialer_settings_smart_answer_title">智能接聽</string>
+    <string name="freeme_dialer_settings_smart_answer_summary">來電時,快速將手機靠近耳朵接聽電話</string>
+    <string name="freeme_dialer_settings_no_touch">隔空操作來電</string>
+    <string name="freeme_dialer_settings_no_touch_not_set">不設置</string>
+    <string name="freeme_dialer_settings_other">其它</string>
+    <string name="freeme_dialer_settings_call_related">運營商通話相關設置</string>
+    <string name="freeme_dialer_settings_speed_dial">快速撥號設置</string>
+    <string name="title_share_via">透過下列應用程式分享聯絡人資訊：</string>
+    <string name="share_contacts_limit">"所選的分享聯絡人不能多於 "<xliff:g id="count">%d</xliff:g></string>
+    <string name="freeme_not_add_more_recipients">不能同時添加聯絡人超過 <xliff:g id="maxLimit"> %1$d </xliff:g></string>
+
+    <string name="icc_phone_book_invalid">電話簿目前無法使用，請稍後再試。</string>
+    <string name="contacts_default_notification_channel">"通知"</string>
+    <string name="multichoice_confirmation_title_delete">取消刪除聯絡人 </string>
+    <string name="multichoice_confirmation_message_delete">取消刪除聯絡人？</string>
+    <string name="notifier_multichoice_process_report">已完成：  <xliff:g id="items">%d</xliff:g> 筆\n未完成：  <xliff:g id="items">%d</xliff:g> 筆 </string>
+    <string name="notifier_cancel_delete_title">刪除聯絡人已取消</string>
+    <string name="notifier_fail_delete_title">刪除聯絡人失敗</string>
+    <string name="notifier_finish_delete_title">刪除聯絡人完成</string>
+    <string name="notifier_finish_delete_content">已刪除  <xliff:g id="total">%d</xliff:g> 位聯絡人 </string>
+    <string name="notifier_progress_delete_will_start_message">聯絡人即將被刪除</string>
+    <string name="notifier_progress_delete_message">刪除 <xliff:g id="current_number">%s</xliff:g>/<xliff:g id="total_number">%s</xliff:g>:<xliff:g id="name" example="JoeDue">%s</xliff:g></string>
+    <string name="notifier_progress_delete_description">刪除 <xliff:g id="name" example="JoeDue">%s</xliff:g></string>
+    <string name="readOnlyContactWarning">"這是唯讀聯絡人資料，因此無法刪除，但你可以將這筆資料設為隱藏。"</string>
+    <string name="single_delete_confirmation">"確定要刪除這個聯絡人嗎？"</string>
+    <string name="batch_delete_confirmation">"確定要刪除所選的聯絡人嗎？"</string>
+    <string name="batch_delete_read_only_contact_confirmation">"系統無法刪除擷取自唯讀帳戶的聯絡人資料，但可以將這些資料設為隱藏。"</string>
+    <string name="batch_delete_multiple_accounts_confirmation">"您要刪除的聯絡人詳細資料源自多個帳戶。針對擷取自唯讀帳戶的詳細資料，系統會予以隱藏，而不會刪除這些資料。"</string>
+
+    <string name="freeme_dialer_settings_no_touch_none">無</string>
+    <string name="freeme_dialer_settings_no_touch_mute_calls">來電靜音</string>
+    <string name="freeme_dialer_settings_no_touch_hands_free_answer">來電免提接聽</string>
+
+    <string name="freeme_dialog_voicemail_not_ready_message">要設置語音信箱，請轉到系統應用設置.</string>
+
+    <string name="freeme_contact_delete_all_tips">"正在刪除聯絡人，本操作無法執行。" </string>
+
+    <string name="freeme_speeddial_sd_add">添加</string>
+    <string name="freeme_speeddial_reselect_number">此號碼已分配了快速撥號鍵，請選擇其他號碼。</string>
+    <string name="freeme_speeddial_call_speed_dial">快速撥號</string>
+    <string name="freeme_speeddial_dialog_no_speed_dial_number_message">無快速撥號條目，是否現在設置？</string>
+    <string name="freeme_speeddial_tap_to_add">添加快速撥號</string>
+    <string name="freeme_speeddial_added"><xliff:g id="contact_name">%1$s</xliff:g> (<xliff:g id="phone_label">%2$s</xliff:g>) 已添加到快速撥號 <xliff:g id="key">%3$s</xliff:g></string>
+    <string name="freeme_speeddial_added2"><xliff:g id="contact_name">%1$s</xliff:g> 已添加到快速撥號 <xliff:g id="key">%2$s</xliff:g></string>
+    <string name="freeme_speeddial_remove_speed_dial">移除</string>
+    <string name="freeme_speeddial_remove_sd_confirm_1">您確定將 <xliff:g id="contact_name">%1$s</xliff:g> (<xliff:g id="phone_label">%2$s</xliff:g>) 從快速撥號 <xliff:g id="key">%3$s</xliff:g> 中移除?</string>
+    <string name="freeme_speeddial_remove_sd_confirm_2">您確定將 <xliff:g id="contact_name">%1$s</xliff:g> 從快速撥號 <xliff:g id="key">%2$s</xliff:g> 中移除?</string>
+    <string name="contact_list_loading">載入</string>
+    <string name="freeme_speeddial_emergency_call">緊急撥號</string>
+    <string name="freeme_speeddial_edit_speed_dial">編輯快速撥號</string>
+    <string name="freeme_speeddial_delete_number_setting">刪除號碼設置</string>
+    <string name="freeme_speeddial_modify_setted_number">修改已設置號碼</string>
+
+    <string name="freeme_menu_merge_contacts">合併</string>
+    <string name="freeme_menu_merge_contacts_dialog_title">選擇合併後的聯繫人姓名:</string>
+    <string name="freeme_menu_merge_contacts_only_phone_toast">只能合併手機聯繫人</string>
+    <string name="freeme_menu_merge_contacts_least_two">必須選擇兩個或兩個以上的聯繫人進行合併</string>
+    <string name="freeme_menu_merge_contacts_successful">成功合併聯繫人</string>
+</resources>

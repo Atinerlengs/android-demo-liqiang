@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/freeme_list_item_height">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/freeme_list_item_height">
+
+        <TextView
+            android:id="@+id/calllog_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/freeme_call_detail_margin_start"
+            android:textSize="@dimen/freeme_list_item_header_text_size"/>
+
+        <TextView
+            android:id="@+id/calllog_subHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/calllog_header"
+            android:layout_alignBottom="@+id/calllog_header"
+            android:layout_marginStart="@dimen/freeme_call_detail_second_margin_start"
+            android:layout_toEndOf="@+id/calllog_header"
+            android:textSize="@dimen/freeme_list_item_header_text_size"/>
+
+        <TextView
+            android:id="@+id/calllog_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/calllog_subHeader"
+            android:layout_alignBottom="@+id/calllog_subHeader"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/freeme_call_detail_margin_end"
+            android:textSize="@dimen/freeme_list_item_header_text_size"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/freeme_call_detail_margin_start"
+            android:background="@color/freeme_list_divider_color"/>
+    </RelativeLayout>
+
+</RelativeLayout>

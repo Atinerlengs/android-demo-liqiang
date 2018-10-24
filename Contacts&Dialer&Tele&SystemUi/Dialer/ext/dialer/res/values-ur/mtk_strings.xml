@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">غلط</string>
+    <string name="conf_call_member_list">ممبر کی فہرست</string>
+    <string name="conf_call_participant_answered">جواب دیا ہوا</string>
+    <string name="conf_call_participant_missed">چھوٹا ہوا</string>
+    <string name="calls_over_wifi">کالیںWi-Fiپرکیجائیںگی</string>
+    <string name="connect_to_wifi">کالیں کرنے کے لیے  Wi-Fi سے مربوط ہوں</string>
+    <string name="wfc_notification_summary">ترجیحاتتکرسائیکرنےکےلئےیہاںٹیپکریں</string>
+    <string name="wfc_notification_summary_fail">دستیاب نیٹ ورکس دیکھنے کے لیے یہاں تھپکی دیں</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> ان بلاک کرنا ناکام ہوگیا</string>
+    <string name="menu_select_all">سبکومنتخبکريں</string>
+    <string name="selected_item_count">  <xliff:g id="count">%d</xliff:g> منتخب </string>
+    <string name="multichoice_no_select_alert">"کوئی شے منتخب شدہ نہیں۔"</string>
+    <string name="deleteCallLogConfirmation_title">کال لاگ مٹائيں؟</string>
+    <string name="deleteCallLogConfirmation_message">کیا آپ کو واقغی منتخب کردہ کال کی روداد (رودادیں) حذف کرنا چاہتے ہیں؟</string>
+    <string name="recentCalls_delete">حذفکرنا</string>
+    <string name="deleting_call_log">کال لاگ حذف کر رہا ہے...</string>
+    <string name="toast_call_detail_error">"تفصیلات دستیاب نہیں ہیں"</string>
+    <string name="calllogList">کال ہسٹری</string>
+    <string name="calllogHint">کال لاگ تلاش کریں</string>
+    <string name="calllog_description">آنے والے، جانے والے اور مسڈ کال</string>
+    <string name="noMatchingCalllogs">کوئی ملتا ہوا کال لاگ نہيں ملا۔</string>
+    <string name="titleJoinContactDataWith">روابط جوڑیں</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> کال کے لاگ</item>
+        <item quantity="one">"1 کال لاگ"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">کال لاگ نہيں ملا</string>
+    <string name="search_results_for">تلاش نتائج برائے: <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none">"سبھی کو غیر منتخب کریں"</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="freeme_incoming_call_decline_with_sms">信息</string>
+    <string name="freeme_incoming_call_mute">靜音</string>
+    <string name="freeme_hideVideoPreview">隱藏我方</string>
+    <string name="freeme_onscreenSwitchCameraText">前後相機</string>
+    <string name="onscreenRecordNumberText">記錄號碼</string>
+    <string name="toast_recordnumber_show">輸入的號碼將在電話結束后被保存在撥號盤上</string>
+
+    <string name="freeme_incall_forward_from_label">轉接自</string>
+    <string name="freeme_incall_stranger_number">陌生號碼</string>
+    <string name="freeme_incall_incoming_video">"收到視訊要求"</string>
+    <string name="freeme_incall_incoming_video_upgrade">"收到視訊升級要求"</string>
+    <string name="freeme_incall_incoming_video_from_wifi">"收到Wi-Fi 視訊要求"</string>
+    <string name="freeme_incall_incoming_video_upgrade_from_wifi">"收到Wi-Fi 視訊升級要求"</string>
+
+    <string name="freeme_incall_answer_video_call">"視訊接聽"</string>
+    <string name="freeme_incall_answer_video_call_as_audio">"語音接聽"</string>
+</resources>

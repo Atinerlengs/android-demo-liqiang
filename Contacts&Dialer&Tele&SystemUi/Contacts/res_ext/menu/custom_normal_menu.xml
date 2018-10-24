@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- @{ freeme.linqingwei, 20180321. redesign aas tag.
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_add_new"
+        android:icon="@drawable/ic_menu_aas_new"
+        android:showAsAction="always"
+        android:title="@string/menu_add"/>
+    <item
+        android:id="@+id/menu_deletion"
+        android:icon="@drawable/ic_menu_contact_trash"
+        android:showAsAction="always"
+        android:title="@string/menu_delete"/>
+
+</menu>
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_add_new"
+        android:icon="@drawable/freeme_contacts_add_new_icon"
+        android:showAsAction="always"
+        android:title="@string/menu_add" />
+
+</menu>
+<!-- @} -->

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App Lock</string>
+    <string name="app_finger">Finger Print</string>
+    <string name="app_pin">Pin</string>
+    <string name="app_back">Backup Pin</string>
+    <string name="app_password">Password</string>
+    <string name="app_pattern">Pattern</string>
+    <string name="appplock_app_name">App Lock</string>
+    <string name="applock_pattern_help_text">Draw pattern to unlock app</string>
+    <string name="applock_pattern_help_text_lock">Draw pattern to lock app</string>
+    <string name="applock_password_help_text">Enter password to unlock app</string>
+    <string name="applock_password_help_text_lock">Enter password to lock app</string>
+    <string name="applock_pin_help_text">Enter PIN to unlock app</string>
+    <string name="applock_pin_help_text_lock">Enter PIN to lock app</string>
+    <string name="applock_incorrect_backup_pin">Incorrect backup PIN entered. Try again.</string>
+    <string name="applock_pattern_backuppin">Enter backup PIN</string>
+    <string name="applock_lockpattern_too_many_failed_confirmation_attempts_footer">Try again in %d seconds.</string>
+    <string name="applock_pattern_help_text_try_again">Incorrect pattern drawn. Try again.</string>
+    <string name="applock_pin_help_text_try_again">Incorrect PIN entered. Try again.</string>
+    <string name="applock_password_help_text_try_again">Incorrect password entered. Try again.</string>
+    <string name="emergency_call_text">Emergency Call</string>
+    <string name="pattern_help_text">Draw your pattern to unlock app</string>
+    <string name="password_help_text">Enter your password to unlock app</string>
+    <string name="do_not_show_again">Do not show again.</string>
+    <string name="message_settings">Settings</string>
+    <string name="incorrect_backup_pin">Incorrect backup PIN.</string>
+    <string name="pattern_backuppin">Enter the PIN used as an alternative to your pattern.</string>
+    <string name="lockpattern_too_many_failed_confirmation_attempts_footer">Try again in %d seconds.</string>
+    <string name="lockpattern_too_many_failed_confirmation_attempt_footer">Try again in 1 second.</string>
+    <string name="pattern_help_text_try_again">You have drawn an incorrect pattern. Try again.</string>
+    <string name="pin_help_text_try_again">You have entered an incorrect PIN. Try again.</string>
+    <string name="password_help_text_try_again">You hava entered an incorrect password. Try again.</string>
+    <string name="pin_help_text">Enter your PIN to unlock app</string>
+    <string name="app_lock_popup_btn_skip">Skip</string>
+    <string name="app_lock_popup_screen_lock_title">Screen lock settings</string>
+    <string name="app_lock_popup_screen_lock_msg">To enhance security while using App Lock, we recommend you change your screen lock type to a secure method, then enable App Lock.</string>
+    <string name="app_lock_popup_m2p_disclaimer_msg">App Lock will be activated when the selected content is transferred.</string>
+    <string name="app_lock_popup_m2p_disclaimer">"Disclaimer
+Please be aware that content may appear in a separate folder in your device when it is automatically synchronised by a third-party application, such as Dropbox. Check the auto-synchronisation settings for your other applications before using App Lock."</string>
+    <string name="app_lock_popup_m2p_success_close">"Transfer complete. 
+Closing App Lock."</string>
+    <string name="app_lock_popup_m2p_failed_close">"Transfer incomplete.
+Closing App Lock."</string>
+    <string name="app_lock_toast_ism2p">Another process already in progress. Try again after it finishes.</string>
+    <string name="app_lock_pop_up_title">Disable App Lock</string>
+    <string name="app_lock_popup_m2p_msg">App Lock will be enabled while the selected content is moved to Private, and disabled again once the transfer is complete.</string>
+    <string name="app_lock_popup_m2p_msg_apphide">"App Lock will be enabled while the selected applications are moved to Private, and disabled again once the transfer is complete.
+
+Moving applications to Private will also move their linked applications and related widgets, and delete their shortcuts. While App Lock is disabled, you will not receive notifications from the applications you moved to Private."</string>
+    <string name="app_lock_popup_m2p_title">Enable App Lock</string>
+    <string name="stms_appgroup">Z_DEV_BCDS_NILE_PM_PersonalPageService</string>
+    <string name="permlab_fingerprintEnroll">Enroll fingerprint</string>
+    <string name="permdesc_fingerprintEnroll">Allows the application to enroll fingerprint.</string>
+    <string name="permlab_fingerprintPayload">Payload fingerprint</string>
+    <string name="permdesc_fingerprintPayload">Allows the application to payload fingerprint.</string>
+    <string name="fingerprint">Fingerprint</string>
+    <string name="cancel">Cancel</string>
+    <string name="fingerprint_scanner">Fingerprint Scanner</string>
+    <string name="swipe_your_finger">Swipe your finger over the home key.</string>
+    <string name="touch_your_finger">Place your fingertip on the home key to verify your identity.</string>
+    <string name="succeed">Recognised.</string>
+    <string name="spass_wrong_password">Incorrect alternative password.</string>
+    <string name="spass_alternative_password_guide">Enter alternative password.</string>
+    <string name="spass_password_to_use_fingerprint">Unable to verify your fingerprint. Enter your backup password to verify your identity.</string>
+    <string name="spass_sensor_is_not_responding">The fingerprint sensor is not responding.</string>
+    <string name="spass_sensor_is_not_responding_try_again">The fingerprint sensor is not responding. Try again later.</string>
+    <string name="spass_sensor_is_not_found">An error has occurred with the fingerprint sensor. If this message appears repeatedly, restart your device.</string>
+    <string name="spass_password">Alternative password</string>
+    <string name="spass_status_too_fast">Keep your finger on the Home key a little longer</string>
+    <string name="spass_status_timeout">Timeout. Try later.</string>
+    <string name="spass_status_too_many_badswipe">Maximum attempts reached. Enter alternative password.</string>
+    <string name="spass_non_password_guide">Maximum reached.</string>
+    <string name="spass_password_popup_close">You have entered an incorrect password. Try again.</string>
+    <string name="spass_confirm">Confirm</string>
+    <string name="lockpattern_too_many_incorrent_attempts">Incorrect backup password entered %d times</string>
+    <string name="lockpattern_5_incorrent_attempts">Unable to verify your fingerprint %1$d times. Try again in %2$d seconds.</string>
+    <string name="lockpattern_15_incorrent_attempts">Unable to verify your fingerprint %1$d times. If you are unsuccessful %2$d more times, you can verify your identity with your backup unlock method. Try again in %3$d seconds.</string>
+    <string name="dialog_header">Attention</string>
+    <string name="spass_backup_password">Backup password</string>
+    <string name="spass_backup_password_guide">Enter your backup password.</string>
+    <string name="spass_backup_wrong_password">Incorrect backup password</string>
+    <string name="spass_backup_pin">Enter backup PIN</string>
+    <string name="spass_backup_pin_guide">Enter your backup PIN.</string>
+    <string name="spass_backup_wrong_pin">Incorrect backup PIN.</string>
+    <string name="spass_backup_pattern">Draw backup pattern</string>
+    <string name="spass_backup_pattern_guide">Draw your backup pattern.</string>
+    <string name="spass_backup_pattern_guide_try_again">You have drawn an incorrect pattern. Try again.</string>
+    <string name="spass_mobile_keyboard_on">Enter your backup password to verify your identity while the keyboard cover is attached to the device.</string>
+    <string name="spass_mobile_keyboard_remove_request">To use %s, detach keyboard cover from device.</string>
+    <string name="spass_mobile_keyboard_popup_title">Keyboard cover attached</string>
+    <string name="spass_mobile_keyboard_popup_guide">Unable to use %1$s while the keyboard cover is attached. %2$s will be disabled.</string>
+    <string name="recognize_fail">No match</string>
+    <string name="spass_image_quality_too_short">Swipe the entire pad</string>
+    <string name="spass_image_quality_too_slow">Swipe faster</string>
+    <string name="spass_image_quality_too_fast">Swipe slower</string>
+    <string name="spass_image_quality_finger_offset_too_far_left">Swipe over the centre</string>
+    <string name="spass_image_quality_finger_offset_too_far_right">Swipe over the centre</string>
+    <string name="spass_image_quality_finger_too_thin">Keep your finger flat while swiping</string>
+    <string name="spass_image_quality_stiction">Swipe smoothly with less pressure</string>
+    <string name="spass_image_quality_pressure_too_hard">Swipe smoothly with less pressure</string>
+    <string name="spass_image_quality_pressure_too_light">Swipe smoothly with more pressure</string>
+    <string name="spass_image_quality_wet_finger">Wipe home key/finger</string>
+    <string name="spass_image_quality_skew_too_large">Swipe downwards</string>
+    <string name="spass_something_on_sensor">Wipe Home key and try again</string>
+    <string name="spass_something_on_sensor_with_recalibration">Make sure that the Home key is clean and dry, then try again.</string>
+    <string name="spass_image_quality_same_as_previous">Swipe finger at different angles.</string>
+    <string name="spass_image_quality_extraction_failure">extraction failed on the image</string>
+    <string name="done">Done</string>
+    <string name="touch_image_quality_bad_swipe">Make sure you place your fingertip over the whole of the home key.</string>
+    <string name="touch_image_quality_finger_offset_too_far_left">Make sure that your finger covers the entire Home key</string>
+    <string name="touch_image_quality_finger_offset_too_far_right">Make sure that your finger covers the entire Home key</string>
+    <string name="touch_image_quality_finger_too_thin">Make sure you place your fingertip over the whole of the home key.</string>
+    <string name="touch_image_quality_pressure_too_hard">Apply less pressure with your fingertip.</string>
+    <string name="touch_image_quality_pressure_too_light">Apply more pressure with your fingertip.</string>
+    <string name="touch_image_quality_remove_too_fast">Make sure you place your fingertip a little longer.</string>
+    <string name="touch_image_quality_same_as_previous">Move your finger slightly between attempts</string>
+    <string name="fp_tpop_register_ps_fingerprint_vzw">Register %s fingerprint.</string>
+    <string name="fp_body_1st_m_order">1st</string>
+    <string name="fp_body_2nd_m_order">2nd</string>
+    <string name="fp_body_3rd_m_order">3rd</string>
+    <string name="fp_body_4th_m_order">4th</string>
+    <string name="fp_body_5th_m_order">5th</string>
+    <string name="fp_body_6th_m_order">6th</string>
+    <string name="fp_body_7th_m_order">7th</string>
+    <string name="fp_body_8th_m_order">8th</string>
+    <string name="fp_body_9th_m_order">9th</string>
+    <string name="fp_body_10th_m_order">10th</string>
+    <string name="applock_fingerprints_pattern_instructions">Use fingerprint or draw unlock pattern</string>
+    <string name="applock_fingerprints_pin_instructions">Use fingerprint or enter PIN</string>
+    <string name="applock_fingerprints_password_instructions">Use fingerprint or enter password</string>
+    <string name="applock_finger_print_sensor_with_recalibration_error_message">Make sure that the Home key is clean and dry, then try again.</string>
+    <string name="applock_finger_print_sensor_changed_error_message">The fingerprint sensor has not been changed properly. Contact customer services.</string>
+    <string name="applock_iris_pattern_instructions">Use iris or draw unlock pattern</string>
+    <string name="applock_iris_pin_instructions">Use iris or enter PIN</string>
+    <string name="applock_iris_password_instructions">Use iris or enter password</string>
+    <string name="applock_iris_fingerprint_instructions">Use iris or fingerprint</string>
+    <string name="iris_guide_str_enable_toggle">Tap here to use iris</string>
+    <string name="iris_no_match">No match</string>
+    <string name="applock_biometrics_pattern_instructions">Use fingerprint or iris, or draw pattern</string>
+    <string name="applock_biometrics_pin_instructions">Use fingerprint or iris, or enter PIN</string>
+    <string name="applock_biometrics_password_instructions">Use fingerprint or iris, or enter password</string>
+    <string name="applock_fingerprints_instructions">Use fingerprint to unlock</string>
+    <string name="applock_fingerprints_instructions_lock">Use fingerprint to lock app</string>
+    <string name="applock_fingerprints_instructions_with_mobile_keyboard">Tap BACKUP PASSWORD</string>
+    <string name="applock_finger_print_sensor_error_message">An error has occurred with the fingerprint sensor. If this message appears repeatedly, restart your device.</string>
+    <string name="applock_finger_print_not_responding_error_message">The fingerprint sensor is not responding. Try again later.</string>
+    <string name="applock_finger_print_database_error_message">Fingerprint data corrupted. Enter backup password to unlock and add fingerprints again.</string>
+    <string name="applock_finger_print_database_deleted_message">Fingerprint data deleted. Enter backup password to unlock and add fingerprints again.</string>
+    <string name="applock_finger_print_backup_password_title_instructions">You can unlock the device with your fingerprint or backup password.</string>
+    <string name="applock_finger_print_backup_password_title_instructions_without_finger_print">Unable to recognise your fingerprint. Enter your backup password to unlock the device.</string>
+    <string name="applock_finger_print_backup_password_failed">Incorrect backup password</string>
+    <string name="applock_finger_print_backup_password_button">backup password</string>
+    <string name="applock_too_many_failed_attempts_countdown">Try again in %d seconds.</string>
+    <string name="applock_too_many_failed_attempt_countdown">Try again in 1 second.</string>
+    <string name="ok">OK</string>
+    <string name="app_lock_pattern_unlock_title">Create pattern</string>
+    <string name="app_lock_pattern_unlock_recording_intro_header">Draw pattern to unlock app</string>
+    <string name="app_lock_backup_pin_summary">Set backup PIN. Use if you forget your pattern.</string>
+    <string name="applock_app_name">App lock</string>
+    <string name="applock_app_category">Lockable apps</string>
+    <string name="applock_app_category_with_num">Lockable apps (%d locked)</string>
+    <string name="applock_locked_folder">App in locked folder (%s)</string>
+    <string name="applock_locked_folder_default">App in locked folder</string>
+    <string name="applock_disable_popup_title">Turn off App lock</string>
+    <string name="applock_disable_popup_body">Save or reset your app lock type? If you save it, you must remember your password or other lock type the next time you turn on App lock. App lock will be turned off.</string>
+    <string name="applock_disable_popup_opt_disgard">Reset</string>
+    <string name="applock_disable_popup_opt_keep">Save</string>
+    <string name="applock_disable_popup_opt_cancel">Cancel</string>
+    <string name="applock_master_text">Master Switch</string>
+    <string name="applock_description">Keep selected apps private by locking them. Once you have unlocked an app, it will remain unlocked until the screen turns off. You can also lock or unlock apps and folders on the Home screen easily while App lock is turned on.</string>
+    <string name="applock_description_folderlock">You can lock or unlock apps and folders on the home screen while App lock is enabled. To lock multiple apps at once, put them into a folder and lock that folder.</string>
+    <string name="applock_description_without_fingerprint">Keep selected apps private by locking them with a pattern, PIN, or password. Once you have unlocked an app, it will remain unlocked until the screen turns off.</string>
+    <string name="applock_lock_type">App lock type</string>
+    <string name="applock_type_no_selected">Not set</string>
+    <string name="applock_type_pattern">Pattern</string>
+    <string name="applock_type_password">Password</string>
+    <string name="applock_type_fingerprint">Fingerprint</string>
+    <string name="applock_type_pin">PIN</string>
+    <string name="add_biometrics_desc">To use these unlock methods, go to Settings > %s, then add your biometric data.</string>
+    <string name="fingerprint_error_message_sensor_error">An error has occurred with the fingerprint sensor. If this message appears repeatedly, restart your device.</string>
+    <string name="fingerprint_attention">Attention</string>
+    <string name="iris_title">Irises</string>
+    <string name="applock_secure_lock_settings_title">Secure lock settings</string>
+    <string name="applock_secure_lock_settings_pattern_visibility">Make pattern visible</string>
+    <string name="remove_mobile_keyboard">To use %s, remove <cst>device</cst> from keyboard cover.</string>
+    <string name="unlock_set_unlock_pattern_title">Pattern</string>
+    <string name="unlock_set_unlock_pattern_summary">Medium security</string>
+    <string name="unlock_set_unlock_pin_title">PIN</string>
+    <string name="unlock_set_unlock_pin_summary">Medium to high security</string>
+    <string name="unlock_set_unlock_password_title">Password</string>
+    <string name="unlock_set_unlock_password_summary">High security</string>
+    <string name="unlock_set_unlock_irises_summary_no_irises">Add your irises in Settings to lock or unlock apps using your irises.</string>
+    <string name="unlock_set_unlock_fingerprint_summary_no_finger">Add your fingerprints in Settings to lock or unlock apps using your fingerprints.</string>
+    <item type="string" name="APKTOOL_DUMMY_bd">false</item>
+    <item type="string" name="APKTOOL_DUMMY_be">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bf">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c1">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ca">false</item>
+    <item type="string" name="APKTOOL_DUMMY_cb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_cc">false</item>
+    <item type="string" name="APKTOOL_DUMMY_cd">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ce">false</item>
+    <item type="string" name="APKTOOL_DUMMY_cf">false</item>
+    <item type="string" name="APKTOOL_DUMMY_d0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_d1">false</item>
+    <item type="string" name="APKTOOL_DUMMY_d2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_d3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_d4">false</item>
+
+    <string name="switch_on_text">On</string>
+    <string name="switch_off_text">Off</string>
+</resources>

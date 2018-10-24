@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ProtectedPermissions"
+    package="com.freeme.filemanager">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES" />
+    <uses-permission android:name="android.permission.ACCESS_ALL_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.STATUS_BAR_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.REAL_GET_TASKS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.GRANT_RUNTIME_PERMISSIONS" />
+    <uses-permission android:name="android.permission.ACCESS_KEYGUARD_SECURE_STORAGE" />
+
+    <application
+        android:name=".FMApplication"
+        android:icon="@drawable/app_filemanager"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:theme"
+        android:resizeableActivity="false"
+        android:allowBackup="false"
+        android:allowClearUserData="false">
+        <activity
+            android:name=".activity.FileExplorerTabActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden|locale|layoutDirection"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.freeme.intent.action.filemanager.CLEAR" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <activity
+            android:name=".activity.cleanup.CleanupMainActivity"
+            android:label="@string/file_clean"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:resizeableActivity="true"
+            android:parentActivityName=".activity.FileExplorerTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.cleanup.GarbageCleaningActivity"
+            android:configChanges="orientation|screenSize|screenLayout|locale|layoutDirection"
+            android:label="@string/file_clean"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="true">
+        </activity>
+
+        <activity
+            android:name=".activity.cleanup.special.WeChatSpecialActivity"
+            android:configChanges="orientation|screenSize|screenLayout|locale|layoutDirection"
+            android:label="@string/wechat_special"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="true">
+        </activity>
+
+        <activity
+            android:name=".activity.cleanup.special.WeChatPreviewActivity"
+            android:configChanges="orientation|screenSize|screenLayout|locale|layoutDirection"
+            android:label="@string/clear_wechat_download_file"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="true">
+        </activity>
+
+        <activity
+            android:name=".activity.cleanup.largefiles.LargeFilesActivity"
+            android:configChanges="orientation|screenSize|screenLayout|locale|layoutDirection"
+            android:label="@string/clear_large_files"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="true">
+        </activity>
+
+        <activity
+            android:name=".activity.cleanup.largefiles.LarFilesPreviewActivity"
+            android:configChanges="orientation|screenSize|screenLayout|locale|layoutDirection"
+            android:label="@string/category_other"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="true">
+        </activity>
+
+        <activity
+            android:name=".activity.StorageCategoryActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="true" />
+
+        <activity
+            android:name=".activity.StorageFileListActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:label="@string/app_name"
+            android:resizeableActivity="true" />
+
+        <activity
+            android:name=".activity.AboutActivity"
+            android:label="@string/app_about"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="true" />
+
+        <activity
+            android:name=".activity.ChannelInfoActivity"
+            android:label="@string/about_detail_msg"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="true" />
+
+        <service android:name=".app.FTPServerService" />
+
+        <!-- safe file -->
+        <service android:name="com.freeme.safe.encryption.service.EncryptionService" />
+
+        <provider android:name="com.freeme.safe.encryption.provider.EncryptionContentProvider"
+            android:exported="false"
+            android:authorities="com.freeme.safe.encryption"/>
+
+        <activity
+            android:name="com.freeme.safe.view.PrivateSpaceActivity"
+            android:parentActivityName=".activity.FileExplorerTabActivity"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/encryption_file" />
+
+        <activity
+            android:name="com.freeme.safe.view.EncryptionFileBrowserActivity"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.freeme.filemanager.encrytion"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/encryption_file" />
+
+        <activity
+            android:name="com.freeme.safe.password.FingerPrintActivity"
+            android:taskAffinity="com.freeme.filemanager.encrytion"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:label="@string/lock_title_settings" />
+
+        <activity
+            android:name="com.freeme.safe.password.UnlockPasswordActivity"
+            android:taskAffinity="com.freeme.filemanager.encrytion"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:label="@string/lock_title_settings" />
+
+        <activity
+            android:name="com.freeme.safe.password.UnlockPatternActivity"
+            android:taskAffinity="com.freeme.filemanager.encrytion"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/lock_title_settings" />
+
+        <activity
+            android:name="com.freeme.safe.password.UnlockComplexActivity"
+            android:taskAffinity="com.freeme.filemanager.encrytion"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:label="@string/lock_title_settings" />
+
+        <activity android:name="com.freeme.safe.view.preview.AudioPlayActivity"
+            android:theme="@style/AppTheme.Dialog"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden">
+            <intent-filter>
+                <action android:name="com.freeme.intent.action.filemanager.VIEW" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="audio/*" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.freeme.safe.view.preview.VideoPlayActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden">
+            <intent-filter>
+                <action android:name="com.freeme.intent.action.filemanager.VIEW" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/*" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.freeme.safe.view.preview.ImageViewActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden">
+            <intent-filter>
+                <action android:name="com.freeme.intent.action.filemanager.VIEW" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.freeme.safe.view.preview.DocViewActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.freeme.safe.view.EncryptionFileBrowserActivity">
+            <intent-filter>
+                <action android:name="com.freeme.intent.action.filemanager.VIEW" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/*" />
+                <data android:mimeType="text/html"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="application/xhtml+xml"/>
+                <data android:mimeType="application/vnd.wap.xhtml+xml"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

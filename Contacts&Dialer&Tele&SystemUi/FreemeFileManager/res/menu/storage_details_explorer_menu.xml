@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/selectall"
+        android:title="@string/operation_selectall"
+        android:visible="false"/>
+    <item
+        android:id="@+id/show_hide"
+        android:title="@string/operation_show_sysfile"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu_refresh"
+        android:title="@string/operation_refresh"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu_edit"
+        android:title="@string/edit"
+        android:visible="false"
+        android:showAsAction="always"/>
+</menu>

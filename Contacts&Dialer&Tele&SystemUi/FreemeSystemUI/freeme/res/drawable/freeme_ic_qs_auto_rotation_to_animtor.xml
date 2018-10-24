@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/freeme_ic_qs_auto_rotation_to"
+    >
+    <target
+        android:animation="@anim/freeme_ic_portrait_to_auto_rotate_animation_arrows"
+        android:name="arrows"/>
+    <target
+        android:animation="@anim/freeme_ic_portrait_to_auto_rotate_animation_device"
+        android:name="device"/>
+</animated-vector>

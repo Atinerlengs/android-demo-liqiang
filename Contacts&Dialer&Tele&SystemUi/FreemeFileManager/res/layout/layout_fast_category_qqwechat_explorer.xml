@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:focusable="false"
+    android:focusableInTouchMode="true" >
+
+    <include layout="@layout/layout_search_view" />
+
+    <LinearLayout
+        android:id="@+id/separate_menu_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/path_gallery_line_height"
+        android:paddingEnd="@dimen/separate_menu_padding_right"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/file_format"
+            layout="@layout/layout_separate_menu_view"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/sort_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/separate_menu_space"
+            layout="@layout/layout_separate_menu_view" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gallery_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/category_path_gallery_line_height"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/volume_navigator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/volume_switch"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/path_gallery"
+            layout="@layout/layout_path_gallery"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/refresh_progress"
+            style="?android:attr/progressBarStyleSmallTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/path_gallery"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/file_path_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/list_item_divider"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:background="@color/app_theme_color_primary" />
+
+        <LinearLayout
+            android:id="@+id/category_empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/app_theme_color_primary"
+            android:visibility="gone"  >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_no_file"/>
+
+            <TextView
+                android:textAppearance="@style/AppTextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/list_slash_padding_left"
+                android:singleLine="true"
+                android:text="@string/no_file"
+                android:textColor="#cecece"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/dropdown_navigation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dropdown"
+            android:overScrollMode="never"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/dropdown_navigation_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/sd_not_available_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/sd_not_available"
+            android:gravity="center"
+            android:text="@string/enable_sd_card"
+            android:textSize="22px"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/UsbStorage_block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/moving_operation_bar"
+        style="@style/AppContent.Button.BottomBar"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/button_moving_confirm"
+            style="@style/AppContent.Button.Bottom"
+            android:text="@string/confirm" />
+
+        <Button
+            android:id="@+id/button_moving_cancel"
+            style="@style/AppContent.Button.Bottom"
+            android:text="@string/operation_cancel" />
+    </LinearLayout>
+
+</LinearLayout>

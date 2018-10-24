@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<view xmlns:android="http://schemas.android.com/apk/res/android"
+    class="com.android.contacts.quickcontact.ExpandingEntryCardView$EntryView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/freeme_expanding_entry_card_item_height">
+
+    <RelativeLayout
+        android:id="@+id/quick_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingEnd="@dimen/expanding_entry_card_item_padding_end"
+        android:paddingStart="@dimen/expanding_entry_card_item_padding_start">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/expanding_entry_card_header_margin_bottom"
+            android:layout_toStartOf="@+id/dial_icon"
+            android:includeFontPadding="false"
+            android:paddingTop="5dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/freeme_quick_contact_header_title_color"
+            android:textDirection="locale"
+            android:textSize="@dimen/contact_common_text_size"/>
+
+        <TextView
+            android:id="@+id/sub_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_toEndOf="@+id/icon_sub_header"
+            android:includeFontPadding="false"
+            android:textAlignment="viewStart"
+            android:textColor="@color/freeme_quick_contact_sub_title_color"
+            android:textSize="@dimen/quick_contact_entry_sub_title_size"/>
+
+        <ImageView
+            android:id="@+id/icon_sub_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/header"
+            android:layout_marginBottom="@dimen/expanding_entry_card_item_sub_header_icon_margin_bottom"
+            android:layout_marginEnd="@dimen/expanding_entry_card_item_sub_header_icon_margin_right"/>
+
+        <ImageView
+            android:id="@+id/icon_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/sub_header"
+            android:layout_marginEnd="@dimen/expanding_entry_card_item_text_icon_margin_right"
+            android:layout_marginTop="@dimen/expanding_entry_card_item_text_icon_margin_top"/>
+
+        <!-- add sim avatar to indicate with which sim the call is maked  -->
+        <ImageView
+            android:id="@+id/icon_sim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sub_header"
+            android:layout_marginEnd="@dimen/expanding_entry_card_item_text_icon_margin_right"
+            android:layout_toEndOf="@+id/icon_text"/>
+
+        <!-- add text for sim name, ALPS01765770 -->
+        <LinearLayout
+            android:id="@+id/sim_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sub_header"
+            android:layout_toEndOf="@+id/icon_sim"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sim_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/expanding_entry_card_item_icon_sim_name_margin_right"
+                android:layout_weight="1"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:textSize="@dimen/quick_contact_entry_sub_title_size"/>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:textColor="@color/freeme_quick_contact_sub_title_color"
+                android:textSize="@dimen/quick_contact_entry_sub_title_size"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/dial_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/third_icon"
+            android:paddingLeft="@dimen/expanding_entry_card_item_icon_margin_left"
+            android:paddingRight="@dimen/expanding_entry_card_item_icon_margin_right_min"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/third_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/icon_alternate"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:paddingLeft="@dimen/expanding_entry_card_item_icon_margin_left"
+            android:paddingRight="@dimen/expanding_entry_card_item_icon_margin_right_min"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/icon_alternate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:paddingLeft="@dimen/expanding_entry_card_item_icon_margin_left"
+            android:paddingRight="@dimen/expanding_entry_card_item_icon_margin_right"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingStart="@dimen/expanding_entry_card_item_padding_start">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/freeme_list_divider_color"/>
+    </RelativeLayout>
+
+</view>

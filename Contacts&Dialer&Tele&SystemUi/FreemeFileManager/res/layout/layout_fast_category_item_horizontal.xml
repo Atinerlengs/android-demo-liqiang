@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/separate_menu_padding_top"
+    android:paddingBottom="@dimen/separate_menu_padding_top">
+
+    <ImageView
+        android:id="@+id/category_icon"
+        android:layout_width="@dimen/category_icon_width"
+        android:layout_height="@dimen/category_icon_height"
+        android:src="@color/grid_horizontal_music_color" />
+
+    <TextView
+        android:id="@+id/category_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/separate_menu_padding_right"
+        android:text="@string/category_music"
+        android:textSize="@dimen/grid_horizontal_text_size_primary_medium"
+        android:textAppearance="@style/AppTextAppearance.ItemName"/>
+
+    <TextView
+        android:id="@+id/category_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/memory_info_layout_right"
+        android:textSize="@dimen/grid_horizontal_text_size_primary_small"
+        android:textAppearance="@style/AppTextAppearance.ItemOther"/>
+
+    <ImageView
+        android:id="@+id/dir_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/separate_menu_padding_right"
+        android:background="@drawable/ic_right_arrow_storage_grid"
+        android:scaleType="fitCenter"/>
+
+</LinearLayout>

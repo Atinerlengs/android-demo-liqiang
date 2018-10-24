@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Klaidinga</string>
+    <string name="conf_call_member_list">Narių sąrašas</string>
+    <string name="conf_call_participant_answered">Atsiliepė</string>
+    <string name="conf_call_participant_missed">"Praleisti"</string>
+    <string name="calls_over_wifi">Skambučiamsbusnaudojamas„Wi-Fi“ryšys</string>
+    <string name="connect_to_wifi">Norėdami skambinti, prisijunkite prie „Wi-Fi“</string>
+    <string name="wfc_notification_summary">Spustelėkitečia,kadgautumėteprieigąprienuostatų</string>
+    <string name="wfc_notification_summary_fail">Spustelėkite čia, kad būtų rodomi pasiekiami tinklai</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"SIP skambutis"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> atblokuoti nepavyko</string>
+    <string name="menu_select_all">"Pasirinktivisus"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> pasirinktų</string>
+    <string name="multichoice_no_select_alert">"Nepasirinktas joks elementas."</string>
+    <string name="deleteCallLogConfirmation_title">Ištrinti skambučių žurnalą(-us)?</string>
+    <string name="deleteCallLogConfirmation_message">"Ar tikrai norite ištrinti pasirinktą žurnalą(-us)?"</string>
+    <string name="recentCalls_delete">"Ištrinti"</string>
+    <string name="deleting_call_log">Trinamas skambučių žurnalas...</string>
+    <string name="toast_call_detail_error">"Išsami informacija nepasiekiama"</string>
+    <string name="calllogList">"Skambučių istorija"</string>
+    <string name="calllogHint">Ieškoti skambučių žurnalų</string>
+    <string name="calllog_description">Įeinantieji, išeinantieji ir praleisti skambučiai</string>
+    <string name="noMatchingCalllogs">Nerasta derančio skambučių žurnalo.</string>
+    <string name="titleJoinContactDataWith">"Jungti adresatus"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> skambučių žurnalai</item>
+        <item quantity="one">"1 skambučių žurnalas"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Skambučių žurnalo nerasta</string>
+    <string name="search_results_for">Paieškos rezultatai: <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none">"Naikinti visus žymėjimus"</string>
+</resources>

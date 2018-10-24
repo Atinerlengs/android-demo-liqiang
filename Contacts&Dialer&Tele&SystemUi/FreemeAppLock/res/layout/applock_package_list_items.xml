@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/applock_list_headview_selector"
+    android:clickable="true"
+    android:focusable="true"
+    android:minHeight="?android:listPreferredItemHeightSmall"
+    android:paddingEnd="@dimen/applock_list_item_padding"
+    android:paddingStart="@dimen/applock_list_item_padding">
+
+    <ImageView
+        android:id="@+id/list_iv_icon"
+        android:layout_width="@dimen/applock_list_app_icon_size"
+        android:layout_height="@dimen/applock_list_app_icon_size"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/applock_list_item_inner_padding" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/applock_list_item_text_marginEnd"
+        android:layout_marginStart="@dimen/applock_list_item_inner_padding"
+        android:layout_toEndOf="@+id/list_iv_icon"
+        android:orientation="vertical"
+        android:paddingBottom="11.75dip"
+        android:paddingTop="11.75dip">
+
+        <TextView
+            android:id="@+id/list_tx_appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceListItem"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/list_tx_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sec-roboto-light"
+            android:textAppearance="?android:textAppearanceListItemSecondary"
+            android:textColor="?android:textColorSecondary"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/list_btn_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Недійсно</string>
+    <string name="conf_call_member_list">Список учасників</string>
+    <string name="conf_call_participant_answered">Дано відповідь</string>
+    <string name="conf_call_participant_missed">"Пропущені"</string>
+    <string name="calls_over_wifi">ВикликийтимутьчерезWi-Fi</string>
+    <string name="connect_to_wifi">Підключіться до Wi-Fi, щоб робити виклики</string>
+    <string name="wfc_notification_summary">Натиснітьтут,щобувійтидонастройок</string>
+    <string name="wfc_notification_summary_fail">Натисніть тут, щоб переглянути доступні мережі</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"Дзвінок через протокол SIP"</string>
+    <string name="snackbar_number_unblocked_failed">Помилка розблокування <xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> </string>
+    <string name="menu_select_all">"Вибративсе"</string>
+    <string name="selected_item_count">вибрано <xliff:g id="count">%d</xliff:g></string>
+    <string name="multichoice_no_select_alert">"Не вибрано елементу."</string>
+    <string name="deleteCallLogConfirmation_title">Видалити журнал(и) викликів?</string>
+    <string name="deleteCallLogConfirmation_message">Точно видалити вибрані журнали викликів?</string>
+    <string name="recentCalls_delete">"Видалити"</string>
+    <string name="deleting_call_log">Видалення журналу викликів...</string>
+    <string name="toast_call_detail_error">"Деталі недоступні"</string>
+    <string name="calllogList">"Історія викликів"</string>
+    <string name="calllogHint">Пошук журналу викликів</string>
+    <string name="calllog_description">Вхідні, вихідні та пропущені виклики</string>
+    <string name="noMatchingCalllogs">Не знайдено відповідного журналу викликів.</string>
+    <string name="titleJoinContactDataWith">"Об\'єдн. контакти"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> журнали викликів</item>
+        <item quantity="one">"1 журнал викликів"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Не знайдено журнал викликів</string>
+    <string name="search_results_for">Шукати результати для <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none">"Зняти вибір з усіх"</string>
+</resources>

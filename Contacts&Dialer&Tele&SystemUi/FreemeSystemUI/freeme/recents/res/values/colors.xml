@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="recents_Progress_finished_white">#22C580</color>
+    <color name="recents_white">#ffffffff</color>
+    <color name="recents_alpha_white">#FFFFFF</color>
+    <color name="recents_transparent">#00000000</color>
+    <color name="recents_alpha_background">#77000000</color>
+    <color name="child_bar_light_text_color">#ffeeeeee</color>
+
+</resources>

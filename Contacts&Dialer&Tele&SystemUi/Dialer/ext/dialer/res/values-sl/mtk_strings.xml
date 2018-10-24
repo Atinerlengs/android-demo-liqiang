@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Neveljavno</string>
+    <string name="conf_call_member_list">Seznam članov</string>
+    <string name="conf_call_participant_answered">Odgovorjeno</string>
+    <string name="conf_call_participant_missed">"Neodgovorjeni"</string>
+    <string name="calls_over_wifi">KlicibodovzpostavljeniprekpovezaveWi-FI</string>
+    <string name="connect_to_wifi">Vzpostav povezavo Wi-Fi za klicanje</string>
+    <string name="wfc_notification_summary">Tapnitetukaj,daodpretenastavitve</string>
+    <string name="wfc_notification_summary_fail">Tapnite tukaj za ogled razpoložljivih omrežij</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"Klic SIP"</string>
+    <string name="snackbar_number_unblocked_failed">Odblokiranje <xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> ni uspelo</string>
+    <string name="menu_select_all">"Izberivse"</string>
+    <string name="selected_item_count">Izbranih: <xliff:g id="count">%d</xliff:g></string>
+    <string name="multichoice_no_select_alert">"Noben element ni izbran."</string>
+    <string name="deleteCallLogConfirmation_title">Izbriši dnevnike klicev?</string>
+    <string name="deleteCallLogConfirmation_message">Ali ste prepričani, da želite izbrisati izbrane dnevnike klicev?</string>
+    <string name="recentCalls_delete">"Izbriši"</string>
+    <string name="deleting_call_log">Brisanje dnevnika klicev ...</string>
+    <string name="toast_call_detail_error">"Podrobnosti niso na voljo"</string>
+    <string name="calllogList">"Zgodovina klicev"</string>
+    <string name="calllogHint">Iskanje dnevnikov klicev</string>
+    <string name="calllog_description">Dohodni, odhodni in zgrešeni klici</string>
+    <string name="noMatchingCalllogs">Ni dnevnika klicev, ki bi se ujemal s poizvedbo.</string>
+    <string name="titleJoinContactDataWith">"Pridruži stike"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other">Št. dnevnikov klicev: <xliff:g id="count">%d</xliff:g></item>
+        <item quantity="one"> "1 dnevnik klicev"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Dnevnika klicev ni mogoče najti</string>
+    <string name="search_results_for">Rezultati iskanja za: <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none"> "Prekliči izbor vseh"
+</string>
+</resources>

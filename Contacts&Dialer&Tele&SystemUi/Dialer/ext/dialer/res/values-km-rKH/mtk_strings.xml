@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">មិនមានសុពលភាព</string>
+    <string name="conf_call_member_list">បញ្ជីឈ្មោះសមាជិក</string>
+    <string name="conf_call_participant_answered">បានឆ្លើយ</string>
+    <string name="conf_call_participant_missed">"ខកខាន​ទទួល"</string>
+    <string name="calls_over_wifi">នឹង​មាន​ការហៅ​លើ​ប្រព័ន្ធWi-Fi</string>
+    <string name="connect_to_wifi">តភ្ជាប់ទៅ ប្រព័ន្ធ Wi-Fi ដើម្បីធ្វើឱ្យ ការហៅទូរស័ព្ទ</string>
+    <string name="wfc_notification_summary">ចុច​ត្រង់​នេះ​ដើម្បី​ទៅ​សំណុំ​អាទិភាព</string>
+    <string name="wfc_notification_summary_fail">ប៉ះ នៅទីនេះដើម្បីមើលបណ្តាញដែលអាចប្រើបាន</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"ការ​ហៅ SIP"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g>បរាជ័យក្នុងការដោះប្លុក</string>
+    <string name="menu_select_all">"ជ្រើស​ទាំងអស់"</string>
+    <string name="selected_item_count">  <xliff:g id="count">%d</xliff:g> បានជ្រើសរើស </string>
+    <string name="multichoice_no_select_alert">"មិនមានរបស់អ្វីត្រូវបានជ្រើសរើសឡើយ ។"</string>
+    <string name="deleteCallLogConfirmation_title">លុបកំណត់ត្រាសកម្មភាពការហៅចោលទេ?</string>
+    <string name="deleteCallLogConfirmation_message">តើអ្នកប្រាកដទេថាចង់លុបកំណត់ត្រាសកម្មភាពការហៅដែលបានជ្រើសរើសចោល?</string>
+    <string name="recentCalls_delete">"លុប"</string>
+    <string name="deleting_call_log">កំពុងលុបកំណត់ត្រាសកម្មភាពការហៅ ...</string>
+    <string name="toast_call_detail_error">"មិនមានព័ត៌មានលំអិតទេ"</string>
+    <string name="calllogList">"ប្រវត្តិ​ហៅ"</string>
+    <string name="calllogHint">រាវរកកំណត់ត្រាសកម្មភាពហៅ</string>
+    <string name="calllog_description">ការហៅចូល ការហៅចេញ និងការហៅដែលមិនបានទទួល</string>
+    <string name="noMatchingCalllogs">រកកំណត់ត្រាសកម្មភាពការហៅដែលត្រូវគ្នាមិនឃើញឡើយ</string>
+    <string name="titleJoinContactDataWith">ចូលរួមលេខទំនាក់ទំនង</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> កំណត់ត្រាសកម្មភាពហៅ</item>
+        <item quantity="one">"កំណត់ហេតុហៅ 1 ច្បាប់"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">កំណត់ត្រាសកម្មភាពហៅរកមិនឃើញទេ</string>
+    <string name="search_results_for">លទ្ធផលរាវរកសម្រាប់ ៖ <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none">"លែងជ្រើសរើសទាំងអស់"</string>
+</resources>

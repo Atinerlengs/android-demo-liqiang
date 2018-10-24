@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="72"
+    android:viewportHeight="72">
+
+    <path
+        android:fillColor="@color/freeme_qs_brightness_checkbox_normal_color"
+        android:pathData="M53.000,59.000 L19.000,59.000 C15.686,59.000 13.000,56.314 13.000,53.000
+L13.000,19.000 C13.000,15.686 15.686,13.000 19.000,13.000 L53.000,13.000
+C56.314,13.000 59.000,15.686 59.000,19.000 L59.000,53.000 C59.000,56.314
+56.314,59.000 53.000,59.000 ZM56.000,19.000 C56.000,17.343 54.657,16.000
+53.000,16.000 L19.000,16.000 C17.343,16.000 16.000,17.343 16.000,19.000
+L16.000,53.000 C16.000,54.657 17.343,56.000 19.000,56.000 L53.000,56.000
+C54.657,56.000 56.000,54.657 56.000,53.000 L56.000,19.000 Z" />
+</vector>

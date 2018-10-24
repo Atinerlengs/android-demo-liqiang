@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">לא חוקי</string>
+    <string name="conf_call_member_list">רשימת חברים</string>
+    <string name="conf_call_participant_answered">שנענו</string>
+    <string name="conf_call_participant_missed">"שיחה שלא נענתה"</string>
+    <string name="calls_over_wifi">שיחותיבוצעוב-Wi-Fi</string>
+    <string name="connect_to_wifi">התחבר ל-Wi-Fi כדי להוציא שיחות</string>
+    <string name="wfc_notification_summary">הקשכאןכדילגשתלהעדפות</string>
+    <string name="wfc_notification_summary_fail">גע פה כדי לראות רשתות זמינות</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"‏שיחת SIP"</string>
+    <string name="snackbar_number_unblocked_failed">ביטול החסימה של <xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> נכשל</string>
+    <string name="menu_select_all">"בחרהכל"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g>נבחרו</string>
+    <string name="multichoice_no_select_alert">"לא נבחרו פריטים."</string>
+    <string name="deleteCallLogConfirmation_title">למחוק את כל יומני השיחות?</string>
+    <string name="deleteCallLogConfirmation_message">האם אתה בטוח שברצונך למחוק את יומני השיחות שנבחרו?</string>
+    <string name="recentCalls_delete">"מחק"</string>
+    <string name="deleting_call_log">מוחק יומן שיחות...</string>
+    <string name="toast_call_detail_error">"אין פרטים זמינים"</string>
+    <string name="calllogList">"היסטוריית שיחות"</string>
+    <string name="calllogHint">חפש יומני שיחות</string>
+    <string name="calllog_description">שיחות נכנסות, יוצאות ושלא נענו</string>
+    <string name="noMatchingCalllogs">לא נמצא יומן שיחות תואם.</string>
+    <string name="titleJoinContactDataWith">"צרף אנשי קשר"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other">  <xliff:g id="count">%d</xliff:g> יומני שיחות </item>
+        <item quantity="one">"יומן שיחות אחד"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">יומן שיחות לא נמצא</string>
+    <string name="search_results_for">חפש תוצאות עבור:  <xliff:g id="query">%s</xliff:g>  </string>
+    <string name="menu_select_none">"בטל בחירה בהכול"</string>
+</resources>

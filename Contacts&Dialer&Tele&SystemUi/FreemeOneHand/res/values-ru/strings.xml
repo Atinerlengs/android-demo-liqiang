@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rotate_help_message">Функция уменьшения размера экрана недоступна в альбомной ориентации.</string>
+    <string name="cannot_start_by_other_app_new">Чтобы включить управление одной рукой, отключите приложение %s.</string>
+    <string name="help_text_to_return_full">Коснитесь области за пределами уменьшенного экрана, чтобы вернуться к полноэкранному режиму.</string>
+    <string name="help_onehand_title">Режим работы одной рукой</string>
+    <string name="help_secure_app">Защищенная страница</string>
+    <string name="help_adjust_screen_title">Настройка размера экрана</string>
+    <string name="help_adjust_screen_text">Проведите пальцем вверх или вниз, чтобы настроить размер уменьшенного экрана.</string>
+
+    <string name="onehand_settings_title">Режим работы одной рукой</string>
+    <string name="onehand_settings_summary">Отрегулируйте размер и схему экрана, чтобы облегчить управление телефоном одной рукой.</string>
+    <string name="onehand_settings_text_1">Чтобы уменьшить размер дисплея, проведите пальцем вверх по диагонали от любого нижнего угла экрана.</string>
+    <string name="onehand_settings_text_2">Чтобы уменьшить размер экрана, трижды быстро коснитесь клавиши “Домой”.</string>
+    <string name="onehand_settings_text_2_hardkey">Чтобы уменьшить размер экрана, трижды быстро нажмите клавишу “Домой”.</string>
+    <string name="onehand_settings_using_category">Способы уменьшения размера экрана</string>
+    <string name="onehand_settings_using_gesture">Жест</string>
+    <string name="onehand_settings_using_gesture_summary">Проведите вверх по диагонали из любого нижнего угла.</string>
+    <string name="onehand_settings_using_button">Кнопка</string>
+    <string name="onehand_settings_using_button_summary">Трижды коснитесь клавиши “Домой”.</string>
+    <string name="onehand_settings_using_button_summary_hardkey">Трижды нажмите клавишу “Домой”.</string>
+    <string name="onehand_settings_hardware_key_title">Отображение клавиш на экране</string>
+    <string name="onehand_settings_hardware_key_summary">Отображение клавиш “Домой”, “Назад” и “Последние”.</string>
+    <string name="onehand_settings_dialog_title">Включить режим работы одной рукой?</string>
+    <string name="onehand_settings_dialog_text">Данные функции нельзя использовать в режиме работы одной рукой. Они будут отключены.</string>
+    <string name="onehand_settings_cover_toast">Для управления одной рукой снимите внешнюю клавиатуру.</string>
+
+    <string name="accessibility_screen_magnification_title">Увеличение изображения на экране</string>
+    <string name="accessibility_autoclick_preference_title">Автонаж. после остан. указателя</string>
+</resources>

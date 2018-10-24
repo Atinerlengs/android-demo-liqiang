@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- @{freeme.zhiwei.zhang, 20180117. Navigation - Collapsable. -->
+    <string name="config_navBarLayout_inversion" translatable="false">left[.5W],recent[1WC];home;back[1WC],right[.5W]</string>
+    <string name="config_navBarLayout_collapsable_normal" translatable="false">freeme_collapsable_bar[.5W],back[1WC];home;recent[1WC],right[.5W]</string>
+    <string name="config_navBarLayout_collapsable_inversion" translatable="false">freeme_collapsable_bar[.5W],recent[1WC];home;back[1WC],right[.5W]</string>
+    <!-- @} -->
+
+    <integer name="freeme_qs_num_columns">5</integer>
+    <integer name="freeme_edit_num_columns">5</integer>
+    <integer name="freeme_qs_show_rows">5</integer>
+
+    <string name="freeme_quick_settings_tiles" translatable="false">
+        wifi,bt,audioprofile,dnd,mobiledata,airplane,flashlight,location,rotation,supershot,hotspot,cast,night,screenrecorder
+        ,custom(com.fooview.android.fooview.freeme/com.fooview.android.fooview.fvprocess.FVQuickSettingService),saver,
+    </string>
+
+    <string name="freeme_quick_settings_stock" translatable="false">
+        wifi,bt,audioprofile,dnd,mobiledata,airplane,flashlight,location,rotation,supershot,hotspot,cast,night,screenrecorder
+        ,custom(com.fooview.android.fooview.freeme/com.fooview.android.fooview.fvprocess.FVQuickSettingService),saver,inversion
+    </string>
+
+    <string name="freeme_edit_drag_area" translatable="false">
+        wifi,dnd,flashlight,rotation,bt,airplane,location,hotspot,work,cast,night,dataconnection,audioprofile,supershot,screenrecorder
+    </string>
+
+    <!-- freeme.xiaohui,20180605, FreemeLockscreen -->
+    <string name="lockscreen_toolkit_clock">"com.android.deskclock/.DeskClock"</string>
+    <string name="lockscreen_toolkit_calculator">"com.freeme.calculator/.Calculator"</string>
+    <string name="lockscreen_toolkit_soundrecorder">"com.freeme.soundrecorder/.SoundRecorderActivity"</string>
+</resources>

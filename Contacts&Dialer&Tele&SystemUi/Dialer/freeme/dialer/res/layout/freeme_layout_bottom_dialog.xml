@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/freeme_speed_dial_bottom_dialog_padding"
+    android:paddingHorizontal="@dimen/freeme_speed_dial_bottom_dialog_padding">
+    <ListView
+        android:id="@+id/lv_bottom_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/freeme_content_bg_default"
+        android:divider="@drawable/freeme_speed_dial_bottom_dialog_divider"
+        android:dividerHeight="1px" />
+
+</LinearLayout>

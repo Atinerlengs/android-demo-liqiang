@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- memory layout -->
+    <dimen name="recents_memory_label_marginTop">8dp</dimen>
+    <dimen name="recents_memory_layout_marginBottom">10dp</dimen>
+
+    <!--overlapping-->
+    <dimen name="child_view_thumbnail_width">352dp</dimen>
+    <dimen name="child_view_thumbnail_height">198dp</dimen>
+
+    <dimen name="recents_memory_trash_can_height">35dp</dimen>
+    <dimen name="recents_memory_trash_can_width">35dp</dimen>
+</resources>

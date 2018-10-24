@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tv_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/cleanable_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_page_padding_top"
+        android:layout_marginStart="@dimen/main_page_padding_start"
+        android:layout_marginEnd="@dimen/main_page_padding_start"
+        android:background="@drawable/main_page_part_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/storage_item_padding"
+            android:layout_marginStart="@dimen/list_item_padding_left"
+            android:layout_marginEnd="@dimen/list_item_padding_left">
+
+            <TextView
+                android:id="@+id/cleanable_size_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0B"
+                android:textSize="@dimen/cleanable_text_size"
+                android:textColor="@color/garbage_progress_cleanable"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cleanable_size_txt"
+                android:layout_alignBaseline="@+id/cleanable_size_txt"
+                android:text="@string/storage_cleanable"
+                style="@style/AppTextAppearance.ItemOther"/>
+
+            <TextView
+                android:id="@+id/cleanable_select_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignBaseline="@+id/cleanable_size_txt"
+                android:text="0B"
+                style="@style/AppTextAppearance.ItemOther"/>
+        </RelativeLayout>
+
+        <ProgressBar android:id="@+id/used_progress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/garbage_progressbar_height"
+            android:layout_marginTop="@dimen/arc_bottom_text2_top"
+            android:layout_marginStart="@dimen/list_item_padding_left"
+            android:layout_marginEnd="@dimen/list_item_padding_left"
+            android:progressDrawable="@drawable/garbage_progress_drawable"
+            android:max="100"
+            android:progress="50"
+            android:secondaryProgress="1"
+            style="@android:style/Widget.ProgressBar.Horizontal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/arc_bottom_text2_top"
+            android:layout_marginBottom="@dimen/arc_bottom_text2_top"
+            android:layout_marginStart="@dimen/list_item_padding_left"
+            android:layout_marginEnd="@dimen/list_item_padding_left">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/category_icon_width"
+                    android:layout_height="@dimen/category_icon_height"
+                    android:src="@color/app_theme_color_accent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/main_page_padding_start"
+                    android:text="@string/storage_used_flag"
+                    style="@style/AppTextAppearance.ItemCategoryOther"/>
+
+                <ImageView
+                    android:layout_width="@dimen/category_icon_width"
+                    android:layout_height="@dimen/category_icon_height"
+                    android:layout_marginStart="@dimen/garbage_progress_txt2_start"
+                    android:src="@color/garbage_progress_cleanable" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/main_page_padding_start"
+                    android:text="@string/storage_cleanable"
+                    style="@style/AppTextAppearance.ItemCategoryOther"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/storage_txt0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/AppTextAppearance.ItemCategoryOther"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    style="@style/AppTextAppearance.ItemCategoryOther"/>
+                <TextView
+                    android:id="@+id/storage_txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/AppTextAppearance.ItemCategoryOther"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/scan_path_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/list_item_padding_left"
+            android:layout_marginEnd="@dimen/list_item_padding_left"
+            android:layout_marginBottom="@dimen/garbage_scan_txt_bottom"
+            android:text="@string/garbage_scanning"
+            style="@style/AppTextAppearance.ItemOther"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/garbage_suggest_title_height"
+        android:text="@string/garbage_suggest_title"
+        android:layout_marginStart="@dimen/list_item_padding_left"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/AppTextAppearance.ItemOther" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ExpandableListView
+            android:id="@+id/expande_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@drawable/listitem_backgroud_full_freeme_normal"
+            android:divider="@drawable/list_preference_divider_default_freeme"
+            android:childDivider="@drawable/list_item_divider_garbage_child"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/cleanup_button"
+        android:layout_width="@dimen/bottom_btn_width"
+        android:layout_height="@dimen/bottom_btn_height"
+        android:layout_marginTop="@dimen/bottom_btn_clean_margin_bottom"
+        android:layout_marginBottom="@dimen/bottom_btn_clean_margin_bottom"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center"
+        android:enabled="false"
+        android:background="@drawable/btn_bottom"
+        android:textAppearance="@style/AppTextAppearance.BottomBtn"
+        android:text="@string/garbage_scanning" />
+
+</LinearLayout>

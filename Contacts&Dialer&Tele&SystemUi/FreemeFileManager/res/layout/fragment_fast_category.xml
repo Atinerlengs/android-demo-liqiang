@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tv_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/main_page_padding_top"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/main_page_padding_start"
+            android:layout_marginEnd="@dimen/main_page_padding_start"
+            android:orientation="vertical"
+            android:background="@drawable/main_page_part_background">
+
+            <com.freeme.filemanager.view.CompatGridView
+                android:id="@+id/category_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/grid_padding_bottom"
+                android:horizontalSpacing="@dimen/grid_horizontal_space"
+                android:gravity="center"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:listSelector="@drawable/grid_item_line0_background"/>
+
+            <include layout="@layout/widget_divider_view_small" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/file_item_height"
+                android:id="@+id/all_storage"
+                android:background="@drawable/grid_item_line2_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tab_file"
+                    android:paddingStart="@dimen/list_item_padding_left"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:textAlignment="viewStart"
+                    android:layout_alignParentStart="true"
+                    android:textAppearance="@style/AppTextAppearance.ItemName"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/list_item_padding_left"
+                    android:src="@drawable/ic_right_arrow"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/divider_height_medium"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/storage_space"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/listitem_backgroud_head_freeme">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/storage_item_height"
+                    android:paddingLeft="@dimen/detail_grid_vertical_space"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/storage_category_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/all_storage"
+                        android:textAppearance="@style/AppTextAppearance.ItemName"/>
+                    <TextView
+                        android:id="@+id/storage_category_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/storage_item_padding_top"
+                        android:textAppearance="@style/AppTextAppearance.ItemOther"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <include layout="@layout/storage_info_progress" />
+
+                <ImageView
+                    android:id="@+id/dir_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/storage_item_padding"
+                    android:background="@drawable/ic_right_arrow"
+                    android:scaleType="fitCenter"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+            <include layout="@layout/widget_divider_view_small_freeme" />
+
+            <RelativeLayout
+                android:id="@+id/trash_clean"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/file_item_height"
+                android:background="@drawable/listitem_backgroud_middle_freeme">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/file_clean"
+                    android:paddingStart="@dimen/detail_grid_vertical_space"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:textAlignment="viewStart"
+                    android:layout_alignParentStart="true"
+                    android:textAppearance="@style/AppTextAppearance.ItemName"/>
+
+                <ImageView
+                    android:id="@+id/dir_arrow_clean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/list_item_padding_left"
+                    android:src="@drawable/ic_right_arrow"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:id="@+id/can_clean_trash"
+                    android:layout_toLeftOf="@+id/dir_arrow_clean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/memory_info_layout_right"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:textAppearance="@style/AppTextAppearance.Small"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <include layout="@layout/widget_divider_view_small_freeme" />
+
+            <com.freeme.filemanager.view.ListItemTextView
+                android:id="@+id/ftp_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tv_custom:background_res="@drawable/listitem_backgroud_middle_freeme"
+                tv_custom:left_text="@string/tab_remote"
+                tv_custom:right_text_visible="gone"
+                tv_custom:right_image_visible="visible">
+            </com.freeme.filemanager.view.ListItemTextView>
+
+            <include layout="@layout/widget_divider_view_small_freeme" />
+
+            <com.freeme.filemanager.view.ListItemTextView
+                android:id="@+id/encryption_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tv_custom:background_res="@drawable/listitem_backgroud_tail_freeme"
+                tv_custom:left_text="@string/encryption_file"
+                tv_custom:right_text_visible="gone"
+                tv_custom:right_image_visible="visible">
+            </com.freeme.filemanager.view.ListItemTextView>
+        </LinearLayout>
+
+        <!--<com.freeme.filemanager.view.CompatListView
+            android:id="@+id/category_storage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/divider_height_medium"
+            android:layout_gravity="center_horizontal"
+            android:divider="@drawable/list_item_divider_16dp"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:background="@drawable/main_page_part_background"/>-->
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/freeme_mobile_networks">
+
+    <PreferenceCategory
+        android:key="head_preferencecateggory">
+        <SwitchPreference
+            android:key="data_network"
+            android:persistent="false"
+            android:summary="@string/open_data_network_summary"
+            android:title="@string/open_data_network"/>
+
+        <com.android.phone.RestrictedSwitchPreference
+            android:key="button_roaming_key"
+            android:persistent="false"
+            android:summaryOff="@string/roaming_disable"
+            android:summaryOn="@string/roaming_enable"
+            android:title="@string/roaming"/>
+    </PreferenceCategory>
+</PreferenceScreen>

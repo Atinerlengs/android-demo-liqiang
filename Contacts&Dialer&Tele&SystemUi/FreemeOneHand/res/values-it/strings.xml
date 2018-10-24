@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rotate_help_message">"L'opzione Riduci dimensioni schermo non è disponibile nella vista orizzontale."</string>
+    <string name="cannot_start_by_other_app_new">"Per abilitare l'uso con una mano, disabilitate %s."</string>
+    <string name="help_text_to_return_full">"Toccate al di fuori dell'area dello schermo ridotto per tornare allo schermo intero."</string>
+    <string name="help_onehand_title">Modalità con una mano</string>
+    <string name="help_secure_app">Pagina protetta</string>
+    <string name="help_adjust_screen_title">Regolazione delle dimensioni della schermata</string>
+    <string name="help_adjust_screen_text">"Trascinate verso l'alto o il basso per regolare la dimensione della schermata ridotta."</string>
+
+    <string name="onehand_settings_title">Modalità con una mano</string>
+    <string name="onehand_settings_summary">Regolate le dimensioni e il layout dello schermo per controllare più facilmente il dispositivo con una sola mano.</string>
+    <string name="onehand_settings_text_1">Trascinate il dito in diagonale da uno degli angoli inferiori dello schermo per ridurre le dimensioni dello schermo.</string>
+    <string name="onehand_settings_text_2">Toccate rapidamente il tasto Home per 3 volte per ridurre la dimensione dello schermo.</string>
+    <string name="onehand_settings_text_2_hardkey">Premete rapidamente il tasto Home per 3 volte per ridurre la dimensione dello schermo.</string>
+    <string name="onehand_settings_using_category">Riduci dimensioni schermo con</string>
+    <string name="onehand_settings_using_gesture">Gesti</string>
+    <string name="onehand_settings_using_gesture_summary">Trascinate il dito in diagonale da uno degli angoli inferiori.</string>
+    <string name="onehand_settings_using_button">Pulsante</string>
+    <string name="onehand_settings_using_button_summary">Toccate il pulsante Home per 3 volte.</string>
+    <string name="onehand_settings_using_button_summary_hardkey">Premete il tasto Home per 3 volte.</string>
+    <string name="onehand_settings_hardware_key_title">Mostra tasti sullo schermo</string>
+    <string name="onehand_settings_hardware_key_summary">Mostra Home, Indietro e Applicazioni recenti.</string>
+    <string name="onehand_settings_dialog_title">Attivare la Modalità con una mano?</string>
+    <string name="onehand_settings_dialog_text">Le funzioni riportate di seguito e la Modalità con una mano non possono essere utilizzate contemporaneamente. Le funzioni verranno disattivate.</string>
+    <string name="onehand_settings_cover_toast">Per utilizzare la Modalità con una mano, rimuovete la cover con tastiera.</string>
+
+    <string name="accessibility_screen_magnification_title">Ingrandimento</string>
+    <string name="accessibility_autoclick_preference_title">Clic autom. con puntatore fermo</string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.freeme.game"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@android:mipmap/sym_def_app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".settings.GmSettingsActivity"
+            android:label="@string/gm_label"
+            android:theme="@style/AppTheme.Settings"
+            android:configChanges="keyboardHidden|screenSize|mnc|mcc"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.android.settings"
+            android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.freeme.intent.action.GAMEMODE_SETTINGS"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            </intent-filter>
+            <meta-data android:name="com.android.settings.title"
+                android:resource="@string/gm_label" />
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.freeme.game.settings.GmSettingsActivity$GmSettingsFragment" />
+        </activity>
+
+        <activity
+            android:name=".apppicker.GmAppPickerActivity"
+            android:theme="@style/AppTheme.Settings"
+            android:label="@string/gm_add_apps_list_label"
+            android:hardwareAccelerated="true"/>
+
+        <service
+            android:name=".services.GmToolService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.freeme.intent.action.GAMEMODE_TOOL" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name=".database.GmProvider"
+            android:authorities="com.freeme.game"
+            android:exported="true"
+            android:multiprocess="false" />
+
+        <receiver android:name=".receiver.GmAppInstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- test activity-->
+        <activity
+            android:name=".MainActivity"
+            android:process=":test">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.freeme.intent.action.GAMEMODE_TEST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

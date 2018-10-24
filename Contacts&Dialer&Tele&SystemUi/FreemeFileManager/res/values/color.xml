@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_theme_color_primary">#f5f5f5</color>
+    <color name="app_theme_color_accent">#22c580</color>
+    <color name="app_color_divider">#16000000</color>
+
+    <color name="textColorPrimary">#333333</color>
+    <color name="textColorSecondary">#808080</color>
+    <color name="ipname_text_color_primary">#29bd68</color>
+    <color name="white">#ffffff</color>
+    <color name="bottom_btn_color_secodary">#6922c580</color>
+    <color name="list_color_divider">#dbdbdb</color>
+
+    <color name="main_page_background">#ebebeb</color>
+    <color name="memory_progress_unfinished_color">#d8d9da</color>
+    <color name="circle_progress_unfinished_color">#4b000000</color>
+    <color name="arc_progress_text_color1">#ff8023</color>
+    <color name="arc_progress_text_color2">#ff3a4d</color>
+    <color name="grid_horizontal_music_color">#ff6c84</color>
+    <color name="grid_horizontal_video_color">#feaa40</color>
+    <color name="grid_horizontal_image_color">#02dbbd</color>
+    <color name="grid_horizontal_document_color">#04ade4</color>
+    <color name="grid_horizontal_apk_color">#45d76e</color>
+    <color name="grid_horizontal_other_color">#c4a2db</color>
+
+    <color name="search_view_color">#06000000</color>
+    <color name="garbage_progress_cleanable">#ff962f</color>
+
+    <color name="regularColor">#ff37474f</color>
+    <color name="errorColor">#ffff0000</color>
+</resources>

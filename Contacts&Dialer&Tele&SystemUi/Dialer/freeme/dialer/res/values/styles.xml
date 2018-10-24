@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="FreemeDialerThemeBase" parent="*freeme:style/Theme.Freeme.Light" />
+
+    <style name="FreemeDialtactsTheme" parent="FreemeDialerThemeBase">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:overlapAnchor">true</item>
+
+        <item name="list_section_header_height">32dip</item>
+        <item name="list_item_padding_top">7dp</item>
+        <item name="list_item_padding_right">24dp</item>
+        <item name="list_item_padding_bottom">7dp</item>
+        <item name="list_item_padding_left">16dp</item>
+        <item name="list_item_gap_between_image_and_text">
+            @dimen/contact_browser_list_item_gap_between_image_and_text
+        </item>
+        <item name="list_item_gap_between_label_and_data">8dip</item>
+        <item name="list_item_presence_icon_margin">4dip</item>
+        <item name="list_item_presence_icon_size">16dip</item>
+        <item name="list_item_photo_size">@dimen/contact_browser_list_item_photo_size</item>
+        <item name="list_item_profile_photo_size">70dip</item>
+        <item name="list_item_prefix_highlight_color">@color/people_app_theme_color</item>
+        <item name="list_item_background_color">@color/background_dialer_light</item>
+        <item name="list_item_header_text_indent">8dip</item>
+        <item name="list_item_header_text_color">@color/dialer_secondary_text_color</item>
+        <item name="list_item_header_text_size">14sp</item>
+        <item name="list_item_header_height">30dip</item>
+        <item name="list_item_data_width_weight">5</item>
+        <item name="list_item_label_width_weight">3</item>
+        <item name="contact_browser_list_padding_left">0dp</item>
+        <item name="contact_browser_list_padding_right">0dp</item>
+        <item name="contact_browser_background">@color/background_dialer_results</item>
+        <item name="list_item_name_text_color">@color/contact_list_name_text_color</item>
+        <item name="list_item_name_text_size">16sp</item>
+        <item name="list_item_text_indent">@dimen/contact_browser_list_item_text_indent</item>
+        <item name="list_item_text_offset_top">-2dp</item>
+        <item name="favorites_padding_bottom">?android:attr/actionBarSize</item>
+        <item name="dialpad_key_button_touch_tint">@color/dialer_dialpad_touch_tint</item>
+        <item name="list_item_video_call_icon_size">48dip</item>
+        <item name="list_item_video_call_icon_margin">8dip</item>
+        <item name="dialpad_style">@style/Dialpad.Light</item>
+    </style>
+
+    <style name="FreemeDialtactsThemeWithoutActionBarOverlay" parent="FreemeDialtactsTheme">
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="windowActionBarOverlay">false</item>
+    </style>
+
+    <style name="FreemeSettingsStyle" parent="FreemeDialtactsThemeWithoutActionBarOverlay" />
+
+    <style name="FreemeManageBlockedNumbersStyle" parent="FreemeSettingsStyle">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:fastScrollTrackDrawable">@null</item>
+    </style>
+
+    <style name="DialerPrimaryFlatButtonStyle" parent="*freeme:style/Widget.Freeme.Light.Button">
+        <item name="android:textColor">@color/freeme_color_accent</item>
+        <item name="android:paddingEnd">@dimen/button_horizontal_padding</item>
+        <item name="android:paddingStart">@dimen/button_horizontal_padding</item>
+    </style>
+
+    <style name="FreemeBackgroundOnlyTheme" parent="FreemeDialerThemeBase">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- Activities that use this theme are background activities without obvious displays.
+            However, some also have dialogs. Therefore, it doesn't make sense to set this true.-->
+        <item name="android:windowNoDisplay">false</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="FreemeDialtactsActivityThemeNoActionbar" parent="DialtactsActivityTheme">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="FreemeSpeedDialDialogTextStyle">
+        <item name="android:textColor">@color/freeme_speed_dial_dialog_text_color</item>
+        <item name="android:textSize">@dimen/freeme_speed_dial_dialog_text_size</item>
+    </style>
+
+    <style name="FreemeDialog" parent="@*freeme:style/Theme.Freeme.Light.Dialog"></style>
+
+    <style name="FreemeDialog.Bottom">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/FreemeAnimation.Dialog.Bottom</item>
+    </style>
+
+    <style name="FreemeAnimation.Dialog" parent="@*freeme:style/Animation.Freeme.Dialog"></style>
+
+    <style name="FreemeAnimation.Dialog.Bottom">
+        <item name="android:windowEnterAnimation">@anim/translate_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/translate_dialog_out</item>
+    </style>
+</resources>

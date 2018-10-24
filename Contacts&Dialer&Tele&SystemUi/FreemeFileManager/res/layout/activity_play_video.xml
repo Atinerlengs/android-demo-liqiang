@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <VideoView
+        android:id="@+id/video_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/action_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@android:color/black">
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/main_page_padding_start"
+            android:paddingEnd="@dimen/main_page_padding_start"
+            android:paddingBottom="@dimen/action_bar_back_padding"
+            android:paddingTop="@dimen/action_bar_back_padding"
+            android:src="@drawable/ic_android_black_24dp" />
+
+        <TextView
+            android:id="@+id/video_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/action_bar_title_padding"
+            android:paddingEnd="@dimen/action_bar_title_padding"
+            android:singleLine="true"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@style/AppTextAppearance.Medium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</FrameLayout>

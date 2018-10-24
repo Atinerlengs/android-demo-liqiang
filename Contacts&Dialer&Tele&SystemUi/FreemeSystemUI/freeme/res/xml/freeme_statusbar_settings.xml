@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/freeme_notification_settings">
+
+    <PreferenceCategory android:key="status_category">
+
+        <SwitchPreference
+            android:key="show_networkspeed"
+            android:title="@string/freeme_network_speed_show" />
+
+        <SwitchPreference
+            android:key="show_battery"
+            android:title="@string/freeme_battery_show" />
+
+        <SwitchPreference
+            android:key="show_noti_icon"
+            android:title="@string/freeme_show_notifications" />
+
+        <SwitchPreference
+            android:key="forb_slide_statusbar_keyguard"
+            android:title="@string/freeme_forbidden_slide_statusbar" />
+
+        <SwitchPreference
+            android:key="show_carrier"
+            android:title="@string/freeme_carrier_label_show" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

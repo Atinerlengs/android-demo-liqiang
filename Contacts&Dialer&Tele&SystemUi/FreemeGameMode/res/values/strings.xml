@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">GameMode</string>
+    <string name="test_app_name" translatable="false">GameMode</string>
+    <string name="test_start_game_mode" translatable="false">Start Game Mode</string>
+    <string name="test_stop_game_mode" translatable="false">Stop Game Mode</string>
+
+    <string name="gm_label">Game mode</string>
+
+    <string name="gm_tools">Game tool</string>
+    <string name="gm_tools_summary">A floating button will be displayed when Game mode is turned on</string>
+
+    <string name="gm_settings_title">Settings</string>
+    <string name="gm_settings_answer_call">Answer calls via speaker</string>
+    <string name="gm_settings_answer_call_summary">Answer incoming calls in the background through speaker when Game mode is turned on</string>
+    <string name="gm_settings_block_notification">Block notifications</string>
+    <string name="gm_settings_block_notification_summary">calls and alarms are exempted</string>
+    <string name="gm_settings_lock_keys">Lock buttons</string>
+    <string name="gm_settings_lock_keys_summary">Lock the recent and back keys on the navigation bar</string>
+    <string name="gm_settings_power_saving">Gaming battery saver</string>
+    <string name="gm_settings_power_saving_tips">This feature may not work for some games</string>
+    <string name="gm_settings_power_saving_off">Disabled</string>
+    <string name="gm_settings_power_saving_light">Low</string>
+    <string name="gm_settings_power_saving_light_summary">Resolution of games will be limited</string>
+    <string name="gm_settings_power_saving_severe">High</string>
+    <string name="gm_settings_power_saving_severe_summary">Resolution and FPS of games will be limited</string>
+    <string name="gm_settings_block_auto_brightness">Disable automatic brightness</string>
+    <string name="gm_settings_block_auto_brightness_summary">Lock screen automatic brightness when Game mode is turned on</string>
+
+    <string name="gm_app_list_label">Automatically turn on for these apps</string>
+    <string name="gm_add_apps_list_label">Game mode App List</string>
+    <string name="gm_add_apps_list_loading_tips">loading...</string>
+    <string name="gm_add_apps_list_empty_tips">No Apps</string>
+    <string name="gm_add_apps_list_recommended">Recommended</string>
+    <string name="gm_add_apps_list_other">Other applications</string>
+    <string name="gm_remove_apps">Remove</string>
+    <string name="gm_add_apps">Add apps for Game mode</string>
+
+    <string name="gm_function_tips">Game mode will turn on automatically when these apps are opened and turn off when they are closed</string>
+</resources>

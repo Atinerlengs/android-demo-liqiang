@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="keyguard_between_weather_dateview">3dp</dimen>
+    <dimen name="keyguard_clockview_marginleft">13dp</dimen>
+    <dimen name="keyguard_dateview_paddingleft">15dp</dimen>
+    <dimen name="keyguard_clockview_margintop">50dp</dimen>
+    <dimen name="keyguard_indication_text_size">15dp</dimen>
+    <dimen name="keyguard_pw_input_divider_width">240dp</dimen>
+    <dimen name="keyguard_pin_pattern_maxheight">570dp</dimen>
+    <dimen name="keyguard_fp_hint_size">14dp</dimen>
+    <dimen name="keyguard_emergency_text_size">14dp</dimen>
+
+    <dimen name="qs_header_height">47dp</dimen>
+    <dimen name="qs_header_clock_paddingleft">16dp</dimen>
+    <dimen name="freeme_status_bar_clock_size">36dp</dimen>
+    <dimen name="qs_header_between_clock_and_date">5dp</dimen>
+    <dimen name="qs_header_date_size">12dp</dimen>
+    <dimen name="qs_date_margin_top">2dp</dimen>
+    <dimen name="qs_panel_margin_top">36dp</dimen>
+
+    <dimen name="qs_panel_min_height">130dp</dimen>
+    <dimen name="qs_tile_side_padding">10dp</dimen>
+    <dimen name="qs_tile_vertical_margin">0dp</dimen>
+    <dimen name="qs_tile_horizontal_margin">0dp</dimen>
+
+    <dimen name="freeme_qs_customizer_toolbar_margin_top">5dp</dimen>
+
+    <dimen name="freeme_qs_brightness_between_toggle_and_label">5dp</dimen>
+    <dimen name="freeme_qs_brightness_toggle_height">30dp</dimen>
+
+    <dimen name="notification_delete_padding_boundary">7.5dp</dimen>
+    <dimen name="notification_delete_padding_bottom">52.5dp</dimen>
+
+    <dimen name="volume_row_spacing">10.5dp</dimen>
+    <dimen name="notification_panel_margin_bottom">0dp</dimen>
+
+    <!-- freeme.biantao, 20180207. Theme.Freeme 8.1 - notification. -->
+    <dimen name="notification_item_bg_corner_radius">5dp</dimen>
+    <dimen name="notification_item_margin_start">8dp</dimen>
+    <dimen name="notification_item_margin_end">8dp</dimen>
+    <dimen name="notification_item_snooze_margin_start">4dp</dimen>
+    <dimen name="notification_item_snooze_margin_end">4dp</dimen>
+
+    <dimen name="freeme_network_padding_end">1dp</dimen>
+    <dimen name="freeme_network_padding_start">1dp</dimen>
+    <dimen name="freeme_status_bar_text_size">12dp</dimen>
+    <dimen name="freeme_status_bar_notification_icon_size">12dp</dimen>
+    <dimen name="freeme_status_bar_icon_horizontal_padding">3dp</dimen>
+
+    <dimen name="freeme_battery_inside_text_size">7dp</dimen>
+
+    <integer name="freeme_carrier_label_size">12</integer>
+    <integer name="freeme_carrier_labels_size">10</integer>
+
+    <dimen name="color_toast_margin_bottom">104dp</dimen>
+    <dimen name="color_toast_padding_bottom">7dp</dimen>
+    <dimen name="color_toast_padding_left">15dp</dimen>
+    <dimen name="color_toast_padding_right">15dp</dimen>
+    <dimen name="color_toast_padding_top">7dp</dimen>
+    <dimen name="color_toast_text_size">14dp</dimen>
+
+    <!-- Freeme.xiaohui,20180419, FreemeLockscreen -->
+    <dimen name="freeme_lockscreen_panel_bottom_height">40dp</dimen>
+    <dimen name="freeme_lockscreen_panel_finger_delta">5dp</dimen>
+    <dimen name="freeme_lockscreen_gesture_radius">15dp</dimen>
+    <dimen name="freeme_lockscreen_gesture_distance">60dp</dimen>
+    <!-- camera width -->
+    <dimen name="freeme_lockscreen_panel_margin_right">@dimen/keyguard_affordance_width</dimen>
+    <!-- keyguard theme -->
+    <dimen name="magazine_kg_use_indication_area_margin_top">64dp</dimen>
+    <dimen name="magazine_kg_unuse_indication_area_margin_bottom">18dp</dimen>
+    <integer name="magazine_kg_clock_date_min_slop">16</integer>
+    <dimen name="freeme_lockscreen_image_title_width">180dp</dimen>
+
+    <dimen name="notch_status_bar_start_padding">16dp</dimen>
+    <dimen name="notch_status_bar_end_padding">16dp</dimen>
+    <dimen name="notch_status_bar_battery_clock_padding">3dp</dimen>
+    <dimen name="notch_secondary_telephony_padding">3dp</dimen>
+    <dimen name="notch_heads_up_noti_height">8dp</dimen>
+    <dimen name="notch_close_handle_underlap">32dp</dimen>
+
+    <dimen name="sidebar_start_threshold_x_a">32dp</dimen>
+</resources>

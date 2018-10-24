@@ -1,0 +1,114 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+ext {
+    compileSdkVersion = 27
+    buildToolsVersion = '27.0.3'
+    minSdkVersion = 24
+    sourceCompatibility = JavaVersion.VERSION_1_7
+    targetCompatibility = JavaVersion.VERSION_1_7
+
+    useCertificate = 'platform'
+    useFreemePlarformRes = true
+    if (rootProject.file('local.properties').exists()) {
+        Properties localProperties = new Properties()
+        localProperties.load(rootProject.file('local.properties').newDataInputStream())
+
+        sdkDir = localProperties.getProperty('sdk.dir')
+        sdkFreemeDir = file("${sdkDir}/extras/freeme").path
+        sdkFreemeSigningsDir = file("${sdkFreemeDir}/signings").path
+        sdkFreemePlatformDir = file("${sdkFreemeDir}/platforms/android-v${compileSdkVersion}").path
+
+        // signing
+        if (file("${sdkFreemeSigningsDir}/signings.properties").exists()) {
+            Properties signingsProperties = new Properties()
+            signingsProperties.load(file("${sdkFreemeSigningsDir}/signings.properties").newDataInputStream())
+
+            storeFile = file("${sdkFreemeSigningsDir}/${signingsProperties["key.${useCertificate}.store"]}").path
+            storePassword = signingsProperties["key.${useCertificate}.store.password"]
+            keyAlias = signingsProperties["key.${useCertificate}.alias"]
+            keyPassword = signingsProperties["key.${useCertificate}.password"]
+        }
+        // sdk
+        if (file("${sdkFreemePlatformDir}").exists()) {
+            if (useFreemePlarformRes && file("${sdkFreemePlatformDir}/freeme-framework-res.apk").exists()) {
+                sdkFreemePlatformRes = file("${sdkFreemePlatformDir}/freeme-framework-res.apk").path
+            }
+        }
+    }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        applicationId 'com.freeme.onehand'
+        versionCode 4
+        versionName '4.0'
+    }
+    compileOptions {
+        sourceCompatibility rootProject.sourceCompatibility
+        targetCompatibility rootProject.targetCompatibility
+    }
+    signingConfigs {
+        release {
+            storeFile file(rootProject.storeFile)
+            storePassword rootProject.storePassword
+            keyAlias rootProject.keyAlias
+            keyPassword rootProject.keyPassword
+        }
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.flags'
+            signingConfig signingConfigs.release
+        }
+    }
+    aaptOptions {
+        if (rootProject.useFreemePlarformRes) {
+            additionalParameters '-I', rootProject.sdkFreemePlatformRes
+        }
+    }
+}
+
+dependencies {
+    implementation project(':settings_common')
+    implementation 'com.android.support:support-core-ui:27.1.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="@dimen/garbage_progressbar_height" />
+            <solid android:color="@color/memory_progress_unfinished_color"/>
+        </shape>
+    </item>
+
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="@dimen/garbage_progressbar_height" />
+                <solid android:color="@color/garbage_progress_cleanable"/>
+            </shape>
+        </clip>
+    </item>
+
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape >
+                <corners android:radius="@dimen/garbage_progressbar_height" />
+                <solid android:color="@color/app_theme_color_accent"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

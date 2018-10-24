@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bg_window"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/onehand_touchable_area_height"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/touch_left_v"
+        android:layout_width="@dimen/onehand_touchable_area_breadth"
+        android:layout_height="@dimen/onehand_touchable_area_height"
+        android:layout_gravity="bottom|center|left"
+        android:layout_marginBottom="@dimen/onehand_touchable_area_breadth"
+        android:background="@color/swipe_handler_bg_color"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/touch_left_h"
+        android:layout_width="@dimen/onehand_touchable_area_width"
+        android:layout_height="@dimen/onehand_touchable_area_breadth"
+        android:layout_gravity="bottom|center|left"
+        android:background="@color/swipe_handler_bg_color"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/touch_right_v"
+        android:layout_width="@dimen/onehand_touchable_area_breadth"
+        android:layout_height="@dimen/onehand_touchable_area_height"
+        android:layout_gravity="bottom|center|right"
+        android:layout_marginBottom="@dimen/onehand_touchable_area_breadth"
+        android:background="@color/swipe_handler_bg_color"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/touch_right_h"
+        android:layout_width="@dimen/onehand_touchable_area_width"
+        android:layout_height="@dimen/onehand_touchable_area_breadth"
+        android:layout_gravity="bottom|center|right"
+        android:background="@color/swipe_handler_bg_color"
+        android:visibility="gone"/>
+</FrameLayout>

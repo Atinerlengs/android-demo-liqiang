@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="need_dummy_activity_package">
+        <item>com.storm.smart</item>
+    </string-array>
+    <string-array name="need_check_screen_on_package">
+        <item>com.android.contacts</item>
+        <item>com.android.mms</item>
+        <item>com.android.calendar</item>
+
+        <item>com.storm.smart</item>
+        <item>com.sina.weibo</item>
+        <item>com.tencent.mm</item>
+        <item>com.tencent.mobileqq</item>
+        <item>com.renren.mobile.android</item>
+        <item>com.baidu.BaiduMap</item>
+        <item>com.eg.android.AlipayGphone</item>
+    </string-array>
+    <string-array name="support_show_when_locked_package">
+        <item>com.tencent.mobileqq</item>
+    </string-array>
+    <string-array name="applock_white_list_pkg">
+        <item>com.android.deskclock</item>
+        <item>com.android.settings</item>
+        <item>com.android.stk</item>
+        <item>com.android.stk2</item>
+
+        <item>com.ptns.da.zy</item>
+        <item>com.zhuoyi.security.service</item>
+
+        <item>com.freeme.applock</item>
+        <item>com.freeme.camera</item>
+        <item>com.freeme.freemelite.odm</item>
+    </string-array>
+</resources>

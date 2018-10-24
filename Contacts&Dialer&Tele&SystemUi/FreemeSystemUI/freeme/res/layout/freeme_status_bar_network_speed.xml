@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.freeme.systemui.networkspeed.NetworkSpeedView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/network_speed_view"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingEnd="@dimen/freeme_network_padding_end"
+    android:paddingStart="@dimen/freeme_network_padding_start"
+    android:visibility="gone">
+
+    <com.freeme.systemui.tint.TintTextView
+        android:id="@+id/speed"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:singleLine="true"
+        android:paddingRight="2dp"
+        android:textSize="@dimen/freeme_status_bar_text_size"/>
+</com.freeme.systemui.networkspeed.NetworkSpeedView>

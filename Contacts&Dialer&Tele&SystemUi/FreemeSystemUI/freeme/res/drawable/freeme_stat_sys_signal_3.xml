@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="11dp"
+    android:height="14dp"
+    android:viewportWidth="33"
+    android:viewportHeight="42">
+
+    <path
+        android:fillColor="@color/freeme_status_signal_color"
+        android:pathData="M30,4 C31.105,4,32,4.895,32,6 L32,36 C32,37.105,31.105,38,30,38 C28.895,38,28,37.105,28,36 L28,6 C28,4.895,28.895,4,30,4 Z" />
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M21,12 C22.105,12,23,12.895,23,14 L23,36 C23,37.105,22.105,38,21,38 C19.895,38,19,37.105,19,36 L19,14 C19,12.895,19.895,12,21,12 Z" />
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M12,20 L12,20 Q14,20,14,22 L14,36 Q14,38,12,38 L12,38 Q10,38,10,36 L10,22 Q10,20,12,20 Z" />
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M3,27 C4.105,27,5,27.895,5,29 L5,36 C5,37.105,4.105,38,3,38 C1.895,38,1,37.105,1,36 L1,29 C1,27.895,1.895,27,3,27 Z" />
+</vector>

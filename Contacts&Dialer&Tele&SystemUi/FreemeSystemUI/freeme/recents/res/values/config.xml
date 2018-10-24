@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- The animation duration for scrolling the stack to a particular item. -->
+    <integer name="animate_overlapping_scroll_duration">225</integer>
+
+    <!-- The minimum alpha for the dim applied to cards that go deeper into the stack. -->
+    <integer name="max_overlapping_view_dim">96</integer>
+
+    <!-- The duration of the window transition when coming to Recents from the Launcher.
+         In order to defer the in-app animations until after the transition is complete,
+         we also need to use this value as the starting delay when animating the child views
+         in from the bottom of the screen. -->
+    <integer name="enter_from_home_transition_duration">100</integer>
+
+    <!-- The duration for animating the child decorations in after transitioning from an app. -->
+    <integer name="child_enter_from_app_duration">200</integer>
+
+    <!-- The duration for animating the child from the bottom of the screen when transitioning
+     from home. -->
+    <integer name="child_enter_from_home_duration">225</integer>
+
+    <!-- The stagger for each child when animating the child from the bottom of the screen when
+     transitioning from home. -->
+    <integer name="child_enter_from_home_stagger_delay">12</integer>
+
+    <!-- The duration for animating the child decorations out before transitioning to an app. -->
+    <integer name="child_exit_to_app_duration">125</integer>
+
+    <!-- The duration of the animation of the childs to the bottom of the screen when leaving
+     Recents to go back to the Launcher. -->
+    <integer name="child_exit_to_home_duration">225</integer>
+
+    <!-- The animation duration for animating the removal of a child view. -->
+    <integer name="animate_child_view_remove_duration">250</integer>
+
+    <bool name="show_toast_after_clean_memory">false</bool>
+</resources>

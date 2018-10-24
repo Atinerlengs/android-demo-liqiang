@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/freeme_call_card_button_change_to_video_disable"
+        android:state_enabled="false" />
+    <item android:drawable="@drawable/freeme_call_card_button_change_to_video_press"
+        android:state_pressed="true" />
+    <item android:drawable="@drawable/freeme_call_card_button_change_to_video_default" />
+</selector>

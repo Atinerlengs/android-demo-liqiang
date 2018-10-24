@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!--{@freeme.zhangjunjian,20180119, redesign contacts editor
+<com.android.contacts.editor.GroupMembershipView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group_membership_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/kind_icon"
+        android:src="@drawable/quantum_ic_label_vd_theme_24"
+        style="@style/EditKindIconStyle" />
+
+    <Button
+        style="@style/SpinnerButtonStyle"
+        android:id="@+id/group_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/editor_min_line_item_height"
+        android:textSize="@dimen/editor_form_text_size"
+        android:textAlignment="viewStart"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:layout_marginEnd="@dimen/editor_delete_button_size"
+        android:layout_marginBottom="@dimen/editor_padding_between_editor_views"
+        android:paddingEnd="@dimen/editor_spinner_right_padding"/>
+
+</com.android.contacts.editor.GroupMembershipView>
+-->
+<com.android.contacts.editor.GroupMembershipView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group_membership_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/freeme_editor_min_line_item_height"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/group_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/freeme_editor_min_line_item_height"
+        android:background="@drawable/freeme_content_bottom_bg_selector">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/freeme_card_content_horizontal_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/freeme_add_contact_info_margin_right"
+                android:singleLine="true"
+                android:text="@string/freeme_contact_groups"
+                android:textColor="@color/primary_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/contact_group"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/freeme_list_visible_scrollbar_padding"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/freeme_item_right_arrow_icon"
+                android:drawablePadding="@dimen/freeme_contact_info_margin_width"
+                android:gravity="end|center_vertical"
+                android:singleLine="true"
+                android:text="@string/freeme_no_contact_groups"
+                android:textColor="@color/freeme_add_contact_ring_text_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</com.android.contacts.editor.GroupMembershipView>
+<!--@}-->

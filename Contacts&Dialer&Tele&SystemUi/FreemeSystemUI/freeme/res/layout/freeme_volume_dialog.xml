@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/volume_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/freeme_volume_dialog_background"
+    android:paddingTop="8dp"
+    android:layout_marginTop="8dp"
+    android:translationZ="4dp">
+
+    <LinearLayout
+        android:id="@+id/volume_dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/volume_dialog_rows"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <include layout="@layout/volume_zen_footer" />
+
+        <include layout="@layout/tuner_zen_mode_panel" />
+
+    </LinearLayout>
+
+    <com.android.keyguard.AlphaOptimizedImageButton
+        android:id="@+id/volume_expand_button"
+        android:layout_width="@dimen/volume_button_size"
+        android:layout_height="@dimen/volume_button_size"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/volume_dialog_content"
+        android:layout_marginEnd="16dp"
+        style="@style/VolumeButtons"
+        android:tint="@color/freme_volume_expand_icon_color"
+        android:layout_marginTop="@dimen/volume_row_spacing"
+        android:clickable="true"
+        android:soundEffectsEnabled="false" />
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="freeme_tab_bar_height">@*freeme:dimen/action_bar_default_height_freeme</dimen>
+
+    <dimen name="freeme_call_logs_filter_layout_height">48dp</dimen>
+    <dimen name="freeme_call_logs_filter_width">220dp</dimen>
+    <dimen name="freeme_call_logs_filter_height">32dp</dimen>
+    <dimen name="freeme_call_logs_type_icon_padding_horizontal">16dp</dimen>
+    <dimen name="freeme_call_logs_list_item_height">62dp</dimen>
+    <dimen name="freeme_call_logs_list_item_padding_end">10dp</dimen>
+    <dimen name="freeme_call_logs_list_item_content_padding">6dp</dimen>
+    <dimen name="freeme_call_logs_list_item_detail_icon_size">32dp</dimen>
+    <dimen name="freeme_call_logs_item_single_line_height">48dp</dimen>
+    <dimen name="freeme_call_logs_empty_view_top_margin">120dp</dimen>
+
+    <dimen name="freeme_dialpad_action_layout_height">74dp</dimen>
+    <dimen name="freeme_dialpad_space_above_keys">10dp</dimen>
+    <dimen name="freeme_dialpad_number_padding_horizontal">52dp</dimen>
+    <dimen name="freeme_dialpad_action_btn_padding_top">6dp</dimen>
+    <dimen name="freeme_dialpad_action_btn_padding">16dp</dimen>
+    <dimen name="freeme_dialpad_action_btn_drawable_padding">5dp</dimen>
+    <dimen name="freeme_dialpad_action_btn_text_size">12dp</dimen>
+
+    <!-- for calllog details -->
+    <dimen name="freeme_call_detail_margin_start">16dp</dimen>
+    <dimen name="freeme_call_detail_second_margin_start">8dp</dimen>
+    <dimen name="freeme_call_detail_margin_end">12dp</dimen>
+
+    <dimen name="freeme_speed_dial_dialog_text_size">15sp</dimen>
+    <dimen name="freeme_speed_dial_bottom_dialog_padding">4dp</dimen>
+    <dimen name="freeme_speed_dial_bottom_dialog_textview_height">48dp</dimen>
+</resources>

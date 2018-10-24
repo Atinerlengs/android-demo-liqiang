@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">유효하지 않음</string>
+    <string name="conf_call_member_list">구성원 목록</string>
+    <string name="conf_call_participant_answered">응답됨</string>
+    <string name="conf_call_participant_missed">"부재중 전화"</string>
+    <string name="calls_over_wifi">Wi-Fi를통해전화걸기</string>
+    <string name="connect_to_wifi">Wi-Fi에 연결하여 통화</string>
+    <string name="wfc_notification_summary">기본설정에액세스하려면여기를누르십시오</string>
+    <string name="wfc_notification_summary_fail">여기를 눌러 이용 가능한 네트워크 보기</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"SIP 통화"</string>
+    <string name="snackbar_number_unblocked_failed"> <xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> 차단 해제 실패</string>
+    <string name="menu_select_all">"모두선택"</string>
+    <string name="selected_item_count">  <xliff:g id="count">%d</xliff:g>개가 선택됨 </string>
+    <string name="multichoice_no_select_alert">"선택한 항목이 없습니다."</string>
+    <string name="deleteCallLogConfirmation_title">통화 기록을 삭제하시겠습니까?</string>
+    <string name="deleteCallLogConfirmation_message">선택한 통화 기록을 삭제하시겠습니까?</string>
+    <string name="recentCalls_delete">"삭제"</string>
+    <string name="deleting_call_log">통화 기록을 삭제하는 중…</string>
+    <string name="toast_call_detail_error">"세부정보를 사용할 수 없습니다."</string>
+    <string name="calllogList">"통화 기록"</string>
+    <string name="calllogHint">통화 기록 검색</string>
+    <string name="calllog_description">수신, 발신 및 부재중 통화</string>
+    <string name="noMatchingCalllogs">일치하는 통화 기록을 찾을 수 없습니다.</string>
+    <string name="titleJoinContactDataWith">"연락처 통합"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other">  <xliff:g id="count">%d</xliff:g>개의 통화 기록 </item>
+        <item quantity="one">"1개 통화 기록"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">통화 기록을 찾을 수 없습니다.</string>
+    <string name="search_results_for">다음에 대한 검색 결과:  <xliff:g id="query">%s</xliff:g>  </string>
+    <string name="menu_select_none">"전체 선택 해제"</string>
+</resources>

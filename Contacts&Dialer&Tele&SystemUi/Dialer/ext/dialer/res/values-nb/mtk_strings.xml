@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Ugyldig</string>
+    <string name="conf_call_member_list">Medlemsliste</string>
+    <string name="conf_call_participant_answered">Har svart</string>
+    <string name="conf_call_participant_missed">"Ikke besvart"</string>
+    <string name="calls_over_wifi">SamtalenevilbligjortviaWi-Fi</string>
+    <string name="connect_to_wifi">Koble til Wi-Fi for å ringe</string>
+    <string name="wfc_notification_summary">Trykkherforåfåtilgangtilinnstillinger</string>
+    <string name="wfc_notification_summary_fail">Trykk her for å se tilgjengelige nettverk</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"SIP-anrop"</string>
+    <string name="snackbar_number_unblocked_failed">Kunne ikke fjerne sperring av <xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> </string>
+    <string name="menu_select_all">"Markeralle"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> valgt</string>
+    <string name="multichoice_no_select_alert">"Ingen elementer er valgt."</string>
+    <string name="deleteCallLogConfirmation_title">Slette anropslogg(er)?</string>
+    <string name="deleteCallLogConfirmation_message">Er du sikker på at du vil slette de valgte anropsloggene?</string>
+    <string name="recentCalls_delete">"Slett"</string>
+    <string name="deleting_call_log">Sletter anropslogg …</string>
+    <string name="toast_call_detail_error">"Informasjon er ikke tilgjengelig"</string>
+    <string name="calllogList">"Anropslogg"</string>
+    <string name="calllogHint">Søk anropslogger</string>
+    <string name="calllog_description">Innkommende, utgående og tapte anrop</string>
+    <string name="noMatchingCalllogs">Ingen samsvarende anropslogg funnet.</string>
+    <string name="titleJoinContactDataWith">"Slå sammen kontakter"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> anropslogger</item>
+        <item quantity="one">"1 anropslogg"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Anropslogg ikke funnet</string>
+    <string name="search_results_for">Søkeresultater for: <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none">"Fjern all merking"</string>
+</resources>

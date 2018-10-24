@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gm_color_accent">@*freeme:color/accent_freeme_light</color>
+
+    <color name="gm_color_title_text">#333333</color>
+    <color name="gm_color_sub_title_text">#808080</color>
+
+    <color name="gm_floating_setting_view_bg_color">#99000000</color>
+    <color name="gm_floating_setting_title_text_color">#ffffff</color>
+    <color name="gm_floating_setting_item_text_color">#ffffff</color>
+</resources>

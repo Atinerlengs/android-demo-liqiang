@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rotate_help_message">가로 보기에서는 [화면 크기 줄이기]를 사용할 수 없습니다.</string>
+    <string name="cannot_start_by_other_app_new">한 손 조작 모드를 실행하려면 %s 앱을 종료하세요.</string>
+    <string name="help_text_to_return_full">줄어든 화면의 바깥 부분을 누르면 다시 전체 화면으로 돌아갑니다.</string>
+    <string name="help_onehand_title">한 손 조작 모드</string>
+    <string name="help_secure_app">보안 페이지</string>
+    <string name="help_adjust_screen_title">화면 크기 조절하기</string>
+    <string name="help_adjust_screen_text">한 손 조작 화면 크기를 조절하려면 위 또는 아래로 미세요.</string>
+
+    <string name="onehand_settings_title">한 손 조작 모드</string>
+    <string name="onehand_settings_summary">한 손으로도 휴대전화를 쉽게 사용할 수 있도록 화면 크기와 구성을 최적화합니다.</string>
+    <string name="onehand_settings_text_1">화면 하단의 모서리를 대각선 방향으로 위로 밀면 화면 크기가 줄어듭니다.</string>
+    <string name="onehand_settings_text_2">홈 버튼을 빠르게 세 번 누르면 화면 크기가 줄어듭니다.</string>
+    <string name="onehand_settings_text_2_hardkey">화면 크기를 줄이려면 홈 버튼을 빠르게 세 번 누르세요.</string>
+    <string name="onehand_settings_using_category">화면 축소 방식</string>
+    <string name="onehand_settings_using_gesture">제스처</string>
+    <string name="onehand_settings_using_gesture_summary">하단 모서리를 대각선 방향으로 위로 밀어 올립니다.</string>
+    <string name="onehand_settings_using_button">버튼</string>
+    <string name="onehand_settings_using_button_summary">홈 버튼을 세 번 누릅니다.</string>
+    <string name="onehand_settings_using_button_summary_hardkey">홈 버튼을 세 번 누릅니다.</string>
+    <string name="onehand_settings_hardware_key_title">한 손 조작 화면에 버튼 표시</string>
+    <string name="onehand_settings_hardware_key_summary">홈 버튼, 뒤로가기 버튼, 최근 앱 버튼을 표시합니다.</string>
+    <string name="onehand_settings_dialog_title">한 손 조작 모드 실행</string>
+    <string name="onehand_settings_dialog_text">한 손 조작 모드는 다음 기능과 동시에 사용할 수 없습니다. 다음 기능을 해제합니다.</string>
+    <string name="onehand_settings_cover_toast">한 손 조작 모드를 사용하려면 키보드 커버를 분리하세요.</string>
+
+    <string name="accessibility_screen_magnification_title">확대</string>
+    <string name="accessibility_autoclick_preference_title">포인터 멈춘 후 자동으로 누르기</string>
+</resources>

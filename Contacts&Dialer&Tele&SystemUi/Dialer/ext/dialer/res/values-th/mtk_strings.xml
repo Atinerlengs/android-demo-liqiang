@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">ไม่ถูกต้อง</string>
+    <string name="conf_call_member_list">รายชื่อสมาชิก</string>
+    <string name="conf_call_participant_answered">รับสาย</string>
+    <string name="conf_call_participant_missed">"ไม่ได้รับ"</string>
+    <string name="calls_over_wifi">สายจะถูกโทรผ่านWi-Fi</string>
+    <string name="connect_to_wifi">เชื่อมต่อไปยัง Wi-Fi เพื่อทำการโทร</string>
+    <string name="wfc_notification_summary">แทปที่นี่เพื่อเข้าถึงการกำหนดลักษณะ</string>
+    <string name="wfc_notification_summary_fail">แทปที่นี่เพื่อดูเครือข่ายที่มี</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"โทรแบบ SIP"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> ปลดบล็อกล้มเหลว</string>
+    <string name="menu_select_all">"เลือกทั้งหมด"</string>
+    <string name="selected_item_count">  <xliff:g id="count">%d</xliff:g>ถูกเลือก </string>
+    <string name="multichoice_no_select_alert">"ไม่ได้เลือกรายการ"</string>
+    <string name="deleteCallLogConfirmation_title">ให้ลบบันทึกการโทรหรือไม่</string>
+    <string name="deleteCallLogConfirmation_message">คุณแน่ใจว่าต้องการลบบันทึกการโทรที่เลือกไว้หรือไม่</string>
+    <string name="recentCalls_delete">"ลบ"</string>
+    <string name="deleting_call_log">กำลังลบบันทึกการโทร...</string>
+    <string name="toast_call_detail_error">"ไม่สามารถดึงรายละเอียด"</string>
+    <string name="calllogList">"ประวัติการโทร"</string>
+    <string name="calllogHint">ค้นหาบันทึกการโทร</string>
+    <string name="calllog_description">สายเรียกเข้า สายโทรออก และสายที่พลาด</string>
+    <string name="noMatchingCalllogs">ไม่พบบันทึกการโทรที่ตรง.</string>
+    <string name="titleJoinContactDataWith">"รวมรายชื่อ"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other">บันทึกการโทร <xliff:g id="count">%d</xliff:g> รายการ</item>
+        <item quantity="one">"1 บันทึกการโทร"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">ไม่พบบันทึกการโทร</string>
+    <string name="search_results_for">ผลลัพธ์การค้นหาสำหรับ: <xliff:g id="QUERY">%s</xliff:g></string>
+    <string name="menu_select_none">"ยกเลิกการเลือกทั้งหมด"</string>
+</resources>

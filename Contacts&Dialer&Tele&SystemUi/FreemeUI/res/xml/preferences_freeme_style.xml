@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:freemeprv="http://schemas.android.com/apk/prv/res/freeme">
+
+    <PreferenceCategory
+        android:title="@string/jumps_preference">
+
+        <com.freeme.preference.FreemeJumpPreference
+            android:key="jump_preference"
+            android:title="@string/title_jump_preference">
+
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://www.android.com" />
+        </com.freeme.preference.FreemeJumpPreference>
+
+        <com.freeme.preference.FreemeJumpPreference
+            android:key="jump_preference_without_jump_and_unclickable"
+            android:title="@string/title_jump_preference_without_jump_and_unclickable"
+            freemeprv:freemeClickBehavior="force_unclick"
+            freemeprv:freemeJumpWidget="@null"/>
+
+        <com.freeme.preference.FreemeJumpPreference
+            android:key="jump_preference_with_bottom_summary"
+            android:title="@string/title_jump_preference_without_jump_and_unclickable_with_summary"
+            freemeprv:freemeJumpStatus1="@string/right_summary"
+            freemeprv:freemeClickBehavior="force_unclick"
+            freemeprv:freemeJumpWidget="@null"/>
+
+        <com.freeme.preference.FreemeJumpPreference
+            android:key="jump_preference_without_jump_and_unclickable_with_summary"
+            android:title="@string/title_jump_preference_without_jump_and_unclickable_with_summary"
+            android:summary="@string/bottom_summary"
+            freemeprv:freemeJumpStatus1="@string/right_summary"
+            freemeprv:freemeClickBehavior="normal"
+            freemeprv:freemeJumpWidget="@null"/>
+
+        <com.freeme.preference.FreemeJumpPreference
+            android:key="jump_preference_without_jump_and_unclickable_with_summary"
+            android:title="@string/title_jump_preference_without_jump_and_unclickable_with_summary"
+            android:summary="@string/bottom_summary"
+            freemeprv:freemeUseStatusText="true"
+            freemeprv:freemeClickBehavior="normal"
+            freemeprv:freemeJumpWidget="@null"/>
+
+        <com.freeme.preference.FreemeJumpPreference
+            android:key="jump_preference_with_one_status"
+            android:title="@string/title_jump_preference_with_status"
+            freemeprv:freemeJumpStatus1="@string/status_jump_preference_1">
+
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://www.android.com" />
+        </com.freeme.preference.FreemeJumpPreference>
+
+        <com.freeme.preference.FreemeJumpPreference
+            android:key="jump_preference_with_more_than_one_status"
+            android:title="@string/title_jump_preference_with_status"
+            freemeprv:freemeJumpStatus1="@string/status_jump_preference_1"
+            freemeprv:freemeJumpStatus2="@string/status_jump_preference_2"
+            freemeprv:freemeJumpStatus3="@string/status_jump_preference_3">
+
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://www.android.com" />
+        </com.freeme.preference.FreemeJumpPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/dialog_based_preferences">
+
+        <EditTextPreference
+            android:key="edittext_preference"
+            android:title="@string/title_edittext_preference"
+            android:summary="@string/summary_edittext_preference"
+            android:dialogTitle="@string/dialog_title_edittext_preference" />
+
+        <ListPreference
+            android:key="list_preference"
+            android:title="@string/title_list_preference"
+            android:summary="@string/summary_list_preference"
+            android:entries="@array/entries_list_preference"
+            android:entryValues="@array/entryvalues_list_preference"
+            android:dialogTitle="@string/dialog_title_list_preference" />
+
+        <RingtonePreference
+            android:key="ringtone_preference"
+            android:title="@string/title_ringtone_preference"
+            android:summary="@string/summary_ringtone_preference"
+            android:ringtoneType="ringtone"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/launch_preferences">
+
+        <!-- This PreferenceScreen tag serves as a screen break (similar to page break
+             in word processing). Like for other preference types, we assign a key
+             here so it is able to save and restore its instance state. -->
+        <PreferenceScreen
+            android:key="screen_preference"
+            android:title="@string/title_screen_preference"
+            android:summary="@string/summary_screen_preference">
+
+            <!-- You can place more preferences here that will be shown on the next screen. -->
+
+            <CheckBoxPreference
+                android:key="next_screen_checkbox_preference"
+                android:title="@string/title_next_screen_toggle_preference"
+                android:summary="@string/summary_next_screen_toggle_preference" />
+
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:title="@string/title_intent_preference"
+            android:summary="@string/summary_intent_preference">
+
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://www.android.com" />
+
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+        <com.freeme.preference.FreemeFullscreenListPreference
+            android:key="fullscreen_list_preference"
+            android:title="@string/title_fullscreen_list_preference"
+            android:summary="@string/summary_fullscreen_list_preference"
+            android:entries="@array/prefs_fullscreen_list_preference_entries"
+            android:entryValues="@array/prefs_fullscreen_list_preference_values"
+            android:defaultValue="1"
+            freemeprv:freemeUseStatusText="true"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+        <com.freeme.preference.FreemeEditTextPreference
+            android:key="freeme_edittext_preference"
+            android:title="@string/title_freeme_edittext_preference"
+            android:summary="@string/summary_freeme_edittext_preference"
+            android:dialogTitle="@string/dialog_title_edittext_preference"
+            android:dialogMessage="@string/summary_freeme_edittext_preference"
+            />
+    </PreferenceCategory>
+
+    <Preference
+        android:title="@string/title_position_preference_head"
+        freemeprv:freemePreferencePosition="head"/>
+    <Preference
+        android:title="@string/title_position_preference_middle"
+        freemeprv:freemePreferencePosition="middle"/>
+    <Preference
+        android:title="@string/title_position_preference_tail"
+        freemeprv:freemePreferencePosition="tail"/>
+
+    <Preference
+        android:title="@string/title_position_preference_full"
+        freemeprv:freemePreferencePosition="full"/>
+</PreferenceScreen>

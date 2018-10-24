@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Geçersiz</string>
+    <string name="conf_call_member_list">Üye Listesi</string>
+    <string name="conf_call_participant_answered">Yanıtlanan</string>
+    <string name="conf_call_participant_missed">"Cevapsız"</string>
+    <string name="calls_over_wifi">AramalarWi-Fiüzerindenyapılacak</string>
+    <string name="connect_to_wifi">Arama yapmak için Wi-Fi ağına bağlanın</string>
+    <string name="wfc_notification_summary">Tercihlereerişmekiçinburayadokunun</string>
+    <string name="wfc_notification_summary_fail">Kullanılabilir ağları görüntülemek için buraya dokunun</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"SIP çağrısı"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> engellemesi kaldırılamadı</string>
+    <string name="menu_select_all">"Tümünüseç"</string>
+    <string name="selected_item_count">  <xliff:g id="count">%d</xliff:g> seçildi </string>
+    <string name="multichoice_no_select_alert">"Hiçbir öğe seçili değil."</string>
+    <string name="deleteCallLogConfirmation_title">Arama günlüğünü sil?</string>
+    <string name="deleteCallLogConfirmation_message">Seçili arama günlüğünü silmek istediğinizden emin misiniz?</string>
+    <string name="recentCalls_delete">"Sil"</string>
+    <string name="deleting_call_log">Çağrı günlüğü siliniyor…</string>
+    <string name="toast_call_detail_error">"Ayrıntı yok"</string>
+    <string name="calllogList">"Çağrı Geçmişi"</string>
+    <string name="calllogHint">Arama kayıtlarını ara</string>
+    <string name="calllog_description">Gelen, giden ve cevapsız aramalar</string>
+    <string name="noMatchingCalllogs">Eşleşen arama kaydı bulunamadı.</string>
+    <string name="titleJoinContactDataWith">"Kişileri birleştir"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> arama kaydı</item>
+        <item quantity="one">"1 arama kaydı"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Arama kaydı bulunamadı</string>
+    <string name="search_results_for">Şunun için arama sonuçları: <xliff:g id="QUERY">%s</xliff:g></string>
+    <string name="menu_select_none">"Tüm seçimleri kaldır"</string>
+</resources>

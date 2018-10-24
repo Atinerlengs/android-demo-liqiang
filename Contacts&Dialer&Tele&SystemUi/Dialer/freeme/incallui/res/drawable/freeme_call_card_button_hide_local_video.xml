@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/freeme_call_card_button_hide_local_video_disable"
+        android:state_enabled="false" />
+    <item android:drawable="@drawable/freeme_call_card_button_hide_local_video_selected"
+        android:state_selected="true" />
+    <item android:drawable="@drawable/freeme_call_card_button_hide_local_video_selected"
+        android:state_checked="true" />
+    <item android:drawable="@drawable/freeme_call_card_button_hide_local_video_press"
+        android:state_pressed="true" />
+    <item android:drawable="@drawable/freeme_call_card_button_hide_local_video_default" />
+</selector>

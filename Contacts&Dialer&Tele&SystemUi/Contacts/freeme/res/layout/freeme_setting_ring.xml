@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ring_contact"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/freeme_card_content_top_margin"
+    android:layout_marginHorizontal="@dimen/freeme_card_content_horizontal_margin"
+    android:background="@drawable/freeme_content_bg_default"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/freeme_content_top_bg_selector">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/freeme_editor_min_line_item_height"
+            android:layout_marginHorizontal="@dimen/freeme_card_content_horizontal_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/freeme_add_contact_info_margin_right"
+                android:singleLine="true"
+                android:text="@string/quick_contact_set_ringtone"
+                android:textColor="@color/primary_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ring"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/freeme_list_visible_scrollbar_padding"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/freeme_item_right_arrow_icon"
+                android:drawablePadding="@dimen/freeme_contact_info_margin_width"
+                android:gravity="end|center_vertical"
+                android:singleLine="true"
+                android:text="@string/quick_contact_set_ringtone"
+                android:textColor="@color/freeme_add_contact_ring_text_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/freeme_list_visible_scrollbar_padding">
+
+        <include layout="@layout/freeme_horizontal_line_view" />
+    </FrameLayout>
+
+    <include layout="@layout/item_group_membership" />
+</LinearLayout>

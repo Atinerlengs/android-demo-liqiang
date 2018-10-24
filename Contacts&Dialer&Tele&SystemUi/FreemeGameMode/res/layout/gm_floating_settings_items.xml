@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme"
+    android:paddingEnd="@dimen/gm_floating_setting_view_padding"
+    android:paddingStart="@dimen/gm_floating_setting_view_padding">
+
+    <LinearLayout
+        android:id="@+id/game_mode_dnd_answer_call"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gm_floating_setting_item_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="@string/gm_settings_answer_call"
+            android:textColor="@color/gm_floating_setting_item_text_color"
+            android:textSize="@dimen/gm_floating_setting_item_text_size" />
+
+        <Switch
+            android:id="@+id/game_mode_dnd_answer_call_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/game_mode_dnd_block_notifications"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gm_floating_setting_item_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="@string/gm_settings_block_notification"
+            android:textColor="@color/gm_floating_setting_item_text_color"
+            android:textSize="@dimen/gm_floating_setting_item_text_size" />
+
+        <Switch
+            android:id="@+id/game_mode_dnd_block_notifications_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/game_mode_dnd_lock_keys"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gm_floating_setting_item_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="@string/gm_settings_lock_keys"
+            android:textColor="@color/gm_floating_setting_item_text_color"
+            android:textSize="@dimen/gm_floating_setting_item_text_size" />
+
+        <Switch
+            android:id="@+id/game_mode_dnd_lock_keys_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/game_mode_dnd_auto_brightness"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gm_floating_setting_item_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="@string/gm_settings_block_auto_brightness"
+            android:textColor="@color/gm_floating_setting_item_text_color"
+            android:textSize="@dimen/gm_floating_setting_item_text_size" />
+
+        <Switch
+            android:id="@+id/game_mode_dnd_auto_brightness_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

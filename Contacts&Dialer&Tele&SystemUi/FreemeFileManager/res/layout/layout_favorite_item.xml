@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    android:paddingTop="5dip"
+    android:paddingBottom="5dip"
+    android:paddingLeft="@dimen/list_item_padding_left"
+    android:paddingRight="@dimen/list_item_padding_left"
+    android:gravity="center_vertical">
+ 
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="@dimen/list_item_padding_left"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/file_image"
+            android:layout_width="@dimen/file_item_img_width"
+            android:layout_height="@dimen/file_item_img_width"
+            android:scaleType="fitXY"
+            android:gravity="center"
+            android:layout_gravity="center" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textAppearance="@style/AppTextAppearance.ItemName"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/modified_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:textAppearance="@style/AppTextAppearance.ItemOther" />
+
+            <View
+                android:id="@+id/slash_before_size"
+                android:layout_width="@dimen/list_slash_width"
+                android:layout_height="@dimen/list_slash_height"
+                android:layout_marginLeft="@dimen/list_slash_padding_left"
+                android:background="@drawable/ic_slash_before_size"
+                android:layout_gravity="center_vertical">
+            </View>
+
+            <TextView
+                android:id="@+id/file_size"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="3dp"
+                android:gravity="left"
+                android:textAppearance="@style/AppTextAppearance.ItemOther" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip">
+
+        <ImageView
+            android:id="@+id/dir_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_right_arrow"
+            android:scaleType="fitCenter"
+            android:gravity="center"
+            android:layout_gravity="center" />
+    </FrameLayout>
+</LinearLayout>

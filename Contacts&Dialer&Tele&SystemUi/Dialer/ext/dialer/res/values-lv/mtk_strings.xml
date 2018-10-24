@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Nederīgs</string>
+    <string name="conf_call_member_list">Dalībnieku saraksts</string>
+    <string name="conf_call_participant_answered">Atbildēts</string>
+    <string name="conf_call_participant_missed">"Neatb."</string>
+    <string name="calls_over_wifi">ZvanitiksveiktiWi-Fitīklā</string>
+    <string name="connect_to_wifi">Pievienoties Wi-Fi, lai zvanītu</string>
+    <string name="wfc_notification_summary">Pieskarietiesšeit,laipiekļūtupreferencēm</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"SIP zvans"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> atbloķēt neizdevās</string>
+    <string name="menu_select_all">"Atlasītvisas"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> atlasīts(-i)</string>
+    <string name="multichoice_no_select_alert">"Nav atlasīts neviens vienums."</string>
+    <string name="deleteCallLogConfirmation_title">Vai dzēst zvanu žurnālu(s)?</string>
+    <string name="deleteCallLogConfirmation_message">Vai tiešām vēlaties dzēst atlasīto(s) zvanu žurnālu(s)?</string>
+    <string name="recentCalls_delete">"Dzēst"</string>
+    <string name="deleting_call_log">Notiek zvanu žurnāla dzēšana...</string>
+    <string name="toast_call_detail_error">"Detalizēta informācija nav pieejama."</string>
+    <string name="calllogList">"Zvanu vēsture"</string>
+    <string name="calllogHint">Meklēt zvanu žurnālus</string>
+    <string name="calllog_description">Ienākošie, izejošie un neatbildētie zvani</string>
+    <string name="noMatchingCalllogs">Netika atrasts atbilstošs zvanu žurnāls.</string>
+    <string name="titleJoinContactDataWith">"Kontaktpersonu apvienošana"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> zvanu žurnāli</item>
+        <item quantity="one">"1 zvanu žurnāls"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Zvanu žurnāls netika atrasts</string>
+    <string name="search_results_for">Meklēšanas rezultāti: <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none">"Noņemt atlasi visam"</string>
+</resources>

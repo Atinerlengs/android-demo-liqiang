@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Ugyldig</string>
+    <string name="conf_call_member_list">Medlemsliste</string>
+    <string name="conf_call_participant_answered">Svar</string>
+    <string name="conf_call_participant_missed">"Ubesvarede"</string>
+    <string name="calls_over_wifi">OpkaldudføresviaWi-Fi</string>
+    <string name="connect_to_wifi">Forbind til Wi-Fi for at foretage opkald</string>
+    <string name="wfc_notification_summary">Trykherforatfåadgangtilpræferencerne</string>
+    <string name="wfc_notification_summary_fail">Tryk her for at se tilgængelige netværker</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"SIP-opkald"</string>
+    <string name="snackbar_number_unblocked_failed">Blokering af <xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> kunne ikke ophæves</string>
+    <string name="menu_select_all">"Vælgalle"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> valgt</string>
+    <string name="multichoice_no_select_alert">"Ingen elementer valgt."</string>
+    <string name="deleteCallLogConfirmation_title">Slet opkaldslogfiler?</string>
+    <string name="deleteCallLogConfirmation_message">Er du sikker på at du vil slette de valgte opkaldslogfiler?</string>
+    <string name="recentCalls_delete">"Slet"</string>
+    <string name="deleting_call_log">Sletter opkaldslogfil...</string>
+    <string name="toast_call_detail_error">"Detaljerne er ikke tilgængelige"</string>
+    <string name="calllogList">"Opkaldshistorik"</string>
+    <string name="calllogHint">Søg i opkaldslogfiler</string>
+    <string name="calllog_description">Indkommende, udgående og ubesvarede opkald</string>
+    <string name="noMatchingCalllogs">Ingen matchende opkaldslogfil fundet.</string>
+    <string name="titleJoinContactDataWith">"Føj til kontakter"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> opkaldslogfiler</item>
+        <item quantity="one">"1 opkaldslog"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Opkaldslogfil ikke fundet</string>
+    <string name="search_results_for">Søgeresultater for: <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none">"Fravælg alle"</string>
+</resources>

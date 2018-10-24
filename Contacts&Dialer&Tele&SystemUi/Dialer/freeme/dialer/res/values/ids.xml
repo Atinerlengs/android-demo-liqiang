@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="freeme_menu_item_call" />
+    <item type="id" name="freeme_menu_item_video_call" />
+    <item type="id" name="freeme_menu_item_send_sms" />
+    <item type="id" name="freeme_menu_item_add_new_contact" />
+    <item type="id" name="freeme_menu_item_add_exist_contact" />
+    <item type="id" name="freeme_menu_item_mark" />
+    <item type="id" name="freeme_menu_item_delete_calllog" />
+    <item type="id" name="freeme_menu_item_mulit_delete_calllog" />
+    <item type="id" name="freeme_dialog_delete_contact_loader_id" />
+
+    <item type="id" name="freeme_multichoice_confirm_dialog" />
+    <item type="id" name="freeme_multichoice_report_dialog" />
+</resources>

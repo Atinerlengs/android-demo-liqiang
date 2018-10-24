@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/call_log_row"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/freeme_call_logs_list_item_height"
+    android:background="@drawable/freeme_list_item_press_selector">
+
+    <ImageView
+        android:id="@+id/call_type_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingHorizontal="@dimen/freeme_call_logs_type_icon_padding_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/primary_action_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/call_type_img"
+        android:layout_toStartOf="@+id/call_date"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/freeme_call_logs_type_icon_padding_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/freeme_call_logs_list_item_content_padding"
+                android:singleLine="true"
+                android:textColor="@color/freeme_list_item_title_text_color"
+                android:textSize="@dimen/freeme_list_item_title_text_size" />
+
+            <TextView
+                android:id="@+id/call_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/freeme_call_logs_list_item_content_padding"
+                android:singleLine="true"
+                android:textColor="@color/freeme_list_item_title_text_color"
+                android:textSize="@dimen/freeme_list_item_title_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/freeme_call_logs_list_item_padding_end"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/call_account_sim_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/freeme_call_logs_list_item_content_padding"
+                android:scaleType="center"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/work_profile_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/freeme_call_logs_list_item_content_padding"
+                android:scaleType="center"
+                android:src="@drawable/ic_work_profile"
+                android:visibility="gone" />
+
+            <com.android.dialer.calllogutils.CallTypeIconsView
+                android:id="@+id/call_type_icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/freeme_call_logs_list_item_content_padding" />
+
+            <ViewStub
+                android:id="@+id/call_mark_stub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout="@layout/freeme_call_log_mark_layout" />
+
+            <TextView
+                android:id="@+id/call_location_and_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/freeme_list_item_sub_text_color"
+                android:textSize="@dimen/freeme_list_item_sub_text_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/voicemail_transcription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/call_log_icon_margin"
+            android:ellipsize="marquee"
+            android:maxLines="10"
+            android:singleLine="false"
+            android:textColor="@color/freeme_list_item_sub_text_color"
+            android:textSize="@dimen/freeme_list_item_sub_text_size"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/call_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/freeme_call_logs_list_item_content_padding"
+        android:layout_toStartOf="@+id/primary_action_button"
+        android:singleLine="true"
+        android:textColor="@color/freeme_list_item_sub_text_color"
+        android:textSize="@dimen/freeme_list_item_sub_text_size" />
+
+    <FrameLayout
+        android:id="@+id/primary_action_button"
+        android:layout_width="@dimen/freeme_call_logs_list_item_detail_icon_size"
+        android:layout_height="@dimen/freeme_call_logs_list_item_detail_icon_size"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/freeme_call_logs_list_item_padding_end">
+
+        <ImageView
+            android:id="@+id/call_log_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:scaleType="center"
+            android:src="@drawable/freeme_contacts_detail_icon" />
+
+        <ViewStub
+            android:id="@+id/checkbox_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout="@layout/mtk_call_log_list_item_checkbox" />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/call_type_img"
+        android:background="@color/freeme_list_divider_color" />
+</RelativeLayout>

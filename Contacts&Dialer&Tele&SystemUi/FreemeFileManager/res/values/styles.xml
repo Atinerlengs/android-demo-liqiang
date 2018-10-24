@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App TextAppearance -->
+    <style name="AppTextAppearance" parent="@*freeme:TextAppearance.Freeme"/>
+
+    <style name="AppTextAppearance.Large">
+        <item name="tab_indicatorHeight">0dp</item>
+        <item name="android:textSize">@dimen/app_text_size_primary_large</item>
+    </style>
+
+    <style name="AppTextAppearance.Medium">
+        <item name="android:textSize">@dimen/app_text_size_primary_medium</item>
+    </style>
+
+    <style name="AppTextAppearance.Small">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textSize">@dimen/app_text_size_primary_small</item>
+    </style>
+
+    <style name="AppTextAppearance.MediumOther" parent="AppTextAppearance.Medium">
+        <item name="android:textColor">@color/textColorSecondary</item>
+    </style>
+
+    <style name="AppTextAppearance.Tab" parent="AppTextAppearance.Large" />
+
+    <style name="AppTextAppearance.ItemName" parent="AppTextAppearance.Medium" />
+
+    <style name="AppTextAppearance.ItemOther" parent="AppTextAppearance.Small" />
+
+
+    <style name="AppTextAppearance.ItemCategoryName" parent="AppTextAppearance.Medium" >
+        <item name="android:textSize">@dimen/app_text_size_primary_small</item>
+    </style>
+
+    <style name="AppTextAppearance.ItemCategoryOther" parent="AppTextAppearance.ItemOther" >
+        <item name="android:textSize">@dimen/app_text_size_primary_smaller</item>
+    </style>
+
+    <style name="AppTextAppearance.IpName" parent="AppTextAppearance.Large">
+        <item name="android:textColor">@color/ipname_text_color_primary</item>
+    </style>
+
+    <style name="AppTextAppearance.BottomBtn" parent="AppTextAppearance.Large">
+        <item name="android:textColor">@color/color_enable_txt_selector</item>
+    </style>
+
+    <style name="AppTextAppearance.PasswordTitle">
+        <item name="android:textSize">@dimen/password_header_title_size</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="AppTextAppearance.PasswordHeadTip" parent="AppTextAppearance.Medium">
+        <item name="android:textSize">@dimen/password_header_tip_size</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.PasswordEntry" parent="@*freeme:TextAppearance.Freeme">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">@dimen/password_header_title_size</item>
+    </style>
+
+    <!-- App Content -->
+
+    <style name="AppContent"/>
+
+    <style name="AppContent.Dialog">
+        <item name="android:paddingStart">25dip</item>
+        <item name="android:paddingEnd">25dip</item>
+    </style>
+
+    <style name="AppContent.Button"/>
+
+    <style name="AppContent.Button.Bottom" parent="@*freeme:style/Widget.Freeme.Light.Button">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/btn_bottom</item>
+        <item name="android:textAppearance">@style/AppTextAppearance.Large</item>
+    </style>
+
+    <style name="AppContent.Button.BottomBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bottom_button_bar</item>
+    </style>
+
+    <style name="LockPatternContainerStyle">
+        <item name="android:maxHeight">400dp</item>
+        <item name="android:maxWidth">420dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingStart">44dp</item>
+        <item name="android:paddingEnd">44dp</item>
+    </style>
+
+</resources>

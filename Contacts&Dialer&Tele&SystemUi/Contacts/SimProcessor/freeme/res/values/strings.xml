@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="freeme_sim_processor_notification_msg">Loading SIM contacts in the background</string>
+</resources>

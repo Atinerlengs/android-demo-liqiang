@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Μη έγκυρο</string>
+    <string name="conf_call_member_list">Λίστα μελών</string>
+    <string name="conf_call_participant_answered">Απαντήθηκε</string>
+    <string name="conf_call_participant_missed">"Αναπάντητη"</string>
+    <string name="calls_over_wifi">ΟικλήσειςθαπραγματοποιούνταιμέσωWi-Fi</string>
+    <string name="connect_to_wifi">Συνδεθείτε στο δίκτυο Wi-Fi για να πραγματοποιήσετε κλήσεις</string>
+    <string name="wfc_notification_summary">Πατήστεεδώγιαπρόσβασηστιςπροτιμήσεις</string>
+    <string name="wfc_notification_summary_fail">Πατήστε εδώ για προβολή των διαθέσιμων δικτύων</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"Κλήση SIP"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> αποτυχία απεμπλοκής</string>
+    <string name="menu_select_all">"Επιλογήόλων"</string>
+    <string name="selected_item_count">Επιλέχθηκαν  <xliff:g id="count">%d</xliff:g>  </string>
+    <string name="multichoice_no_select_alert">"Δεν υπάρχει επιλεγμένο στοιχείο."</string>
+    <string name="deleteCallLogConfirmation_title">Διαγραφή αρχείων καταγραφής;</string>
+    <string name="deleteCallLogConfirmation_message">Είστε βέβαιοι ότι θέλετε να διαγράψετε τα επιλεγμένα αρχεία καταγραφής;</string>
+    <string name="recentCalls_delete">"Διαγραφή"</string>
+    <string name="deleting_call_log">Γίνεται διαγραφή αρχείου καταγραφής κλήσεων…</string>
+    <string name="toast_call_detail_error">"Οι λεπτομέρειες δεν είναι διαθέσιμες"</string>
+    <string name="calllogList">"Ιστορικό κλήσεων"</string>
+    <string name="calllogHint">Αναζήτηση αρχείων καταγραφής κλήσεων</string>
+    <string name="calllog_description">Εισερχόμενες, εξερχόμενες και αναπάντητες κλήσεις</string>
+    <string name="noMatchingCalllogs">Δεν βρέθηκε αρχείο καταγραφής κλήσεων που να ταιριάζει.</string>
+    <string name="titleJoinContactDataWith">"Ένωση επαφών"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other">  <xliff:g id="count">%d</xliff:g> αρχεία καταγραφής κλήσεων </item>
+        <item quantity="one">«1 αρχείο καταγραφής κλήσεων»</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Δεν βρέθηκε αρχείο καταγραφής κλήσεων</string>
+    <string name="search_results_for">Αποτελέσματα αναζήτησης για:  <xliff:g id="query">%s</xliff:g>  </string>
+    <string name="menu_select_none">«Αποεπιλογή όλων»</string>
+</resources>

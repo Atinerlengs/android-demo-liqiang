@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="40dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+
+    <path
+        android:fillColor="@color/freeme_qs_customizer_back_unpressed_color"
+        android:fillAlpha="0.8"
+        android:strokeAlpha="0.8"
+        android:strokeWidth="1"
+        android:pathData="M57.328,60.935 L54.500,63.763 L41.065,50.328 L41.065,50.328 L38.237,47.500
+L54.500,31.236 L57.328,34.065 L43.893,47.500 L57.328,60.935 Z" />
+</vector>

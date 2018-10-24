@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui"
+    >
+
+    <com.android.systemui.settings.ToggleSeekBar
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/freeme_qs_brightness_toggle_height"
+        android:layout_toStartOf="@+id/label"
+        android:layout_toEndOf="@+id/brightness_icon"
+        android:maxHeight="2dp"
+        android:progressDrawable="@drawable/freeme_qs_brightness_seekbar_progress_drawable"
+        android:thumb="@drawable/freeme_systemui_seekbar_thumb"
+        android:paddingStart="10dp"
+        android:paddingEnd="20dp"
+        android:splitTrack="false" />
+
+    <ImageView
+        android:id="@+id/brightness_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/slider"
+        android:layout_alignBottom="@id/slider"
+        android:scaleType="centerInside"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/freeme_ic_brightness_auto_off" />
+
+    <CheckBox
+        android:id="@+id/toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/slider"
+        android:layout_alignBottom="@id/slider"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:button="@drawable/freeme_checkbox_brightness_auto" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/toggle"
+        android:layout_alignTop="@id/slider"
+        android:layout_alignBottom="@id/slider"
+        android:layout_marginRight="@dimen/freeme_qs_brightness_between_toggle_and_label"
+        android:textColor="@color/freeme_qs_brightness_text_color"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="12dp" />
+
+</merge>

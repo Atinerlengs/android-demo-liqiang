@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">မလျော်ကန်ပါ</string>
+    <string name="conf_call_member_list">အဖွဲ့ဝင်စာရင်း</string>
+    <string name="conf_call_participant_answered">ဖြေပြီးပြီ</string>
+    <string name="conf_call_participant_missed">"မကိုင်မိလိုက်သော"</string>
+    <string name="calls_over_wifi">ခေါ်ဆိုမှုများကိုWi-Fiပေါ်မှပြုလုပ်လိမ့်မည်</string>
+    <string name="connect_to_wifi">ခေါ်ဆိုမှုများ ပြုလုပ်ရန် Wi-Fi သို့ ချိတ်ဆက်ပါ</string>
+    <string name="wfc_notification_summary">ပိုနှစ်သက်မှုများကိုအသုံးပြုရန်ဤနေရာကိုနှိပ်ပါ</string>
+    <string name="wfc_notification_summary_fail">ရနိုင်သော ကွန်ရက်များကို ကြည့်ရန် ဤနေရာကို နှိပ်ပါ</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"SIP ခေါ်ဆိုမှုများ"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> တားမြစ်မှုဖွင့်ခြင်း မအောင်မြင်ပါ</string>
+    <string name="menu_select_all">"အားလုံးရွေးရန်"</string>
+    <string name="selected_item_count">  <xliff:g id="count">%d</xliff:g> ရွေးချယ်ပြီး </string>
+    <string name="multichoice_no_select_alert">"မည်သည့် အရာဝတ္ထုမှ ရွေးချယ်မထားပါ။"</string>
+    <string name="deleteCallLogConfirmation_title">​ခေါ်ဆိုမှု မှတ်တမ်း(များ) ကို ဖျက်ပစ်မည်လား။</string>
+    <string name="deleteCallLogConfirmation_message">ရွေးချယ်ထားသော ခေါ်ဆိုမှု မှတ်တမ်း(များ) အားဖျက်ပစ်ရန် သေချာသည်လား။</string>
+    <string name="recentCalls_delete">ဖျက်ရန်</string>
+    <string name="deleting_call_log">​ခေါ်ဆိုမှု မှတ်တမ်းအား ဖျက်နေသည်…</string>
+    <string name="toast_call_detail_error">"အသေးစိတ် မရှိ"</string>
+    <string name="calllogList">"ယခင်ခေါ်ဆိုမှုများ"</string>
+    <string name="calllogHint">​ခေါ်ဆိုမှု မှတ်တမ်းများ ရှာဖွေသည်</string>
+    <string name="calllog_description">အဝင်၊ အထွက် နှင့် လွတ်သွားသော ခေါ်ဆိုမှုများ</string>
+    <string name="noMatchingCalllogs">ကိုက်ညီသော ခေါ်ဆိုမှု မှတ်တမ်း ရှာမတွေ့ပါ။</string>
+    <string name="titleJoinContactDataWith">အဆက်အသွယ်များကိုပေါင်းစည်းရန်</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> ​ခေါ်ဆိုမှု မှတ်တမ်းများ</item>
+        <item quantity="one">"ခေါ်ဆိုမှုမှတ်တမ်း ၁ ခု"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">​ခေါ်ဆိုမှု မှတ်တမ်း ရှာမတွေ့ပါ</string>
+    <string name="search_results_for">အတွက် ရှာဖွေမှု ရလဒ်များ - <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none">"အားလုံးကို မရွေးချယ်ပါ"</string>
+</resources>

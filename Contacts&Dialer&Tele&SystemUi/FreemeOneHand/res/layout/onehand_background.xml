@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.freeme.onehand.OneHandBackgroundView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/onehand_background_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:soundEffectsEnabled="false">
+
+    <TextView
+        android:id="@+id/onehand_help_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center_horizontal"
+        android:text="@string/help_onehand_title"
+        android:textColor="#fffafafa"
+        android:textSize="16.0dip"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/onehand_help_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35.0dip"
+        android:gravity="center_horizontal"
+        android:text="@string/help_text_to_return_full"
+        android:textColor="#fffafafa"
+        android:textSize="14.0dip"
+        android:visibility="invisible"/>
+
+    <FrameLayout
+        android:id="@+id/reduced_screenshot_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/secure_view_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingBottom="200.0dip"
+            android:text="@string/help_secure_app"
+            android:textColor="#fffafafa"
+            android:textSize="20.0dip"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/side_area_container"
+        android:layout_width="@dimen/onehand_default_icon_size"
+        android:layout_height="fill_parent">
+
+        <ImageButton
+            android:id="@+id/arrow_button"
+            android:layout_width="@dimen/onehand_default_icon_size"
+            android:layout_height="@dimen/onehand_default_icon_size"
+            android:layout_above="@+id/setting_button"
+            android:layout_marginBottom="@dimen/onehand_side_button_gap"
+            android:background="@drawable/btn_shape_mtrl"
+            android:src="@drawable/oho_btn_ic_left"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:id="@+id/setting_button"
+            android:layout_width="@dimen/onehand_default_icon_size"
+            android:layout_height="@dimen/onehand_default_icon_size"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_shape_mtrl"
+            android:src="@drawable/oho_btn_ic_setting"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_area_container"
+        android:layout_width="@dimen/onehand_bottom_icon_size"
+        android:layout_height="@dimen/onehand_bottom_icon_size"
+        android:background="@drawable/border_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/left_padding"
+            android:layout_width="10.0dip"
+            android:layout_height="@dimen/onehand_bottom_icon_size"
+            android:layout_alignParentLeft="true"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:id="@+id/recent_button"
+            android:layout_width="@dimen/onehand_bottom_softkey_size"
+            android:layout_height="@dimen/onehand_bottom_icon_size"
+            android:layout_toLeftOf="@+id/home_button"
+            android:layout_toRightOf="@+id/left_padding"
+            android:background="@drawable/ripple_button"
+            android:src="@drawable/ic_sysbar_recent"
+            android:tint="@color/icon_white_tint"/>
+
+        <ImageButton
+            android:id="@+id/home_button"
+            android:layout_width="@dimen/onehand_bottom_softkey_size"
+            android:layout_height="@dimen/onehand_bottom_icon_size"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ripple_button"
+            android:src="@drawable/ic_sysbar_home"
+            android:tint="@color/icon_white_tint"/>
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="@dimen/onehand_bottom_softkey_size"
+            android:layout_height="@dimen/onehand_bottom_icon_size"
+            android:layout_toLeftOf="@+id/right_padding"
+            android:layout_toRightOf="@+id/home_button"
+            android:background="@drawable/ripple_button"
+            android:src="@drawable/ic_sysbar_back"
+            android:tint="@color/icon_white_tint"/>
+
+        <ImageButton
+            android:id="@+id/right_padding"
+            android:layout_width="10.0dip"
+            android:layout_height="@dimen/onehand_bottom_icon_size"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+</com.freeme.onehand.OneHandBackgroundView>

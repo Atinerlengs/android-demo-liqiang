@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="freeme_incoming_call_decline_with_sms">Message</string>
+    <string name="freeme_incoming_call_mute">Mute</string>
+    <string name="freeme_hideVideoPreview">Hide preview</string>
+    <string name="freeme_onscreenSwitchCameraText">Switch camera</string>
+    <string name="onscreenRecordNumberText">Record number</string>
+    <string name="toast_recordnumber_show">The number you entered will remain on diapad after call ends</string>
+
+    <string name="freeme_incall_forward_from_label">Forward from</string>
+    <string name="freeme_incall_stranger_number">Stranger</string>
+    <string name="freeme_incall_incoming_video">Video request</string>
+    <string name="freeme_incall_incoming_video_upgrade">"Video upgrade request"</string>
+    <string name="freeme_incall_incoming_video_from_wifi">Wi-Fi video request</string>
+    <string name="freeme_incall_incoming_video_upgrade_from_wifi">"Wi-Fi video upgrade request"</string>
+
+    <string name="freeme_incall_answer_video_call">Answer</string>
+    <string name="freeme_incall_answer_video_call_as_audio">Answer as Audio</string>
+</resources>

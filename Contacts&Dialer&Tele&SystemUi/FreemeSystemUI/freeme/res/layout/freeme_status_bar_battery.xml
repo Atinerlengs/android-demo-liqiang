@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:id="@+id/freeme_battery"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal">
+
+    <com.freeme.systemui.tint.TintTextView
+        android:id="@+id/battery_outside_percent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:paddingRight="3dp"
+        android:paddingLeft="0dp"
+        android:textSize="12dp"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <com.freeme.systemui.tint.TintImageView
+            android:id="@+id/battery_border"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_statusbar_battery" />
+
+        <com.freeme.systemui.tint.TintImageView
+            android:id="@+id/battery_inside_level"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/battery_inside_charge_level"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:visibility="gone" />
+
+        <com.freeme.systemui.tint.TintImageView
+            android:id="@+id/battery_inside_charge"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_statusbar_battery_charge"
+            android:visibility="gone" />
+
+        <com.freeme.systemui.tint.TintTextView
+            android:id="@+id/battery_inside_percent"
+            android:background="@drawable/ic_statusbar_battery_figure"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/freeme_battery_inside_text_size"
+            android:visibility="gone" />
+
+        <com.freeme.systemui.tint.TintImageView
+            android:id="@+id/battery_inside_warning_center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_statusbar_battery_low"
+            android:visibility="gone" />
+
+        <com.freeme.systemui.tint.TintImageView
+            android:id="@+id/battery_inside_warning_left"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_statusbar_battery_powersaving_low"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <com.freeme.systemui.tint.TintImageView
+            android:id="@+id/battery_outside_charge"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_statusbar_battery_charge_figure"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

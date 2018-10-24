@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pinned_header_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/contact_browser_background"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/alert_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/alert_background"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/alert_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/alert_dismiss_icon"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/dismiss_sync_alert"
+            android:scaleType="center"
+            android:src="@drawable/quantum_ic_cancel_vd_theme_24"/>
+    </LinearLayout>
+
+    <!-- Shown only when an Account filter is set.
+         - paddingTop should be here to show "shade" effect correctly. -->
+    <include layout="@layout/account_filter_header"/>
+
+    <FrameLayout
+        android:id="@+id/contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <include layout="@layout/contact_list_card"/>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:enabled="false">
+
+            <view
+                android:id="@android:id/list"
+                class="com.android.contacts.list.PinnedHeaderListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="?attr/contact_browser_list_padding_right"
+                android:layout_marginLeft="?attr/contact_browser_list_padding_left"
+                android:layout_marginRight="?attr/contact_browser_list_padding_right"
+                android:layout_marginStart="?attr/contact_browser_list_padding_left"
+                android:clipToPadding="false"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="true"
+                android:paddingTop="?attr/list_item_padding_top"
+                android:visibility="gone"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <ProgressBar
+            android:id="@+id/search_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <com.freeme.contacts.common.widgets.FreemeIndexScrollView
+            android:id="@+id/index_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>

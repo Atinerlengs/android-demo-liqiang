@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Virheellinen</string>
+    <string name="conf_call_member_list">Jäsenluettelo</string>
+    <string name="conf_call_participant_answered">Vastattu</string>
+    <string name="conf_call_participant_missed">"Vastaamattomat"</string>
+    <string name="calls_over_wifi">PuhelutsoitetaanWi-Fi-verkolla</string>
+    <string name="connect_to_wifi">Muodosta Wi-Fi-yhteys soittaaksesi</string>
+    <string name="wfc_notification_summary">Napautatässäkäyttääksesiasetuksia</string>
+    <string name="wfc_notification_summary_fail">Napauta tässä näyttääksesi käytettävissä olevat verkot.</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"SIP-puhelu"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> vapautettua epäonnistui</string>
+    <string name="menu_select_all">"Valitsekaikki"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> valittu</string>
+    <string name="multichoice_no_select_alert">"Kohdetta ei ole valittu."</string>
+    <string name="deleteCallLogConfirmation_title">Poistettaanko puheluloki(t)?</string>
+    <string name="deleteCallLogConfirmation_message">Haluatko varmasti poistaa valitut puhelulokit?</string>
+    <string name="recentCalls_delete">"Poista"</string>
+    <string name="deleting_call_log">Poistetaan puhelulokia...</string>
+    <string name="toast_call_detail_error">"Tiedot eivät ole käytettävissä"</string>
+    <string name="calllogList">"Soittohistoria"</string>
+    <string name="calllogHint">Etsi puhelulokeja</string>
+    <string name="calllog_description">saapuvat, lähtevät ja vastaamattomat puhelut</string>
+    <string name="noMatchingCalllogs">Vastaavia puhelulokeja ei löydy.</string>
+    <string name="titleJoinContactDataWith">"Yhdistä yhteystiedot"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> puhelulokia</item>
+        <item quantity="one">"1 puheluloki"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Puhelulokia ei löydy</string>
+    <string name="search_results_for">Hakutulokset kohteelle: <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none">"Poista valinta kaikista"</string>
+</resources>

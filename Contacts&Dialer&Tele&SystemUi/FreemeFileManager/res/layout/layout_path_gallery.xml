@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/list_item_padding_left">
+
+    <com.freeme.filemanager.view.PathGallery
+        android:id="@+id/path_gallery_nav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left|center_vertical" >
+
+        <ImageButton
+            android:id="@+id/volume_navigator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:paddingStart="@dimen/list_item_padding_left"
+            android:background="@drawable/arrow_down"/>
+
+        <TextView
+            android:id="@+id/first_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/list_slash_padding_left"
+            android:textAppearance="@style/AppTextAppearance.ItemOther"
+            android:gravity="center" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/list_slash_padding_left"
+            android:background="@drawable/ic_right_arrow_path"
+            android:layout_gravity="center_vertical"/>
+
+        <HorizontalScrollView
+            android:id="@+id/path_scroll_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/scroll_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+    </com.freeme.filemanager.view.PathGallery>
+
+</LinearLayout>

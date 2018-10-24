@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:freemeprv="http://schemas.android.com/apk/prv/res/freeme"
+    android:title="@string/freeme_tab_call_label">
+
+    <PreferenceCategory
+        android:key="dialer_assist"
+        android:title="@string/freeme_dialer_settings_assist">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="incoming_vibrate"
+            android:title="@string/freeme_dialer_settings_incoming_vibrate"/>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="phone_vibrate"
+            android:title="@string/phone_vibrate"/>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="gradient_ring"
+            android:title="@string/gradient_ringing_call"/>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="reverse_silent"
+            android:title="@string/reverse_silent"/>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pocket_mode"
+            android:summary="@string/pocket_ring_mode_info"
+            android:title="@string/pocket_ring_mode_text"/>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="noise_reduction"
+            android:summary="@string/freeme_dialer_settings_noise_reduction_summary"
+            android:title="@string/freeme_dialer_settings_noise_reduction_title"/>
+
+        <com.freeme.preference.FreemeJumpPreference
+            android:key="quick_reply"
+            android:title="@string/respond_via_sms_setting_title">
+            <intent android:action="android.telecom.action.SHOW_RESPOND_VIA_SMS_SETTINGS">
+                <extra
+                    android:name="com.freeme.intent.extra.NAVIGATE_UP_TITLE_TEXT"
+                    android:value="@string/freeme_tab_call_label" />
+            </intent>
+        </com.freeme.preference.FreemeJumpPreference>
+
+        <com.freeme.preference.FreemeJumpPreference
+            android:key="blacklist_list"
+            android:title="@string/freeme_dialer_settings_blacklist_list">
+            <intent android:action="com.android.dialer.action.BLOCKED_NUMBERS_SETTINGS"/>
+        </com.freeme.preference.FreemeJumpPreference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="dialer_shortcut"
+        android:title="@string/freeme_dialer_settings_shortcut">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="smart_dialer"
+            android:summary="@string/freeme_dialer_settings_smart_dialer_summary"
+            android:title="@string/freeme_dialer_settings_smart_dialer_title"/>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="smart_answer"
+            android:summary="@string/freeme_dialer_settings_smart_answer_summary"
+            android:title="@string/freeme_dialer_settings_smart_answer_title"/>
+
+        <com.freeme.preference.FreemeJumpPreference
+            android:key="no_touch"
+            android:title="@string/freeme_dialer_settings_no_touch"
+            freemeprv:freemeJumpStatus1="@string/freeme_dialer_settings_no_touch_not_set">
+            <intent android:action="com.freeme.intent.action.motionrecognition.settings"/>
+        </com.freeme.preference.FreemeJumpPreference>
+
+        <com.freeme.preference.FreemeJumpPreference
+            android:key="freeme_speed_dial"
+            android:title="@string/freeme_dialer_settings_speed_dial">
+        </com.freeme.preference.FreemeJumpPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="dialer_others"
+        android:title="@string/freeme_dialer_settings_other">
+
+        <com.freeme.preference.FreemeJumpPreference
+            android:key="call_related"
+            android:title="@string/freeme_dialer_settings_call_related">
+        </com.freeme.preference.FreemeJumpPreference>
+
+        <com.freeme.preference.FreemeJumpPreference
+            android:key="voicemail"
+            android:title="@string/voicemail">
+        </com.freeme.preference.FreemeJumpPreference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory></PreferenceCategory>
+</PreferenceScreen>

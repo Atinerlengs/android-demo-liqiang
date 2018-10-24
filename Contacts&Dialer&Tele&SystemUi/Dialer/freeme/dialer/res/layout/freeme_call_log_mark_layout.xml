@@ -1,0 +1,10 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/call_mark"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginEnd="@dimen/freeme_call_logs_list_item_content_padding"
+    android:singleLine="true"
+    android:textColor="#FFF7AE03"
+    android:textSize="@dimen/freeme_list_item_sub_text_size"
+    android:visibility="gone" />

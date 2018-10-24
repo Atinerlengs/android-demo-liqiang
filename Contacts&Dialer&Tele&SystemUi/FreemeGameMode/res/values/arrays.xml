@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gm_except_app_list" translatable="false">
+        <item>com.android.deskclock</item>
+        <item>com.android.dialer</item>
+        <item>com.android.contacts</item>
+        <item>com.android.mms</item>
+        <item>com.android.settings</item>
+        <item>com.freeme.calculator</item>
+        <item>com.freeme.camera</item>
+        <item>com.freeme.filemanager</item>
+        <item>com.freeme.gallery</item>
+        <item>com.freeme.ota</item>
+        <item>com.freeme.game</item>
+        <item>com.freeme.soundrecorder</item>
+        <item>com.freeme.translator.lite</item>
+        <item>com.zhuoyi.market</item>
+        <item>com.icoolme.android.weather</item>
+        <item>com.freeme.freemelite.odm</item>
+        <item>com.ptns.da.zy</item>
+    </string-array>
+
+    <!-- Modifying this array requires a synchronous upgrade of the database version.
+        file path: com.freeme.game.database.GmDatabaseHelper
+    -->
+    <string-array name="gm_recommend_app_list" translatable="false">
+        <item>com.mas.wawagame.cclord2.cooee</item>
+        <item>com.tencent.tmgp.sgame</item>
+        <item>com.netease.hyxd</item>
+        <item>com.tencent.tmgp.pubgm</item>
+        <item>com.tencent.tmgp.pubgmhd</item>
+        <item>com.tencent.tmgp.mt4</item>
+    </string-array>
+</resources>

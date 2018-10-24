@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/separate_menu_pop_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_page_part_background"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/sort_by_name"
+        android:layout_width="@dimen/separate_menu_pop_width"
+        android:layout_height="@dimen/separate_menu_pop_item_height"
+        android:text="@string/menu_item_sort_name"
+        android:singleLine="true"
+        android:gravity="center"
+        android:textAppearance="@style/AppTextAppearance.ItemOther"/>
+
+    <include layout="@layout/widget_divider_view_small" />
+
+    <TextView
+        android:id="@+id/sort_by_size"
+        android:layout_width="@dimen/separate_menu_pop_width"
+        android:layout_height="@dimen/separate_menu_pop_item_height"
+        android:text="@string/menu_item_sort_size"
+        android:singleLine="true"
+        android:gravity="center"
+        android:textAppearance="@style/AppTextAppearance.ItemOther"/>
+
+    <include layout="@layout/widget_divider_view_small" />
+
+    <TextView
+        android:id="@+id/sort_by_date"
+        android:layout_width="@dimen/separate_menu_pop_width"
+        android:layout_height="@dimen/separate_menu_pop_item_height"
+        android:text="@string/menu_item_sort_date"
+        android:singleLine="true"
+        android:gravity="center"
+        android:textAppearance="@style/AppTextAppearance.ItemOther"/>
+
+</LinearLayout>

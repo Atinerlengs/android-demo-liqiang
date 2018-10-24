@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="@dimen/main_page_padding_start"
+    android:insetRight="@dimen/main_page_padding_start">
+    <layer-list android:paddingMode="nest">
+        <item>
+            <shape android:shape="rectangle">
+                <!-- color comes from round corner background.-->
+                <solid
+                    android:color="@color/app_theme_color_primary"/>
+                <size android:height="@dimen/divider_height_small"
+                    android:width="@dimen/divider_height_small"/>
+            </shape>
+        </item>
+        <item android:left="@dimen/list_divider_garbage_child_start" >
+            <shape android:shape="rectangle">
+                <solid
+                    android:color="@color/app_color_divider"/>
+                <size android:height="@dimen/divider_height_small"
+                    android:width="@dimen/divider_height_small"/>
+            </shape>
+        </item>
+    </layer-list>
+</inset>

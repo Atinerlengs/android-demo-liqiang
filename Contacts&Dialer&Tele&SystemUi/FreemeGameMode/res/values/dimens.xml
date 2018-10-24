@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gm_list_item_height">60dp</dimen>
+    <dimen name="gm_list_item_icon_size">40dp</dimen>
+    <dimen name="gm_list_item_title_text_size">15sp</dimen>
+    <dimen name="gm_list_item_sub_text_size">12sp</dimen>
+
+    <dimen name="gm_floating_view_size">68dp</dimen>
+    <dimen name="gm_floating_setting_view_width_land">285dp</dimen>
+    <dimen name="gm_floating_setting_view_width_port">280dp</dimen>
+    <dimen name="gm_floating_setting_view_padding">20dp</dimen>
+    <dimen name="gm_floating_setting_title_height">54dp</dimen>
+    <dimen name="gm_floating_setting_title_text_size">16sp</dimen>
+    <dimen name="gm_floating_setting_item_height">56dp</dimen>
+    <dimen name="gm_floating_setting_item_text_size">16sp</dimen>
+</resources>

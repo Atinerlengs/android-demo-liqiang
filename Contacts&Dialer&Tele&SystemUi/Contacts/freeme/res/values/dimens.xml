@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="contact_common_text_size">15sp</dimen>
+    <dimen name="title_text_size">18sp</dimen>
+
+    <dimen name="freeme_merge_contact_title_margin">5dip</dimen>
+    <dimen name="freeme_merge_contact_title_text_size">15sp</dimen>
+    <dimen name="contact_all_browser_list_item_hight">50dip</dimen>
+    <dimen name="contact_common_item_height">60dip</dimen>
+    <dimen name="contact_title_no_contact_margin_top">129dip</dimen>
+    <dimen name="no_contact_text_view_margin_top">18dip</dimen>
+
+    <dimen name="contact_editor_account_height">64dp</dimen>
+    <dimen name="contact_editor_space_medium">16dp</dimen>
+    <dimen name="contact_editor_space_small">8dp</dimen>
+    <dimen name="contact_editor_more_fields_height">40dp</dimen>
+    <dimen name="contact_editor_header_icon_size">48dp</dimen>
+
+    <dimen name="freeme_contact_choice_bottom_layout_height">60dp</dimen>
+
+    <dimen name="freeme_list_visible_scrollbar_padding">16dp</dimen>
+    <dimen name="quick_contact_expanding_item_padding">8dp</dimen>
+    <dimen name="quick_contact_entry_sub_title_size">12sp</dimen>
+    <dimen name="quick_contact_short_cut_item_margin_start">20dp</dimen>
+
+    <dimen name="editor_min_line_item_height">48dp</dimen>
+    <dimen name="expanding_entry_card_item_padding_start">16dp</dimen>
+    <dimen name="quickcontact_expanding_item_padding">8dp</dimen>
+    <dimen name="expanding_entry_card_item_icon_sim_name_margin_right">7dp</dimen>
+    <dimen name="freeme_quick_content_button_height">48dp</dimen>
+    <dimen name="freeme_quick_content_delete_text_size">15sp</dimen>
+
+    <dimen name="freeme_quick_contact_headers_height_width">60dp</dimen>
+    <dimen name="freeme_quick_contact_headers_magin_top">20dp</dimen>
+    <dimen name="freeme_quick_contact_headers_name_size">17sp</dimen>
+    <dimen name="freeme_quick_contact_headers_name_magin_top">8dp</dimen>
+    <dimen name="freeme_quick_contact_headers_height">116dp</dimen>
+
+    <dimen name="freeme_stranger_ditail_headers_name_size">17sp</dimen>
+    <dimen name="freeme_stranger_ditail_headers_location_size">15sp</dimen>
+    <dimen name="freeme_stranger_headers_loacation_magin_top">5dp</dimen>
+    <dimen name="freeme_stranger_detail_location_size">12sp</dimen>
+    <dimen name="freeme_stranger_detail_headers_height">130dp</dimen>
+
+    <dimen name="freeme_editor_type_label_dropdown_width">150dp</dimen>
+    <dimen name="freeme_editor_type_label_width">60dp</dimen>
+    <dimen name="freeme_editor_min_line_item_height">48dp</dimen>
+    <dimen name="freeme_add_contact_info_margin_right">10dp</dimen>
+    <dimen name="freeme_add_contact_info_icon">32dp</dimen>
+    <dimen name="freeme_add_contact_icon_margin_start">24dp</dimen>
+    <dimen name="freeme_add_contact_icon_margin_end">34dp</dimen>
+    <dimen name="freeme_contact_info_margin_width">8dp</dimen>
+    <dimen name="freeme_contact_info_arrow_margin_end">16dp</dimen>
+    <dimen name="freeme_contact_info_spinner_margin_end">36dp</dimen>
+    <dimen name="freeme_contact_drawable_margin">2dp</dimen>
+    <dimen name="freeme_contact_delete_margin_top">10dp</dimen>
+    <dimen name="freeme_contact_verity_margin_top_bottom">14dp</dimen>
+    <dimen name="freeme_contact_editor_form_text_size">15sp</dimen>
+
+    <dimen name="freeme_spinner_contact_width">98dp</dimen>
+    <dimen name="freeme_editor_structure_spinner">96dp</dimen>
+    <dimen name="freeme_group_item_text_size">16sp</dimen>
+    <dimen name="freeme_alert_text_padding">16dp</dimen>
+    <dimen name="freeme_alert_dismiss_icon_width">56dp</dimen>
+    <dimen name="freeme_group_item_send_message_margin">10dp</dimen>
+    <dimen name="freeme_alert_container_padding">20dp</dimen>
+    <dimen name="freeme_contact_list_item_padding">22dp</dimen>
+    <dimen name="freeme_group_member_list_item_padding">7dp</dimen>
+
+    <dimen name="freeme_expanding_entry_card_item_height">62dp</dimen>
+
+    <dimen name="freene_spinner_label_action_height">48dp</dimen>
+    <dimen name="freene_group_name_text_size">12sp</dimen>
+    <dimen name="freene_group_name_edit_content_padding">8dp</dimen>
+    <dimen name="freene_group_name_edit_content_margin">12dp</dimen>
+</resources>

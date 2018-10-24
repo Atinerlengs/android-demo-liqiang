@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="left"
+    android:paddingLeft="@dimen/keyguard_dateview_paddingleft" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!--freeme.lishoubo, 20180228.FreemeAppTheme keyguardView
+          default:
+            android:textColor="?attr/wallpaperTextColor"
+        -->
+        <com.android.systemui.statusbar.policy.DateView
+            android:id="@+id/date_view"
+            style="@style/widget_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:letterSpacing="0.05"
+            android:textColor="@color/freeme_keyguard_status_area_text_color" />
+
+        <!--freeme.lishoubo, 20180228.FreemeAppTheme keyguardView
+          default:
+            android:textColor="?attr/wallpaperTextColor"
+        -->
+        <TextView
+            android:id="@+id/alarm_status"
+            style="@style/widget_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:drawablePadding="6dp"
+            android:drawableStart="@drawable/ic_access_alarms_big"
+            android:drawableTint="?attr/wallpaperTextColorSecondary"
+            android:drawableTintMode="src_in"
+            android:gravity="center"
+            android:letterSpacing="0.05"
+            android:textColor="@color/freeme_keyguard_status_area_text_color"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/kg_weather_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/keyguard_between_weather_dateview"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/kg_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/widget_label"
+            android:textColor="@color/freeme_keyguard_status_area_text_color"
+            />
+        <TextView
+            android:id="@+id/kg_tmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            style="@style/widget_label"
+            android:textColor="@color/freeme_keyguard_status_area_text_color"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">无效</string>
+    <string name="conf_call_member_list">参与者列表</string>
+    <string name="conf_call_participant_answered">已接</string>
+    <string name="conf_call_participant_missed">未接</string>
+    <string name="calls_over_wifi">电话将通过Wi-Fi发起</string>
+    <string name="connect_to_wifi">连接Wi-Fi进行通话</string>
+    <string name="wfc_notification_summary">点击进入偏好设置</string>
+    <string name="wfc_notification_summary_fail">点击查看可用网络</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"SIP电话"</string>
+    <!-- M: unblock number failed tip -->
+    <string name="snackbar_number_unblocked_failed">
+       <xliff:g id="number" example="(555) 555-5555">%1$s</xliff:g>
+       取消屏蔽失败</string>
+    <string name="menu_select_all" msgid="621719255150713545">"全选"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> 已选择</string>
+    <string name="menu_select_none" msgid="7093222469852132345">"取消全选"</string>
+    <string name="multichoice_no_select_alert">"没有条目被选中。"</string>
+    <string name="deleteCallLogConfirmation_title">删除通话记录？</string>
+    <string name="deleteCallLogConfirmation_message">您确定要删除所选通话记录吗？</string>
+    <string name="recentCalls_delete">"删除"</string>
+    <string name="deleting_call_log">正在删除通话记录...</string>
+    <string name="toast_call_detail_error" msgid="6947041258280380832">"无法获取详细信息"</string>
+
+    <!-- M: [Dialer Global Search] @{-->
+    <string name="calllogList">"通话记录"</string>
+    <string name="calllogHint">搜索通话记录</string>
+    <string name="calllog_description">呼入、呼出和未接电话</string>
+    <string name="noMatchingCalllogs">"未找到匹配的通话记录。"</string>
+    <string name="titleJoinContactDataWith" msgid="7684875775798635354">"合并联系人"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="one">"找到 1 个通话记录"</item>
+        <item quantity="other">"找到 <xliff:g id="COUNT">%d</xliff:g> 个通话记录</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">未找到通话记录</string>
+    <string name="search_results_for">"“<xliff:g id="QUERY">%s</xliff:g>”的搜索结果"</string>
+
+</resources>

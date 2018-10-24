@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cleaning_main_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+            <com.freeme.filemanager.view.circleprogress.RoundProgressBar
+                android:id="@+id/roundProgressBar"
+                android:layout_width="@dimen/circle_progressbar_cleaning_width"
+                android:layout_height="@dimen/circle_progressbar_cleaning_width"
+                android:layout_marginTop="@dimen/search_view_padding_top"
+                android:layout_marginBottom="@dimen/search_view_padding_top"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android_custom:arc_finished_color="@color/app_theme_color_accent"
+                android_custom:arc_unfinished_color="@color/main_page_background"
+                android_custom:arc_text_color="@color/app_theme_color_accent"
+                android_custom:arc_text2_color="@color/textColorSecondary"
+                android_custom:arc_text_size="@dimen/arc_suffix_text_size_clean"
+                android_custom:arc_suffix_text_size="@dimen/arc_suffix_text_size"
+                android_custom:arc_bottom_text_size="@dimen/arc_bottom_text_size"
+                android_custom:arc_bottom_text2_size="@dimen/arc_bottom_text2_size"
+                android_custom:arc_stroke_width="@dimen/grid_horizontal_space"
+                android:background="@drawable/ic_cleaning_bg"/>
+
+            <ListView
+                android:id="@+id/clean_list"
+                android:layout_below="@+id/roundProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/divider_height_medium"
+                android:layout_gravity="center_horizontal"
+                android:divider="@drawable/list_item_divider_garbage_child"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="true"
+                android:background="@color/app_theme_color_primary">
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/deep_clean_entrance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@+id/roundProgressBar"
+                android:visibility="gone">
+                <com.freeme.filemanager.view.ListItemTextView
+                    android:id="@+id/deep_clean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/main_page_padding_top"
+                    android_custom:background_res="@drawable/listitem_backgroud_head_freeme"
+                    android_custom:left_text="@string/deep_clean"
+                    android_custom:right_text_visible="gone"
+                    android_custom:right_image_visible="visible">
+                </com.freeme.filemanager.view.ListItemTextView>
+                <include layout="@layout/widget_divider_view_small_freeme" />
+
+                <com.freeme.filemanager.view.ListItemTextView
+                    android:id="@+id/wechat_special"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android_custom:background_res="@drawable/listitem_backgroud_middle_freeme"
+                    android_custom:left_text="@string/wechat_special"
+                    android_custom:right_text_visible="gone"
+                    android_custom:right_image_visible="visible">
+                </com.freeme.filemanager.view.ListItemTextView>
+                <include layout="@layout/widget_divider_view_small_freeme" />
+
+                <com.freeme.filemanager.view.ListItemTextView
+                    android:id="@+id/clear_large_files"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android_custom:background_res="@drawable/listitem_backgroud_tail_freeme"
+                    android_custom:left_text="@string/clear_large_files"
+                    android_custom:right_text_visible="gone"
+                    android_custom:right_image_visible="visible">
+                </com.freeme.filemanager.view.ListItemTextView>
+            </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cleanup_button"
+        android:layout_width="@dimen/bottom_btn_width"
+        android:layout_height="@dimen/bottom_btn_height"
+        android:layout_marginTop="@dimen/bottom_btn_clean_margin_bottom"
+        android:layout_marginBottom="@dimen/bottom_btn_clean_margin_bottom"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center"
+        android:enabled="false"
+        android:adjustViewBounds="true"
+        android:background="@drawable/btn_bottom"
+        android:textAppearance="@style/AppTextAppearance.BottomBtn"
+        android:text="@string/garbage_cleaning"/>
+</FrameLayout>

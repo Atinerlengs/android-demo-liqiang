@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/incall_contact_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@id/contactgrid_avatar"
+                android:layout_width="@dimen/freeme_incall_avatar_size"
+                android:layout_height="@dimen/freeme_incall_avatar_size"
+                android:elevation="2dp" />
+
+            <ViewStub
+                android:id="@+id/freeme_forward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout="@layout/freeme_incall_contactgrid_forward"
+                android:paddingBottom="20dp" />
+
+            <LinearLayout
+                android:id="@id/incall_contact_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/incall_window_margin_horizontal"
+                android:layout_marginStart="@dimen/incall_window_margin_horizontal"
+                android:layout_marginTop="@dimen/freeme_incall_name_top_margin"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <!-- We have to keep deprecated singleLine to allow long text being truncated with ellipses.
+                           b/31396406 -->
+                <com.android.incallui.autoresizetext.AutoResizeTextView
+                    android:id="@id/contactgrid_contact_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textAppearance="@style/Dialer.Incall.TextAppearance.Large"
+                    app:autoResizeText_minTextSize="24sp"
+                    tools:ignore="Deprecated"
+                    tools:text="Jake Peralta" />
+
+                <include
+                    layout="@layout/freeme_incall_caller_number_and_geo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/freeme_incall_raw_info_gap" />
+
+                <include
+                    layout="@layout/freeme_incall_contactgrid_bottom_row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/freeme_incall_raw_info_gap" />
+
+                <FrameLayout
+                    android:id="@+id/incall_location_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <!-- M:[Voice Record]record icon -->
+                <!-- M:fix ALPS02297097,recording icon still at the right
+                side as Arabic,correct layout_gravity from right to end -->
+                <ImageView
+                    android:id="@+id/voiceRecorderIcon"
+                    android:layout_width="@dimen/incall_record_icon_size"
+                    android:layout_height="@dimen/incall_record_icon_size"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginEnd="10dip"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.android.dialer.widget.LockableViewPager
+            android:id="@+id/incall_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/incall_paginator"
+            android:layout_below="@+id/incall_contact_grid"
+            android:layout_centerHorizontal="true" />
+
+        <com.android.incallui.incall.impl.InCallPaginator
+            android:id="@+id/incall_paginator"
+            android:layout_width="@dimen/paginator_width"
+            android:layout_height="@dimen/paginator_height"
+            android:layout_above="@+id/freeme_bottom_button_layout"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/incall_dialpad_container"
+            style="@style/DialpadContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/freeme_bottom_button_layout"
+            android:paddingBottom="10dp"
+            tools:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/freeme_bottom_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="48dp"
+            android:layout_marginTop="@dimen/freeme_incall_button_bottom_padding"
+            android:gravity="center_vertical">
+
+            <com.android.incallui.incall.impl.CheckableLabeledButton
+                android:id="@+id/freeme_incall_dialpad"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:gravity="center"
+                app:incall_labelText="@string/incall_label_speaker"
+                tools:background="#FFFF0000"
+                tools:layout_height="@dimen/tools_button_height"
+                tools:layout_width="@dimen/incall_labeled_button_size" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/incall_end_call"
+                    android:layout_width="@dimen/freeme_incall_button_size"
+                    android:layout_height="@dimen/freeme_incall_button_size"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:contentDescription="@string/incall_content_description_end_call"
+                    android:src="@drawable/freeme_call_card_button_hangup" />
+            </FrameLayout>
+
+            <com.android.incallui.incall.impl.CheckableLabeledButton
+                android:id="@+id/freeme_incall_speaker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:gravity="center"
+                app:incall_labelText="@string/incall_label_speaker"
+                tools:background="#FFFF0000"
+                tools:layout_height="@dimen/tools_button_height"
+                tools:layout_width="@dimen/incall_labeled_button_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@id/incall_on_hold_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top" />
+</FrameLayout>

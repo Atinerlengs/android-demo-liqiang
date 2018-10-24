@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources> 
+    <string name="alert_delete_multiple">Aceste elemente se vor şterge</string>  
+    <string name="alert_delete_single">Acest element se va şterge</string>  
+    <string name="already_exists">există deja</string>  
+    <string name="app_name">Manager fişiere</string>  
+    <string name="cancel">Revocare</string>  
+    <string name="copy">Copiere</string>
+    <string name="create_folder">Creare folder</string>
+    <string name="cut">Decupare</string>
+    <string name="cut_fail">Decupare nereuşită</string>
+    <string name="delete">Ştergere</string>  
+    <string name="delete_deny">Fără permisiune de ştergere</string>  
+    <string name="delete_fail">Ştergere nereuşită</string>  
+    <string name="deleting">Se şterge</string>  
+    <string name="deselect_all">Deselectare totală</string>  
+    <string name="select_all">Selectare totală</string>  
+    <string name="details">Detalii</string>  
+    <string name="done">Terminat</string>  
+    <string name="edit">Editare</string>  
+    <string name="empty_msg">(Folder gol)</string>  
+    <string name="executable">Executabil</string>  
+    <string name="insufficient_memory">Memorie insuficientă</string>  
+    <string name="invalid_empty_name">Numele de fişier sau de folder nu poate fi gol</string>  
+    <string name="invalid_file_name">Numele de fişier sau de folder specificat este prea lung</string>  
+    <string name="loading">Se încarcă</string>  
+    <string name="modified_time">Modificat</string>  
+    <string name="name">Nume</string>  
+    <string name="new_folder">Folder nou</string>  
+    <string name="no">Nu</string>  
+    <string name="ok">OK</string>  
+    <string name="paste">Lipire</string>  
+    <string name="pasting">Se lipeşte</string>  
+    <string name="paste_fail">Lipire nereuşită</string>  
+    <string name="paste_same_folder">Imposibil de lipit %s în acelaşi director</string>  
+    <string name="readable">Lizibil</string>  
+    <string name="rename">Redenumire</string>  
+    <string name="save">Salvare</string>  
+    <string name="selected">Selectat</string>  
+    <string name="send_file">Trimitere fişier</string>  
+    <string name="share">Partajare</string>  
+    <string name="size">Dimensiune</string>  
+    <string name="sort_by">Sortare după</string>  
+    <string name="support_fail" product="default">Acest lucru nu este acceptat de telefon</string>
+    <string name="wait">Aşteptaţi\u2026</string>  
+    <string name="writable">Inscriptibil</string>  
+    <string name="yes">Da</string>  
+    <string name="confirm_rename">Confirmare redenumire</string>  
+    <string name="msg_rename_ext">Modificaţi extensia fişierului, ceea ce poate determina ca fişierul să nu fie recunoscut. Sigur faceţi aceasta?</string>  
+    <string name="msg_unable_open_file">Formatul de fişier nu este acceptat.</string>  
+    <string-array name="sort_by"> 
+        <item>Tip</item>  
+        <item>Nume (A -Z)</item>  
+        <item>Dimensiune (mare - mică)</item>  
+        <item>Perioadă (nou - vechi)</item> 
+    </string-array>  
+    <string name="more">Mai multe</string>  
+    <string name="msg_change_name">Operaţie nereuşită, utilizaţi un alt nume.</string> 
+    <string name="invalid_char_prompt">Aţi introdus un caracter nevalid</string>
+    <string name="unmounted">%1$s este detaşat</string>
+</resources>

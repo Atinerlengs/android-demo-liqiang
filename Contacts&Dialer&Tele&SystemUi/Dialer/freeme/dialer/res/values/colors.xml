@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="freeme_dialpad_background_color">#FFFBFBFB</color>
+    <color name="freeme_speed_dial_dialog_text_color">#22c580</color>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/recents_memory_container"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="@dimen/recents_memory_layout_marginBottom">
+    <FrameLayout
+        android:layout_width="@dimen/recents_memory_trash_can_width"
+        android:layout_height="@dimen/recents_memory_trash_can_height"
+        android:layout_gravity="center"
+        android:id="@+id/recents_memory_trash_can">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/recents_trash_can"/>
+        <com.freeme.recents.presentation.view.component.DonutProgress
+            android:id="@+id/recents_memory_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:donut_progress="100"
+            app:donut_finished_stroke_width="1dp"
+            app:donut_unfinished_stroke_width="1dp"
+            app:donut_finished_color="@color/recents_Progress_finished_white"
+            app:donut_unfinished_color="@color/recents_alpha_white"
+            app:donut_text_color="@color/recents_transparent"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:divider="@drawable/recents_memory_divider"
+        android:showDividers="middle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/recents_memory_label_marginTop"
+        android:id="@+id/recents_memory_layout">
+        <TextView android:id="@+id/recents_memory_avail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/recents_white"
+            android:alpha="@dimen/recents_memory_label_text_alpha"
+            android:layout_marginEnd="@dimen/recents_memory_label_margin"
+            android:textSize="@dimen/recents_memory_label_text_size"/>
+        <TextView android:id="@+id/recents_memory_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/recents_white"
+            android:alpha="@dimen/recents_memory_label_text_alpha"
+            android:layout_marginStart="@dimen/recents_memory_label_margin"
+            android:textSize="@dimen/recents_memory_label_text_size"/>
+    </LinearLayout>
+</LinearLayout>

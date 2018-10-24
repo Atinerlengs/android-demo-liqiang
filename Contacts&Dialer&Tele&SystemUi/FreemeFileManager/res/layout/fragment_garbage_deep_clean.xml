@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tv_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_page_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/cleanable_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_page_padding_top"
+        android:layout_marginStart="@dimen/main_page_padding_start"
+        android:layout_marginEnd="@dimen/main_page_padding_start"
+        android:background="@drawable/main_page_part_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/detail_grid_vertical_space"
+            android:layout_marginStart="@dimen/list_item_padding_left"
+            android:layout_marginEnd="@dimen/list_item_padding_left">
+
+            <TextView
+                android:id="@+id/used_percent_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textSize="@dimen/cleanable_text_size"
+                android:textColor="@color/app_theme_color_accent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/used_percent_txt"
+                android:layout_alignBaseline="@+id/used_percent_txt"
+                android:text="@string/storage_used_txt"
+                style="@style/AppTextAppearance.ItemOther"/>
+
+            <TextView
+                android:id="@+id/memory_is_sufficient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignBaseline="@+id/used_percent_txt"
+                android:text="@string/sufficient_memory"
+                style="@style/AppTextAppearance.ItemOther"/>
+        </RelativeLayout>
+
+        <ProgressBar android:id="@+id/used_progress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/garbage_progressbar_height"
+            android:layout_marginTop="@dimen/arc_bottom_text2_top"
+            android:layout_marginStart="@dimen/list_item_padding_left"
+            android:layout_marginEnd="@dimen/list_item_padding_left"
+            android:progressDrawable="@drawable/garbage_progress_drawable"
+            android:max="100"
+            android:progress="50"
+            android:secondaryProgress="1"
+            style="@android:style/Widget.ProgressBar.Horizontal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/arc_bottom_text2_top"
+            android:layout_marginBottom="@dimen/arc_bottom_text2_top"
+            android:layout_marginStart="@dimen/list_item_padding_left"
+            android:layout_marginEnd="@dimen/list_item_padding_left">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/category_icon_width"
+                    android:layout_height="@dimen/category_icon_height"
+                    android:src="@color/app_theme_color_accent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/main_page_padding_start"
+                    android:text="@string/storage_used_flag"
+                    style="@style/AppTextAppearance.ItemCategoryOther"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/storage_free"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/AppTextAppearance.ItemCategoryOther"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.freeme.filemanager.view.ListItemTextView
+                android:id="@+id/wechat_special"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/main_page_padding_top"
+                tv_custom:background_res="@drawable/listitem_backgroud_head_freeme"
+                tv_custom:left_text="@string/wechat_special"
+                tv_custom:right_text_visible="gone"
+                tv_custom:right_image_visible="visible">
+            </com.freeme.filemanager.view.ListItemTextView>
+            <include layout="@layout/widget_divider_view_small_freeme" />
+
+            <com.freeme.filemanager.view.ListItemTextView
+                android:id="@+id/clear_large_files"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tv_custom:background_res="@drawable/listitem_backgroud_tail_freeme"
+                tv_custom:left_text="@string/clear_large_files"
+                tv_custom:right_text_visible="gone"
+                tv_custom:right_image_visible="visible">
+            </com.freeme.filemanager.view.ListItemTextView>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

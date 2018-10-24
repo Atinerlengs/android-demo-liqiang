@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/onehand_resize_view"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:background="@android:color/transparent"
+             android:orientation="vertical"
+             android:soundEffectsEnabled="false">
+
+    <ImageView
+        android:id="@+id/resize_img"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/resize_guide"/>
+
+    <ImageView
+        android:id="@+id/resize_handle"
+        android:layout_width="10.0dip"
+        android:layout_height="10.0dip"
+        android:src="@drawable/resize_handle"
+        android:visibility="gone"/>
+</FrameLayout>

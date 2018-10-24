@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DialpadButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:soundEffectsEnabled">false</item>
+    </style>
+
+    <style name="Dialer.Incall.TextAppearance" parent="android:TextAppearance.Material" />
+
+    <style name="Dialer.Incall.TextAppearance.Forward">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Dialer.Incall.TextAppearance.CallStatus">
+        <item name="android:textColor">@color/freeme_incall_text_color_white_40_percent</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Dialer.Incall.TextAppearance.MultiCall.Name" parent="Dialer.Incall.TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Dialer.Incall.TextAppearance.MultiCall.Name.Hold">
+        <item name="android:textColor">@color/freeme_incall_text_color_white_40_percent</item>
+    </style>
+
+    <style name="Dialer.Incall.TextAppearance.MultiCall.Status" parent="Dialer.Incall.TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Dialer.Incall.TextAppearance.MultiCall.Status.Hold">
+        <item name="android:textColor">@color/freeme_incall_text_color_white_40_percent</item>
+    </style>
+
+    <style name="DialerIncallAnswerButton">
+        <item name="android:layout_width">@dimen/freeme_incall_button_size</item>
+        <item name="android:layout_height">@dimen/freeme_incall_button_size</item>
+    </style>
+
+    <style name="DialerIncallAnswerAccessibilityButton">
+        <item name="android:textColor">@color/freeme_call_card_button_text_color</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">
+            @dimen/freeme_incall_answer_accessibility_btn_drawable_padding
+        </item>
+        <item name="android:layout_width">@dimen/freeme_incall_answer_accessibility_btn_size</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/freeme_incall_answer_accessibility_btn_size</item>
+    </style>
+
+    <style name="Dialer.Incall.Answer.Menu.Text" parent="Dialer.Incall.TextAppearance">
+        <item name="android:textColor">#22C580</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Dialer.Incall.Answer.Menu.Text.SMS">
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="BottomSheetDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Design.BottomSheetDialog</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+    </style>
+
+    <style name="BottomSheet" parent="android:Widget">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="behavior_peekHeight">auto</item>
+        <item name="behavior_hideable">true</item>
+        <item name="behavior_skipCollapsed">false</item>
+    </style>
+
+    <style name="Dialer.Incall.TextAppearance.Chronometer">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ConferenceManagerTheme" parent="Theme.Freeme.AppCompat.Light">
+        <item name="android:windowDisablePreview">false</item>
+    </style>
+
+    <style name="InCalluiDialogTheme" parent="*freeme:style/Theme.Freeme.Light.Dialog.MinWidth"/>
+
+    <style name="Theme.InCallScreen" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:textColorSecondary">#DDFFFFFF</item>
+        <item name="android:colorPrimary">@color/dialer_theme_color</item>
+        <item name="android:colorPrimaryDark">@color/dialer_theme_color_dark</item>
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <item name="dialpad_key_button_touch_tint">@color/incall_dialpad_touch_tint</item>
+        <item name="dialpad_style">@style/InCallDialpad</item>
+        <item name="android:windowAnimationStyle">@style/InCallAnimationStyle</item>
+        <!--<item name="android:windowAnimationStyle">@null</item>-->
+        <item name="android:alertDialogTheme">@style/InCalluiDialogTheme</item>
+
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="InCallAnimationStyle" parent="@android:style/Animation.Translucent">
+        <item name="android:windowEnterAnimation">@anim/activity_open_enter</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+</resources>

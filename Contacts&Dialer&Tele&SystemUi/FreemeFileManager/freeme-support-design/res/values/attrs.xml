@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FreemeTabLayout">
+        <!-- Color of the indicator used to show the currently selected tab. -->
+        <attr name="tab_indicatorColor" format="color"/>
+        <!-- Height of the indicator used to show the currently selected tab. -->
+        <attr name="tab_indicatorHeight" format="dimension"/>
+        <!-- Reference to a background to be applied to tabs. -->
+        <attr name="tab_background" format="reference"/>
+        <!-- Gravity constant for tabs. -->
+        <attr name="tab_gravity">
+            <enum name="fill" value="0"/>
+            <enum name="center" value="1"/>
+        </attr>
+        <!-- The minimum width for tabs. -->
+        <attr name="tab_minWidth" format="dimension"/>
+        <!-- The maximum width for tabs. -->
+        <attr name="tab_maxWidth" format="dimension"/>
+        <!-- The height for tabs. -->
+        <attr name="tab_height" format="dimension"/>
+        <!-- A reference to a TextAppearance style to be applied to tabs. -->
+        <attr name="tab_textAppearance" format="reference"/>
+        <!-- The default text color to be applied to tabs. -->
+        <attr name="tab_textColor" format="color"/>
+        <!-- The text color to be applied to the currently selected tab. -->
+        <attr name="tab_selectedTextColor" format="color"/>
+        <!-- The preferred padding along the start edge of tabs. -->
+        <attr name="tab_paddingStart" format="dimension"/>
+        <!-- The preferred padding along the top edge of tabs. -->
+        <attr name="tab_paddingTop" format="dimension"/>
+        <!-- The preferred padding along the end edge of tabs. -->
+        <attr name="tab_paddingEnd" format="dimension"/>
+        <!-- The preferred padding along the bottom edge of tabs. -->
+        <attr name="tab_paddingBottom" format="dimension"/>
+        <!-- The preferred padding along all edges of tabs. -->
+        <attr name="tab_padding" format="dimension"/>
+    </declare-styleable>
+</resources>

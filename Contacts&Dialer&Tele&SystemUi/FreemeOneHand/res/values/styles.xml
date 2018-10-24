@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Settings" parent="@*freeme:style/Theme.Freeme.Settings">
+        <item name="switchBarTheme">@style/ThemeOverlay.SwitchBar.SubSettings</item>
+    </style>
+    
+    <style name="AppDialog.Exclusive.Text" parent="android:Widget">
+        <item name="android:textAppearance">?android:textAppearanceListItem</item>
+        <item name="android:lineSpacingExtra">@dimen/alert_dialog_text_line_spacing_extra</item>
+    </style>
+    <style name="AppDialog.Exclusive.Text.Description">
+        <item name="android:layout_marginTop">@dimen/alert_dialog_sub_body_text_padding</item>
+        <item name="android:paddingStart">@dimen/alert_dialog_description_dot_text_padding</item>
+        <item name="android:textAppearance">?android:textAppearanceListItemSecondary</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+</resources>

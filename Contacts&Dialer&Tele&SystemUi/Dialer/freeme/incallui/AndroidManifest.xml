@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- screen saver -->
+    <uses-permission android:name="android.permission.READ_DREAM_STATE" />
+    <uses-permission android:name="android.permission.WRITE_DREAM_STATE" />
+
+    <application>
+        <service android:name="com.freeme.incallui.floating.FreemeInCallFloatingService" />
+    </application>
+
+</manifest>

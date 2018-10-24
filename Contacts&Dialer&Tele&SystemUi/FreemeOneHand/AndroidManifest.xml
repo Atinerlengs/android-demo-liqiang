@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.freeme.onehand"
+    android:sharedUserId="android.uid.systemui">
+
+    <uses-sdk
+        android:minSdkVersion="24"/>
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SET_PROCESS_LIMIT"/>
+
+    <application
+        android:allowBackup="false"
+        android:icon="@android:mipmap/sym_def_app_icon"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="false">
+        <service
+            android:name=".OneHandService"
+            android:label="@string/app_name"
+            android:permission="android.permission.WRITE_SECURE_SETTINGS">
+            <intent-filter>
+                <action android:name="com.freeme.action.onehand.SERVICE"/>
+                <action android:name="com.freeme.action.onehand.SERVICE_SCREEN_OFF"/>
+            </intent-filter>
+        </service>
+        <receiver
+            android:name=".OneHandBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".settings.OneHandSettingsActivity"
+            android:label="@string/onehand_settings_title"
+            android:theme="@style/AppTheme.Settings"
+            android:configChanges="keyboardHidden|screenSize|mnc|mcc"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.android.settings"
+            android:process="com.android.settings"
+            android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.freeme.intent.action.onehand.SETTINGS"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            </intent-filter>
+            <meta-data android:name="com.android.settings.title"
+                       android:resource="@string/onehand_settings_title" />
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.freeme.onehand.settings.OneHandSettingsFragment" />
+        </activity>
+    </application>
+</manifest>

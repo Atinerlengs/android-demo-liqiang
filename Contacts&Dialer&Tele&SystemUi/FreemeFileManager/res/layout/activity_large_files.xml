@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tv_custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/main_page_padding_top">
+
+    <com.freeme.filemanager.view.ListItemTextView
+        android:id="@+id/large_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tv_custom:background_res="@drawable/listitem_backgroud_head_freeme"
+        tv_custom:left_text="@string/category_video"
+        tv_custom:right_text_visible="gone"
+        tv_custom:right_image_visible="visible">
+    </com.freeme.filemanager.view.ListItemTextView>
+    <include layout="@layout/widget_divider_view_small_freeme" />
+
+    <com.freeme.filemanager.view.ListItemTextView
+        android:id="@+id/large_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tv_custom:background_res="@drawable/listitem_backgroud_middle_freeme"
+        tv_custom:left_text="@string/category_picture"
+        tv_custom:right_text_visible="gone"
+        tv_custom:right_image_visible="visible">
+    </com.freeme.filemanager.view.ListItemTextView>
+    <include layout="@layout/widget_divider_view_small_freeme" />
+
+    <com.freeme.filemanager.view.ListItemTextView
+        android:id="@+id/large_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tv_custom:background_res="@drawable/listitem_backgroud_middle_freeme"
+        tv_custom:left_text="@string/category_music"
+        tv_custom:right_text_visible="gone"
+        tv_custom:right_image_visible="visible">
+    </com.freeme.filemanager.view.ListItemTextView>
+    <include layout="@layout/widget_divider_view_small_freeme" />
+
+    <com.freeme.filemanager.view.ListItemTextView
+        android:id="@+id/large_doc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tv_custom:background_res="@drawable/listitem_backgroud_middle_freeme"
+        tv_custom:left_text="@string/category_document"
+        tv_custom:right_text_visible="gone"
+        tv_custom:right_image_visible="visible">
+    </com.freeme.filemanager.view.ListItemTextView>
+    <include layout="@layout/widget_divider_view_small_freeme" />
+
+    <com.freeme.filemanager.view.ListItemTextView
+        android:id="@+id/large_apk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tv_custom:background_res="@drawable/listitem_backgroud_middle_freeme"
+        tv_custom:left_text="@string/category_apk"
+        tv_custom:right_text_visible="gone"
+        tv_custom:right_image_visible="visible">
+    </com.freeme.filemanager.view.ListItemTextView>
+    <include layout="@layout/widget_divider_view_small_freeme" />
+
+    <com.freeme.filemanager.view.ListItemTextView
+        android:id="@+id/large_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tv_custom:background_res="@drawable/listitem_backgroud_tail_freeme"
+        tv_custom:left_text="@string/category_other"
+        tv_custom:right_text_visible="gone"
+        tv_custom:right_image_visible="visible">
+    </com.freeme.filemanager.view.ListItemTextView>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SelectableItem"
+    class="com.freeme.contacts.quickcontact.FreemeSettingEntryCardView$SettingsEntryView"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/freeme_quick_content_button_height"
+    android:minHeight="@dimen/editor_min_line_item_height"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/expanding_entry_card_item_padding_start">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:textColor="@color/freeme_quick_contact_textcolor"
+        android:textDirection="locale"
+        android:textSize="@dimen/contact_common_text_size" />
+
+    <View
+        android:id="@+id/contact_settings_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/freeme_list_divider_color"/>
+</view>

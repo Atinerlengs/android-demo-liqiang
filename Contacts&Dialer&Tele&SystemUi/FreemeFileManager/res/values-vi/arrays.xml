@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="group_item_names">
+        <item>Tập tin tạm thời của hệ thống</item>
+        <item>Tập tin chứa bản lưu ảnh thu nhỏ</item>
+        <item>Bộ nhớ đệm chương trình ứng dụng</item>
+        <item>Tập tin trống</item>
+        <item>Gỡ bỏ chương trình</item>
+    </string-array>
+</resources>

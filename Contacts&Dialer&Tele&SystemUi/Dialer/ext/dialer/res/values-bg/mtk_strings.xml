@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Невалидно</string>
+    <string name="conf_call_member_list">Списък членове</string>
+    <string name="conf_call_participant_answered">Отговорено</string>
+    <string name="conf_call_participant_missed">"Пропуснати"</string>
+    <string name="calls_over_wifi">ОбажданиятащебъдатпрезWi-Fi</string>
+    <string name="connect_to_wifi">Свържете се към Wi-Fi за осъществяване на повиквания</string>
+    <string name="wfc_notification_summary">Чукнететукзадостъпдопредпочитания</string>
+    <string name="wfc_notification_summary_fail">Натиснете тук, за да видите наличните мрежи</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"Обаждане чрез SIP"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> разблокиране неуспешно</string>
+    <string name="menu_select_all">"Избираненавсички"</string>
+    <string name="selected_item_count">Избрани <xliff:g id="count">%d</xliff:g></string>
+    <string name="multichoice_no_select_alert">"Няма избран елемент."</string>
+    <string name="deleteCallLogConfirmation_title">Да изтрием регистъра на повиквания?</string>
+    <string name="deleteCallLogConfirmation_message">Настоявате ли да изтрием избраните регистр.повиквания?</string>
+    <string name="recentCalls_delete">"Изтриване"</string>
+    <string name="deleting_call_log">Изтриване регистъра на повиквания</string>
+    <string name="toast_call_detail_error">"Данните не са налице"</string>
+    <string name="calllogList">"История на обажданията"</string>
+    <string name="calllogHint">Търсене регистр. Повиквания</string>
+    <string name="calllog_description">Входящи, изходящи и пропуснати</string>
+    <string name="noMatchingCalllogs">Няма съвпадащи регистрирани повиквания</string>
+    <string name="titleJoinContactDataWith">"Сливане на контакти"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> регистрирани повиквания</item>
+        <item quantity="one">" 1 хронология на повикване"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Влезете не е намерен Обадете</string>
+    <string name="search_results_for">Резултати от търсене <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none">"Откажи всички"</string>
+</resources>

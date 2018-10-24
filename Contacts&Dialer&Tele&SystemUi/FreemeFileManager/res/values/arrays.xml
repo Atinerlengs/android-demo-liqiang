@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="group_item_names">
+        <item>System caches</item>
+        <item>Memory caches</item>
+        <item>Apk packages</item>
+        <item>Temporary files</item>
+        <item>App residual</item>
+    </string-array>
+
+    <string-array name="bottom_dialog_items_tab0_singlefile">
+        <item>@string/encryption_menu</item>
+        <item>@string/details</item>
+        <item>@string/share</item>
+    </string-array>
+
+    <string-array name="bottom_dialog_items_tab1_singlefile">
+        <item>@string/operation_copy</item>
+        <item>@string/operation_compress</item>
+        <item>@string/rename</item>
+        <item>@string/encryption_menu</item>
+        <item>@string/details</item>
+        <item>@string/share</item>
+    </string-array>
+
+    <string-array name="bottom_dialog_items_tab1_singledir">
+        <item>@string/operation_copy</item>
+        <item>@string/operation_compress</item>
+        <item>@string/rename</item>
+        <item>@string/details</item>
+    </string-array>
+
+    <string-array name="bottom_dialog_items_tab1_singlezip">
+        <item>@string/operation_copy</item>
+        <item>@string/rename</item>
+        <item>@string/encryption_menu</item>
+        <item>@string/details</item>
+        <item>@string/share</item>
+    </string-array>
+
+    <string-array name="bottom_dialog_items_tab1_multihasdir">
+        <item>@string/operation_copy</item>
+        <item>@string/operation_compress</item>
+    </string-array>
+
+    <string-array name="bottom_dialog_items_tab1_multinodir">
+        <item>@string/operation_copy</item>
+        <item>@string/operation_compress</item>
+        <item>@string/encryption_menu</item>
+        <item>@string/share</item>
+    </string-array>
+
+    <string-array name="bottom_dialog_items_tab1_multizip">
+        <item>@string/operation_copy</item>
+        <item>@string/encryption_menu</item>
+        <item>@string/share</item>
+    </string-array>
+
+    <string-array name="safe_category_list">
+        <item>@string/category_music</item>
+        <item>@string/category_video</item>
+        <item>@string/category_picture</item>
+        <item>@string/category_document</item>
+        <item>@string/category_other</item>
+    </string-array>
+
+    <string-array name="bottom_dialog_safe_mode_pattern">
+        <item>@string/set_unlock_password_title</item>
+        <item>@string/set_unlock_pin_title</item>
+    </string-array>
+
+    <string-array name="bottom_dialog_safe_mode_pin">
+        <item>@string/set_unlock_pattern_title</item>
+        <item>@string/set_unlock_password_title</item>
+    </string-array>
+
+    <string-array name="bottom_dialog_safe_mode_password">
+        <item>@string/set_unlock_pattern_title</item>
+        <item>@string/set_unlock_pin_title</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/freeme_qs_costomizer_back_pressed" android:state_pressed="true"/>
+    <item android:drawable="@drawable/freeme_qs_customizer_back_unpressed" android:state_pressed="false"/>
+
+</selector>

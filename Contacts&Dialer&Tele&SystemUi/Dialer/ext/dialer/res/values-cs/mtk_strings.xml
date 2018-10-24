@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Neplatné</string>
+    <string name="conf_call_member_list">Seznam členů</string>
+    <string name="conf_call_participant_answered">Odpovězeno</string>
+    <string name="conf_call_participant_missed">"Zmeškané"</string>
+    <string name="calls_over_wifi">VoláníbudouvedenapřesWi-Fi</string>
+    <string name="connect_to_wifi">Připojit k Wi-Fi pro volání</string>
+    <string name="wfc_notification_summary">Klepnutímzdepřejdetenapreference</string>
+    <string name="wfc_notification_summary_fail">Klepnutím zde zobrazíte dostupné sítě</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"Volání SIP"</string>
+    <string name="snackbar_number_unblocked_failed">Odblokování <xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> se nezdařilo</string>
+    <string name="menu_select_all">"Vybratvše"</string>
+    <string name="selected_item_count">  <xliff:g id="count">%d</xliff:g> vybráno </string>
+    <string name="multichoice_no_select_alert">"Není vybrána žádná položka."</string>
+    <string name="deleteCallLogConfirmation_title">Odstranit protokol(y) volání?</string>
+    <string name="deleteCallLogConfirmation_message">Opravdu chcete odstranit vybraný(é) protokol(y) volání?</string>
+    <string name="recentCalls_delete">"Smazat"</string>
+    <string name="deleting_call_log">Odstraňování protokolu volání...</string>
+    <string name="toast_call_detail_error">"Podrobnosti nejsou k dispozici."</string>
+    <string name="calllogList">"Historie volání"</string>
+    <string name="calllogHint">Hledat protokoly volání</string>
+    <string name="calllog_description">Příchozí, odchozí a zmeškaná volání</string>
+    <string name="noMatchingCalllogs">Nebyl nalezen žádný odpovídající protokol volání.</string>
+    <string name="titleJoinContactDataWith">"Spojit kontakty"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other">  <xliff:g id="count">%d</xliff:g> protokoly volání </item>
+        <item quantity="one">„1 protokol volání“</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Protokol volání nenalezen</string>
+    <string name="search_results_for">Výsledky hledání pro:  <xliff:g id="query">%s</xliff:g>  </string>
+    <string name="menu_select_none"> „Zrušit výběr“</string>
+</resources>

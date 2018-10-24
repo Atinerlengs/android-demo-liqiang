@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">無效</string>
+    <string name="conf_call_member_list">會員名冊</string>
+    <string name="conf_call_participant_answered">已回覆</string>
+    <string name="conf_call_participant_missed">"未接來電"</string>
+    <string name="calls_over_wifi">通話改以Wi-Fi連接</string>
+    <string name="connect_to_wifi">連接Wi-Fi以進行通話</string>
+    <string name="wfc_notification_summary">觸按此處，進入喜好選單</string>
+    <string name="wfc_notification_summary_fail">觸碰此處查看可用的網路</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"SIP 通話"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> 解鎖失敗</string>
+    <string name="menu_select_all">"全選"</string>
+    <string name="selected_item_count">已選定 <xliff:g id="count">%d</xliff:g> 個</string>
+    <string name="multichoice_no_select_alert">"未選取任何項目。"</string>
+    <string name="deleteCallLogConfirmation_title">刪除通話紀錄?</string>
+    <string name="deleteCallLogConfirmation_message">確定要刪除所選的通話紀錄嗎？</string>
+    <string name="recentCalls_delete">"刪除"</string>
+    <string name="deleting_call_log">正在刪除通話紀錄…</string>
+    <string name="toast_call_detail_error">"沒有詳細資料"</string>
+    <string name="calllogList">"通話紀錄"</string>
+    <string name="calllogHint">搜尋通話紀錄</string>
+    <string name="calllog_description">已接、撥出及未接來電</string>
+    <string name="noMatchingCalllogs">"找不到相符的通話紀錄。"</string>
+    <string name="titleJoinContactDataWith">"合併聯絡人"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> 筆通話紀錄</item>
+        <item quantity="one">"1個通話記錄"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">找不到通話紀錄</string>
+    <string name="search_results_for">此項目之搜尋結果：<xliff:g id="QUERY">%s</xliff:g></string>
+    <string name="menu_select_none">"取消全選"</string>
+</resources>

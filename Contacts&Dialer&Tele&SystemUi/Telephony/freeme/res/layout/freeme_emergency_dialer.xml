@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="19dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="36dp">
+            <!-- FrameLayout -->
+            <com.android.phone.EmergencyActionGroup
+                android:id="@+id/emergency_action_group"
+                android:layout_width="138dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/freeme_ic_personal_emergency">
+
+                <!-- Button that says: Emergency Information -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/action1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"/>
+
+                    <Button
+                        android:id="@+id/action2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"/>
+
+                    <Button
+                        android:id="@+id/action3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"/>
+                </LinearLayout>
+
+                <!-- View that shows up on top of "emergency information" button
+                and asks you to tap again to confirm the action -->
+                <FrameLayout
+                    android:id="@+id/selected_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="invisible">
+
+                    <View
+                        style="?android:attr/buttonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/freeme_ic_personal_emergency_red"
+                        android:clickable="false"
+                        android:focusable="false"/>
+
+                    <View
+                        android:id="@+id/ripple_view"
+                        style="?android:attr/buttonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/freeme_ic_personal_emergency"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:visibility="invisible"/>
+
+                    <LinearLayout
+                        style="?android:attr/buttonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#00000000"
+                        android:padding="0dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/selected_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceButton"
+                            android:textColor="@android:color/white"/>
+
+                        <TextView
+                            android:id="@+id/launch_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/emergency_action_launch_hint"
+                            android:textColor="@android:color/white"
+                            android:textStyle="italic"/>
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </com.android.phone.EmergencyActionGroup>
+        </RelativeLayout>
+
+        <include
+            layout="@layout/freeme_dialpad_view_unthemed"
+            android:theme="?attr/dialpadTheme"/>
+
+    </LinearLayout>
+</FrameLayout>

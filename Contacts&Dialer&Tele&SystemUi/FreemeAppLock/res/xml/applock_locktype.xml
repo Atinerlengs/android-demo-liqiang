@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:freemeprv="http://schemas.android.com/apk/prv/res/freeme">
+    <PreferenceCategory>
+        <com.freeme.preference.FreemeJumpPreference
+            android:key="applock_locktype_pattern"
+            freemeprv:freemeUseStatusText="true"
+            android:summary="@string/unlock_set_unlock_pattern_summary"
+            android:title="@string/unlock_set_unlock_pattern_title" />
+        <com.freeme.preference.FreemeJumpPreference
+            android:key="applock_locktype_pin"
+            freemeprv:freemeUseStatusText="true"
+            android:summary="@string/unlock_set_unlock_pin_summary"
+            android:title="@string/unlock_set_unlock_pin_title" />
+        <com.freeme.preference.FreemeJumpPreference
+            android:key="applock_locktype_password"
+            freemeprv:freemeUseStatusText="true"
+            android:summary="@string/unlock_set_unlock_password_summary"
+            android:title="@string/unlock_set_unlock_password_title" />
+        <SwitchPreference
+            android:key="applock_locktype_fingerprint"
+            android:title="@string/applock_type_fingerprint" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="applock_secure_lock_settings_category"
+        android:title="@string/applock_secure_lock_settings_title">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="applock_secure_lock_settings_pattern_visible_switch"
+            android:title="@string/applock_secure_lock_settings_pattern_visibility" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/group_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/freeme_list_item_height"
+        android:background="@drawable/freeme_list_item_press_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/freeme_contacts_list_item_padding_start"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="200dp"
+            android:textColor="@color/freeme_list_item_title_text_color"
+            android:textSize="@dimen/freeme_group_item_text_size" />
+
+        <TextView
+            android:id="@+id/group_member_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-1dp"
+            android:layout_weight="1"
+            android:textColor="@color/freeme_list_item_title_text_color"
+            android:textSize="@dimen/freeme_group_item_text_size" />
+
+        <ImageView
+            android:id="@+id/group_list_item_right_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/freeme_contacts_list_item_padding_start"
+            android:gravity="end"
+            android:src="@drawable/freeme_item_right_arrow_icon" />
+
+        <CheckBox
+            android:id="@+id/group_list_item_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/freeme_contacts_list_item_padding_start"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="end"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/freeme_contacts_list_item_padding_start">
+
+        <include layout="@layout/freeme_horizontal_line_view" />
+    </FrameLayout>
+</LinearLayout>

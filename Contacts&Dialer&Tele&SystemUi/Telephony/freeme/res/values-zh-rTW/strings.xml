@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- freeme.wanglei, 20170713. add cellular data switch. -->
+    <string name="open_data_network">數據網絡</string>
+    <string name="open_data_network_summary">啟動后，產生的流量將由運營商收取相應費用</string>
+    <string name="freeme_mobile_networks">移動網絡</string>
+    <string name="freeme_dial_emergency_hint">僅限緊急呼叫</string>
+
+    <string name="freeme_enable_video_calling_dialog_msg" msgid="8948186136957417948">"您必須在網路設定中啟用HD高清通話，才能開啟視訊通話功能。"</string>
+    <string name="freeme_alert_turn_off_volte">請關閉HD高清通話以完成操作。</string>
+    <string name="freem_econfirm_noimsreg_for_ctvolte_msg">中國電信當前無HD高清通話，該卡無法正常通話，是否將該卡HD高清通話關閉?</string>
+</resources>

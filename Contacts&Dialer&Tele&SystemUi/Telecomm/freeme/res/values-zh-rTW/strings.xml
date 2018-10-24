@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="freeme_error_recorder_occupied">錄音功能被佔用</string>
+    <string name="no_other_accounts">没有其他账户</string>
+
+    <string name="freeme_reject_sms_empty_forbid">拒接短信不能爲空</string>
+</resources>

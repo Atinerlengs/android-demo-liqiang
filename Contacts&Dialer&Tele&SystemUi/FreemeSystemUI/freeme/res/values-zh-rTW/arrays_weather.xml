@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="weather_style">
+        <item>晴</item>
+        <item>多雲</item>
+        <item>陰</item>
+        <item>陣雨</item>
+        <item>雷陣雨</item>
+        <item>雷陣雨幷伴有冰雹</item>
+        <item>雨夾雪</item>
+        <item>小雨</item>
+        <item>中雨</item>
+        <item>大雨</item>
+        <item>暴雨</item>
+        <item>大暴雨</item>
+        <item>特大暴雨</item>
+        <item>陣雪</item>
+        <item>小雪</item>
+        <item>中雪</item>
+        <item>大雪</item>
+        <item>暴雪</item>
+        <item>霧</item>
+        <item>凍雨</item>
+        <item>沙塵暴</item>
+        <item>小到中雨</item>
+        <item>中到大雨</item>
+        <item>大到暴雨</item>
+        <item>大暴雨</item>
+        <item>特大暴雨</item>
+        <item>小到中雪</item>
+        <item>中到大雪</item>
+        <item>大到暴雪</item>
+        <item>浮塵</item>
+        <item>揚沙</item>
+        <item>強沙塵暴</item>
+        <item>颮</item>
+        <item>龍捲風</item>
+        <item>弱高吹雪</item>
+        <item>輕霧</item>
+        <item>霾</item>
+    </string-array>
+</resources>

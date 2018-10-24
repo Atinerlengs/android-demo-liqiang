@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_move"
+        android:title="@string/operation_move"
+        android:showAsAction="never" />
+    <item android:id="@+id/action_faverite"
+        android:title="@string/operation_favorite"
+        android:showAsAction="never"/>
+    <item android:id="@+id/action_unfaverite"
+        android:title="@string/operation_unfavorite"
+        android:showAsAction="never" />
+    <item android:id="@+id/action_delete"
+        android:title="@string/delete"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_copy"
+        android:title="@string/operation_copy"
+        android:showAsAction="never"/>
+    <item android:id="@+id/action_compress"
+        android:title="@string/operation_compress"
+        android:showAsAction="never" />
+    <item android:id="@+id/rename"
+        android:visible="true"
+        android:title="@string/rename"
+        android:showAsAction="never" />
+    <item android:id="@+id/encryption"
+        android:visible="true"
+        android:title="@string/encryption_menu"
+        android:showAsAction="never" />
+    <item android:id="@+id/details"
+        android:title="@string/details"
+        android:showAsAction="never" />
+    <item android:id="@+id/share"
+        android:title="@string/share"
+        android:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_more"
+        android:title="@string/more_menu"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_select_all"
+        android:title="@string/operation_selectall"
+        android:showAsAction="always" />
+    <item android:id="@+id/action_cancel"
+        android:title="@string/operation_cancel_selectall"
+        android:showAsAction="always" />
+
+</menu>

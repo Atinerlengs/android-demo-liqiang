@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundProgressBar">
+        <attr name="arc_progress" format="integer"/>
+        <attr name="arc_angle" format="float"/>
+        <attr name="arc_stroke_width" format="dimension"/>
+        <attr name="arc_max" format="integer"/>
+
+        <attr name="arc_unfinished_color" format="color"/>
+        <attr name="arc_finished_color" format="color"/>
+
+        <attr name="arc_text_size" format="dimension"/>
+        <attr name="arc_text_color" format="color"/>
+        <attr name="arc_text2_color" format="color"/>
+
+        <attr name="arc_suffix_text" format="string"/>
+        <attr name="arc_suffix_text_size" format="dimension"/>
+        <attr name="arc_suffix_text_padding" format="dimension"/>
+
+        <attr name="arc_bottom_text" format="string"/>
+        <attr name="arc_bottom_text_size" format="dimension"/>
+
+        <attr name="arc_bottom_text2" format="string"/>
+        <attr name="arc_bottom_text2_size" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="TabButton">
+        <attr name="normal_bg_res" format="reference" />
+        <attr name="selected_bg_res" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ListItemTextView">
+        <attr name="background_res" format="reference" />
+        <attr name="left_image" format="reference" />
+        <attr name="left_image_visible">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="4" />
+            <enum name="gone" value="8" />
+        </attr>
+
+        <attr name="left_text" format="reference" />
+        <attr name="right_text" format="reference" />
+        <attr name="right_image" format="reference" />
+        <attr name="right_text_visible">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="4" />
+            <enum name="gone" value="8" />
+        </attr>
+        <attr name="right_image_visible">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="4" />
+            <enum name="gone" value="8" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="LockPatternView">
+        <attr name="aspect" format="string" />
+        <!-- Color to use when drawing LockPatternView paths. -->
+        <attr name="pathColor" format="color|reference" />
+        <!-- The regular pattern color -->
+        <attr name="regularColor" format="color|reference" />
+        <!-- The error color -->
+        <attr name="errorColor" format="color|reference" />
+        <!-- The success color -->
+        <attr name="successColor" format="color|reference"/>
+    </declare-styleable>
+    <attr name="lockPatternStyle" format="reference" />
+
+</resources>

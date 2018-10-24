@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/dial_action_layout"
+    android:layout_height="@dimen/freeme_dialpad_action_layout_height"
+    android:background="@color/freeme_dialpad_background_color"
+    android:gravity="center_horizontal"
+    android:paddingTop="@dimen/freeme_dialpad_action_btn_padding_top"
+    android:orientation="horizontal">
+
+    <include layout="@layout/freeme_dialpad_action_btn" />
+
+    <ViewStub
+        android:id="@+id/sim2_btn_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/freeme_dialpad_action_btn_padding"
+        android:inflatedId="@id/sim2_btn_layout"
+        android:layout="@layout/freeme_dialpad_action_btn" />
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="freeme_low_battery_flashlight_canot_use">電量過低，手電筒不可以使用!</string>
+    <string name="freeme_normal">聲音</string>
+    <string name="freeme_silent">靜音</string>
+    <string name="freeme_vibrate">振動</string>
+    <string name="freeme_data_connection">數據連接</string>
+    <string name="freeme_screen_recorder">螢幕錄製</string>
+    <string name="freeme_super_shot">超級截屏</string>
+    <string name="freeme_dnd_label">免打擾</string>
+    <string name="freeme_data_saver">省流量模式</string>
+
+    <string name="freeme_keyguard_emergency_back">返回</string>
+    <string name="freeme_keyguard_emergency_delete">刪除</string>
+    <string name="freeme_keyguard_pin_instructions">輸入密碼</string>
+    <string name="freeme_keyguard_pwd_instructions">輸入密碼</string>
+    <string name="freeme_keyguard_ptn_instructions">繪製圖案</string>
+
+    <string name="fingerprint_lock_out_count_down"><xliff:g id="number">%d</xliff:g>秒後重試指紋解鎖</string>
+    <string name="fingerprint_lock_out_count_down_finish">請輸入密碼或使用指紋識別</string>
+
+    <string name="freeme_notification_settings">狀態欄管理</string>
+    <string name="freeme_battery_show">顯示電量</string>
+    <string name="freeme_network_speed_show">顯示網速</string>
+    <string name="freeme_show_notifications">顯示通知圖標</string>
+    <string name="freeme_forbidden_slide_statusbar">鎖屏禁止下拉狀態欄</string>
+    <string name="freeme_carrier_label_show">顯示運營商</string>
+
+    <string name="freeme_carrier_cmcc">中國移動</string>
+
+    <string name="freeme_data_saver_enable_title">要開啓省流量模式嗎？</string>
+    <string name="freeme_data_saver_description">「省流量模式」可防止部分應用程式在背景收發資料，以節省數據用量。您目前使用的某個應用程式可以存取資料，但存取頻率可能不如平時高。舉例來說，圖片可能不會自動顯示，而必須由您輕觸後才會顯示。</string>
+
+    <string name="freeme_recents_empty_text">最近無運行應用</string>
+
+    <!-- freeme.xiaohui,20180514, FreemeLockscreen !-->
+    <string name="magazine_kg_charging">正在充電 <xliff:g id="kg_battery_level">%d</xliff:g>%%</string>
+    <string name="magazine_kg_charged">已充滿</string>
+    <string name="kg_finger_print_unlcok">使用指紋解鎖</string>
+
+    <string name="quick_status_bar_12_hour_am">上午</string>
+    <string name="quick_status_bar_12_hour_pm">下午</string>
+</resources>

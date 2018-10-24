@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingEnd="4dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <!-- Name or number of this caller -->
+        <TextView
+            android:id="@+id/conferenceCallerName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/freeme_title_text_color"
+            android:textSize="15sp"/>
+
+    </LinearLayout>  <!-- End of caller information -->
+
+
+    <!--M: add for volte conferrence member status begin, overlap with "Separate"-->
+    <TextView
+        android:id="@+id/conferenceCallerStatus"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:contentDescription="@string/goPrivate"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:scaleType="center"
+        android:singleLine="true"
+        android:textColor="#696969"
+        android:visibility="gone"/>
+    <!-- add for volte conferrence member status end-->
+
+    <!-- "Separate" (i.e. "go private") button for this caller -->
+    <ImageView
+        android:id="@+id/conferenceCallerSeparate"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="@string/goPrivate"
+        android:scaleType="center"
+        android:src="@drawable/freeme_incall_conferecnce_detach_selector"/>
+
+    <!-- "Disconnect" button which terminates the connection with this caller. -->
+    <ImageButton
+        android:id="@+id/conferenceCallerDisconnect"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="@string/conference_caller_disconnect_content_description"
+        android:scaleType="center"
+        android:src="@drawable/freeme_incall_conferecnce_hangup_selector"/>
+
+</LinearLayout>  <!-- End of single list element -->

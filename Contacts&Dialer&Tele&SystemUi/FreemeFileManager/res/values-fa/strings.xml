@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources> 
+    <string name="alert_delete_multiple">اين آيتم ها حذف می شود</string>  
+    <string name="alert_delete_single">اين آيتم حذف می شود</string>  
+    <string name="already_exists">تکراری</string>  
+    <string name="app_name">مدیر فایل</string>  
+    <string name="cancel">لغو</string>  
+    <string name="copy">کپی</string>
+    <string name="create_folder">ايجاد پوشه</string>
+    <string name="cut">برش</string>
+    <string name="cut_fail">بروز اشکال در برش</string>
+    <string name="delete">حذف</string>  
+    <string name="delete_deny">اجازه حذف وجود ندارد</string>  
+    <string name="delete_fail">بروز اشکال در حذف</string>  
+    <string name="deleting">در حال حذف</string>  
+    <string name="deselect_all">حذف انتخاب همه</string>  
+    <string name="details">جزييات</string>  
+    <string name="done">انجام شد</string>  
+    <string name="edit">ويرايش</string>  
+    <string name="empty_msg">(پوشه خالی)</string>  
+    <string name="executable">قابل اجرا</string>  
+    <string name="insufficient_memory">حافظه کافی نيست</string>  
+    <string name="invalid_empty_name">نام فايل يا پوشه نمی تواند خالی باشد</string>  
+    <string name="invalid_file_name">نام فايل يا پوشه مشخص شده خيلی طولانی است</string>  
+    <string name="loading">در حال بارگذاری</string>  
+    <string name="modified_time">تغيير داده شد</string>  
+    <string name="name">نام</string>  
+    <string name="new_folder">پوشه جديد</string>  
+    <string name="no">خير</string>  
+    <string name="ok">تاييد</string>  
+    <string name="paste">چسباندن</string>  
+    <string name="pasting">در حال چسباندن</string>  
+    <string name="paste_fail">بروز اشکال در چسباندن</string>  
+    <string name="paste_same_folder">چسباندن %s در پوشه مشابه امکان پذیر نیست</string>  
+    <string name="readable">قابل خواندن</string>  
+    <string name="rename">تغيير نام</string>  
+    <string name="save">ذخيره</string>  
+    <string name="select_all">انتخاب همه</string>  
+    <string name="send_file">ارسال فايل</string>  
+    <string name="share">اشتراک گذاری</string>  
+    <string name="size">اندازه</string>  
+    <string name="sort_by">ترتيب بر اساس</string>  
+    <string name="support_fail" product="default">اين توسط تلفن پشتيبانی نمی شود</string>
+    <string name="wait">"لطفاً منتظر بمانید…"</string>  
+    <string name="writable">قابل نوشتن</string>  
+    <string name="yes">بله</string>  
+    <string name="confirm_rename">تغییر نام را تایید کنید</string>  
+    <string name="msg_rename_ext">شما پسوند فایل را تغییر می دهید، که ممکن است موجب شناخته نشدن فایل شود. آیا از این کار مطمئن هستید؟</string>  
+    <string name="msg_unable_open_file">باز کردن فایل امکان پذیر نیست.</string>  
+    <string-array name="sort_by"> 
+        <item>نوع</item>  
+        <item>نام (A-Z)</item>  
+        <item>اندازه (نزولی)</item>  
+        <item>زمان (جديد-قديمی)</item> 
+    </string-array>  
+    <string name="more">بیشتر</string>  
+    <string name="selected">انتخاب شده</string>  
+    <string name="msg_change_name">عملیات ناموفق بود، لطفا از یک نام متفاوت استفاده کنید.</string>
+    <string name="invalid_char_prompt">کاراکتر نامعتبر وارد کرده اید</string>
+    <string name="unmounted">%1$s برداشته شد</string>
+</resources>

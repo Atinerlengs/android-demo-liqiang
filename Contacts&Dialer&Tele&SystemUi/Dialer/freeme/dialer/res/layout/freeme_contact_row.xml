@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/freeme_list_item_bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/freeme_list_item_header" />
+
+    <RelativeLayout
+        android:id="@+id/click_target"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/freeme_list_item_height"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingEnd="@dimen/freeme_contacts_list_item_padding_end"
+        android:paddingStart="@dimen/freeme_contacts_list_item_padding_start">
+
+        <CheckBox
+            android:id="@+id/contacts_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/contacts_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/contacts_select"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@id/contacts_account"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/freeme_list_item_title_text_color"
+            android:textSize="@dimen/freeme_list_item_title_text_size" />
+
+        <FrameLayout
+            android:id="@+id/list_bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <include layout="@layout/freeme_horizontal_line_view" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

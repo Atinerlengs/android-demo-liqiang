@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/recents_alpha_background">
+
+    <include layout="@layout/recents_overlapping_empty_home" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/recents_overlapping_container"
+        android:visibility="invisible">
+        <com.freeme.recents.presentation.view.component.overlappingstackview.OverlappingStackView
+            android:id="@+id/overlappingview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <include layout="@layout/recents_memory_panel"/>
+</LinearLayout>

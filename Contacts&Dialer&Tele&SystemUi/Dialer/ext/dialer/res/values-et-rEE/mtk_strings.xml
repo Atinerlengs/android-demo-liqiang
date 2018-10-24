@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Vigane</string>
+    <string name="conf_call_member_list">Liikmete nimekiri</string>
+    <string name="conf_call_participant_answered">Vastatud</string>
+    <string name="conf_call_participant_missed">"Vastamata"</string>
+    <string name="calls_over_wifi">KõnedtehakseüleWi-Fi</string>
+    <string name="connect_to_wifi">Helistamiseks ühendage Wi-Fi</string>
+    <string name="wfc_notification_summary">Koputagesiin,etsaadajuurdepääsueelistustele</string>
+    <string name="wfc_notification_summary_fail">Saadaolevate võrkude vaatamiseks koputage siia</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"SIP-kõne"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> blokeeringu eemaldamine ebaõnnestus</string>
+    <string name="menu_select_all">"Valikõik"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> valitud</string>
+    <string name="multichoice_no_select_alert">"Ühtegi üksust ei ole valitud."</string>
+    <string name="deleteCallLogConfirmation_title">Kustutan kõnelogi(d)?</string>
+    <string name="deleteCallLogConfirmation_message">Kas soovid valitud kõnelogi(d) kindlasti kustutada?</string>
+    <string name="recentCalls_delete">"Kustuta"</string>
+    <string name="deleting_call_log">Kõnelogi Kustutamine...</string>
+    <string name="toast_call_detail_error">"Üksikasjad ei ole saadaval"</string>
+    <string name="calllogList">"Kõneajalugu"</string>
+    <string name="calllogHint">Otsi kõnelogisid</string>
+    <string name="calllog_description">Sisenevad, väljuvad ja vastamata kõned</string>
+    <string name="noMatchingCalllogs">Sobivat kõnelogi ei leitud.</string>
+    <string name="titleJoinContactDataWith">Liida kontaktid</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> kõnelogi</item>
+        <item quantity="one">"1 kõnelogi"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Kõnelogi ei leitud</string>
+    <string name="search_results_for">Otsingutulemused: <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none">"Tühista kõik valikud"</string>
+</resources>

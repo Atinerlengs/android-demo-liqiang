@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.android.keyguard.KeyguardPatternView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidprv="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/keyguard_pattern_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    androidprv:layout_maxHeight="@dimen/keyguard_pin_pattern_maxheight"
+    androidprv:layout_maxWidth="@dimen/keyguard_security_width"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <include layout="@layout/keyguard_message_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <include layout="@layout/freeme_keyguard_fp_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.android.internal.widget.LockPatternView
+                android:id="@+id/lockPatternView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dip"
+                android:layout_marginTop="45dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:clipChildren="false"
+                android:clipToPadding="false" />
+
+        </LinearLayout>
+
+        <include layout="@layout/keyguard_eca"
+            android:id="@+id/keyguard_selector_fade_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="26dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:gravity="center_horizontal" />
+
+    </FrameLayout>
+
+</com.android.keyguard.KeyguardPatternView>

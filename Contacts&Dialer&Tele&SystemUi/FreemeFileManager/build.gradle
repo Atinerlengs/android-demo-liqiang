@@ -1,0 +1,120 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.0'
+    }
+}
+
+ext {
+    applicationId = "com.freeme.filemanager"
+    versionCode = 310
+    versionName = "3.1.0"
+    compileSdkVersion = 27
+    buildToolsVersion = '26.0.2'
+    minSdkVersion = 21
+    targetSdkVersion = 27
+    sourceCompatibility = JavaVersion.VERSION_1_7
+    targetCompatibility = JavaVersion.VERSION_1_7
+
+    useCertificate = 'platform'
+    useFreemePlarformRes = true
+    if (rootProject.file('local.properties').exists()) {
+        Properties localProperties = new Properties()
+        localProperties.load(rootProject.file('local.properties').newDataInputStream())
+
+        sdkDir = localProperties.getProperty('sdk.dir')
+        sdkFreemeDir = file("${sdkDir}/extras/freeme").path
+        sdkFreemeSigningsDir = file("${sdkFreemeDir}/signings").path
+        sdkFreemePlatformDir = file("${sdkFreemeDir}/platforms/android-v${compileSdkVersion}").path
+
+        // signing
+        if (file("${sdkFreemeSigningsDir}/signings.properties").exists()) {
+            Properties signingsProperties = new Properties()
+            signingsProperties.load(file("${sdkFreemeSigningsDir}/signings.properties").newDataInputStream())
+
+            storeFile = file("${sdkFreemeSigningsDir}/${signingsProperties["key.${useCertificate}.store"]}").path
+            storePassword = signingsProperties["key.${useCertificate}.store.password"]
+            keyAlias = signingsProperties["key.${useCertificate}.alias"]
+            keyPassword = signingsProperties["key.${useCertificate}.password"]
+        }
+        // sdk
+        if (file("${sdkFreemePlatformDir}").exists()) {
+            if (useFreemePlarformRes && file("${sdkFreemePlatformDir}/freeme-framework-res.apk").exists()) {
+                sdkFreemePlatformRes = file("${sdkFreemePlatformDir}/freeme-framework-res.apk").path
+            }
+        }
+    }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        applicationId rootProject.applicationId
+        minSdkVersion  rootProject.minSdkVersion
+        targetSdkVersion  rootProject.targetSdkVersion
+        versionCode rootProject.versionCode
+        versionName rootProject.versionName
+    }
+
+    compileOptions {
+        sourceCompatibility rootProject.sourceCompatibility
+        targetCompatibility rootProject.targetCompatibility
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+    }
+    signingConfigs {
+        release {
+            storeFile file(rootProject.storeFile)
+            storePassword rootProject.storePassword
+            keyAlias rootProject.keyAlias
+            keyPassword rootProject.keyPassword
+        }
+    }
+    buildTypes {
+        release {
+            shrinkResources false
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+        disable 'MissingTranslation'
+    }
+
+    aaptOptions {
+        if (rootProject.sdkFreemePlatformRes) {
+            additionalParameters '-I', rootProject.sdkFreemePlatformRes
+        }
+    }
+}
+
+dependencies {
+    compile project(':freeme-support-design')
+    compile 'com.android.support:support-v4:24.1.1'
+    compile 'com.android.support:support-v13:24.1.1'
+}

@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="applicationLabel">"Կոնտակտներ"</string>
+    <string name="contactsList">"Կոնտակտներ"</string>
+    <string name="shortcut_add_contact">"Ավելացնել կոնտակտ"</string>
+    <string name="shortcutContact">"կոնտակտ"</string>
+    <string name="shortcutDialContact">"Ուղիղ համարհավաքում"</string>
+    <string name="shortcutMessageContact">"Ուղիղ հաղորդագրություն"</string>
+    <string name="shortcutActivityTitle"/>
+    <string name="contactInsertOrEditActivityTitle">"Ավելացնել կոնտակտին"</string>
+    <string name="contactPickerActivityTitle">"Ընտրել կոնտակտ"</string>
+    <string name="groupMemberPickerActivityTitle">"Ընտրել"</string>
+    <string name="header_entry_contact_list_adapter_header_title">"Ստեղծելնորկոնտակտ"</string>
+    <string name="searchHint">"Որոնել կոնտակտներ"</string>
+    <string name="menu_addStar">"Ավելացնել ընտրյալներում"</string>
+    <string name="menu_removeStar">Հանել ընտրյալներից</string>
+    <string name="description_action_menu_remove_star">"Հեռացված է ընտրյալներից"</string>
+    <string name="description_action_menu_add_star">"Ավելացված է ընտրյալներում"</string>
+    <string name="menu_editContact">"Խմբագրել"</string>
+    <string name="menu_deleteContact">"Ջնջել"</string>
+    <string name="menu_change_photo">Փոխել լուսանկարը</string>
+    <string name="menu_create_contact_shortcut"/>
+    <string name="menu_splitAggregate">"Տրոհել"</string>
+    <string name="menu_editGroup"/>
+    <string name="menu_renameGroup"/>
+    <string name="menu_deleteGroup"/>
+    <string name="menu_addToGroup">"Ավելացնել կոնտակտ"</string>
+    <string name="menu_selectForGroup"/>
+    <string name="menu_addContactsToGroup">Հավելել կոնտակտներ</string>
+    <string name="menu_removeFromGroup"/>
+    <string name="menu_new_group_action_bar"/>
+    <string name="splitConfirmation">"Տրոհե՞լ այս կոնտակտը մի քանի կոնտակտների:"</string>
+    <string name="splitConfirmation_positive_button">"Տրոհել"</string>
+    <string name="splitConfirmationWithPendingChanges">"Պահե՞լ արդեն իսկ կատարված փոփոխությունները և տրոհել այս կոնտակտը մի քանի կոնտակտների:"</string>
+    <string name="splitConfirmationWithPendingChanges_positive_button">"Պահել և տրոհել"</string>
+    <string name="joinConfirmation">"Պահե՞լ արդեն իսկ կատարված փոփոխությունները և միավորել ընտրված կոնտակտի հետ:"</string>
+    <string name="joinConfirmation_positive_button">"Պահել և միավորել"</string>
+    <string name="contacts_linking_progress_bar"/>
+    <string name="contacts_unlinking_progress_bar"/>
+    <string name="menu_joinAggregate">"հղում"</string>
+    <string name="menu_linkedContacts"/>
+    <string name="menu_save">"Պահել"</string>
+    <string name="titleJoinContactDataWith">"ՄԻԱՎՈՐԵԼ ԿՈՆՏԱԿՏՆԵՐԸ"</string>
+    <string name="blurbJoinContactDataWith">"Ընտրեք կոնտակտը, որը ցանկանում եք միավորել <xliff:g id="NAME">%s</xliff:g>-ի հետ՝"</string>
+    <string name="separatorJoinAggregateSuggestions">"Առաջարկվող կոնտակները"</string>
+    <string name="separatorJoinAggregateAll">"ԲՈԼՈՐ ԿՈՆՏԱԿՏՆԵՐԸ"</string>
+    <string name="contactsJoinedNamedMessage"/>
+    <string name="contactsJoinedMessage">"Կոնտակտները միավորված են"</string>
+    <string name="contacts_deleted_one_named_toast"/>
+    <string name="contacts_deleted_two_named_toast"/>
+    <string name="contacts_deleted_many_named_toast"/>
+    <plurals name="contacts_deleted_toast">
+        <item quantity="one">Կոնտակտները ջնջվեցին</item>
+        <item quantity="other">"Կոնտակտներըջնջվեցին"</item>
+    </plurals>
+    <plurals name="contacts_count">
+        <item quantity="one"/>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> կոնտակտներ</item>
+    </plurals>
+    <plurals name="contacts_count_with_account">
+        <item quantity="one"/>
+        <item quantity="other"/>
+    </plurals>
+    <string name="title_from_google"/>
+    <string name="title_from_other_accounts"/>
+    <string name="menu_set_ring_tone">"Կարգավորել զանգերանգը"</string>
+    <string name="menu_redirect_calls_to_vm"/>
+    <string name="menu_unredirect_calls_to_vm"/>
+    <string name="readOnlyContactWarning"/>
+    <string name="readOnlyContactWarning_positive_button"/>
+    <string name="readOnlyContactDeleteConfirmation"/>
+    <string name="single_delete_confirmation">"Ջնջե՞լ այս կոնտակտը:"</string>
+    <string name="batch_delete_confirmation">"Ջնջե՞լ ընտրված կոնտակտները:"</string>
+    <string name="batch_delete_read_only_contact_confirmation">"Ձեր միայն կարդալու հաշիվների կոնտակտները չեն կարող ջնջվել, սակայն կարող են թաքցվել:"</string>
+    <string name="batch_delete_multiple_accounts_confirmation">"Ջնջվող կոնտակտները պարունակում են տվյալներ մի քանի հաշիվներից: Միայն կարդալու հաշիվների տվյալները կթաքցվեն, սակայն չեն ջնջվի:"</string>
+    <string name="multipleContactDeleteConfirmation">"Եթե ջնջեք այս կոնտակտը, կջնջվեն մի քանի հաշիվների տվյալներ:"</string>
+    <string name="deleteConfirmation">"Ջնջե՞լ այս կոնտակտը:"</string>
+    <string name="deleteConfirmation_positive_button">"Ջնջել"</string>
+    <string name="invalidContactMessage"/>
+    <string name="createContactShortcutSuccessful_NoName">"Կոնտակտն ավելացվեց Հիմնական էկրանում:"</string>
+    <string name="createContactShortcutSuccessful">"<xliff:g id="NAME">%s</xliff:g> կոնտակտն ավելացվեց Հիմնական էկրանում:"</string>
+    <skip/>
+    <string name="photoPickerNotFoundText"/>
+    <string name="attach_photo_dialog_title">"կոնտակտիլուսանկարը"</string>
+    <string name="customLabelPickerTitle">"Պիտակի հատուկ անունը"</string>
+    <string name="removePhoto">"Հեռացնել լուսանկարը"</string>
+    <string name="noContacts"/>
+    <string name="emptyGroup"/>
+    <string name="emptyAccount"/>
+    <string name="emptyMainList"/>
+    <string name="contactSavedNamedToast"/>
+    <string name="contactSavedToast">"Կոնտակտը պահվեց"</string>
+    <string name="contactUnlinkedToast">"Կոնտակտներն անջատվեցին"</string>
+    <string name="contactSavedErrorToast"/>
+    <string name="contactUnlinkErrorToast"/>
+    <string name="contactJoinErrorToast"/>
+    <string name="contactGenericErrorToast"/>
+    <string name="contactPhotoSavedErrorToast"/>
+    <string name="groupLoadErrorToast"/>
+    <string name="groupDeletedToast"/>
+    <string name="groupCreatedToast"/>
+    <string name="groupCreateFailedToast"/>
+    <string name="groupUpdatedToast"/>
+    <string name="groupMembersRemovedToast"/>
+    <string name="groupMembersAddedToast"/>
+    <string name="groupSavedErrorToast"/>
+    <string name="groupExistsErrorMessage"/>
+    <string name="groupSomeContactsNoEmailsToast"/>
+    <string name="groupSomeContactsNoPhonesToast"/>
+    <string name="menu_sendEmailOption">"Ուղարկել նամակ"</string>
+    <string name="menu_sendMessageOption">Ուղարկել հաղորդագրություն</string>
+    <string name="pickerSelectContactsActivityTitle"/>
+    <string name="send_to_selection">"Ուղարկել"</string>
+    <string name="listFoundAllContactsZero">"Կոնտակտներ չկան"</string>
+    <string name="add_contact_dlg_message_fmt">"Ավելացնե՞լ «<xliff:g id="EMAIL">%s</xliff:g>»-ը կոնտակտներին:"</string>
+    <string name="search_settings_description">"Ձեր կոնտակտների անունները"</string>
+    <string name="quickcontact_transparent_view_description">"Սեղմեք՝ նախորդ էկրանին վերադառնալու համար"</string>
+    <string name="quickcontact_add_phone_number">"Ավելացնել հեռախոսահամար"</string>
+    <string name="quickcontact_add_email">"Ավելացնել էլփոստ"</string>
+    <string name="missing_app">Չի գտնվել ոչ մի աշխատածրագիր այս գործողությունը կատարելու համար:</string>
+    <string name="menu_share">"Տարածել"</string>
+    <string name="menu_add_contact">"Ավելացնել կոնտակտներում"</string>
+    <string name="menu_add_contacts">"Ավելացնել"</string>
+    <plurals name="title_share_via">
+        <item quantity="one">"Տարածել կոնտակտը"</item>
+        <item quantity="other"/>
+    </plurals>
+    <string name="dialog_new_group_account">"Ընտրեք հաշիվը"</string>
+    <string name="group_name_dialog_insert_title"/>
+    <string name="group_name_dialog_update_title"/>
+    <string name="group_name_dialog_hint"/>
+    <string name="label_name_dialog_hint"/>
+    <string name="audio_chat">"Ձայնային զրույց"</string>
+    <string name="video_chat">"Տեսազրույց"</string>
+    <string name="account_type_format">"<xliff:g id="SOURCE">%1$s</xliff:g> կոնտակտ"</string>
+    <string name="google_account_type_format">"<xliff:g id="SOURCE">%1$s</xliff:g>հաշիվ"</string>
+    <string name="take_photo">"Լուսանկարել"</string>
+    <string name="take_new_photo">"Լուսանկարել նորը"</string>
+    <string name="pick_photo">"Ընտրել լուսանկար"</string>
+    <string name="pick_new_photo">Ընտրել նոր լուսանկար</string>
+    <string name="search_results_searching">"Որոնում..."</string>
+    <string name="event_edit_field_hint_text">"Ամսաթիվը"</string>
+    <string name="group_edit_field_hint_text">"Պիտակ"</string>
+    <string name="cancel_button_content_description">ՉԵՂԱՐԿԵԼ</string>
+    <string name="back_arrow_content_description">"Հետ"</string>
+    <string name="action_menu_back_from_edit_select">"Փակել"</string>
+    <string name="aggregation_suggestion_edit_dialog_message">"Փոխարկե՞լ ընտրված կոնտակտի խմբագրմանը: Մինչ այս պահը ձեր մուտքագրած տեղեկությունները կպատճենվեն:"</string>
+    <string name="contact_directory_description">"<xliff:g id="TYPE">%1$s</xliff:g> գրացուցակ"</string>
+    <string name="activity_title_settings">"Կարգավորումներ"</string>
+    <string name="menu_settings" msgid="377929915873428211">"Կարգավորումներ"</string>
+    <string name="menu_help">"Օգնություն և հետադարձ կապ"</string>
+    <string name="organization_company_and_title">"<xliff:g id="COMPANY_0">%2$s</xliff:g>, <xliff:g id="COMPANY_1">%1$s</xliff:g>"</string>
+    <string name="non_phone_caption">Հեռախոսահամար</string>
+    <string name="non_phone_add_to_contacts">"Ավելացնել կոնտակտներում"</string>
+    <string name="non_phone_close">"Փակել"</string>
+    <string name="date_year_toggle">"Ներառել տարին"</string>
+    <string name="contacts_unavailable_add_account">"Ավելացնել հաշիվ"</string>
+    <string name="contacts_unavailable_import_contacts">"Ներմուծել"</string>
+    <string name="create_group_item_label"/>
+    <string name="delete_group_dialog_message"/>
+    <string name="toast_join_with_empty_contact">"Մուտքագրեք կոնտակտի անունը՝ մեկ ուրիշի հետ միավերլուց առաջ:"</string>
+    <string name="copy_text">"Պատճենել սեղմատախտակին"</string>
+    <string name="set_default">"Սահմանել լռելյայն"</string>
+    <string name="clear_default">"Մաքրել լռելյայն"</string>
+    <string name="toast_text_copied">"Տեսքտը պատճենվեց"</string>
+    <string name="cancel_confirmation_dialog_message">"Հրաժարվե՞լ փոփոխություններից:"</string>
+    <string name="cancel_confirmation_dialog_cancel_editing_button">Հեռացնել</string>
+    <string name="cancel_confirmation_dialog_keep_editing_button">ՉԵՂԱՐԿԵԼ</string>
+    <string name="leave_customize_confirmation_dialog_message"/>
+    <string name="enter_contact_name">"Որոնել կոնտակտներ"</string>
+    <string name="title_edit_group"/>
+    <string name="local_profile_title">"Իմ տեղային պրոֆիլը"</string>
+    <string name="external_profile_title">"Իմ <xliff:g id="EXTERNAL_SOURCE">%1$s</xliff:g> պրոֆիլը"</string>
+    <string name="contact_editor_prompt_zero_accounts"/>
+    <string name="contact_editor_prompt_one_account">"Նոր կոնտակտները կպահվեն <xliff:g id="ACCOUNT_NAME">%1$s</xliff:g> հաշվում:"</string>
+    <string name="contact_editor_prompt_multiple_accounts">"Ընտրեք կանխադրված հաշիվ նոր կոնտակտների համար՝"</string>
+    <string name="contact_editor_title_new_contact">"Ստեղծելնորկոնտակտ"</string>
+    <string name="contact_editor_title_existing_contact">"Փոփոխել կոնտակտը"</string>
+    <string name="contact_editor_title_read_only_contact"/>
+    <string name="contact_editor_pick_raw_contact_to_edit_dialog_title"/>
+    <string name="contact_editor_pick_linked_contact_dialog_title">"Միավորված կոնտակտներ"</string>
+    <string name="contact_editor_add_linked_contact">"Ավելացնել"</string>
+    <string name="contact_editor_unlink_contacts">"Տրոհել"</string>
+    <string name="add_account">"Ավելացնել հաշիվ"</string>
+    <string name="add_new_account">"Ավելացնել նոր հաշիվ"</string>
+    <string name="menu_export_database">"Արտահանել տվյալների շտեմարանի ֆայլերը"</string>
+    <string name="action_menu_add_new_contact_button">"Ստեղծելնորկոնտակտ"</string>
+    <string name="expanding_entry_card_view_see_more">"Տեսնել ավելին"</string>
+    <string name="expanding_entry_card_view_see_less">"Տեսնել պակաս"</string>
+    <string name="recent_card_title">"Վերջին"</string>
+    <string name="about_card_title">"Տեղեկատվություն"</string>
+    <string name="toast_making_personal_copy"/>
+    <string name="tomorrow">"Վաղը"</string>
+    <string name="today">"Այսօր"</string>
+    <string name="today_at_time_fmt">"Այսօր՝ <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
+    <string name="tomorrow_at_time_fmt">"Վաղը՝ <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
+    <string name="date_time_fmt"/>
+    <string name="untitled_event">"(Անվերնագիր միջոցառում)"</string>
+    <string name="date_time_set">"Սահմանել"</string>
+    <string name="header_im_entry">"IM"</string>
+    <string name="header_organization_entry">"Կազմակերպությունը"</string>
+    <string name="header_nickname_entry">"Մականուն"</string>
+    <string name="header_note_entry">"Նշում"</string>
+    <string name="header_website_entry">"Վեբկայք"</string>
+    <string name="header_event_entry">"Միջոցառում"</string>
+    <string name="header_relation_entry">"Հարաբերություն"</string>
+    <string name="header_name_entry">"Անուն"</string>
+    <string name="header_email_entry">Էլ. փոստ</string>
+    <string name="header_phone_entry">"Հեռախոս"</string>
+    <string name="content_description_directions">"Երթուղիներ"</string>
+    <string name="content_description_recent_sms"/>
+    <string name="content_description_recent_call_type_incoming">մտից</string>
+    <string name="content_description_recent_call_type_outgoing">ելից</string>
+    <string name="content_description_recent_call_type_missed">"Բաց թողնված"</string>
+    <string name="content_description_recent_call"/>
+    <string name="message_from_you_prefix">"Դուք՝ <xliff:g id="SMS_BODY">%s</xliff:g>"</string>
+    <string name="editor_more_fields">"Լրացուցիչդաշտեր"</string>
+    <string name="editor_change_photo_content_description"/>
+    <string name="editor_add_photo_content_description"/>
+    <string name="editor_contact_photo_content_description">"կոնտակտիլուսանկարը"</string>
+    <string name="editor_failed_to_load">"Չհաջողվեց բացել խմբագրիչը:"</string>
+    <string name="editor_account_selector_title">"Պահվում է հետևյալ հաշվում՝"</string>
+    <string name="editor_account_selector_read_only_title"/>
+    <string name="quickcontact_suggestion_link_button">"ՄԻԱՎՈՐԵԼ ԿՈՆՏԱԿՏՆԵՐԸ"</string>
+    <string name="quickcontact_suggestion_cancel_button">ՉԵՂԱՐԿԵԼ</string>
+    <string name="suggestion_card_this_contact_title">"Այս կոնտակտը"</string>
+    <string name="suggestion_card_duplicates_title">"Հնարավոր կրկնօրինակներ"</string>
+    <string name="suggestion_card_help_message">"Այս կոնտակտները կարող են վերաբերել միևնույն մարդուն։ Կարող եք դրանք միավորել և ստեղծել մեկ կոնտակտ։"</string>
+    <string name="editor_delete_view_description"/>
+    <string name="editor_delete_view_description_short">"Ջնջել <xliff:g id="DATA_KIND">%s</xliff:g>"</string>
+    <string name="menu_assistant"/>
+    <string name="menu_assistant_new_badge">"նոր"</string>
+    <string name="navigation_drawer_open">"Բացել նավարկման դարակը"</string>
+    <string name="navigation_drawer_close">"Փակել նավարկման դարակը"</string>
+    <string name="navigation_drawer_label"/>
+    <string name="menu_title_groups"/>
+    <string name="menu_title_filters">Հաշիվներ</string>
+    <string name="permission_explanation_header"/>
+    <string name="permission_explanation_subheader_calendar_and_SMS"/>
+    <string name="permission_explanation_subheader_calendar">Իրադարձություններ</string>
+    <string name="permission_explanation_subheader_SMS">"Հաղորդագրություններ"</string>
+    <string name="hamburger_feature_highlight_header"/>
+    <string name="hamburger_feature_highlight_body"/>
+    <string name="undo">"Հետարկել"</string>
+    <string name="call_custom"/>
+    <string name="call_home">"Զանգել տուն"</string>
+    <string name="call_mobile">"Զանգել շարժականին"</string>
+    <string name="call_work">"Զանգելաշխաատավայր"</string>
+    <string name="call_fax_work">"Զանգել աշխատավայրի ֆաքսին"</string>
+    <string name="call_fax_home">"Զանգել տնային ֆաքսին"</string>
+    <string name="call_pager">"Զանգել փեյջերին"</string>
+    <string name="call_other">"Զանգել"</string>
+    <string name="call_callback">"Հետզանգել"</string>
+    <string name="call_car">"Զանգել մեքենայի հեռախոսահամարին"</string>
+    <string name="call_company_main">"Զանգել ընկերության հիմնական համարին"</string>
+    <string name="call_isdn">"Զանգել ISDN համարին"</string>
+    <string name="call_main">"Զանգել հիմնական համարին"</string>
+    <string name="call_other_fax">"Զանգել ֆաքսին"</string>
+    <string name="call_radio">"Զանգել ռադիո համարին"</string>
+    <string name="call_telex">"Զանգել տելեքս համարին"</string>
+    <string name="call_tty_tdd">"Զանգել TTY/TDD համարին"</string>
+    <string name="call_work_mobile">"Զանգել աշխատավայրի բջջայինին"</string>
+    <string name="call_work_pager">"Զանգել աշխատավայրի փեյջերին"</string>
+    <string name="call_assistant"/>
+    <string name="call_mms">"Զանգել MMS համարին"</string>
+    <string name="call_by_shortcut">"<xliff:g id="CONTACT_NAME">%s</xliff:g> (Զանգ)"</string>
+    <string name="sms_custom"/>
+    <string name="sms_home">"Հաղորդագրել տուն"</string>
+    <string name="sms_mobile">"Հաղորդագրել բջջայինին"</string>
+    <string name="sms_work">"Հաղորդագրել աշխատանքայինին"</string>
+    <string name="sms_fax_work">"Հաղորդագրել աշխատանքային ֆաքսի համարին"</string>
+    <string name="sms_fax_home">"Հաղորդագրել տնային ֆաքսի համարին"</string>
+    <string name="sms_pager">"Հաղորդագրել փեյջերին"</string>
+    <string name="sms_other">"Հաղորդագրել"</string>
+    <string name="sms_callback">"Հաղորդագրել հետզանգման համարին"</string>
+    <string name="sms_car">"Հաղորդագրել մեքենայի հեռախոսահամարին"</string>
+    <string name="sms_company_main">"Հաղորդագրել ընկերության հիմնականին"</string>
+    <string name="sms_isdn">"Հաղորդագրել ISDN համարին"</string>
+    <string name="sms_main">"Հաղորդագրել հիմնական համարին"</string>
+    <string name="sms_other_fax">"Հաղորդագրել ֆաքսի համարին"</string>
+    <string name="sms_radio">"Հաղորդագրել ռադիո համարին"</string>
+    <string name="sms_telex">"Հաղորդագրել տելեքս համարին"</string>
+    <string name="sms_tty_tdd">"Հաղորդագրել TTY/TDD համարին"</string>
+    <string name="sms_work_mobile">"Հաղորդագրել աշխատանքային բջջայինին"</string>
+    <string name="sms_work_pager">"Հաղորդագրել աշխատանքային փեյջերին"</string>
+    <string name="sms_assistant">"Հաղորդագրել <xliff:g id="ASSISTANT">%s</xliff:g>-ին"</string>
+    <string name="sms_mms">"Հաղորդագրել MMS համարին"</string>
+    <string name="sms_by_shortcut">"<xliff:g id="CONTACT_NAME">%s</xliff:g> (Հաղորդագրություն)"</string>
+    <string name="description_video_call">"Կատարել տեսազանգ"</string>
+    <string name="clearFrequentsConfirmation_title">"Մաքրե՞լ հաճախակի հաղորդակցվածները"</string>
+    <string name="clearFrequentsConfirmation"/>
+    <string name="clearFrequentsProgress_title">"Հաճախակի հաղորդակցումների մաքրում..."</string>
+    <string name="status_available">"Հասանելի"</string>
+    <string name="status_away">"Տեղում չէ"</string>
+    <string name="status_busy">"Զբաղված"</string>
+    <string name="local_invisible_directory">"Այլ"</string>
+    <string name="directory_search_label">"Գրացուցակ"</string>
+    <string name="directory_search_label_work">"Աշխատանքային գրացուցակ"</string>
+    <string name="local_search_label">"ԲՈԼՈՐ ԿՈՆՏԱԿՏՆԵՐԸ"</string>
+    <string name="description_quick_contact_for">"Արագ կապ <xliff:g id="NAME">%1$s</xliff:g>-ի հետ"</string>
+    <string name="missing_name">"(Անանուն)"</string>
+    <string name="favoritesFrequentContacted">"Հաճախակի հաղորդակցվող"</string>
+    <string name="list_filter_phones">"Բոլոր հեռախոսահամարներով կոնտատկները"</string>
+    <string name="list_filter_phones_work">"Աշխատանքային պրոֆիլի կոնտակտներ"</string>
+    <string name="view_updates_from_group">"Դիտել թարմացումները"</string>
+    <string name="account_phone">սարք</string>
+    <string name="account_sim">SIM</string>
+    <string name="nameLabelsGroup">"Անուն"</string>
+    <string name="nicknameLabelsGroup">"Մականուն"</string>
+    <string name="name_given">"Անուն"</string>
+    <string name="name_family">"Ազգանուն"</string>
+    <string name="name_prefix">"Անվան նախածանցը"</string>
+    <string name="name_middle">"Հայրանուն"</string>
+    <string name="name_suffix">"Անվան վերջնածանցը"</string>
+    <string name="name_phonetic">"Հնչյունաբանականանունը"</string>
+    <string name="name_phonetic_given">"Անունը՝ տառադարձությամբ"</string>
+    <string name="name_phonetic_middle">"Հնչյունաբանական հայրանունը"</string>
+    <string name="name_phonetic_family">"Ազգանունը՝ տառադարձությամբ"</string>
+    <string name="phoneLabelsGroup">"Հեռախոս"</string>
+    <string name="emailLabelsGroup">Էլ. փոստ</string>
+    <string name="postalLabelsGroup">Հասցե</string>
+    <string name="imLabelsGroup">"IM"</string>
+    <string name="organizationLabelsGroup">"Կազմակերպությունը"</string>
+    <string name="relationLabelsGroup">"Հարաբերություն"</string>
+    <string name="eventLabelsGroup">"Հատուկ ամսաթիվ"</string>
+    <string name="sms">"տեքստային հաղորդագրություն"</string>
+    <string name="postal_address">Հասցե</string>
+    <string name="ghostData_company">"Ընկերությունը"</string>
+    <string name="ghostData_title">"Վերնագիրը"</string>
+    <string name="label_notes">"Գրառումներ"</string>
+    <string name="label_custom_field">"Հատուկ"</string>
+    <string name="label_sip_address">"SIP"</string>
+    <string name="websiteLabelsGroup">"Վեբկայք"</string>
+    <string name="groupsLabel"/>
+    <string name="email_home">"Նամակագրել տուն"</string>
+    <string name="email_mobile">"Նամակագրել բջջայինին"</string>
+    <string name="email_work">"Նամակագրել աշխատավայր"</string>
+    <string name="email_other">Էլ. փոստ</string>
+    <string name="email_custom"/>
+    <string name="email">Էլ. փոստ</string>
+    <string name="postal_street">"Փողոցը"</string>
+    <string name="postal_city">"Քաղաքը"</string>
+    <string name="postal_region">"Վիճակը"</string>
+    <string name="postal_postcode">"Փոստային կոդ"</string>
+    <string name="postal_country">"Երկիրը"</string>
+    <string name="map_home">"Դիտելտանհասցեն"</string>
+    <string name="map_work">"Դիտելաշխատավայրիհասցեն"</string>
+    <string name="map_other">"Դիտելհասցեն"</string>
+    <string name="map_custom"/>
+    <string name="chat_aim">"Զրույց AIM-ով"</string>
+    <string name="chat_msn">"Զրույց Windows Live-ով"</string>
+    <string name="chat_yahoo">"Զրուցել Yahoo-ով"</string>
+    <string name="chat_skype">"Զրույց Skype-ով"</string>
+    <string name="chat_qq">"ԶրույցQQ-ով"</string>
+    <string name="chat_gtalk">"Զրույց Google Talk-ով"</string>
+    <string name="chat_icq">"Զրուցել ICQ-ով"</string>
+    <string name="chat_jabber">"Զրուցել Jabber-ով"</string>
+    <string name="chat">"Զրույց"</string>
+    <string name="description_minus_button">"Ջնջել"</string>
+    <string name="expand_name_fields_description"/>
+    <string name="collapse_name_fields_description"/>
+    <string name="expand_phonetic_name_fields_description"/>
+    <string name="collapse_phonetic_name_fields_description"/>
+    <string name="expand_fields_description">"Ընդարձակել"</string>
+    <string name="collapse_fields_description">"Թաքցնել"</string>
+    <string name="announce_expanded_fields"/>
+    <string name="announce_collapsed_fields"/>
+    <string name="list_filter_all_accounts">"ԲՈԼՈՐ ԿՈՆՏԱԿՏՆԵՐԸ"</string>
+    <string name="list_filter_all_starred">"Աստղանշված"</string>
+    <string name="list_filter_customize">"Հարմարեցնել"</string>
+    <string name="list_filter_single">"կոնտակտ"</string>
+    <string name="display_ungrouped">"Բոլոր այլ կոնտակտները"</string>
+    <string name="display_all_contacts">"ԲՈԼՈՐ ԿՈՆՏԱԿՏՆԵՐԸ"</string>
+    <string name="menu_sync_remove">"Հեռացնել համաժամեցված խումբը"</string>
+    <string name="dialog_sync_add">"Ավելացնել համաժամեցված խումբ"</string>
+    <string name="display_more_groups">"Այլ խմբեր..."</string>
+    <string name="display_warn_remove_ungrouped">"«<xliff:g id="GROUP">%s</xliff:g>»-ի հեռացումը համաժամեցումից կհեռացնի այնտեղից նաև չխմբավորված կոնտակտները:"</string>
+    <string name="savingDisplayGroups">"Ցուցադրվող ընտրանքները պահվում են..."</string>
+    <string name="listCustomView"/>
+    <string name="dialog_new_contact_account">"Պահել ներմուծված կոնտակտներն այստեղ՝"</string>
+    <string name="import_from_sim">"SIM քարտ"</string>
+    <string name="import_from_sim_summary_fmt"/>
+    <plurals name="import_from_sim_secondary_contact_count_fmt">
+        <item quantity="one">1 կոնտակտ</item>
+        <item quantity="other"/>
+    </plurals>
+    <plurals name="import_from_sim_secondary_template">
+        <item quantity="one"/>
+        <item quantity="other"/>
+    </plurals>
+    <string name="import_from_vcf_file"/>
+    <string name="nothing_to_import_message"/>
+    <string name="import_from_vcf_file_confirmation_message"/>
+    <string name="cancel_import_confirmation_message">"Չեղարկե՞լ <xliff:g id="FILENAME">%s</xliff:g>-ի ներմուծումը:"</string>
+    <string name="cancel_export_confirmation_message">"Չեղարկե՞լ <xliff:g id="FILENAME">%s</xliff:g>-ի արտահանումը"</string>
+    <string name="cancel_vcard_import_or_export_failed"/>
+    <string name="fail_reason_unknown">Անհայտ սխալ:</string>
+    <string name="fail_reason_could_not_open_file"/>
+    <string name="fail_reason_could_not_initialize_exporter"/>
+    <string name="fail_reason_no_exportable_contact">"Արտահանելի կոնտակտներ չկան:"</string>
+    <string name="missing_required_permission">"Դուքանջատելեքանհրաժեշտթույլտվությունը:"</string>
+    <string name="fail_reason_error_occurred_during_export">"Արտահանման ընթացքում սխալ է տեղի ունեցել. պատճառը` «<xliff:g id="EXACT_REASON">%s</xliff:g>»:"</string>
+    <string name="fail_reason_io_error">"I/O սխալ"</string>
+    <string name="fail_reason_low_memory_during_import">"Հիշողությունը բավարար չէ: Հնարավոր է` ֆայլը չափազանց մեծ է:"</string>
+    <string name="fail_reason_not_supported"/>
+    <string name="exporting_vcard_finished_title">"<xliff:g id="FILENAME">%s</xliff:g>-ի արտահանումը ավարտվեց:"</string>
+    <string name="exporting_vcard_finished_title_fallback">"Կոնտակտներիարտահանումըավարտվեց:"</string>
+    <string name="exporting_vcard_finished_toast">"Կոնտակտներն արտահանվեցին: Սեղմեք ծանուցումը՝ դրանք հասանելի դարձնելու համար:"</string>
+    <string name="touch_to_share_contacts">"Հպեք՝ կոնտակտները հասանելի դարձնելու համար:"</string>
+    <string name="exporting_vcard_canceled_title">"<xliff:g id="FILENAME">%s</xliff:g>-ի արտահանումը չեղարկվեց:"</string>
+    <string name="exporting_contact_list_title">"Կոնտակտային տվյալների արտահանում"</string>
+    <string name="exporting_contact_list_message">"Կոնտակտային տվյալներն արտահանվում են:"</string>
+    <string name="composer_failed_to_get_database_infomation"/>
+    <string name="composer_has_no_exportable_contact"/>
+    <string name="composer_not_initialized"/>
+    <string name="exporting_contact_failed_title"/>
+    <string name="exporting_contact_failed_message"/>
+    <string name="importing_vcard_description">"<xliff:g id="NAME">%s</xliff:g>-ի ներմուծում"</string>
+    <string name="reading_vcard_failed_title"/>
+    <string name="importing_vcard_finished_title">"<xliff:g id="FILENAME">%s</xliff:g>-ի ներմուծումը ավարտվեց vCard-ից"</string>
+    <string name="importing_vcard_canceled_title">"<xliff:g id="FILENAME">%s</xliff:g>-ի ներմուծումը չեղարկվեց"</string>
+    <string name="vcard_import_will_start_message">"<xliff:g id="FILENAME">%s</xliff:g>-ը կներմուծվի շուտով:"</string>
+    <string name="vcard_import_will_start_message_with_default_name">"Ֆայլը շուտով կներմուծվի:"</string>
+    <string name="vcard_import_request_rejected_message">"vCard-ի ներմուծման հայցը մերժվել է: Կրկին փորձեք ավելի ուշ:"</string>
+    <string name="contacts_export_will_start_message">"Կոնտակտները շուտով կարտահանվեն:"</string>
+    <string name="vcard_export_request_rejected_message">"vCard-ի արտահանման հայցը մերժվեց: Փորձեք կրկին ավելի ուշ:"</string>
+    <string name="vcard_unknown_filename">"կոնտակտ"</string>
+    <string name="caching_vcard_message">"vCard(եր)-ի քեշավորում ժամանակավոր պաոց: Փաստացի ներմուծումը կսկսվի շուտով:"</string>
+    <string name="vcard_import_failed"/>
+    <string name="nfc_vcard_file_name">"NFC-ով ստացված կոնտակտ"</string>
+    <string name="caching_vcard_title">"Քեշավորում"</string>
+    <string name="progress_notifier_message"/>
+    <string name="export_to_vcf_file">"Արտահանել.vcfֆայլ"</string>
+    <string name="display_options_sort_list_by">"Դասավորել ըստ"</string>
+    <string name="display_options_phonetic_name_fields">"Հնչյունաբանականանունը"</string>
+    <string name="editor_options_always_show_phonetic_names">"Միշտ ցույց տալ"</string>
+    <string name="editor_options_hide_phonetic_names_if_empty"/>
+    <string name="display_options_sort_by_given_name">"Անուն"</string>
+    <string name="display_options_sort_by_family_name">"Ազգանուն"</string>
+    <string name="display_options_view_names_as">"Անվան ձևաչափը"</string>
+    <string name="display_options_view_given_name_first">"Սկզբում՝ անունը"</string>
+    <string name="display_options_view_family_name_first">"Սկզբում՝ ազգանունը"</string>
+    <string name="settings_accounts">Հաշիվներ</string>
+    <string name="default_editor_account">"Կանխադրված հաշիվ նոր կոնտակտների համար"</string>
+    <string name="settings_my_info_title"/>
+    <string name="set_up_profile">"Կարգավորեք ձեր պրոֆիլը"</string>
+    <string name="setting_about">"Կոնտակտների մասին"</string>
+    <string name="share_favorite_contacts">"Տրամադրել նախընտրած կոնտակտները"</string>
+    <string name="share_contacts">"Տրամադրել բոլոր կոնտակտները"</string>
+    <string name="share_contacts_failure">"Չհաջողվեց տրամադրել կոնտակտները:"</string>
+    <string name="dialog_export"/>
+    <string name="dialog_import"/>
+    <string name="share_error"/>
+    <string name="no_contact_to_share">"Կոնտակտներ չունեք, որոնցով կարող եք կիսվել:"</string>
+    <string name="menu_contacts_filter">"Ցուցադրվող կոնտակտներ"</string>
+    <string name="activity_title_contacts_filter">"Ցուցադրվող կոնտակտներ"</string>
+    <string name="custom_list_filter"/>
+    <string name="menu_custom_filter_save">"Պահել"</string>
+    <string name="hint_findContacts">"Որոնել կոնտակտներ"</string>
+    <string name="contactsFavoritesLabel">"Ընտրյալներ"</string>
+    <string name="menu_import">"Ներմուծել"</string>
+    <string name="menu_export">"Արտահանել"</string>
+    <string name="menu_blocked_numbers">"Արգելափակված համարներ"</string>
+    <string name="contact_status_update_attribution">"<xliff:g id="SOURCE">%1$s</xliff:g>-ի միջոցով"</string>
+    <string name="contact_status_update_attribution_with_date">"<xliff:g id="DATE">%1$s</xliff:g>` <xliff:g id="SOURCE">%2$s</xliff:g>-ի միջոցով"</string>
+    <string name="letter_tile_letter_font_family"/>
+    <string name="action_menu_back_from_search">"դադարեցնել որոնումը"</string>
+    <string name="description_clear_search">"Մաքրել որոնման դաշտը"</string>
+    <string name="search_font_family"/>
+    <string name="select_account_dialog_title">Հաշիվ</string>
+    <string name="set_default_account">"Միշտ օգտագործել այս քարտը՝ զանգերի համար"</string>
+    <string name="call_with_a_note">"Գրառումով զանգ"</string>
+    <string name="call_subject_hint"/>
+    <string name="send_and_call_button">"ՈՒՂԱՐԿԵԼ ԵՎ ԶԱՆԳԵԼ"</string>
+    <string name="call_subject_limit">"<xliff:g id="COUNT">%1$s</xliff:g> / <xliff:g id="LIMIT">%2$s</xliff:g>"</string>
+    <string name="call_subject_type_and_number"/>
+    <string name="about_build_version">"Պատրաստման տարբերակը"</string>
+    <string name="about_open_source_licenses">"Բաց կոդով ծրագրաշարի լիցենզիաներ"</string>
+    <string name="about_open_source_licenses_summary">"Բաց կոդով ծրագրային ապահովման արտոնագրերի մանրամասներ"</string>
+    <string name="about_privacy_policy">"Գաղտնիության քաղաքականություն"</string>
+    <string name="about_terms_of_service">"Օգտագործման պայմաններ"</string>
+    <string name="activity_title_licenses">"Բաց կոդով ծրագրաշարի լիցենզիաներ"</string>
+    <string name="url_open_error_toast">"Չհաջողվեց բացել url-ը:"</string>
+    <string name="account_filter_view_checked">"<xliff:g id="ACCOUNT_INFO">%s</xliff:g> հաշիվը նշվել է"</string>
+    <string name="account_filter_view_not_checked">"<xliff:g id="ACCOUNT_INFO">%s</xliff:g> հաշիվը չի նշվել"</string>
+    <string name="description_search_video_call">"Կատարել տեսազանգ"</string>
+    <string name="description_delete_contact">"Ջնջել"</string>
+    <string name="description_no_name_header"/>
+    <string name="callDurationSecondFormat"/>
+    <string name="callDurationMinuteFormat"/>
+    <string name="callDurationHourFormat"/>
+    <string name="dynamic_shortcut_disabled_message"/>
+    <string name="dynamic_shortcut_contact_removed_message"/>
+    <string name="sim_import_button_text">"Ներմուծել"</string>
+    <string name="sim_import_title_none_selected"/>
+    <string name="sim_import_empty_message"/>
+    <string name="sim_import_contact_exists_toast"/>
+    <plurals name="sim_import_success_toast_fmt">
+        <item quantity="one"/>
+        <item quantity="other"/>
+    </plurals>
+    <string name="sim_import_failed_toast"/>
+    <string name="sim_import_title"/>
+    <string name="sim_import_cancel_content_description">ՉԵՂԱՐԿԵԼ</string>
+    <string name="auto_sync_off"/>
+    <string name="dismiss_sync_alert">Անտեսել</string>
+    <string name="account_sync_off"/>
+    <string name="turn_auto_sync_on_dialog_title"/>
+    <string name="turn_auto_sync_on_dialog_body"/>
+    <string name="turn_auto_sync_on_dialog_confirm_btn">"Միացնել"</string>
+    <string name="connection_error_message">"Կապ չկա"</string>
+    <string name="single_sim_display_label">SIM</string>
+    <string name="show_more_content_description"/>
+    <string name="importing_sim_finished_title"/>
+    <string name="importing_sim_failed_title">Ներմուծումը ձախողվեց</string>
+    <string name="importing_sim_failed_message"/>
+    <string name="importing_sim_in_progress_title"/>
+    <string name="contacts_default_notification_channel">"Ծանուցումներ"</string>
+</resources>

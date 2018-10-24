@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="freeme_low_battery_flashlight_canot_use">电量过低，手电筒不可以使用!</string>
+    <string name="freeme_normal">声音</string>
+    <string name="freeme_silent">静音</string>
+    <string name="freeme_vibrate">振动</string>
+    <string name="freeme_data_connection">数据连接</string>
+    <string name="freeme_screen_recorder">屏幕录制</string>
+    <string name="freeme_super_shot">超级截屏</string>
+    <string name="freeme_dnd_label">免打扰</string>
+    <string name="freeme_data_saver">省流量模式</string>
+
+    <string name="freeme_keyguard_emergency_back">返回</string>
+    <string name="freeme_keyguard_emergency_delete">删除</string>
+    <string name="freeme_keyguard_pin_instructions">输入密码</string>
+    <string name="freeme_keyguard_pwd_instructions">输入密码</string>
+    <string name="freeme_keyguard_ptn_instructions">绘制图案</string>
+
+    <string name="fingerprint_lock_out_count_down"><xliff:g id="number">%d</xliff:g>秒后重试指纹解锁</string>
+    <string name="fingerprint_lock_out_count_down_finish">请输入密码或使用指纹识别</string>
+
+    <!-- Theme.Freeme 8.1 - notification. -->
+    <string name="send">发送</string>
+
+    <string name="freeme_notification_settings">状态栏管理</string>
+    <string name="freeme_battery_show">显示电量</string>
+    <string name="freeme_network_speed_show">显示网速</string>
+    <string name="freeme_show_notifications">显示通知图标</string>
+    <string name="freeme_forbidden_slide_statusbar">锁屏禁止下拉状态栏</string>
+    <string name="freeme_carrier_label_show">显示运营商</string>
+
+    <string name="freeme_carrier_cmcc">中国移动</string>
+
+    <string name="freeme_data_saver_enable_title">要开启省流量模式吗？</string>
+    <string name="freeme_data_saver_description">为了减少流量消耗，省流量模式会阻止某些应用在后台收发数据。您当前使用的应用可以收发数据，但频率可能会降低。举例而言，这可能意味着图片只有在您点按之后才会显示。</string>
+
+    <string name="freeme_recents_empty_text">最近无运行应用</string>
+
+    <!-- freeme.xiaohui,20180514, FreemeLockscreen !-->
+    <string name="magazine_kg_charging">正在充电 <xliff:g id="kg_battery_level">%d</xliff:g>%%</string>
+    <string name="magazine_kg_charged">已充满</string>
+    <string name="kg_finger_print_unlcok">使用指纹解锁</string>
+
+    <string name="quick_status_bar_12_hour_am">上午</string>
+    <string name="quick_status_bar_12_hour_pm">下午</string>
+</resources>

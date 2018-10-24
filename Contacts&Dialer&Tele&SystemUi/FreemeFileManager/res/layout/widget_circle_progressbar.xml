@@ -1,0 +1,153 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res/com.freeme.filemanager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_page_background"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/search_view_padding_top"
+        android:paddingStart="@dimen/main_page_padding_start"
+        android:paddingEnd="@dimen/main_page_padding_start"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/tab_btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/tab_btn_margin_start"
+            android:paddingEnd="@dimen/tab_btn_margin_start"
+            android:layout_marginBottom="@dimen/search_view_padding_top"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <com.freeme.filemanager.view.TabButton
+                android:id="@+id/btn_left"
+                android:layout_width="@dimen/tab_btn_width"
+                android:layout_height="@dimen/search_view_height"
+                android:layout_centerVertical="true"
+                android:text="@string/interior_info_storage"
+                android:textAllCaps="false"
+                custom:normal_bg_res="@drawable/btn_left"
+                custom:selected_bg_res="@drawable/btn_left_selected"
+                android:visibility="gone"/>
+
+            <View
+                android:id="@+id/view0"
+                android:layout_width="@dimen/tab_btn_divider_width"
+                android:layout_height="@dimen/search_view_height"
+                android:background="@color/list_color_divider"
+                android:visibility="gone">
+            </View>
+
+            <com.freeme.filemanager.view.TabButton
+                android:id="@+id/btn_mid"
+                android:layout_width="@dimen/tab_btn_width"
+                android:layout_height="@dimen/search_view_height"
+                android:layout_centerVertical="true"
+                android:text="@string/storage_sd_card"
+                android:textAllCaps="false"
+                custom:normal_bg_res="@drawable/btn_mid"
+                custom:selected_bg_res="@drawable/btn_mid_selected"
+                android:visibility="gone"/>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="@dimen/tab_btn_divider_width"
+                android:layout_height="@dimen/search_view_height"
+                android:background="@color/list_color_divider">
+            </View>
+            <com.freeme.filemanager.view.TabButton
+                android:id="@+id/btn_right"
+                android:layout_width="@dimen/tab_btn_width"
+                android:layout_height="@dimen/search_view_height"
+                android:layout_centerVertical="true"
+                android:text="@string/storage_external_usb"
+                android:textAllCaps="false"
+                custom:normal_bg_res="@drawable/btn_right"
+                custom:selected_bg_res="@drawable/btn_right_selected"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/main_page_part_background">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="248dp">
+
+                <com.freeme.filemanager.view.circleprogress.RoundProgressBar
+                    android:id="@+id/roundProgressBar"
+                    android:layout_width="@dimen/circle_progressbar_width"
+                    android:layout_height="@dimen/circle_progressbar_height"
+                    android:layout_centerInParent="true"
+                    android_custom:arc_finished_color="@color/app_theme_color_accent"
+                    android_custom:arc_unfinished_color="@color/circle_progress_unfinished_color"
+                    android_custom:arc_text_color="@color/app_theme_color_accent"
+                    android_custom:arc_text2_color="@color/textColorSecondary"
+                    android_custom:arc_text_size="@dimen/arc_suffix_text_size"
+                    android_custom:arc_suffix_text_size="@dimen/arc_suffix_text_size"
+                    android_custom:arc_bottom_text_size="@dimen/arc_bottom_text_size"
+                    android_custom:arc_bottom_text2_size="@dimen/arc_bottom_text2_size"
+                    android:background="@drawable/ic_round_progressbar_bg"/>
+            </RelativeLayout>
+
+            <com.freeme.filemanager.view.CompatGridView
+                android:id="@+id/category_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:paddingStart="@dimen/detail_grid_padding_start"
+                android:paddingEnd="@dimen/detail_grid_padding_start"
+                android:verticalSpacing="@dimen/detail_grid_vertical_space"
+                android:layout_marginBottom="@dimen/detail_grid_padding_bottom"/>
+        </LinearLayout>
+
+        <com.freeme.filemanager.view.CompatListView
+            android:id="@+id/category_storage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/divider_height_medium"
+            android:layout_gravity="center_horizontal"
+            android:divider="@drawable/list_item_divider_16dp"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:background="@drawable/main_page_part_background"/>
+
+        <RelativeLayout
+            android:id="@+id/storage_file_clean"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/file_item_height"
+            android:layout_marginTop="@dimen/divider_height_medium"
+            android:background="@drawable/round_item_single" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/file_clean"
+                android:paddingStart="@dimen/list_item_padding_left"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:textAlignment="viewStart"
+                android:layout_alignParentStart="true"
+                android:textAppearance="@style/AppTextAppearance.ItemName"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/list_item_padding_left"
+                android:src="@drawable/ic_right_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

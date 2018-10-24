@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="21dp"
+    android:height="14dp"
+    android:viewportWidth="63"
+    android:viewportHeight="42">
+
+    <path
+        android:fillColor="@color/freeme_battery_warning_color"
+        android:pathData="M5,10 L6,10 Q7,10,7,11 L7,31 Q7,32,6,32 L5,32 Q4,32,4,31 L4,11 Q4,10,5,10 Z" />
+</vector>

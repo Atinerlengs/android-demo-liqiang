@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.QSHeader.Clock" parent="@*android:style/TextAppearance.StatusBar.Icon">
+        <item name="android:textSize">@dimen/freeme_status_bar_clock_size</item>
+        <item name="android:textColor">@color/freeme_status_bar_clock_color</item>
+    </style>
+
+    <style name="TextAppearance.StatusBar.Date" parent="@*android:style/TextAppearance.StatusBar.Icon">
+        <item name="android:textSize">@dimen/qs_header_date_size</item>
+        <item name="android:textColor">@color/freeme_status_bar_date_color</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="Keyguard.TextView.Indication">
+        <item name="android:textSize">@dimen/keyguard_indication_text_size</item>
+        <item name="android:textColor">@color/freme_kg_indication_color</item>
+    </style>
+
+    <!-- freeme.biantao, 20180207. Theme.Freeme 8.1 - notification. -->
+    <style name="NotificationItem">
+        <item name="android:layout_marginStart">@dimen/notification_item_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/notification_item_margin_end</item>
+    </style>
+</resources>

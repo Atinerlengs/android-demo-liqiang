@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Неверный</string>
+    <string name="conf_call_member_list">Список участников</string>
+    <string name="conf_call_participant_answered">Ответили</string>
+    <string name="conf_call_participant_missed">"Пропущенные"</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"Вызов SIP"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> разблокировка не выполнена</string>
+    <string name="menu_select_all">"Выбратьвсе"</string>
+    <string name="selected_item_count">Выбрано  <xliff:g id="count">%d</xliff:g>  </string>
+    <string name="multichoice_no_select_alert">"Элемент не выбран."</string>
+    <string name="deleteCallLogConfirmation_title">Удалить журналы вызовов?</string>
+    <string name="deleteCallLogConfirmation_message">Действительно удалить выбранные журналы вызовов?</string>
+    <string name="recentCalls_delete">"Удалить"</string>
+    <string name="deleting_call_log">Удаление журнала вызовов...</string>
+    <string name="toast_call_detail_error">"Данные недоступны"</string>
+    <string name="calllogList">"История вызовов"</string>
+    <string name="calllogHint">Поиск вызовов в журнале</string>
+    <string name="calllog_description">Входящие, исходящие и пропущенные вызовы</string>
+    <string name="noMatchingCalllogs">Соответствующий вызов не найден в журнале.</string>
+    <string name="titleJoinContactDataWith">"Объединить контакты"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other">Вызовов в журнале: <xliff:g id="count">%d</xliff:g></item>
+        <item quantity="one">"1 журнал вызовов"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Вызов в журнале не найден</string>
+    <string name="search_results_for">Результаты поиска для: <xliff:g id="QUERY">%s</xliff:g></string>
+    <string name="menu_select_none">"Отменить выбор всех"</string>
+</resources>

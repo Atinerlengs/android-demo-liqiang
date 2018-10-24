@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="freeme_error_recorder_occupied">The recording function is occupied</string>
+    <string name="no_other_accounts">No other account</string>
+
+    <string name="freeme_reject_sms_empty_forbid">Reject messages can not be empty</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Invalid</string>
+    <string name="conf_call_member_list">Member List</string>
+    <string name="conf_call_participant_answered">Answered</string>
+    <string name="conf_call_participant_missed">Missed</string>
+    <string name="calls_over_wifi">Calls will be made over Wi-Fi</string>
+    <string name="connect_to_wifi">Connect to Wi-Fi to make calls</string>
+    <string name="wfc_notification_summary">Tap here to access preferences</string>
+    <string name="wfc_notification_summary_fail">Tap Here to View Available Networks</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> unblocked failed</string>
+    <string name="menu_select_all">"Select all"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> selected</string>
+    <string name="menu_select_none">"Deselect all"</string>
+    <string name="multichoice_no_select_alert">"No item is selected."</string>
+    <string name="deleteCallLogConfirmation_title">Delete call log(s)?</string>
+    <string name="deleteCallLogConfirmation_message">Are you sure to delete the selected call log(s)?</string>
+    <string name="recentCalls_delete">Delete</string>
+    <string name="deleting_call_log">Deleting Call Log...</string>
+    <string name="toast_call_detail_error">Details not available</string>
+    <string name="calllogList">Call History</string>
+    <string name="calllogHint">Search call logs</string>
+    <string name="calllog_description">Incoming, outgoing and missed calls</string>
+    <string name="noMatchingCalllogs">No matching call log found.</string>
+    <string name="titleJoinContactDataWith">Join contacts</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="one">"1 call log"</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> call logs</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Call log not found</string>
+    <string name="search_results_for">Search results for: <xliff:g id="query">%s</xliff:g></string>
+</resources>

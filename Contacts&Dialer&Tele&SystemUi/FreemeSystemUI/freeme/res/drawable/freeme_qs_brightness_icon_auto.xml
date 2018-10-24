@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="72"
+    android:viewportHeight="72">
+
+    <path
+        android:fillColor="@color/freeme_qs_brightness_checkbox_auto_rect_color"
+        android:pathData="M 19 13 L 53 13 Q 59 13 59 19 L 59 53 Q 59 59 53 59 L 19 59 Q 13 59 13 53 L 13 19 Q 13 13 19 13 Z" />
+    <path
+        android:fillColor="@color/freeme_qs_brightness_icon_color"
+        android:pathData="M51.485,28.797 L34.120,46.162 C33.122,47.160 31.504,47.160 30.506,46.162
+L21.367,37.023 C20.369,36.025 20.369,34.407 21.367,33.409 C22.365,32.411
+23.983,32.411 24.981,33.409 L32.313,40.740 L47.870,25.183 C48.868,24.185
+50.487,24.185 51.485,25.183 C52.483,26.181 52.483,27.799 51.485,28.797 Z" />
+</vector>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/whole_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom"
+    android:background="#fffafafa"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/portrait_content_layout_height"
+        android:layout_gravity="bottom"
+        android:background="#fffafafa"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/app_infor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/spass_portrait_app_infor_margin_bottom"
+            android:background="#00fafafa"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/app_icon"
+                android:layout_width="48.0dip"
+                android:layout_height="48.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="6.0dip"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/app_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:ellipsize="end"
+                android:fontFamily="sec-roboto-light"
+                android:maxWidth="@dimen/text_app_lable_max_width"
+                android:singleLine="true"
+                android:textColor="#ff000000"
+                android:textSize="19.0dip"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/identify_animation_box"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/identify_animation_box_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/spass_portrait_identify_box_margin_bottom"
+            android:background="#fffafafa"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/identify_title_area"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/identify_title_area_height"
+                android:layout_marginTop="@dimen/identify_title_area_marginTop"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/identify_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/identify_title_height"
+                    android:layout_alignTop="@+id/identify_unlock_box"
+                    android:ellipsize="marquee"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textSize="@dimen/identify_title_textSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/identify_info_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/identify_title_area"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/identify_info_box_marginTop">
+
+                <ImageView
+                    android:id="@+id/identify_error_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/identify_error_image_height"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/applock_fingerprint_identify_info_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/identify_error_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/identify_dialog_info_text_marginLeft"
+                    android:layout_marginRight="@dimen/identify_dialog_info_text_marginRight"
+                    android:gravity="center"
+                    android:maxLines="5"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/identify_dialog_info_text_textSize" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/identify_logo"
+                android:layout_width="@dimen/identify_logo_width"
+                android:layout_height="@dimen/identify_logo_height"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/text_backup_password"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_backup_password_height"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/text_backup_password_marginBottom"
+                android:background="@drawable/spass_ripple_effect_rect"
+                android:drawableLeft="@drawable/ic_webpass_alternative"
+                android:drawablePadding="@dimen/text_backup_password_drawablePadding"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/text_backup_password_paddingLeft"
+                android:paddingRight="@dimen/text_backup_password_paddingRight"
+                android:text="@string/spass_backup_password"
+                android:textColor="#ff0094b0"
+                android:textSize="@dimen/text_backup_password_textSize" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/app_lock_emergency_button"
+        android:layout_width="wrap_content"
+        android:layout_height="31.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32.0dip"
+        android:visibility="gone" />
+</RelativeLayout>

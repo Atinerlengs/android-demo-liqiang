@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/file_item_height"
+    android:paddingLeft="@dimen/detail_grid_vertical_space"
+    android:paddingRight="@dimen/detail_grid_vertical_space"
+    android:layout_centerVertical="true">
+
+    <RelativeLayout
+        android:id="@+id/picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true" >
+
+        <CheckBox
+            android:id="@+id/child_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+
+        <ProgressBar
+            android:id="@+id/child_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/file_item_height"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/picker" >
+
+        <LinearLayout 
+            android:id="@+id/child_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/file_item_height"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/child_icon"
+                android:layout_width="@dimen/garbage_child_image_width"
+                android:layout_height="@dimen/garbage_child_image_width"
+                android:layout_marginEnd="@dimen/garbage_group_item_padding"
+                android:src="@drawable/clean_icon_default"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/child_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textAppearance="@style/AppTextAppearance.ItemName" />
+
+                <TextView
+                    android:id="@+id/child_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/garbage_child_summary_default"
+                    android:textAppearance="@style/AppTextAppearance.ItemOther" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/child_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/picker"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/garbage_group_item_padding"
+        android:singleLine="true"
+        android:textAppearance="@style/AppTextAppearance.ItemOther" />
+
+</RelativeLayout>

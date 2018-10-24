@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="conf_call_member_list">قائمة الأعضاء</string>
+    <string name="conf_call_participant_answered">تم الرد عليه</string>
+    <string name="conf_call_participant_missed">"فائتة"</string>
+    <string name="calls_over_wifi">سيتمإجراءالاتصالعبرشبكةWi-Fi</string>
+    <string name="connect_to_wifi">الاتصال بشبكة Wi-Fi لإجراء مكالمات</string>
+    <string name="wfc_notification_summary">انقرهناللوصولإلىالتفضيلات</string>
+    <string name="wfc_notification_summary_fail">انقر هنا لعرض الشبكات المتاحة</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"‏مكالمة SIP"</string>
+    <string name="snackbar_number_unblocked_failed">فشل إلغاء قفل <xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> </string>
+    <string name="menu_select_all">"تحديدالكل"</string>
+    <string name="selected_item_count">تم تحديد  <xliff:g id="count">%d</xliff:g>  </string>
+    <string name="multichoice_no_select_alert">"لم يتم تحديد أي عنصر."</string>
+    <string name="deleteCallLogConfirmation_title">هل تريد حذف سجل (سجلات) المكالمات؟</string>
+    <string name="deleteCallLogConfirmation_message">هل تريد بالفعل حذف سجل (سجلات) المكالمات المحددة؟</string>
+    <string name="recentCalls_delete">"حذف"</string>
+    <string name="deleting_call_log">جار حذف سجل الاتصالات...</string>
+    <string name="toast_call_detail_error">"التفاصيل غير متاحة"</string>
+    <string name="calllogList">"سجل المكالمات"</string>
+    <string name="calllogHint">بحث سجل المكالمات</string>
+    <string name="calllog_description">المكالمات الواردة والصادرة والفائتة.</string>
+    <string name="noMatchingCalllogs">لم يتم العثور على سجل مكالمات مطابق.</string>
+    <string name="titleJoinContactDataWith">"ضم جهات الاتصال"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> سجلات مكالمات</item>
+        <item quantity="one">"1 سجل مكالمات" </item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">لم يتم العثور على سجل المكالمات</string>
+    <string name="search_results_for">"نتائج البحث عن: <xliff:g id="QUERY">%s</xliff:g>"</string>
+    <string name="menu_select_none">"إلغاء اختيار الكل"</string>
+</resources>

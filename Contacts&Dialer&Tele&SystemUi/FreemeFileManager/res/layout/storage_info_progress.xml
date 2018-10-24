@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.freeme.filemanager.view.memoryprogress.MemoryProgressLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical|right"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:layout_marginEnd="@dimen/memory_info_layout_right"
+    android:id="@+id/phnoe_memory_progress_bar_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone">
+
+    <TextView
+        android:text="@string/storage_available"
+        android:id="@+id/phoneVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textAppearance="@style/AppTextAppearance.Small"/>
+
+    <ProgressBar android:id="@+id/phoneRectview"
+        android:layout_width="@dimen/memory_progress_width"
+        android:layout_height="@dimen/memory_progress_height"
+        android:layout_marginTop="@dimen/memory_progress_margin_top"
+        android:progressDrawable="@drawable/memory_progress_drawable"
+        android:progress="50"
+        style="@android:style/Widget.ProgressBar.Horizontal" />
+</com.freeme.filemanager.view.memoryprogress.MemoryProgressLayout>

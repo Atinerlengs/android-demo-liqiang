@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view xmlns:android="http://schemas.android.com/apk/res/android"
+    class="com.android.dialer.app.dialpad.DialpadFragment$DialpadSlidingRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- spacer view -->
+        <View
+            android:id="@+id/spacer"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#00000000" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#dbdbdb" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <include
+                layout="@layout/dialpad_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- "Dialpad chooser" UI, shown only when the user brings up the
+                     Dialer while a call is already in progress.
+                     When this UI is visible, the other Dialer elements
+                     (the textfield/button and the dialpad) are hidden. -->
+            <ListView
+                android:id="@+id/dialpadChooser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:visibility="gone" />
+
+            <include
+                layout="@layout/freeme_dialpad_action_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/freeme_dialpad_action_layout_height"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</view>

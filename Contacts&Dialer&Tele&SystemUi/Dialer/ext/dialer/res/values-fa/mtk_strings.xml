@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Invalid</string>
+    <string name="conf_call_member_list">لیست اعضا</string>
+    <string name="conf_call_participant_answered">پاسخ داده شد</string>
+    <string name="conf_call_participant_missed">"بی‌پاسخ"</string>
+    <string name="calls_over_wifi">تماسهاازطریقWi-Fiبرقرارمیشوند</string>
+    <string name="connect_to_wifi">برای برقراری تماس به Wi-Fi وصل شوید</string>
+    <string name="wfc_notification_summary">برايدسترسيبهترجیحات،اينجاضربهبزنيد</string>
+    <string name="wfc_notification_summary_fail">برای مشاهده شبکه های موجود روی این قسمت ضربه بزنید</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"‏تماس SIP"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> رفع انسداد نشد</string>
+    <string name="menu_select_all">"انتخابهمه"</string>
+    <string name="selected_item_count">  <xliff:g id="count">%d</xliff:g> انتخاب شد </string>
+    <string name="multichoice_no_select_alert">"موردی انتخاب نشده است."</string>
+    <string name="deleteCallLogConfirmation_title">گزارش (های) تماس حذف شود؟</string>
+    <string name="deleteCallLogConfirmation_message">آيا از حذف تماس(های) انتخاب شده مطمئن هستيد؟</string>
+    <string name="recentCalls_delete">"حذف"</string>
+    <string name="deleting_call_log">حذف گزارش تماس ها...</string>
+    <string name="toast_call_detail_error">"جزئیات در دسترس نیست"</string>
+    <string name="calllogList">"سابقه تماس"</string>
+    <string name="calllogHint">جستجوی گزارشهای تماس</string>
+    <string name="calllog_description">تماسهای ورودی، خروجی و بی پاسخ</string>
+    <string name="noMatchingCalllogs">گزارش تماس مورد نظر يافت نشد</string>
+    <string name="titleJoinContactDataWith">"پیوستن به مخاطبین"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> گزارش تماس</item>
+        <item quantity="one">"1 گزارش تماس"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">گزارش تماس يافت نشد</string>
+    <string name="search_results_for">"نتایج جستجو برای: <xliff:g id="QUERY">%s</xliff:g>"</string>
+    <string name="menu_select_none">"لغو انتخاب همه"</string>
+</resources>

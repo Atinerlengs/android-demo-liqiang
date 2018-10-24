@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="applicationLabel">"အဆက်အသွယ်များ"</string>
+    <string name="contactsList">"အဆက်အသွယ်များ"</string>
+    <string name="shortcut_add_contact">လိပ်စာထည့်ပါ</string>
+    <string name="shortcutContact">"အဆက်အသွယ်"</string>
+    <string name="shortcutDialContact">"တိုက်ရိုက်ခေါ်ဆိုခြင်း"</string>
+    <string name="shortcutMessageContact">"တိုက်ရိုက်စာပို့ခြင်း"</string>
+    <string name="shortcutActivityTitle"/>
+    <string name="contactInsertOrEditActivityTitle">"လိပ်စာသို့ထည့်ပါ"</string>
+    <string name="contactPickerActivityTitle">"လိပ်စာတစ်ခုရွေးပါ"</string>
+    <string name="groupMemberPickerActivityTitle">"ရွေးရန်"</string>
+    <string name="header_entry_contact_list_adapter_header_title">"အဆက်အသွယ်သစ်တစ်ခုပြုလုပ်ရန်"</string>
+    <string name="searchHint">"အဆက်အသွယ်များရှာပါ"</string>
+    <string name="menu_addStar">"အနှစ်သက်ဆုံးများထဲ ထည့်ပါ"</string>
+    <string name="menu_removeStar">အနှစ်သက်ဆုံးထဲမှ ဖယ်ရှားရန်</string>
+    <string name="description_action_menu_remove_star">"အနှစ်သက်ဆုံးများထဲမှာ ထုတ်လိုက်ပါပြီ"</string>
+    <string name="description_action_menu_add_star">"အကြိုက်ဆုံးများ ထဲကို ထည့်ပြီး"</string>
+    <string name="menu_editContact">ပြင်ဆင်သည်</string>
+    <string name="menu_deleteContact">ဖျက်ရန်</string>
+    <string name="menu_change_photo">ဓာတ်ပုံ ပြောင်းပါ</string>
+    <string name="menu_create_contact_shortcut"/>
+    <string name="menu_splitAggregate">"ချိတ်ဆက်မှုဖြုတ်ပါ"</string>
+    <string name="menu_editGroup"/>
+    <string name="menu_renameGroup"/>
+    <string name="menu_deleteGroup"/>
+    <string name="menu_addToGroup">လိပ်စာထည့်ပါ</string>
+    <string name="menu_selectForGroup"/>
+    <string name="menu_addContactsToGroup">အဆက်အသွယ်များကို ထည့်ရန်</string>
+    <string name="menu_removeFromGroup"/>
+    <string name="menu_new_group_action_bar"/>
+    <string name="splitConfirmation">"ဤအဆက်အသွယ်အား ချိတ်ဆက်ထားမှုကို ဖျက်လျက် အဆက်အသွယ် အများအပြားအဖြစ် ခွဲပစ်ရမလား။"</string>
+    <string name="splitConfirmation_positive_button">"ချိတ်ဆက်မှုဖြုတ်ပါ"</string>
+    <string name="splitConfirmationWithPendingChanges">"သင် ပြုလုပ်ခဲ့သည့် အပြောင်းအလဲများကို သိမ်းဆည်းလျက် ဤအဆက်အသွယ်အား ချိတ်ဆက်ထားမှုကို ဖျက်လိုက်ကာ အဆက်အသွယ် အများအပြားအဖြစ် ခွဲပစ်ရမလား။"</string>
+    <string name="splitConfirmationWithPendingChanges_positive_button">"သိမ်းဆည်းလျက် ချိတ်ဆက်မှုဖြုတ်လိုက်ပါ"</string>
+    <string name="joinConfirmation">"သင် ပြုလုပ်ခဲ့သည့် အပြောင်းအလဲများကို သိမ်းဆည်းလျက် ရွေးထားသည့် အဆက်အသွယ်များနှင့် ချိတ်ဆက်ပေးလိုပါသလား။"</string>
+    <string name="joinConfirmation_positive_button">"သိမ်းထားလျက် ချိတ်ဆက်ပေးပါ"</string>
+    <string name="contacts_linking_progress_bar"/>
+    <string name="contacts_unlinking_progress_bar"/>
+    <string name="menu_joinAggregate">"အ​ခြား​စာ​မျက်​နှာ​သို့​ကွင်း​ဆက်"</string>
+    <string name="menu_linkedContacts"/>
+    <string name="menu_save">"သိမ်းဆည်းရန်"</string>
+    <string name="titleJoinContactDataWith">"အဆက်အသွယ်များ ချိတ်ဆက်ပါ"</string>
+    <string name="blurbJoinContactDataWith">"<xliff:g id="NAME">%s</xliff:g> နှင့်ချိတ်လိုသည့် အဆက်အသွယ်ကို ရွေးပါ -"</string>
+    <string name="separatorJoinAggregateSuggestions">"အကြုံပြုလိုသော အဆက်အသွယ်များ"</string>
+    <string name="separatorJoinAggregateAll">"အဆက်အသွယ်များအားလုံး"</string>
+    <string name="contactsJoinedNamedMessage"/>
+    <string name="contactsJoinedMessage">"ကွင်းဆက်ထားသည့် အဆက်အသွယ်များ"</string>
+    <string name="contacts_deleted_one_named_toast"/>
+    <string name="contacts_deleted_two_named_toast"/>
+    <string name="contacts_deleted_many_named_toast"/>
+    <plurals name="contacts_deleted_toast">
+        <item quantity="one"> အဆက်အသွယ် ဖျက်ခဲ့သည်</item>
+        <item quantity="other">"ဆက်သွယ်မှုစာရင်းဖျက်ပြီး"</item>
+    </plurals>
+    <plurals name="contacts_count">
+        <item quantity="one"/>
+        <item quantity="other">အဆက်အသွယ်များ  <xliff:g id="count">%d</xliff:g>  </item>
+    </plurals>
+    <plurals name="contacts_count_with_account">
+        <item quantity="one"/>
+        <item quantity="other"/>
+    </plurals>
+    <string name="title_from_google"/>
+    <string name="title_from_other_accounts"/>
+    <string name="menu_set_ring_tone">"ဖုန်းမြည်သံသတ်မှတ်ရန်"</string>
+    <string name="menu_redirect_calls_to_vm"/>
+    <string name="menu_unredirect_calls_to_vm"/>
+    <string name="readOnlyContactWarning"/>
+    <string name="readOnlyContactWarning_positive_button"/>
+    <string name="readOnlyContactDeleteConfirmation"/>
+    <string name="single_delete_confirmation">"ဤအဆက်အသွယ်ကို ဖျက်မလား။"</string>
+    <string name="batch_delete_confirmation">"ရွေးထားသော အဆက်အသွယ်များကို ဖျက်မလား။"</string>
+    <string name="batch_delete_read_only_contact_confirmation">"ဖတ်ရန် သက်သက် အကောင့်များကို ဖျက်မရနိုင်သော်လည်း ဝှက်ထားနိုင်ပါသည်။"</string>
+    <string name="batch_delete_multiple_accounts_confirmation">"ဖျက်ခံရမည့် အဆက်အသွယ်များထဲတွင် အကောင့် အများအပြားဆိုင်ရာ အသေးစိတ်များ ပါရှိနေသည်။ ဖတ်ရန် သက်သက် အကောင့်များထံမှ အသေးစိတ်များကို ဝှက်ထားမည်၊ ဖျက်ခံရမည် မဟုတ်ပါ။"</string>
+    <string name="multipleContactDeleteConfirmation">"ဤအဆက်အသွယ်ကို ဖျက်လိုက်လျှင် အကောင့် အများအပြားထဲက အသေးစိတ်များကိုပါ ဖျက်ပစ်မည်။"</string>
+    <string name="deleteConfirmation">"ဤအဆက်အသွယ်ကို ဖျက်မလား။"</string>
+    <string name="deleteConfirmation_positive_button">ဖျက်ရန်</string>
+    <string name="invalidContactMessage"/>
+    <string name="createContactShortcutSuccessful_NoName">"အဆက်အသွယ်ကို ပင်မ မျက်နှာပြင်သို့ ထည့်လိုက်ပြီ။"</string>
+    <string name="createContactShortcutSuccessful">"<xliff:g id="NAME">%s</xliff:g> ကို ပင်မ မျက်နှာပြင်သို့ ထည့်ပေးလိုက်ပြီ။"</string>
+    <skip/>
+    <string name="photoPickerNotFoundText"/>
+    <string name="attach_photo_dialog_title">"လိပ်စာမှဓာတ်ပုံ"</string>
+    <string name="customLabelPickerTitle">"စိတ်ကြိုက် လေဘယ်လ်နာမည်"</string>
+    <string name="removePhoto">"ပုံအားဖယ်ရှားပါ"</string>
+    <string name="noContacts"/>
+    <string name="emptyGroup"/>
+    <string name="emptyAccount"/>
+    <string name="emptyMainList"/>
+    <string name="contactSavedNamedToast"/>
+    <string name="contactSavedToast">"အဆက်အသွယ်အား သိမ်းဆည်းပြီးပါပြီ"</string>
+    <string name="contactUnlinkedToast">"အဆက်အသွယ်များကို ကွင်းဆက်ဖြုတ်လိုက်ပြီ"</string>
+    <string name="contactSavedErrorToast"/>
+    <string name="contactUnlinkErrorToast"/>
+    <string name="contactJoinErrorToast"/>
+    <string name="contactGenericErrorToast"/>
+    <string name="contactPhotoSavedErrorToast"/>
+    <string name="groupLoadErrorToast"/>
+    <string name="groupDeletedToast"/>
+    <string name="groupCreatedToast"/>
+    <string name="groupCreateFailedToast"/>
+    <string name="groupUpdatedToast"/>
+    <string name="groupMembersRemovedToast"/>
+    <string name="groupMembersAddedToast"/>
+    <string name="groupSavedErrorToast"/>
+    <string name="groupExistsErrorMessage"/>
+    <string name="groupSomeContactsNoEmailsToast"/>
+    <string name="groupSomeContactsNoPhonesToast"/>
+    <string name="menu_sendEmailOption">"အီးမေးလ် ပို့ရန်"</string>
+    <string name="menu_sendMessageOption">မက်ဆေ့(ချ်) ပို့သည်</string>
+    <string name="pickerSelectContactsActivityTitle"/>
+    <string name="send_to_selection">"ပို့ရန်"</string>
+    <string name="listFoundAllContactsZero">"အဆက်အသွယ်များမရှိပါ"</string>
+    <string name="add_contact_dlg_message_fmt">"\"<xliff:g id="EMAIL">%s</xliff:g>\" ကို လိပ်စာထဲ ထည့်မလား?"</string>
+    <string name="search_settings_description">"အဆက်အသွယ်များ၏နာမည်များ"</string>
+    <string name="quickcontact_transparent_view_description">"ယခင် မျက်နှာပြင်သို့ ပြန်ရန် ကလစ်ပါ"</string>
+    <string name="quickcontact_add_phone_number">"ဖုန်း နံပါတ် ထည့်ရန်"</string>
+    <string name="quickcontact_add_email">"အီးမေးလ် ထည့်ရန်"</string>
+    <string name="missing_app">ဤဆောင်ရွက်ချက်ကို ကိုင်တွယ်ရန် လုပ်ငန်းသုံး ပရိုဂရမ်ကို မတွေ့ရပါ။</string>
+    <string name="menu_share">"မျှဝေရန်"</string>
+    <string name="menu_add_contact">"လိပ်စာများထဲသို့ ထည့်ပါ"</string>
+    <string name="menu_add_contacts">ထည့်ပါ</string>
+    <plurals name="title_share_via">
+        <item quantity="one">"မှ အဆယ်အသွယ်အား မျှဝေခြင်း"</item>
+        <item quantity="other"/>
+    </plurals>
+    <string name="dialog_new_group_account">"အကောင့် ရွေးရန်"</string>
+    <string name="group_name_dialog_insert_title"/>
+    <string name="group_name_dialog_update_title"/>
+    <string name="group_name_dialog_hint"/>
+    <string name="label_name_dialog_hint"/>
+    <string name="audio_chat">"အသံဖြင့် ချက်တင်း"</string>
+    <string name="video_chat">"ဗီဒီယိုဖြင့်စကားပြောခြင်း"</string>
+    <string name="account_type_format">"<xliff:g id="SOURCE">%1$s</xliff:g> လိပ်စာ"</string>
+    <string name="google_account_type_format">"<xliff:g id="SOURCE">%1$s</xliff:g>အကောင့်"</string>
+    <string name="take_photo">"ဓာတ်ပုံရိုက်ရန်"</string>
+    <string name="take_new_photo">"ဓာတ်ပုံအသစ်ရိုက်ပါ"</string>
+    <string name="pick_photo">"ပုံရွေးရန်"</string>
+    <string name="pick_new_photo">ဓာတ်ပုံအသစ်ကိုရွေးရန်</string>
+    <string name="search_results_searching">"ရှာဖွေနေသည်…"</string>
+    <string name="event_edit_field_hint_text">"ရက်စွဲ"</string>
+    <string name="group_edit_field_hint_text">"အညွှန်း"</string>
+    <string name="cancel_button_content_description">ပယ်ဖျက်ပါ</string>
+    <string name="back_arrow_content_description">​နောက်ဘက်</string>
+    <string name="action_menu_back_from_edit_select">"ပိတ်ရန်"</string>
+    <string name="aggregation_suggestion_edit_dialog_message">"ရွေးထားသော လိပ်စာအား ပြင်ဆင်ခြင်းသို့ပြောင်းမလား? သင် အခုထိ ရိုက်ထားသော စာများအားလုံး ကူးယူပြီးဖြစ်ပါလိမ့်မည်"</string>
+    <string name="contact_directory_description">"အကန့် <xliff:g id="TYPE">%1$s</xliff:g>"</string>
+    <string name="activity_title_settings">"သတ်မှတ်ချက်များ"</string>
+    <string name="menu_settings" msgid="377929915873428211">"သတ်မှတ်ချက်များ"</string>
+    <string name="menu_help">"အကူအညီ &amp; တုန့်ပြန်ချက်"</string>
+    <string name="organization_company_and_title">"<xliff:g id="COMPANY_0">%2$s</xliff:g>, <xliff:g id="COMPANY_1">%1$s</xliff:g>"</string>
+    <string name="non_phone_caption">ဖုန်း နံပါတ်</string>
+    <string name="non_phone_add_to_contacts">"လိပ်စာများထဲသို့ ထည့်ပါ"</string>
+    <string name="non_phone_close">"ပိတ်ရန်"</string>
+    <string name="date_year_toggle">"နှစ်ကို ထည့်ရန်"</string>
+    <string name="contacts_unavailable_add_account">"အကောင့် ထည့်ရန်"</string>
+    <string name="contacts_unavailable_import_contacts">သွင်းပါ</string>
+    <string name="create_group_item_label"/>
+    <string name="delete_group_dialog_message"/>
+    <string name="toast_join_with_empty_contact">"အခြားတစ်ခုနှင့် ကွင်းဆက်မချိတ်မီ အဆက်အသွယ်အမည်ကိုရိုက်ပါ။"</string>
+    <string name="copy_text">"ခဏကူးယူထားပါ"</string>
+    <string name="set_default">"ပုံသေအဖြစ် သတ်မှတ်ခြင်း"</string>
+    <string name="clear_default">"မူရင်းများကို ရှင်းလင်းခြင်း"</string>
+    <string name="toast_text_copied">"စာသားကူးယူပြီး"</string>
+    <string name="cancel_confirmation_dialog_message">"ပြောင်းလဲမှုများကို စွန့်ပစ်မလား?"</string>
+    <string name="cancel_confirmation_dialog_cancel_editing_button">ဖယ်ဖျက်သည်</string>
+    <string name="cancel_confirmation_dialog_keep_editing_button">ပယ်ဖျက်ပါ</string>
+    <string name="leave_customize_confirmation_dialog_message"/>
+    <string name="enter_contact_name">"အဆက်အသွယ်များရှာပါ"</string>
+    <string name="title_edit_group"/>
+    <string name="local_profile_title">"မိမိ၏ဖုန်းမှပရိုဖိုင်လ်"</string>
+    <string name="external_profile_title">"ကျွန်ုပ်၏ <xliff:g id="EXTERNAL_SOURCE">%1$s</xliff:g> ကိုယ်ရေးအကောင့်"</string>
+    <string name="contact_editor_prompt_zero_accounts"/>
+    <string name="contact_editor_prompt_one_account">"အဆက်အသွယ် အသစ်ကို <xliff:g id="ACCOUNT_NAME">%1$s</xliff:g> တွင်သိမ်းလိုက်ပါမည်။"</string>
+    <string name="contact_editor_prompt_multiple_accounts">"အဆက်အသွယ် အသစ်များအတွက် မူရင်းအကောင့်ကို ရွေးပါ။"</string>
+    <string name="contact_editor_title_new_contact">"အဆက်အသွယ်သစ်တစ်ခုပြုလုပ်ရန်"</string>
+    <string name="contact_editor_title_existing_contact">"အဆက်အသွယ်အားပြင်ရန်"</string>
+    <string name="contact_editor_title_read_only_contact"/>
+    <string name="contact_editor_pick_raw_contact_to_edit_dialog_title"/>
+    <string name="contact_editor_pick_linked_contact_dialog_title">"ကွင်းဆက် အဆက်အသွယ်များ"</string>
+    <string name="contact_editor_add_linked_contact">ထည့်ပါ</string>
+    <string name="contact_editor_unlink_contacts">"ချိတ်ဆက်မှုဖြုတ်ပါ"</string>
+    <string name="add_account">"အကောင့် ထည့်ရန်"</string>
+    <string name="add_new_account">"အကောင့် အသစ် ထည့်ရန်"</string>
+    <string name="menu_export_database">"ဒေ့ဘာဘေ့စ်ဖိုင်များကို အပြင်သို့ထုတ်ပါ"</string>
+    <string name="action_menu_add_new_contact_button">"အဆက်အသွယ်သစ်တစ်ခုပြုလုပ်ရန်"</string>
+    <string name="expanding_entry_card_view_see_more">"ပိုပြီး ကြည့်ရန်"</string>
+    <string name="expanding_entry_card_view_see_less">"လျှော့ပြီး ကြည့်ရန်"</string>
+    <string name="recent_card_title">"လတ်တလော"</string>
+    <string name="about_card_title">"အကြောင်း"</string>
+    <string name="toast_making_personal_copy"/>
+    <string name="tomorrow">"နက်ဖြန်"</string>
+    <string name="today">"ယနေ့"</string>
+    <string name="today_at_time_fmt">"ယနေ့ <xliff:g id="TIME_INTERVAL">%s</xliff:g> တွင်"</string>
+    <string name="tomorrow_at_time_fmt">"နက်ဖြန်<xliff:g id="TIME_INTERVAL">%s</xliff:g>တွင်"</string>
+    <string name="date_time_fmt"/>
+    <string name="untitled_event">"(ခေါင်းစဉ်မဲ့ ဖြစ်ရပ်)"</string>
+    <string name="date_time_set">"လက်ခံရန်"</string>
+    <string name="header_im_entry">"IM"</string>
+    <string name="header_organization_entry">"အဖွဲ့အစည်း"</string>
+    <string name="header_nickname_entry">"နာမည်ဝှက်"</string>
+    <string name="header_note_entry">"မှတ်စု"</string>
+    <string name="header_website_entry">"ဝက်ဘ်ဆိုက်"</string>
+    <string name="header_event_entry">"ဖြစ်ရပ်"</string>
+    <string name="header_relation_entry">"တော်စပ်ပုံ"</string>
+    <string name="header_name_entry">အမည်</string>
+    <string name="header_email_entry">အီးမေး(လ်)</string>
+    <string name="header_phone_entry">"ဖုန်း"</string>
+    <string name="content_description_directions">"တည်နေရာများသို့ လမ်းညွှန်ချက်"</string>
+    <string name="content_description_recent_sms"/>
+    <string name="content_description_recent_call_type_incoming">အဝင်</string>
+    <string name="content_description_recent_call_type_outgoing">အထွက်</string>
+    <string name="content_description_recent_call_type_missed">"မကိုင်မိလိုက်သော"</string>
+    <string name="content_description_recent_call"/>
+    <string name="message_from_you_prefix">"သင်: <xliff:g id="SMS_BODY">%s</xliff:g>"</string>
+    <string name="editor_more_fields">"နေရာပိုချဲ့ရန်"</string>
+    <string name="editor_change_photo_content_description"/>
+    <string name="editor_add_photo_content_description"/>
+    <string name="editor_contact_photo_content_description">"လိပ်စာမှဓာတ်ပုံ"</string>
+    <string name="editor_failed_to_load">"တည်းဖြတ်သူကို ဖွင့်ခြင်းမအောင်မြင်ပါ။"</string>
+    <string name="editor_account_selector_title">"သိမ်းဆည်းရန်နေရာ"</string>
+    <string name="editor_account_selector_read_only_title"/>
+    <string name="quickcontact_suggestion_link_button">"အဆက်အသွယ်များ ချိတ်ဆက်ပါ"</string>
+    <string name="quickcontact_suggestion_cancel_button">ပယ်ဖျက်ပါ</string>
+    <string name="suggestion_card_this_contact_title">"ဤအဆက်အသွယ်"</string>
+    <string name="suggestion_card_duplicates_title">"ဖြစ်နိုင်သည့် မိတ္တူပွားများ"</string>
+    <string name="suggestion_card_help_message">"ယင်းအဆက်အသွယ်များ လူတစ်ဦးတည်း ဖြစ်နိုင်ပါသည်။ ၎င်းတို့ကို တစ်ခုတည်းသော အဆက်အသွယ် အဖြစ် ချိတ်ဆက်ပေးနိုင်ပါသည်။"</string>
+    <string name="editor_delete_view_description"/>
+    <string name="editor_delete_view_description_short">"<xliff:g id="DATA_KIND">%s</xliff:g> ကိုဖျက်ပါ"</string>
+    <string name="menu_assistant"/>
+    <string name="menu_assistant_new_badge">အသစ်</string>
+    <string name="navigation_drawer_open">"လမ်းကြောင်းပြ အံဆွဲကို ဖွင့်ပါ"</string>
+    <string name="navigation_drawer_close">"လမ်းကြောင်းပြ အံဆွဲကို ပိတ်ပါ"</string>
+    <string name="navigation_drawer_label"/>
+    <string name="menu_title_groups"/>
+    <string name="menu_title_filters">အကောင့်များ  </string>
+    <string name="permission_explanation_header"/>
+    <string name="permission_explanation_subheader_calendar_and_SMS"/>
+    <string name="permission_explanation_subheader_calendar">ဖြစ်ရပ်များ</string>
+    <string name="permission_explanation_subheader_SMS">"စာများ"</string>
+    <string name="hamburger_feature_highlight_header"/>
+    <string name="hamburger_feature_highlight_body"/>
+    <string name="undo">မလုပ်ပါ</string>
+    <string name="call_custom"/>
+    <string name="call_home">"အိမ်ကိုခေါ်ပါ"</string>
+    <string name="call_mobile">"မိုဘိုင်းကိုခေါ်ပါ"</string>
+    <string name="call_work">"အလုပ်ကိုခေါ်ပါ"</string>
+    <string name="call_fax_work">"အလုပ်ဖက်စ်ကိုခေါ်ပါ"</string>
+    <string name="call_fax_home">"အိမ်ဖက်စ်ကိုခေါ်ပါ"</string>
+    <string name="call_pager">"ပေဂျာကိုခေါ်ပါ"</string>
+    <string name="call_other">"ခေါ်ပါ"</string>
+    <string name="call_callback">"ပြန်ခေါ်ခြင်းဝန်ဆောင်မှုကို ခေါ်ပါ"</string>
+    <string name="call_car">"ကားကိုခေါ်ပါ"</string>
+    <string name="call_company_main">"ကုမ္ပဏီအဓိက နံပါတ်ကို ခေါ်ပါ"</string>
+    <string name="call_isdn">"ISDN ကိုခေါ်ပါ"</string>
+    <string name="call_main">"အဓိကနံပါတ်ကိုခေါ်ပါ"</string>
+    <string name="call_other_fax">"ဖက်စ်ကိုခေါ်ပါ"</string>
+    <string name="call_radio">"ရေဒီယိုကိုခေါ်ပါ"</string>
+    <string name="call_telex">"တဲလက်ဇ်နံပါတ်ကိုခေါ်ပါ"</string>
+    <string name="call_tty_tdd">"TTY/TDD ကိုခေါ်ပါ"</string>
+    <string name="call_work_mobile">"အလုပ်မိုဘိုင်းကိုခေါ်ပါ"</string>
+    <string name="call_work_pager">"အလုပ်ပေဂျာကိုခေါ်ပါ"</string>
+    <string name="call_assistant"/>
+    <string name="call_mms">"MMS ကိုခေါ်ပါ"</string>
+    <string name="call_by_shortcut">"<xliff:g id="CONTACT_NAME">%s</xliff:g> (ခေါ်ပါ)"</string>
+    <string name="sms_custom"/>
+    <string name="sms_home">"အိမ်သို့ စာပို့ပါ"</string>
+    <string name="sms_mobile">"မိုဘိုင်းသို့ စာပို့ပါ"</string>
+    <string name="sms_work">"အလုပ်နံပါတ်သို့ စာပို့ပါ"</string>
+    <string name="sms_fax_work">"အလုပ်ဖက်စ်သို့ စာပို့ပါ"</string>
+    <string name="sms_fax_home">"အိမ်ဖက်စ်သို့ စာပို့ပါ"</string>
+    <string name="sms_pager">"ပေဂျာနံပါတ်သို့ စာပို့ပါ"</string>
+    <string name="sms_other">"စာတို"</string>
+    <string name="sms_callback">"ပြန်ခေါ်မှုနံပါတ်ထံ စာပို့ပါ"</string>
+    <string name="sms_car">"ကားဆီ စာပို့ပါ"</string>
+    <string name="sms_company_main">"ကုမ္ပဏီ ပင်မနံပါတ်သို့ စာပို့ပါ"</string>
+    <string name="sms_isdn">"ISDN စာပို့ပါ"</string>
+    <string name="sms_main">"အဓိကနံပါတ်သို့ စာပို့ပါ"</string>
+    <string name="sms_other_fax">"ဖက်စ်နံပါတ်သို့ စာပို့ပါ"</string>
+    <string name="sms_radio">"ရေဒီယိုနံပါတ်သို့ စာပို့ပါ"</string>
+    <string name="sms_telex">"တဲလက်စ်နံပါတ်သို့ စာပို့ပါ"</string>
+    <string name="sms_tty_tdd">"TTY/TDD နံပါတ်သို့ စာပို့ပါ"</string>
+    <string name="sms_work_mobile">"အလုပ်မိုဘိုင်းသို့ စာပို့ပါ"</string>
+    <string name="sms_work_pager">"အလုပ်ပေ့ဂျာသို့ စာပို့ပါ"</string>
+    <string name="sms_assistant">"<xliff:g id="ASSISTANT">%s</xliff:g>ထံ စာပို့ပါ"</string>
+    <string name="sms_mms">"MMS နံပါတ်သို့ စာပို့ပါ"</string>
+    <string name="sms_by_shortcut">"<xliff:g id="CONTACT_NAME">%s</xliff:g> (မက်ဆေ့ဂ်ျပို့ပါ)"</string>
+    <string name="description_video_call">"ဗီဒီယို ခေါ်ဆိုမှု ပြုလုပ်ရန်"</string>
+    <string name="clearFrequentsConfirmation_title">"အသုံးများသောလိပ်စာများရှင်းပစ်မလား?"</string>
+    <string name="clearFrequentsConfirmation"/>
+    <string name="clearFrequentsProgress_title">"အသုံးများသောလိပ်စာများ ရှင်းလင်းနေစဉ်"</string>
+    <string name="status_available">"ဆက်သွယ်နိုင်ပါသည်"</string>
+    <string name="status_away">"အဝေးရောက်နေပါသည်"</string>
+    <string name="status_busy">"အလုပ်များနေသည်"</string>
+    <string name="local_invisible_directory">"အခြား"</string>
+    <string name="directory_search_label">"လမ်းညွှန်"</string>
+    <string name="directory_search_label_work">"အလုပ်လမ်းညွှန်"</string>
+    <string name="local_search_label">"အဆက်အသွယ်များအားလုံး"</string>
+    <string name="description_quick_contact_for">"<xliff:g id="NAME">%1$s</xliff:g> အတွက် အမြန်ဆက်သွယ်လိပ်စာ"</string>
+    <string name="missing_name">"(အမည်မရှိ)"</string>
+    <string name="favoritesFrequentContacted">"မကြာခဏဆက်သွယ်ရန်သူများ"</string>
+    <string name="list_filter_phones">"ဖုန်းနံပါတ်ပါသော လိပ်စာများအားလုံး"</string>
+    <string name="list_filter_phones_work">"အလုပ်ပရိုဖိုင် အဆက်အသွယ်များ"</string>
+    <string name="view_updates_from_group">"အဆင့်မြှင့်ခြင်းများပြရန်"</string>
+    <string name="account_phone">"ကိရိယာ"</string>
+    <string name="account_sim">Sim</string>
+    <string name="nameLabelsGroup">အမည်</string>
+    <string name="nicknameLabelsGroup">"နာမည်ဝှက်"</string>
+    <string name="name_given">"ပထမ အမည်"</string>
+    <string name="name_family">"နောက်ဆုံး အမည်"</string>
+    <string name="name_prefix">"နာမည်ရှေ့ဆောင်"</string>
+    <string name="name_middle">"အလယ်နာမည်"</string>
+    <string name="name_suffix">"နာမည်နောက်စွဲ"</string>
+    <string name="name_phonetic">"အသံထွက်နာမည်"</string>
+    <string name="name_phonetic_given">"အသံထွက် ပထမ အမည်"</string>
+    <string name="name_phonetic_middle">"အသံထွက် အလယ်နာမည်"</string>
+    <string name="name_phonetic_family">"အသံထွက် နောက်ဆုံး အမည်"</string>
+    <string name="phoneLabelsGroup">"ဖုန်း"</string>
+    <string name="emailLabelsGroup">အီးမေး(လ်)</string>
+    <string name="postalLabelsGroup">လိပ်စာ</string>
+    <string name="imLabelsGroup">"IM"</string>
+    <string name="organizationLabelsGroup">"အဖွဲ့အစည်း"</string>
+    <string name="relationLabelsGroup">"ပတ်သတ်မှု"</string>
+    <string name="eventLabelsGroup">"အထူးနေ့"</string>
+    <string name="sms">"စာတို"</string>
+    <string name="postal_address">လိပ်စာ</string>
+    <string name="ghostData_company">"ကုမ္ပဏီ"</string>
+    <string name="ghostData_title">"ခေါင်းစဉ်"</string>
+    <string name="label_notes">"မှတ်စုများ"</string>
+    <string name="label_custom_field">"စိတ်ကြိုက်"</string>
+    <string name="label_sip_address">"SIP"</string>
+    <string name="websiteLabelsGroup">"ဝက်ဘ်ဆိုက်"</string>
+    <string name="groupsLabel"/>
+    <string name="email_home">"အိမ်ကို အီးမေးလ် ပို့ပါ"</string>
+    <string name="email_mobile">"မိုဘိုင်း ကို အီးမေးလ် ပို့ပါ"</string>
+    <string name="email_work">"အလုပ်ကို အီးမေးလ် ပို့ပါ"</string>
+    <string name="email_other">အီးမေး(လ်)</string>
+    <string name="email_custom"/>
+    <string name="email">အီးမေး(လ်)</string>
+    <string name="postal_street">"လမ်း"</string>
+    <string name="postal_city">"မြို့"</string>
+    <string name="postal_region">"ပြည်နယ်"</string>
+    <string name="postal_postcode">"စာပို့သင်္ကေတ"</string>
+    <string name="postal_country">"နိုင်ငံ"</string>
+    <string name="map_home">"အိမ်လိပ်စာအားကြည့်ရန်"</string>
+    <string name="map_work">"အလုပ်လိပ်စာအားကြည့်ရန်"</string>
+    <string name="map_other">"လိပ်စာအားကြည့်ရန်"</string>
+    <string name="map_custom"/>
+    <string name="chat_aim">"AIM သုံး၍ ချက်တင်လုပ်ခြင်း"</string>
+    <string name="chat_msn">"Windows Liveသုံး၍ ချက်တင်ပြုလုပ်ခြင်း"</string>
+    <string name="chat_yahoo">"Yahoo သုံး၍ ချက်တင်ပြုလုပ်ခြင်း"</string>
+    <string name="chat_skype">"Skype သုံး၍ ချက်တင်ပြုလုပ်ခြင်း"</string>
+    <string name="chat_qq">"QQသုံး၍ချက်တင်ပြုလုပ်ခြင်း"</string>
+    <string name="chat_gtalk">"ဂူးဂဲလ်တော့သုံး၍ ချက်တင်ပြုလုပ်ခြင်း"</string>
+    <string name="chat_icq">"ICQ သုံး၍ ချက်တင်ပြုလုပ်ခြင်း"</string>
+    <string name="chat_jabber">"Jabberသုံး၍ ချက်တင်ပြုလုပ်ခြင်း"</string>
+    <string name="chat">"ချက်တင်းပြောသည်"</string>
+    <string name="description_minus_button">ဖျက်ရန်</string>
+    <string name="expand_name_fields_description"/>
+    <string name="collapse_name_fields_description"/>
+    <string name="expand_phonetic_name_fields_description"/>
+    <string name="collapse_phonetic_name_fields_description"/>
+    <string name="expand_fields_description">"တိုးချဲ့ရန်"</string>
+    <string name="collapse_fields_description">"ခေါက်ရန်"</string>
+    <string name="announce_expanded_fields"/>
+    <string name="announce_collapsed_fields"/>
+    <string name="list_filter_all_accounts">"အဆက်အသွယ်များအားလုံး"</string>
+    <string name="list_filter_all_starred">"စတားပေးထားသောအရာ"</string>
+    <string name="list_filter_customize">"မိမိစိတ်ကြိုက်ပြုလုပ်ခြင်း"</string>
+    <string name="list_filter_single">"အဆက်အသွယ်"</string>
+    <string name="display_ungrouped">"တခြားအဆက်အသွယ်များအားလုံး"</string>
+    <string name="display_all_contacts">"အဆက်အသွယ်များအားလုံး"</string>
+    <string name="menu_sync_remove">"ထပ်တူပြုလုပ်ခြင်း အုပ်စုအား ဖယ်ရှားရန်"</string>
+    <string name="dialog_sync_add">"ထပ်တူပြုလုပ်မှု အုပ်စုများ ထပ်ထည့်ပါ"</string>
+    <string name="display_more_groups">"ပိုမိုသော အုပ်စုများ…"</string>
+    <string name="display_warn_remove_ungrouped">"\"<xliff:g id="GROUP">%s</xliff:g>\" အား ထပ်တူပြုလုပ်ခြင်းမှ ဖယ်ထုတ်ခြင်းသည် တခြား အုပ်စုမလုပ်ထားသော အဆက်အသွယ်များအားလည်း ဖယ်ထုတ်ပါလိမ့်မည်။"</string>
+    <string name="savingDisplayGroups">"ပြသမှု ရွေးချယ်ခြင်းများ သိမ်းဆည်နေစဉ်…"</string>
+    <string name="listCustomView"/>
+    <string name="dialog_new_contact_account">"သွင်းထားသည့် အဆက်အသွယ်များကို သိမ်းဆည်းရန် −"</string>
+    <string name="import_from_sim">"ဆင်းမ် ကဒ်"</string>
+    <string name="import_from_sim_summary_fmt"/>
+    <plurals name="import_from_sim_secondary_contact_count_fmt">
+        <item quantity="one">အဆက်အသွယ် ၁</item>
+        <item quantity="other"/>
+    </plurals>
+    <plurals name="import_from_sim_secondary_template">
+        <item quantity="one"/>
+        <item quantity="other"/>
+    </plurals>
+    <string name="import_from_vcf_file"/>
+    <string name="nothing_to_import_message"/>
+    <string name="import_from_vcf_file_confirmation_message"/>
+    <string name="cancel_import_confirmation_message">"<xliff:g id="FILENAME">%s</xliff:g> ကို အထဲသို့သွင်းခြင်းအား ရပ်တန့်မလား?"</string>
+    <string name="cancel_export_confirmation_message">"<xliff:g id="FILENAME">%s</xliff:g> ကိုအပြင်သို့ထုတ်ခြင်းအား ရပ်တန့်မလား?"</string>
+    <string name="cancel_vcard_import_or_export_failed"/>
+    <string name="fail_reason_unknown">မသိသော အမှား။</string>
+    <string name="fail_reason_could_not_open_file"/>
+    <string name="fail_reason_could_not_initialize_exporter"/>
+    <string name="fail_reason_no_exportable_contact">"အပြင်သို့ထုတ်ယူရနိုင်သော အဆက်အသွယ်မရှိပါ"</string>
+    <string name="missing_required_permission">"လိုအပ်သည့်ခွင့်ပြုချက်ကိုသင်ပိတ်လိုက်သည်။"</string>
+    <string name="fail_reason_error_occurred_during_export">"အပြင်ထုတ်နေစဉ် အမှားပေါ်ပါသည်: \"<xliff:g id="EXACT_REASON">%s</xliff:g>\"."</string>
+    <string name="fail_reason_io_error">"I/O အမှား"</string>
+    <string name="fail_reason_low_memory_during_import">"လုံလောက်သော မှတ်ဉာဏ်မရှိပါ။ ဖိုင်အရမ်းကြီးနေတာ ဖြစ်နိုင်ပါသည်"</string>
+    <string name="fail_reason_not_supported"/>
+    <string name="exporting_vcard_finished_title">"<xliff:g id="FILENAME">%s</xliff:g> ကို အပြင်ထုတ်ခြင်းပြီးစီးပါပြီး"</string>
+    <string name="exporting_vcard_finished_title_fallback">"အဆက်အသွယ်များတင်ပို့ခြင်းပြီးပါပြီ။"</string>
+    <string name="exporting_vcard_finished_toast">"အဆက်အသွယ်များကို တင်ပို့၍ပြီးပါပြီ၊ အဆက်အသွယ်များကို မျှဝေရန် သတိပေးချက်ကိုနှိပ်ပါ။"</string>
+    <string name="touch_to_share_contacts">"အဆက်အသွယ်များကို မျှဝေရန်တို့ပါ။"</string>
+    <string name="exporting_vcard_canceled_title">"<xliff:g id="FILENAME">%s</xliff:g> ကို အပြင်ထုတ်ခြင်းအား ပယ်ဖျက်ပြီး"</string>
+    <string name="exporting_contact_list_title">"အဆက်အသွယ်ဒေတာများအား အပြင်သို့ထုတ်နေစဉ်"</string>
+    <string name="exporting_contact_list_message">"အဆက်အသွယ်ဒေတာကို တင်ပို့နေသည်။"</string>
+    <string name="composer_failed_to_get_database_infomation"/>
+    <string name="composer_has_no_exportable_contact"/>
+    <string name="composer_not_initialized"/>
+    <string name="exporting_contact_failed_title"/>
+    <string name="exporting_contact_failed_message"/>
+    <string name="importing_vcard_description">"<xliff:g id="NAME">%s</xliff:g> အား အထဲသွင်းစဉ်"</string>
+    <string name="reading_vcard_failed_title"/>
+    <string name="importing_vcard_finished_title">"<xliff:g id="FILENAME">%s</xliff:g> လိပ်စာကဒ် အထဲသွင်းခြင်း ပြီးပါပြီ"</string>
+    <string name="importing_vcard_canceled_title">"<xliff:g id="FILENAME">%s</xliff:g> အားအထဲသွင်းခြင်း ရပ်ဆိုင်းပြီး"</string>
+    <string name="vcard_import_will_start_message">"<xliff:g id="FILENAME">%s</xliff:g> ကို မကြာမှီ အထဲသို့ သွင်းပါမည်"</string>
+    <string name="vcard_import_will_start_message_with_default_name">"ဖိုင်အား မကြာမှီ အထဲသို့ သွင်းပါမည်"</string>
+    <string name="vcard_import_request_rejected_message">"လိပ်စာကဒ်အား အထဲသွင်းရန် တောင်းဆိုမှု ငြင်းဆန်ခံရပါသည်။ နောင်မှ ပြန်လည်ကြိုးစားပါ"</string>
+    <string name="contacts_export_will_start_message">"အဆက်အသွယ်များကို မကြာခင်အချိန်တွင် တင်ပို့သွားပါမည်။"</string>
+    <string name="vcard_export_request_rejected_message">"လိပ်စာကဒ်အား အပြင်ထုတ်ရန် တောင်းဆိုမှု ငြင်းဆန်ခံရပါသည်။ နောင်မှ ပြန်လည်ကြိုးစားပါ"</string>
+    <string name="vcard_unknown_filename">"အဆက်အသွယ်"</string>
+    <string name="caching_vcard_message">"လိပ်စာကဒ်(များ)ကို စက်တွင်း ခဏသိမ်းဆည်းရာနေရာသို့ ပို့နေပါသည်။ အမှန်တကယ် တင်သွင်းခြင်း မကြာခင် စပါမည်။"</string>
+    <string name="vcard_import_failed"/>
+    <string name="nfc_vcard_file_name">"NFCမှရသောလိပ်စာ"</string>
+    <string name="caching_vcard_title">"ယာယီသိမ်းထားခြင်း"</string>
+    <string name="progress_notifier_message"/>
+    <string name="export_to_vcf_file">".vcfဖိုင်သို့ထုတ်မည်"</string>
+    <string name="display_options_sort_list_by">"ဖြင့် စီပေးရန်"</string>
+    <string name="display_options_phonetic_name_fields">"အသံထွက်နာမည်"</string>
+    <string name="editor_options_always_show_phonetic_names">"အမြဲပြသရန်"</string>
+    <string name="editor_options_hide_phonetic_names_if_empty"/>
+    <string name="display_options_sort_by_given_name">"ပထမ အမည်"</string>
+    <string name="display_options_sort_by_family_name">"နောက်ဆုံး အမည်"</string>
+    <string name="display_options_view_names_as">"အမည် ချထားပုံစံ"</string>
+    <string name="display_options_view_given_name_first">"ပထမ အမည် ဦးစွာ"</string>
+    <string name="display_options_view_family_name_first">"နောက်ဆုံး အမည် ဦးစွာ"</string>
+    <string name="settings_accounts">အကောင့်များ  </string>
+    <string name="default_editor_account">"အဆက်အသွယ် အသစ်များအတွက် မူရင်း အကောင့်"</string>
+    <string name="settings_my_info_title"/>
+    <string name="set_up_profile">"သင်၏ ပရိုဖိုင်ကို စဖွင့်သတ်မှတ်ရန်"</string>
+    <string name="setting_about">"အဆက်အသွယ်များ အကြောင်း"</string>
+    <string name="share_favorite_contacts">"အကြိုက်ဆုံးအဆက်အသွယ်များကို မျှဝေပါ"</string>
+    <string name="share_contacts">"အဆက်အသွယ်များအားလုံးကို မျှဝေပါ"</string>
+    <string name="share_contacts_failure">"အဆက်အသွယ်များကို မျှဝေခြင်းမအောင်မြင်ပါ။"</string>
+    <string name="dialog_export"/>
+    <string name="dialog_import"/>
+    <string name="share_error"/>
+    <string name="no_contact_to_share">"မျှဝေရန် အဆက်အသွယ်များမရှိပါ။"</string>
+    <string name="menu_contacts_filter">"အဆက်အသွယ်များပြရန်"</string>
+    <string name="activity_title_contacts_filter">"အဆက်အသွယ်များပြရန်"</string>
+    <string name="custom_list_filter"/>
+    <string name="menu_custom_filter_save">"သိမ်းဆည်းရန်"</string>
+    <string name="hint_findContacts">"အဆက်အသွယ်များရှာပါ"</string>
+    <string name="contactsFavoritesLabel">"အနှစ်သက်ဆုံးများ"</string>
+    <string name="menu_import">သွင်းပါ</string>
+    <string name="menu_export">"ထုတ်ရန်"</string>
+    <string name="menu_blocked_numbers">"ပိတ်ဆို့ထားသည့် နံပါတ်များ"</string>
+    <string name="contact_status_update_attribution">"<xliff:g id="SOURCE">%1$s</xliff:g> မှတဆင့်"</string>
+    <string name="contact_status_update_attribution_with_date">"<xliff:g id="SOURCE">%2$s</xliff:g> မှတဆင့် <xliff:g id="DATE">%1$s</xliff:g>"</string>
+    <string name="letter_tile_letter_font_family"/>
+    <string name="action_menu_back_from_search">"ရှာဖွေမှုကို ရပ်ရန်"</string>
+    <string name="description_clear_search">"ရှာဖွေမှုကို ရှင်းပါ"</string>
+    <string name="search_font_family"/>
+    <string name="select_account_dialog_title">အကောင့်</string>
+    <string name="set_default_account">"ခေါ်ဆိုမှုများ အတွက် အမြဲတမ်း ဒါကို သုံးရန်"</string>
+    <string name="call_with_a_note">"မှတ်စုတစ်ခုဖြင့် ခေါ်ဆိုမည်"</string>
+    <string name="call_subject_hint"/>
+    <string name="send_and_call_button">"ပေးပို့မည် &amp; ခေါ်ဆိုမည်"</string>
+    <string name="call_subject_limit">"<xliff:g id="COUNT">%1$s</xliff:g> / <xliff:g id="LIMIT">%2$s</xliff:g>"</string>
+    <string name="call_subject_type_and_number"/>
+    <string name="about_build_version">"တည်ဆောက်ခြင်းအမှတ်"</string>
+    <string name="about_open_source_licenses">"အခမဲ့ ရင်းမြစ် လိုင်စင်များ"</string>
+    <string name="about_open_source_licenses_summary">"အခမဲ့  ဆော့ဝဲအတွက် လိုင်စင် အသေးစိတ်များ"</string>
+    <string name="about_privacy_policy">"ကိုယ်ရေး မူဝါဒ"</string>
+    <string name="about_terms_of_service">"ဝန်ဆောင်မှု စည်းကမ်းချက်များ"</string>
+    <string name="activity_title_licenses">"အခမဲ့ ရင်းမြစ် လိုင်စင်များ"</string>
+    <string name="url_open_error_toast">"url ကို ဖွင့်၍မရပါ။"</string>
+    <string name="account_filter_view_checked">"<xliff:g id="ACCOUNT_INFO">%s</xliff:g> ကိုစစ်ဆေးပြီးပါပြီ"</string>
+    <string name="account_filter_view_not_checked">"<xliff:g id="ACCOUNT_INFO">%s</xliff:g> ကိုမစစ်ဆေးရသေးပါ"</string>
+    <string name="description_search_video_call">"ဗီဒီယို ခေါ်ဆိုမှုကို ပြုလုပ်ပါ"</string>
+    <string name="description_delete_contact">ဖျက်ရန်</string>
+    <string name="description_no_name_header"/>
+    <string name="callDurationSecondFormat"/>
+    <string name="callDurationMinuteFormat"/>
+    <string name="callDurationHourFormat"/>
+    <string name="dynamic_shortcut_disabled_message"/>
+    <string name="dynamic_shortcut_contact_removed_message"/>
+    <string name="sim_import_button_text">သွင်းပါ</string>
+    <string name="sim_import_title_none_selected"/>
+    <string name="sim_import_empty_message"/>
+    <string name="sim_import_contact_exists_toast"/>
+    <plurals name="sim_import_success_toast_fmt">
+        <item quantity="one"/>
+        <item quantity="other"/>
+    </plurals>
+    <string name="sim_import_failed_toast"/>
+    <string name="sim_import_title"/>
+    <string name="sim_import_cancel_content_description">ပယ်ဖျက်ပါ</string>
+    <string name="auto_sync_off"/>
+    <string name="dismiss_sync_alert">ဖယ်ရန်</string>
+    <string name="account_sync_off"/>
+    <string name="turn_auto_sync_on_dialog_title"/>
+    <string name="turn_auto_sync_on_dialog_body"/>
+    <string name="turn_auto_sync_on_dialog_confirm_btn">"ဖွင့်မည်"</string>
+    <string name="connection_error_message">"ချိတ်ဆက်မှု မရှိ"</string>
+    <string name="single_sim_display_label">Sim</string>
+    <string name="show_more_content_description"/>
+    <string name="importing_sim_finished_title"/>
+    <string name="importing_sim_failed_title">မအောင်မြင်မှုများကို တင်သွင်းပါ</string>
+    <string name="importing_sim_failed_message"/>
+    <string name="importing_sim_in_progress_title"/>
+    <string name="contacts_default_notification_channel">"သတိပေးချက်များ"</string>
+</resources>

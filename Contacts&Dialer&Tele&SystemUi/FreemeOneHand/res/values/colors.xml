@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="swipe_handler_bg_color">#880000ff</color>
+    <color name="border_color">#4c000000</color>
+    <color name="icon_white_tint">#ffffffff</color>
+
+    <color name="onehand_softkey_background">#33fafafa</color>
+    <color name="onehand_softkey_border_color">#4cfafafa</color>
+
+    <color name="resize_guide_bg_color">#4da4dafc</color>
+    <color name="resize_guide_border_color">#ff00d8ff</color>
+
+    <color name="secure_guide_bg_color">#4c000000</color>
+    <color name="secure_guide_stroke_color">#ff00d8ff</color>
+
+    <color name="pager_indicator_stroke_color">#4d252525</color>
+</resources>

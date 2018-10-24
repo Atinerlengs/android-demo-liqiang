@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory>
+        <SwitchPreference
+            android:checked="true"
+            android:key="game_mode_pref"
+            android:title="@string/gm_label" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:key="gm_tool_category">
+        <SwitchPreference
+            android:checked="true"
+            android:key="gm_tool_pref"
+            android:summary="@string/gm_tools_summary"
+            android:title="@string/gm_tools" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="gm_settings_category"
+        android:title="@string/gm_settings_title">
+
+        <SwitchPreference
+            android:checked="true"
+            android:key="gm_answer_call_pref"
+            android:summary="@string/gm_settings_answer_call_summary"
+            android:title="@string/gm_settings_answer_call" />
+
+        <SwitchPreference
+            android:checked="true"
+            android:key="gm_block_notifications_pref"
+            android:summary="@string/gm_settings_block_notification_summary"
+            android:title="@string/gm_settings_block_notification" />
+
+        <SwitchPreference
+            android:checked="true"
+            android:key="gm_lock_keys_pref"
+            android:summary="@string/gm_settings_lock_keys_summary"
+            android:title="@string/gm_settings_lock_keys" />
+
+        <!--
+        <com.freeme.preference.FreemeJumpPreference
+            android:key="gm_power_saving_pref"
+            android:summary="@string/game_mode_dnd_power_saving_off"
+            android:title="@string/game_mode_dnd_power_saving"
+            android:visibility="gone" />
+        -->
+
+        <SwitchPreference
+            android:checked="true"
+            android:key="gm_block_auto_brightness_pref"
+            android:summary="@string/gm_settings_block_auto_brightness_summary"
+            android:title="@string/gm_settings_block_auto_brightness" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="gm_app_list_category"
+        android:title="@string/gm_app_list_label" />
+
+    <Preference
+        android:icon="@drawable/gm_add_app_icon"
+        android:key="gm_add_apps_pref"
+        android:title="@string/gm_add_apps" />
+</PreferenceScreen>

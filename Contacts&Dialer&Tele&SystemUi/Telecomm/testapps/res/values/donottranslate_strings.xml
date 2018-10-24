@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <!-- Application label -->
+    <string name="app_name">TelecommTests</string>
+
+    <!-- String for the TestCallActivity -->
+    <string name="testCallActivityLabel">Test Connection Service App</string>
+
+    <!-- String for the TestDialerActivity -->
+    <string name="testDialerActivityLabel">Test Dialer</string>
+
+    <!-- String for button in TestDialerActivity that reassigns the default Dialer -->
+    <string name="defaultDialerButton">Default dialer request</string>
+
+    <!-- String for button in TestDialerActivity that places a test call -->
+    <string name="placeCallButton">Place call</string>
+
+    <!-- String for button in TestDialerActivity that performs voicemail requests to verify
+            voicemail permissions -->
+    <string name="testVoicemailButton">Exercise voicemail permissions</string>
+
+    <!-- String for button in TestDialerActivity that tries to exercise the
+            TelecomManager.cancelMissedCallNotifications() functionality -->
+    <string name="cancelMissedButton">Cancel missed calls</string>
+
+    <string name="endCallButton">End Call</string>
+
+    <string name="answerCallButton">Answer</string>
+
+    <string name="startCallWithRtt">Start call with RTT</string>
+
+    <string name="rttIfaceButton">RTT</string>
+
+    <string name="endRttButton">End RTT</string>
+
+    <string name="startRttButton">Start RTT</string>
+
+    <string name="acceptRttButton">Accept RTT request</string>
+
+    <string name="muteButton">Mute</string>
+
+    <string name="holdButton">Hold</string>
+
+    <string name="handoverButton">Handover</string>
+
+    <string name="inCallUiAppLabel">Test InCall UI</string>
+
+    <string name="UssdUiAppLabel">Test Ussd UI</string>
+
+    <string name="placeUssdButton">Send USSD</string>
+
+    <string name="KeyUiAppLabel">Get Key UI</string>
+
+    <string name="getKeyButton">Get Key Json</string>
+
+    <!-- String for button in SelfManagedCallingActivity. -->
+    <string name="checkIfPermittedBeforeCallingButton">Check if calls permitted before calling</string>
+
+    <string name="selfManagedCallingActivityLabel">Self-Managed Sample</string>
+
+    <string name="outgoingCallNotPermitted">Outgoing call not permitted.</string>
+
+    <string name="outgoingCallNotPermittedCS">Outgoing call not permitted (CS Reported).</string>
+
+    <string name="incomingCallNotPermitted">Incoming call not permitted.</string>
+
+    <string name="incomingCallNotPermittedCS">Incoming call not permitted (CS Reported).</string>
+
+    <string name="rttUiLabel">Test RTT UI</string>
+
+    <!-- M: Video call begin -->
+    <string name="startVideoCall">Start Video</string>
+
+    <string name="stopVideoCall">Stop Video</string>
+
+    <string name="acceptVideoCall">Accept Video</string>
+    <!-- M: Video call end -->
+
+    <!-- M: Reject call -->
+    <string name="rejectCall">Reject</string>
+
+    <!-- M: Merge call -->
+    <string name="mergeCall">Merge</string>
+
+    <!-- M: Speaker call -->
+    <string name="speakerCall">Speaker</string>
+
+    <!-- M: Initial video call -->
+    <string name="startCallWithVideo">Start call with Video</string>
+
+    <!-- M: DTMF begin -->
+    <string name="dtmf">dtmf</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+    <string name="star">*</string>
+    <string name="hash">#</string>
+    <!-- M: DTMF end -->
+
+    <string-array name="rtt_mode_array">
+        <item>Full</item>
+        <item>HCO</item>
+        <item>VCO</item>
+    </string-array>
+
+    <string-array name="rtt_reply_one_liners">
+        <item>To RTT or not to RTT, that is the question...</item>
+        <item>Making TTY great again!</item>
+        <item>I would be more comfortable with real "Thyme" chatting. I don\'t know how to end
+        this pun</item>
+        <item>お疲れ様でした</item>
+        <item>The FCC has mandated that I respond... I will do so begrudgingly</item>
+        <item>😂😂😂💯</item>
+    </string-array>
+
+    <!-- M: RTT audio mode begin -->
+    <string-array name="rtt_audio_mode_array">
+        <item>Normal voice</item>
+        <item>Reduced voice</item>
+    </string-array>
+    <!-- M: RTT audio mode end -->
+</resources>

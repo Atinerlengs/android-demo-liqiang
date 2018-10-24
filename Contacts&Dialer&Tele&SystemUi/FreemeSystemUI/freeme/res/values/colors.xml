@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="freeme_status_bar_clock_color">#ffffff</color>
+
+    <color name="freeme_status_bar_expand_color">#66000000</color>
+    <!--#CCFFFFFF-->
+    <color name="freeme_status_bar_date_color">#ffffff</color>
+    <color name="freeme_qs_header_divider_color">#ffffff</color>
+    <color name="freeme_qs_header_icon_color">#ccffffff</color>
+
+    <color name="freeme_tile_icon_off">#80ffffff</color>
+    <color name="freeme_tile_icon_unavailable">#1affffff</color>
+    <color name="freeme_tile_icon_on">#22c580</color>
+    <color name="freeme_tile_label_off">#69ffffff</color>
+    <color name="freeme_tile_label_on">#22c580</color>
+
+    <color name="freeme_keyguard_status_area_text_color">#ccffffff</color>
+    <color name="freeme_kg_pin_digit_text_color">#ffffff</color>
+    <color name="freeme_kg_pin_Klondike_text_color">#99fff8f8</color>
+
+    <color name="freeme_brightness_mirror_background_color">#66000000</color>
+    <color name="freeme_qs_brightness_icon_color">#ffffff</color>
+    <color name="freeme_qs_brightness_text_color">#ffffff</color>
+    <color name="freeme_qs_brightness_checkbox_normal_color">#80ffffff</color>
+    <color name="freeme_qs_brightness_checkbox_auto_rect_color">#22c580</color>
+    <color name="freeme_qs_brightness_seekbar_progressdrawable_background_color">#ffffff</color>
+    <color name="freeme_qs_brightness_seekbar_progressdrawable_progress_color">#22C580</color>
+
+    <color name="freeme_qs_customizer_toolbar_tx_color">#ffffff</color>
+    <color name="freeme_qs_customizer_toolbar_tx_background_color_pressed">#33000000</color>
+    <color name="freeme_qs_customizer_back_pressed_color">#000</color>
+    <color name="freeme_qs_customizer_back_unpressed_color">#fff</color>
+    <color name="freeme_qs_customizer_edit_text__color">#80ffffff</color>
+
+    <color name="freeme_qs_detail_header_txt_color">#ccffffff</color>
+    <color name="freeme_qs_detail_but_color">#ccffffff</color>
+    <color name="freeme_qs_detail_empty_icon_tint_color">#ffffff</color>
+    <color name="freeme_qs_detail_scrollview_content_color">#4dffffff</color>
+    <color name="freeme_qs_detail_scrollview_imageview_color">#1Affffff</color>
+    <color name="freeme_qs_detail_segmented_button_color_normal">#4dffffff</color>
+    <color name="freeme_qs_detail_segmented_button_color_selected">#99ffffff</color>
+
+    <color name="freeme_qs_ic_noti_delete_color">#fff</color>
+
+    <color name="freme_kg_fp_indication_color">#ccffffff</color>
+    <color name="freme_kg_indication_color">@color/freme_kg_fp_indication_color</color>
+
+    <color name="freme_volume_header_text_color">#4d4d4d</color>
+    <color name="freme_volume_row_icon_color">#808080</color>
+    <color name="freme_volume_expand_icon_color">@color/freeme_tile_icon_on</color>
+    <color name="freeme_volum_brightness_seekbar_progressdrawable_background_color">#e5e5e5</color>
+    <color name="freeme_volum_brightness_seekbar_progressdrawable_progress_color">@color/freeme_qs_brightness_seekbar_progressdrawable_progress_color</color>
+
+    <color name="freeme_theme_color_accent">#22c580</color>
+    <!-- Theme.Freeme 8.1 - notification. -->
+    <color name="freeme_remote_input_divider">#26000000</color>
+    <color name="freeme_settings_bg_normal">#b5b5b5</color>
+    <color name="freeme_settings_bg_press">#9e9e9e</color>
+    <color name="freeme_settings_content_normal">#ffffffff</color>
+    <color name="freeme_settings_content_press">#8fffffff</color>
+
+    <color name="freeme_qs_blur_mask_color">#b3000000</color>
+
+    <color name="freeme_status_wifi_color">#4DFFFFFF</color>
+    <color name="freeme_status_signal_color">#4DFFFFFF</color>
+
+    <color name="freeme_battery_warning_color">#ff3320</color>
+    <color name="freeme_battery_charging_color">#00d659</color>
+    <color name="freeme_battery_low_color">#ffba1b</color>
+
+    <color name="freeme_recents_empty_text_color">#ccffffff</color>
+
+    <!-- Freeme.xiaohui,20180502, FreemeLockscreen -->
+    <color name="freeme_lockscreen_scrimbehind_color">#4e000000</color>
+    <color name="freeme_lockscreen_superpowermode_color">#ff000000</color>
+</resources>

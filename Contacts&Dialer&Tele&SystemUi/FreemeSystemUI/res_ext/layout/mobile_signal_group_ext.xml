@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Support [Network Type on Statusbar] The layout to wrap original
+mobile_signal_group and add image view for show network Type -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    >
+    <!-- freeme.gouzhouping, 20180322. FreemeAppTheme, statusbar.
+        add:
+          android:paddingRight="2dp"
+          android:paddingLeft="1dp"
+    -->
+    <ImageView
+        android:id="@+id/volte_indicator_ext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="1dp"
+        android:paddingLeft="0dp"
+        android:visibility="gone"
+        />
+    <!--@{ freeme.gouzhouping, 20170908. customize signal standard.
+    <ImageView
+        android:id="@+id/network_type"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        />
+     -->
+    <FrameLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingRight="0dp"
+        android:paddingLeft="1dp" >
+
+        <ImageView
+            android:id="@+id/network_type"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:paddingTop="1dp"
+            />
+
+        <ImageView
+            android:layout_gravity="bottom|center"
+            android:id="@+id/data_inout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingBottom="1.5dp"
+            />
+    </FrameLayout>
+    <!--@}-->
+    <include layout="@layout/mobile_signal_group"/>
+</LinearLayout>

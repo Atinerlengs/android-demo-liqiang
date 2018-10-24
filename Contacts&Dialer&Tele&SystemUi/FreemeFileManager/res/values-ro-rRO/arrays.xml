@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="group_item_names">
+        <item>Sistem de fișiere temporare</item>
+        <item>Fișiere în miniatură de memorie ascunsă</item>
+        <item>Aplicații ale memoriei ascunse</item>
+        <item>Fișiere goale</item>
+        <item>Reziduuri de aplicații dezinstalate</item>
+    </string-array>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="16dp"
+    android:height="14dp"
+    android:viewportHeight="42"
+    android:viewportWidth="48">
+
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M28.243,33.757 L24,38 L19.757,33.757 C20.843,32.672,22.343,32,24,32 C25.657,32,27.157,32.672,28.243,33.757 Z" />
+    <path
+        android:fillColor="@color/freeme_status_wifi_color"
+        android:pathData="M34.607,27.393 L31.778,30.222 C29.788,28.231,27.038,27,24,27 C20.962,27,18.212,28.231,16.222,30.222 L13.393,27.393 C16.108,24.679,19.858,23,24,23 C28.142,23,31.892,24.679,34.607,27.393 Z" />
+    <path
+        android:fillColor="@color/freeme_status_wifi_color"
+        android:pathData="M40.971,21.029 L38.142,23.858 C34.523,20.239,29.523,18,24,18 C18.477,18,13.477,20.239,9.858,23.858 L7.029,21.029 C11.373,16.686,17.373,14,24,14 C30.627,14,36.627,16.686,40.971,21.029 Z" />
+    <path
+        android:fillColor="@color/freeme_status_wifi_color"
+        android:pathData="M47.335,14.665 L44.506,17.494 C39.258,12.246,32.008,9,24,9 C15.992,9,8.742,12.246,3.494,17.494 L0.665,14.665 C6.637,8.694,14.887,5,24,5 C33.113,5,41.363,8.694,47.335,14.665 Z" />
+</vector>

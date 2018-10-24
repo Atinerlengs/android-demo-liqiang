@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Recents</string>
+    <string name="recents_grid">Grid</string>
+    <string name="recents_matrix">Matrix</string>
+    <string name="recent_app_clean_finished_toast">Release <xliff:g id="count">%1$s</xliff:g> memory,<xliff:g id="count">%2$s</xliff:g> available now.</string>
+    <string name="memory_clean">Memory Clean</string>
+    <string name="memory_free"><xliff:g id="count">%1$s</xliff:g> free</string>
+    <string name="memory_auto_clean"><xliff:g id="count">Memory less than %1$s</xliff:g></string>
+    <string name="memory_avail"><xliff:g id="count">%1$s</xliff:g> free</string>
+    <string name="auto_clean_settings_tip">Memory auto clean will help you get a smooth user experience</string>
+    <string name="auto_clean_setting">Auto Clean Setting</string>
+    <string name="auto_clean">Auto Clean</string>
+    <string name="auto_start">Auto Start</string>
+    <string name="cancel">Cancel</string>
+    <string name="setting">Setting</string>
+    <string name="manual_clean">Manual Clean</string>
+    <string name="not_show_again">Not show again</string>
+    <string name="recents_launch_error_message">Could not start <xliff:g id="app" example="Calendar">%s</xliff:g>.</string>
+
+    <string name="app_locked">App locked</string>
+</resources>

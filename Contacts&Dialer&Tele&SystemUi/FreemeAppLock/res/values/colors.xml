@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="applock_list_text_color">#ff006633</color>
+    <color name="applock_list_divider_color">#ffcecece</color>
+    <color name="applock_list_ripple_material_light">#1e000000</color>
+    <color name="body_text_color">#ff505050</color>
+    <color name="sub_app_bar_text_color">#ff252525</color>
+    <color name="description_link_text_color">#ff0070d2</color>
+
+    <color name="switchbar_background_color">#fff7f7f7</color>
+    <color name="switchbar_divider_color">#19252525</color>
+</resources>

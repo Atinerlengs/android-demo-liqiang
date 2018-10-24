@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pinned_header_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/alert_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/alert_background"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/freeme_alert_container_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/alert_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/freeme_alert_text_padding"
+            android:paddingTop="@dimen/freeme_alert_text_padding"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/freeme_group_item_text_size" />
+
+        <ImageView
+            android:id="@+id/alert_dismiss_icon"
+            android:layout_width="@dimen/freeme_alert_dismiss_icon_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/dismiss_sync_alert"
+            android:scaleType="center"
+            android:src="@drawable/quantum_ic_cancel_vd_theme_24" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <include layout="@layout/contact_list_card" />
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/freeme_content_bg_color_light"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/search_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

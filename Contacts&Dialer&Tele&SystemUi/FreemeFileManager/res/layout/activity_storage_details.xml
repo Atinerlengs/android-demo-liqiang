@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/main_page_background" >
+
+    <!--<include layout="@layout/layout_search_view" />-->
+
+    <LinearLayout
+        android:id="@+id/separate_menu_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/path_gallery_line_height"
+        android:paddingEnd="@dimen/separate_menu_padding_right"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/file_format"
+            layout="@layout/layout_separate_menu_view"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/sort_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/separate_menu_space"
+            layout="@layout/layout_separate_menu_view" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/gallery_navigation_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/path_gallery_line_height"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/path_gallery"
+            layout="@layout/layout_path_gallery" />
+
+        <ProgressBar
+            android:id="@+id/refresh_progress"
+            style="?android:attr/progressBarStyleSmallTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/path_gallery"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/app_theme_color_primary"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_no_file"/>
+
+            <TextView
+                android:textAppearance="@style/AppTextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/list_slash_padding_left"
+                android:singleLine="true"
+                android:text="@string/no_file"
+                android:textColor="#cecece"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/file_path_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fastScrollEnabled="false"
+            android:divider="@drawable/list_item_divider"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:background="@color/app_theme_color_primary" />
+
+        <ListView
+            android:id="@+id/favorite_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/list_item_divider"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:background="@color/app_theme_color_primary"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/moving_operation_bar"
+        style="@style/AppContent.Button.BottomBar"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/button_moving_confirm"
+            style="@style/AppContent.Button.Bottom"
+            android:text="@string/confirm" />
+
+        <Button
+            android:id="@+id/button_moving_cancel"
+            style="@style/AppContent.Button.Bottom"
+            android:text="@string/operation_cancel" />
+    </LinearLayout>
+
+</LinearLayout>

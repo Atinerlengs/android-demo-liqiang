@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/freeme_menu_add_group"
+        android:icon="@drawable/freeme_contacts_add_new_icon"
+        android:showAsAction="always"
+        android:title="@string/freeme_add_new" />
+
+    <item
+        android:id="@+id/freeme_menu_group_rename"
+        android:icon="@null"
+        android:showAsAction="never"
+        android:title="@string/freeme_group_rename" />
+
+    <item
+        android:id="@+id/freeme_menu_send_message"
+        android:icon="@null"
+        android:showAsAction="never"
+        android:title="@string/freeme_group_item_send_message" />
+
+    <item
+        android:id="@+id/freeme_menu_group_delete"
+        android:icon="@null"
+        android:showAsAction="never"
+        android:title="@string/freeme_group_delete" />
+
+    <item
+        android:id="@+id/freeme_menu_select_all"
+        android:icon="@null"
+        android:showAsAction="always"
+        android:title="@string/menu_select_all" />
+</menu>

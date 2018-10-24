@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rotate_help_message">Schermgrootte verkleinen niet beschikbaar in liggende stand.</string>
+    <string name="cannot_start_by_other_app_new">Als u Bediening met één hand wilt inschakelen, schakelt u %s uit.</string>
+    <string name="help_text_to_return_full">Tik buiten het verkleinde weergavegebied om terug te gaan naar volledig scherm.</string>
+    <string name="help_onehand_title">Bediening met één hand</string>
+    <string name="help_secure_app">Beveiligde pagina</string>
+    <string name="help_adjust_screen_title">De schermgrootte aanpassen</string>
+    <string name="help_adjust_screen_text">Veeg omhoog of omlaag om de afmetingen van het verkleinde scherm aan te passen.</string>
+
+    <string name="onehand_settings_title">Bediening met één hand</string>
+    <string name="onehand_settings_summary">Pas de weergavegrootte en lay-out aan voor eenvoudigere bediening van uw telefoon met slechts één hand.</string>
+    <string name="onehand_settings_text_1">Veeg diagonaal naar boven vanuit een benedenhoek van het scherm om de weergave te verkleinen.</string>
+    <string name="onehand_settings_text_2">Tik 3 keer snel op de knop Start om de weergavegrootte te verkleinen.</string>
+    <string name="onehand_settings_text_2_hardkey">Druk 3 keer snel op de Starttoets om de weergavegrootte te verkleinen.</string>
+    <string name="onehand_settings_using_category">Schermgrootte verkleinen met</string>
+    <string name="onehand_settings_using_gesture">Gebaar</string>
+    <string name="onehand_settings_using_gesture_summary">Veeg diagonaal omhoog vanuit een van beide benedenhoeken.</string>
+    <string name="onehand_settings_using_button">Knop</string>
+    <string name="onehand_settings_using_button_summary">Tik 3 keer op de knop Start.</string>
+    <string name="onehand_settings_using_button_summary_hardkey">Druk 3 keer op de Starttoets.</string>
+    <string name="onehand_settings_hardware_key_title">Toetsen weergeven op scherm</string>
+    <string name="onehand_settings_hardware_key_summary">Geef Start, Terug en Recent weer.</string>
+    <string name="onehand_settings_dialog_title">Bediening met één hand inschakelen?</string>
+    <string name="onehand_settings_dialog_text">De functies hieronder kunnen niet tegelijk met Bediening met één hand worden gebruikt. Ze worden uitgeschakeld.</string>
+    <string name="onehand_settings_cover_toast">Verwijder toetsenbordhoes als u de stand Bediening met één hand wilt gebruiken.</string>
+
+    <string name="accessibility_screen_magnification_title">Vergroting</string>
+    <string name="accessibility_autoclick_preference_title">Aut. klikken als aanwijzer stopt</string>
+</resources>

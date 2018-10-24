@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_standard_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="onClick"
+            android:text="@string/notification_label_standard_notification" />
+
+        <Button
+            android:id="@+id/button_bundled_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="onClick"
+            android:text="@string/notification_label_bundled_notification" />
+
+        <Button
+            android:id="@+id/button_remote_input_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="onClick"
+            android:text="@string/notification_label_direct_reply_notification" />
+
+        <Button
+            android:id="@+id/button_custom_content_view_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="onClick"
+            android:text="@string/notification_label_custom_content_view_notification" />
+
+        <Button
+            android:id="@+id/button_custom_content_big_view_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="onClick"
+            android:text="@string/notification_label_custom_content_big_view_notification" />
+
+        <Button
+            android:id="@+id/button_custom_normal_and_big_content_views_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="onClick"
+            android:text="@string/notification_label_custom_content_normal_and_big_view_notification" />
+
+        <Button
+            android:id="@+id/button_custom_media_content_view_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="onClick"
+            android:text="@string/notification_label_custom_media_content_view_notification" />
+
+        <Button
+            android:id="@+id/button_custom_layout_heads_up_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="onClick"
+            android:text="@string/notification_label_heads_up_custom_layout_notification" />
+
+        <Button android:id="@+id/button_inbox_style_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="onClick"
+            android:text="@string/notification_label_inbox_style_notification" />
+
+        <Button android:id="@+id/button_big_picture_style_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="onClick"
+            android:text="@string/notification_label_big_picture_style_notification" />
+
+        <Button android:id="@+id/button_download_style_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="onClick"
+            android:text="@string/notification_label_download_style_notification" />
+    </LinearLayout>
+
+</ScrollView>

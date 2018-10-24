@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="alert_delete_multiple">These items will be deleted</string>
+    <string name="alert_delete_single">This item will be deleted</string>
+    <string name="already_exists">already exists</string>
+    <string name="app_name">File Manager</string>
+    <string name="cancel">Cancel</string>
+    <string name="copy">Copy</string>
+    <string name="create_folder">Create folder</string>
+    <string name="cut">Cut</string>
+    <string name="cut_fail">Failed to cut</string>
+    <string name="delete">Delete</string>
+    <string name="delete_deny">No permission to delete.</string>
+    <string name="delete_fail">Failed to delete</string>
+    <string name="deleting">Deleting</string>
+    <string name="deselect_all">Deselect all</string>
+    <string name="select_all">Select all</string>
+    <string name="encryption_menu">To safe</string>
+    <string name="decryption_menu">Move out</string>
+    <string name="details">Details</string>
+    <string name="done">Done</string>
+    <string name="edit">Edit</string>
+    <string name="empty_msg">(Empty Folder)</string>
+    <string name="executable">Executable</string>
+    <string name="insufficient_memory">Insufficient memory</string>
+    <string name="sufficient_memory">Sufficient memory</string>
+    <string name="invalid_empty_name">File or folder name cannot be empty</string>
+    <string name="invalid_file_name">The specified file or folder name is too long,failed to create.</string>
+    <string name="invalid_file_rename">The specified file or folder name is too long,failed to rename.</string>
+    <string name="warn_invalid_rename">Rename failure，please input valid name.</string>
+    <string name="send_file_max_size">Share files exceeds the max number of restrictions.</string>
+    <string name="loading">Loading</string>
+    <string name="modified_time">Modified</string>
+    <string name="name">Name</string>
+    <string name="new_folder">New folder</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="paste">Paste</string>
+    <string name="pasting">Pasting</string>
+    <string name="paste_fail">Failed to paste</string>
+    <string name="paste_same_folder">Cannot paste %s to the same directory</string>
+    <string name="readable">Readable</string>
+    <string name="rename">Rename</string>
+    <string name="save">Save</string>
+    <string name="selected">Selected</string>
+    <string name="send_file">Send file</string>
+    <string name="share">Share</string>
+    <string name="size">Size</string>
+    <string name="sort_by">Sort by</string>
+    <string name="support_fail" product="default">This is not supported by phone</string>
+    <string name="wait">Please wait\u2026</string>
+    <string name="writable">Writable</string>
+    <string name="yes">Yes</string>
+    <string name="confirm_rename">Confirm Rename</string>
+    <string name="invalid_char_prompt">You have input invalid character</string>
+    <string name="msg_rename_ext">You are changing the file extension, which
+    may cause the file not to be recognized. Are you sure to do this?</string>
+    <string name="msg_unable_open_file">The file format is not supported.</string>
+    <string-array name="sort_by">
+        <item>Type</item>
+        <item>Name (A - Z)</item>
+        <item>Size (big - small)</item>
+        <item>Time (new - old)</item>
+    </string-array>
+
+    <string name="added_favorite">Added to Favorites</string>
+    <string name="category_all">All</string>
+    <string name="category_apk">APKs</string>
+    <string name="category_document">Docs</string>
+    <string name="category_zip">Zips</string>
+    <string name="category_favorite">Favorites</string>
+    <string name="category_qq">QQ</string>
+    <string name="category_wechat">WeChat</string>
+    <string name="category_music">Audios</string>
+    <string name="category_other">Misc</string>
+    <string name="category_picture">Pictures</string>
+    <string name="category_video">Videos</string>
+    <string name="confirm_know">OK</string>
+    <string name="error_info_cant_send_folder">Unable to send the folder</string>
+    <string name="fail_to_create_folder">Failed to create the folder, the folder already exists</string>
+    <string name="succeed_to_create_folder">Folder created successfully</string>
+    <string name="fail_to_rename">Failed to rename the file or folder as it already exists</string>
+    <string name="file_info_canread">Readable:</string>
+    <string name="file_info_canwrite">Writable:</string>
+    <string name="file_info_ishidden">Hidden:</string>
+    <string name="file_info_location">Path:</string>
+    <string name="file_info_modified">Modified:</string>
+    <string name="file_info_size">Size:</string>
+    <string name="file_sizes">%d Bytes</string>
+    <string name="file_size">%d Byte</string>
+    <string name="instruction">Enter the following address into your FTP Client</string>
+    <string name="instruction_pre">Start service to enable FTP server</string>
+    <string name="instruction_pre_onwifi">Please connect to Wi-Fi first</string>
+    <string name="menu_item_sort">Sort by</string>
+    <string name="menu_item_sort_by">Sort by <xliff:g id="menu_item_sort">%1$s</xliff:g></string>
+    <string name="menu_item_sort_date">Date</string>
+    <string name="menu_item_sort_size">Size</string>
+    <string name="menu_item_sort_name">Name</string>
+    <string name="menu_item_format">All format</string>
+    <string name="new_folder_name">New folder</string>
+    <string name="no_file">No files</string>
+    <string name="no_wifi">Set Wi-Fi network</string>
+    <string name="notif_server_starting">FTP Server started</string>
+    <string name="notif_title">FTP Server</string>
+    <string name="operation_cancel">Cancel</string>
+    <string name="operation_cancel_selectall">Deselect all</string>
+    <string name="operation_copy">Copy</string>
+    <string name="operation_create_folder">New folder</string>
+    <string name="operation_create_folder_message">Enter folder name</string>
+    <string name="operation_delete">Delete</string>
+    <string name="operation_delete_confirm_message">Confirm Deletion?</string>
+    <string name="operation_delete_folder_confirm_message">Confirm delete the folder?</string>
+    <string name="operation_delete_folders_confirm_message">Confirm delete <xliff:g id="number">%d</xliff:g> folders?</string>
+    <string name="operation_delete_file_confirm_message">Confirm delete the file?</string>
+    <string name="operation_delete_files_confirm_message">Confirm delete <xliff:g id="number">%d</xliff:g> files?</string>
+    <string name="operation_delete_folder_file_confirm_message">Confirm delete <xliff:g id="number">%1d</xliff:g> folders <xliff:g id="number">%2d</xliff:g> files?</string>
+    <string name="operation_deleting">Deleting...</string>
+    <string name="operation_favorite">Add to Favorites</string>
+    <string name="operation_info">Details</string>
+    <string name="operation_move">Move</string>
+    <string name="operation_moving">Moving...</string>
+    <string name="operation_paste">Paste</string>
+    <string name="operation_pasting">Pasting...</string>
+    <string name="operation_refresh">Refresh</string>
+    <string name="operation_rename">Rename</string>
+    <string name="operation_rename_message">Enter a new name</string>
+    <string name="operation_selectall">Select all</string>
+    <string name="operation_send">Send</string>
+    <string name="operation_show_sysfile">Show hidden files</string>
+    <string name="operation_hide_sysfile">Hide hidden files</string>
+    <string name="operation_unfavorite">Remove from Favorites</string>
+    <string name="removed_favorite">Removed from Favorites</string>
+    <string name="removed_favorite_first">First, remove from Favorites!</string>
+    <string name="favorite_file_not_exist">Favorite file does not exist!</string>
+    <string name="start_server">Start Service</string>
+    <string name="stop_server">Stop Service</string>
+    <string name="dialog_select_type">Select file type</string>
+    <string name="dialog_type_text">Text</string>
+    <string name="dialog_type_audio">Audio</string>
+    <string name="dialog_type_video">Video</string>
+    <string name="dialog_type_image">Image</string>
+    <string name="multi_select_title">Selected <xliff:g id="number">%1$s</xliff:g> items</string>
+    <string name="preference_title">General Settings</string>
+    <string name="pref_primary_folder">Home folder</string>
+    <string name="pref_read_root">Read root</string>
+    <string name="pref_show_real_path">Display real path</string>
+    <string name="default_primary_folder">/mnt</string>
+    <string name="pref_primary_folder_summary">The folder that appears when the app starts, and current value is</string>
+    <string name="pref_show_real_path_summary">Show real path in navigation bar</string>
+    <string name="create_hidden_file">File will be hidden if its name starts with \'.\'.</string>
+
+    <string name="confirm">OK</string>
+    <string name="more">More</string>
+    <string name="msg_change_name">Operation failed, please use a different name.</string>
+    <string name="msg_create_fail">Failed to create a folder.</string>
+    <string name="unmounted">%1$s is unmounted</string>
+    <string name="tab_category">Categories</string>
+    <string name="tab_remote">FTP</string>
+    <string name="tab_file">Files</string>
+    <string name="encryption_file">File safe</string>
+    <string name="warn_invalid_forlder_name">Please input valid folder name.</string>
+    <string name="all_storage">Storage space</string>
+    <string name="storage_phone">Phone storage</string>
+    <string name="storage_sd_card">SD card</string>
+    <string name="storage_external_usb">USB storage</string>
+    <string name="enable_sd_card">not available</string>
+    <string name="file_info_name">Name:</string>
+    <string name="search_empty">No matches</string>
+    <string name="operation_compress">Compress file</string>
+    <string name="operation_compress_invalid_name">Input compress file name</string>
+    <string name="compress_failed_for_exists">Compress failed, destinaton file exists</string>
+    <string name="operation_compressing">Compressing...</string>
+    <string name="operation_decompress">Decompress file</string>
+    <string name="decompress_to_current_dir">Decompress to current dir</string>
+    <string name="operation_load">Load</string>
+    <string name="operation_loading">Loading</string>
+    <string name="decompress_to">Decompress to...</string>
+    <string name="operation_decompressing">Decompressing...</string>
+    <string name="decompress_failed_for_exists">Decompress failed, source file error or path exists</string>
+    <string name="decompress_failed_for_nofress">Decompress failed, for insufficient memory</string>
+    <string name="compress_save_name">File name:</string>
+    <string name="compress_save_format">File format: zip</string>
+    <string name="storage_device_umouonted">Memory is not available</string>
+    <string name="unmount_sdcard_inform_text">"SD card will be unmounted."</string>
+    <string name="dlg_error_unmount_sdcard_text">"Couldn\'t unmount SD card. Try again later."</string>
+    <string name="unmount_usb_storage_inform_text">"USB storage will be unmounted."</string>
+    <string name="dlg_error_unmount_usb_storage_text">"Couldn\'t unmount USB storage. Try again later."</string>
+    <string name="search_hint">Enter all or part of the file names</string>
+    <string name="search_title">Search file</string>
+    <string name="child_count">%d item</string>
+    <string name="child_item_count">items</string>
+    <string name="empty_folder">Empty folder</string>
+
+    <!-- Added by tyd wulianghuan 2013-01-09 for garbage clean string -->
+    <string name="garbage_clean_title">Clean</string>
+    <string name="no_folder">No empty folder</string>
+    <string name="no_garbage">No trash</string>
+    <string name="garbage_scanning">Scanning...</string>
+    <string name="start_clean">Start clean</string>
+    <string name="garbage_cleaning">Cleaning</string>
+    <string name="garbage_clean_finish">Finish</string>
+    <string name="garbage_clean_result">Clean finished</string>
+    <string name="no_garbage_result">No trash to clean</string>
+    <string name="file_clean">Trash clean</string>
+    <string name="deep_clean">Deep clean</string>
+    <string name="storage_cleanable">Cleanable</string>
+    <string name="storage_cleaned">Cleaned</string>
+    <string name="storage_used_txt">Used</string>
+    <string name="trashes_selected">"Selected"<xliff:g id="trashes_selected">%1$s</xliff:g></string>
+    <string name="storage_used_flag">Used</string>
+    <string name="garbage_suggest_title">Suggest clean, will not affect the use of apps</string>
+    <string name="garbage_child_summary_default">Suggest clean</string>
+    <string name="garbage_child_summary_install">Installed</string>
+    <string name="garbage_child_summary_uninstall">Uninstalled</string>
+    <string name="wechat_special">WeChat special</string>
+    <string name="clear_large_files">Large files</string>
+    <string name="storage_used_percent">%d%%</string>
+    <string name="storage_free">"Storage available "<xliff:g id="storage_free">%1$s</xliff:g></string>
+    <string name="clear_wechat_temp_cache">Temporary caches</string>
+    <string name="clear_wechat_three_months_ago">Old files 3 months ago</string>
+    <string name="clear_wechat_chat_img_title">Chat images and videos</string>
+    <string name="clear_wechat_download_file">Downloaded files</string>
+    <string name="clear_wechat_saved_img_title">Saved images</string>
+    <string name="clear_wechat_not_found_chat_img">No chat images and videos</string>
+    <string name="clear_wechat_not_found_download">No downloaded files</string>
+    <string name="clear_wechat_not_found_saved_img">No photos and saved images</string>
+
+    <!-- add by tyd liuyong 20140723 -->
+    <string name="decompress_failed_for_nofile">Decompress failed, for no file</string>
+    <string name="cancel_option_note">Task cancel running,wait a moment</string>
+     <!-- add by tyd mingjun 20150528 -->
+    <string name="load_data">now loading...</string>
+    <string name="interior_info_storage">Phone storage</string>
+    <string name="sd_info_storage">SD card</string>
+
+    <!-- add by tyd zhuya 20150528 -->
+    <string name="donot_change_extfromfilename">If you modify the extension,the file maybe unusable</string>
+
+    <!-- add by droi heqianqian 20151218-->
+
+    <!-- add by heqianqian for update -->
+
+    <!-- add by droi liuhaoran for add Toast on 20160408 -->
+    <string name="item">Data</string>
+
+    <!-- add by droi liuhaoran on 20160413 -->
+    <string name="notificaiton_clear_title">Trash Clean</string>
+    <string name="notificaiton_clear_info">"Junk files already affect the speed of mobile phone, please clean up in time"</string>
+    <string name="notificaiton_clear_btn_text">Clearing</string>
+
+    <!-- add by droi liuhaoran on 20160616 -->
+    <string name="app_about">About</string>
+    <string name="need_permission">Please turn on the denied permission</string>
+    <string name="menu_setting_ring">Set as ringing tone</string>
+    <string name="menu_setting_ring_ok">The setting is successful</string>
+    <string name="refresh_over">Refresh complete</string>
+
+    <string name="newest_version">Newest Version</string>
+
+    <string name="storage_total">"Total: "<xliff:g id="storage_total">%1$s</xliff:g></string>
+    <string name="storage_available">"Available"<xliff:g id="storage_available">%1$s</xliff:g></string>
+
+    <string name="about_title">About</string>
+    <string name="about_current_version">Current version</string>
+    <string name="about_droi_copyright">Copyright©2018, Droi .All Rights Reserved</string>
+    <string name="about_detail_msg">Details</string>
+    <string name="about_click_times">Still need to click </string>
+    <string name="about_click_intent">time to interface to jump to the detailed information for you</string>
+    <string name="about_channel_number">Channel number</string>
+    <string name="about_customer_number">Customer number</string>
+    <string name="more_menu">More</string>
+
+    <!-- Safe file -->
+    <string name="safe_add_file_menu">Add file</string>
+    <string name="decryption_path">Move out</string>
+    <string name="safe_modify_password_menu">Passcode management</string>
+    <string name="set_unlock_pattern_title">Pattern password</string>
+    <string name="set_unlock_password_title">Custom alphanumeric password</string>
+    <string name="set_unlock_pin_title">A 4-Digit password</string>
+    <string name="input_password">Please enter the file safe passcode</string>
+    <string name="forget_password">Forgot password</string>
+    <string name="other_lock_type">Other encryption methods</string>
+    <string name="lock_title_settings">Setting passcode</string>
+    <string name="lock_title_change">Change passcode</string>
+    <string name="enter_password">Enter passcode</string>
+    <string name="reset_password_fail_tips">Failed to reset password</string>
+    <string name="lockpassword_new_passcode">Please enter a new passcode for the file safe</string>
+    <string name="lockpassword_old_passcode">Please enter the old passcode for the file safe</string>
+    <string name="lock_password_repeated">Enter a different passcode. Please use a different passcode.</string>
+    <string name="password_controller_password_wrong">%d attempts remaining</string>
+    <string name="try_again_fingerprint_or_password">Try the fingerprint or password again</string>
+    <string name="no_matching_fingerprint">No matching fingerprint</string>
+    <string name="wipe_any_stains_from_the_fingerprint_button">Clean the surface of the fingerprint sensor and your finger then try again</string>
+    <string name="ensure_that_your_finger_covers_the_fingerprint_button">Ensure that your finger covers the fingerprint sensor</string>
+    <string name="keyguard_fingerprint_password_too_many_failed_attempts_countdown">Multiple unsuccessful fingerprint attempts. Please retry in %d second(s)</string>
+    <string name="keyguard_fingerprint_password_again_enter_code">Try the fingerprint or passcode again</string>
+    <string name="failed_attempts_five_times_countdown">Please try again in %d seconds</string>
+    <string name="modify_password_progress_message">After changing the password, you need to reprocess the encryption files.Processing… Do not force a shutdown</string>
+    <string name="password_dialog_message">This is a commonly used and easy-to-guess passcode. Still use it?</string>
+    <string name="password_dialog_new">Reset</string>
+    <string name="password_dialog_use">Use</string>
+    <string name="lockpassword_password_requires_alpha">The password must contain at least 1 letter.</string>
+    <string name="lockpassword_password_too_long">Passcode cannot exceed 16 digits</string>
+    <string name="lockpassword_illegal_character">The password contains invalid characters.</string>
+    <string name="lockpassword_password_normal_next">Upon completion, tap Continue</string>
+    <string name="confirm_alert_dialog_new_password">Verify new passcode</string>
+    <string name="password_controller_password_confirm_error">Passcodes did not match. Please set again</string>
+    <string name="secure_enter_password_sub_tip2">Connect at least 4 dots</string>
+    <string name="secure_enter_password_tip3">Try again</string>
+    <string name="secure_enter_password_tip5">After multiple failed attempts, you must enter the password to enable fingerprint recognition.</string>
+    <string name="secure_enter_password_tip6">Use fingerprint or enter the password</string>
+    <string name="secure_enter_password_tip7">Please input your fingerprint, or draw a pattern.</string>
+
+    <string name="pattern_controller_input_new_pattern">Verify the new pattern</string>
+    <string name="pattern_controller_input_pattern">Please draw the file vault pattern</string>
+    <string name="pattern_controller_pattern_recorded">Pattern recorded</string>
+    <string name="lockpattern_new_passcode">Please draw a new pattern for the file safe</string>
+    <string name="lockpattern_old_passcode">Please draw the old pattern for the file safe</string>
+    <string name="lock_pattern_repeated">Draw a different pattern. Please use a different pattern.</string>
+    <string name="try_again_fingerprint_or_draw_pattern">Try the fingerprint or pattern again</string>
+    <string name="keyguard_fingerprint_pattern_again_enter_code">Try the fingerprint or pattern again</string>
+    <string name="pattern_controller_pattern_recording_inprogress">Release your finger when it\'s done</string>
+    <string name="pattern_controller_pattern_too_short">You must connect at least 4 dots. Please try again</string>
+    <string name="pattern_confirm_twice_tip" />
+    <string name="password_controller_pattern_confirm_error">Patterns did not match. Please draw again</string>
+
+    <string name="password_next">Next</string>
+    <string name="completed">OK</string>
+
+    <string name="secure_enter_pattern_tip5">After multiple failed attempts, you must draw the pattern to enable fingerprint recognition.</string>
+
+    <string name="encryp_progress_text">Encrypting…</string>
+    <string name="dencryp_progress_text">Decrypting…</string>
+    <string name="replace_file_text">%s already exist.</string>
+    <string name="replace_yes">Replace</string>
+    <string name="name_folder">Folder</string>
+    <string name="name_file">Files</string>
+    <string name="file_size_too_large">The size of %s is over 2GB. It cannot be encrypted.</string>
+    <string name="disk_space_not_enough">%1$sSpace is insufficient, %2$s,please clear up and try again.</string>
+    <string name="storage_internal">Phone</string>
+    <string name="storage_external">SD Card</string>
+    <string name="unable_to_dencryp">unable to decryption</string>
+    <string name="lockscreen_access_pattern_start">Pattern started</string>
+    <string name="lockscreen_access_pattern_detected">Pattern completed</string>
+    <string name="lockscreen_access_pattern_cleared">Pattern cleared</string>
+    <string name="lockscreen_access_pattern_cell_added_verbose" />
+    <string name="audio_preview">Audition</string>
+    <string name="durationformatshort" translatable="false"><xliff:g id="format">%2$d:%5$02d</xliff:g></string>
+    <string name="durationformatlong" translatable="false"><xliff:g id="format">%1$d:%3$02d:%5$02d</xliff:g></string>
+    <string name="default_duration">00:00</string>
+    <string name="open_fail">Open fail</string>
+</resources>

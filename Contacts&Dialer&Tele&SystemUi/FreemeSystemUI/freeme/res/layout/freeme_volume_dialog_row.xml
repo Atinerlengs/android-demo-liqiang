@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/volume_dialog_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/volume_row_spacing">
+
+        <com.android.keyguard.AlphaOptimizedImageButton
+            android:id="@+id/volume_row_icon"
+            android:layout_width="@dimen/volume_button_size"
+            android:layout_height="@dimen/volume_button_size"
+            android:layout_gravity="top"
+            style="@style/VolumeButtons"
+            android:tint="@color/freme_volume_row_icon_color"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:soundEffectsEnabled="false" />
+
+        <TextView
+            android:id="@+id/volume_row_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginEnd="51dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.Volume.Header" />
+    </TableRow>
+
+    <SeekBar
+        android:id="@+id/volume_row_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginBottom="@dimen/volume_row_spacing"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:maxHeight="2dp"
+        android:progressDrawable="@drawable/freeme_volume_brightness_seekbar_progress_drawable"
+        android:thumb="@drawable/freeme_systemui_seekbar_thumb"
+        android:splitTrack="false"
+        android:focusable="true"
+        android:focusableInTouchMode="false" />
+</TableLayout>

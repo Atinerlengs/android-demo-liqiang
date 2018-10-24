@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Жарамсыз</string>
+    <string name="conf_call_member_list">Мүшелер тiзiмi</string>
+    <string name="conf_call_participant_answered">Жауап берiлдi</string>
+    <string name="conf_call_participant_missed">Қабылданбаған</string>
+    <string name="calls_over_wifi">ҚоңырауларWi-Fiарқылыжасалады</string>
+    <string name="connect_to_wifi">Қоңырау шалу үшін Wi-Fi желісіне қосылу</string>
+    <string name="wfc_notification_summary">Теңшелімдергекіруүшіносыжердітүртіңіз</string>
+    <string name="wfc_notification_summary_fail">Қолжетімді желілерді көру үшін осы жерді түртіңіз</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> құлыптан босату сәтсіз болды</string>
+    <string name="menu_select_all">"Барлығынтаңдау"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> таңдалды</string>
+    <string name="multichoice_no_select_alert">"Элементтер таңдалмады."</string>
+    <string name="deleteCallLogConfirmation_title">Қоңыраулар журнал(дар)ын жою қажет пе?</string>
+    <string name="deleteCallLogConfirmation_message">Таңдалған қоңыраулар журнал(дар)ын жою қажеттігін растайсыз ба?</string>
+    <string name="recentCalls_delete">Жою</string>
+    <string name="deleting_call_log">Қоңыраулар журналы жойылуда...</string>
+    <string name="toast_call_detail_error">"Мәліметтер қол жетімді емес"</string>
+    <string name="calllogList">Қоңырау шалу журналы</string>
+    <string name="calllogHint">Қоңыраулар журналдарын іздеу</string>
+    <string name="calllog_description">Кіріс, шығыс және қабылданбаған қоңыраулар </string>
+    <string name="noMatchingCalllogs">Сәйкес қоңыраулар журналы табылмады.</string>
+    <string name="titleJoinContactDataWith">Контактілерді біріктіру</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> қоңыраулар журналы</item>
+        <item quantity="one">1 қоңырау журналы</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Қоңыраулар журналы табылмады</string>
+    <string name="search_results_for">Келесіге арналған іздеу нәтижелері: <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none">Барлық таңдауды алу</string>
+</resources>

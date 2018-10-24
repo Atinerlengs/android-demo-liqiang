@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="freeme_incoming_call_decline_with_sms">信息</string>
+    <string name="freeme_incoming_call_mute">静音</string>
+    <string name="freeme_hideVideoPreview">隐藏我方</string>
+    <string name="freeme_onscreenSwitchCameraText">前后相机</string>
+    <string name="onscreenRecordNumberText">记录号码</string>
+    <string name="toast_recordnumber_show">输入的号码将在电话结束后被保存在拨号盘上</string>
+
+    <string name="freeme_incall_forward_from_label">转接自</string>
+    <string name="freeme_incall_stranger_number">陌生号码</string>
+    <string name="freeme_incall_incoming_video">"收到视频通话邀请"</string>
+    <string name="freeme_incall_incoming_video_upgrade">"视频通话升级请求"</string>
+    <string name="freeme_incall_incoming_video_from_wifi">"收到WLAN 视频通话邀请"</string>
+    <string name="freeme_incall_incoming_video_upgrade_from_wifi">"收到WLAN 视频通话升级请求"</string>
+
+    <string name="freeme_incall_answer_video_call">"视频接听"</string>
+    <string name="freeme_incall_answer_video_call_as_audio">"语音接听"</string>
+</resources>

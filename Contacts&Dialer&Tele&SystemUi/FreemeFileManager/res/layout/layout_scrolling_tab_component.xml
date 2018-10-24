@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.freeme.support.design.widget.FreemeTabLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:duplicateParentState="true"
+    android_custom:tab_textAppearance="@style/AppTextAppearance.Tab"
+    android_custom:tab_minWidth="@dimen/actionbar_tab_min_wdith"
+    android_custom:tab_selectedTextColor="@color/app_theme_color_accent"
+    android_custom:tab_indicatorColor="@color/app_theme_color_accent"/>

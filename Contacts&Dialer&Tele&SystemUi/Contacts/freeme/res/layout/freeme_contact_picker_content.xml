@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/contact_list_card" />
+
+    <view
+        android:id="@android:id/list"
+        class="com.android.contacts.list.PinnedHeaderListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="?attr/contact_browser_list_padding_right"
+        android:layout_marginLeft="?attr/contact_browser_list_padding_left"
+        android:layout_marginRight="?attr/contact_browser_list_padding_right"
+        android:layout_marginStart="?attr/contact_browser_list_padding_left"
+        android:clipToPadding="false"
+        android:fastScrollEnabled="true"
+        android:paddingTop="@dimen/contact_browser_list_item_padding_top_or_bottom" />
+
+    <com.freeme.contacts.common.widgets.FreemeEmptyContentView
+        android:id="@+id/empty_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <com.freeme.contacts.common.widgets.FreemeIndexScrollView
+        android:id="@+id/index_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@android:id/list"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">最近任务</string>
+    <string name="recents_grid">宫格</string>
+    <string name="recents_matrix">矩阵</string>
+    <string name="recent_app_clean_finished_toast">释放了 <xliff:g id="count">%1$s</xliff:g> 内存,现在可用 <xliff:g id="count">%2$s</xliff:g></string>
+    <string name="memory_clean">内存清理</string>
+    <string name="memory_free"><xliff:g id="count">剩余 %1$s</xliff:g></string>
+    <string name="memory_auto_clean"><xliff:g id="count">内存剩余 %1$s 时</xliff:g></string>
+    <string name="memory_avail"><xliff:g id="count">%1$s</xliff:g> 可用</string>
+    <string name="auto_clean_settings_tip">为了提高手机使用的流畅度，自动清理可以在您的设备内存占用过高时自动清理后台应用，以提高您的设备的流畅度</string>
+    <string name="auto_clean_setting">自动清理设置</string>
+    <string name="auto_clean">自动清理</string>
+    <string name="auto_start">自动启动</string>
+    <string name="cancel">取消</string>
+    <string name="setting">设置</string>
+    <string name="manual_clean">手动清理</string>
+    <string name="not_show_again">不再显示</string>
+    <string name="recents_launch_error_message">无法启动 <xliff:g id="app" example="Calendar">%s</xliff:g>.</string>
+
+    <string name="app_locked">应用程序已锁定</string>
+</resources>

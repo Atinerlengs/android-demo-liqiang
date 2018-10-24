@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="16dp">
+    <shape android:shape="rectangle">
+        <solid android:color="@color/freeme_list_divider_color" />
+        <size
+            android:width="@*freeme:dimen/list_divider_height_freeme"
+            android:height="@*freeme:dimen/list_divider_height_freeme" />
+    </shape>
+</inset>

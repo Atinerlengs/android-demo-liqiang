@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="@dimen/divider_height_small"
+          android:drawable="@color/app_color_divider"
+          android:start="@dimen/detail_grid_vertical_space"
+          android:end="@dimen/main_page_padding_start"/>
+</layer-list>

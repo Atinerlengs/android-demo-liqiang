@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Neispravno</string>
+    <string name="conf_call_member_list">Popis članova</string>
+    <string name="conf_call_participant_answered">Odgovoreno</string>
+    <string name="conf_call_participant_missed">"Propušteni"</string>
+    <string name="calls_over_wifi">PozivićebitiupućivaniputemWi-Fimreže</string>
+    <string name="connect_to_wifi">Povežite se na Wi-Fi za upućivanje poziva</string>
+    <string name="wfc_notification_summary">Dodirniteovdjekakobistepristupilipostavkama</string>
+    <string name="wfc_notification_summary_fail">Dotaknite ovdje za pregled dostupnih mreža</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"SIP poziv"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> deblokiranje nije uspjelo</string>
+    <string name="menu_select_all">"Odaberisve"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> odabrano</string>
+    <string name="multichoice_no_select_alert">"Nema odabrane stavke."</string>
+    <string name="deleteCallLogConfirmation_title">Izbrisati dnevnik(e) poziva?</string>
+    <string name="deleteCallLogConfirmation_message">Jeste li sigurni da želite izbrisati odabrani/e dnevnik(e) poziva?"</string>
+    <string name="recentCalls_delete">"Izbriši"</string>
+    <string name="deleting_call_log">Briše se dnevnik poziva...</string>
+    <string name="toast_call_detail_error">"Pojedinosti nisu dostupne"</string>
+    <string name="calllogList">"Povijest poziva"</string>
+    <string name="calllogHint">Traži dnevnike poziva</string>
+    <string name="calllog_description">Dolazni, odlazni i propušteni pozivi</string>
+    <string name="noMatchingCalllogs">Nisu pronađeni odgovarajući dnevnici poziva.</string>
+    <string name="titleJoinContactDataWith">"Pridruži kontakte"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> dnevnika poziva</item>
+        <item quantity="one">"1 dnevnik poziva"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Dnevnik poziva nije pronađen</string>
+    <string name="search_results_for">Traži rezultate za: <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none">"Ukloni sve odabire"</string>
+</resources>

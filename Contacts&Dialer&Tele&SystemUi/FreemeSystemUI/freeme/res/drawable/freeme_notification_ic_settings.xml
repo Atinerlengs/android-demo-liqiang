@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bottom_drawable" android:drawable="@drawable/freeme_notification_ic_settings_bg" />
+    <item android:id="@+id/background_imageout" android:drawable="@drawable/freeme_notification_ic_settings_content"
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp" />
+</layer-list>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Érvénytelen</string>
+    <string name="conf_call_member_list">Tagok listája</string>
+    <string name="conf_call_participant_answered">Hívás fogadva</string>
+    <string name="conf_call_participant_missed">"Nem fogadott"</string>
+    <string name="calls_over_wifi">AhívásokWi-Fi-kapcsolatonkeresztülműködnek</string>
+    <string name="connect_to_wifi">A híváshoz csatlakozzon Wi-Fi-hez</string>
+    <string name="wfc_notification_summary">Koppintsonideabeállításokmegnyitásához</string>
+    <string name="wfc_notification_summary_fail">Érintse meg itt az elérhető hálózatok megjelenítéséhez</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"SIP-hívás"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> sikertelen zárolás-feloldás</string>
+    <string name="menu_select_all">"Összeskijelölése"</string>
+    <string name="selected_item_count">  <xliff:g id="count">%d</xliff:g> kiválasztva </string>
+    <string name="multichoice_no_select_alert">"Nincs kijelölt elem."</string>
+    <string name="deleteCallLogConfirmation_title">Törli a híváslistá(ka)t?</string>
+    <string name="deleteCallLogConfirmation_message">Biztosan törli a kijelölt híváslistá(ka)t?</string>
+    <string name="recentCalls_delete">"Törlés"</string>
+    <string name="deleting_call_log">Híváslista törlése…</string>
+    <string name="toast_call_detail_error">"Nem érhetők el a részletek"</string>
+    <string name="calllogList">"Hívási előzmények"</string>
+    <string name="calllogHint">Hívásnaplók keresése</string>
+    <string name="calllog_description">Bejövő, kimenő és nem fogadott hívások</string>
+    <string name="noMatchingCalllogs">Nem található egyező hívásnapló.</string>
+    <string name="titleJoinContactDataWith">"Névjegyek összekapcsolása"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other">  <xliff:g id="count">%d</xliff:g> hívásnapló </item>
+        <item quantity="one">"1 hívásnapló"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">A hívásnapló nem található</string>
+    <string name="search_results_for">  <xliff:g id="query">%s</xliff:g> keresési eredményei </string>
+    <string name="menu_select_none">"Kijelölést megszüntet"</string>
+</resources>

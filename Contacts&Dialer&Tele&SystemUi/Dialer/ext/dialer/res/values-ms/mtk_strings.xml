@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Tidak sah</string>
+    <string name="conf_call_member_list">Senarai Ahli</string>
+    <string name="conf_call_participant_answered">Dijawab</string>
+    <string name="conf_call_participant_missed">"Tidak dijawab"</string>
+    <string name="calls_over_wifi">PanggilanakandibuatmelaluiWi-Fi</string>
+    <string name="connect_to_wifi">Sambungkan ke Wi-Fi untuk membuat panggilan</string>
+    <string name="wfc_notification_summary">Ketikdisiniuntukmengaksespilihan</string>
+    <string name="wfc_notification_summary_fail">Ketik Di Sini untuk Melihat Rangkaian yang Tersedia</string>
+    <string name="dialer_call_type_label_sip">Panggilan SIP</string>
+    <string name="snackbar_number_unblocked_failed">Gagal membuka sekatan <xliff:g id="number" example="(555)555-5555">%1$s</xliff:g></string>
+    <string name="menu_select_all">"Pilihsemua"</string>
+    <string name="selected_item_count">  <xliff:g id="count">%d</xliff:g> dipilih </string>
+    <string name="multichoice_no_select_alert">"Tiada item dipilih."</string>
+    <string name="deleteCallLogConfirmation_title">Padam log panggilan?</string>
+    <string name="deleteCallLogConfirmation_message">Adakah anda pasti mahu memadamkan log panggilan yang dipilih?</string>
+    <string name="recentCalls_delete">"Padam"</string>
+    <string name="deleting_call_log">Memadam Log Panggilan...</string>
+    <string name="toast_call_detail_error">"Butiran tidak tersedia"</string>
+    <string name="calllogList">"Sejarah Panggilan"</string>
+    <string name="calllogHint">Cari log panggilan</string>
+    <string name="calllog_description">Panggilan masuk, keluar dan tidak dijawab</string>
+    <string name="noMatchingCalllogs">Tiada log panggilan sepadan yang ditemui.</string>
+    <string name="titleJoinContactDataWith">"Gabungkan kenalan"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> log panggilan</item>
+        <item quantity="one"> "1 log panggilan"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Log panggilan tidak ditemui</string>
+    <string name="search_results_for">Keputusan carian bagi: <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none">"Nyahpilih semua"</string>
+</resources>

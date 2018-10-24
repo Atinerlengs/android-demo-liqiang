@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orderingFromXml="true"
+    android:persistent="false">
+
+    <com.freeme.contacts.quickcontact.FreemeRingtonePreference
+        android:key="option1_ringtone"
+        android:showDefault="false"
+        android:title="@string/freeme_settings_sound_category_ringtone_default_title" />
+
+    <com.freeme.contacts.quickcontact.FreemeRingtonePreference
+        android:key="option2_ringtone"
+        android:showDefault="false"
+        android:title="@string/freeme_settings_sound_category_ringtone_custome_title" />
+</PreferenceScreen>

@@ -1,0 +1,67 @@
+<!--
+ ~ Copyright (C) 2016 The Android Open Source Project
+ ~
+ ~ Licensed under the Apache License, Version 2.0 (the "License");
+ ~ you may not use this file except in compliance with the License.
+ ~ You may obtain a copy of the License at
+ ~
+ ~      http://www.apache.org/licenses/LICENSE-2.0
+ ~
+ ~ Unless required by applicable law or agreed to in writing, software
+ ~ distributed under the License is distributed on an "AS IS" BASIS,
+ ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ ~ See the License for the specific language governing permissions and
+ ~ limitations under the License
+ -->
+<manifest
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.mediatek.dialer.calllog">
+
+  <application>
+      <!-- M: [Multi-Delete] For call log delete. @{ -->
+        <!-- freeme.zhaozehong, 20180321.
+          add: android:screenOrientation="portrait"
+        -->
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.mediatek.dialer.calllog.CallLogMultipleDeleteActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:icon="@mipmap/ic_launcher_phone"
+            android:taskAffinity=""
+            android:theme="@style/DialtactsThemeWithoutActionBarOverlay"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <!-- @} -->
+
+        <!-- M: [Dialer Global Search] For call log global search. @{ -->
+        <!-- freeme.zhaozehong, 20180321.
+          add: android:screenOrientation="portrait"
+        -->
+        <activity android:name="com.mediatek.dialer.calllog.CallLogSearchResultActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:icon="@mipmap/ic_launcher_phone"
+            android:label="@string/calllogList"
+            android:launchMode="singleInstance"
+            android:theme="@style/DialtactsThemeWithoutActionBarOverlay" >
+             <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/mtk_calllog_searchable"
+            />
+        </activity>
+        <!-- @} -->
+
+        <!-- M: add for receiving phone account changing information -->
+        <receiver android:name="com.mediatek.dialer.calllog.PhoneAccountChangedReceiver"
+            android:permission="android.permission.BROADCAST_PHONE_ACCOUNT_REGISTRATION" >
+            <intent-filter>
+                <action android:name="android.telecom.action.PHONE_ACCOUNT_REGISTERED" />
+                <action android:name="android.telecom.action.PHONE_ACCOUNT_UNREGISTERED" />
+            </intent-filter>
+        </receiver>
+  </application>
+</manifest>

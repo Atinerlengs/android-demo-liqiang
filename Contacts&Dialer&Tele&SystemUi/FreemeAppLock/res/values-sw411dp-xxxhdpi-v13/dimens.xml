@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="portrait_content_layout_padding_bottom">268.0dip</dimen>
+    <dimen name="portrait_app_infor_margin_top">123.0dip</dimen>
+    <dimen name="landscape_content_layout_height_pass">310.0dip</dimen>
+    <dimen name="landscape_content_layout_height_pin">240.0dip</dimen>
+    <dimen name="landscape_content_layout_padding_bottom_pass">208.0dip</dimen>
+    <dimen name="landscape_content_layout_padding_bottom_pin">120.0dip</dimen>
+</resources>

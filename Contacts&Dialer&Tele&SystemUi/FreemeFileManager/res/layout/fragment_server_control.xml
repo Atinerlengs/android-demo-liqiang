@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/server_body"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/wifi_state_image"
+            android:src="@drawable/wifi_state4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/server_body"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/server_info_margin_top"
+        android:layout_centerInParent="true"
+        android:gravity="top">
+        <TextView
+            android:id="@+id/instruction_pre"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/instruction_pre"
+            android:typeface="sans"
+            style="@style/AppTextAppearance.ItemName"/>
+        <TextView
+            android:id="@+id/instruction"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/instruction"
+            style="@style/AppTextAppearance.ItemName" />
+
+        <TextView
+            android:id="@+id/ip_address"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:minWidth="150px"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/server_info_margin_top"
+            android:textIsSelectable="true"
+            style="@style/AppTextAppearance.IpName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/server_bottom"
+        android:layout_height="@dimen/bottom_btn_height"
+        android:layout_width="@dimen/bottom_btn_width"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/bottom_btn_clean_margin_bottom"
+        android:background="@drawable/btn_bottom">
+        <TextView
+            android:id="@+id/server_operate"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textAppearance="@style/AppTextAppearance.BottomBtn"
+            android:gravity="center" />
+    </LinearLayout>
+</RelativeLayout>

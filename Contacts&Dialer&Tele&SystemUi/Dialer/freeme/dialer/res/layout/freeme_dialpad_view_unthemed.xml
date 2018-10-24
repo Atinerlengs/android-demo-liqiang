@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialpad_view"
+    class="com.freeme.dialer.dialpadview.FreemeDialpadView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="@color/freeme_dialpad_background_color"
+    android:clickable="true"
+    android:elevation="?attr/dialpad_elevation"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <!-- Text field where call rate is displayed for ILD calls. -->
+    <LinearLayout
+        android:id="@+id/rate_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ild_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/ild_margin_height"
+            android:layout_marginTop="@dimen/ild_margin_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ild_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/ild_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e3e3e3" />
+
+    </LinearLayout>
+
+    <!-- Text field and possibly soft menu button above the keypad where
+     the digits are displayed. -->
+    <FrameLayout
+        android:id="@+id/digits_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dbdbdb" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/freeme_dialpad_space_above_keys" />
+
+    <include layout="@layout/dialpad" />
+</view>

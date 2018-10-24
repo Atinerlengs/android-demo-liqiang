@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="freeme_add_new">新建</string>
+    <string name="freeme_groups_empty_tips">"无群组"</string>
+    <string name="freeme_groups_no_members_tips">"无群组成员"</string>
+    <string name="freeme_groups_no_members_action_tips">"马上添加"</string>
+    <string name="freeme_group_name_dialog_insert_title">"添加群组"</string>
+    <string name="freeme_group_name_dialog_update_title">"重命名群组"</string>
+    <string name="freeme_group_name_dialog_hint">"群组名称"</string>
+
+    <string name="freeme_have_no_select_contact">请选择要删除的联系人</string>
+    <string name="delete_confirm">删除</string>
+    <string name="all_contact">所有联系人</string>
+    <string name="freeme_delete_contact_choice" >"已选择 <xliff:g id="name">%s</xliff:g> 个联系人"</string>
+    <string name="freeme_empty_contacts">您还没有任何联系人</string>
+    <string name="freeme_add_new_entry_for_section">添加%1$s</string>
+    <string name="editor_group_selection">选择群组</string>
+    <string name="group_adding">正在加载...</string>
+    <string name="group_item_count" >"<xliff:g id="COUNT">%s</xliff:g>个联系人"</string>
+    <string name="quick_contact_create_short_cut">创建快捷方式</string>
+    <string name="quick_contact_create_short_cut_sub">点击桌面图标直接拨打电话</string>
+    <string name="quick_contact_set_ringtone">铃声</string>
+    <string name="quick_contact_share_contact">分享联系人</string>
+    <string name="add_to_blacklsit">添加到黑名单</string>
+    <string name="remove_from_blacklsit">从黑名单中移除</string>
+    <string name="black_list_add_tips"><xliff:g id="phoneNumber">%s</xliff:g>将会被添加到用户黑名单，电话和短信都会被拦截，是否加入？</string>
+    <string name="black_list_remove_tips"><xliff:g id="phoneNumber">%s</xliff:g>将被移除用户黑名单，电话和短信将恢复正常。</string>
+    <string name="black_list_add">确定</string>
+    <string name="black_list_remove">确定</string>
+    <string name="black_list_add_title">加入黑名单</string>
+    <string name="black_list_remove_title">移除黑名单</string>
+    <string name="black_list_msg_more"><xliff:g id="phoneNumber">%s</xliff:g>等</string>
+    <string name="ringtone_default">"默认铃声"</string>
+    <string name="freeme_no_match_contact">没有匹配的联系人</string>
+    <string name="freeme_settings_sound_category_ringtone_select_summary">请选择%s</string>
+    <string name="freeme_settings_sound_category_no_audio_file">无音频文件</string>
+    <string name="freeme_settings_sound_category_ringtone_default_title">默认铃声</string>
+    <string name="freeme_settings_sound_category_ringtone_custome_title">自定义铃声</string>
+    <string name="freeme_ringtone_title">手机铃声</string>
+    <string name="freeme_delete_my_card">删除我的名片</string>
+    <string name="freeme_delete_my_card_dialog_text">要删除我的名片吗？</string>
+    <string name="freeme_callloglist">通话记录</string>
+    <string name="freeme_add_to_favorite">添加到收藏</string>
+    <string name="freeme_remove_from_favorite">从收藏中移除</string>
+    <string name="freeme_delete_contact">删除联系人</string>
+    <string name="freeme_edit_contact">编辑</string>
+
+    <string name="freeme_stranger_call">呼叫</string>
+    <string name="freeme_stranger_send_message">发送信息</string>
+    <string name="freeme_stranger_create_contact">新建联系人</string>
+    <string name="freeme_stranger_add_to_exist_contact">添加到已有联系人</string>
+    <string name="freeme_stranger_mark_number">标记号码</string>
+    <string name="freeme_stranger_video_call">视频通话</string>
+
+    <string name="freeme_recent_call_type_incoming">呼入</string>
+    <string name="freeme_recent_call_type_outgoing">呼出</string>
+    <string name="freeme_recent_call_type_missing">未接</string>
+    <string name="freeme_recent_call_type_received">已接</string>
+    <string name="freeme_recent_call_all_calllist">全部通话记录</string>
+    <string name="freeme_recent_call_all_unconnect_calllist">全部未接通话记录</string>
+    <string name="freeme_call_label">电话</string>
+    <string name="freeme_recent_call_type_unconnected">未接通</string>
+    <string name="freeme_recent_call_type_rejected">拒接</string>
+
+    <string name="freeme_contact_add">联系人信息保存到</string>
+    <string name="freeme_contact_groups">群组</string>
+    <string name="freeme_no_contact_groups">未加入群组</string>
+    <string name="freeme_contact_item_cancle">取消</string>
+    <string name="freeme_item_style">类型</string>
+    <string name="freeme_create_group_item_label">创建新群组</string>
+    <string name="freeme_organization_group_label">单位</string>
+    <string name="freeme_group_item_send_message">发信息</string>
+    <string name="freeme_group_item_send_email">发邮件</string>
+    <string name="freeme_group_item_delete">移除</string>
+
+    <string name="freeme_contact_settings_label">联系人</string>
+    <string name="freeme_contact_settings_copy_contacts">复制联系人</string>
+    <string name="freeme_contact_settings_copy_contacts_from_usim">从USIM卡联系人中复制</string>
+    <string name="freeme_contact_settings_copy_contacts_from_phone">从手机联系人中复制</string>
+    <string name="freeme_contact_settings_copy_contacts_from_internal_storage">从内部存储空间中复制</string>
+    <string name="freeme_contact_settings_copy_contacts_from_sd_card">从SD卡中复制</string>
+    <string name="freeme_contact_settings_copy_contacts_tips">正在复制联系人...</string>
+    <string name="freeme_group_delete">删除</string>
+    <string name="freeme_group_rename">重命名</string>
+    <string name="freeme_delete_group_dialog">要删除选中的群组吗?</string>
+    <string name="freeme_group_ring">群铃声</string>
+    <string name="freeme_stranger_label">陌生人</string>
+
+    <string name="freeme_contacts_settings_copy_contacts_from">"从<xliff:g id="name">%s</xliff:g>中复制"</string>
+    <string name="freeme_contacts_settings_copy_contacts_to">"复制到<xliff:g id="name">%s</xliff:g>"</string>
+    <string name="freeme_contacts_settings_copy_contacts_from_sim">"从卡<xliff:g id="name">%s</xliff:g>中复制"</string>
+    <string name="freeme_contacts_settings_copy_contacts_to_sim">"复制到卡<xliff:g id="name">%s</xliff:g>"</string>
+
+    <string name="freeme_choose_label">选择标签</string>
+    <string name="freeme_type_voicemail">语音邮件</string>
+
+    <string name="freeme_share_user_profile">分享个人名片</string>
+    <string name="freeme_delete_user_profile">刪除个人名片</string>
+    <string name="freeme_delete_user_profile_Confirmation">要删除个人名片吗?</string>
+
+    <string name="activity_not_found">应用未安装</string>
+
+    <string name="freeme_contact_not_exist">联系人不存在</string>
+</resources>

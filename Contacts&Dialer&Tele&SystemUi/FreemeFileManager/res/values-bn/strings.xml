@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources> 
+    <string name="alert_delete_multiple">এই আইটেমগুলো মুছে ফেলা হবে</string>  
+    <string name="alert_delete_single">এই আইটেমটি মুছে ফেলা হবে</string>  
+    <string name="already_exists">ইতিমধ্যেই বিদ্যমান</string>  
+    <string name="app_name">ফাইল ম্যানেজার</string>  
+    <string name="cancel">বাতিল করুন</string>  
+    <string name="copy">কপি করুন</string>
+    <string name="create_folder">ফোল্ডার তৈরি করুন</string>
+    <string name="cut">কাট করুন</string>
+    <string name="cut_fail">কাট করতে ব্যর্থ হয়েছে</string>
+    <string name="delete">মুছে ফেলুন</string>  
+    <string name="delete_deny">মুছে ফেলার কোন অনুমতি নেই</string>  
+    <string name="delete_fail">মুছতে ব্যর্থ হয়েছে</string>  
+    <string name="deleting">মুছে ফেলা হচ্ছে</string>  
+    <string name="deselect_all">সব নির্বাচনমুক্ত করুন</string>  
+    <string name="details">বিস্তারিত</string>  
+    <string name="done">সম্পন্ন</string>  
+    <string name="edit">সম্পাদনা করুন</string>  
+    <string name="empty_msg">(খালি ফোল্ডার)</string>  
+    <string name="executable">কার্যকর করা যাবে</string>  
+    <string name="insufficient_memory">অপর্যাপ্ত মেমোরি</string>  
+    <string name="invalid_empty_name">ফাইল বা ফোল্ডারের নাম খালি রাখা যাবে না</string>  
+    <string name="invalid_file_name">নির্দেশিত ফাইল বা ফোল্ডারের নামটি খুবই দীর্ঘ</string>  
+    <string name="loading">লোড হচ্ছে</string>  
+    <string name="modified_time">পরিমার্জিত</string>  
+    <string name="name">নাম</string>  
+    <string name="new_folder">নতুন ফোল্ডার</string>  
+    <string name="no">না</string>  
+    <string name="ok">ঠিক আছে</string>  
+    <string name="paste">পেস্ট করুন</string>  
+    <string name="pasting">পেস্ট করা হচ্ছে</string>  
+    <string name="paste_fail">পেস্ট করতে ব্যর্থ হয়েছে</string>  
+    <string name="paste_same_folder">একই ডিরেক্টরিতে %s পেস্ট করতে পারবে না</string>  
+    <string name="readable">পড়ার যোগ্য</string>  
+    <string name="rename">পুনরায় নামকরণ</string>  
+    <string name="save">সংরক্ষণ করুন</string>  
+    <string name="select_all">সবগুলো নির্বাচন করুন</string>  
+    <string name="send_file">ফাইলটি পাঠান</string>  
+    <string name="share">শেয়ার করুন</string>  
+    <string name="size">আয়তন</string>  
+    <string name="sort_by">সাজান</string>  
+    <string name="support_fail" product="default">ফোন এটি সমর্থন করছে না</string>
+    <string name="wait">অপেক্ষা করুন\u2026</string>  
+    <string name="writable">লেখারযোগ্য</string>  
+    <string name="yes">হ্যাঁ</string>  
+    <string name="confirm_rename">পুনরায় নামকরণ নিশ্চিত করুন</string>  
+    <string name="msg_rename_ext">আপনি ফাইল এক্সটেনশন পরিবর্তন করছেন, যার কারণে ফাইলটি চেনা নাও যেতে পারে। আপনি কি নিশ্চিত আপনি তা করতে চান?</string>  
+    <string name="msg_unable_open_file">ফাইলটি খুলতে পারছি না।</string>  
+    <string-array name="sort_by"> 
+        <item>ধরন</item>  
+        <item>নাম (এ-জেড)</item>  
+        <item>আয়তন (বড়-ছোট)</item>  
+        <item>সময় (নতুন-পুরাতন)</item> 
+    </string-array>  
+    <string name="more">আরো</string>  
+    <string name="selected">নির্বাচিত</string>  
+    <string name="msg_change_name">অপারেশন ব্যর্থ, ভিন্ন নাম ব্যবহার করুন।</string>
+    <string name="invalid_char_prompt">আপনি অবৈধ অক্ষর নিবেশ করেছেন</string>
+    <string name="unmounted">%1$s আনমাউন্টেড</string>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tv_custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/main_page_padding_top">
+
+    <com.freeme.filemanager.view.ListItemTextView
+        android:id="@+id/temp_cache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tv_custom:background_res="@drawable/listitem_backgroud_head_freeme"
+        tv_custom:left_text="@string/clear_wechat_temp_cache"
+        tv_custom:right_text="@string/notificaiton_clear_btn_text"
+        tv_custom:right_text_visible="visible"
+        tv_custom:right_image_visible="gone">
+    </com.freeme.filemanager.view.ListItemTextView>
+    <include layout="@layout/widget_divider_view_small_freeme" />
+
+    <com.freeme.filemanager.view.ListItemTextView
+        android:id="@+id/old_files"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tv_custom:background_res="@drawable/listitem_backgroud_middle_freeme"
+        tv_custom:left_text="@string/clear_wechat_three_months_ago"
+        tv_custom:right_text="@string/notificaiton_clear_btn_text"
+        tv_custom:right_text_visible="visible"
+        tv_custom:right_image_visible="gone">
+    </com.freeme.filemanager.view.ListItemTextView>
+    <include layout="@layout/widget_divider_view_small_freeme" />
+
+    <com.freeme.filemanager.view.ListItemTextView
+        android:id="@+id/chat_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tv_custom:background_res="@drawable/listitem_backgroud_middle_freeme"
+        tv_custom:left_text="@string/clear_wechat_chat_img_title"
+        tv_custom:right_text_visible="gone"
+        tv_custom:right_image_visible="visible">
+    </com.freeme.filemanager.view.ListItemTextView>
+    <include layout="@layout/widget_divider_view_small_freeme" />
+
+    <com.freeme.filemanager.view.ListItemTextView
+        android:id="@+id/wechat_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tv_custom:background_res="@drawable/listitem_backgroud_middle_freeme"
+        tv_custom:left_text="@string/clear_wechat_download_file"
+        tv_custom:right_text_visible="gone"
+        tv_custom:right_image_visible="visible">
+    </com.freeme.filemanager.view.ListItemTextView>
+    <include layout="@layout/widget_divider_view_small_freeme" />
+
+    <com.freeme.filemanager.view.ListItemTextView
+        android:id="@+id/saved_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tv_custom:background_res="@drawable/listitem_backgroud_tail_freeme"
+        tv_custom:left_text="@string/clear_wechat_saved_img_title"
+        tv_custom:right_text_visible="gone"
+        tv_custom:right_image_visible="visible">
+    </com.freeme.filemanager.view.ListItemTextView>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/bottom_btn_width"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grid_padding_top"
+        android:layout_marginBottom="@dimen/grid_padding_top"
+        android:text="@string/audio_preview"
+        android:textAppearance="@style/AppTextAppearance.Medium" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/list_item_padding_left"
+        android:layout_marginEnd="@dimen/list_item_padding_left"
+        android:layout_marginBottom="@dimen/main_page_padding_start">
+
+        <TextView
+            android:id="@+id/current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="@string/default_duration"
+            android:textAppearance="@style/AppTextAppearance.Small" />
+        <TextView
+            android:id="@+id/total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/default_duration"
+            android:textAppearance="@style/AppTextAppearance.Small" />
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/bottom_btn_margin_top"
+        android:layout_marginEnd="@dimen/bottom_btn_margin_top"
+        android:layout_marginBottom="@dimen/bottom_btn_margin_top"
+        android:max="100"
+        android:progress="0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/list_item_padding_left"
+        android:layout_marginEnd="@dimen/list_item_padding_left"
+        android:layout_marginBottom="@dimen/grid_padding_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/audio_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textAppearance="@style/AppTextAppearance.ItemName" />
+            <TextView
+                android:id="@+id/audio_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:textAppearance="@style/AppTextAppearance.ItemOther" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_pause" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height_small"
+        android:background="@color/list_color_divider" />
+
+    <LinearLayout
+        android:id="@+id/btn_stop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_btn_height"
+        android:gravity="center"
+        android:background="@drawable/grid_item_line2_background">
+        <TextView
+            android:id="@+id/server_operate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textAppearance="@style/AppTextAppearance.BottomBtn"
+            android:gravity="center" />
+    </LinearLayout>
+</LinearLayout>

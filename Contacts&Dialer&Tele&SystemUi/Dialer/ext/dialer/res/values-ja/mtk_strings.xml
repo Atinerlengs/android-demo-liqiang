@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">無効</string>
+    <string name="conf_call_member_list">メンバーリスト</string>
+    <string name="conf_call_participant_answered">回答済み</string>
+    <string name="conf_call_participant_missed">"不在着信"</string>
+    <string name="calls_over_wifi">通話はWiFiを介して行われます</string>
+    <string name="connect_to_wifi">通話するためには、Wi-Fiに接続します</string>
+    <string name="wfc_notification_summary">ここをタップして、環境設定にアクセス</string>
+    <string name="wfc_notification_summary_fail">ここをタップして、利用可能なネットワークを表示します</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"SIP通話"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g>のブロック解除に失敗しました</string>
+    <string name="menu_select_all">"すべて選択"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> 選択済</string>
+    <string name="multichoice_no_select_alert">"選択されたアイテムはありません。"</string>
+    <string name="deleteCallLogConfirmation_title">通話ログを削除しますか？</string>
+    <string name="deleteCallLogConfirmation_message">選択された通話ログを削除しますか？</string>
+    <string name="recentCalls_delete">"削除"</string>
+    <string name="deleting_call_log">通話ログを削除中…</string>
+    <string name="toast_call_detail_error">"詳細情報がありません"</string>
+    <string name="calllogList">"通話履歴"</string>
+    <string name="calllogHint">通話ログを検索</string>
+    <string name="calllog_description">着信、発信、不在着信</string>
+    <string name="noMatchingCalllogs">一致する通話ログは見つかりません。</string>
+    <string name="titleJoinContactDataWith">"連絡先の統合"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g>件の通話ログ</item>
+        <item quantity="one">"1つの通話記録"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">通話ログが見つかりません</string>
+    <string name="search_results_for">検索結果： <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none">"すべての選択を解除"</string>
+</resources>

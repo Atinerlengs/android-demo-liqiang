@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.mediatek.keyguard.AntiTheft.KeyguardAntiTheftLockView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidprv="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/keyguard_antitheft_lock_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    androidprv:layout_maxHeight="@dimen/keyguard_security_max_height"
+    androidprv:layout_maxWidth="@dimen/keyguard_security_width">
+
+    <include
+        layout="@layout/keyguard_message_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/keyguard_bouncer_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layoutDirection="ltr"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/row0"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingBottom="16dp">
+
+            <com.android.keyguard.PasswordTextView
+                android:id="@+id/antiTheftPinEntry"
+                android:layout_width="@dimen/keyguard_security_width"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="72dp"
+                android:gravity="center"
+                androidprv:scaledTextSize="28" />
+
+            <ImageButton
+                android:id="@+id/delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/antiTheftPinEntry"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ripple_drawable"
+                android:clickable="true"
+                android:contentDescription="@string/keyboardview_keycode_delete"
+                android:gravity="center_vertical"
+                android:paddingBottom="8dip"
+                android:paddingLeft="24dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dip"
+                android:src="@drawable/ic_backspace_black_24dp"
+                android:tint="@color/pin_delete_color"
+                android:tintMode="src_in" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#28FFFFFF" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.android.keyguard.NumPadKey
+                android:id="@+id/key1"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                androidprv:digit="1"
+                androidprv:textView="@+id/antiTheftPinEntry" />
+
+            <com.android.keyguard.NumPadKey
+                android:id="@+id/key2"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                androidprv:digit="2"
+                androidprv:textView="@+id/antiTheftPinEntry" />
+
+            <com.android.keyguard.NumPadKey
+                android:id="@+id/key3"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                androidprv:digit="3"
+                androidprv:textView="@+id/antiTheftPinEntry" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.android.keyguard.NumPadKey
+                android:id="@+id/key4"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                androidprv:digit="4"
+                androidprv:textView="@+id/antiTheftPinEntry" />
+
+            <com.android.keyguard.NumPadKey
+                android:id="@+id/key5"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                androidprv:digit="5"
+                androidprv:textView="@+id/antiTheftPinEntry" />
+
+            <com.android.keyguard.NumPadKey
+                android:id="@+id/key6"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                androidprv:digit="6"
+                androidprv:textView="@+id/antiTheftPinEntry" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.android.keyguard.NumPadKey
+                android:id="@+id/key7"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                androidprv:digit="7"
+                androidprv:textView="@+id/antiTheftPinEntry" />
+
+            <com.android.keyguard.NumPadKey
+                android:id="@+id/key8"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                androidprv:digit="8"
+                androidprv:textView="@+id/antiTheftPinEntry" />
+
+            <com.android.keyguard.NumPadKey
+                android:id="@+id/key9"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                androidprv:digit="9"
+                androidprv:textView="@+id/antiTheftPinEntry" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.android.keyguard.NumPadKey
+                android:id="@+id/key0"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                androidprv:digit="0"
+                androidprv:textView="@+id/antiTheftPinEntry" />
+
+            <ImageButton
+                android:id="@+id/key_enter"
+                style="@style/Keyguard.ImageButton.NumPadEnter"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_drawable"
+                android:contentDescription="@string/keyboardview_keycode_enter"
+                android:paddingBottom="11sp"
+                android:src="@drawable/ic_done_black_24dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.android.keyguard.EmergencyButton
+            android:id="@+id/emergency_call_button_pin_view"
+            style="@style/Keyguard.TextView.EmergencyButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_weight="1.0"
+            android:text="@*android:string/lockscreen_emergency_call"
+            android:textAllCaps="@bool/kg_use_all_caps" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:id="@+id/delete_back_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="13dp"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/delete_button"
+                style="@style/Keyguard.TextView.EmergencyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/freeme_keyguard_emergency_delete"
+                android:textAllCaps="@bool/kg_use_all_caps"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/back_button"
+                style="@style/Keyguard.TextView.EmergencyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/freeme_keyguard_emergency_back"
+                android:textAllCaps="@bool/kg_use_all_caps" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/keyguard_selector_fade_container"
+        layout="@layout/keyguard_eca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" />
+
+</com.mediatek.keyguard.AntiTheft.KeyguardAntiTheftLockView>

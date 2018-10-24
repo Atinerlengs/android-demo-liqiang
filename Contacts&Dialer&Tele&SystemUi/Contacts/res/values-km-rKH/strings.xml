@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="applicationLabel">"ទំនាក់ទំនង"</string>
+    <string name="contactsList">"ទំនាក់ទំនង"</string>
+    <string name="shortcut_add_contact">បន្ថែមលេខទំនាក់ទំនង</string>
+    <string name="shortcutContact">"ទំនាក់ទំនង"</string>
+    <string name="shortcutDialContact">"ហៅ​ដោយ​ផ្ទាល់"</string>
+    <string name="shortcutMessageContact">"ផ្ញើ​សារ​ដោយ​ផ្ទាល់"</string>
+    <string name="shortcutActivityTitle"/>
+    <string name="contactInsertOrEditActivityTitle">"បន្ថែម​ទៅ​ទំនាក់ទំនង"</string>
+    <string name="contactPickerActivityTitle">"ជ្រើស​ទំនាក់ទំនង"</string>
+    <string name="groupMemberPickerActivityTitle">"ជ្រើសរើស"</string>
+    <string name="header_entry_contact_list_adapter_header_title">"បង្កើត​ទំនាក់ទំនង​ថ្មី"</string>
+    <string name="searchHint">"រក​ទំនាក់ទំនង"</string>
+    <string name="menu_addStar">"បន្ថែម​ទៅ​សំណព្វ"</string>
+    <string name="menu_removeStar">លុបចេញពីបញ្ជីចំណូលចិត្ត</string>
+    <string name="description_action_menu_remove_star">"បាន​លុប​ចេញពី​ទំនាក់ទំនង​ដែល​និយម​ប្រើ"</string>
+    <string name="description_action_menu_add_star">"បន្ថែម​ទៅ​និយម​ប្រើ"</string>
+    <string name="menu_editContact">"កែ"</string>
+    <string name="menu_deleteContact">"លុប"</string>
+    <string name="menu_change_photo">ផ្លាស់ប្តូររូបថត</string>
+    <string name="menu_create_contact_shortcut"/>
+    <string name="menu_splitAggregate">"ផ្តាច់ការតភ្ជាប់"</string>
+    <string name="menu_editGroup"/>
+    <string name="menu_renameGroup"/>
+    <string name="menu_deleteGroup"/>
+    <string name="menu_addToGroup">បន្ថែមលេខទំនាក់ទំនង</string>
+    <string name="menu_selectForGroup"/>
+    <string name="menu_addContactsToGroup">បន្ថែមលេខទំនាក់ទំនង</string>
+    <string name="menu_removeFromGroup"/>
+    <string name="menu_new_group_action_bar"/>
+    <string name="splitConfirmation">"ផ្តាច់ការតភ្ជាប់ទំនាក់ទំនងនេះទៅជាទំនាក់ទំនងច្រើនឬ?"</string>
+    <string name="splitConfirmation_positive_button">"ផ្តាច់ការតភ្ជាប់"</string>
+    <string name="splitConfirmationWithPendingChanges">"តើអ្នកចង់រក្សាទុកការផ្លាស់ប្តូរដែលអ្នកបានធ្វើឡើង និងផ្តាច់ការតភ្ជាប់ទំនាក់ទំនងនេះទៅជាទំនាក់ទំនងច្រើនដែរឬទេ?"</string>
+    <string name="splitConfirmationWithPendingChanges_positive_button">"រក្សាទុក និងផ្តាច់ការតភ្ជាប់"</string>
+    <string name="joinConfirmation">"តើអ្នកចង់រក្សាទុកការផ្លាស់ប្តូរដែលអ្នកបានធ្វើឡើង និងតភ្ជាប់ជាមួយទំនាក់ទំនងដែលបានជ្រើសដែរឬទេ?"</string>
+    <string name="joinConfirmation_positive_button">"រក្សាទុក និងតភ្ជាប់"</string>
+    <string name="contacts_linking_progress_bar"/>
+    <string name="contacts_unlinking_progress_bar"/>
+    <string name="menu_joinAggregate">"តំណ"</string>
+    <string name="menu_linkedContacts"/>
+    <string name="menu_save">"រក្សាទុក"</string>
+    <string name="titleJoinContactDataWith">"ភ្ជាប់ទំនាក់ទំនង"</string>
+    <string name="blurbJoinContactDataWith">"ជ្រើសទំនាក់ទំនងដែលអ្នកចង់តភ្ជាប់ជាមួយ <xliff:g id="NAME">%s</xliff:g>៖"</string>
+    <string name="separatorJoinAggregateSuggestions">"ទំនាក់ទំនង​ដែល​បាន​ស្នើ"</string>
+    <string name="separatorJoinAggregateAll">"ទំនាក់ទំនង​ទាំងអស់"</string>
+    <string name="contactsJoinedNamedMessage"/>
+    <string name="contactsJoinedMessage">"បានតភ្ជាប់ទំនាក់ទំនង"</string>
+    <string name="contacts_deleted_one_named_toast"/>
+    <string name="contacts_deleted_two_named_toast"/>
+    <string name="contacts_deleted_many_named_toast"/>
+    <plurals name="contacts_deleted_toast">
+        <item quantity="one">បានលុបទំនាក់ទំនង</item>
+        <item quantity="other">"ទំនាក់ទំនងត្រូវបានលុប"</item>
+    </plurals>
+    <plurals name="contacts_count">
+        <item quantity="one"/>
+        <item quantity="other">  <xliff:g id="count">%d</xliff:g> លេខទំនាក់ទំនង </item>
+    </plurals>
+    <plurals name="contacts_count_with_account">
+        <item quantity="one"/>
+        <item quantity="other"/>
+    </plurals>
+    <string name="title_from_google"/>
+    <string name="title_from_other_accounts"/>
+    <string name="menu_set_ring_tone">"កំណត់​សំឡេង​រោទ៍"</string>
+    <string name="menu_redirect_calls_to_vm"/>
+    <string name="menu_unredirect_calls_to_vm"/>
+    <string name="readOnlyContactWarning"/>
+    <string name="readOnlyContactWarning_positive_button"/>
+    <string name="readOnlyContactDeleteConfirmation"/>
+    <string name="single_delete_confirmation">"លុបទំនាក់ទំនងនេះឬ?"</string>
+    <string name="batch_delete_confirmation">"លុបទំនាក់ទំនងដែលបានជ្រើសឬ?"</string>
+    <string name="batch_delete_read_only_contact_confirmation">"ព័ត៌មានលម្អិតពីគណនីសម្រាប់តែអានប៉ុណ្ណោះមិនអាចលុបបានទេ ប៉ុន្តែអាចលាក់បាន។"</string>
+    <string name="batch_delete_multiple_accounts_confirmation">"ទំនាក់ទំនងដែលនឹងត្រូវលុបមានព័ត៌មានលម្អិតពីគណនីច្រើន។ ព័ត៌មានលម្អិតពីគណនីសម្រាប់តែអានប៉ុណ្ណោះនឹងត្រូវបានលាក់ ប៉ុន្តែវានឹងមិនត្រូវបានលុបនោះទេ។"</string>
+    <string name="multipleContactDeleteConfirmation">"ការលុបទំនាក់ទំនងនេះនឹងលុបព័ត៌មានលម្អិតពីគណនីច្រើន"</string>
+    <string name="deleteConfirmation">"លុបទំនាក់ទំនងនេះឬ?"</string>
+    <string name="deleteConfirmation_positive_button">"លុប"</string>
+    <string name="invalidContactMessage"/>
+    <string name="createContactShortcutSuccessful_NoName">"បានបន្ថែមទំនាក់ទំនងទៅអេក្រង់ដើម"</string>
+    <string name="createContactShortcutSuccessful">"បានបន្ថែម <xliff:g id="NAME">%s</xliff:g> ទៅអេក្រង់ដើម"</string>
+    <skip/>
+    <string name="photoPickerNotFoundText"/>
+    <string name="attach_photo_dialog_title">"រូបថត​ទំនាក់ទំនង"</string>
+    <string name="customLabelPickerTitle">"ឈ្មោះ​ស្លាក​ផ្ទាល់ខ្លួន"</string>
+    <string name="removePhoto">"លុប​រូបថត​ចេញ"</string>
+    <string name="noContacts"/>
+    <string name="emptyGroup"/>
+    <string name="emptyAccount"/>
+    <string name="emptyMainList"/>
+    <string name="contactSavedNamedToast"/>
+    <string name="contactSavedToast">"បាន​រក្សាទុក​ទំនាក់ទំនង"</string>
+    <string name="contactUnlinkedToast">"ទំនាក់ទំនងដែលមិនបានតភ្ជាប់"</string>
+    <string name="contactSavedErrorToast"/>
+    <string name="contactUnlinkErrorToast"/>
+    <string name="contactJoinErrorToast"/>
+    <string name="contactGenericErrorToast"/>
+    <string name="contactPhotoSavedErrorToast"/>
+    <string name="groupLoadErrorToast"/>
+    <string name="groupDeletedToast"/>
+    <string name="groupCreatedToast"/>
+    <string name="groupCreateFailedToast"/>
+    <string name="groupUpdatedToast"/>
+    <string name="groupMembersRemovedToast"/>
+    <string name="groupMembersAddedToast"/>
+    <string name="groupSavedErrorToast"/>
+    <string name="groupExistsErrorMessage"/>
+    <string name="groupSomeContactsNoEmailsToast"/>
+    <string name="groupSomeContactsNoPhonesToast"/>
+    <string name="menu_sendEmailOption">"ផ្ញើ​អ៊ីមែល"</string>
+    <string name="menu_sendMessageOption">ផ្ញើសារ</string>
+    <string name="pickerSelectContactsActivityTitle"/>
+    <string name="send_to_selection">"ផ្ញើ"</string>
+    <string name="listFoundAllContactsZero">"មិន​មាន​ទំនាក់ទំនង។"</string>
+    <string name="add_contact_dlg_message_fmt">"បន្ថែម \"<xliff:g id="EMAIL">%s</xliff:g>\" ទៅ​ទំនាក់ទំនង?"</string>
+    <string name="search_settings_description">"ឈ្មោះ​នៃ​ទំនាក់ទំនង​របស់​អ្នក"</string>
+    <string name="quickcontact_transparent_view_description">"ចុច ដើម្បី​ត្រឡប់ទៅ​អេក្រង់​មុន"</string>
+    <string name="quickcontact_add_phone_number">"បន្ថែម​លេខទូរស័ព្ទ"</string>
+    <string name="quickcontact_add_email">"បន្ថែម​អ៊ីមែល"</string>
+    <string name="missing_app">មិនមានកម្មវិធីបានរកឃើញ ដើម្បីចាត់ចែងសកម្មភាពនេះឡើយ ។</string>
+    <string name="menu_share">"ចែក​រំលែក​"</string>
+    <string name="menu_add_contact">"បន្ថែម​ទៅ​ទំនាក់ទំនង"</string>
+    <string name="menu_add_contacts">បន្ថែម</string>
+    <plurals name="title_share_via">
+        <item quantity="one">"ចែករំលែក​ទំនាក់ទំនង​តាម"</item>
+        <item quantity="other"/>
+    </plurals>
+    <string name="dialog_new_group_account">"ជ្រើស​គណនី"</string>
+    <string name="group_name_dialog_insert_title"/>
+    <string name="group_name_dialog_update_title"/>
+    <string name="group_name_dialog_hint"/>
+    <string name="label_name_dialog_hint"/>
+    <string name="audio_chat">"ជជែក​ជា​សំឡេង"</string>
+    <string name="video_chat">"ជជែក​ជា​វីដេអូ"</string>
+    <string name="account_type_format">"<xliff:g id="SOURCE">%1$s</xliff:g> ទំនាក់ទំនង"</string>
+    <string name="google_account_type_format">"គណនី<xliff:g id="SOURCE">%1$s</xliff:g>"</string>
+    <string name="take_photo">"ថតរូប"</string>
+    <string name="take_new_photo">"ថតរូប​ថ្មី"</string>
+    <string name="pick_photo">"ជ្រើស​រូបថត"</string>
+    <string name="pick_new_photo">ជ្រើសរើសរូបថតថ្មី</string>
+    <string name="search_results_searching">"កំពុង​រក..."</string>
+    <string name="event_edit_field_hint_text">"កាលបរិច្ឆេទ"</string>
+    <string name="group_edit_field_hint_text">"ស្លាក"</string>
+    <string name="cancel_button_content_description">បោះបង់</string>
+    <string name="back_arrow_content_description">ថយក្រោយ</string>
+    <string name="action_menu_back_from_edit_select">"បិទ​"</string>
+    <string name="aggregation_suggestion_edit_dialog_message">"ប្ដូរ​ដើម្បី​កែ​ទំនាក់ទំនង​ដែល​បាន​ជ្រើស? ព័ត៌មាន​ដែល​អ្នក​បញ្ចូល​នឹង​បាន​ចម្លង។"</string>
+    <string name="contact_directory_description">"ថត <xliff:g id="TYPE">%1$s</xliff:g>"</string>
+    <string name="activity_title_settings">"ការ​កំណត់"</string>
+    <string name="menu_settings" msgid="377929915873428211">"ការ​កំណត់"</string>
+    <string name="menu_help">"ជំនួយ &amp; មតិ​ត្រឡប់"</string>
+    <string name="organization_company_and_title">"<xliff:g id="COMPANY_0">%2$s</xliff:g>, <xliff:g id="COMPANY_1">%1$s</xliff:g>"</string>
+    <string name="non_phone_caption">លេខទូរស័ព្ទ</string>
+    <string name="non_phone_add_to_contacts">"បន្ថែម​ទៅ​ទំនាក់ទំនង"</string>
+    <string name="non_phone_close">"បិទ​"</string>
+    <string name="date_year_toggle">"រួមបញ្ចូលឆ្នាំ"</string>
+    <string name="contacts_unavailable_add_account">"បន្ថែម​គណនី"</string>
+    <string name="contacts_unavailable_import_contacts">"នាំចូល"</string>
+    <string name="create_group_item_label"/>
+    <string name="delete_group_dialog_message"/>
+    <string name="toast_join_with_empty_contact">"សូមបញ្ចូលឈ្មោះទំនាក់ទំនងមុនពេលតភ្ជាប់ជាមួយទំនាក់ទំនងផ្សេងទៀត។"</string>
+    <string name="copy_text">"ចម្លង​ទៅ​ក្ដារ​តម្បៀត​ខ្ទាស់"</string>
+    <string name="set_default">"កំណត់​លំនាំដើម"</string>
+    <string name="clear_default">"សម្អាត​លំនាំដើម"</string>
+    <string name="toast_text_copied">"បាន​ចម្លង​អត្ថបទ"</string>
+    <string name="cancel_confirmation_dialog_message">"បោះបង់​ការ​ផ្លាស់ប្ដូរ?"</string>
+    <string name="cancel_confirmation_dialog_cancel_editing_button">បោះចោល</string>
+    <string name="cancel_confirmation_dialog_keep_editing_button">បោះបង់</string>
+    <string name="leave_customize_confirmation_dialog_message"/>
+    <string name="enter_contact_name">"រក​ទំនាក់ទំនង"</string>
+    <string name="title_edit_group"/>
+    <string name="local_profile_title">"ប្រវត្តិរូប​មូលដ្ឋាន​របស់​ខ្ញុំ"</string>
+    <string name="external_profile_title">"ប្រវត្តិរូប <xliff:g id="EXTERNAL_SOURCE">%1$s</xliff:g> របស់​ខ្ញុំ"</string>
+    <string name="contact_editor_prompt_zero_accounts"/>
+    <string name="contact_editor_prompt_one_account">"ទំនាក់ទំនងថ្មីនឹងត្រូវបានរក្សាទុកទៅក្នុង <xliff:g id="ACCOUNT_NAME">%1$s</xliff:g>"</string>
+    <string name="contact_editor_prompt_multiple_accounts">"ជ្រើសគណនីលំនាំដើមសម្រាប់ទំនាក់ទំនងថ្មី៖"</string>
+    <string name="contact_editor_title_new_contact">"បង្កើត​ទំនាក់ទំនង​ថ្មី"</string>
+    <string name="contact_editor_title_existing_contact">"កែ​ទំនាក់ទំនង"</string>
+    <string name="contact_editor_title_read_only_contact"/>
+    <string name="contact_editor_pick_raw_contact_to_edit_dialog_title"/>
+    <string name="contact_editor_pick_linked_contact_dialog_title">"ទំនាក់ទំនងដែលបានតភ្ជាប់"</string>
+    <string name="contact_editor_add_linked_contact">បន្ថែម</string>
+    <string name="contact_editor_unlink_contacts">"ផ្តាច់ការតភ្ជាប់"</string>
+    <string name="add_account">"បន្ថែម​គណនី"</string>
+    <string name="add_new_account">"បន្ថែម​គណនី​ថ្មី"</string>
+    <string name="menu_export_database">"នាំចេញ​ឯកសារ​មូលដ្ឋាន​ទិន្នន័យ"</string>
+    <string name="action_menu_add_new_contact_button">"បង្កើត​ទំនាក់ទំនង​ថ្មី"</string>
+    <string name="expanding_entry_card_view_see_more">"​មើល​​ច្រើន​ជាង"</string>
+    <string name="expanding_entry_card_view_see_less">"​មើល​តិច​ជាង"</string>
+    <string name="recent_card_title">"ថ្មីៗ"</string>
+    <string name="about_card_title">"អំពី"</string>
+    <string name="toast_making_personal_copy"/>
+    <string name="tomorrow">"ស្អែក"</string>
+    <string name="today">"ថ្ងៃនេះ"</string>
+    <string name="today_at_time_fmt">"ថ្ងៃនេះ​នៅ <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
+    <string name="tomorrow_at_time_fmt">"ថ្ងៃស្អែក​នៅ <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
+    <string name="date_time_fmt"/>
+    <string name="untitled_event">"(ព្រឹត្តិការណ៍​គ្មាន​ចំណងជើង)"</string>
+    <string name="date_time_set">"កំណត់"</string>
+    <string name="header_im_entry">"IM"</string>
+    <string name="header_organization_entry">"ស្ថាប័ន"</string>
+    <string name="header_nickname_entry">"សម្មតិនាម"</string>
+    <string name="header_note_entry">"ចំណាំ"</string>
+    <string name="header_website_entry">"វេបសាយ"</string>
+    <string name="header_event_entry">"ព្រឹត្តិការណ៍"</string>
+    <string name="header_relation_entry">"ទំនាក់ទំនង"</string>
+    <string name="header_name_entry">"ឈ្មោះ"</string>
+    <string name="header_email_entry">អ៊ីម៉េល</string>
+    <string name="header_phone_entry">"ទូរស័ព្ទ"</string>
+    <string name="content_description_directions">"ទិសដៅ​ទៅ​ទីតាំង"</string>
+    <string name="content_description_recent_sms"/>
+    <string name="content_description_recent_call_type_incoming">កំពុង​ហៅចូល</string>
+    <string name="content_description_recent_call_type_outgoing">កំពុង​ហៅចេញ</string>
+    <string name="content_description_recent_call_type_missed">"ខកខាន​ទទួល"</string>
+    <string name="content_description_recent_call"/>
+    <string name="message_from_you_prefix">"អ្នក៖ <xliff:g id="SMS_BODY">%s</xliff:g>"</string>
+    <string name="editor_more_fields">"ប្រអប់ច្រើនទៀត"</string>
+    <string name="editor_change_photo_content_description"/>
+    <string name="editor_add_photo_content_description"/>
+    <string name="editor_contact_photo_content_description">"រូបថត​ទំនាក់ទំនង"</string>
+    <string name="editor_failed_to_load">"បានបរាជ័យក្នុងការបើកកម្មវិធីកែ"</string>
+    <string name="editor_account_selector_title">"កំពុងរក្សាទុកទៅ"</string>
+    <string name="editor_account_selector_read_only_title"/>
+    <string name="quickcontact_suggestion_link_button">"ភ្ជាប់ទំនាក់ទំនង"</string>
+    <string name="quickcontact_suggestion_cancel_button">បោះបង់</string>
+    <string name="suggestion_card_this_contact_title">"ទំនាក់ទំនងនេះ"</string>
+    <string name="suggestion_card_duplicates_title">"អាចនឹងស្ទួន"</string>
+    <string name="suggestion_card_help_message">"ទំនាក់ទំនងទាំងនេះប្រហែលជាមនុស្សតែមួយ។ អ្នកអាចតភ្ជាប់ពួកគេជាមួយគ្នាឲ្យទៅជាទំនាក់ទំនងទោលបាន។"</string>
+    <string name="editor_delete_view_description"/>
+    <string name="editor_delete_view_description_short">"លុប <xliff:g id="DATA_KIND">%s</xliff:g>"</string>
+    <string name="menu_assistant"/>
+    <string name="menu_assistant_new_badge">ថ្មី</string>
+    <string name="navigation_drawer_open">"បើក​ផ្ទាំង​បញ្ជីកម្មវិធី"</string>
+    <string name="navigation_drawer_close">"បិទ​​​ផ្ទាំង​​​បញ្ជី​កម្មវិធី"</string>
+    <string name="navigation_drawer_label"/>
+    <string name="menu_title_groups"/>
+    <string name="menu_title_filters">គណនី</string>
+    <string name="permission_explanation_header"/>
+    <string name="permission_explanation_subheader_calendar_and_SMS"/>
+    <string name="permission_explanation_subheader_calendar">ហេតុការណ៍</string>
+    <string name="permission_explanation_subheader_SMS">"សារ"</string>
+    <string name="hamburger_feature_highlight_header"/>
+    <string name="hamburger_feature_highlight_body"/>
+    <string name="undo">"​មិន​​ធ្វើ​វិញ"</string>
+    <string name="call_custom"/>
+    <string name="call_home">"ហៅ​ទៅ​ផ្ទះ"</string>
+    <string name="call_mobile">"ហៅ​ទៅ​ទូរស័ព្ទ​ចល័ត"</string>
+    <string name="call_work">"ហៅ​ទៅ​កន្លែង​ធ្វើការ"</string>
+    <string name="call_fax_work">"ហៅ​ទៅ​ទូរសារ​កន្លែង​ធ្វើការ"</string>
+    <string name="call_fax_home">"ហៅ​ទៅ​ទូរសារ​ផ្ទះ"</string>
+    <string name="call_pager">"ហៅ​ទៅ​លេខ​ភេយ័រ"</string>
+    <string name="call_other">"ហៅ"</string>
+    <string name="call_callback">"ហៅ​ទៅ​លេខ​ហៅ​ទៅវិញ"</string>
+    <string name="call_car">"ហៅ​ទៅ​ទូរស័ព្ទ​រថយន្ត"</string>
+    <string name="call_company_main">"ហៅ​ទៅ​លេខ​សំខាន់​របស់​ក្រុមហ៊ុន"</string>
+    <string name="call_isdn">"ហៅ​ទៅ ISDN"</string>
+    <string name="call_main">"ហៅ​ទៅ​លេខ​ចម្បង"</string>
+    <string name="call_other_fax">"ហៅ​ទៅ​ទូរសារ"</string>
+    <string name="call_radio">"ហៅ​ទៅ​លេខ​វិទ្យុ"</string>
+    <string name="call_telex">"ហៅ​ទៅ telex"</string>
+    <string name="call_tty_tdd">"ហៅ​ទៅ TTY/TDD"</string>
+    <string name="call_work_mobile">"ហៅ​ទៅ​ទូរស័ព្ទ​ចល័ត​កន្លែង​ធ្វើការ"</string>
+    <string name="call_work_pager">"ហៅ​ទៅ​ភេយ័រ​កន្លែង​ធ្វើការ"</string>
+    <string name="call_assistant"/>
+    <string name="call_mms">"ហៅ MMS"</string>
+    <string name="call_by_shortcut">"<xliff:g id="CONTACT_NAME">%s</xliff:g> (ហៅ)"</string>
+    <string name="sms_custom"/>
+    <string name="sms_home">"​សារ​ទៅ​​ផ្ទះ"</string>
+    <string name="sms_mobile">"អត្ថបទ​ទូរស័ព្ទ​ចល័ត"</string>
+    <string name="sms_work">"អត្ថបទ​ការងារ"</string>
+    <string name="sms_fax_work">"សារ​​ទូរសារ​កន្លែង​ធ្វើការ"</string>
+    <string name="sms_fax_home">"អត្ថបទ​ទូរសារ​ផ្ទះ"</string>
+    <string name="sms_pager">"អត្ថបទ​ភេយ័រ"</string>
+    <string name="sms_other">"អត្ថបទ"</string>
+    <string name="sms_callback">"អត្ថបទ​ហៅ​ទៅវិញ"</string>
+    <string name="sms_car">"អត្ថបទ​ទៅ​រថយន្ត"</string>
+    <string name="sms_company_main">"អត្ថបទ​ចម្បង​របស់​ក្រុមហ៊ុន"</string>
+    <string name="sms_isdn">"អត្ថបទ ISDN"</string>
+    <string name="sms_main">"សារ​ចម្បង"</string>
+    <string name="sms_other_fax">"អត្ថបទ​ទូរសារ"</string>
+    <string name="sms_radio">"អត្ថបទ​វិទ្យុ"</string>
+    <string name="sms_telex">"អត្ថបទ telex"</string>
+    <string name="sms_tty_tdd">"អត្ថបទ TTY/TDD"</string>
+    <string name="sms_work_mobile">"អត្ថបទ​ទូរស័ព្ទ​ចល័ត​កន្លែង​ធ្វើការ"</string>
+    <string name="sms_work_pager">"អត្ថបទ​ភេ​យ័រ​កន្លែង​ធ្វើការ"</string>
+    <string name="sms_assistant">"អត្ថបទ <xliff:g id="ASSISTANT">%s</xliff:g>"</string>
+    <string name="sms_mms">"អត្ថបទ MMS"</string>
+    <string name="sms_by_shortcut">"<xliff:g id="CONTACT_NAME">%s</xliff:g> (សារ)"</string>
+    <string name="description_video_call">"ហៅ​ជា​វីដេអូ"</string>
+    <string name="clearFrequentsConfirmation_title">"សម្អាត​ទំនាក់ទំនង​ញឹកញាប់?"</string>
+    <string name="clearFrequentsConfirmation"/>
+    <string name="clearFrequentsProgress_title">"សម្អាត​ទំនាក់ទំនង​ញឹកញាប់..."</string>
+    <string name="status_available">"ទំនេរ"</string>
+    <string name="status_away">"ចាក​ឆ្ងាយ"</string>
+    <string name="status_busy">"រវល់"</string>
+    <string name="local_invisible_directory">"ផ្សេងៗ"</string>
+    <string name="directory_search_label">"ថត"</string>
+    <string name="directory_search_label_work">"ថតកន្លែងការងារ"</string>
+    <string name="local_search_label">"ទំនាក់ទំនង​ទាំងអស់"</string>
+    <string name="description_quick_contact_for">"ទំនាក់ទំនង​រហ័ស​សម្រាប់ <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="missing_name">"(គ្មាន​ឈ្មោះ)"</string>
+    <string name="favoritesFrequentContacted">"បាន​ទាក់ទង​ញឹកញាប់"</string>
+    <string name="list_filter_phones">"ទំនាក់ទំនង​ទាំងអស់​ដែល​មាន​លេខ​ទូរស័ព្ទ"</string>
+    <string name="list_filter_phones_work">"ទំនាក់ទំនងប្រវត្តិរូបការងារ"</string>
+    <string name="view_updates_from_group">"មើល​បច្ចុប្បន្នភាព"</string>
+    <string name="account_phone">"ឧបករណ៍"</string>
+    <string name="account_sim">Sim</string>
+    <string name="nameLabelsGroup">"ឈ្មោះ"</string>
+    <string name="nicknameLabelsGroup">"សម្មតិនាម"</string>
+    <string name="name_given">"នាម​ខ្លួន"</string>
+    <string name="name_family">"នាមត្រកូល"</string>
+    <string name="name_prefix">"បុព្វបទ​ឈ្មោះ"</string>
+    <string name="name_middle">"ឈ្មោះ​កណ្ដាល"</string>
+    <string name="name_suffix">"បច្ច័យ​ឈ្មោះ"</string>
+    <string name="name_phonetic">"សូរស័ព្ទ​ឈ្មោះ"</string>
+    <string name="name_phonetic_given">"នាម​ខ្លួន​តាម​សូរស័ព្ទ"</string>
+    <string name="name_phonetic_middle">"សូរស័ព្ទ​ឈ្មោះ​កណ្ដាល"</string>
+    <string name="name_phonetic_family">"នាមត្រកូល​តាម​សូរស័ព្ទ"</string>
+    <string name="phoneLabelsGroup">"ទូរស័ព្ទ"</string>
+    <string name="emailLabelsGroup">អ៊ីម៉េល</string>
+    <string name="postalLabelsGroup">អាសយដ្ឋាន</string>
+    <string name="imLabelsGroup">"IM"</string>
+    <string name="organizationLabelsGroup">"ស្ថាប័ន"</string>
+    <string name="relationLabelsGroup">"ចំណង​ទាក់ទង"</string>
+    <string name="eventLabelsGroup">"កាលបរិច្ឆេទពិសេស"</string>
+    <string name="sms">"សារ​អត្ថបទ"</string>
+    <string name="postal_address">អាសយដ្ឋាន</string>
+    <string name="ghostData_company">"ក្រុមហ៊ុន"</string>
+    <string name="ghostData_title">"មុខងារ"</string>
+    <string name="label_notes">"ចំណាំ"</string>
+    <string name="label_custom_field">"តាម​តម្រូវ​ការ"</string>
+    <string name="label_sip_address">"SIP"</string>
+    <string name="websiteLabelsGroup">"វេបសាយ"</string>
+    <string name="groupsLabel"/>
+    <string name="email_home">"អ៊ីមែល​ទៅ​ផ្ទះ"</string>
+    <string name="email_mobile">"អ៊ីមែល​ទៅ​ទូរស័ព្ទ​ចល័ត"</string>
+    <string name="email_work">"អ៊ីមែល​ទៅ​កន្លែង​ធ្វើការ"</string>
+    <string name="email_other">អ៊ីម៉េល</string>
+    <string name="email_custom"/>
+    <string name="email">អ៊ីម៉េល</string>
+    <string name="postal_street">"ផ្លូវ"</string>
+    <string name="postal_city">"ទីក្រុង"</string>
+    <string name="postal_region">"ស្ថានភាព"</string>
+    <string name="postal_postcode">"កូដ​តំបន់"</string>
+    <string name="postal_country">"ប្រទេស"</string>
+    <string name="map_home">"មើល​អាសយដ្ឋាន​ផ្ទះ"</string>
+    <string name="map_work">"មើល​អាសយដ្ឋាន​ការងារ"</string>
+    <string name="map_other">"មើល​អាសយដ្ឋាន"</string>
+    <string name="map_custom"/>
+    <string name="chat_aim">"ជជែក​ដោយ​ប្រើ AIM"</string>
+    <string name="chat_msn">"ជជែក​ដោយ​ប្រើ Windows Live"</string>
+    <string name="chat_yahoo">"ជជែក​ដោយ​ប្រើ Yahoo"</string>
+    <string name="chat_skype">"ជជែក​ដោយ​ប្រើ Skype"</string>
+    <string name="chat_qq">"ជជែក​ដោយ​ប្រើQQ"</string>
+    <string name="chat_gtalk">"ជជែក​ដោយ​ប្រើ Google Talk"</string>
+    <string name="chat_icq">"ជជែក​ដោយ​ប្រើ ICQ"</string>
+    <string name="chat_jabber">"ជជែក​ដោយ​ប្រើ Jabber"</string>
+    <string name="chat">"ជជែក​​"</string>
+    <string name="description_minus_button">"លុប"</string>
+    <string name="expand_name_fields_description"/>
+    <string name="collapse_name_fields_description"/>
+    <string name="expand_phonetic_name_fields_description"/>
+    <string name="collapse_phonetic_name_fields_description"/>
+    <string name="expand_fields_description">"ពង្រីក"</string>
+    <string name="collapse_fields_description">"បង្រួម"</string>
+    <string name="announce_expanded_fields"/>
+    <string name="announce_collapsed_fields"/>
+    <string name="list_filter_all_accounts">"ទំនាក់ទំនង​ទាំងអស់"</string>
+    <string name="list_filter_all_starred">"បាន​ដាក់​ផ្កាយ"</string>
+    <string name="list_filter_customize">"ប្ដូរ​តាម​តម្រូវ​ការ"</string>
+    <string name="list_filter_single">"ទំនាក់ទំនង"</string>
+    <string name="display_ungrouped">"ទំនាក់ទំនង​ទាំងអស់​ផ្សេង​ទៀត"</string>
+    <string name="display_all_contacts">"ទំនាក់ទំនង​ទាំងអស់"</string>
+    <string name="menu_sync_remove">"លុប​ក្រុម​សម​កាល​កម្ម"</string>
+    <string name="dialog_sync_add">"បន្ថែម​ក្រុម​សមកាលកម្ម"</string>
+    <string name="display_more_groups">"ក្រុម​ច្រើន​ទៀត..."</string>
+    <string name="display_warn_remove_ungrouped">"ការ​លុប \"<xliff:g id="GROUP">%s</xliff:g>\" ចេញពី​សមកាលកម្ម​វា​ក៏​នឹង​លុប​ទំនាក់ទំនង​ដែល​មិន​នៅ​ក្នុង​ក្រុម​ចេញពី​សមកាលកម្ម​ផង​ដែរ។"</string>
+    <string name="savingDisplayGroups">"កំពុង​រក្សាទុក​ជម្រើស​បង្ហាញ..."</string>
+    <string name="listCustomView"/>
+    <string name="dialog_new_contact_account">"រក្សាទំនាក់ទំនងដែលបាននាំចូលទៅ៖"</string>
+    <string name="import_from_sim">"ស៊ីមកាត"</string>
+    <string name="import_from_sim_summary_fmt"/>
+    <plurals name="import_from_sim_secondary_contact_count_fmt">
+        <item quantity="one">លេខទំនាក់ទំនង 1</item>
+        <item quantity="other"/>
+    </plurals>
+    <plurals name="import_from_sim_secondary_template">
+        <item quantity="one"/>
+        <item quantity="other"/>
+    </plurals>
+    <string name="import_from_vcf_file"/>
+    <string name="nothing_to_import_message"/>
+    <string name="import_from_vcf_file_confirmation_message"/>
+    <string name="cancel_import_confirmation_message">"បោះបង់​ការ​នាំចូល <xliff:g id="FILENAME">%s</xliff:g> ?"</string>
+    <string name="cancel_export_confirmation_message">"បោះបង់​ការ​នាំចេញ <xliff:g id="FILENAME">%s</xliff:g> ?"</string>
+    <string name="cancel_vcard_import_or_export_failed"/>
+    <string name="fail_reason_unknown">កំហុសដែលមិនស្គាល់ ។</string>
+    <string name="fail_reason_could_not_open_file"/>
+    <string name="fail_reason_could_not_initialize_exporter"/>
+    <string name="fail_reason_no_exportable_contact">"មិន​មាន​ទំនាក់ទំនង​ដើម្បី​នាំចេញ​ទេ។"</string>
+    <string name="missing_required_permission">"អ្នកបានបិទសិទ្ធិអនុញ្ញាតដែលតម្រូវឲ្យមាន។"</string>
+    <string name="fail_reason_error_occurred_during_export">"មាន​កំហុស​កើតឡើង​ពេល​នាំចេញ៖ \"<xliff:g id="EXACT_REASON">%s</xliff:g>\" ។"</string>
+    <string name="fail_reason_io_error">"កំហុស I/O"</string>
+    <string name="fail_reason_low_memory_during_import">"អង្គ​ចងចាំ​មិន​គ្រប់គ្រាន់ (ប្រហែលជា​ឯកសារ​ធំ​ពេក​)"</string>
+    <string name="fail_reason_not_supported"/>
+    <string name="exporting_vcard_finished_title">"បាន​បញ្ចប់​ការ​នាំ​ចេញ <xliff:g id="FILENAME">%s</xliff:g> ។"</string>
+    <string name="exporting_vcard_finished_title_fallback">"បានបញ្ចប់ការនាំចេញទំនាក់ទំនង។"</string>
+    <string name="exporting_vcard_finished_toast">"បានបញ្ចប់ការនាំចេញទំនាក់ទំនង សូមចុចការជូនដំណឹងនោះដើម្បីចែករំលែកទំនាក់ទំនង"</string>
+    <string name="touch_to_share_contacts">"ប៉ះដើម្បីចែករំលែកទំនាក់ទំនង"</string>
+    <string name="exporting_vcard_canceled_title">"បាន​បោះបង់​ការ​នាំចេញ <xliff:g id="FILENAME">%s</xliff:g> ។"</string>
+    <string name="exporting_contact_list_title">"កំពុង​នាំចេញ​ព័ត៌មាន​ទំនាក់ទំនង"</string>
+    <string name="exporting_contact_list_message">"ទិន្នន័យចំណាំកំពុងត្រូវបាននាំចេញ"</string>
+    <string name="composer_failed_to_get_database_infomation"/>
+    <string name="composer_has_no_exportable_contact"/>
+    <string name="composer_not_initialized"/>
+    <string name="exporting_contact_failed_title"/>
+    <string name="exporting_contact_failed_message"/>
+    <string name="importing_vcard_description">"ការ​នាំចូល <xliff:g id="NAME">%s</xliff:g>"</string>
+    <string name="reading_vcard_failed_title"/>
+    <string name="importing_vcard_finished_title">"បាន​បញ្ចប់​ការ​នាំចូល vCard <xliff:g id="FILENAME">%s</xliff:g>"</string>
+    <string name="importing_vcard_canceled_title">"បាន​បោះបង់​ការ​នាំចូល <xliff:g id="FILENAME">%s</xliff:g>"</string>
+    <string name="vcard_import_will_start_message">"នឹង​នាំចូល <xliff:g id="FILENAME">%s</xliff:g> ក្នុង​ពេល​ឆាប់ៗ។"</string>
+    <string name="vcard_import_will_start_message_with_default_name">"នឹង​នាំចូល​ឯកសារ​ក្នុង​ពេល​ឆាប់ៗ។"</string>
+    <string name="vcard_import_request_rejected_message">"បាន​បដិសេធ​សំណើ​នាំចូល vCard ។ សូម​ព្យាយាម​ម្ដងទៀត​នៅ​ពេល​ក្រោយ​។"</string>
+    <string name="contacts_export_will_start_message">"ទំនាក់ទំនងនឹងត្រូវបាននាំចេញក្នុងពេលបន្តិចទៀតនេះ"</string>
+    <string name="vcard_export_request_rejected_message">"បាន​បដិសេធ​សំណើ​នាំចេញ vCard ។ សូម​ព្យាយាម​ម្ដងទៀត​នៅ​ពេល​ក្រោយ​។"</string>
+    <string name="vcard_unknown_filename">"ទំនាក់ទំនង"</string>
+    <string name="caching_vcard_message">"ការ​ផ្ទុក vCard(s​) ទៅកាន់​ឧបករណ៍​ផ្ទុក​បណ្ដោះអាសន្ន​មូលដ្ឋាន។ ការ​នាំ​ចូល​ពិតប្រាកដ​នឹង​ចាប់ផ្ដើម​ក្នុង​ពេល​ឆាប់ៗ។"</string>
+    <string name="vcard_import_failed"/>
+    <string name="nfc_vcard_file_name">"ទំនាក់ទំនង​ដែល​បាន​ទទួល​តាម NFC"</string>
+    <string name="caching_vcard_title">"ការ​ផ្ទុក​ក្នុង​ឃ្លាំង​សម្ងាត់"</string>
+    <string name="progress_notifier_message"/>
+    <string name="export_to_vcf_file">"នាំចេញទៅឯកសារ.vcf"</string>
+    <string name="display_options_sort_list_by">"តម្រៀប​តាម"</string>
+    <string name="display_options_phonetic_name_fields">"សូរស័ព្ទ​ឈ្មោះ"</string>
+    <string name="editor_options_always_show_phonetic_names">"បង្ហាញ​ជា​និច្ច"</string>
+    <string name="editor_options_hide_phonetic_names_if_empty"/>
+    <string name="display_options_sort_by_given_name">"នាម​ខ្លួន"</string>
+    <string name="display_options_sort_by_family_name">"នាមត្រកូល"</string>
+    <string name="display_options_view_names_as">"ទ្រង់ទ្រាយ​ឈ្មោះ"</string>
+    <string name="display_options_view_given_name_first">"នាម​ខ្លួន​មុន"</string>
+    <string name="display_options_view_family_name_first">"នាមត្រកូល​មុន"</string>
+    <string name="settings_accounts">គណនី</string>
+    <string name="default_editor_account">"គណនីលំនាំដើមសម្រាប់ទំនាក់ទំនងថ្មី"</string>
+    <string name="settings_my_info_title"/>
+    <string name="set_up_profile">"រៀបចំ​ប្រវត្តិរូប​របស់​អ្នក"</string>
+    <string name="setting_about">"អំពីទំនាក់ទំនង"</string>
+    <string name="share_favorite_contacts">"ចែករំលែកទំនាក់ទំនងសំណព្វចិត្ត"</string>
+    <string name="share_contacts">"ចែករំលែកទំនាក់ទំនងទាំងអស់"</string>
+    <string name="share_contacts_failure">"បរាជ័យក្នុងការចែករំលែកទំនាក់ទំនង"</string>
+    <string name="dialog_export"/>
+    <string name="dialog_import"/>
+    <string name="share_error"/>
+    <string name="no_contact_to_share">"មិនមានទំនាក់ទំនងដើម្បីចែករំលែកទេ"</string>
+    <string name="menu_contacts_filter">"ទំនាក់ទំនង​ដែល​ត្រូវ​បង្ហាញ"</string>
+    <string name="activity_title_contacts_filter">"ទំនាក់ទំនង​ដែល​ត្រូវ​បង្ហាញ"</string>
+    <string name="custom_list_filter"/>
+    <string name="menu_custom_filter_save">"រក្សាទុក"</string>
+    <string name="hint_findContacts">"រក​ទំនាក់ទំនង"</string>
+    <string name="contactsFavoritesLabel">"សំណព្វ"</string>
+    <string name="menu_import">"នាំចូល"</string>
+    <string name="menu_export">"នាំ​ចេញ"</string>
+    <string name="menu_blocked_numbers">"លេខបានរារាំង"</string>
+    <string name="contact_status_update_attribution">"តាមរយៈ <xliff:g id="SOURCE">%1$s</xliff:g>"</string>
+    <string name="contact_status_update_attribution_with_date">"<xliff:g id="DATE">%1$s</xliff:g> តាមរយៈ <xliff:g id="SOURCE">%2$s</xliff:g>"</string>
+    <string name="letter_tile_letter_font_family"/>
+    <string name="action_menu_back_from_search">"បញ្ឈប់​ការ​ស្វែងរក"</string>
+    <string name="description_clear_search">"សម្អាត​ការ​ស្វែងរក"</string>
+    <string name="search_font_family"/>
+    <string name="select_account_dialog_title">គណនី</string>
+    <string name="set_default_account">"ប្រើ​វា​សម្រាប់​ការ​ហៅ​ជា​និច្ច"</string>
+    <string name="call_with_a_note">"ការហៅព្រមជាមួយចំណាំ"</string>
+    <string name="call_subject_hint"/>
+    <string name="send_and_call_button">"ផ្ញើ &amp; ហៅទូរស័ព្ទ"</string>
+    <string name="call_subject_limit">"<xliff:g id="COUNT">%1$s</xliff:g> / <xliff:g id="LIMIT">%2$s</xliff:g>"</string>
+    <string name="call_subject_type_and_number"/>
+    <string name="about_build_version">"កំណែ​បង្កើត"</string>
+    <string name="about_open_source_licenses">"អាជ្ញាប័ណ្ណ​កម្មវិធី​ប្រភព​កូដ​ចំហ"</string>
+    <string name="about_open_source_licenses_summary">"សេចក្ដីលម្អិតអាជ្ញាប័ណ្ណសម្រាប់កម្មវិធីប្រភពកូដចំហ"</string>
+    <string name="about_privacy_policy">"គោលនយោបាយ​​ភាព​ឯកជន"</string>
+    <string name="about_terms_of_service">"លក្ខខណ្ឌប្រើប្រាស់"</string>
+    <string name="activity_title_licenses">"អាជ្ញាប័ណ្ណ​កម្មវិធី​ប្រភព​កូដ​ចំហ"</string>
+    <string name="url_open_error_toast">"បាន​បរាជ័យ​ក្នុង​ការ​បើក URL។"</string>
+    <string name="account_filter_view_checked">"បានពិនិត្យ <xliff:g id="ACCOUNT_INFO">%s</xliff:g>"</string>
+    <string name="account_filter_view_not_checked">"មិនបានពិនិត្យ <xliff:g id="ACCOUNT_INFO">%s</xliff:g>"</string>
+    <string name="description_search_video_call">"ធ្វើការហៅជាវីដេអូ"</string>
+    <string name="description_delete_contact">"លុប"</string>
+    <string name="description_no_name_header"/>
+    <string name="callDurationSecondFormat"/>
+    <string name="callDurationMinuteFormat"/>
+    <string name="callDurationHourFormat"/>
+    <string name="dynamic_shortcut_disabled_message"/>
+    <string name="dynamic_shortcut_contact_removed_message"/>
+    <string name="sim_import_button_text">"នាំចូល"</string>
+    <string name="sim_import_title_none_selected"/>
+    <string name="sim_import_empty_message"/>
+    <string name="sim_import_contact_exists_toast"/>
+    <plurals name="sim_import_success_toast_fmt">
+        <item quantity="one"/>
+        <item quantity="other"/>
+    </plurals>
+    <string name="sim_import_failed_toast"/>
+    <string name="sim_import_title"/>
+    <string name="sim_import_cancel_content_description">បោះបង់</string>
+    <string name="auto_sync_off"/>
+    <string name="dismiss_sync_alert">ទាត់ចោល</string>
+    <string name="account_sync_off"/>
+    <string name="turn_auto_sync_on_dialog_title"/>
+    <string name="turn_auto_sync_on_dialog_body"/>
+    <string name="turn_auto_sync_on_dialog_confirm_btn">"បើក"</string>
+    <string name="connection_error_message">"គ្មាន​ការ​តភ្ជាប់"</string>
+    <string name="single_sim_display_label">Sim</string>
+    <string name="show_more_content_description"/>
+    <string name="importing_sim_finished_title"/>
+    <string name="importing_sim_failed_title">នាំចូលមិនបានសម្រេច</string>
+    <string name="importing_sim_failed_message"/>
+    <string name="importing_sim_in_progress_title"/>
+    <string name="contacts_default_notification_channel">"ការ​ជូន​ដំណឹង"</string>
+</resources>

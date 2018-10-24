@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">No vàlid</string>
+    <string name="conf_call_member_list">Llista de membres</string>
+    <string name="conf_call_participant_answered">Respostes</string>
+    <string name="conf_call_participant_missed">"Perdudes"</string>
+    <string name="calls_over_wifi">"Lestrucadess'efectuaranatravésdelaconnexióWi-Fi"</string>
+    <string name="connect_to_wifi">"Connecta't a la Wi-Fi per fer trucades"</string>
+    <string name="wfc_notification_summary">Premeuaquíperaccediralespreferències</string>
+    <string name="wfc_notification_summary_fail">Toqueu aquí per veure les xarxes disponibles</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"Trucada de SIP"</string>
+    <string name="snackbar_number_unblocked_failed">"No s'ha pogut desbloquejar <xliff:g id="number" example="(555)555-5555">%1$s</xliff:g>"</string>
+    <string name="menu_select_all">"Selecciona-hotot"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> seleccionats</string>
+    <string name="multichoice_no_select_alert">"No s’ha seleccionat cap element."</string>
+    <string name="deleteCallLogConfirmation_title">Eliminar registres de trucades?</string>
+    <string name="deleteCallLogConfirmation_message">Segur que vols eliminar els registres de trucades seleccionats?</string>
+    <string name="recentCalls_delete">"Suprimeix"</string>
+    <string name="deleting_call_log">S’està esborrant el registre de trucades...</string>
+    <string name="toast_call_detail_error">"Informació no disponible"</string>
+    <string name="calllogList">"Historial de trucades"</string>
+    <string name="calllogHint">Cerca els registres de trucades</string>
+    <string name="calllog_description">Trucades entrants, sortints i perdudes</string>
+    <string name="noMatchingCalllogs">No s’ha trobat cap registre de trucades coincident</string>
+    <string name="titleJoinContactDataWith">"Unió de contactes"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> registres de trucades</item>
+        <item quantity="one">"1 registre de trucades"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">No s’ha trobat el registre de trucades</string>
+    <string name="search_results_for">Resultats de la cerca de: <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none"> "Desseleccionar-ho tot</string>
+</resources>

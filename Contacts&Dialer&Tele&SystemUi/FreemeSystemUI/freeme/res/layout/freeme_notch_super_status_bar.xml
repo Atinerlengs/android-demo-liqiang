@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This is the combined status bar / notification panel window. -->
+<com.android.systemui.statusbar.phone.StatusBarWindowView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sysui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.android.systemui.statusbar.BackDropView
+            android:id="@+id/backdrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            sysui:ignoreRightInset="true"
+            >
+
+        <include layout="@layout/freeme_keyguard_lockscreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView android:id="@+id/backdrop_front"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="centerCrop"
+                   android:visibility="invisible" />
+    </com.android.systemui.statusbar.BackDropView>
+
+    <com.android.systemui.statusbar.ScrimView android:id="@+id/scrim_behind"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        sysui:ignoreRightInset="true"
+        />
+
+    <com.freeme.systemui.blur.WindowBlurView
+        android:id="@+id/blur"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.android.systemui.statusbar.AlphaOptimizedView
+        android:id="@+id/heads_up_scrim"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heads_up_scrim_height"
+        android:background="@drawable/heads_up_scrim"
+        sysui:ignoreRightInset="true"
+        android:importantForAccessibility="no"/>
+
+    <FrameLayout
+        android:id="@+id/status_bar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/brightness_mirror" />
+
+    <ViewStub android:id="@+id/fullscreen_user_switcher_stub"
+              android:layout="@layout/car_fullscreen_user_switcher"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"/>
+
+    <include layout="@layout/freeme_notch_status_bar_expanded"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+    <com.android.systemui.statusbar.ScrimView android:id="@+id/scrim_in_front"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        sysui:ignoreRightInset="true"
+        />
+
+</com.android.systemui.statusbar.phone.StatusBarWindowView>

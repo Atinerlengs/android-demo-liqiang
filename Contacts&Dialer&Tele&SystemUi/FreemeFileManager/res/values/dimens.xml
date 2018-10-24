@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common -->
+    <dimen name="app_text_size_primary_large">17sp</dimen>
+    <dimen name="app_text_size_primary_medium">15sp</dimen>
+    <dimen name="app_text_size_primary_small">12sp</dimen>
+    <dimen name="app_text_size_primary_smaller">10sp</dimen>
+    <dimen name="grid_horizontal_text_size_primary_medium">15dp</dimen>
+    <dimen name="grid_horizontal_text_size_primary_small">12dp</dimen>
+    <dimen name="cleanable_text_size">47dp</dimen>
+    <dimen name="password_header_title_size">24sp</dimen>
+    <dimen name="password_header_tip_size">16sp</dimen>
+
+    <dimen name="actionbar_tab_min_wdith">65dp</dimen>
+    <dimen name="round_progressbar_diameter">25dp</dimen>
+
+    <dimen name="bottom_btn_height">40dp</dimen>
+    <dimen name="bottom_btn_width">328dp</dimen>
+    <dimen name="bottom_btn_margin_left">16dp</dimen>
+    <dimen name="bottom_btn_margin_top">8dp</dimen>
+    <dimen name="bottom_btn_margin_bottom">24dp</dimen>
+    <dimen name="bottom_btn_clean_margin_bottom">10dp</dimen>
+
+    <dimen name="divider_height_medium">14dp</dimen>
+    <dimen name="divider_height_small">0.3dp</dimen>
+
+    <!-- Category Fragment -->
+    <dimen name="main_page_padding_top">14dp</dimen>
+    <dimen name="main_page_padding_start">6dp</dimen>
+    <dimen name="grid_horizontal_space">3dp</dimen>
+    <dimen name="grid_vertical_space">20dp</dimen>
+    <dimen name="grid_padding_top">20dp</dimen>
+    <dimen name="grid_padding_bottom">20dp</dimen>
+    <dimen name="grid_item_image_bottom">10dp</dimen>
+    <dimen name="grid_item_mediumtext_bottom">4dp</dimen>
+
+    <dimen name="category_page_item_height">140dp</dimen>
+    <dimen name="storage_volume_item_line_height">35dp</dimen>
+    <dimen name="storage_volume_item_icon_paddingleft">10dip</dimen>
+    <dimen name="storage_volume_item_icon_paddingright">10dip</dimen>
+    <dimen name="category_path_gallery_line_height">33dp</dimen>
+    <dimen name="storage_item_padding">16dp</dimen>
+    <dimen name="storage_item_padding_top">15dp</dimen>
+    <dimen name="storage_item_height">48dp</dimen>
+    <dimen name="list_divider_end">0dp</dimen>
+    <dimen name="list_divider_picfolder_start">119dp</dimen>
+    <dimen name="list_divider_garbage_child_start">62dp</dimen>
+    <dimen name="list_divider_start_round_default">18dp</dimen>
+
+    <dimen name="memory_progress_height">3dp</dimen>
+    <dimen name="memory_progress_width">92dp</dimen>
+    <dimen name="memory_progress_margin_top">3dp</dimen>
+    <dimen name="memory_info_layout_right">8dp</dimen>
+    <dimen name="memory_info_layout_top">15dp</dimen>
+
+    <!-- FileList Fragment -->
+    <dimen name="path_gallery_line_height">33dp</dimen>
+    <dimen name="path_name_padding_left">2dp</dimen>
+    <dimen name="separate_menu_padding_top">5dp</dimen>
+    <dimen name="separate_menu_padding_right">10dp</dimen>
+    <dimen name="separate_menu_space">26dp</dimen>
+    <dimen name="separate_menu_margin_bottom">4dp</dimen>
+    <dimen name="separate_menu_pop_width">84dp</dimen>
+    <dimen name="separate_menu_pop_item_height">37dp</dimen>
+    <dimen name="edit_adapter_img_width">35dp</dimen>
+    <dimen name="edit_adapter_img_height">35dp</dimen>
+    <dimen name="file_item_height">48dp</dimen>
+    <dimen name="file_item_img_width">32dp</dimen>
+    <dimen name="list_item_padding_left">16dp</dimen>
+    <dimen name="list_item_padding_right">16dp</dimen>
+    <dimen name="details_file_item_height">54dp</dimen>
+    <dimen name="details_info_tv_margin_top">3dp</dimen>
+    <dimen name="list_slash_width">5dp</dimen>
+    <dimen name="list_slash_height">12dp</dimen>
+    <dimen name="list_slash_padding_left">8dp</dimen>
+
+    <!-- GridList Fragment -->
+    <dimen name="grid_picture_space">1dp</dimen>
+
+    <!-- ImageList Fragment -->
+    <dimen name="image_folder_list_item_height">89dp</dimen>
+    <dimen name="image_folder_list_icon_height">69dp</dimen>
+    <dimen name="image_folder_list_icon_width">103dp</dimen>
+    <dimen name="image_folder_list_name_left">18dp</dimen>
+    <dimen name="image_folder_list_count_left">10dp</dimen>
+
+    <!-- Server control Fragement -->
+    <dimen name="search_view_height">32dp</dimen>
+    <dimen name="server_info_margin_left">5dp</dimen>
+    <dimen name="server_info_margin_top">16dp</dimen>
+    <dimen name="server_info_padding_left">5dp</dimen>
+    <dimen name="search_view_padding_left">16dp</dimen>
+    <dimen name="search_view_padding_top">8dp</dimen>
+    <dimen name="search_view_icon_left">8dp</dimen>
+
+    <!-- Storage Info Activity -->
+    <dimen name="tab_btn_margin_start">9dp</dimen>
+    <dimen name="tab_btn_width">110dp</dimen>
+    <dimen name="tab_btn_divider_width">0.4dp</dimen>
+    <dimen name="circle_progressbar_height">200dp</dimen>
+    <dimen name="circle_progressbar_width">200dp</dimen>
+    <dimen name="arc_suffix_text_size">63sp</dimen>
+    <dimen name="arc_bottom_text_size">15sp</dimen>
+    <dimen name="arc_bottom_text2_size">12sp</dimen>
+    <dimen name="arc_progress_text_baseline">118dp</dimen>
+    <dimen name="arc_bottom_text2_top">7dp</dimen>
+    <dimen name="detail_grid_padding_start">26dp</dimen>
+    <dimen name="detail_grid_vertical_space">22dp</dimen>
+    <dimen name="detail_grid_padding_bottom">23dp</dimen>
+    <dimen name="category_icon_width">6.5dp</dimen>
+    <dimen name="category_icon_height">14.5dp</dimen>
+
+    <!-- Garbage Cleaning Activity-->
+    <dimen name="circle_progressbar_cleaning_width">178dp</dimen>
+    <dimen name="arc_suffix_text_size_clean">50sp</dimen>
+    <dimen name="arc_clean_text_size">34sp</dimen>
+    <dimen name="arc_clean_text_size_long">20sp</dimen>
+    <dimen name="arc_progress_text_baseline_top">60dp</dimen>
+
+    <!-- Garbage Clear Activity -->
+    <dimen name="garbage_progress_detail_height">134dp</dimen>
+    <dimen name="garbage_suggest_title_height">34dp</dimen>
+    <dimen name="garbage_group_item_padding">16dp</dimen>
+    <dimen name="garbage_progressbar_height">4dp</dimen>
+    <dimen name="garbage_progress_txt2_start">19dp</dimen>
+    <dimen name="garbage_child_image_width">28dp</dimen>
+    <dimen name="garbage_scan_txt_bottom">17dp</dimen>
+
+    <!-- About Activity -->
+    <dimen name="about_icon_margin_top">68dp</dimen>
+    <dimen name="about_icon_margin_bottom">10dp</dimen>
+    <dimen name="about_title_margin_bottom">25dp</dimen>
+    <dimen name="about_detail_row_margin_left">12dp</dimen>
+    <dimen name="about_version_margin_top">5dp</dimen>
+    <dimen name="about_copyright_margin_bottom">16dp</dimen>
+
+    <!-- LockPatternView -->
+    <dimen name="lock_pattern_dot_line_width">3dp</dimen>
+    <dimen name="lock_pattern_dot_size">12dp</dimen>
+    <dimen name="lock_pattern_dot_size_activated">28dp</dimen>
+
+    <dimen name="action_bar_height">48dip</dimen>
+    <dimen name="action_bar_back_padding">2dp</dimen>
+    <dimen name="action_bar_title_padding">30dp</dimen>
+</resources>

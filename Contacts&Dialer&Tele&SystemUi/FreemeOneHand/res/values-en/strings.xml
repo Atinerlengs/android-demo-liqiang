@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rotate_help_message">Reduce screen size not available in landscape view.</string>
+    <string name="cannot_start_by_other_app_new">To enable One-handed operation, disable %s.</string>
+    <string name="help_text_to_return_full">Tap outside the reduced display area to go back to full screen.</string>
+    <string name="help_onehand_title">One-handed mode</string>
+    <string name="help_secure_app">Secured page</string>
+    <string name="help_adjust_screen_title">Adjusting the screen size</string>
+    <string name="help_adjust_screen_text">Swipe up or down to adjust the size of the reduced screen.</string>
+
+    <string name="onehand_settings_title">One-handed mode</string>
+    <string name="onehand_settings_summary">Adjust the display size and layout for easier control of your phone with just one hand.</string>
+    <string name="onehand_settings_text_1">Swipe up diagonally from either bottom corner of the screen to reduce the display size.</string>
+    <string name="onehand_settings_text_2">Tap the Home button 3 times quickly to reduce the display size.</string>
+    <string name="onehand_settings_text_2_hardkey">Press the Home key 3 times quickly to reduce the display size.</string>
+    <string name="onehand_settings_using_category">Reduce screen size by using</string>
+    <string name="onehand_settings_using_gesture">Gesture</string>
+    <string name="onehand_settings_using_gesture_summary">Swipe up diagonally from either bottom corner.</string>
+    <string name="onehand_settings_using_button">Button</string>
+    <string name="onehand_settings_using_button_summary">Tap the Home button 3 times.</string>
+    <string name="onehand_settings_using_button_summary_hardkey">Press the Home key 3 times.</string>
+    <string name="onehand_settings_hardware_key_title">Show keys on screen</string>
+    <string name="onehand_settings_hardware_key_summary">Show Home, Back, and Recents.</string>
+    <string name="onehand_settings_dialog_title">Turn on One-handed mode?</string>
+    <string name="onehand_settings_dialog_text">"The features below can't be used at the same time as One-handed mode. They'll be turned off."</string>
+    <string name="onehand_settings_cover_toast">To use One-handed mode, remove keyboard cover.</string>
+
+    <string name="accessibility_screen_magnification_title">Magnification</string>
+    <string name="accessibility_autoclick_preference_title">Auto click after pointer stops</string>
+</resources>

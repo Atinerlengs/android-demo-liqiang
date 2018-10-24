@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dtmf_twelve_key_dialer_view"
+    class="com.android.incallui.DialpadFragment$DialpadSlidingLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:theme="?attr/dialpad_style">
+
+        <include layout="@layout/freeme_incall_dialpad_view_unthemed" />
+    </FrameLayout>
+</view>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="alert_delete_multiple">将会删除这些文件</string>
+    <string name="alert_delete_single">将会删除该文件</string>
+    <string name="already_exists">已存在</string>
+    <string name="app_name">文件管理</string>
+    <string name="cancel">取消</string>
+    <string name="copy">复制</string>
+    <string name="create_folder">新建文件夹</string>
+    <string name="cut">剪切</string>
+    <string name="cut_fail">剪切失败</string>
+    <string name="delete">删除</string>
+    <string name="delete_deny">没有权限删除</string>
+    <string name="delete_fail">删除失败</string>
+    <string name="deleting">正在删除</string>
+    <string name="deselect_all">取消全选</string>
+    <string name="select_all">全选</string>
+    <string name="encryption_menu">移入保险箱</string>
+    <string name="decryption_menu">移出保险箱</string>
+    <string name="details">详情</string>
+    <string name="done">完成</string>
+    <string name="edit">编辑</string>
+    <string name="empty_msg">空文件夹</string>
+    <string name="executable">可执行</string>
+    <string name="insufficient_memory">存储空间不足</string>
+    <string name="sufficient_memory">存储空间充足</string>
+    <string name="invalid_empty_name">文件或文件夹名不能为空</string>
+    <string name="invalid_file_name">文件创建失败，输入的文件或文件夹名过长</string>
+    <string name="invalid_file_rename">输入的文件或文件夹名过长</string>
+    <string name="warn_invalid_rename">重命名失败，请输入有效名称。</string>
+    <string name="send_file_max_size">分享文件超过最大个数限制</string>
+    <string name="loading">正在载入</string>
+    <string name="modified_time">修改日期</string>
+    <string name="name">名称</string>
+    <string name="new_folder">新文件夹</string>
+    <string name="ok">确定</string>
+    <string name="paste">粘贴</string>
+    <string name="pasting">正在复制</string>
+    <string name="paste_fail">粘贴失败</string>
+    <string name="paste_same_folder">目标文件夹与原文件夹 %s 相同，不可以粘贴</string>
+    <string name="readable">可读</string>
+    <string name="rename">重命名</string>
+    <string name="save">保存</string>
+    <string name="selected">选中</string>
+    <string name="send_file">发送文件</string>
+    <string name="share">传送到</string>
+    <string name="size">大小</string>
+    <string name="sort_by">排序方式</string>
+    <string name="support_fail" product="default">手机无法支持</string>
+    <string name="wait">"请稍候..."</string>
+    <string name="writable">可写</string>
+    <string name="confirm_rename">确认重命名</string>
+    <string name="msg_rename_ext">您正在尝试修改文件扩展名，可能导致系统无法识别文件，确定要修改？</string>
+    <string name="msg_unable_open_file">文件格式不支持</string>
+    <string name="msg_change_name">操作失败，请更换一个名字</string>
+    <string-array name="sort_by">
+        <item>类型</item>
+        <item>名称 (A - Z)</item>
+        <item>大小 (大 - 小)</item>
+        <item>日期 (新 - 旧)</item>
+    </string-array>
+    <string name="more">展开</string>
+    <string name="invalid_char_prompt">您输入了无效字符</string>
+    <string name="msg_create_fail">创件文件失败</string>
+    <string name="unmounted">%1$s 被卸载</string>
+    <string name="tab_category">分类</string>
+    <string name="tab_remote">远程连接</string>
+    <string name="tab_file">全部存储</string>
+    <string name="encryption_file">文件保险箱</string>
+    <string name="added_favorite">已加入收藏夹</string>
+    <string name="category_all">所有</string>
+    <string name="category_apk">安装包</string>
+    <string name="category_document">文档</string>
+    <string name="category_zip">压缩包</string>
+    <string name="category_qq">QQ</string>
+    <string name="category_wechat">微信</string>
+    <string name="category_favorite">收藏夹</string>
+    <string name="category_music">音频</string>
+    <string name="category_other">其它</string>
+    <string name="category_picture">图片</string>
+    <string name="category_video">视频</string>
+    <string name="confirm_know">知道了</string>
+    <string name="error_info_cant_send_folder">不能发送文件夹</string>
+    <string name="fail_to_create_folder">创建文件夹失败，文件夹已存在。</string>
+     <string name="succeed_to_create_folder">创建文件夹成功</string>
+    <string name="fail_to_rename">重命名失败，可能使用该名称的文件或文件夹已存在。</string>
+    <string name="file_info_canread">可读:</string>
+    <string name="file_info_canwrite">可写:</string>
+    <string name="file_info_ishidden">隐藏:</string>
+    <string name="file_info_location">位置:</string>
+    <string name="file_info_modified">时间:</string>
+    <string name="file_info_size">大小:</string>
+    <string name="file_size">%d 字节</string>
+    <string name="instruction">请在电脑地址栏中输入</string>
+    <string name="instruction_pre">启动后可以从电脑端远程管理手机文件</string>
+    <string name="instruction_pre_onwifi">请先连接到无线网</string>
+    <string name="menu_item_sort">排序</string>
+    <string name="menu_item_sort_by">按<xliff:g id="menu_item_sort">%1$s</xliff:g>排序</string>
+    <string name="menu_item_sort_date">时间</string>
+    <string name="menu_item_sort_size">大小</string>
+    <string name="menu_item_sort_name">名称</string>
+    <string name="menu_item_format">全部格式</string>
+    <string name="new_folder_name">新建文件夹</string>
+    <string name="no">否</string>
+    <string name="no_file">没有文件</string>
+    <string name="no_wifi">去连接</string>
+    <string name="notif_server_starting">远程管理服务已启动</string>
+    <string name="notif_title">远程管理服务正在运行</string>
+    <string name="operation_cancel">取消</string>
+    <string name="operation_cancel_selectall">取消全选</string>
+    <string name="operation_copy">复制</string>
+    <string name="operation_create_folder">新建文件夹</string>
+    <string name="operation_create_folder_message">请输入文件夹名称</string>
+    <string name="operation_delete">删除</string>
+    <string name="operation_delete_confirm_message">确认删除?</string>
+    <string name="operation_delete_folder_confirm_message">确认删除该文件夹？</string>
+    <string name="operation_delete_folders_confirm_message">确认删除 <xliff:g id="number">%d</xliff:g> 个文件夹？</string>
+    <string name="operation_delete_file_confirm_message">确认删除该文件?</string>
+    <string name="operation_delete_files_confirm_message">确认删除 <xliff:g id="number">%d</xliff:g> 个文件？</string>
+    <string name="operation_delete_folder_file_confirm_message">确认删除 <xliff:g id="number">%1d</xliff:g> 个文件夹 <xliff:g id="number">%2d</xliff:g> 个文件？</string>
+    <string name="operation_deleting">正在删除...</string>
+    <string name="operation_favorite">收藏</string>
+    <string name="operation_info">详情</string>
+    <string name="operation_move">移动</string>
+    <string name="operation_moving">正在移动...</string>
+    <string name="operation_paste">粘贴</string>
+    <string name="operation_pasting">正在复制...</string>
+    <string name="operation_refresh">刷新</string>
+    <string name="operation_rename">重命名</string>
+    <string name="operation_rename_message">请输入新名称</string>
+    <string name="operation_selectall">全选</string>
+    <string name="operation_send">发送</string>
+    <string name="operation_show_sysfile">显示隐藏文件</string>
+    <string name="operation_hide_sysfile">不显示隐藏文件</string>
+    <string name="operation_unfavorite">取消收藏</string>
+    <string name="removed_favorite">已从收藏夹移除</string>
+    <string name="removed_favorite_first">请先从收藏夹中移除此文件!</string>
+    <string name="favorite_file_not_exist">收藏的文件不存在!</string>
+    <string name="start_server">启动服务</string>
+    <string name="stop_server">停止服务</string>
+    <string name="yes">是</string>
+    <string name="dialog_select_type">选择文件类型</string>
+    <string name="dialog_type_text">文本</string>
+    <string name="dialog_type_audio">音频</string>
+    <string name="dialog_type_video">视频</string>
+    <string name="dialog_type_image">图像</string>
+    <string name="multi_select_title">已选择 <xliff:g id="number">%1$s</xliff:g> 个</string>
+    <string name="create_hidden_file">以\".\"开头的文件将被隐藏。</string>
+    <string name="preference_title">常规设置</string>
+    <string name="pref_primary_folder">主页文件夹</string>
+    <string name="pref_read_root">读取根目录</string>
+    <string name="pref_show_real_path">显示真实路径</string>
+    <string name="pref_primary_folder_summary">程序启动时显示的文件夹，当前路径为</string>
+    <string name="pref_show_real_path_summary">在导航栏中显示真实路径</string>
+
+    <string name="confirm">确定</string>
+    <string name="warn_invalid_forlder_name">请输入有效文件夹名称。</string>
+    <string name="storage_phone">内部存储设备</string>
+    <string name="all_storage">存储空间</string>
+    <string name="storage_sd_card">SD卡</string>
+    <string name="storage_external_usb">USB 设备</string>
+    <string name="enable_sd_card">无可用SD卡</string>
+    <string name="file_info_name">名称:</string>
+    <string name="search_empty">无匹配项</string>
+    <string name="operation_compress">压缩</string>
+    <string name="operation_compress_invalid_name">请输入压缩包名称</string>
+    <string name="compress_failed_for_exists">压缩失败, 目标文件已存在</string>
+    <string name="operation_compressing">正在压缩...</string>
+    <string name="operation_decompress">解压缩</string>
+    <string name="decompress_to_current_dir">解压缩到此处</string>
+    <string name="decompress_to">解压缩到...</string>
+    <string name="operation_decompressing">正在解压缩...</string>
+    <string name="decompress_failed_for_exists">解压缩失败, 原文件出错或目标路径已存在</string>
+    <string name="decompress_failed_for_nofress">解压缩失败, 存储空间不足</string>
+    <string name="operation_load">加载</string>
+    <string name="operation_loading">正在加载...</string>
+    <string name="compress_save_name">文件名称:</string>
+    <string name="compress_save_format">文件格式: zip</string>
+    <string name="storage_device_umouonted">存储模式下不可用</string>
+    <string name="unmount_sdcard_inform_text">"系统将会卸载 SD 卡。"</string>
+    <string name="dlg_error_unmount_sdcard_text">"无法卸载 SD 卡，请稍后重试。"</string>
+    <string name="unmount_usb_storage_inform_text">"系统将会卸载 USB 存储设备。"</string>
+    <string name="dlg_error_unmount_usb_storage_text">"无法卸载 USB 存储设备，请稍后重试。"</string>
+    <string name="search_hint">搜索文件名称</string>
+    <string name="search_title">搜索文件</string>
+    <string name="child_count">%d项</string>
+    <string name="child_item_count">项</string>
+    <string name="empty_folder">空文件夹</string>
+
+    <!-- garbage clean string -->
+    <string name="garbage_clean_title">手机清理</string>
+    <string name="no_folder">无文件夹</string>
+    <string name="no_garbage">没有垃圾文件</string>
+    <string name="garbage_scanning">正在扫描...</string>
+    <string name="start_clean">开始清理</string>
+    <string name="garbage_cleaning">正在清理</string>
+    <string name="garbage_clean_finish">完成</string>
+    <string name="garbage_clean_result">清理完成</string>
+    <string name="no_garbage_result">无可清理文件</string>
+    <string name="file_clean">手机清理</string>
+    <string name="deep_clean">深度清理</string>
+    <string name="storage_cleanable">可清理</string>
+    <string name="storage_cleaned">已清理</string>
+    <string name="storage_used_txt">已占用</string>
+    <string name="trashes_selected">"已选择"<xliff:g id="trashes_selected">%1$s</xliff:g></string>
+    <string name="storage_used_flag">已用</string>
+    <string name="garbage_suggest_title">建议清理，不影响使用</string>
+    <string name="garbage_child_summary_default">建议清理</string>
+    <string name="garbage_child_summary_install">已安装</string>
+    <string name="garbage_child_summary_uninstall">未安装</string>
+    <string name="wechat_special">微信专清</string>
+    <string name="clear_large_files">大文件</string>
+    <string name="storage_free">"剩余空间 "<xliff:g id="storage_free">%1$s</xliff:g></string>
+    <string name="clear_wechat_temp_cache">临时缓存</string>
+    <string name="clear_wechat_three_months_ago">3 个月前的旧文件</string>
+    <string name="clear_wechat_chat_img_title">聊天图片和视频</string>
+    <string name="clear_wechat_download_file">下载的文件</string>
+    <string name="clear_wechat_saved_img_title">拍摄和保存的图片</string>
+    <string name="clear_wechat_not_found_chat_img">无聊天图片和视频</string>
+    <string name="clear_wechat_not_found_download">无下载的文件</string>
+    <string name="clear_wechat_not_found_saved_img">无拍摄和保存的图片</string>
+
+    <!-- add by tyd liuyong 20140723 -->
+    <string name="decompress_failed_for_nofile">停止解压缩，压缩文件为空文件夹</string>
+    <string name="cancel_option_note">取消操作进行中，请稍候。</string>
+    <!-- add by tyd mingjun 20150528 -->
+    <string name="load_data">正在加载数据...</string>
+    <string name="interior_info_storage">内部存储</string>
+    <string name="sd_info_storage">SD存储</string>
+
+    <!-- add by tyd zhuya 20150528 -->
+    <string name="donot_change_extfromfilename">修改文件扩展名，可能会导致文件不可用</string>
+
+    <!-- add by droi liuhaoran for add Toast on 20160408 -->
+    <string name="item">条数据</string>
+
+    <!-- add by droi liuhaoran on 20160413 -->
+    <string name="notificaiton_clear_title">"垃圾文件清理"</string>
+    <string name="notificaiton_clear_info">"垃圾文件已影响到手机速度，请及时清理。"</string>
+    <string name="notificaiton_clear_btn_text">"清理"</string>
+
+    <!-- add by droi liuhaoran on 20160616 -->
+    <string name="app_about">关于</string>
+    <string name="need_permission">请打开被拒绝的权限</string>
+    <string name="menu_setting_ring">设置为来电铃声</string>
+    <string name="menu_setting_ring_ok">设置成功</string>
+    <string name="refresh_over">刷新完成</string>
+
+    <string name="newest_version">已是最新版本</string>
+
+    <string name="storage_total">"总共: "<xliff:g id="storage_total">%1$s</xliff:g></string>
+    <string name="storage_available">"可用 "<xliff:g id="storage_available">%1$s</xliff:g></string>
+
+    <string name="about_title">关于</string>
+    <string name="about_current_version">当前版本</string>
+    <string name="about_droi_copyright">Copyright©2018, Droi .All Rights Reserved</string>
+    <string name="about_detail_msg">详细信息</string>
+    <string name="about_channel_number">渠道号</string>
+    <string name="about_customer_number">客户号</string>
+    <string name="about_click_times">还需点击</string>
+    <string name="about_click_intent">次将会为您跳转到详细信息界面</string>
+    <string name="more_menu">更多</string>
+
+    <!-- Safe file -->
+    <string name="safe_add_file_menu">添加文件</string>
+    <string name="decryption_path">移出</string>
+    <string name="safe_modify_password_menu">管理密码</string>
+    <string name="set_unlock_pattern_title">图案密码</string>
+    <string name="set_unlock_password_title">自定字母数字密码</string>
+    <string name="set_unlock_pin_title">4 位数字密码</string>
+    <string name="input_password">请输入文件保险箱密码</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="other_lock_type">其他加密方式</string>
+    <string name="lock_title_settings">设置密码</string>
+    <string name="lock_title_change">更改密码</string>
+    <string name="enter_password">输入密码</string>
+    <string name="reset_password_fail_tips">重置密码失败</string>
+    <string name="lockpassword_new_passcode">请输入文件保险箱新密码</string>
+    <string name="lockpassword_old_passcode">请输入文件保险箱旧密码</string>
+    <string name="lock_password_repeated">输入其他密码。不能再次使用相同的密码。</string>
+    <string name="password_controller_password_wrong">还有 %d 次输入机会</string>
+    <string name="try_again_fingerprint_or_password">再试一次指纹或密码</string>
+    <string name="no_matching_fingerprint">无匹配指纹</string>
+    <string name="wipe_any_stains_from_the_fingerprint_button">请擦拭指纹按钮表面与手指表面污渍后重试</string>
+    <string name="ensure_that_your_finger_covers_the_fingerprint_button">请尝试让手指完全覆盖指纹按钮</string>
+    <string name="keyguard_fingerprint_password_too_many_failed_attempts_countdown">多次输入错误指纹，请在 %d 秒后重试</string>
+    <string name="keyguard_fingerprint_password_again_enter_code">再试一次指纹或密码</string>
+    <string name="failed_attempts_five_times_countdown">请在 %d 秒后重试</string>
+    <string name="modify_password_progress_message">修改密码后，需要重新处理加密文件。正在处理…请不要强行关闭</string>
+    <string name="password_dialog_message">此密码较常用，易被猜到，确定要使用吗?</string>
+    <string name="password_dialog_new">重新设置</string>
+    <string name="password_dialog_use">使用</string>
+    <string name="lockpassword_password_requires_alpha">密码必须包含至少 1 个字母</string>
+    <string name="lockpassword_password_too_long">密码不能超过 16 位</string>
+    <string name="lockpassword_illegal_character">密码包含非法字符。</string>
+    <string name="lockpassword_password_normal_next">完成后触摸继续</string>
+    <string name="confirm_alert_dialog_new_password">验证新密码</string>
+    <string name="password_controller_password_confirm_error">密码不匹配，请重新设置</string>
+    <string name="secure_enter_password_sub_tip2">至少连接 4 个点</string>
+    <string name="secure_enter_password_tip3">请再试一次</string>
+    <string name="secure_enter_password_tip5">多次错误后必须输入密码才能启动指纹识别</string>
+    <string name="secure_enter_password_tip6">请输入指纹或密码</string>
+    <string name="secure_enter_password_tip7">请输入指纹或绘制图案</string>
+
+    <string name="pattern_controller_input_new_pattern">验证新图案</string>
+    <string name="pattern_controller_input_pattern">请绘制文件保险箱图案</string>
+    <string name="pattern_controller_pattern_recorded">图案已记录</string>
+    <string name="lockpattern_new_passcode">请绘制文件保险箱新图案</string>
+    <string name="lockpattern_old_passcode">请绘制文件保险箱旧图案</string>
+    <string name="lock_pattern_repeated">绘制其他图案。不能再次使用相同的图案。 </string>
+    <string name="try_again_fingerprint_or_draw_pattern">再试一次指纹或图案</string>
+    <string name="keyguard_fingerprint_pattern_again_enter_code">再试一次指纹或图案</string>
+    <string name="pattern_controller_pattern_recording_inprogress">完成后松开手指</string>
+    <string name="pattern_controller_pattern_too_short">至少连接4个点,请重试</string>
+    <string name="pattern_confirm_twice_tip" />
+    <string name="password_controller_pattern_confirm_error">图案不匹配，请重新设置</string>
+
+    <string name="password_next">下一步</string>
+    <string name="completed">完成</string>
+
+    <string name="secure_enter_pattern_tip5">多次错误后必须绘制图案才能启动指纹识别</string>
+
+    <string name="encryp_progress_text">正在加密…</string>
+    <string name="dencryp_progress_text">正在解密…</string>
+    <string name="replace_file_text">%s已存在。</string>
+    <string name="replace_yes">替换</string>
+    <string name="name_folder">文件夹</string>
+    <string name="name_file">文件</string>
+    <string name="file_size_too_large">%s超过2G，不能被加密。</string>
+    <string name="disk_space_not_enough">%1$s空间不足，%2$s，请清理后重试。</string>
+    <string name="storage_internal">手机存储</string>
+    <string name="storage_external">SD 卡</string>
+    <string name="unable_to_dencryp">无法解密</string>
+    <string name="lockscreen_access_pattern_start">开始绘制图案</string>
+    <string name="lockscreen_access_pattern_detected">图案绘制完成</string>
+    <string name="lockscreen_access_pattern_cleared">图案已清除</string>
+    <string name="audio_preview">试听</string>
+    <string name="open_fail">打开失败</string>
+
+</resources>

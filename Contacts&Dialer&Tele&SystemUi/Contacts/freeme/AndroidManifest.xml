@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- freeme yellow page -->
+    <uses-permission android:name="com.freeme.provider.yellowpage.permission.ACCESS" />
+
+    <application>
+        <!-- freeme.zhaozehong, 20180321.
+            add: android:screenOrientation="portrait"
+        -->
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.freeme.contacts.quickcontact.FreemeRingtonePickActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/freeme_ringtone_title"
+            android:theme="@*freeme:style/Theme.Freeme.Light" />
+        <!-- freeme.zhaozehong, 20180321.
+            add: android:screenOrientation="portrait"
+        -->
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.freeme.contacts.group.FreemeGroupBrowseActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:label="@string/freeme_my_contacts_group"
+            android:theme="@style/PeopleTheme">
+            <intent-filter>
+                <action android:name="freeme.intent.action.CONTACTS_GROUP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- freeme.zhaozehong, 20180321.
+            add: android:screenOrientation="portrait"
+        -->
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.freeme.contacts.quickcontact.FreemeStrangerDetailActivity"
+            android:label="@string/freeme_stranger_label"
+            android:theme="@style/Theme.QuickContact"
+            android:launchMode="singleTop"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:taskAffinity=""
+            android:windowSoftInputMode="stateUnchanged">
+
+            <intent-filter>
+                <action android:name="com.android.contacts.action.freeme_stranger_contact"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- freeme.zhaozehong, 20180321.
+            add: android:screenOrientation="portrait"
+        -->
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.freeme.contacts.settings.FreemeContactsSettingsActivity"
+            android:exported="true"
+            android:label="@string/freeme_contact_settings_label"
+            android:theme="@*freeme:style/Theme.Freeme.Light">
+
+            <intent-filter>
+                <action android:name="com.freeme.intent.ACTION_FREEME_CONTACTS_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!-- just for start ContactsActivity in the Dialer. -->
+        <!-- for remove launcher icon
+        <activity
+            android:name="com.freeme.contacts.activity.FreemeBootActivity"
+            android:theme="@style/BackgroundOnlyTheme">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <activity android:name="com.freeme.contacts.activity.FreemeDialerContactsActivity"
+            android:theme="@style/BackgroundOnlyTheme"/>
+
+        <activity-alias
+            android:name="com.android.contacts.activities.PeopleActivity"
+            android:exported="true"
+            android:targetActivity="com.freeme.contacts.activity.FreemeDialerContactsActivity" />
+
+        <activity-alias
+            android:name="ContactsListActivity"
+            android:targetActivity="com.freeme.contacts.activity.FreemeDialerContactsActivity" />
+
+        <activity-alias
+            android:name=".activities.ContactsFrontDoor"
+            android:exported="true"
+            android:targetActivity="com.freeme.contacts.activity.FreemeDialerContactsActivity" />
+
+        <activity-alias
+            android:name="DialtactsContactsEntryActivity"
+            android:exported="true"
+            android:targetActivity="com.freeme.contacts.activity.FreemeDialerContactsActivity" />
+
+        <service
+            android:name="com.freeme.contacts.FreemeDisableShortcutService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.freeme.contacts.disable_shortcut" />
+            </intent-filter>
+        </service>
+
+    </application>
+</manifest>

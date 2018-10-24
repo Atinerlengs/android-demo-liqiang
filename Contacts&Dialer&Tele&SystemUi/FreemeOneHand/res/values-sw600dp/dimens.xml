@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pager_indicator_circle_area_margin_bottom">-4dip</dimen>
+    <dimen name="pager_indicator_circle_area_margin_top">-3dip</dimen>
+
+    <dimen name="alert_dialog_padding_vertical">36dip</dimen>
+    <dimen name="alert_dialog_padding_horizontal">36dip</dimen>
+    <dimen name="alert_dialog_sub_body_text_padding">12dip</dimen>
+    <dimen name="alert_dialog_text_line_spacing_extra">0sp</dimen>
+    <dimen name="alert_dialog_description_dot_text_padding">22.0dip</dimen>
+</resources>

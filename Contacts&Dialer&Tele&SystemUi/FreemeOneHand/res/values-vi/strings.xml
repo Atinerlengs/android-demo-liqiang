@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rotate_help_message">Chức năng Giảm kích cỡ màn hình không có ở dạng xem ngang.</string>
+    <string name="cannot_start_by_other_app_new">Để bật Thao tác một tay, hãy tắt %s.</string>
+    <string name="help_text_to_return_full">Chạm bên ngoài vùng hiển thị đã thu nhỏ để trở về toàn màn hình.</string>
+    <string name="help_onehand_title">Chế độ Một tay</string>
+    <string name="help_secure_app">Trang được bảo mật</string>
+    <string name="help_adjust_screen_title">Điều chỉnh kích thước màn hình</string>
+    <string name="help_adjust_screen_text">Vuốt lên hoặc xuống để điều chỉnh kích thước màn hình thu nhỏ.</string>
+
+    <string name="onehand_settings_title">Chế độ Một tay</string>
+    <string name="onehand_settings_summary">Điều chỉnh kích thước và bố cục màn hình để điều khiển điện thoại bằng một tay dễ dàng hơn.</string>
+    <string name="onehand_settings_text_1">Vuốt chéo lên từ một trong hai góc dưới màn hình để giảm kích thước màn hình.</string>
+    <string name="onehand_settings_text_2">Chạm nhanh phím Trang chính 3 lần để giảm kích thước màn hình.</string>
+    <string name="onehand_settings_text_2_hardkey">Nhấn nhanh phím Trang chính 3 lần để giảm kích thước màn hình.</string>
+    <string name="onehand_settings_using_category">Giảm kích thước màn hình bằng cách dùng</string>
+    <string name="onehand_settings_using_gesture">Thao tác</string>
+    <string name="onehand_settings_using_gesture_summary">Vuốt chéo lên từ một trong hai góc dưới cùng.</string>
+    <string name="onehand_settings_using_button">Phím</string>
+    <string name="onehand_settings_using_button_summary">Chạm phím Trang chính 3 lần.</string>
+    <string name="onehand_settings_using_button_summary_hardkey">Nhấn phím Trang chính 3 lần.</string>
+    <string name="onehand_settings_hardware_key_title">Hiển thị các phím trên màn hình</string>
+    <string name="onehand_settings_hardware_key_summary">Hiển thị phím Trang chính, Trở về và Gần đây.</string>
+    <string name="onehand_settings_dialog_title">Bật chế độ Một tay?</string>
+    <string name="onehand_settings_dialog_text">Không thể sử dụng đồng thời các tính năng bên dưới ở chế độ Một tay. Chúng sẽ bị tắt.</string>
+    <string name="onehand_settings_cover_toast">Để sử dụng chế độ Một tay, hãy tháo vỏ bàn phím.</string>
+
+    <string name="accessibility_screen_magnification_title">Phóng to</string>
+    <string name="accessibility_autoclick_preference_title">T.động bấm sau khi con trỏ dừng</string>
+</resources>

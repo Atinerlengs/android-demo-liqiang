@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- freeme.wanglei, 20170713. add cellular data switch. -->
+    <string name="open_data_network">Mobile data</string>
+    <string name="open_data_network_summary">Carrier may charge applicable data usage fees if enabled</string>
+    <string name="freeme_mobile_networks">Mobile network</string>
+    <string name="freeme_dial_emergency_hint">Emergency call only</string>
+
+    <string name="freeme_enable_video_calling_dialog_msg">
+        To turn on video calling, you need to enable HD Voice in network settings.
+    </string>
+    <string name="freeme_alert_turn_off_volte">To complete the operation, you need to turn off HD Voice.</string>
+    <string name="freeme_confirm_noimsreg_for_ctvolte_msg">China Telecom VoLTE and call services unavailable currently.Turn HD Voice OFF?</string>
+</resources>

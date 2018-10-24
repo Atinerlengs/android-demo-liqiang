@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="group_item_names">
+        <item>Privremene datoteke sustava</item>
+        <item>Datoteke predmemorije minijatura</item>
+        <item>Predmemorija aplikacija</item>
+        <item>Prazne mape</item>
+        <item>Ostaci od deinstaliranih aplikacija</item>
+    </string-array>
+</resources>

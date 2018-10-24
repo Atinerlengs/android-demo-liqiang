@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Invalid</string>
+    <string name="conf_call_member_list">Listă membri</string>
+    <string name="conf_call_participant_answered">S-a răspuns</string>
+    <string name="conf_call_participant_missed">"Nepreluate"</string>
+    <string name="calls_over_wifi">ApelurilevorfiefectuateprinWi-Fi</string>
+    <string name="connect_to_wifi">Conectaţi-vă la Wi-Fi pentru a efectua apeluri</string>
+    <string name="wfc_notification_summary">Atingeţiaicipentruaaccesapreferinţele</string>
+    <string name="wfc_notification_summary_fail">Atingeţi uşor aici pentru a vizualiza reţelele disponibile</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"apel SIP"</string>
+    <string name="snackbar_number_unblocked_failed">Deblocarea numărului <xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> a eşuat</string>
+    <string name="menu_select_all">"Selectaţi-lepetoate"</string>
+    <string name="selected_item_count">  <xliff:g id="count">%d</xliff:g> selectat </string>
+    <string name="multichoice_no_select_alert">"Niciun element selectat."</string>
+    <string name="deleteCallLogConfirmation_title">Ştergeţi jurnalul(ele) de apeluri?</string>
+    <string name="deleteCallLogConfirmation_message">Sigur ştergeţi jurnalul(ele) de apeluri selectate(e)?</string>
+    <string name="recentCalls_delete">"Ştergeţi"</string>
+    <string name="deleting_call_log">Se şterge jurnalul de apeluri...</string>
+    <string name="toast_call_detail_error">"Nu sunt disponibile detalii"</string>
+    <string name="calllogList">"Istoricul apelurilor"</string>
+    <string name="calllogHint">Căutare jurnal apeluri</string>
+    <string name="calllog_description">Apeluri sosite, expediate și ratate</string>
+    <string name="noMatchingCalllogs">Niciun jurnal apel nu a fost găsit.</string>
+    <string name="titleJoinContactDataWith">"Asociaţi intrările din Agendă"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other">  <xliff:g id="count">%d</xliff:g> jurnale apeluri </item>
+        <item quantity="one"> "1 jurnal apeluri"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Jurnalul de apeluri nu a fost găsit</string>
+    <string name="search_results_for">Rezultate căutare pentru:  <xliff:g id="query">%s</xliff:g>  </string>
+    <string name="menu_select_none"> "Deselectare totală"</string>
+</resources>

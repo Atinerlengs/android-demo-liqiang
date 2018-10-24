@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Неважеће</string>
+    <string name="conf_call_member_list">Lista članova</string>
+    <string name="conf_call_participant_answered">Odgovoreno</string>
+    <string name="conf_call_participant_missed">"Пропуштени"</string>
+    <string name="calls_over_wifi">ПозивићебитиобављенипрекоWi-Fi-ја</string>
+    <string name="connect_to_wifi">Повежите се са Wi-Fi-јем да бисте обавили позиве</string>
+    <string name="wfc_notification_summary">Додирнитеовдедабистеприступилижељенимпоставкама</string>
+    <string name="wfc_notification_summary_fail">Додирните овде да бисте погледали доступне мреже</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"SIP позив"</string>
+    <string name="snackbar_number_unblocked_failed">Деблокирање није успело за <xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> </string>
+    <string name="menu_select_all">"Изаберисве"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> изабрано</string>
+    <string name="menu_select_none">Opozovi izbor svih stavki</string>
+    <string name="multichoice_no_select_alert">"Ставка није изабрана."</string>
+    <string name="deleteCallLogConfirmation_title">Избрисати евиденцију(е) позива?</string>
+    <string name="deleteCallLogConfirmation_message">Желите ли сигурно да избришете изабрану(е) евиденцију(е)?</string>
+    <string name="recentCalls_delete">"Избриши"</string>
+    <string name="deleting_call_log">Брисање евиденције позива...</string>
+    <string name="toast_call_detail_error">"Детаљи нису доступни"</string>
+    <string name="calllogList">"Историја позива"</string>
+    <string name="calllogHint">Тражи евиденције позива</string>
+    <string name="calllog_description">Долазни, одлазни и пропуштени позиви</string>
+    <string name="noMatchingCalllogs">Евиденција позива која се подудара није пронађена.</string>
+    <string name="titleJoinContactDataWith">"Придруживање контаката"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="one"> Evidencija 1 poziva</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> евиденција позива</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Евиденција позива није нађена</string>
+    <string name="search_results_for">Резултати претраге за: <xliff:g id="query">%s</xliff:g></string>
+</resources>

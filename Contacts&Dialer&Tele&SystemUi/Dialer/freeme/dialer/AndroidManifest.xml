@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- System.Global get/put -->
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <!-- freeme yellow page -->
+    <uses-permission android:name="com.freeme.provider.yellowpage.permission.ACCESS" />
+    <!-- collapse StatusBar when show incoming call notification -->
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+
+    <application>
+        <activity
+            android:name="com.freeme.dialer.app.FreemeDialtactsActivity"
+            android:clearTaskOnLaunch="true"
+            android:directBootAware="true"
+            android:label="@string/launcherActivityLabel"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/FreemeDialtactsActivityThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustNothing">
+            <!-- LINT.IfChange -->
+            <intent-filter>
+                <action android:name="android.intent.action.DIAL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="vnd.android.cursor.item/phone" />
+                <data android:mimeType="vnd.android.cursor.item/person" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DIAL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="voicemail" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DIAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.DIAL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tel" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="vnd.android.cursor.dir/calls" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CALL_BUTTON" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <!-- This was never intended to be public, but is here for backward
+                 compatibility.  Use Intent.ACTION_DIAL instead. -->
+            <intent-filter>
+                <action android:name="com.android.phone.action.TOUCH_DIALER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+            <intent-filter android:label="@string/callHistoryIconLabel">
+                <action android:name="com.android.phone.action.RECENT_CALLS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+            <!-- LINT.ThenChange(//depot/google3/third_party/java_src/android_app/dialer/java/com/android/dialer/dialtacts/impl/AndroidManifest.xml) -->
+
+            <meta-data
+                android:name="com.android.keyguard.layout"
+                android:resource="@layout/keyguard_preview" />
+        </activity>
+
+        <activity-alias
+            android:name="com.freeme.dialer.app.ContactsActivity"
+            android:icon="@mipmap/ic_contacts_launcher"
+            android:label="@string/tab_all_contacts"
+            android:targetActivity="com.freeme.dialer.app.FreemeDialtactsActivity">
+            <intent-filter>
+                <action android:name="freeme.intent.action.LIST_DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="com.android.contacts.action.LIST_DEFAULT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="com.android.contacts.action.LIST_CONTACTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="com.android.contacts.action.LIST_ALL_CONTACTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="com.android.contacts.action.LIST_CONTACTS_WITH_PHONES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="com.android.contacts.action.LIST_STARRED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="com.android.contacts.action.LIST_FREQUENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="com.android.contacts.action.LIST_STREQUENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/contact" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.dir/person" />
+                <data android:mimeType="vnd.android.cursor.dir/contact" />
+            </intent-filter>
+        </activity-alias>
+
+        <service
+            android:name="com.freeme.dialer.contacts.FreemeContactDeleteService"
+            android:exported="false" />
+        <service
+            android:name="com.freeme.dialer.contacts.FreemeSimProcessorService"
+            android:exported="false" />
+        <service
+            android:name="com.freeme.dialer.contacts.list.service.FreemeMultiChoiceService"
+            android:exported="false" />
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.freeme.dialer.calllog.FreemeCallLogDetailsActivity"
+            android:exported="true"
+            android:label="@string/callHistoryIconLabel"
+            android:theme="@style/FreemeDialerThemeBase">
+
+            <intent-filter>
+                <action android:name="com.freeme.intent.ACTION_FREEME_CALL_LOG_DETAIL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity-alias
+            android:name="com.android.dialer.DialtactsActivity"
+            android:exported="true"
+            android:targetActivity="com.freeme.dialer.app.FreemeDialtactsActivity" />
+
+        <activity
+            android:name="com.freeme.dialer.settings.FreemeDialerSettingsActivity"
+            android:exported="true"
+            android:label="@string/freeme_tab_call_label"
+            android:screenOrientation="portrait"
+            android:theme="@style/FreemeDialerThemeBase">
+
+            <intent-filter>
+                <action android:name="com.freeme.intent.ACTION_FREEME_DIALER_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.freeme.dialer.settings.FreemePhoneAccountAndVoicemailActivity"
+            android:exported="true"
+            android:label="@string/voicemail"
+            android:screenOrientation="portrait"
+            android:theme="@style/FreemeDialerThemeBase">
+
+            <intent-filter>
+                <action android:name="com.freeme.intent.ACTION_FREEME_VOICEMAIL_ACCOUNT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.freeme.dialer.contacts.list.service.FreemeMultiChoiceConfirmActivity"
+            android:label="@string/contactsList"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/FreemeBackgroundOnlyTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.freeme.dialer.speeddial.FreemeSpeedDialActivity"
+            android:label="@string/freeme_speeddial_call_speed_dial"
+            android:theme="@style/FreemeDialerThemeBase"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="com.freeme.intent.ACTION_FREEME_SPEEDDIAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.freeme.dialer.speeddial.provider.FreemeSpeedDialProvider"
+            android:authorities="speed_dial"
+            android:exported="true"
+            android:multiprocess="true"
+            android:readPermission="android.permission.READ_SPEED_DIAL"
+            android:writePermission="android.permission.WRITE_SPEED_DIAL"/>
+
+    </application>
+</manifest>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/freeme_list_item_bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/freeme_my_profile"
+        layout="@layout/freeme_fragment_contacts_list_header_item" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/freeme_contacts_list_item_padding_end"
+        android:paddingStart="@dimen/freeme_contacts_list_item_padding_start">
+
+        <include layout="@layout/freeme_horizontal_line_view" />
+    </FrameLayout>
+
+    <include
+        android:id="@+id/freeme_contacts_group"
+        layout="@layout/freeme_fragment_contacts_list_header_item" />
+</LinearLayout>

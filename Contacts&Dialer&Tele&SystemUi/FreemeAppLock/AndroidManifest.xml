@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.freeme.applock"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:sharedUserId="android.uid.system">
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="25" />
+
+    <permission
+        android:name="com.freeme.applock.permission.STATUSCHANGED"
+        android:protectionLevel="signatureOrSystem" />
+    <permission
+        android:name="com.freeme.applock.permission.STATUS_UPDATE"
+        android:label="receiver permission"
+        android:protectionLevel="signatureOrSystem" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:name=".AppLockApplication"
+        android:allowBackup="true"
+        android:allowClearUserData="false"
+        android:icon="@drawable/ic_setting_grid_app_lock"
+        android:label="@string/appplock_app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Transparent">
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1"/>
+
+        <activity
+            android:name=".AppLockConfirmTestActivity"
+            android:configChanges="locale|keyboardHidden|screenLayout|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:supportsRtl="true"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
+        <activity
+            android:name=".AppLockPasswordConfirmActivity"
+            android:configChanges="locale|keyboardHidden|screenLayout|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:resizeableActivity="false"
+            android:supportsRtl="true"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize">
+            <intent-filter>
+                <action android:name="com.freeme.intent.action.applock.CHECK_PASSWORD" />
+                <action android:name="com.freeme.intent.action.applock.CHECK_FINGERPRINT_PASSWORD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AppLockPatternBackupPinConfirmActivity"
+            android:configChanges="locale|keyboardHidden|screenLayout|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:resizeableActivity="false"
+            android:supportsRtl="true"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
+        <activity
+            android:name=".AppLockPatternConfirmActivity"
+            android:configChanges="locale|screenLayout|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:resizeableActivity="false"
+            android:supportsRtl="true">
+            <intent-filter>
+                <action android:name="com.freeme.intent.action.applock.CHECK_PATTERN" />
+                <action android:name="com.freeme.intent.action.applock.CHECK_FINGERPRINT_PATTERN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AppLockPinConfirmActivity"
+            android:configChanges="locale|screenLayout|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:resizeableActivity="false"
+            android:supportsRtl="true"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize">
+            <intent-filter>
+                <action android:name="com.freeme.intent.action.applock.CHECK_PINCODE" />
+                <action android:name="com.freeme.intent.action.applock.CHECK_FINGERPRINT_PINCODE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AppLockSpassPasswordConfirmActivity"
+            android:configChanges="locale|keyboardHidden|screenLayout|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:resizeableActivity="false"
+            android:supportsRtl="true"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" />
+        <activity
+            android:name=".AppLockSpassConfirmActivity"
+            android:configChanges="locale|keyboardHidden|screenLayout|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:resizeableActivity="false"
+            android:supportsRtl="true">
+            <intent-filter>
+                <action android:name="com.freeme.intent.action.applock.CHECK_FINGERPRINT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".service.AppLockCheckService">
+            <intent-filter>
+                <action android:name="com.freeme.intent.action.applock.CHECK_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".service.AppLockDummyActivity"
+            android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize"
+            android:excludeFromRecents="true"
+            android:label="dummy"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".settings.AppLockSettingsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|layoutDirection"
+            android:exported="true"
+            android:label="@string/applock_app_name"
+            android:theme="@style/AppLockTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".settings.AppLockTypeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/applock_app_name"
+            android:theme="@style/AppLockTheme" />
+
+        <receiver
+            android:name=".settings.PackageActionReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="com.freeme.applock.permission.STATUS_UPDATE">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.freeme.applock.intent.action.NOTIFYUPDATE" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

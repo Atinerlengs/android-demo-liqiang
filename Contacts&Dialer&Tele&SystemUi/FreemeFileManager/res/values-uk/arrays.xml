@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="group_item_names">
+        <item>Тимчасові системні файли</item>
+        <item>Кеш-файли стиснутих зображень</item>
+        <item>Кеш-файли програм</item>
+        <item>Порожня папка</item>
+        <item>Файли, що залишилися після видалення програм</item>
+    </string-array>
+</resources>

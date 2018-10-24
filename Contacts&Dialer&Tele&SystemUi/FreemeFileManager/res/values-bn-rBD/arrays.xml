@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="group_item_names">
+        <item>সিস্টেমের অস্থায়ী ফাইলসমূহ</item>
+        <item>থাম্বনেইল ক্যাশ ফাইলসমূহ</item>
+        <item>অ্যাপের ক্যাশ</item>
+        <item>খালি ফোল্ডার</item>
+        <item>আনইনস্টলকৃত অ্যাপ্লিকেশনের অবশিষ্টাংশ</item>
+    </string-array>
+</resources>

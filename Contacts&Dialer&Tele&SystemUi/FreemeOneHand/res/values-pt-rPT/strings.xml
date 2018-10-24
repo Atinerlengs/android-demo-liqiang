@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rotate_help_message">Reduzir o tamanho de ecrã não disponível na vista horizontal.</string>
+    <string name="cannot_start_by_other_app_new">Para activar a Operação com uma mão, desactive %s.</string>
+    <string name="help_text_to_return_full">Toque fora da área de apresentação reduzida, para voltar ao ecrã inteiro.</string>
+    <string name="help_onehand_title">Modo de uma mão</string>
+    <string name="help_secure_app">Página protegida</string>
+    <string name="help_adjust_screen_title">Ajustar o tamanho do ecrã</string>
+    <string name="help_adjust_screen_text">Deslize para cima ou para baixo, para ajustar o tamanho do ecrã reduzido.</string>
+
+    <string name="onehand_settings_title">Modo de uma mão</string>
+    <string name="onehand_settings_summary">Ajustar o tamanho e o esquema do ecrã para poder controlar facilmente o telefone só com uma mão.</string>
+    <string name="onehand_settings_text_1">Deslize na diagonal, a partir de um dos cantos inferiores do ecrã, para reduzir o tamanho de apresentação.</string>
+    <string name="onehand_settings_text_2">Toque no Botão principal 3 vezes rapidamente, para reduzir o tamanho de apresentação.</string>
+    <string name="onehand_settings_text_2_hardkey">Prima a Tecla principal 3 vezes rapidamente, para reduzir o tamanho de apresentação.</string>
+    <string name="onehand_settings_using_category">Reduzir tamanho do ecrã utilizando</string>
+    <string name="onehand_settings_using_gesture">Gesto</string>
+    <string name="onehand_settings_using_gesture_summary">Deslizar para cima na diagonal a partir de um canto inferior.</string>
+    <string name="onehand_settings_using_button">Botão</string>
+    <string name="onehand_settings_using_button_summary">Toque no Botão principal 3 vezes.</string>
+    <string name="onehand_settings_using_button_summary_hardkey">Premir a Tecla principal 3 vezes.</string>
+    <string name="onehand_settings_hardware_key_title">Mostrar teclas no ecrã</string>
+    <string name="onehand_settings_hardware_key_summary">Mostrar Teclas principal, de retrocesso e aplicações recentes.</string>
+    <string name="onehand_settings_dialog_title">Ligar Modo de uma mão?</string>
+    <string name="onehand_settings_dialog_text">As funcionalidades abaixo não podem ser utilizadas ao mesmo tempo que o Modo de uma mão. Elas serão desligadas.</string>
+    <string name="onehand_settings_cover_toast">Para utilizar o Modo de uma mão, remova a capa de teclado.</string>
+
+    <string name="accessibility_screen_magnification_title">Ampliação</string>
+    <string name="accessibility_autoclick_preference_title">Clique auto. quando ponteiro pára</string>
+</resources>

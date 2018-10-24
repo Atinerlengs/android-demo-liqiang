@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.freeme.applock.AppLockEmergencyButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app_lock_emergency_button"
+    style="@style/single_button"
+    android:layout_width="wrap_content"
+    android:layout_height="31.0dip"
+    android:background="@drawable/ripple_effect_transparent_button_drawable"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:text="@string/emergency_call_text"
+    android:textAllCaps="true"
+    android:textAppearance="?android:textAppearanceMedium" />

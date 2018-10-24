@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Hindi balido</string>
+    <string name="conf_call_member_list">Listahan ng miyembro</string>
+    <string name="conf_call_participant_answered">Sumagot</string>
+    <string name="conf_call_participant_missed">"Di nasagot"</string>
+    <string name="calls_over_wifi">GagawinangmgatawaggamitangWi-Fi</string>
+    <string name="connect_to_wifi">Kumonekta sa Wi-Fi para tumawag</string>
+    <string name="wfc_notification_summary">I-tapditoparama-accessangmgakagustuhan</string>
+    <string name="wfc_notification_summary_fail">I-tap Dito para Tingnan ang Mga Available na Network</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"Tawag sa SIP"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> nabigo ang pag-unblock</string>
+    <string name="menu_select_all">"Piliinlahat"</string>
+    <string name="selected_item_count">  <xliff:g id="count">%d</xliff:g> napili </string>
+    <string name="multichoice_no_select_alert">"Walang napiling item."</string>
+    <string name="deleteCallLogConfirmation_title">Tanggalin ang (mga) log ng tawag?</string>
+    <string name="deleteCallLogConfirmation_message">Sigurado ka bang gusto mong tanggalin ang napiling (mga) log ng tawag?</string>
+    <string name="recentCalls_delete">"Tanggalin"</string>
+    <string name="deleting_call_log">Tinatanggal ang Log ng Tawag...</string>
+    <string name="toast_call_detail_error">"Hindi available ang mga detalye"</string>
+    <string name="calllogList">"Kasaysayan ng Tawag"</string>
+    <string name="calllogHint">Hanapan ang mga log ng tawag</string>
+    <string name="calllog_description">Papasok, papalabas at mga hindi nasagot na tawag</string>
+    <string name="noMatchingCalllogs">Walang tugmang log ng tawag na nahanap.</string>
+    <string name="titleJoinContactDataWith">"Sumali sa mga contact"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other">  <xliff:g id="count">%d</xliff:g> mga log ng tawag </item>
+        <item quantity="one">“1 log ng tawag”</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Hindi nahanap ang log ng tawag</string>
+    <string name="search_results_for">Hanapin ang mga resulta para sa:  <xliff:g id="query">%s</xliff:g>  </string>
+    <string name="menu_select_none">“Alisin ang pagkakapili ng lahat”</string>
+</resources>

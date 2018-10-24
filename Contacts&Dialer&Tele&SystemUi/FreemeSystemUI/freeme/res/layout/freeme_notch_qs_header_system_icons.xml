@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/system_icons"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+
+    <com.android.keyguard.AlphaOptimizedLinearLayout android:id="@+id/statusIcons"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <com.android.systemui.BatteryMeterView android:id="@+id/battery"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/statu_icons_battery_spacer"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/notch_battery_level"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:paddingRight="3dp"
+        android:paddingLeft="0dp"
+        android:textSize="12dp"
+        android:visibility="gone" />
+
+    <include layout="@layout/freeme_status_bar_battery"/>
+
+</LinearLayout>

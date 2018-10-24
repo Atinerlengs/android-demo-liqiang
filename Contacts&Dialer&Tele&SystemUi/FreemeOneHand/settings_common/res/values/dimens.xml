@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- SwitchBar sub settings margin start / end -->
+    <dimen name="switchbar_subsettings_margin_start">24dp</dimen>
+    <dimen name="switchbar_subsettings_margin_end">24dp</dimen>
+    <dimen name="switchbar_divider_height">3.0px</dimen>
+
+</resources>

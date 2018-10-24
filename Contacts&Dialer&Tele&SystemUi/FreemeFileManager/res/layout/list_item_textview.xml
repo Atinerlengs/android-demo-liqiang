@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/file_item_height">
+
+    <ImageView
+        android:id="@+id/left_img"
+        android:layout_width="@dimen/file_item_img_width"
+        android:layout_height="@dimen/file_item_img_width"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/detail_grid_vertical_space"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/left_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/detail_grid_vertical_space"
+        android:layout_toRightOf="@+id/left_img"
+        android:layout_centerVertical="true"
+        android:textAppearance="@style/AppTextAppearance.ItemName"/>
+    <TextView
+        android:id="@+id/right_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/detail_grid_vertical_space"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textAppearance="@style/AppTextAppearance.ItemName"
+        android:textColor="@color/app_theme_color_accent"/>
+    <ProgressBar
+        android:id="@+id/right_group_progress"
+        android:layout_width="@dimen/round_progressbar_diameter"
+        android:layout_height="@dimen/round_progressbar_diameter"
+        android:layout_marginEnd="@dimen/detail_grid_vertical_space"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/right_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/detail_grid_vertical_space"
+        android:src="@drawable/ic_right_arrow"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="freeme_low_battery_flashlight_canot_use">Low Battery, Flashlight not available!</string>
+    <string name="freeme_normal">Sound</string>
+    <string name="freeme_vibrate">Vibrate</string>
+    <string name="freeme_silent">Silent</string>
+    <string name="freeme_data_connection">Mobile data</string>
+    <string name="freeme_screen_recorder">ScreenRecorder</string>
+    <string name="freeme_super_shot">Supershot</string>
+    <string name="freeme_dnd_label">Do Not Disturb</string>
+    <string name="freeme_data_saver">Data saver</string>
+
+    <string name="freeme_keyguard_emergency_back">Back</string>
+    <string name="freeme_keyguard_emergency_delete">Delete</string>
+    <string name="freeme_keyguard_pin_instructions">Enter PIN</string>
+    <string name="freeme_keyguard_pwd_instructions">Enter PWD</string>
+    <string name="freeme_keyguard_ptn_instructions">Draw Pattern</string>
+
+    <string name="qs_header_weather">windy</string>
+    <string name="qs_header_tmp">15°</string>
+
+    <string name="fingerprint_lock_out_count_down">Fingerprint unlock retry after <xliff:g id="number">%d</xliff:g> seconds</string>
+    <string name="fingerprint_lock_out_count_down_finish">Please enter password or use fingerprint</string>
+    <string name="freeme_carrier_cmcc">CMCC</string>
+
+    <!-- Theme.Freeme 8.1 - notification. -->
+    <string name="send">Send</string>
+
+    <string name="freeme_notification_settings">StatusBar Manager</string>
+    <string name="freeme_battery_show">Show the Battery percent</string>
+    <string name="freeme_network_speed_show">Show current network speed</string>
+    <string name="freeme_show_notifications">Show notification icons</string>
+    <string name="freeme_forbidden_slide_statusbar">No slide on lock screen</string>
+    <string name="freeme_carrier_label_show">Show Carrier</string>
+
+    <string name="speed">%s/s</string>
+    <string name="byteShort">B</string>
+    <string name="kilobyteShort">K</string>
+    <string name="megabyteShort">M</string>
+    <string name="gigabyteShort">G</string>
+    <string name="terabyteShort">T</string>
+    <string name="petabyteShort">P</string>
+    <string name="fileSizeSuffix">%1$s%2$s</string>
+
+    <string name="status_bar_settings_battery_meter_format"> %s </string>
+
+    <string name="freeme_data_saver_enable_title">Turn on Data Saver?</string>
+    <string name="freeme_data_saver_description">To help reduce data usage, Data Saver prevents some apps from sending or receiving data in the background. An app you’re currently using can access data, but may do so less frequently. This may mean, for example, that images don’t display until you tap them.</string>
+
+    <string name="freeme_recents_empty_text">No running applications recently</string>
+
+    <!-- freeme.xiaohui,20180514, FreemeLockscreen !-->
+    <string name="magazine_kg_charging">Charging <xliff:g id="kg_battery_level">%d</xliff:g>%%</string>
+    <string name="magazine_kg_charged">Charged</string>
+    <string name="kg_finger_print_unlcok">Use Finger Print Unlock</string>
+
+    <string name="quick_status_bar_12_hour_am">AM</string>
+    <string name="quick_status_bar_12_hour_pm">PM</string>
+</resources>

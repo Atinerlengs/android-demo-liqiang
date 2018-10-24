@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lists_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.android.contacts.common.list.ViewPagerTabs
+            android:id="@+id/lists_pager_header"
+            style="@style/DialtactsActionBarTabTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_height"
+            android:layout_gravity="top"
+            android:elevation="1dp"
+            android:orientation="horizontal"
+            android:textAllCaps="true"
+            android:textColor="@color/freeme_dialer_tab_text_color"
+            android:textSize="16sp" />
+
+        <com.android.dialer.app.list.DialerViewPager
+            android:id="@+id/lists_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- Sets android:importantForAccessibility="no" to avoid being announced when navigating with
+         talkback enabled. It will still be announced when user drag or drop contact onto it.
+         This is required since drag and drop event is only sent to views are visible when drag
+         starts. -->
+    <ViewStub
+        android:id="@+id/remove_view_stub"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height"
+        android:layout_marginTop="@dimen/action_bar_height_large"
+        android:contentDescription="@string/remove_contact"
+        android:importantForAccessibility="no"
+        android:layout="@layout/freeme_lists_fragment_removeview" />
+
+    <ViewStub
+        android:id="@+id/actionbar_stub"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height"
+        android:layout="@layout/freeme_lists_fragment_actionbar" />
+
+</FrameLayout>

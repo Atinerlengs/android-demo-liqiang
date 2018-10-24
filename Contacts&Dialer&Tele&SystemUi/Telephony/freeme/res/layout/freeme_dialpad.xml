@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/freeme_digits_container"/>
+
+    <LinearLayout
+        android:id="@+id/dialpad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/one"
+                style="@style/DialpadKeyButtonStyle"
+                layout="@layout/freeme_dialpad_key"/>
+
+            <include
+                android:id="@+id/two"
+                style="@style/DialpadKeyButtonStyle"
+                layout="@layout/freeme_dialpad_key"/>
+
+            <include
+                android:id="@+id/three"
+                style="@style/DialpadKeyButtonStyle"
+                layout="@layout/freeme_dialpad_key"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/four"
+                style="@style/DialpadKeyButtonStyle"
+                layout="@layout/freeme_dialpad_key"/>
+
+            <include
+                android:id="@+id/five"
+                style="@style/DialpadKeyButtonStyle"
+                layout="@layout/freeme_dialpad_key"/>
+
+            <include
+                android:id="@+id/six"
+                style="@style/DialpadKeyButtonStyle"
+                layout="@layout/freeme_dialpad_key"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/seven"
+                style="@style/DialpadKeyButtonStyle"
+                layout="@layout/freeme_dialpad_key"/>
+
+            <include
+                android:id="@+id/eight"
+                style="@style/DialpadKeyButtonStyle"
+                layout="@layout/freeme_dialpad_key"/>
+
+            <include
+                android:id="@+id/nine"
+                style="@style/DialpadKeyButtonStyle"
+                layout="@layout/freeme_dialpad_key"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/star"
+                style="@style/DialpadKeyButtonStyle"
+                layout="@layout/freeme_dialpad_key"/>
+
+            <include
+                android:id="@+id/zero"
+                style="@style/DialpadKeyButtonStyle"
+                layout="@layout/freeme_dialpad_key"/>
+
+            <include
+                android:id="@+id/pound"
+                style="@style/DialpadKeyButtonStyle"
+                layout="@layout/freeme_dialpad_key"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/cancel"
+                style="@style/DialpadKeyButtonStyle"
+                layout="@layout/freeme_dialpad_key"/>
+
+            <include
+                android:id="@+id/dial"
+                style="@style/DialpadKeyButtonStyle"
+                layout="@layout/freeme_dialpad_key"/>
+
+            <include
+                android:id="@+id/deleteNumer"
+                style="@style/DialpadKeyButtonStyle"
+                layout="@layout/freeme_dialpad_key"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

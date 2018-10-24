@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="freeme_phone_setting">Others</string>
+    <string name="phone_vibrate">Vibrate on Connection</string>
+    <string name="phone_revice_vibrate">Vibrate when connected to the calling number</string>
+    <string name="phone_revice_no_vibrate">Vibrate when connected to the calling number</string>
+    <string name="reverse_silent">Turn-over to Mute</string>
+    <string name="reverse_silent_info">Turn over your phone to mute the ringing</string>
+    <string name="gradient_ringing_info">enlarge the ringing call gradually</string>
+    <string name="gradient_ringing_call">Gradient</string>
+    <string name="pocket_ring_mode_text">Pocket mode</string>
+    <string name="pocket_ring_mode_info">The bell volume increase When a device is located in the pocket</string>
+    <string name="delete_from_call_log_list">Delete from call log list</string>
+    <string name="freeme_delete_contacts_confirmation_title">Delete contact?</string>
+    <plurals name="freeme_contacts_deleted_toast">
+        <item quantity="one">Contact deleted</item>
+        <item quantity="other">Contacts deleted</item>
+    </plurals>
+    <string name="freeme_contacts_deleted_one_named_toast"><xliff:g id="name">%1$s</xliff:g> deleted</string>
+    <string name="freeme_contacts_deleted_two_named_toast"><xliff:g id="name">%1$s</xliff:g> and <xliff:g id="name">%2$s</xliff:g> deleted</string>
+    <string name="freeme_contacts_deleted_many_named_toast"><xliff:g id="name">%1$s</xliff:g>, <xliff:g id="name">%2$s</xliff:g>, <xliff:g id="name">%3$s</xliff:g>\u2026 deleted</string>
+    <string name="freeme_contact_edit_permission_denied">Couldn\'t save contact changes.</string>
+    <string name="freeme_multiple_contact_delete_confirmation">Deleting this contact will delete details from multiple accounts.</string>
+    <string name="freeme_contact_delete_confirmation">Delete this contact?</string>
+    <string name="freeme_contact_delete_positive_button">Delete</string>
+    <string name="freeme_readonly_contact_delete_warning">Contacts from your read-only accounts cannot be deleted, but they can be hidden.</string>
+    <string name="freeme_readonly_contact_delete_positive_button">Hide</string>
+    <string name="freeme_readonly_contact_delete_confirmation">The contact to be deleted has details from multiple accounts. Details from read-only accounts will be hidden, not deleted.</string>
+    <string name="call_log_activity_title">History</string>
+    <string name="freemecallDetailsDurationFormat" translatable="false">"<xliff:g id="HOURS">%s</xliff:g>:<xliff:g id="MINUTES">%s</xliff:g>:<xliff:g id="SECONDS">%s</xliff:g> "</string>
+    <string name="multiple_delete">Delete history contact</string>
+    <string name="freeme_call_type_incoming">Incoming</string>
+    <string name="freeme_call_type_outgoing">Outgoing</string>
+    <string name="freeme_call_logs_filter_all">All</string>
+    <string name="freeme_call_logs_filter_missed">Missed</string>
+    <string name="freeme_call_logs_filter_outgoing">Outgoing</string>
+    <string name="freeme_call_logs_filter_incoming">Answered</string>
+    <string name="freeme_call_logs_mulit_delete">Batch deletion</string>
+    <string name="freeme_delete_contact">Delete contact</string>
+    <string name="freeme_default_ringtone_summary">Set default ringtone</string>
+    <string name="freeme_tab_call_label">Phone</string>
+    <string name="freeme_toast_call_delete_success">Delete call log successfully</string>
+    <string name="freeme_no_match_contact">Have no matched contacts</string>
+    <string name="freeme_call_log_missed_empty">"You have no missed calls"</string>
+    <string name="freeme_call_log_voicemail_empty">"Your voicemail inbox is empty"</string>
+    <string name="freeme_display_contacts_name">" Contacts"</string>
+    <string name="freeme_list_filter_customize">"Custom"</string>
+    <string name="freeme_permission_no_favorites">To enable favorites, turn on the Contacts permission.</string>
+    <string name="freeme_my_profile">My Card</string>
+    <string name="freeme_strange_number">Stranger</string>
+    <string name="freeme_stranger_mark_number">Mark This Number</string>
+
+    <string name="freeme_type_incoming">incoming</string>
+    <string name="freeme_type_outgoing">outgoing</string>
+    <string name="freeme_type_missed">missed call</string>
+    <string name="freeme_type_missed_video">missed video call</string>
+    <string name="freeme_type_incoming_video">video incoming</string>
+    <string name="freeme_type_outgoing_video">video outgoing</string>
+    <string name="freeme_type_voicemail">voicemail</string>
+    <string name="freeme_type_rejected">rejected</string>
+    <string name="freeme_type_blocked">blocked</string>
+    <string name="freeme_type_answered_elsewhere">answered elsewhere</string>
+    <string name="freeme_incoming_unconnected">missed</string>
+    <string name="freeme_outgoing_unconnected">unconnected</string>
+    <string name="freeme_type_outgoing_video_pulled">Outgoing video call transferred to another device</string>
+    <string name="freeme_type_incoming_video_pulled">Incoming video call transferred to another device</string>
+    <string name="freeme_type_outgoing_pulled">Outgoing call transferred to another device</string>
+    <string name="freeme_type_incoming_pulled">Incoming call transferred to another device</string>
+
+    <string name="freeme_dialer_settings_assist">Assist</string>
+    <string name="freeme_dialer_settings_incoming_vibrate">Incoming vibration</string>
+    <string name="freeme_dialer_settings_noise_reduction_summary">Suppress your background noise during calls</string>
+    <string name="freeme_dialer_settings_noise_reduction_title">Noise Reduction</string>
+    <string name="freeme_dialer_settings_blacklist_list">Blacklist</string>
+    <string name="freeme_dialer_settings_shortcut">Dialer shortcut</string>
+    <string name="freeme_dialer_settings_smart_dialer_title">Smart dialer</string>
+    <string name="freeme_dialer_settings_smart_dialer_summary">Check the number to quickly pull the headset close to your ear and pull out the phone</string>
+    <string name="freeme_dialer_settings_smart_answer_title">Smart answer</string>
+    <string name="freeme_dialer_settings_smart_answer_summary">When you call, quickly put the phone near the ear and answer the call</string>
+    <string name="freeme_dialer_settings_no_touch">interval calls</string>
+    <string name="freeme_dialer_settings_no_touch_not_set">not set</string>
+    <string name="freeme_dialer_settings_other">Other</string>
+    <string name="freeme_dialer_settings_call_related">Operator call related settings</string>
+    <string name="freeme_dialer_settings_speed_dial">Speed Dial settings</string>
+    <string name="title_share_via">Share contacts via</string>
+    <string name="share_contacts_limit">"Selected to share contacts can't be more than "<xliff:g id="count">%d</xliff:g>" "</string>
+    <string name="freeme_not_add_more_recipients">Can\'t add contacts over <xliff:g id="maxLimit">%1$d</xliff:g> at one time. </string>
+
+    <string name="icc_phone_book_invalid">Phone book is not available now, please try later.</string>
+    <string name="contacts_default_notification_channel">Notifications</string>
+    <string name="percentage" translate="false">
+        <xliff:g id="percentage" example="50">%s</xliff:g>
+        <xliff:g id="percentsign" example="%">%%</xliff:g>
+    </string>
+    <string name="multichoice_confirmation_title_delete">Canceling contact(s) deletetion</string>
+    <string name="multichoice_confirmation_message_delete">Cancel to delete contact(s)?</string>
+    <string name="notifier_multichoice_process_report">Completed: <xliff:g id="items">%d</xliff:g>\nIncompleted: <xliff:g id="items">%d</xliff:g></string>
+    <string name="notifier_cancel_delete_title">Deleting contact(s) canceled</string>
+    <string name="notifier_fail_delete_title">Deleting contact(s) failure</string>
+    <string name="notifier_finish_delete_title">Delete contacts successfully</string>
+    <string name="notifier_finish_delete_content">Deleted <xliff:g id="total">%d</xliff:g> contact(s)</string>
+    <string name="notifier_progress_delete_will_start_message">Contact(s) will be deleted shortly.</string>
+    <string name="notifier_progress_delete_message">Deleting <xliff:g id="current_number">%s</xliff:g>/<xliff:g id="total_number">%s</xliff:g>: <xliff:g id="name" example="Joe Due">%s</xliff:g></string>
+    <string name="notifier_progress_delete_description">Deleting <xliff:g id="name" example="Joe Due">%s</xliff:g></string>
+    <string name="readOnlyContactWarning">This contact is read-only. It can\'t be deleted, but you can hide it.</string>
+    <string name="single_delete_confirmation">Delete this contact?</string>
+    <string name="batch_delete_confirmation">Delete selected contacts?</string>
+    <string name="batch_delete_read_only_contact_confirmation">Contacts from your read-only accounts cannot be deleted, but they can be hidden.</string>
+    <string name="batch_delete_multiple_accounts_confirmation">The contacts to be deleted have details from multiple accounts. Details from read-only accounts will be hidden, not deleted.</string>
+
+    <string name="freeme_dialer_settings_no_touch_none">none</string>
+    <string name="freeme_dialer_settings_no_touch_mute_calls">mute calls</string>
+    <string name="freeme_dialer_settings_no_touch_hands_free_answer">hands free answer</string>
+
+    <string name="freeme_dialog_voicemail_not_ready_message">To set up voicemail, go to system application settings.</string>
+
+    <string name="freeme_contact_delete_all_tips">"Contacts deletion is running, cannot perform the operation."</string>
+
+    <string name="freeme_speeddial_sd_add">Add</string>
+    <string name="freeme_speeddial_reselect_number">The number has already been assigned to a speed dial key, please select another nubmer.</string>
+    <string name="freeme_speeddial_call_speed_dial">Speed Dial</string>
+    <string name="freeme_speeddial_dialog_no_speed_dial_number_message">No speed dial number,is now set?</string>
+    <string name="freeme_speeddial_tap_to_add">Add speed dial</string>
+    <string name="freeme_speeddial_added"><xliff:g id="contact_name">%1$s</xliff:g> (<xliff:g id="phone_label">%2$s</xliff:g>) added to speed dial <xliff:g id="key">%3$s</xliff:g></string>
+    <string name="freeme_speeddial_added2"><xliff:g id="contact_name">%1$s</xliff:g> added to speed dial <xliff:g id="key">%2$s</xliff:g></string>
+    <string name="freeme_speeddial_remove_speed_dial">Remove</string>
+    <string name="freeme_speeddial_remove_sd_confirm_1">Are you sure you want to remove <xliff:g id="contact_name">%1$s</xliff:g> (<xliff:g id="phone_label">%2$s</xliff:g>) from speed dial <xliff:g id="key">%3$s</xliff:g>?</string>
+    <string name="freeme_speeddial_remove_sd_confirm_2">Are you sure you want to remove <xliff:g id="contact_name">%1$s</xliff:g> from speed dial <xliff:g id="key">%2$s</xliff:g>?</string>
+    <string name="freeme_speeddial_emergency_call">Emergency Call</string>
+    <string name="freeme_speeddial_edit_speed_dial">Edit Speed Dial</string>
+    <string name="freeme_speeddial_delete_number_setting">Delete Number Setting</string>
+    <string name="freeme_speeddial_modify_setted_number">Modify Setted Number</string>
+
+    <string name="freeme_menu_merge_contacts">Merge</string>
+    <string name="freeme_menu_merge_contacts_dialog_title">Choose merged contacts name:</string>
+    <string name="freeme_menu_merge_contacts_only_phone_toast">Only merge phone contacts</string>
+    <string name="freeme_menu_merge_contacts_least_two">Must choose two or more contacts to merge</string>
+    <string name="freeme_menu_merge_contacts_successful">Merge contacts successful</string>
+</resources>

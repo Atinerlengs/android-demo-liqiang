@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Neplatné</string>
+    <string name="conf_call_member_list">Zoznam členov</string>
+    <string name="conf_call_participant_answered">Prijatý</string>
+    <string name="conf_call_participant_missed">"Zmeškané"</string>
+    <string name="calls_over_wifi">HovorysabudúvykonávaťcezsieťWi-Fi</string>
+    <string name="connect_to_wifi">Ak chcete vykonávať hovory, pripojte sa k Wi-Fi</string>
+    <string name="wfc_notification_summary">Ťuknutímsemzískateprístupkpredvoľbám</string>
+    <string name="wfc_notification_summary_fail">Ťuknutím sem zobrazíte dostupné siete</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"Hovory SIP"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> odblokované zlyhalo</string>
+    <string name="menu_select_all">"Vybraťvšetko"</string>
+    <string name="selected_item_count">Vybraná je <xliff:g id="count">%d</xliff:g></string>
+    <string name="multichoice_no_select_alert">"Nie je vybraná žiadna položka."</string>
+    <string name="deleteCallLogConfirmation_title">Odstrániť denník(-y) hovorov?</string>
+    <string name="deleteCallLogConfirmation_message">Ste si istí, že chcete odstrániť vybraný denník(-y) hovorov?</string>
+    <string name="recentCalls_delete">"Odstrániť"</string>
+    <string name="deleting_call_log">Vymazáva sa denník hovorov...</string>
+    <string name="toast_call_detail_error">"Podrobnosti nie sú k dispozícii"</string>
+    <string name="calllogList">"História hovorov"</string>
+    <string name="calllogHint">Vyhľadať denníky hovorov</string>
+    <string name="calllog_description">Prichádzajúce, odchádzajúce a zmeškané hovory</string>
+    <string name="noMatchingCalllogs">Nenašiel sa zhodný denník hovorov.</string>
+    <string name="titleJoinContactDataWith">"Spojiť kontakty"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> denníkov hovorov</item>
+        <item quantity="one">"1 denník hovorov"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Denník hovorov nebol nájdený</string>
+    <string name="search_results_for">Výsledky vyhľadávania pre: <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none">"Zrušiť celý výber"</string>
+</resources>

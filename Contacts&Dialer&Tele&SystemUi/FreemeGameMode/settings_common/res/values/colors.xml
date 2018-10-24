@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="switchbar_background_color">#fff7f7f7</color>
+    <color name="switchbar_divider_color">#19252525</color>
+</resources>

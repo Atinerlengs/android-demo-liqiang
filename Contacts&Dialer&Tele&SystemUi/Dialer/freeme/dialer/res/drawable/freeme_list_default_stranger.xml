@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="40dp"
+    android:viewportWidth="80"
+    android:viewportHeight="80">
+
+    <path
+        android:fillColor="#000"
+        android:fillAlpha="0.2"
+        android:strokeAlpha="0.2"
+        android:strokeWidth="1"
+        android:pathData="M 40 0 C 62.0913899932 0 80 17.9086100068 80 40 C 80 62.0913899932 62.0913899932 80 40 80 C 17.9086100068 80 0 62.0913899932 0 40 C 0 17.9086100068 17.9086100068 0 40 0 Z" />
+    <path
+        android:fillColor="#f2f2f2"
+        android:fillType="evenOdd"
+        android:pathData="M67.507,69.025 C60.337,75.822 50.659,80.000 40.000,80.000 C29.341,80.000
+19.663,75.822 12.493,69.025 C16.625,63.345 22.476,59.003 29.277,56.741
+C31.511,55.324 33.000,52.842 33.000,50.000 C33.000,48.107 32.339,46.370
+31.240,45.000 L48.760,45.000 C47.661,46.370 47.000,48.107 47.000,50.000
+C47.000,52.843 48.494,55.325 50.729,56.743 C57.527,59.005 63.376,63.346
+67.507,69.025 Z" />
+    <path
+        android:fillColor="#fff"
+        android:fillType="evenOdd"
+        android:pathData="M40.000,51.000 C32.820,51.000 27.000,41.150 27.000,29.000 C27.000,21.820
+32.820,16.000 40.000,16.000 C47.180,16.000 53.000,21.820 53.000,29.000
+C53.000,41.150 47.180,51.000 40.000,51.000 Z" />
+</vector>

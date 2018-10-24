@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <path
+        android:fillColor="@color/freeme_qs_detail_empty_icon_tint_color"
+        android:fillAlpha="0.32"
+        android:pathData="M50.437,34.484 C50.437,49.422 62.428,61.531 77.219,61.531 C82.712,61.531
+87.814,59.856 92.064,56.991 C90.134,74.746 75.238,88.562 57.141,88.562
+C37.733,88.562 22.000,72.676 22.000,53.078 C22.000,33.764 37.285,18.065
+56.305,17.615 C52.641,22.242 50.437,28.099 50.437,34.484 Z" />
+</vector>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--freeme.zhangjunjian,2017-06-20 create for phone other setting-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:key="reverse_silent_key"
+        android:title="@string/reverse_silent"
+        android:summary="@string/reverse_silent_info" />
+
+    <SwitchPreference
+        android:key="gradient_ring_key"
+        android:title="@string/gradient_ringing_call"
+        android:defaultValue="false"
+        android:summary="@string/gradient_ringing_info" />
+
+    <SwitchPreference
+        android:key="pocket_mode_ring_key"
+        android:title="@string/pocket_ring_mode_text"
+        android:defaultValue="false"
+        android:summary="@string/pocket_ring_mode_info" />
+
+    <SwitchPreference
+        android:key="phone_vibrate_key"
+        android:title="@string/phone_vibrate"
+        android:defaultValue="true"
+        android:summaryOn="@string/phone_revice_no_vibrate"
+        android:summaryOff="@string/phone_revice_vibrate" />
+
+</PreferenceScreen>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Ogiltig</string>
+    <string name="conf_call_member_list">Medlemslista</string>
+    <string name="conf_call_participant_answered">Svarat</string>
+    <string name="conf_call_participant_missed">"Missade"</string>
+    <string name="calls_over_wifi">SamtalkommerattskeviaWi-Fi</string>
+    <string name="connect_to_wifi">Anslut till Wi-Fi för att ringa samtal</string>
+    <string name="wfc_notification_summary">Tryckhärförattnåinställningar</string>
+    <string name="wfc_notification_summary_fail">Tryck här för att visa tillgängliga nätverk</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"SIP-anrop"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> avblockering misslyckades</string>
+    <string name="menu_select_all">"Markeraalla"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> markerade</string>
+    <string name="multichoice_no_select_alert">"Inget objekt har valts."</string>
+    <string name="deleteCallLogConfirmation_title">Ta bort samtalslogg(ar)?</string>
+    <string name="deleteCallLogConfirmation_message">Är du säker på att du vill ta bort samtalslogg(ar)?</string>
+    <string name="recentCalls_delete">"Tabort"</string>
+    <string name="deleting_call_log">Tar bort samtalslogg…</string>
+    <string name="toast_call_detail_error">"Det finns ingen information"</string>
+    <string name="calllogList">"Samtalshistorik"</string>
+    <string name="calllogHint">Söker samtalsloggar</string>
+    <string name="calllog_description">Inkommande, utgående och missade samtal</string>
+    <string name="noMatchingCalllogs">Ingen matchande samtalslogg hittades.</string>
+    <string name="titleJoinContactDataWith">"Kombinera kontakter"</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> samtalsloggar</item>
+        <item quantity="one">"1 samtalslogg"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Samtalslogg hittades inte</string>
+    <string name="search_results_for">Sökresultat för: <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none">"Avmarkera alla"</string>
+</resources>

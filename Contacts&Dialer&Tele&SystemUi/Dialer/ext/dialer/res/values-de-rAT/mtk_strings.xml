@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="imei_invalid">Ungültig</string>
+    <string name="conf_call_member_list">Mitgliederliste</string>
+    <string name="conf_call_participant_answered">Beantwortet</string>
+    <string name="conf_call_participant_missed">Verpasst</string>
+    <string name="calls_over_wifi">AnrufeerfolgenüberWLAN</string>
+    <string name="connect_to_wifi">Zum Anrufen Wi-Fi-Verbindung herstellen</string>
+    <string name="wfc_notification_summary">ZumAufrufenderVoreinstellungenantippen</string>
+    <string name="wfc_notification_summary_fail">Zum Anzeigen verfügbarer Netzwerke hier tippen</string>
+    <string name="dialer_call_type_label_sip">Internet-Anruf</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> freigeben fehlgeschlagen</string>
+    <string name="menu_select_all">"Allesauswählen"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> gewählt</string>
+    <string name="multichoice_no_select_alert">"Keine Elemente ausgewählt"</string>
+    <string name="deleteCallLogConfirmation_title">Anrufprotokoll(e) löschen?</string>
+    <string name="deleteCallLogConfirmation_message">Wollen Sie das(die) ausgewählte(n) Anrufprotokoll(e) wirklich löschen?"</string>
+    <string name="recentCalls_delete">Löschen</string>
+    <string name="deleting_call_log">Anrufprotokoll wird gelöscht...</string>
+    <string name="toast_call_detail_error">Konnte Details für gewünschten Anruf nicht lesen.</string>
+    <string name="calllogList">Anrufverlauf</string>
+    <string name="calllogHint">Anrufprotokolle suchen</string>
+    <string name="calllog_description">Eingehende, ausgehende und verpasste Anrufe</string>
+    <string name="noMatchingCalllogs">Kein entsprechendes Anrufprotokoll gefunden</string>
+    <string name="titleJoinContactDataWith">Kontakte zusammenführen</string>
+    <plurals name="searchFoundCalllogs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> Anrufprotokolle</item>
+        <item quantity="one">"1 Anrufprotokoll"</item>
+    </plurals>
+    <string name="listFoundAllCalllogZero">Anrufprotokoll nicht gefunden</string>
+    <string name="search_results_for">Suchergebnis für: <xliff:g id="query">%s</xliff:g></string>
+    <string name="menu_select_none">"Alles abwählen"</string>
+</resources>
